@@ -13,7 +13,18 @@
     "build": "npm-run-all --parallel build:cjs build:es",
     "build:cjs": "NODE_ENV=production babel components --out-dir lib --copy-files --ignore __tests__,spec.jsx,test.jsx,__snapshots__",
     "build:es": "NODE_ENV=production BABEL_ENV=es babel components --out-dir es --copy-files --ignore __tests__,spec.jsx,test.jsx,__snapshots__",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "lint-staged": "lint-staged",
+    "lint-staged:ts": "tsc && node node_modules/tslint/bin/tslint --project tsconfig.json"
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "lint-staged": {
+    "components/**/*.tsx": [
+      "npm run lint-staged:ts",
+      "git add"
+    ]
   },
   "peerDependencies": {
     "react": ">=16.0.0",
@@ -39,6 +50,7 @@
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-dom": "^16.8.4",
     "ts-jest": "^24.0.0",
+    "tslint": "^5.13.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
