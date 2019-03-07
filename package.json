@@ -1,18 +1,30 @@
 {
   "name": "knit.design",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Component library for Clarisights",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "repository": "git@github.com:adwyze/knit.design.git",
   "author": "Rohan Malhotra <rohan.root@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "prebuild": "rm -rf lib && rm -rf es",
+    "build": "npm-run-all --parallel build:cjs build:es",
+    "build:cjs": "NODE_ENV=production babel components --out-dir lib --copy-files --ignore __tests__,spec.jsx,test.jsx,__snapshots__",
+    "build:es": "NODE_ENV=production BABEL_ENV=es babel components --out-dir es --copy-files --ignore __tests__,spec.jsx,test.jsx,__snapshots__"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
-    "@babel/runtime": "^7.3.4"
+    "@babel/runtime": "^7.3.4",
+    "npm-run-all": "^4.1.5"
   }
 }

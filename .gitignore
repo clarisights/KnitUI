@@ -23,6 +23,8 @@ node_modules/
 npm-debug.log
 nohup.out
 dist
+lib
+es
 config/base.yaml
 /.vscode/
 /coverage
