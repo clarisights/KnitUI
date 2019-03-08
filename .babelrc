@@ -1,5 +1,6 @@
 {
   "presets": [
+    "@babel/preset-typescript",
     "@babel/preset-react",
     [
       "@babel/preset-env",
@@ -14,6 +15,7 @@
   "env": {
     "es": {
       "presets": [
+        "@babel/preset-typescript",
         "@babel/preset-react",
         [
           "@babel/preset-env",
