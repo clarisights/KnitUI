@@ -82,6 +82,7 @@
     "typescript": "^3.3.3333"
   },
   "dependencies": {
-    "@storybook/addon-backgrounds": "^5.0.0"
+    "@storybook/addon-backgrounds": "^5.0.0",
+    "styled-components": "^4.1.3"
   }
 }
