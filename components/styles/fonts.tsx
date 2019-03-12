@@ -2,6 +2,7 @@ const InterThin = require("../assets/fonts/Inter-Thin-BETA.woff")
 const InterLight = require("../assets/fonts/Inter-Light-BETA.woff")
 const InterRegular = require("../assets/fonts/Inter-Regular.woff")
 const InterMedium = require("../assets/fonts/Inter-Medium.woff")
+const InterSemiBold = require("../assets/fonts/Inter-SemiBold.woff")
 const InterBold = require("../assets/fonts/Inter-Bold.woff")
 const InterBlack = require("../assets/fonts/Inter-Black.woff")
 
@@ -27,6 +28,11 @@ export const fontsDefinition = `
   }
 
   @font-face {
+    font-family: "InterSemiBold";
+    src: url(${InterSemiBold}) format('woff');
+  }
+
+  @font-face {
     font-family: "InterBold";
     src: url(${InterBold}) format('woff');
   }
@@ -44,4 +50,5 @@ export const fontsSource = {
   InterMedium,
   InterBold,
   InterBlack,
+  InterSemiBold,
 }
