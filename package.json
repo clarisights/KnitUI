@@ -80,5 +80,10 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@storybook/addon-backgrounds": "^5.0.0",
+    "@types/styled-components": "^4.1.12",
+    "styled-components": "^4.1.3"
   }
 }

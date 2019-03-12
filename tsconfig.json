@@ -8,8 +8,6 @@
     "allowJs": false,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDirs": ["components", "stories"],
-    "baseUrl": "components",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -20,9 +18,10 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "esModuleInterop": true // enable --allowSyntheticDefaultImports for typesystem compatibility.
+    "esModuleInterop": true, // enable --allowSyntheticDefaultImports for typesystem compatibility.
+    "skipLibCheck": true,
+    "typeRoots": ["./typings"]
   },
-  "typeRoots": ["./typings"],
   "include": ["components/**/*"],
   "exclude": ["node_modules", "build", "scripts", "lib", "es"]
 }

@@ -1,7 +1,12 @@
 {
   "extends": ["tslint-react", "tslint-eslint-rules", "tslint-config-prettier"],
   "linterOptions": {
-    "exclude": ["node_modules", "components/**/*.js", "components/**/*.jsx"]
+    "exclude": [
+      "node_modules",
+      "components/**/*.js",
+      "components/**/*.jsx",
+      "components/assets"
+    ]
   },
   "rules": {
     "class-name": true,
@@ -89,6 +94,7 @@
       "check-typecast",
       "check-type-operator",
       "check-preblock"
-    ]
+    ],
+    "semicolon": [true, "never"]
   }
 }
