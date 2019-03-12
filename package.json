@@ -83,6 +83,7 @@
   },
   "dependencies": {
     "@storybook/addon-backgrounds": "^5.0.0",
+    "@types/styled-components": "^4.1.12",
     "styled-components": "^4.1.3"
   }
 }
