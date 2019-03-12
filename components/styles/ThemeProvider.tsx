@@ -1,5 +1,5 @@
 import React from "react"
-import { ThemeProvider } from "styled-components"
+import { ThemeProvider as Theme } from "styled-components"
 import * as Props from "./variables"
 
 const theme = {
@@ -12,8 +12,8 @@ const theme = {
   primaryHues: Props.primaryHues,
 }
 
-const Theme = ({ children }) => {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+const ThemeProvider = ({ children }) => {
+  return <Theme theme={theme}>{children}</Theme>
 }
 
-export default Theme
+export default ThemeProvider

@@ -1,8 +1,7 @@
-import React from "react"
 import { createGlobalStyle } from "styled-components"
 import { fontsDefinition } from "./fonts"
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   ${fontsDefinition}
 
   body,
@@ -60,9 +59,5 @@ const GlobalStyle = createGlobalStyle`
     font-family: InterRegular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 `
-
-const GlobalStyles = () => {
-  return <GlobalStyle />
-}
 
 export default GlobalStyles
