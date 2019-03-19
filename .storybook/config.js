@@ -1,5 +1,6 @@
 import { addParameters, configure, addDecorator } from "@storybook/react"
 import { withInfo } from "@storybook/addon-info"
+import { addReadme } from "storybook-readme"
 import React from "react"
 import theme from "./theme"
 import { GlobalStyles, ThemeProvider } from "../components/styles"
@@ -14,7 +15,7 @@ const ThemeProviderDecorator = storyFn => (
 const GlobalStylesDecorator = storyFn => (
   <>
     <GlobalStyles />
-    <div style={{ margin: 24 }}>{storyFn()}</div>
+    {storyFn()}
   </>
 )
 
@@ -29,14 +30,8 @@ function loadStories() {
   req.keys().forEach(req)
 }
 
-addDecorator(
-  withInfo({
-    inline: true,
-    header: false,
-  })
-)
-
 addDecorator(ThemeProviderDecorator)
 addDecorator(GlobalStylesDecorator)
+addDecorator(addReadme)
 
 configure(loadStories, module)
