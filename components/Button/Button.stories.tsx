@@ -1,9 +1,16 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { withActions } from "@storybook/addon-actions"
 import { Button } from "../../components"
+const Readme = require("./README.md")
 
 storiesOf("Button", module)
-  .addDecorator(withActions("mouseover", "click .btn"))
+  .addParameters({
+    readme: {
+      // Show readme before story
+      codeTheme: "shades-of-purple",
+      // Show readme at the addons panel
+      sidebar: Readme,
+    },
+  })
   .add("with text", () => <Button name="test" />)
   .add("with some emoji", () => <Button name="😀 😎 👍 💯" />)

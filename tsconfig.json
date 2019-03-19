@@ -6,6 +6,8 @@
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "sourceMap": true,
     "allowJs": false,
+    "rootDirs": ["components"],
+    "baseUrl": "components",
     "jsx": "react",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
