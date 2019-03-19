@@ -14,7 +14,7 @@ const ThemeProviderDecorator = storyFn => (
 const GlobalStylesDecorator = storyFn => (
   <>
     <GlobalStyles />
-    {storyFn()}
+    <div style={{ margin: 24 }}>{storyFn()}</div>
   </>
 )
 
@@ -29,14 +29,14 @@ function loadStories() {
   req.keys().forEach(req)
 }
 
-// addDecorator(GlobalStylesDecorator)
-addDecorator(ThemeProviderDecorator)
-
 addDecorator(
   withInfo({
     inline: true,
     header: false,
   })
 )
+
+addDecorator(ThemeProviderDecorator)
+addDecorator(GlobalStylesDecorator)
 
 configure(loadStories, module)
