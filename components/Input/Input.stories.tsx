@@ -18,3 +18,40 @@ storiesOf("Input", module)
       <Input onChange={action("input changed")} placeholder="basic usage" />
     </div>
   ))
+  .add("Input with label", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with label"
+        labelText="here we go!"
+      />
+    </div>
+  ))
+  .add("Input with success", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with label"
+        success
+      />
+    </div>
+  ))
+  .add("Input with label and error", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with label"
+        labelText="here we go!"
+        error
+      />
+    </div>
+  ))

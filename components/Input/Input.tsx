@@ -29,6 +29,7 @@ const StyledInput: any = styled.input`
   padding: ${({ theme }) =>
     `${theme.inputPaddingVertical} ${theme.inputPaddingHorizontal}`};
   box-sizing: border-box;
+  margin-bottom: 2px;
   background-color: ${({ theme }) => theme.inputBgDefault};
   color: ${({ theme }) => theme.inputColor};
   &:hover {
@@ -56,20 +57,32 @@ export interface IInputProps
   error?: boolean
   /** To enable success state */
   success?: boolean
+  /** text for the label */
+  labelText?: string
   /** onChange handler */
   onChange: (e: React.FormEvent<HTMLInputElement>) => any
 }
 
 const Input: SFC<IInputProps> = props => {
-  const { placeholder, value, onChange, error, success } = props
+  const { placeholder, value, onChange, error, success, labelText } = props
   return (
-    <StyledInput
-      placeholder={placeholder}
-      error={error}
-      success={success}
-      onChange={onChange}
-      {...insertIf({ value }, !!value)}
-    />
+    <>
+      <StyledInput
+        placeholder={placeholder}
+        error={error}
+        success={success}
+        onChange={onChange}
+        {...insertIf({ value }, !!value)}
+      />
+      {labelText ? (
+        <label
+          css={`
+            color: #05b300;
+          `}>
+          {labelText}
+        </label>
+      ) : null}
+    </>
   )
 }
 
