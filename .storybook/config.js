@@ -30,6 +30,7 @@ function loadStories() {
   req.keys().forEach(req)
 }
 
+addDecorator(withInfo)
 addDecorator(ThemeProviderDecorator)
 addDecorator(GlobalStylesDecorator)
 addDecorator(addReadme)
