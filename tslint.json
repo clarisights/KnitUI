@@ -44,14 +44,6 @@
     "radix": true,
     "space-in-parens": true,
     "switch-default": true,
-    "trailing-comma": [
-      true,
-      {
-        "singleline": "never",
-        "multiline": "always",
-        "esSpecCompliant": true
-      }
-    ],
     "triple-equals": [true, "allow-null-check"],
     "typedef-whitespace": [
       true,

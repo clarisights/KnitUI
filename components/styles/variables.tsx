@@ -22,3 +22,19 @@ export const primaryHues = {
 export const lineHeight = "2rem"
 export const borderRadius = `${multiply(0.4, baseUnit)}px`
 export const defaultPadding = `${multiply(0.4, baseUnit)}px ${baseUnit}px`
+
+// input
+export const inputHeightBase = "2.8rem"
+export const inputPaddingHorizontal = "1rem"
+export const inputPaddingVertical = "0.4rem"
+export const inputBgDefault = "hsl(0, 0%, 95%)"
+export const inputColor = "hsl(0, 0%, 0%)"
+export const inputPlaceholderColor = "hsl(0, 0%, 60%)"
+export const inputPlaceholderColorActive = "hsl(0, 0%, 80%)"
+export const inputBgHover = "hsl(255, 100%, 100%)"
+export const inputBgActive = "hsl(0, 0%, 90%)"
+export const inputBorderRadius = "4px"
+export const inputBorderColor = "#d9d9d9"
+export const inputBorderWidth = "1px"
+export const inputError = "#990000"
+export const inputSuccess = "#05b300"
