@@ -1,6 +1,7 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import { Input } from "./index"
+import { Icon } from "../Icon"
 import { action } from "@storybook/addon-actions"
 const Readme = require("./Input.README.md")
 
@@ -52,6 +53,30 @@ storiesOf("Input", module)
         placeholder="input with label"
         labelText="here we go!"
         error
+      />
+    </div>
+  ))
+  .add("Input with addonBefore", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with addonBefore"
+        addonBefore={<Icon type="Info" />}
+      />
+    </div>
+  ))
+  .add("Input with addonAfter", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with addonAfter"
+        addonAfter={<Icon type="Info" />}
       />
     </div>
   ))
