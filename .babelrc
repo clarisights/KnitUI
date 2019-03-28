@@ -12,6 +12,14 @@
       }
     ]
   ],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "pure": true
+      }
+    ]
+  ],
   "env": {
     "es": {
       "presets": [
@@ -24,6 +32,14 @@
             "targets": {
               "browsers": "last 2 versions"
             }
+          }
+        ]
+      ],
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "pure": true
           }
         ]
       ]
