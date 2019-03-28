@@ -1,6 +1,6 @@
 import { addParameters, configure, addDecorator } from "@storybook/react"
 import { withInfo } from "@storybook/addon-info"
-import { addReadme } from "storybook-readme"
+import { addReadme, configureReadme } from "storybook-readme"
 import React from "react"
 import theme from "./theme"
 import { GlobalStyles, ThemeProvider } from "../components/styles"
@@ -34,5 +34,9 @@ addDecorator(withInfo)
 addDecorator(ThemeProviderDecorator)
 addDecorator(GlobalStylesDecorator)
 addDecorator(addReadme)
-
-configure(loadStories, module)
+configureReadme({
+  StoryPreview: ({ children }) => (
+    <div style={{ padding: "10px", margin: "12px" }}>{children}</div>
+  ),
+}),
+  configure(loadStories, module)
