@@ -13,7 +13,7 @@ export const StyledSwitch = styled(RCSwitch)`
       isSmall(size) ? theme.switchWrapperWidthSm : theme.switchWrapperWidth};
     height: ${({ theme, size }) =>
       isSmall(size) ? theme.switchWrapperHeightSm : theme.switchWrapperHeight};
-    line-height: 14px;
+    line-height: ${({ size }) => (isSmall(size) ? "8px" : "14px")};
     padding: 0;
     vertical-align: middle;
     border-radius: 20px 20px;
@@ -23,7 +23,7 @@ export const StyledSwitch = styled(RCSwitch)`
     transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1);
     .knit-switch-inner {
       color: #fff;
-      font-size: 1.1rem;
+      font-size: ${({ size }) => (isSmall(size) ? "0.7rem" : "1.1rem")};
       position: absolute;
       left: 60%;
       top: 0;
