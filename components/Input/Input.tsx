@@ -1,13 +1,17 @@
 import React, { SFC, ReactNode } from "react"
 import styled from "styled-components"
+import _ from "lodash"
 import { insertIf } from "../_utils"
 
+interface ITheme {
+  inputError: string
+  inputSuccess: string
+  inputBorderColor: string
+  inputColor: string
+}
+
 const getInputBorder = (props: {
-  theme: {
-    inputError: string
-    inputSuccess: string
-    inputBorderColor: string
-  }
+  theme: ITheme
   error?: boolean
   success?: boolean
 }) => {
@@ -18,6 +22,20 @@ const getInputBorder = (props: {
     return theme.inputSuccess
   }
   return theme.inputBorderColor
+}
+
+const getLabelColor = (props: {
+  theme: ITheme
+  error: boolean
+  success: boolean
+}) => {
+  const { theme, error, success } = props
+  if (error) {
+    return theme.inputError
+  } else if (success) {
+    return theme.inputSuccess
+  }
+  return theme.inputColor
 }
 
 const StyledInput: any = styled.input`
@@ -75,6 +93,15 @@ const AddonContainer = styled.span`
   transform: translateY(-50%);
 `
 
+const StyledLabel: any = styled.label`
+  color: ${props =>
+    getLabelColor(props as {
+      theme: ITheme
+      error: boolean
+      success: boolean
+    })};
+`
+
 export interface IInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   /** This is a placeholder description */
@@ -86,7 +113,7 @@ export interface IInputProps
   /** To enable success state */
   success?: boolean
   /** text for the label */
-  labelText?: string
+  labelText?: string | ReactNode
   /** onChange handler */
   onChange: (e: React.FormEvent<HTMLInputElement>) => any
   /** to show after input */
@@ -97,6 +124,17 @@ export interface IInputProps
 
 const RenderInput: SFC<IInputProps> = props => {
   const { placeholder, value, onChange, error, success, labelText } = props
+  let labelDOM: null | ReactNode = null
+  if (labelText) {
+    if (_.isString(labelText)) {
+      labelDOM = (
+        <StyledLabel success={success} error={error}>
+          {labelText}
+        </StyledLabel>
+      )
+    }
+    labelDOM = labelText
+  }
   return (
     <>
       <StyledInput
@@ -106,14 +144,7 @@ const RenderInput: SFC<IInputProps> = props => {
         onChange={onChange}
         {...insertIf({ value }, !!value)}
       />
-      {labelText ? (
-        <label
-          css={`
-            color: #05b300;
-          `}>
-          {labelText}
-        </label>
-      ) : null}
+      {labelDOM}
     </>
   )
 }
