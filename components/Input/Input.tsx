@@ -38,14 +38,35 @@ const getLabelColor = (props: {
   return theme.inputColor
 }
 
+const getPadding = size => {
+  switch (size) {
+    case "small":
+      return "0 1rem"
+    case "large":
+      return "0.8rem 1rem"
+    default:
+      return "0.4rem 1rem"
+  }
+}
+
+const getHeight = size => {
+  switch (size) {
+    case "small":
+      return "2rem"
+    case "large":
+      return "3.6rem"
+    default:
+      return "2.8rem"
+  }
+}
+
 const StyledInput: any = styled.input`
-  height: ${props => props.theme.inputHeightBase};
+  height: ${({ size }) => getHeight(size)};
   width: 100%;
   border: ${props =>
     `${props.theme.inputBorderWidth} solid ${getInputBorder(props)}`};
   border-radius: ${({ theme }) => theme.inputBorderRadius};
-  padding: ${({ theme }) =>
-    `${theme.inputPaddingVertical} ${theme.inputPaddingHorizontal}`};
+  padding: ${({ size }) => getPadding(size)};
   box-sizing: border-box;
   margin-bottom: 2px;
   background-color: ${({ theme }) => theme.inputBgDefault};
@@ -120,10 +141,20 @@ export interface IInputProps
   addonAfter?: string | ReactNode
   /** to show before input */
   addonBefore?: string | ReactNode
+  /** the size of the input */
+  inputSize?: "large" | "small" | "default"
 }
 
 const RenderInput: SFC<IInputProps> = props => {
-  const { placeholder, value, onChange, error, success, labelText } = props
+  const {
+    placeholder,
+    value,
+    onChange,
+    error,
+    success,
+    labelText,
+    inputSize = "default",
+  } = props
   let labelDOM: null | ReactNode = null
   if (labelText) {
     if (_.isString(labelText)) {
@@ -138,6 +169,7 @@ const RenderInput: SFC<IInputProps> = props => {
   return (
     <>
       <StyledInput
+        size={inputSize}
         placeholder={placeholder}
         error={error}
         success={success}

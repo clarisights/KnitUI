@@ -24,10 +24,7 @@ export const borderRadius = `${multiply(0.4, baseUnit)}px`
 export const defaultPadding = `${multiply(0.4, baseUnit)}px ${baseUnit}px`
 
 // input
-export const inputHeightBase = "2.8rem"
 export const inputFocusOutline = "none"
-export const inputPaddingHorizontal = "1rem"
-export const inputPaddingVertical = "0.4rem"
 export const inputBgDefault = "hsl(0, 0%, 95%)"
 export const inputColor = "hsl(0, 0%, 5%)"
 export const inputPlaceholderColor = "hsl(0, 0%, 60%)"
