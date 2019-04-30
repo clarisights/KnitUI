@@ -4,6 +4,12 @@ const multiply = (a: number, b: number) => a * b
 const baseUnit = 10
 export const base = `${baseUnit}px`
 
+// Unit measurements (measurements relative to base unit i.e 10px)
+export const unit12 = 1.2
+export const unit14 = 1.4
+export const unit16 = 1.6
+export const unit18 = 1.8
+
 // Type
 export const fontFamily =
   "InterRegular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"
@@ -16,6 +22,17 @@ export const fontSize20 = "2rem"
 // Colors
 export const primaryHues = {
   default: "#293979",
+}
+export const shades = {
+  // Shades of gray
+  white: "hsl(0, 0%, 100%)",
+  lighterGray: "hsl(0, 0%, 90%)",
+  lightGray: "hsl(0, 0%, 60%)",
+  gray: "	hsl(0, 0%, 40%)",
+  black: "hsl(0, 0%, 0%)",
+
+  // Shades of blue
+  darkBlue: "hsl(216, 100%, 20%)"
 }
 
 // Properties
