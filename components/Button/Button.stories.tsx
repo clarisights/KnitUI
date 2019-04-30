@@ -1,6 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { Button } from "../../components"
+import { Button } from "./index"
 const Readme = require("./README.md")
 
 storiesOf("Button", module)
@@ -12,5 +12,31 @@ storiesOf("Button", module)
       sidebar: Readme,
     },
   })
-  .add("with text", () => <Button name="test" />)
-  .add("with some emoji", () => <Button name="😀 😎 👍 💯" />)
+  .add("primary medium", () =>
+    <Button
+      label="Primary"
+      type="primary"
+    />)
+  .add("secondary medium", () =>
+    <Button
+      label="Secondary"
+      type="secondary"
+    />)
+  .add("primary medium ghost", () =>
+    <Button
+      label="Primary"
+      type="primary"
+      ghost
+    />)
+  .add("primary large", () =>
+    <Button
+      label="Primary"
+      type="primary"
+      size="large"
+    />)
+  .add("primary small", () =>
+    <Button
+      label="Primary"
+      type="primary"
+      size="small"
+    />)

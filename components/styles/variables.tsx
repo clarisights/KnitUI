@@ -28,7 +28,7 @@ export const shades = {
   white: "hsl(0, 0%, 100%)",
   lighterGray: "hsl(0, 0%, 90%)",
   lightGray: "hsl(0, 0%, 60%)",
-  gray: "	hsl(0, 0%, 40%)",
+  gray: "hsl(0, 0%, 40%)",
   black: "hsl(0, 0%, 0%)",
 
   // Shades of blue
