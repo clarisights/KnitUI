@@ -29,10 +29,17 @@ export const shades = {
   lighterGray: "hsl(0, 0%, 90%)",
   lightGray: "hsl(0, 0%, 60%)",
   gray: "hsl(0, 0%, 40%)",
+  darkGray: "hsl(0, 0%, 20%)",
   black: "hsl(0, 0%, 0%)",
+  transparent: "hsla(0, 0%, 0%, 0)",
 
   // Shades of blue
-  darkBlue: "hsl(216, 100%, 20%)"
+  lightBlue: "hsl(205, 85%, 65%)",
+  blue: "hsl(216, 100%, 30%)",
+  darkBlue: "hsl(216, 100%, 20%)",
+
+  // Shadows
+  paleYellow: "hsla(54, 74%, 73%, 0.29)",
 }
 
 // Properties
