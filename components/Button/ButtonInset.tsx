@@ -4,7 +4,7 @@ import styled from "styled-components"
 const StyledDiv = styled.div`
     display: inline-flex;
     background-color: ${props => props.theme.shades.white};
-    color: ${props => props.theme.shades.darkGray};
+    color: ${props => props.theme.shades.gray20};
     font-size: ${props => `${props.theme.unit12}rem`};
     border-radius: 4px;
     margin-left: 4px;

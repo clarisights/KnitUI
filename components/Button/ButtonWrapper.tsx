@@ -4,6 +4,8 @@ import styled from "styled-components"
 import ButtonInset from "./ButtonInset"
 import * as theme from "../styles/variables"
 
+const { shades, typography } = theme
+
 type ButtonWrapperType = React.FC<{
   label?: string
   type?: "primary" | "secondary",
@@ -29,41 +31,42 @@ const ButtonWrapper: ButtonWrapperType = ({
   bare,
   insetLabel,
 }) => {
-  const getFontSize = () => size === "small" ? theme.unit12 : theme.unit14
-  const getFontColor = () => {
+  const typographySize = size === "small" ? typography.size12 : typography.size14
+
+  const getFontColor = (state) => {
     if (ghost) {
-      return theme.shades.gray60
+      return state === "hover" ? shades.gray30 : shades.gray60
     }
-    switch (type) {
-      case "primary":
-        return theme.shades.white
-      case "secondary":
-      default:
-        return theme.shades.gray40
-    }
+    return type === "primary" ? shades.white : shades.gray40
   }
 
   const backgroundColor = {
     "primary": {
-      "default": theme.shades.blue20,
-      "hover": theme.shades.blue30,
-      "ghost": theme.shades.white,
+      "default": shades.blue20,
+      "hover": shades.blue30,
     },
     "secondary": {
-      "default": theme.shades.gray90,
-      "hover": theme.shades.gray95,
-      "ghost": theme.shades.white,
+      "default": shades.gray90,
+      "hover": shades.gray95,
     }
   }
+
+  const getBackgroundColor = (state) => {
+    if (ghost) {
+      return shades.white
+    }
+    return backgroundColor[type!][state]
+  }
+
   const getRightPadding = () => {
     if (icon && !label) {
       return 0.5
     }
-    return type === "primary" ? getFontSize() : getFontSize() / 2
+    return type === "primary" ? typographySize.fontSize : typographySize.fontSize / 2
   }
 
   const getLeftPadding = () => {
-    let leftPadding = type === "primary" ? getFontSize() : getFontSize() / 2
+    let leftPadding = type === "primary" ? typographySize.fontSize : typographySize.fontSize / 2
     if (icon && !label) {
       leftPadding = 0.5
     } else if (icon && label) {
@@ -76,43 +79,37 @@ const ButtonWrapper: ButtonWrapperType = ({
     if (icon && !label) {
       return 0.5
     }
-    switch (size) {
-      case "small":
-        return 0.1
-      case "medium":
-      default:
-        return 0.4
-      case "large":
-        return 0.6
+    const verticalPaddings = {
+      "small": 0.1,
+      "medium": 0.4,
+      "large": 0.6
     }
+    return verticalPaddings[size!]
   }
 
   const getBorder = () => {
-    return ghost ? `1px solid ${theme.shades.gray40}` : `1px solid ${theme.shades.transparent}`
+    return ghost ? `1px solid ${shades.gray40}` : `1px solid ${shades.transparent}`
   }
 
   const StyledButton = styled.button`
-      font-size: ${`${getFontSize()}rem`};
+      font-size: ${`${typographySize.fontSize}rem`};
+      line-height: ${`${typographySize.lineHeight}rem`};
       padding-left: ${`${getLeftPadding()}rem`};
       padding-right: ${`${getRightPadding()}rem`};
-      color: ${getFontColor()};
-      background-color: ${backgroundColor[type!].default};
+      color: ${getFontColor("default")};
+      background-color: ${getBackgroundColor("default")};
       padding-top: ${`${getVerticalPadding()}rem`};
       padding-bottom: ${`${getVerticalPadding()}rem`};
       border-radius: 0.4rem;
       border-style: none;
       box-sizing: border-box;
       border: ${getBorder()};
-      :hover {
-        background-color: ${backgroundColor[type!].hover};
+      :hover, :active, :focus {
+        background-color: ${getBackgroundColor("hover")};
+        color: ${getFontColor("hover")};
       }
-      :active{
-        background-color: ${backgroundColor[type!].hover};
-        border: 1px solid ${theme.shades.lightBlue};
-      }
-      :focused {
-        background-color: ${backgroundColor[type!].hover};
-        border: 1px solid ${theme.shades.lightBlue}
+      :active, :focus{
+        border: 1px solid ${shades.lightBlue};
       }
       :disabled {
         opacity: 0.5;

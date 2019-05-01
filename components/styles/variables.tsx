@@ -10,6 +10,33 @@ export const unit14 = 1.4
 export const unit16 = 1.6
 export const unit18 = 1.8
 
+export const typography = {
+  size10: {
+    fontSize: 1.0,
+    lineHeight: 1.6
+  },
+  size12: {
+    fontSize: 1.2,
+    lineHeight: 1.8
+  },
+  size14: {
+    fontSize: 1.4,
+    lineHeight: 2.0
+  },
+  size16: {
+    fontSize: 1.6,
+    lineHeight: 2.0
+  },
+  size18: {
+    fontSize: 1.8,
+    lineHeight: 2.4
+  },
+  size20: {
+    fontSize: 2.0,
+    lineHeight: 2.8
+  }
+}
+
 // Type
 export const fontFamily =
   "InterRegular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"
@@ -30,6 +57,7 @@ export const shades = {
   gray90: "hsl(0, 0%, 90%)",
   gray60: "hsl(0, 0%, 60%)",
   gray40: "hsl(0, 0%, 40%)",
+  gray30: "hsl(0, 0%, 30%)",
   gray20: "hsl(0, 0%, 20%)",
   black: "hsl(0, 0%, 0%)",
   transparent: "hsla(0, 0%, 0%, 0)",
