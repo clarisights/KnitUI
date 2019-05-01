@@ -26,20 +26,18 @@ export const primaryHues = {
 export const shades = {
   // Shades of gray
   white: "hsl(0, 0%, 100%)",
-  lighterGray: "hsl(0, 0%, 90%)",
-  lightGray: "hsl(0, 0%, 60%)",
-  gray: "hsl(0, 0%, 40%)",
-  darkGray: "hsl(0, 0%, 20%)",
+  gray95: "hsl(0, 0%, 95%)",
+  gray90: "hsl(0, 0%, 90%)",
+  gray60: "hsl(0, 0%, 60%)",
+  gray40: "hsl(0, 0%, 40%)",
+  gray20: "hsl(0, 0%, 20%)",
   black: "hsl(0, 0%, 0%)",
   transparent: "hsla(0, 0%, 0%, 0)",
 
   // Shades of blue
   lightBlue: "hsl(205, 85%, 65%)",
-  blue: "hsl(216, 100%, 30%)",
-  darkBlue: "hsl(216, 100%, 20%)",
-
-  // Shadows
-  paleYellow: "hsla(54, 74%, 73%, 0.29)",
+  blue30: "hsl(216, 100%, 30%)",
+  blue20: "hsl(216, 100%, 20%)",
 }
 
 // Properties

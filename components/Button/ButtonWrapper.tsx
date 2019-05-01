@@ -2,7 +2,6 @@ import React from "react"
 import { Icon } from "../Icon"
 import styled from "styled-components"
 import ButtonInset from "./ButtonInset"
-import ButtonBase from "./ButtonBase"
 import * as theme from "../styles/variables"
 
 type ButtonWrapperType = React.FC<{
@@ -33,28 +32,26 @@ const ButtonWrapper: ButtonWrapperType = ({
   const getFontSize = () => size === "small" ? theme.unit12 : theme.unit14
   const getFontColor = () => {
     if (ghost) {
-      return theme.shades.lightGray
+      return theme.shades.gray60
     }
     switch (type) {
       case "primary":
         return theme.shades.white
       case "secondary":
       default:
-        return theme.shades.gray
+        return theme.shades.gray40
     }
   }
 
   const backgroundColor = {
     "primary": {
-      "default": theme.shades.darkBlue,
-      "hover": theme.shades.blue,
+      "default": theme.shades.blue20,
+      "hover": theme.shades.blue30,
       "ghost": theme.shades.white,
     },
     "secondary": {
-      "default": theme.shades.lighterGray,
-      "hover": "",
-      "active": "",
-      "focused": "",
+      "default": theme.shades.gray90,
+      "hover": theme.shades.gray95,
       "ghost": theme.shades.white,
     }
   }
@@ -71,17 +68,17 @@ const ButtonWrapper: ButtonWrapperType = ({
   const getVerticalPadding = () => {
     switch (size) {
       case "small":
-        return 1
+        return 0.1
       case "medium":
       default:
-        return 4
+        return 0.4
       case "large":
-        return 6
+        return 0.6
     }
   }
 
   const getBorder = () => {
-    return ghost ? `1px solid ${theme.shades.gray}` : `1px solid ${theme.shades.transparent}`
+    return ghost ? `1px solid ${theme.shades.gray40}` : `1px solid ${theme.shades.transparent}`
   }
 
   const StyledButton = styled.button`
@@ -90,9 +87,9 @@ const ButtonWrapper: ButtonWrapperType = ({
       padding-right: ${`${getHorizontalPadding()}rem`};
       color: ${getFontColor()};
       background-color: ${backgroundColor[type!].default};
-      padding-top: ${`${getVerticalPadding()}px`};
-      padding-bottom: ${`${getVerticalPadding()}px`};
-      border-radius: 4px;
+      padding-top: ${`${getVerticalPadding()}rem`};
+      padding-bottom: ${`${getVerticalPadding()}rem`};
+      border-radius: 0.4rem;
       border-style: none;
       box-sizing: border-box;
       border: ${getBorder()};
@@ -103,15 +100,20 @@ const ButtonWrapper: ButtonWrapperType = ({
         background-color: ${backgroundColor[type!].hover};
         border: 1px solid ${theme.shades.lightBlue};
       }
-      :focussed {
+      :focused {
         background-color: ${backgroundColor[type!].hover};
         border: 1px solid ${theme.shades.lightBlue}
-        box-shadow: 0px 1px 4px ${theme.shades.paleYellow};
+      }
+      :disabled {
+        opacity: 0.5;
       }
   `
 
   return (
-    <StyledButton>
+    <StyledButton
+      disabled={disabled}
+      onClick={() => (onClick && onClick() || href && (window.location.href = href))}
+    >
       {icon ? <Icon type={icon} /> : null}
       {label}
       <ButtonInset label={insetLabel} />
