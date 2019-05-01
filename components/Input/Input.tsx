@@ -1,13 +1,17 @@
 import React, { SFC, ReactNode } from "react"
 import styled from "styled-components"
+import _ from "lodash"
 import { insertIf } from "../_utils"
 
+interface ITheme {
+  inputError: string
+  inputSuccess: string
+  inputBorderColor: string
+  inputColor: string
+}
+
 const getInputBorder = (props: {
-  theme: {
-    inputError: string
-    inputSuccess: string
-    inputBorderColor: string
-  }
+  theme: ITheme
   error?: boolean
   success?: boolean
 }) => {
@@ -20,14 +24,49 @@ const getInputBorder = (props: {
   return theme.inputBorderColor
 }
 
+const getLabelColor = (props: {
+  theme: ITheme
+  error: boolean
+  success: boolean
+}) => {
+  const { theme, error, success } = props
+  if (error) {
+    return theme.inputError
+  } else if (success) {
+    return theme.inputSuccess
+  }
+  return theme.inputColor
+}
+
+const getPadding = size => {
+  switch (size) {
+    case "small":
+      return "0 1rem"
+    case "large":
+      return "0.8rem 1rem"
+    default:
+      return "0.4rem 1rem"
+  }
+}
+
+const getHeight = size => {
+  switch (size) {
+    case "small":
+      return "2rem"
+    case "large":
+      return "3.6rem"
+    default:
+      return "2.8rem"
+  }
+}
+
 const StyledInput: any = styled.input`
-  height: ${props => props.theme.inputHeightBase};
+  height: ${({ size }) => getHeight(size)};
   width: 100%;
   border: ${props =>
     `${props.theme.inputBorderWidth} solid ${getInputBorder(props)}`};
   border-radius: ${({ theme }) => theme.inputBorderRadius};
-  padding: ${({ theme }) =>
-    `${theme.inputPaddingVertical} ${theme.inputPaddingHorizontal}`};
+  padding: ${({ size }) => getPadding(size)};
   box-sizing: border-box;
   margin-bottom: 2px;
   background-color: ${({ theme }) => theme.inputBgDefault};
@@ -75,6 +114,15 @@ const AddonContainer = styled.span`
   transform: translateY(-50%);
 `
 
+const StyledLabel: any = styled.label`
+  color: ${props =>
+    getLabelColor(props as {
+      theme: ITheme
+      error: boolean
+      success: boolean
+    })};
+`
+
 export interface IInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   /** This is a placeholder description */
@@ -86,34 +134,49 @@ export interface IInputProps
   /** To enable success state */
   success?: boolean
   /** text for the label */
-  labelText?: string
+  labelText?: string | ReactNode
   /** onChange handler */
   onChange: (e: React.FormEvent<HTMLInputElement>) => any
   /** to show after input */
   addonAfter?: string | ReactNode
   /** to show before input */
   addonBefore?: string | ReactNode
+  /** the size of the input */
+  inputSize?: "large" | "small" | "default"
 }
 
 const RenderInput: SFC<IInputProps> = props => {
-  const { placeholder, value, onChange, error, success, labelText } = props
+  const {
+    placeholder,
+    value,
+    onChange,
+    error,
+    success,
+    labelText,
+    inputSize = "default",
+  } = props
+  let labelDOM: null | ReactNode = null
+  if (labelText) {
+    if (_.isString(labelText)) {
+      labelDOM = (
+        <StyledLabel success={success} error={error}>
+          {labelText}
+        </StyledLabel>
+      )
+    }
+    labelDOM = labelText
+  }
   return (
     <>
       <StyledInput
+        size={inputSize}
         placeholder={placeholder}
         error={error}
         success={success}
         onChange={onChange}
         {...insertIf({ value }, !!value)}
       />
-      {labelText ? (
-        <label
-          css={`
-            color: #05b300;
-          `}>
-          {labelText}
-        </label>
-      ) : null}
+      {labelDOM}
     </>
   )
 }
