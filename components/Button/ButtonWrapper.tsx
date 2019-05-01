@@ -55,17 +55,27 @@ const ButtonWrapper: ButtonWrapperType = ({
       "ghost": theme.shades.white,
     }
   }
-  const getHorizontalPadding = () => {
-    switch (type) {
-      case "primary":
-      default:
-        return getFontSize()
-      case "secondary":
-        return getFontSize() / 2
+  const getRightPadding = () => {
+    if (icon && !label) {
+      return 0.5
     }
+    return type === "primary" ? getFontSize() : getFontSize() / 2
+  }
+
+  const getLeftPadding = () => {
+    let leftPadding = type === "primary" ? getFontSize() : getFontSize() / 2
+    if (icon && !label) {
+      leftPadding = 0.5
+    } else if (icon && label) {
+      leftPadding = leftPadding / 2
+    }
+    return leftPadding
   }
 
   const getVerticalPadding = () => {
+    if (icon && !label) {
+      return 0.5
+    }
     switch (size) {
       case "small":
         return 0.1
@@ -83,8 +93,8 @@ const ButtonWrapper: ButtonWrapperType = ({
 
   const StyledButton = styled.button`
       font-size: ${`${getFontSize()}rem`};
-      padding-left: ${`${getHorizontalPadding()}rem`};
-      padding-right: ${`${getHorizontalPadding()}rem`};
+      padding-left: ${`${getLeftPadding()}rem`};
+      padding-right: ${`${getRightPadding()}rem`};
       color: ${getFontColor()};
       background-color: ${backgroundColor[type!].default};
       padding-top: ${`${getVerticalPadding()}rem`};
@@ -106,6 +116,7 @@ const ButtonWrapper: ButtonWrapperType = ({
       }
       :disabled {
         opacity: 0.5;
+        cursor: not-allowed;
       }
   `
 
