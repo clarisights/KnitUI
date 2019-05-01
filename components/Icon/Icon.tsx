@@ -28,13 +28,14 @@ const StyledIconWrapper: any = withProps<IconProps>()(styled.span)`
 
 const Icon: any = props => {
   const { type, height = "28px", width = "28px", customStyles = "" } = props
+  const icon = Icons[`IconSystem${type}`]()
   return (
     <StyledIconWrapper
       {...props}
       SVGWidth={width}
       SVGHeight={height}
       customStyles={customStyles}>
-      {Icons[`IconSystem${type}`]}
+      {icon}
     </StyledIconWrapper>
   )
 }
