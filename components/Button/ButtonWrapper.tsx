@@ -3,12 +3,16 @@ import { Icon } from "../Icon"
 import styled from "styled-components"
 import ButtonInset from "./ButtonInset"
 import * as theme from "../styles/variables"
+import chroma from 'chroma-js'
 
-const { shades, typography } = theme
+const { shades, typography, secondaryPalette } = theme
+
+type buttonState = "default" | "hover" | "active" | "focus" | "disabled"
 
 type ButtonWrapperType = React.FC<{
   label?: string
   type?: "primary" | "secondary",
+  variant?: "neutral" | "danger" | "success" | "warning" | "unsaved",
   ghost?: boolean,
   size?: "small" | "medium" | "large",
   disabled?: boolean,
@@ -17,10 +21,12 @@ type ButtonWrapperType = React.FC<{
   insetLabel?: string,
   href?: string,
   onClick?: Function,
+  colorTheme?: { background: any, font: any}
 }>
 
 const ButtonWrapper: ButtonWrapperType = ({
   label,
+  variant,
   type,
   ghost,
   size,
@@ -30,36 +36,66 @@ const ButtonWrapper: ButtonWrapperType = ({
   icon,
   bare,
   insetLabel,
+  colorTheme
 }) => {
+  const iconOnly = icon && !label
   const typographySize = size === "small" ? typography.size12 : typography.size14
 
-  const getFontColor = (state) => {
-    if (ghost) {
-      return state === "hover" ? shades.gray30 : shades.gray60
-    }
-    return type === "primary" ? shades.white : shades.gray40
+  // Get the color theme based on variant and override if explicitly provided
+  if (colorTheme && chroma.isValid(colorTheme.background) && chroma.isValid(colorTheme.font)) {
+    colorTheme.background = chroma(colorTheme.background)
+    colorTheme.font = chroma(colorTheme.font)
+  } else {
+    colorTheme = secondaryPalette[variant!]
   }
 
-  const backgroundColor = {
-    "primary": {
-      "default": shades.blue20,
-      "hover": shades.blue30,
-    },
-    "secondary": {
-      "default": shades.gray90,
-      "hover": shades.gray95,
+  // Ghost buttons have their font and background colors interchanged
+  const baseFontColor = ghost ? colorTheme.background : colorTheme.font
+  const baseBackgroundColor = ghost ? colorTheme.font : colorTheme.background
+  const lightenedBackgroundColor = baseBackgroundColor.set('hsl.l', '+0.1')
+  const highlightColor = shades.lightBlue
+
+  const getFontColor = (state: buttonState) => {
+    switch (state) {
+      case "default":
+        return ghost ? highlightColor : baseFontColor  // TODO: compute dynamically
+      default:
+        return baseFontColor
     }
   }
 
-  const getBackgroundColor = (state) => {
+  const getBackgroundColor = (state: buttonState) => {
+    if (bare) {
+      return shades.transparent
+    }
     if (ghost) {
       return shades.white
     }
-    return backgroundColor[type!][state]
+    return state === "default" ? baseBackgroundColor : lightenedBackgroundColor
+  }
+
+  const verticalPaddings = {
+    small: {
+      default: 0.1,
+      iconOnly: 0.3,
+    },
+    medium: {
+      default: 0.4,
+      iconOnly: 0.5,
+    },
+    large: {
+      default: 0.6,
+      iconOnly: 0.7,
+    }
+  }
+
+  const getVerticalPadding = () => {
+    return iconOnly ?
+      verticalPaddings[size!].iconOnly : verticalPaddings[size!].default
   }
 
   const getRightPadding = () => {
-    if (icon && !label) {
+    if (icon && !label) {  // Icon only
       return 0.5
     }
     return type === "primary" ? typographySize.fontSize : typographySize.fontSize / 2
@@ -75,46 +111,50 @@ const ButtonWrapper: ButtonWrapperType = ({
     return leftPadding
   }
 
-  const getVerticalPadding = () => {
-    if (icon && !label) {
-      return 0.5
+  const getBorder = (state: buttonState) => {
+    let borderColor
+    switch (state) {
+      case "active":
+      case "focus":
+        borderColor = ghost ? baseFontColor : highlightColor // TODO: compute dynamically
+        break
+      case "hover":
+        borderColor = ghost ? baseFontColor : shades.transparent
+        break
+      default:
+        borderColor = ghost ? highlightColor : shades.transparent
+        break
     }
-    const verticalPaddings = {
-      "small": 0.1,
-      "medium": 0.4,
-      "large": 0.6
-    }
-    return verticalPaddings[size!]
-  }
-
-  const getBorder = () => {
-    return ghost ? `1px solid ${shades.gray40}` : `1px solid ${shades.transparent}`
+    return `1px solid ${borderColor.css('hsl')}`
   }
 
   const StyledButton = styled.button`
-      font-size: ${`${typographySize.fontSize}rem`};
-      line-height: ${`${typographySize.lineHeight}rem`};
-      padding-left: ${`${getLeftPadding()}rem`};
-      padding-right: ${`${getRightPadding()}rem`};
-      color: ${getFontColor("default")};
-      background-color: ${getBackgroundColor("default")};
-      padding-top: ${`${getVerticalPadding()}rem`};
-      padding-bottom: ${`${getVerticalPadding()}rem`};
-      border-radius: 0.4rem;
-      border-style: none;
-      box-sizing: border-box;
-      border: ${getBorder()};
-      :hover, :active, :focus {
-        background-color: ${getBackgroundColor("hover")};
-        color: ${getFontColor("hover")};
-      }
-      :active, :focus{
-        border: 1px solid ${shades.lightBlue};
-      }
-      :disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-      }
+    font-size: ${`${typographySize.fontSize}rem`};
+    line-height: ${`${typographySize.lineHeight}rem`};
+    padding-left: ${`${getLeftPadding()}rem`};
+    padding-right: ${`${getRightPadding()}rem`};
+    color: ${getFontColor("default").css('hsl')};
+    background-color: ${getBackgroundColor("default").css('hsl')};
+    padding-top: ${`${getVerticalPadding()}rem`};
+    padding-bottom: ${`${getVerticalPadding()}rem`};
+    border-radius: 0.4rem;
+    border-style: none;
+    box-sizing: border-box;
+    border: ${getBorder("default")};
+    :hover, :active, :focus {
+      background-color: ${getBackgroundColor("hover")};
+      color: ${getFontColor("hover")};
+    }
+    :active, :focus{
+      border: ${getBorder("active")};
+    }
+    :hover {
+      border: ${getBorder("hover")};
+    }
+    :disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
   `
 
   return (
@@ -130,6 +170,7 @@ const ButtonWrapper: ButtonWrapperType = ({
 
 ButtonWrapper.defaultProps = {
   type: "primary",
+  variant: "neutral",
   ghost: false,
   disabled: false,
   size: "medium",

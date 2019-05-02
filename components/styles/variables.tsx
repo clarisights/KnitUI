@@ -1,3 +1,5 @@
+import chroma from 'chroma-js'
+
 // Helpers
 const multiply = (a: number, b: number) => a * b
 
@@ -50,9 +52,33 @@ export const fontSize20 = "2rem"
 export const primaryHues = {
   default: "#293979",
 }
+
+export const secondaryPalette = {
+  neutral: {
+    background: chroma.hsl(216, 1, 0.2),
+    font: chroma.hsl(0, 0, 1),
+  },
+  danger: {
+    background: chroma.hsl(0, 1, 0.3),
+    font: chroma.hsl(0, 0, 1),
+  },
+  success: {
+    background: chroma.hsl(118, 1, 0.2),
+    font: chroma.hsl(0, 0, 1),
+  },
+  warning: {
+    background: chroma.hsl(47, 1, 0.5),
+    font: chroma.hsl(0, 0, 1),
+  },
+  unsaved: {
+    background: chroma.hsl(288, 0.2, 0.35),
+    font: chroma.hsl(0, 0, 1),
+  }
+}
+
 export const shades = {
   // Shades of gray
-  white: "hsl(0, 0%, 100%)",
+  white: chroma.hsl(0, 0, 1),
   gray95: "hsl(0, 0%, 95%)",
   gray90: "hsl(0, 0%, 90%)",
   gray60: "hsl(0, 0%, 60%)",
@@ -60,10 +86,10 @@ export const shades = {
   gray30: "hsl(0, 0%, 30%)",
   gray20: "hsl(0, 0%, 20%)",
   black: "hsl(0, 0%, 0%)",
-  transparent: "hsla(0, 0%, 0%, 0)",
+  transparent: chroma.hsl(0, 0, 0, 0),
 
   // Shades of blue
-  lightBlue: "hsl(205, 85%, 65%)",
+  lightBlue: chroma.hsl(205, 0.85, 0.65),
   blue30: "hsl(216, 100%, 30%)",
   blue20: "hsl(216, 100%, 20%)",
 }

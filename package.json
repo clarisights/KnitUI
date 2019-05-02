@@ -87,6 +87,7 @@
   "dependencies": {
     "@storybook/addon-backgrounds": "^5.0.10",
     "@types/styled-components": "^4.1.14",
+    "chroma-js": "^2.0.3",
     "styled-components": "^4.2.0"
   }
 }
