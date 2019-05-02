@@ -80,3 +80,27 @@ storiesOf("Input", module)
       />
     </div>
   ))
+  .add("Basic input small", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        inputSize="small"
+        onChange={action("input changed")}
+        placeholder="basic usage"
+      />
+    </div>
+  ))
+  .add("Basic input large", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        inputSize="large"
+        onChange={action("input changed")}
+        placeholder="basic usage"
+      />
+    </div>
+  ))
