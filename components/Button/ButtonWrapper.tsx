@@ -129,6 +129,8 @@ const ButtonWrapper: ButtonWrapperType = ({
   }
 
   const StyledButton = styled.button`
+    display: flex;
+    align-items: center;
     font-size: ${`${typographySize.fontSize}rem`};
     line-height: ${`${typographySize.lineHeight}rem`};
     padding-left: ${`${getLeftPadding()}rem`};
@@ -157,12 +159,18 @@ const ButtonWrapper: ButtonWrapperType = ({
     }
   `
 
+  const StyledIcon = styled(Icon)`
+    path {
+      fill: ${baseFontColor.css('hsl')}
+    }
+  `
+
   return (
     <StyledButton
       disabled={disabled}
       onClick={() => (onClick && onClick() || href && (window.location.href = href))}
     >
-      {icon ? <Icon type={icon} /> : null}
+      {icon ? <StyledIcon type={icon} /> : null}
       {label}
       <ButtonInset label={insetLabel} />
     </StyledButton>
