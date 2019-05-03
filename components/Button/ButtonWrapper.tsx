@@ -117,6 +117,9 @@ const ButtonWrapper: ButtonWrapperType = ({
   }
 
   const getRightPadding = () => {
+    if (iconOnly) {
+      return iconPaddings[size!]
+    }
     return horizontalPaddings[size!][type!]
   }
 
