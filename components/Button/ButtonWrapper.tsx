@@ -73,13 +73,11 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   const getFontColor = (state: buttonState) => {
     switch (state) {
       case "default":
-        if (ghost) { return lightenedFontColor }
         if (bare) { return baseBackgroundColor }
         return baseFontColor
       case "hover":
-        if (bare) {
-          return lightenedBackgroundColor
-        }
+        if (bare) { return lightenedBackgroundColor }
+        if (ghost) { return lightenedFontColor }
         return baseFontColor
       default:
         return baseFontColor
@@ -150,10 +148,10 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
         borderColor = ghost ? baseFontColor : highlightColor
         break
       case "hover":
-        borderColor = ghost ? baseFontColor : shades.transparent
+        borderColor = ghost ? lightenedFontColor : shades.transparent
         break
       default:
-        borderColor = ghost ? lightenedFontColor : shades.transparent
+        borderColor = ghost ? baseFontColor : shades.transparent
         break
     }
     return `1px solid ${borderColor}`
@@ -176,13 +174,13 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     border: ${getBorder("default")};
     :hover, :active, :focus {
       background-color: ${getBackgroundColor("hover")};
-      color: ${getFontColor("hover")};
     }
     :active, :focus{
       border: ${getBorder("active")};
     }
     :hover {
       border: ${getBorder("hover")};
+      color: ${getFontColor("hover")};
     }
     :disabled {
       opacity: 0.5;
