@@ -35,9 +35,6 @@
     "react-dom": ">=16.0.0"
   },
   "jest": {
-    "setupFilesAfterEnv": [
-      "<rootDir>/setupTests.js"
-    ],
     "transform": {
       "^.+\\.jsx?$": "babel-jest",
       "^.+\\.tsx?$": "ts-jest"
@@ -59,6 +56,7 @@
     "@storybook/addon-actions": "^5.0.10",
     "@storybook/addon-info": "^5.0.10",
     "@storybook/addon-knobs": "^5.0.11",
+    "@storybook/addon-storyshots": "^5.0.11",
     "@storybook/addon-storysource": "^5.0.11",
     "@storybook/react": "^5.0.10",
     "@types/jest": "^24.0.9",
@@ -66,8 +64,6 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.10.0",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.10.0",
     "husky": "^1.3.1",
     "jest": "^24.3.1",
     "lint-staged": "^8.1.5",
@@ -89,6 +85,7 @@
     "@types/styled-components": "^4.1.14",
     "chroma-js": "^2.0.3",
     "rc-switch": "^1.9.0",
+    "react-test-renderer": "^16.8.6",
     "styled-components": "^4.2.0"
   }
 }

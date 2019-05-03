@@ -1,10 +1,10 @@
 import React from "react"
-import Button from "../index"
-import { shallow } from "enzyme"
+import { Button } from "../index"
+import renderer from 'react-test-renderer';
 
 describe("Button", () => {
   it("should render correctly", () => {
-    const btn = shallow(<Button name="tada" />)
-    expect(btn).toMatchSnapshot()
+    const tree = renderer.create(<Button label="button" />).toJSON()
+    expect(tree).toMatchSnapshot()
   })
 })
