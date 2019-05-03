@@ -55,13 +55,13 @@ const ButtonWrapper: ButtonWrapperType = ({
   const baseFontColor = ghost ? colorTheme.background : colorTheme.font
   const baseBackgroundColor = ghost ? colorTheme.font : colorTheme.background
   const lightenedBackgroundColor = baseBackgroundColor.set('hsl.l', '+0.1')
-  const lightenedFontColor = baseFontColor.set('hsl.l', '+0.1') // Used for ghost
+  const lightenedFontColor = baseFontColor.set('hsl.l', '+0.3') // Used for ghost
   const highlightColor = shades.lightBlue
 
   const getFontColor = (state: buttonState) => {
     switch (state) {
       case "default":
-        if (ghost) { return highlightColor }
+        if (ghost) { return lightenedFontColor }
         if (bare) { return baseBackgroundColor }
         return baseFontColor
       case "hover":
@@ -132,13 +132,13 @@ const ButtonWrapper: ButtonWrapperType = ({
     switch (state) {
       case "active":
       case "focus":
-        borderColor = ghost ? baseFontColor : highlightColor // TODO: compute dynamically
+        borderColor = ghost ? baseFontColor : highlightColor
         break
       case "hover":
         borderColor = ghost ? baseFontColor : shades.transparent
         break
       default:
-        borderColor = ghost ? highlightColor : shades.transparent
+        borderColor = ghost ? lightenedFontColor : shades.transparent
         break
     }
     return `1px solid ${borderColor}`
