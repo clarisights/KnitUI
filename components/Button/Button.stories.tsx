@@ -34,6 +34,7 @@ stories
       size={select('Size', sizeOptions, 'medium')}
       ghost={boolean('Ghost', false)}
       disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
     />)
   .add("secondary medium", () =>
     <Button

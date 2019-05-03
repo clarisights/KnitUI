@@ -55,12 +55,20 @@ const ButtonWrapper: ButtonWrapperType = ({
   const baseFontColor = ghost ? colorTheme.background : colorTheme.font
   const baseBackgroundColor = ghost ? colorTheme.font : colorTheme.background
   const lightenedBackgroundColor = baseBackgroundColor.set('hsl.l', '+0.1')
+  const lightenedFontColor = baseFontColor.set('hsl.l', '+0.1') // Used for ghost
   const highlightColor = shades.lightBlue
 
   const getFontColor = (state: buttonState) => {
     switch (state) {
       case "default":
-        return ghost ? highlightColor : baseFontColor  // TODO: compute dynamically
+        if (ghost) { return highlightColor }
+        if (bare) { return baseBackgroundColor }
+        return baseFontColor
+      case "hover":
+        if (bare) {
+          return lightenedBackgroundColor
+        }
+        return baseFontColor
       default:
         return baseFontColor
     }
@@ -68,7 +76,7 @@ const ButtonWrapper: ButtonWrapperType = ({
 
   const getBackgroundColor = (state: buttonState) => {
     if (bare) {
-      return shades.transparent
+      return state === "default" ? shades.transparent : shades.gray95
     }
     if (ghost) {
       return shades.white

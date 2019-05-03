@@ -80,6 +80,7 @@ export const secondaryPalette = {
 export const shades = {
   // Shades of gray
   white: chroma.hsl(0, 0, 1),
+  gray95: chroma.hsl(0, 0, 0.95),
   gray20: chroma.hsl(0, 0, 0.2),
   black: chroma.hsl(0, 0, 0),
   transparent: chroma.hsl(0, 0, 0, 0),
