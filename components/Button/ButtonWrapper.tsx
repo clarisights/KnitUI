@@ -8,22 +8,34 @@ const { shades, typography, secondaryPalette } = theme
 
 type buttonState = "default" | "hover" | "active" | "focus" | "disabled"
 
-type ButtonWrapperType = React.FC<{
+interface ButtonWrapperProps {
+  /** The text label to be shown on the button */
   label?: string
+  /** Indicates the importance of the button's actions */
   type?: "primary" | "secondary",
+  /** Indicates the state of an action */
   variant?: "neutral" | "danger" | "success" | "warning" | "unsaved",
+  /** Inverted color scheme */
   ghost?: boolean,
+  /** Physical area occupied on the screen */
   size?: "small" | "medium" | "large",
+  /** Whether the button should be disabled */
   disabled?: boolean,
+  /** An icon type to be rendered in the button */
   icon?: string,
+  /** Only text/icon stripping the background */
   bare?: boolean,
+  /** An inset value, typically used for showing notifications */
   insetLabel?: string,
+  /** A location to navigate to on click of the button */
   href?: string,
+  /** An event handler to be called on click of the button */
   onClick?: Function,
+  /** A custom color theme that overrides the defaults */
   colorTheme?: { background: any, font: any}
-}>
+}
 
-const ButtonWrapper: ButtonWrapperType = ({
+const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   label,
   variant,
   type,

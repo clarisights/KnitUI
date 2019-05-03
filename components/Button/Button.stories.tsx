@@ -27,7 +27,7 @@ stories
       sidebar: Readme,
     },
   })
-  .add("primary medium", () =>
+  .add("Simple primary with text", () =>
     <Button
       label={text('Label', 'Button')}
       type={select('Type', typeOptions, 'primary')}
@@ -36,38 +36,54 @@ stories
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
     />)
-  .add("secondary medium", () =>
+  .add("Simple secondary with text", () =>
     <Button
-      label="Secondary"
-      type="secondary"
+      label={text('Label', 'Button')}
+      type={select('Type', typeOptions, 'primary')}
+      size={select('Size', sizeOptions, 'medium')}
+      ghost={boolean('Ghost', false)}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
     />)
-  .add("primary medium with icon", () =>
+  .add("Ghost (inverted color scheme)", () =>
     <Button
-      label="Primary"
-      type="primary"
-      icon="Info"
+      label={text('Label', 'Button')}
+      type={select('Type', typeOptions, 'primary')}
+      size={select('Size', sizeOptions, 'medium')}
+      ghost={boolean('Ghost', true)}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
     />)
-  .add("primary medium ghost", () =>
+  .add("With an inset", () =>
     <Button
-      label="Primary"
-      type="primary"
-      ghost
+      label={text('Label', 'Button')}
+      type={select('Type', typeOptions, 'primary')}
+      size={select('Size', sizeOptions, 'medium')}
+      ghost={boolean('Ghost', false)}
+      disabled={boolean('Disabled', false)}
+      insetLabel={text('InsetLabel', '10')}
     />)
-  .add("primary with inset", () =>
+  .add("Icon", () =>
     <Button
-      label="Primary"
-      type="primary"
-      insetLabel="10"
+      icon={text('Icon', 'Info')}
+      size={select('Size', sizeOptions, 'medium')}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
     />)
-  .add("primary large", () =>
+  .add("Icon with text", () =>
     <Button
-      label="Primary"
-      type="primary"
-      size="large"
+      icon={text('Icon', 'Info')}
+      label={text('Label', 'Button')}
+      size={select('Size', sizeOptions, 'medium')}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
     />)
-  .add("primary small", () =>
+  .add("Icon with text and an inset", () =>
     <Button
-      label="Primary"
-      type="primary"
-      size="small"
+      icon={text('Icon', 'Info')}
+      label={text('Label', 'Button')}
+      size={select('Size', sizeOptions, 'medium')}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      insetLabel={text('InsetLabel', '10')}
     />)
