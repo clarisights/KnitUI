@@ -40,6 +40,8 @@ const ButtonWrapper: ButtonWrapperType = ({
 }) => {
   const iconOnly = icon && !label
   const typographySize = size === "small" ? typography.size12 : typography.size14
+  const baseFontSize = typographySize.fontSize
+  const baseLineHeight = typographySize.lineHeight
 
   // Get the color theme based on variant and override if explicitly provided
   if (colorTheme && chroma.isValid(colorTheme.background) && chroma.isValid(colorTheme.font)) {
@@ -98,11 +100,11 @@ const ButtonWrapper: ButtonWrapperType = ({
     if (icon && !label) {  // Icon only
       return 0.5
     }
-    return type === "primary" ? typographySize.fontSize : typographySize.fontSize / 2
+    return type === "primary" ? baseFontSize : baseFontSize / 2
   }
 
   const getLeftPadding = () => {
-    let leftPadding = type === "primary" ? typographySize.fontSize : typographySize.fontSize / 2
+    let leftPadding = type === "primary" ? baseFontSize : baseFontSize / 2
     if (icon && !label) {
       leftPadding = 0.5
     } else if (icon && label) {
@@ -131,8 +133,8 @@ const ButtonWrapper: ButtonWrapperType = ({
   const StyledButton = styled.button`
     display: flex;
     align-items: center;
-    font-size: ${`${typographySize.fontSize}rem`};
-    line-height: ${`${typographySize.lineHeight}rem`};
+    font-size: ${`${baseFontSize}rem`};
+    line-height: ${`${baseLineHeight}rem`};
     padding-left: ${`${getLeftPadding()}rem`};
     padding-right: ${`${getRightPadding()}rem`};
     color: ${getFontColor("default").css('hsl')};
@@ -170,7 +172,12 @@ const ButtonWrapper: ButtonWrapperType = ({
       disabled={disabled}
       onClick={() => (onClick && onClick() || href && (window.location.href = href))}
     >
-      {icon ? <StyledIcon type={icon} /> : null}
+      {icon ?
+        <StyledIcon
+          type={icon} />
+        :
+          null
+      }
       {label}
       <ButtonInset label={insetLabel} />
     </StyledButton>
