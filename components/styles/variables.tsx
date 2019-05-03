@@ -5,6 +5,7 @@ const multiply = (a: number, b: number) => a * b
 
 const baseUnit = 10
 export const base = `${baseUnit}px`
+export const baseIncrementUnit = 0.2
 
 // Unit measurements (measurements relative to base unit i.e 10px)
 export const unit12 = 1.2
@@ -79,19 +80,12 @@ export const secondaryPalette = {
 export const shades = {
   // Shades of gray
   white: chroma.hsl(0, 0, 1),
-  gray95: "hsl(0, 0%, 95%)",
-  gray90: "hsl(0, 0%, 90%)",
-  gray60: "hsl(0, 0%, 60%)",
-  gray40: "hsl(0, 0%, 40%)",
-  gray30: "hsl(0, 0%, 30%)",
-  gray20: "hsl(0, 0%, 20%)",
-  black: "hsl(0, 0%, 0%)",
+  gray20: chroma.hsl(0, 0, 0.2),
+  black: chroma.hsl(0, 0, 0),
   transparent: chroma.hsl(0, 0, 0, 0),
 
   // Shades of blue
   lightBlue: chroma.hsl(205, 0.85, 0.65),
-  blue30: "hsl(216, 100%, 30%)",
-  blue20: "hsl(216, 100%, 20%)",
 }
 
 // Properties

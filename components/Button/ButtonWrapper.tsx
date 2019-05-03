@@ -1,7 +1,6 @@
 import React from "react"
 import { Icon } from "../Icon"
 import styled from "styled-components"
-import ButtonInset from "./ButtonInset"
 import * as theme from "../styles/variables"
 import chroma from 'chroma-js'
 
@@ -39,6 +38,7 @@ const ButtonWrapper: ButtonWrapperType = ({
   colorTheme
 }) => {
   const iconOnly = icon && !label
+  const textAndIcon = icon && label
   const typographySize = size === "small" ? typography.size12 : typography.size14
   const baseFontSize = typographySize.fontSize
   const baseLineHeight = typographySize.lineHeight
@@ -76,41 +76,47 @@ const ButtonWrapper: ButtonWrapperType = ({
     return state === "default" ? baseBackgroundColor : lightenedBackgroundColor
   }
 
+  const iconPaddings = {
+    small: 0.3,
+    medium: 0.5,
+    large: 0.7
+  }
+
   const verticalPaddings = {
+    small: 0.1,
+    medium: 0.4,
+    large: 0.6
+  }
+
+  const horizontalPaddings = {
     small: {
-      default: 0.1,
-      iconOnly: 0.3,
+      primary: baseFontSize / 2,
+      secondary: baseFontSize / 2,
     },
     medium: {
-      default: 0.4,
-      iconOnly: 0.5,
+      primary: baseFontSize,
+      secondary: baseFontSize / 2,
     },
     large: {
-      default: 0.6,
-      iconOnly: 0.7,
+      primary: baseFontSize,
+      secondary: baseFontSize / 2,
     }
   }
 
   const getVerticalPadding = () => {
     return iconOnly ?
-      verticalPaddings[size!].iconOnly : verticalPaddings[size!].default
+    iconPaddings[size!] : verticalPaddings[size!]
   }
 
   const getRightPadding = () => {
-    if (icon && !label) {  // Icon only
-      return 0.5
-    }
-    return type === "primary" ? baseFontSize : baseFontSize / 2
+    return horizontalPaddings[size!][type!]
   }
 
   const getLeftPadding = () => {
-    let leftPadding = type === "primary" ? baseFontSize : baseFontSize / 2
-    if (icon && !label) {
-      leftPadding = 0.5
-    } else if (icon && label) {
-      leftPadding = leftPadding / 2
+    if (icon) {
+      return iconPaddings[size!]
     }
-    return leftPadding
+    return horizontalPaddings[size!][type!]
   }
 
   const getBorder = (state: buttonState) => {
@@ -127,7 +133,7 @@ const ButtonWrapper: ButtonWrapperType = ({
         borderColor = ghost ? highlightColor : shades.transparent
         break
     }
-    return `1px solid ${borderColor.css('hsl')}`
+    return `1px solid ${borderColor}`
   }
 
   const StyledButton = styled.button`
@@ -137,8 +143,8 @@ const ButtonWrapper: ButtonWrapperType = ({
     line-height: ${`${baseLineHeight}rem`};
     padding-left: ${`${getLeftPadding()}rem`};
     padding-right: ${`${getRightPadding()}rem`};
-    color: ${getFontColor("default").css('hsl')};
-    background-color: ${getBackgroundColor("default").css('hsl')};
+    color: ${getFontColor("default")};
+    background-color: ${getBackgroundColor("default")};
     padding-top: ${`${getVerticalPadding()}rem`};
     padding-bottom: ${`${getVerticalPadding()}rem`};
     border-radius: 0.4rem;
@@ -163,8 +169,18 @@ const ButtonWrapper: ButtonWrapperType = ({
 
   const StyledIcon = styled(Icon)`
     path {
-      fill: ${baseFontColor.css('hsl')}
+      fill: ${baseFontColor}
     }
+  `
+
+  const ButtonInset = styled.div`
+    display: inline-flex;
+    background-color: ${shades.white};
+    color: ${shades.gray20};
+    font-size: ${`${baseFontSize - theme.baseIncrementUnit}rem`};
+    border-radius: 0.4rem;
+    margin-left: 0.4rem;
+    padding: 0rem 0.3rem 0rem 0.3rem;
   `
 
   return (
@@ -172,14 +188,9 @@ const ButtonWrapper: ButtonWrapperType = ({
       disabled={disabled}
       onClick={() => (onClick && onClick() || href && (window.location.href = href))}
     >
-      {icon ?
-        <StyledIcon
-          type={icon} />
-        :
-          null
-      }
+      {icon ? <StyledIcon type={icon} /> : null }
       {label}
-      <ButtonInset label={insetLabel} />
+      {insetLabel ? <ButtonInset>{insetLabel}</ButtonInset> : null}
     </StyledButton>
 )}
 
