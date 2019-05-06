@@ -1,8 +1,8 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import { Button } from "./index"
-import { withKnobs, text, boolean, select } from '@storybook/addon-knobs'
-import { action, configureActions } from '@storybook/addon-actions'
+import { withKnobs, text, boolean, select, object } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
 const Readme = require("./README.md")
 
 const stories = storiesOf('Buttons', module)
@@ -94,4 +94,14 @@ stories
       bare={boolean('Bare', false)}
       insetLabel={text('InsetLabel', '10')}
       onClick={action('button-click')}
+    />)
+    .add("With a custom color scheme", () =>
+    <Button
+      icon={text('Icon', 'Info')}
+      label={text('Label', 'Button')}
+      size={select('Size', sizeOptions, 'medium')}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      onClick={action('button-click')}
+      colorTheme={object("Color theme", {background: "#9242f4", font: "#f4eb41"})}
     />)

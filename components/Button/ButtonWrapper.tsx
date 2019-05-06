@@ -56,7 +56,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   const baseLineHeight = typographySize.lineHeight
 
   // Get the color theme based on variant and override if explicitly provided
-  if (colorTheme && chroma.isValid(colorTheme.background) && chroma.isValid(colorTheme.font)) {
+  if (colorTheme && chroma.valid(colorTheme.background) && chroma.valid(colorTheme.font)) {
     colorTheme.background = chroma(colorTheme.background)
     colorTheme.font = chroma(colorTheme.font)
   } else {
