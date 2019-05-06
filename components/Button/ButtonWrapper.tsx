@@ -30,7 +30,7 @@ interface ButtonWrapperProps {
   /** A location to navigate to on click of the button */
   href?: string,
   /** An event handler to be called on click of the button */
-  onClick?: Function,
+  onClick?: (event) => void,
   /** A custom color theme that overrides the defaults */
   colorTheme?: { background: any, font: any}
 }
@@ -207,7 +207,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   return (
     <StyledButton
       disabled={disabled}
-      onClick={() => (onClick && onClick() || href && (window.location.href = href))}
+      onClick={(e) => (onClick && onClick(e) || href && (window.location.href = href))}
     >
       {icon ? <StyledIcon type={icon} /> : null }
       {label}
