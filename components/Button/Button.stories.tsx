@@ -2,6 +2,7 @@ import React from "react"
 import { storiesOf } from "@storybook/react"
 import { Button } from "./index"
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs'
+import { action, configureActions } from '@storybook/addon-actions'
 const Readme = require("./README.md")
 
 const stories = storiesOf('Buttons', module)
@@ -35,6 +36,7 @@ stories
       ghost={boolean('Ghost', false)}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
+      onClick={action('button-click')}
     />)
   .add("Simple secondary with text", () =>
     <Button
@@ -44,6 +46,7 @@ stories
       ghost={boolean('Ghost', false)}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
+      onClick={action('button-click')}
     />)
   .add("Ghost (inverted color scheme)", () =>
     <Button
@@ -53,6 +56,7 @@ stories
       ghost={boolean('Ghost', true)}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
+      onClick={action('button-click')}
     />)
   .add("With an inset", () =>
     <Button
@@ -62,6 +66,7 @@ stories
       ghost={boolean('Ghost', false)}
       disabled={boolean('Disabled', false)}
       insetLabel={text('InsetLabel', '10')}
+      onClick={action('button-click')}
     />)
   .add("Icon", () =>
     <Button
@@ -69,6 +74,7 @@ stories
       size={select('Size', sizeOptions, 'medium')}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
+      onClick={action('button-click')}
     />)
   .add("Icon with text", () =>
     <Button
@@ -77,6 +83,7 @@ stories
       size={select('Size', sizeOptions, 'medium')}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
+      onClick={action('button-click')}
     />)
   .add("Icon with text and an inset", () =>
     <Button
@@ -86,4 +93,5 @@ stories
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
       insetLabel={text('InsetLabel', '10')}
+      onClick={action('button-click')}
     />)
