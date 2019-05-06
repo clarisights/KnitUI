@@ -31,7 +31,11 @@ interface ButtonWrapperProps {
   href?: string,
   /** An event handler to be called on click of the button */
   onClick?: (event) => void,
-  /** A custom color theme that overrides the defaults */
+  /** A custom color theme that overrides the defaults, The color theme
+   * should be passed in the form of an object containing two properties,
+   * background and font and the values should be a valid hex string or
+   * css rgb format.
+   */
   colorTheme?: { background: any, font: any}
 }
 

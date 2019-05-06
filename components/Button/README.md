@@ -1,3 +1,12 @@
-# hello
+# Button
 
-test
+## Usage
+
+```javascript
+import { Button } from "./index"
+
+<Button
+  label="Primary"
+  type="primary"
+/>)
+```
