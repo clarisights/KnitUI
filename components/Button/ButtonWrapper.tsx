@@ -220,11 +220,15 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     }
   `
 
+  const insetFontSize = baseFontSize - theme.baseIncrementUnit
+  const lowerTypographyUnit = typography[`size${insetFontSize * 10}`]
+  const insetLineHeight = lowerTypographyUnit && lowerTypographyUnit.lineHeight || baseLineHeight
   const ButtonInset = styled.div`
     display: inline-flex;
     background-color: ${colorTheme.insetBackground};
     color: ${colorTheme.insetFont};
-    font-size: ${`${baseFontSize - theme.baseIncrementUnit}rem`};
+    font-size: ${`${insetFontSize}rem`};
+    line-height: ${`${insetLineHeight}rem`};
     border-radius: 0.4rem;
     margin-left: 0.4rem;
     padding: 0rem 0.3rem 0rem 0.3rem;
