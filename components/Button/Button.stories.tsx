@@ -19,6 +19,13 @@ const sizeOptions = {
   'Large': 'large'
 }
 
+const colorThemeOptions = {
+  'Neutral': 'neutral',
+  "Danger": "danger",
+  "Warning": "warning",
+  "Unsaved": "unsaved"
+}
+
 stories
   .addParameters({
     readme: {
@@ -33,6 +40,7 @@ stories
       label={text('Label', 'Button')}
       type={select('Type', typeOptions, 'primary')}
       size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
       ghost={boolean('Ghost', false)}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
@@ -43,6 +51,7 @@ stories
       label={text('Label', 'Button')}
       type={select('Type', typeOptions, 'primary')}
       size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
       ghost={boolean('Ghost', false)}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
@@ -53,6 +62,7 @@ stories
       label={text('Label', 'Button')}
       type={select('Type', typeOptions, 'primary')}
       size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
       ghost={boolean('Ghost', true)}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
@@ -63,6 +73,7 @@ stories
       label={text('Label', 'Button')}
       type={select('Type', typeOptions, 'primary')}
       size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
       ghost={boolean('Ghost', false)}
       disabled={boolean('Disabled', false)}
       insetLabel={text('InsetLabel', '10')}
@@ -72,6 +83,7 @@ stories
     <Button
       icon={text('Icon', 'Info')}
       size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
       onClick={action('button-click')}
@@ -81,6 +93,7 @@ stories
       icon={text('Icon', 'Info')}
       label={text('Label', 'Button')}
       size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
       onClick={action('button-click')}
@@ -90,6 +103,7 @@ stories
       icon={text('Icon', 'Info')}
       label={text('Label', 'Button')}
       size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
       insetLabel={text('InsetLabel', '10')}
@@ -103,5 +117,13 @@ stories
       disabled={boolean('Disabled', false)}
       bare={boolean('Bare', false)}
       onClick={action('button-click')}
-      colorTheme={object("Color theme", {background: "#9242f4", font: "#f4eb41"})}
+      insetLabel={text('InsetLabel', '10')}
+      colorTheme={object("Color theme",
+        {
+          background: "#9242f4",
+          font: "#f4eb41",
+          insetBackground: "#000000",
+          insetFont: "#ffffff"
+        }
+      )}
     />)
