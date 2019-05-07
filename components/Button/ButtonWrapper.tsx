@@ -6,15 +6,34 @@ import chroma from 'chroma-js'
 
 const { shades, typography, secondaryPalette } = theme
 
-type buttonState = "default" | "hover" | "active" | "focus" | "disabled"
+type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
+
+type ColorPreset = "neutral" | "danger" | "success" | "warning" | "unsaved"
+
+const DEFAULT_COLOR_THEME = "neutral"
+
+const DEFAULT_INSET_BG_COLOR = shades.white
+const DEFAULT_INSET_FONT_COLOR = shades.gray20
+
+interface IColorTheme {
+  background: any,
+  font: any,
+  insetBackground?: any,
+  insetFont?: any
+}
 
 interface ButtonWrapperProps {
   /** The text label to be shown on the button */
   label?: string
   /** Indicates the importance of the button's actions */
   type?: "primary" | "secondary",
-  /** Indicates the state of an action */
-  variant?: "neutral" | "danger" | "success" | "warning" | "unsaved",
+  /** Indicates the state of an action. Can be a preset string or an object
+   * representing custom color theme that overrides the defaults,
+   * The color theme should be passed in the form of an object containing two properties,
+   * background and font and the values should be a valid hex string or
+   * css rgb format.
+   */
+  colorTheme?: ColorPreset | IColorTheme,
   /** Inverted color scheme */
   ghost?: boolean,
   /** Physical area occupied on the screen */
@@ -30,18 +49,11 @@ interface ButtonWrapperProps {
   /** A location to navigate to on click of the button */
   href?: string,
   /** An event handler to be called on click of the button */
-  onClick?: (event) => void,
-  /** A custom color theme that overrides the defaults, The color theme
-   * should be passed in the form of an object containing two properties,
-   * background and font and the values should be a valid hex string or
-   * css rgb format.
-   */
-  colorTheme?: { background: any, font: any}
+  onClick?: (event) => void
 }
 
 const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   label,
-  variant,
   type,
   ghost,
   size,
@@ -54,17 +66,27 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   colorTheme
 }) => {
   const iconOnly = icon && !label
-  const textAndIcon = icon && label
   const typographySize = size === "small" ? typography.size12 : typography.size14
   const baseFontSize = typographySize.fontSize
   const baseLineHeight = typographySize.lineHeight
 
   // Get the color theme based on variant and override if explicitly provided
-  if (colorTheme && chroma.valid(colorTheme.background) && chroma.valid(colorTheme.font)) {
-    colorTheme.background = chroma(colorTheme.background)
-    colorTheme.font = chroma(colorTheme.font)
+  if (typeof colorTheme === "string") {
+    colorTheme = secondaryPalette[colorTheme!]
   } else {
-    colorTheme = secondaryPalette[variant!]
+    colorTheme = colorTheme || secondaryPalette[DEFAULT_COLOR_THEME]
+    if (colorTheme && chroma.valid(colorTheme.background) && chroma.valid(colorTheme.font)) {
+      colorTheme.background = chroma(colorTheme.background)
+      colorTheme.font = chroma(colorTheme.font)
+
+      // Inset color schemes are optional and will be defaulted to a value if not supplied
+      colorTheme.insetBackground =
+        (chroma.valid(colorTheme.insetBackground) && chroma(colorTheme.insetBackground))
+        || DEFAULT_INSET_BG_COLOR
+      colorTheme.font =
+        (chroma.valid(colorTheme.font) && chroma(colorTheme.font))
+        || DEFAULT_INSET_FONT_COLOR
+    }
   }
 
   // Ghost buttons have their font and background colors interchanged
@@ -74,7 +96,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   const lightenedFontColor = baseFontColor.set('hsl.l', '+0.3') // Used for ghost
   const highlightColor = shades.lightBlue
 
-  const getFontColor = (state: buttonState) => {
+  const getFontColor = (state: ButtonState) => {
     switch (state) {
       case "default":
         if (bare) { return baseBackgroundColor }
@@ -88,7 +110,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     }
   }
 
-  const getBackgroundColor = (state: buttonState) => {
+  const getBackgroundColor = (state: ButtonState) => {
     if (bare) {
       return state === "default" ? shades.transparent : shades.gray95
     }
@@ -144,7 +166,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     return horizontalPaddings[size!][type!]
   }
 
-  const getBorder = (state: buttonState) => {
+  const getBorder = (state: ButtonState) => {
     let borderColor
     switch (state) {
       case "active":
@@ -200,8 +222,8 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
 
   const ButtonInset = styled.div`
     display: inline-flex;
-    background-color: ${shades.white};
-    color: ${shades.gray20};
+    background-color: ${colorTheme.insetBackground};
+    color: ${colorTheme.insetFont};
     font-size: ${`${baseFontSize - theme.baseIncrementUnit}rem`};
     border-radius: 0.4rem;
     margin-left: 0.4rem;
@@ -221,7 +243,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
 
 ButtonWrapper.defaultProps = {
   type: "primary",
-  variant: "neutral",
+  colorTheme: DEFAULT_COLOR_THEME,
   ghost: false,
   disabled: false,
   size: "medium",
