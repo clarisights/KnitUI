@@ -69,7 +69,7 @@ export const secondaryPalette = {
   },
   warning: {
     background: chroma.hsl(47, 1, 0.5),
-    font: chroma.hsl(0, 0, 1),
+    font: chroma.hsl(0, 0, 0),
   },
   unsaved: {
     background: chroma.hsl(288, 0.2, 0.35),

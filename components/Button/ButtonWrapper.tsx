@@ -78,16 +78,16 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     if (colorTheme && chroma.valid(colorTheme.background) && chroma.valid(colorTheme.font)) {
       colorTheme.background = chroma(colorTheme.background)
       colorTheme.font = chroma(colorTheme.font)
-
-      // Inset color schemes are optional and will be defaulted to a value if not supplied
-      colorTheme.insetBackground =
-        (chroma.valid(colorTheme.insetBackground) && chroma(colorTheme.insetBackground))
-        || DEFAULT_INSET_BG_COLOR
-      colorTheme.font =
-        (chroma.valid(colorTheme.font) && chroma(colorTheme.font))
-        || DEFAULT_INSET_FONT_COLOR
     }
   }
+
+  // Inset color schemes are optional and will be defaulted to a value if not supplied
+  colorTheme.insetBackground =
+    (chroma.valid(colorTheme.insetBackground) && chroma(colorTheme.insetBackground))
+    || DEFAULT_INSET_BG_COLOR
+  colorTheme.insetFont =
+    (chroma.valid(colorTheme.insetFont) && chroma(colorTheme.insetFont))
+    || DEFAULT_INSET_FONT_COLOR
 
   // Ghost buttons have their font and background colors interchanged
   const baseFontColor = ghost ? colorTheme.background : colorTheme.font
