@@ -1,34 +1,59 @@
 import React from "react"
 import { Button } from "../index"
-import renderer from 'react-test-renderer';
+import {render, cleanup} from 'react-testing-library';
+import 'jest-styled-components'
+import 'jest-dom/extend-expect'
+
+
+afterEach(cleanup)
 
 describe("Button", () => {
-  it("renders a primary button with a label correctly", () => {
-    const tree = renderer.create(<Button label="button" />).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-  it("renders a secondary button with a label correctly", () => {
-    const tree = renderer.create(<Button label="button" type="secondary" />).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-  it("renders a ghost button correctly", () => {
-    const tree = renderer.create(<Button label="button" ghost/>).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-  it("renders a button with inset correctly", () => {
-    const tree = renderer.create(<Button label="button" insetLabel={"10"}/>).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-  it("renders a button with an icon correctly", () => {
-    const tree = renderer.create(<Button label="button" icon="Info"/>).toJSON()
-    expect(tree).toMatchSnapshot()
-  }),
-  it("renders a button with text and an icon correctly", () => {
-    const tree = renderer.create(<Button label="button" icon="Info"/>).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-  it("renders a button with text, icon and inset correctly", () => {
-    const tree = renderer.create(<Button label="button" icon="Info" insetLabel={"10"}/>).toJSON()
-    expect(tree).toMatchSnapshot()
+  const sizes = ["small", "medium", "large"]
+  sizes.forEach(size => {
+    describe(`with size ${size}`, () => {
+      it("renders a primary variant with a label correctly", () => {
+        const { asFragment } = render(
+          <Button label="button" size={size} />,
+        )
+        expect(asFragment()).toMatchSnapshot()
+      })
+    
+      it("renders a secondary variant with a label correctly", () => {
+        const { asFragment } = render(
+          <Button label="button" type="secondary" size={size} />,
+        )
+        expect(asFragment()).toMatchSnapshot()
+      })
+    
+      it("renders a ghost ghost correctly", () => {
+        const { asFragment } = render(<Button label="button" size={size} ghost/>)
+        expect(asFragment()).toMatchSnapshot()
+      })
+    
+      it("renders with inset correctly", () => {
+        const { asFragment } = render(<Button label="button" size={size} insetLabel={"10"}/>)
+        expect(asFragment()).toMatchSnapshot()
+      })
+    
+      it("renders with an icon correctly", () => {
+        const { asFragment } = render(<Button label="button" size={size} icon="Info"/>)
+        expect(asFragment()).toMatchSnapshot()
+      })
+    
+      it("renders with text and an icon correctly", () => {
+        const { asFragment } = render(<Button label="button" size={size} icon="Info"/>)
+        expect(asFragment()).toMatchSnapshot()
+      })
+    
+      it("renders with text, icon and inset correctly", () => {
+        const { asFragment } = render(<Button label="button" size={size} icon="Info" insetLabel={"10"}/>)
+        expect(asFragment()).toMatchSnapshot()
+      })
+
+      it("renders with text, icon and inset correctly", () => {
+        const { asFragment } = render(<Button label="button" size={size} icon="Info" insetLabel={"10"}/>)
+        expect(asFragment()).toMatchSnapshot()
+      })
+    })
   })
 })
