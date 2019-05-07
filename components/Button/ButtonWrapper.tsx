@@ -183,6 +183,20 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     return `1px solid ${borderColor}`
   }
 
+  const getIconColor = (state) => {
+    if (!bare) {
+      return baseFontColor
+    }
+    switch (state) {
+      case "focus":
+      case "active":
+        return lightenedBackgroundColor
+      case "default":
+      default:
+        return baseBackgroundColor
+    }
+  }
+
   const StyledButton = styled.button`
     display: flex;
     align-items: center;
@@ -198,11 +212,17 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     border-style: none;
     box-sizing: border-box;
     border: ${getBorder("default")};
+    svg path {
+      fill: ${getIconColor("default")};
+    }
     :hover, :active, :focus {
       background-color: ${getBackgroundColor("hover")};
     }
     :active, :focus{
       border: ${getBorder("active")};
+      svg path {
+        fill: ${getIconColor("focus")};
+      }
     }
     :hover {
       border: ${getBorder("hover")};
@@ -211,12 +231,6 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     :disabled {
       opacity: 0.5;
       cursor: not-allowed;
-    }
-  `
-
-  const StyledIcon = styled(Icon)`
-    path {
-      fill: ${baseFontColor}
     }
   `
 
@@ -239,7 +253,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       disabled={disabled}
       onClick={(e) => (onClick && onClick(e) || href && (window.location.href = href))}
     >
-      {icon ? <StyledIcon type={icon} /> : null }
+      {icon ? <Icon type={icon} /> : null }
       {label}
       {insetLabel ? <ButtonInset>{insetLabel}</ButtonInset> : null}
     </StyledButton>
