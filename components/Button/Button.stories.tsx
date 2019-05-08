@@ -109,7 +109,7 @@ stories
       insetLabel={text('InsetLabel', '10')}
       onClick={action('button-click')}
     />)
-    .add("With a custom color scheme", () =>
+  .add("With a custom color scheme", () =>
     <Button
       icon={text('Icon', 'Info')}
       label={text('Label', 'Button')}
@@ -127,3 +127,14 @@ stories
         }
       )}
     />)
+    .add("With an href", () =>
+      <Button
+        icon={text('Icon', 'Info')}
+        label={text('Label', 'Button')}
+        size={select('Size', sizeOptions, 'medium')}
+        colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+        disabled={boolean('Disabled', false)}
+        bare={boolean('Bare', false)}
+        insetLabel={text('InsetLabel', '10')}
+        href="/sample"
+      />)

@@ -1352,3 +1352,1242 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   </button>
 </DocumentFragment>
 `;
+
+exports[`Button with size large renders a bare variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders a ghost variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #ffffff;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #002966;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #002966;
+}
+
+.c0:hover {
+  border: 1px solid #0066ff;
+  color: #0066ff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders a primary variant with a label correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders with a bare icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  height: 28px;
+  width: 28px;
+}
+
+.c1 svg {
+  padding: 2px;
+  margin: 2px;
+  height: 28px;
+  width: 28px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      type="Info"
+    >
+      <svg
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <rect
+            height="64"
+            width="64"
+          />
+          <path
+            d="M32,11 C20.3625,11 11,20.3625 11,32 C11,43.6375 20.3625,53 32,53 C43.6375,53 53,43.6375 53,32 C53,20.3625 43.6375,11 32,11 Z M32,18 C34.2666667,18 36,19.7333333 36,22 C36,24.2666667 34.2666667,26 32,26 C29.7333333,26 28,24.2666667 28,22 C28,19.7333333 29.7333333,18 32,18 L32,18 Z M38,43.9714286 C38,44.5428571 37.56,45 36.9,45 L28.1,45 C27.55,45 27,44.6571429 27,43.9714286 L27,41.6857143 C27,41.1142857 27.44,40.4285714 28.1,40.4285714 C28.65,40.4285714 29.2,40.0857143 29.2,39.4 L29.2,34.8285714 C29.2,34.2571429 28.76,33.5714286 28.1,33.5714286 C27.55,33.5714286 27,33.2285714 27,32.5428571 L27,30.2571429 C27,29.6857143 27.44,29 28.1,29 L34.7,29 C35.25,29 35.8,29.5714286 35.8,30.2571429 L35.8,39.4 C35.8,39.9714286 36.24,40.4285714 36.9,40.4285714 C37.45,40.4285714 38,41 38,41.6857143 L38,43.9714286 Z"
+            fill="#000"
+          />
+        </g>
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders with an icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  height: 28px;
+  width: 28px;
+}
+
+.c1 svg {
+  padding: 2px;
+  margin: 2px;
+  height: 28px;
+  width: 28px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      type="Info"
+    >
+      <svg
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <rect
+            height="64"
+            width="64"
+          />
+          <path
+            d="M32,11 C20.3625,11 11,20.3625 11,32 C11,43.6375 20.3625,53 32,53 C43.6375,53 53,43.6375 53,32 C53,20.3625 43.6375,11 32,11 Z M32,18 C34.2666667,18 36,19.7333333 36,22 C36,24.2666667 34.2666667,26 32,26 C29.7333333,26 28,24.2666667 28,22 C28,19.7333333 29.7333333,18 32,18 L32,18 Z M38,43.9714286 C38,44.5428571 37.56,45 36.9,45 L28.1,45 C27.55,45 27,44.6571429 27,43.9714286 L27,41.6857143 C27,41.1142857 27.44,40.4285714 28.1,40.4285714 C28.65,40.4285714 29.2,40.0857143 29.2,39.4 L29.2,34.8285714 C29.2,34.2571429 28.76,33.5714286 28.1,33.5714286 C27.55,33.5714286 27,33.2285714 27,32.5428571 L27,30.2571429 C27,29.6857143 27.44,29 28.1,29 L34.7,29 C35.25,29 35.8,29.5714286 35.8,30.2571429 L35.8,39.4 C35.8,39.9714286 36.24,40.4285714 36.9,40.4285714 C37.45,40.4285714 38,41 38,41.6857143 L38,43.9714286 Z"
+            fill="#000"
+          />
+        </g>
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders a bare variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders a ghost variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #ffffff;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #002966;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #002966;
+}
+
+.c0:hover {
+  border: 1px solid #0066ff;
+  color: #0066ff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders a primary variant with a label correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders with a bare icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  height: 28px;
+  width: 28px;
+}
+
+.c1 svg {
+  padding: 2px;
+  margin: 2px;
+  height: 28px;
+  width: 28px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      type="Info"
+    >
+      <svg
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <rect
+            height="64"
+            width="64"
+          />
+          <path
+            d="M32,11 C20.3625,11 11,20.3625 11,32 C11,43.6375 20.3625,53 32,53 C43.6375,53 53,43.6375 53,32 C53,20.3625 43.6375,11 32,11 Z M32,18 C34.2666667,18 36,19.7333333 36,22 C36,24.2666667 34.2666667,26 32,26 C29.7333333,26 28,24.2666667 28,22 C28,19.7333333 29.7333333,18 32,18 L32,18 Z M38,43.9714286 C38,44.5428571 37.56,45 36.9,45 L28.1,45 C27.55,45 27,44.6571429 27,43.9714286 L27,41.6857143 C27,41.1142857 27.44,40.4285714 28.1,40.4285714 C28.65,40.4285714 29.2,40.0857143 29.2,39.4 L29.2,34.8285714 C29.2,34.2571429 28.76,33.5714286 28.1,33.5714286 C27.55,33.5714286 27,33.2285714 27,32.5428571 L27,30.2571429 C27,29.6857143 27.44,29 28.1,29 L34.7,29 C35.25,29 35.8,29.5714286 35.8,30.2571429 L35.8,39.4 C35.8,39.9714286 36.24,40.4285714 36.9,40.4285714 C37.45,40.4285714 38,41 38,41.6857143 L38,43.9714286 Z"
+            fill="#000"
+          />
+        </g>
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders with an icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  height: 28px;
+  width: 28px;
+}
+
+.c1 svg {
+  padding: 2px;
+  margin: 2px;
+  height: 28px;
+  width: 28px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      type="Info"
+    >
+      <svg
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <rect
+            height="64"
+            width="64"
+          />
+          <path
+            d="M32,11 C20.3625,11 11,20.3625 11,32 C11,43.6375 20.3625,53 32,53 C43.6375,53 53,43.6375 53,32 C53,20.3625 43.6375,11 32,11 Z M32,18 C34.2666667,18 36,19.7333333 36,22 C36,24.2666667 34.2666667,26 32,26 C29.7333333,26 28,24.2666667 28,22 C28,19.7333333 29.7333333,18 32,18 L32,18 Z M38,43.9714286 C38,44.5428571 37.56,45 36.9,45 L28.1,45 C27.55,45 27,44.6571429 27,43.9714286 L27,41.6857143 C27,41.1142857 27.44,40.4285714 28.1,40.4285714 C28.65,40.4285714 29.2,40.0857143 29.2,39.4 L29.2,34.8285714 C29.2,34.2571429 28.76,33.5714286 28.1,33.5714286 C27.55,33.5714286 27,33.2285714 27,32.5428571 L27,30.2571429 C27,29.6857143 27.44,29 28.1,29 L34.7,29 C35.25,29 35.8,29.5714286 35.8,30.2571429 L35.8,39.4 C35.8,39.9714286 36.24,40.4285714 36.9,40.4285714 C37.45,40.4285714 38,41 38,41.6857143 L38,43.9714286 Z"
+            fill="#000"
+          />
+        </g>
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders a bare variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders a ghost variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #002966;
+  background-color: #ffffff;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #002966;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #002966;
+}
+
+.c0:hover {
+  border: 1px solid #0066ff;
+  color: #0066ff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders a primary variant with a label correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders with a bare icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  height: 28px;
+  width: 28px;
+}
+
+.c1 svg {
+  padding: 2px;
+  margin: 2px;
+  height: 28px;
+  width: 28px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.6rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      type="Info"
+    >
+      <svg
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <rect
+            height="64"
+            width="64"
+          />
+          <path
+            d="M32,11 C20.3625,11 11,20.3625 11,32 C11,43.6375 20.3625,53 32,53 C43.6375,53 53,43.6375 53,32 C53,20.3625 43.6375,11 32,11 Z M32,18 C34.2666667,18 36,19.7333333 36,22 C36,24.2666667 34.2666667,26 32,26 C29.7333333,26 28,24.2666667 28,22 C28,19.7333333 29.7333333,18 32,18 L32,18 Z M38,43.9714286 C38,44.5428571 37.56,45 36.9,45 L28.1,45 C27.55,45 27,44.6571429 27,43.9714286 L27,41.6857143 C27,41.1142857 27.44,40.4285714 28.1,40.4285714 C28.65,40.4285714 29.2,40.0857143 29.2,39.4 L29.2,34.8285714 C29.2,34.2571429 28.76,33.5714286 28.1,33.5714286 C27.55,33.5714286 27,33.2285714 27,32.5428571 L27,30.2571429 C27,29.6857143 27.44,29 28.1,29 L34.7,29 C35.25,29 35.8,29.5714286 35.8,30.2571429 L35.8,39.4 C35.8,39.9714286 36.24,40.4285714 36.9,40.4285714 C37.45,40.4285714 38,41 38,41.6857143 L38,43.9714286 Z"
+            fill="#000"
+          />
+        </g>
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders with an icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  height: 28px;
+  width: 28px;
+}
+
+.c1 svg {
+  padding: 2px;
+  margin: 2px;
+  height: 28px;
+  width: 28px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      type="Info"
+    >
+      <svg
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <rect
+            height="64"
+            width="64"
+          />
+          <path
+            d="M32,11 C20.3625,11 11,20.3625 11,32 C11,43.6375 20.3625,53 32,53 C43.6375,53 53,43.6375 53,32 C53,20.3625 43.6375,11 32,11 Z M32,18 C34.2666667,18 36,19.7333333 36,22 C36,24.2666667 34.2666667,26 32,26 C29.7333333,26 28,24.2666667 28,22 C28,19.7333333 29.7333333,18 32,18 L32,18 Z M38,43.9714286 C38,44.5428571 37.56,45 36.9,45 L28.1,45 C27.55,45 27,44.6571429 27,43.9714286 L27,41.6857143 C27,41.1142857 27.44,40.4285714 28.1,40.4285714 C28.65,40.4285714 29.2,40.0857143 29.2,39.4 L29.2,34.8285714 C29.2,34.2571429 28.76,33.5714286 28.1,33.5714286 C27.55,33.5714286 27,33.2285714 27,32.5428571 L27,30.2571429 C27,29.6857143 27.44,29 28.1,29 L34.7,29 C35.25,29 35.8,29.5714286 35.8,30.2571429 L35.8,39.4 C35.8,39.9714286 36.24,40.4285714 36.9,40.4285714 C37.45,40.4285714 38,41 38,41.6857143 L38,43.9714286 Z"
+            fill="#000"
+          />
+        </g>
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;

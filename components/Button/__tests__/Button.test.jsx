@@ -1,6 +1,6 @@
 import React from "react"
 import { Button } from "../index"
-import {render, cleanup} from 'react-testing-library';
+import {render, cleanup, fireEvent} from 'react-testing-library';
 import 'jest-styled-components'
 import 'jest-dom/extend-expect'
 
@@ -18,7 +18,6 @@ describe("Button", () => {
           <Button
             label="button"
             size={size}
-            colorTheme={preset}
           />,)
         expect(asFragment()).toMatchSnapshot()
       })
@@ -29,7 +28,6 @@ describe("Button", () => {
             label="button"
             size={size}
             ghost
-            colorTheme={preset}
           />)
         expect(asFragment()).toMatchSnapshot()
       })
@@ -40,7 +38,6 @@ describe("Button", () => {
             label="button"
             size={size}
             bare
-            colorTheme={preset}
           />)
         expect(asFragment()).toMatchSnapshot()
       })
@@ -51,7 +48,6 @@ describe("Button", () => {
             label="button"
             size={size}
             icon="Info"
-            colorTheme={preset}
           />)
         expect(asFragment()).toMatchSnapshot()
       })
@@ -62,7 +58,6 @@ describe("Button", () => {
             label="button"
             size={size}
             icon="Info"
-            colorTheme={preset}
             bare
           />)
         expect(asFragment()).toMatchSnapshot()
@@ -122,5 +117,28 @@ describe("Button", () => {
         />)
       expect(asFragment()).toMatchSnapshot()
     })
+  })
+
+  it('should call the provided onClick function', () => {
+    const onClick = jest.fn()
+    const { getByText } = render(
+      <Button
+        label="button"
+        onClick={onClick}
+      />)
+    fireEvent.click(getByText("button"))
+    expect(onClick).toBeCalled()
+    expect(onClick.mock.calls[0].length).toBe(1)
+  })
+
+  it('should navigate to the given href location when provided', () => {
+    window.location.assign = jest.fn()
+    const { getByText } = render(
+      <Button
+        label="button"
+        href="/sample"
+      />)
+    fireEvent.click(getByText("button"))
+    expect(window.location.assign).toBeCalledWith("/sample")
   })
 })

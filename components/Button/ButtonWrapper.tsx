@@ -251,7 +251,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   return (
     <StyledButton
       disabled={disabled}
-      onClick={(e) => (onClick && onClick(e) || href && (window.location.href = href))}
+      onClick={(e) => (onClick && onClick(e) || href && (window.location.assign(href)))}
     >
       {icon ? <Icon type={icon} /> : null }
       {label}
