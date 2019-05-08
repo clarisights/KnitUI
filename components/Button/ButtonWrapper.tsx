@@ -40,10 +40,10 @@ interface ButtonWrapperProps {
   size?: "small" | "medium" | "large",
   /** Whether the button should be disabled */
   disabled?: boolean,
-  /** An icon type to be rendered in the button */
-  icon?: string,
   /** Only text/icon stripping the background */
   bare?: boolean,
+  /** An icon type to be rendered in the button */
+  icon?: string,
   /** An inset value, typically used for showing notifications */
   insetLabel?: string,
   /** A location to navigate to on click of the button */
