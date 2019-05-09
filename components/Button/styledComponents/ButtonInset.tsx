@@ -1,7 +1,15 @@
 import React from 'react'
 import styled from "styled-components"
 
-const ButtonInset = ({
+interface ButtonInsetProps {
+  label: string,
+  backgroundColor: string,
+  fontColor: string,
+  fontSize: string,
+  lineHeight: string
+}
+
+const ButtonInset: React.FC<ButtonInsetProps> = ({
   label,
   backgroundColor,
   fontColor,
