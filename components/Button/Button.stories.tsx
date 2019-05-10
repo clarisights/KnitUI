@@ -1,9 +1,32 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { Button } from "../../components"
+import { Button } from "./index"
+import { withKnobs, text, boolean, select, object } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
 const Readme = require("./README.md")
 
-storiesOf("Button", module)
+const stories = storiesOf('Buttons', module)
+stories.addDecorator(withKnobs)
+
+const typeOptions = {
+  'Primary': 'primary',
+  'Secondary': 'secondary'
+}
+
+const sizeOptions = {
+  'Small': 'small',
+  'Medium': 'medium',
+  'Large': 'large'
+}
+
+const colorThemeOptions = {
+  'Neutral': 'neutral',
+  "Danger": "danger",
+  "Warning": "warning",
+  "Unsaved": "unsaved"
+}
+
+stories
   .addParameters({
     readme: {
       // Show readme before story
@@ -12,5 +35,106 @@ storiesOf("Button", module)
       sidebar: Readme,
     },
   })
-  .add("with text", () => <Button name="test" />)
-  .add("with some emoji", () => <Button name="😀 😎 👍 💯" />)
+  .add("Simple primary with text", () =>
+    <Button
+      label={text('Label', 'Button')}
+      type={select('Type', typeOptions, 'primary')}
+      size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+      ghost={boolean('Ghost', false)}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      onClick={action('button-click')}
+    />)
+  .add("Simple secondary with text", () =>
+    <Button
+      label={text('Label', 'Button')}
+      type={select('Type', typeOptions, 'primary')}
+      size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+      ghost={boolean('Ghost', false)}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      onClick={action('button-click')}
+    />)
+  .add("Ghost (inverted color scheme)", () =>
+    <Button
+      label={text('Label', 'Button')}
+      type={select('Type', typeOptions, 'primary')}
+      size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+      ghost={boolean('Ghost', true)}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      onClick={action('button-click')}
+    />)
+  .add("With an inset", () =>
+    <Button
+      label={text('Label', 'Button')}
+      type={select('Type', typeOptions, 'primary')}
+      size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+      ghost={boolean('Ghost', false)}
+      disabled={boolean('Disabled', false)}
+      insetLabel={text('InsetLabel', '10')}
+      onClick={action('button-click')}
+    />)
+  .add("Icon", () =>
+    <Button
+      icon={text('Icon', 'Info')}
+      size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      onClick={action('button-click')}
+    />)
+  .add("Icon with text", () =>
+    <Button
+      icon={text('Icon', 'Info')}
+      label={text('Label', 'Button')}
+      size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      onClick={action('button-click')}
+    />)
+  .add("Icon with text and an inset", () =>
+    <Button
+      icon={text('Icon', 'Info')}
+      label={text('Label', 'Button')}
+      size={select('Size', sizeOptions, 'medium')}
+      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      insetLabel={text('InsetLabel', '10')}
+      onClick={action('button-click')}
+    />)
+  .add("With a custom color scheme", () =>
+    <Button
+      icon={text('Icon', 'Info')}
+      label={text('Label', 'Button')}
+      size={select('Size', sizeOptions, 'medium')}
+      disabled={boolean('Disabled', false)}
+      bare={boolean('Bare', false)}
+      onClick={action('button-click')}
+      insetLabel={text('InsetLabel', '10')}
+      colorTheme={object("Color theme",
+        {
+          background: "#9242f4",
+          font: "#f4eb41",
+          insetBackground: "#000000",
+          insetFont: "#ffffff"
+        }
+      )}
+    />)
+    .add("With an href", () =>
+      <Button
+        icon={text('Icon', 'Info')}
+        label={text('Label', 'Button')}
+        size={select('Size', sizeOptions, 'medium')}
+        colorTheme={select('Color theme', colorThemeOptions, "neutral")}
+        disabled={boolean('Disabled', false)}
+        bare={boolean('Bare', false)}
+        insetLabel={text('InsetLabel', '10')}
+        href="/sample"
+      />)
