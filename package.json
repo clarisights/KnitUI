@@ -86,6 +86,7 @@
   "dependencies": {
     "@storybook/addon-backgrounds": "^5.0.10",
     "@types/styled-components": "^4.1.14",
+    "rc-dialog": "^7.3.1",
     "rc-switch": "^1.9.0",
     "styled-components": "^4.2.0"
   }
