@@ -2,7 +2,7 @@ import Dialog from 'rc-dialog'
 import styled from 'styled-components'
 import 'rc-dialog/assets/index.css'
 
-const StyledDialog = styled(Dialog)`
+const Container = styled(Dialog)`
   .rc-dialog-body {
     padding: 0;
   }
@@ -10,6 +10,7 @@ const StyledDialog = styled(Dialog)`
     border-radius: 4px;
     overflow: hidden;
   }
+  overflow: hidden;
 `
 
-export default StyledDialog
+export default Container

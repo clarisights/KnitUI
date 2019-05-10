@@ -1,6 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { Modal } from "./index"
+import { Modal, RightPanelModal } from "./index"
 const Readme = require("./README.md")
 
 storiesOf("Modal", module)
@@ -12,8 +12,15 @@ storiesOf("Modal", module)
       sidebar: Readme,
     },
   })
-  .add("simple modal", () => (
+  .add("with default layout", () => (
     <Modal
+      title="Title"
+      body={<div>Body</div>}
+      footer={<div>Footer</div>}
+    />
+  ))
+  .add("with right panel", () => (
+    <RightPanelModal
       title="Title"
       body={<div>Body</div>}
       footer={<div>Footer</div>}
