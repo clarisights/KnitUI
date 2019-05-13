@@ -1,9 +1,16 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import { Modal, RightPanelModal, LeftPanelModal, BottomPanelModal } from "./index"
+import { withKnobs, text, boolean, select, object } from '@storybook/addon-knobs'
+
 const Readme = require("./README.md")
 
-storiesOf("Modal", module)
+const stories = storiesOf('Modal', module)
+stories.addDecorator(withKnobs)
+
+const sizeOptions = ["small", "medium", "large", "x-large"]
+
+stories
   .addParameters({
     readme: {
       // Show readme before story
@@ -17,6 +24,7 @@ storiesOf("Modal", module)
       header={{title: "Title"}}
       body={<div>Body</div>}
       footer={<div>Footer</div>}
+      size={select('Size', sizeOptions, "medium")}
     />
   ))
   .add("with a right section in header", () => (
@@ -30,6 +38,7 @@ storiesOf("Modal", module)
         }}
       body={<div>Body</div>}
       footer={<div>Footer</div>}
+      size={select('Size', sizeOptions, "medium")}
     />
   ))
   .add("with right panel", () => (
@@ -38,6 +47,7 @@ storiesOf("Modal", module)
       body={<div>Body</div>}
       footer={<div>Footer</div>}
       panelContent={<div>Pannel content</div>}
+      size={select('Size', sizeOptions, "medium")}
     />
   ))
   .add("with left panel", () => (
@@ -46,6 +56,7 @@ storiesOf("Modal", module)
       body={<div>Body</div>}
       footer={<div>Footer</div>}
       panelContent={<div>Panel content</div>}
+      size={select('Size', sizeOptions, "medium")}
     />
   ))
   .add("with bottom panel", () => (
@@ -54,5 +65,6 @@ storiesOf("Modal", module)
       body={<div>Body</div>}
       footer={<div>Footer</div>}
       panelContent={<div>Panel content</div>}
+      size={select('Size', sizeOptions, "medium")}
     />
   ))

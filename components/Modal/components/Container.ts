@@ -8,9 +8,7 @@ const Container = styled(Dialog)`
   }
   .rc-dialog-content {
     border-radius: 4px;
-    overflow: hidden;
   }
-  overflow: hidden;
 `
 
 export default Container

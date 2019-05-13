@@ -11,10 +11,13 @@ interface HeaderProps {
   rightSection?: ReactNode
 }
 
+const borderRadius = "0.4rem"
+
 const Header: React.FC<HeaderProps> = ({ title, rightSection }) => {
   const Container = styled.div`
     display: flex;
     padding: ${`${padding.vertical} ${padding.horizontal}`};
+    border-radius: ${`${borderRadius} ${borderRadius} 0rem 0rem`};
     background: #F2F2F2;
   `
   const TitleSection = styled.div`
