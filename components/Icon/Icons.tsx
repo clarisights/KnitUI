@@ -6,6 +6,8 @@ type IconType = {
   fill?: string
 }
 
+// Icon names starting with o follow "outline" theme
+
 export const o360 = ({
   height = "24px",
   width = "24px",

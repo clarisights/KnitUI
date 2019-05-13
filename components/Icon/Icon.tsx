@@ -19,7 +19,7 @@ const StyledIconWrapper: any = withProps<IIconProps>()(styled.span)`
 `
 
 const Icon: any = (props: IIconProps) => {
-  const { type, height = "24px", width = "24px", customStyles = "" } = props
+  const { type, height = "18px", width = "18px", customStyles = "" } = props
   const svgStyles = { height, width }
   // If type is not provided, then "oCheckBoxOutlineBlank" is used as placeholder icon
   const defaultType = "oCheckBoxOutlineBlank"
