@@ -1,4 +1,16 @@
 import React from 'react'
-import Section from './Section'
+import styled from "styled-components"
 
-export default ({ children }) => <Section>{children}</Section>
+const Footer = ({ children, padding }) => {
+  const { vertical, horizontal } = padding
+  const StyledDiv = styled.div`
+    padding: ${`${vertical} ${horizontal}`};
+  `
+  return (
+    <StyledDiv>
+      {children}
+    </StyledDiv>
+  )
+}
+
+export default Footer

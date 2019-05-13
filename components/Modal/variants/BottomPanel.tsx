@@ -8,24 +8,18 @@ import Footer from '../components/Footer'
 
 import { ModalProps, defaultProps } from './Default'
 
-interface RightPanelModalProps extends ModalProps {}
+interface BottomPanelModalProps extends ModalProps {}
 
 const Layout = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;s
 `
 
-const LeftSection = styled.div`
-  width: 100%;
+const BottomSection = styled.div`
+  box-sizing: border-box;
+  height: 8.4rem;
+  border-top: 1px solid #D9D9D9;
 `
 
-const RightSection = styled.div`
-  width: 210px;
-  border-left: 1px solid #D9D9D9;
-`
-
-const Modal: React.FC<RightPanelModalProps> = ({
+const Modal: React.FC<BottomPanelModalProps> = ({
   header,
   footer,
   body,
@@ -41,11 +35,9 @@ const Modal: React.FC<RightPanelModalProps> = ({
     >
       <Header {...header} />
       <Layout>
-        <LeftSection>
-          <Main padding={padding}>{body}</Main>
-          <Footer padding={padding}>{footer}</Footer>
-        </LeftSection>
-        <RightSection>Right Section</RightSection>
+        <Main padding={padding}>{body}</Main>
+        <Footer padding={padding}>{footer}</Footer>
+        <BottomSection>Bottom section</BottomSection>
       </Layout>
     </Container>
   )

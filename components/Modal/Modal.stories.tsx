@@ -1,6 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { Modal, RightPanelModal } from "./index"
+import { Modal, RightPanelModal, LeftPanelModal, BottomPanelModal } from "./index"
 const Readme = require("./README.md")
 
 storiesOf("Modal", module)
@@ -14,14 +14,41 @@ storiesOf("Modal", module)
   })
   .add("with default layout", () => (
     <Modal
-      title="Title"
+      header={{title: "Title"}}
+      body={<div>Body</div>}
+      footer={<div>Footer</div>}
+    />
+  ))
+  .add("with a right section in header", () => (
+    <Modal
+      header={{
+        title: "Title",
+        rightSection:
+          <div>
+            <div>The right section</div>
+          </div>
+        }}
       body={<div>Body</div>}
       footer={<div>Footer</div>}
     />
   ))
   .add("with right panel", () => (
     <RightPanelModal
-      title="Title"
+      header={{title: "Right panel modal"}}
+      body={<div>Body</div>}
+      footer={<div>Footer</div>}
+    />
+  ))
+  .add("with left panel", () => (
+    <LeftPanelModal
+      header={{title: "Left panel modal"}}
+      body={<div>Body</div>}
+      footer={<div>Footer</div>}
+    />
+  ))
+  .add("with bottom panel", () => (
+    <BottomPanelModal
+      header={{title: "Bottom panel modal"}}
       body={<div>Body</div>}
       footer={<div>Footer</div>}
     />

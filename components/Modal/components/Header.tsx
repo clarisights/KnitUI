@@ -1,11 +1,41 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from 'styled-components'
-import Section from './Section'
 
-const StyledDiv = styled(Section)`
-  font-size: 20px;
-  line-height: 30px;
-  background: #F2F2F2
-`
+const padding = {
+  horizontal: "2.8rem",
+  vertical: "1.4rem"
+}
 
-export default ({ title }) => <StyledDiv>{title}</StyledDiv>
+interface HeaderProps {
+  title: string,
+  rightSection?: ReactNode
+}
+
+const Header: React.FC<HeaderProps> = ({ title, rightSection }) => {
+  const Container = styled.div`
+    display: flex;
+    padding: ${`${padding.vertical} ${padding.horizontal}`};
+    background: #F2F2F2;
+  `
+  const TitleSection = styled.div`
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+  `
+
+  const RightSection = styled.div`
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+  `
+
+  return (
+    <Container>
+      <TitleSection>{title}</TitleSection>
+      <RightSection>{rightSection}</RightSection>
+    </Container>
+  )
+}
+
+export default Header
