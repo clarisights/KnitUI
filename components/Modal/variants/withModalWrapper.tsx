@@ -18,7 +18,8 @@ export interface ModalWrapperProps {
   body: ReactNode,
   footer: ReactNode,
   padding?: { vertical: string, horizontal: string },
-  size?: "small" | "medium" | "large" | "x-large"
+  size?: "small" | "medium" | "large" | "x-large",
+  [propName: string]: any
 }
 
 const withModalWrapper = (WrappedComponent) => {

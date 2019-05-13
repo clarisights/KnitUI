@@ -1,11 +1,13 @@
-import React, { useState } from "react"
+import React, { ReactNode } from "react"
 import styled from "styled-components"
 
 import withModalWrapper from "./withModalWrapper"
 
 import { ModalProps, defaultProps } from './Default'
 
-interface LeftPanelModalProps extends ModalProps {}
+interface LeftPanelModalProps extends ModalProps {
+  panelContent: ReactNode
+}
 
 const Layout = styled.div`
   display: flex;
@@ -26,13 +28,14 @@ const Modal: React.FC<LeftPanelModalProps> = ({
   header,
   footer,
   body,
+  panelContent
 }) => {
   return (
     <>
       {header}
       <Layout>
         <LeftSection>
-          Left Section
+          {panelContent}
         </LeftSection>
         <RightSection>
           {body}

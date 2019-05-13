@@ -37,13 +37,15 @@ storiesOf("Modal", module)
       header={{title: "Right panel modal"}}
       body={<div>Body</div>}
       footer={<div>Footer</div>}
+      panelContent={<div>Pannel content</div>}
     />
   ))
   .add("with left panel", () => (
     <LeftPanelModal
-      header={{title: "Left panel modal"}}
+      header={{title: "Left panel content"}}
       body={<div>Body</div>}
       footer={<div>Footer</div>}
+      panelContent={<div>Panel content</div>}
     />
   ))
   .add("with bottom panel", () => (
@@ -51,5 +53,6 @@ storiesOf("Modal", module)
       header={{title: "Bottom panel modal"}}
       body={<div>Body</div>}
       footer={<div>Footer</div>}
+      panelContent={<div>Panel content</div>}
     />
   ))
