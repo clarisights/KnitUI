@@ -1,8 +1,44 @@
+import chroma from 'chroma-js'
+
 // Helpers
 const multiply = (a: number, b: number) => a * b
 
 const baseUnit = 10
 export const base = `${baseUnit}px`
+export const baseIncrementUnit = 0.2
+
+// Unit measurements (measurements relative to base unit i.e 10px)
+export const unit12 = 1.2
+export const unit14 = 1.4
+export const unit16 = 1.6
+export const unit18 = 1.8
+
+export const typography = {
+  size10: {
+    fontSize: 1.0,
+    lineHeight: 1.6
+  },
+  size12: {
+    fontSize: 1.2,
+    lineHeight: 1.8
+  },
+  size14: {
+    fontSize: 1.4,
+    lineHeight: 2.0
+  },
+  size16: {
+    fontSize: 1.6,
+    lineHeight: 2.0
+  },
+  size18: {
+    fontSize: 1.8,
+    lineHeight: 2.4
+  },
+  size20: {
+    fontSize: 2.0,
+    lineHeight: 2.8
+  }
+}
 
 // Type
 export const fontFamily =
@@ -16,6 +52,41 @@ export const fontSize20 = "2rem"
 // Colors
 export const primaryHues = {
   default: "#293979",
+}
+
+export const secondaryPalette = {
+  neutral: {
+    background: chroma.hsl(216, 1, 0.2),
+    font: chroma.hsl(0, 0, 1),
+  },
+  danger: {
+    background: chroma.hsl(0, 1, 0.3),
+    font: chroma.hsl(0, 0, 1),
+  },
+  success: {
+    background: chroma.hsl(118, 1, 0.2),
+    font: chroma.hsl(0, 0, 1),
+  },
+  warning: {
+    background: chroma.hsl(47, 1, 0.5),
+    font: chroma.hsl(0, 0, 0),
+  },
+  unsaved: {
+    background: chroma.hsl(288, 0.2, 0.35),
+    font: chroma.hsl(0, 0, 1),
+  }
+}
+
+export const shades = {
+  // Shades of gray
+  white: chroma.hsl(0, 0, 1),
+  gray95: chroma.hsl(0, 0, 0.95),
+  gray20: chroma.hsl(0, 0, 0.2),
+  black: chroma.hsl(0, 0, 0),
+  transparent: chroma.hsl(0, 0, 0, 0),
+
+  // Shades of blue
+  lightBlue: chroma.hsl(205, 0.85, 0.65),
 }
 
 // Properties

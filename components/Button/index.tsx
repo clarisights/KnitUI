@@ -1,1 +1,1 @@
-export { default, ButtonGroup } from "./Button"
+export { default as Button } from "./ButtonWrapper"
