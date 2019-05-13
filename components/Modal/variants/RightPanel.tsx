@@ -1,10 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 
-import Container from '../components/Container'
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+import withModalWrapper from "./withModalWrapper"
 
 import { ModalProps, defaultProps } from './Default'
 
@@ -29,28 +26,21 @@ const Modal: React.FC<RightPanelModalProps> = ({
   header,
   footer,
   body,
-  padding
 }) => {
-  const [visible, setVisible] = useState(true)
-
   return (
-    <Container
-      getContainer={() => document.getElementsByTagName('body')[0]}
-      visible={visible}
-      onClose={() => setVisible(false)}
-    >
-      <Header {...header} />
+    <>
+      {header}
       <Layout>
         <LeftSection>
-          <Main padding={padding}>{body}</Main>
-          <Footer padding={padding}>{footer}</Footer>
+          {body}
+          {footer}
         </LeftSection>
         <RightSection>Right Section</RightSection>
       </Layout>
-    </Container>
+    </>
   )
 }
 
 Modal.defaultProps = defaultProps
 
-export default Modal
+export default withModalWrapper(Modal)

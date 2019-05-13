@@ -1,44 +1,43 @@
-import React, { useState, ReactNode } from "react"
-import Container from '../components/Container'
+import React, { ReactNode } from "react"
+import withModalWrapper from "./withModalWrapper"
 
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+type sizeProps = "small" | "medium" | "large" | "x-large"
+type paddingProps = { vertical: string, horizontal: string }
 
 export interface ModalProps {
-  header: {title: string, rightSection?: ReactNode},
+  header: { title: string, rightSection?: ReactNode },
   body: ReactNode,
   footer: ReactNode,
-  padding?: { vertical: string, horizontal: string }
+  padding?: { vertical: string, horizontal: string },
 }
 
 const Modal: React.FC<ModalProps> = ({
    header,
    body,
    footer,
-   padding
   }) => {
-  const [visible, setVisible] = useState(true)
   return (
-    <Container
-      getContainer={() => document.getElementsByTagName('body')[0]}
-      visible={visible}
-      onClose={() => setVisible(false)}
-    >
-      <Header {...header} />
-      <Main padding={padding}>{body}</Main>
-      <Footer padding={padding}>{footer}</Footer>
-    </Container>
+    <>
+      {header}
+      {body}
+      {footer}
+    </>
   )
 }
 
-export const defaultProps = {
+interface IDefaultProps {
+  padding: paddingProps,
+  size: sizeProps
+}
+
+export const defaultProps: IDefaultProps = {
   padding: {
     vertical: "2.1rem",
     horizontal: "2.8rem"
-  }
+  },
+  size: "medium"
 }
 
 Modal.defaultProps = defaultProps
 
-export default Modal
+export default withModalWrapper(Modal)
