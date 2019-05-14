@@ -5,6 +5,7 @@ const Footer = ({ children, padding }) => {
   const { vertical, horizontal } = padding
   const StyledDiv = styled.div`
     padding: ${`${vertical} ${horizontal}`};
+    justify-self: flex-end;
   `
   return (
     <StyledDiv>

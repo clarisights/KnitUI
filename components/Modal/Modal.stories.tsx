@@ -68,3 +68,11 @@ stories
       size={select('Size', sizeOptions, "medium")}
     />
   ))
+  .add("with overflowing content", () => (
+    <Modal
+      header={{title: "Right panel modal"}}
+      body={<div style={{height: "1000px"}}>Body</div>}
+      footer={<div>Footer</div>}
+      size={select('Size', sizeOptions, "medium")}
+    />
+  ))

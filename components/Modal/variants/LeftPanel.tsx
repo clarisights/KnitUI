@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import withModalWrapper from "./withModalWrapper"
 
-import { ModalProps, defaultProps } from './Default'
+import { ModalProps, defaultProps, PrimaryLayout } from './Default'
 
 interface LeftPanelModalProps extends ModalProps {
   panelContent: ReactNode
@@ -12,7 +12,8 @@ interface LeftPanelModalProps extends ModalProps {
 const Layout = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: stretch;s
+  align-items: stretch;
+  flex: 1 1 auto;
 `
 
 const LeftSection = styled.div`
@@ -22,6 +23,8 @@ const LeftSection = styled.div`
 
 const RightSection = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
 `
 
 const Modal: React.FC<LeftPanelModalProps> = ({
@@ -31,7 +34,7 @@ const Modal: React.FC<LeftPanelModalProps> = ({
   panelContent
 }) => {
   return (
-    <>
+    <PrimaryLayout>
       {header}
       <Layout>
         <LeftSection>
@@ -42,7 +45,7 @@ const Modal: React.FC<LeftPanelModalProps> = ({
           {footer}
         </RightSection>
       </Layout>
-    </>
+    </PrimaryLayout>
   )
 }
 
