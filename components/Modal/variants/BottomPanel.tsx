@@ -2,8 +2,8 @@ import React, { ReactNode } from "react"
 import styled from "styled-components"
 
 import withModalWrapper from "./withModalWrapper"
-
-import { ModalProps, defaultProps, PrimaryLayout } from './Default'
+import { ModalProps, BaseLayout } from './Base'
+import { border } from "../commonStyles"
 
 interface BottomPanelModalProps extends ModalProps {
   panelContent: ReactNode
@@ -12,25 +12,23 @@ interface BottomPanelModalProps extends ModalProps {
 const BottomSection = styled.div`
   box-sizing: border-box;
   height: 8.4rem;
-  border-top: 1px solid #D9D9D9;
+  border-top: ${border};
 `
 
-const Modal: React.FC<BottomPanelModalProps> = ({
+const BottomPanelModal: React.FC<BottomPanelModalProps> = ({
   header,
   footer,
   body,
   panelContent
 }) => {
   return (
-    <PrimaryLayout>
+    <BaseLayout>
       {header}
       {body}
       {footer}
       <BottomSection>{panelContent}</BottomSection>
-    </PrimaryLayout>
+    </BaseLayout>
   )
 }
 
-Modal.defaultProps = defaultProps
-
-export default withModalWrapper(Modal)
+export default withModalWrapper(BottomPanelModal)

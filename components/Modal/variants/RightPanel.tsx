@@ -2,8 +2,8 @@ import React, { ReactNode } from "react"
 import styled from "styled-components"
 
 import withModalWrapper from "./withModalWrapper"
-
-import { ModalProps, defaultProps, PrimaryLayout } from './Default'
+import { ModalProps, BaseLayout } from './Base'
+import { border } from "../commonStyles"
 
 interface RightPanelModalProps extends ModalProps {
   panelContent: ReactNode
@@ -25,17 +25,17 @@ const LeftSection = styled.div`
 
 const RightSection = styled.div`
   width: 210px;
-  border-left: 1px solid #D9D9D9;
+  border-left: ${border};
 `
 
-const Modal: React.FC<RightPanelModalProps> = ({
+const RightPanelModal: React.FC<RightPanelModalProps> = ({
   header,
   footer,
   body,
   panelContent
 }) => {
   return (
-    <PrimaryLayout>
+    <BaseLayout>
       {header}
       <Layout>
         <LeftSection>
@@ -44,10 +44,8 @@ const Modal: React.FC<RightPanelModalProps> = ({
         </LeftSection>
         <RightSection>{panelContent}</RightSection>
       </Layout>
-    </PrimaryLayout>
+    </BaseLayout>
   )
 }
 
-Modal.defaultProps = defaultProps
-
-export default withModalWrapper(Modal)
+export default withModalWrapper(RightPanelModal)
