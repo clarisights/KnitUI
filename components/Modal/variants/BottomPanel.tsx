@@ -9,9 +9,6 @@ interface BottomPanelModalProps extends ModalProps {
   panelContent: ReactNode
 }
 
-const Layout = styled.div`
-`
-
 const BottomSection = styled.div`
   box-sizing: border-box;
   height: 8.4rem;

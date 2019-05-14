@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { ReactNode, useState } from 'react'
 import styled from "styled-components"
 
-export default ({ children, padding }) => {
+interface MainProps {
+  children: ReactNode,
+  padding: { vertical: string, horizontal: string }
+}
+
+export default ({ children, padding, setBodyRef }) => {
+
   const Main = styled.div`
     padding: ${`${padding.vertical} ${padding.horizontal} 0rem`};
-    overflow-y: scroll;
+    overflow-y: auto;
     flex: 1 1 auto;
   `
-  return (<Main>{children}</Main>)
+
+  return (<Main ref={setBodyRef}>{children}</Main>)
 }

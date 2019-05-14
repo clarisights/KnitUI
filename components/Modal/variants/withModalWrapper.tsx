@@ -1,4 +1,4 @@
-import React, { useState, ReactNode } from "react"
+import React, { useState, useEffect, ReactNode } from "react"
 import Container from "../components/Container"
 import styled from "styled-components"
 
@@ -34,6 +34,13 @@ const withModalWrapper = (WrappedComponent) => {
     ...props
   }) => {
     const [visible, setVisible] = useState(true)
+    const [showFooterBorder, setShowFooterBorder] = useState(false)
+
+    const setBodyRef = (el: HTMLElement) => {
+      if (el && el.scrollHeight > el.clientHeight) {
+        setShowFooterBorder(true)
+      }
+    }
 
     const StyledContainer = styled(Container)`
       width: ${sizeToWidth[size!]} !important;
@@ -62,10 +69,11 @@ const withModalWrapper = (WrappedComponent) => {
         visible={visible}
         onClose={() => setVisible(false)}
       >
+        {/* footer={<Footer padding={padding!}>{footer}</Footer>} */}
         <WrappedComponent
           header={<Header {...header} />}
-          body={<Main padding={padding}>{body}</Main>}
-          footer={<Footer padding={padding}>{footer}</Footer>}
+          body={<Main padding={padding!} setBodyRef={setBodyRef}>{body}</Main>}
+          footer={<Footer padding={padding!} showBorder={showFooterBorder}>{footer}</Footer>}
           {...props}
         />
       </StyledContainer>
