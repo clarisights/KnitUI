@@ -39,6 +39,10 @@
       "^.+\\.jsx?$": "babel-jest",
       "^.+\\.tsx?$": "ts-jest"
     },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/components/_utils/__mocks__/fileMock.ts",
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
     "preset": "ts-jest",
     "globals": {
       "ts-jest": {
@@ -68,6 +72,7 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.10.0",
     "husky": "^1.3.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.3.1",
     "jest-dom": "^3.1.4",
     "jest-styled-components": "^6.3.1",
