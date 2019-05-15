@@ -1,6 +1,7 @@
 import Dialog from 'rc-dialog'
 import styled from 'styled-components'
 import 'rc-dialog/assets/index.css'
+import { borderRadius } from "../common/styles"
 
 const Container = styled(Dialog)`
   .rc-dialog-body {
@@ -9,7 +10,7 @@ const Container = styled(Dialog)`
     min-height: 35rem;
   }
   .rc-dialog-content {
-    border-radius: 4px;
+    border-radius: ${borderRadius};
   }
 `
 

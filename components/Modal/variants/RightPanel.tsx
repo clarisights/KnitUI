@@ -2,12 +2,9 @@ import React, { ReactNode } from "react"
 import styled from "styled-components"
 
 import withModalWrapper from "./withModalWrapper"
-import { ModalProps, BaseLayout } from './Base'
-import { border } from "../commonStyles"
-
-interface RightPanelModalProps extends ModalProps {
-  panelContent: ReactNode
-}
+import { BaseLayout } from './Base'
+import { border } from "../common/styles"
+import { PanelModalProps } from "./interfaces"
 
 const Layout = styled.div`
   display: flex;
@@ -28,7 +25,7 @@ const RightSection = styled.div`
   border-left: ${border};
 `
 
-const RightPanelModal: React.FC<RightPanelModalProps> = ({
+const RightPanelModal: React.FC<PanelModalProps> = ({
   header,
   footer,
   body,

@@ -2,12 +2,9 @@ import React, { ReactNode } from "react"
 import styled from "styled-components"
 
 import withModalWrapper from "./withModalWrapper"
-import { ModalProps, BaseLayout } from './Base'
-import { border } from "../commonStyles"
-
-interface BottomPanelModalProps extends ModalProps {
-  panelContent: ReactNode
-}
+import { BaseLayout } from './Base'
+import { border } from "../common/styles"
+import { PanelModalProps } from "./interfaces"
 
 const BottomSection = styled.div`
   box-sizing: border-box;
@@ -15,7 +12,7 @@ const BottomSection = styled.div`
   border-top: ${border};
 `
 
-const BottomPanelModal: React.FC<BottomPanelModalProps> = ({
+const BottomPanelModal: React.FC<PanelModalProps> = ({
   header,
   footer,
   body,

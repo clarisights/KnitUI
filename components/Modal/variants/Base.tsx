@@ -2,12 +2,7 @@ import React, { ReactNode } from "react"
 import withModalWrapper from "./withModalWrapper"
 import styled from "styled-components"
 
-export interface ModalProps {
-  header: { title: string, rightSection?: ReactNode },
-  body: ReactNode,
-  footer: ReactNode,
-  padding?: { vertical: string, horizontal: string },
-}
+import { ModalProps } from "./interfaces"
 
 export const BaseLayout = styled.div`
   display: flex;

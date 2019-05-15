@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
-import { StyleContext } from "../common"
+import { StyleContext } from "../common/contexts"
 
 const sizeToWidth = {
   "small": "49rem",
@@ -41,7 +41,7 @@ const withModalWrapper = (WrappedComponent) => {
     const [visible, setVisible] = useState(true)
     const [showFooterBorder, setShowFooterBorder] = useState(false)
 
-    const setBodyRef = (el: HTMLElement) => {
+    const setBodyRef = (el: HTMLElement | null) => {
       if (el && el.scrollHeight > el.clientHeight) {
         setShowFooterBorder(true)
       }
