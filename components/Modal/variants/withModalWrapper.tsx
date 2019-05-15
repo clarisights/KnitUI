@@ -16,13 +16,23 @@ const sizeToWidth = {
 }
 
 export interface ModalWrapperProps {
+  /** Contents to be rendered in the header section */
   header: { title: string, rightSection?: ReactNode },
+  /** Contents to be rendered on in the body section */
   body: ReactNode,
+  /** Contents to be rendered on in the footer section */
   footer: ReactNode,
+  /** The padding values to be applied */
   padding?: { vertical: string, horizontal: string },
+  /** Size values representing the amount of physical space occupied */
   size?: "small" | "medium" | "large" | "x-large",
+  /** The DOM node under which the modal should reside */
+  getContainer?: () => HTMLElement,
+  /** Controls the visibility of the modal */
+  visible?: boolean,
+  /** Function to be executed when the modal is dismissed */
+  onClose: () => void,
   [propName: string]: any,
-  getContainer?: () => HTMLElement
 }
 
 const withModalWrapper = (WrappedComponent) => {
@@ -36,11 +46,11 @@ const withModalWrapper = (WrappedComponent) => {
       horizontal: "2.8rem"
     },
     getContainer = () => document.getElementsByTagName('body')[0],
+    visible = true,
+    onClose,
     ...props
   }) => {
-    const [visible, setVisible] = useState(true)
     const [showFooterBorder, setShowFooterBorder] = useState(false)
-
     const setBodyRef = (el: HTMLElement | null) => {
       if (el && el.scrollHeight > el.clientHeight) {
         setShowFooterBorder(true)
@@ -73,7 +83,7 @@ const withModalWrapper = (WrappedComponent) => {
         <StyledContainer
           getContainer={getContainer}
           visible={visible}
-          onClose={() => setVisible(false)}
+          onClose={onClose}
         >
           <WrappedComponent
             header={<Header {...header} />}
