@@ -62,7 +62,7 @@
     "@storybook/addon-storyshots": "^5.0.11",
     "@storybook/addon-storysource": "^5.0.11",
     "@storybook/react": "^5.0.10",
-    "@types/jest": "^24.0.9",
+    "@types/jest": "^24.0.13",
     "@types/storybook__react": "^4.0.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.5",
@@ -89,8 +89,8 @@
   "dependencies": {
     "@storybook/addon-backgrounds": "^5.0.10",
     "@types/styled-components": "^4.1.14",
-    "rc-dialog": "^7.3.1",
     "chroma-js": "^2.0.3",
+    "rc-dialog": "^7.3.1",
     "rc-switch": "^1.9.0",
     "react-test-renderer": "^16.8.6",
     "styled-components": "^4.2.0"
