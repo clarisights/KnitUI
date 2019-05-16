@@ -55,7 +55,7 @@ const Label: React.FC<LabelPropTypes> = ({
   outlined = false,
   inline = false,
   colorTheme = DEFAULT_COLOR_THEME,
-  addons = null,
+  addons = {},
   focus
 }) => {
   const typographySize = {
@@ -94,6 +94,24 @@ const Label: React.FC<LabelPropTypes> = ({
     return "0.7rem"
   }
 
+  const getLeftPadding = () => {
+    if (addons.left) {
+      return size === "small" ? "0.3rem" : "0.5rem"
+    }
+    return getHorizontalPadding()
+  }
+
+  const getRightPadding = () => {
+    if (addons.right) {
+      return size === "small" ? "0.3rem" : "0.5rem"
+    }
+    return getHorizontalPadding()
+  }
+
+  const getIconMargin = () => {
+    return size === "small" ? "0.2rem" : "0.4rem"
+  }
+
   const getBorderColor = () => {
     return outlined ? darkenedBorderColor : "transparent"
   }
@@ -107,9 +125,10 @@ const Label: React.FC<LabelPropTypes> = ({
   }
 
   const StyledDiv = styled.div`
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     border-radius: ${getBorderRadius()};
-    padding: ${`${getVerticalPadding()} ${getHorizontalPadding()}`};
+    padding: ${`${getVerticalPadding()} ${getRightPadding()} ${getVerticalPadding()} ${getLeftPadding()}`};
     background-color: ${backgroundColor};
     color: ${fontColor};
     font-size: ${`${fontSize}rem`};
@@ -118,7 +137,21 @@ const Label: React.FC<LabelPropTypes> = ({
     box-sizing: border-box;
     box-shadow: ${getBoxShadow()};
   `
-  return <StyledDiv>{text}</StyledDiv>
+
+  const RightAddonContainer = styled.div`
+    margin-left: ${getIconMargin()};
+  `
+  const LeftAddonContainer = styled.div`
+    margin-right: ${getIconMargin()};
+  `
+
+  return (
+    <StyledDiv>
+      {addons.left ? <LeftAddonContainer>{addons.left}</LeftAddonContainer> : null}
+      <span>{text}</span>
+      {addons.right ? <RightAddonContainer>{addons.right}</RightAddonContainer> : null}
+    </StyledDiv>
+  )
 }
 
 export default Label
