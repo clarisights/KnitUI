@@ -4,18 +4,16 @@ import * as theme from "../styles/variables"
 import chroma from "chroma-js"
 import { ButtonBase, ButtonInset } from "./styledComponents"
 
-const { shades, typography, secondaryPalette } = theme
+import { ColorPreset, IColorTheme } from "../_utils/types"
 
-type ColorPreset = "neutral" | "danger" | "success" | "warning" | "unsaved"
+const { shades, typography, secondaryPalette } = theme
 
 const DEFAULT_COLOR_THEME = "neutral"
 
 const DEFAULT_INSET_BG_COLOR = shades.white
 const DEFAULT_INSET_FONT_COLOR = shades.gray20
 
-interface IColorTheme {
-  background: string,
-  font: string,
+interface IButtonColorTheme extends IColorTheme {
   insetBackground?: string,
   insetFont?: string
 }
@@ -38,7 +36,7 @@ interface ButtonWrapperProps {
    * background and font and the values should be a valid hex string or
    * css rgb format.
    */
-  colorTheme?: ColorPreset | IColorTheme,
+  colorTheme?: ColorPreset | IButtonColorTheme,
   /** Inverted color scheme */
   ghost?: boolean,
   /** Physical area occupied on the screen */
