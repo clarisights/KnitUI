@@ -5,6 +5,7 @@ import { ColorPreset, IColorTheme } from "../_utils/types"
 import { parseCustomColorTheme } from "../_utils"
 import * as theme from "../styles/variables"
 const { shades, typography, secondaryPalette } = theme
+import { Icon } from "../Icon"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
@@ -26,7 +27,7 @@ interface LabelPropTypes {
   /** Defines the colors for the background and font */
   colorTheme?: LabelColorTheme
   /** Addons to be placed adjacent to the label text */
-  addons?: { left?: ReactNode, right?: ReactNode},
+  icon?: { position: "left" | "right", type: string},
   /** Label is focussed or being dragged */
   focus?: boolean
 }
@@ -55,7 +56,7 @@ const Label: React.FC<LabelPropTypes> = ({
   outlined = false,
   inline = false,
   colorTheme = DEFAULT_COLOR_THEME,
-  addons = {},
+  icon,
   focus
 }) => {
   const typographySize = {
@@ -70,6 +71,8 @@ const Label: React.FC<LabelPropTypes> = ({
   const backgroundColor = parsedColorTheme.background
   const fontColor = parsedColorTheme.font
   const darkenedBorderColor = backgroundColor.set('hsl.l', '-0.2')
+  const showLeftIcon = icon && icon.position === "left"
+  const showRightIcon = icon && icon.position === "right"
 
   const verticalPadding = {
     small: "0.1rem",
@@ -95,14 +98,14 @@ const Label: React.FC<LabelPropTypes> = ({
   }
 
   const getLeftPadding = () => {
-    if (addons.left) {
+    if (showLeftIcon) {
       return size === "small" ? "0.3rem" : "0.5rem"
     }
     return getHorizontalPadding()
   }
 
   const getRightPadding = () => {
-    if (addons.right) {
+    if (showRightIcon) {
       return size === "small" ? "0.3rem" : "0.5rem"
     }
     return getHorizontalPadding()
@@ -136,20 +139,21 @@ const Label: React.FC<LabelPropTypes> = ({
     border: ${`1px solid ${getBorderColor()}`};
     box-sizing: border-box;
     box-shadow: ${getBoxShadow()};
+    svg path {
+      fill: ${fontColor};
+    }
   `
 
-  const RightAddonContainer = styled.div`
-    margin-left: ${getIconMargin()};
-  `
-  const LeftAddonContainer = styled.div`
-    margin-right: ${getIconMargin()};
+  const StyledIcon = styled(Icon)`
+    ${showRightIcon ? `margin-left: ${getIconMargin()};` : ""}
+    ${showLeftIcon ? `margin-right: ${getIconMargin()};` : ""}
   `
 
   return (
     <StyledDiv>
-      {addons.left ? <LeftAddonContainer>{addons.left}</LeftAddonContainer> : null}
+      {showLeftIcon ? <StyledIcon type={icon!.type} /> : null}
       <span>{text}</span>
-      {addons.right ? <RightAddonContainer>{addons.right}</RightAddonContainer> : null}
+      {showRightIcon ? <StyledIcon type={icon!.type} /> : null}
     </StyledDiv>
   )
 }
