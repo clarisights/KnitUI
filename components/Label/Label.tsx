@@ -3,6 +3,8 @@ import React, { ReactNode } from 'react'
 import { ColorPreset, IColorTheme } from "../_utils/types"
 
 interface LabelPropTypes {
+  /** Text to be rendered on the label */
+  text: string
   /** Thee spaciousness in the label */
   type?: "compact" | "expanded",
   /** The amount of physical space occupied */
@@ -28,7 +30,7 @@ const Label: React.FC<LabelPropTypes> = ({
   colorTheme = "neutral",
   addons = null
 }) => {
-  return <>Label</>
+  return <div>Label</div>
 }
 
 export default Label
