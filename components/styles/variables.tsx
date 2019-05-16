@@ -92,6 +92,7 @@ export const shades = {
   // Shades of blue
   lightBlue: chroma.hsl(205, 0.85, 0.65),
   blue40: chroma.hsl(205, 0.85, 0.4),
+  blue50: chroma.hsl(216, 1, 0.5)
 }
 
 // Properties
