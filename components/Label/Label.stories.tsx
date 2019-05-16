@@ -67,9 +67,7 @@ stories
       rounded={boolean('Rounded', false)}
       outlined={boolean('Outlined', false)}
       focus={boolean('Focus', false)}
-      addons={{
-        left: <Icon type="oInfo" />
-      }}
+      icon={{position: "left", type: "oInfo"}}
       inline={boolean('Inline', false)}
     />)
   .add("With right addon", () =>
@@ -81,24 +79,7 @@ stories
       rounded={boolean('Rounded', false)}
       outlined={boolean('Outlined', false)}
       focus={boolean('Focus', false)}
-      addons={{
-        right: <Icon type="oInfo" />
-      }}
-      inline={boolean('Inline', false)}
-    />)
-  .add("With right and left addons", () =>
-    <Label
-      text={text('text', 'Label')}
-      type={select('Type', typeOptions, 'primary')}
-      size={select('Size', sizeOptions, 'medium')}
-      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
-      rounded={boolean('Rounded', false)}
-      outlined={boolean('Outlined', false)}
-      focus={boolean('Focus', false)}
-      addons={{
-        left: <Icon type="oInfo" />,
-        right: <Icon type="oInfo" />
-      }}
+      icon={{position: "right", type: "oInfo"}}
       inline={boolean('Inline', false)}
     />)
     .add("Inline", () =>
