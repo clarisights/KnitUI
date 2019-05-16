@@ -99,7 +99,7 @@ const Label: React.FC<LabelPropTypes> = ({
   }
 
   const getBorderRadius = () => {
-    return rounded ? "1.2rem" : "0.2rem"
+    return rounded ? "999px" : "0.2rem"
   }
 
   const getBoxShadow = () => {
