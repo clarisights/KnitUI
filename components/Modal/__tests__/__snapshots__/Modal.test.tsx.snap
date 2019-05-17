@@ -33,7 +33,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -230,7 +230,7 @@ exports[`Modal with size large with a left panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -438,7 +438,7 @@ exports[`Modal with size large with a right panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -774,7 +774,7 @@ exports[`Modal with size large with simple config 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -937,7 +937,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -1134,7 +1134,7 @@ exports[`Modal with size medium with a left panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -1342,7 +1342,7 @@ exports[`Modal with size medium with a right panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -1678,7 +1678,7 @@ exports[`Modal with size medium with simple config 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -1841,7 +1841,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -2038,7 +2038,7 @@ exports[`Modal with size small with a left panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -2246,7 +2246,7 @@ exports[`Modal with size small with a right panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -2582,7 +2582,7 @@ exports[`Modal with size small with simple config 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -2745,7 +2745,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -2942,7 +2942,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -3150,7 +3150,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;
@@ -3486,7 +3486,7 @@ exports[`Modal with size x-large with simple config 1`] = `
 }
 
 .c0 .rc-dialog-close {
-  top: 1.8rem;
+  top: 2.5rem;
   opacity: unset;
   text-shadow: unset;
   color: #e6e6e6;

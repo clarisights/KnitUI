@@ -92,7 +92,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
         right: -1rem;
         top: -1rem;
       ` :
-      `top: 1.8rem;`
+      `top: 2.5rem;`
       }
       opacity: unset;
       text-shadow: unset;
