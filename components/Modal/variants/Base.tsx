@@ -1,5 +1,4 @@
-import React, { ReactNode } from "react"
-import withModalWrapper from "./withModalWrapper"
+import React from "react"
 import styled from "styled-components"
 
 import { ModalProps } from "./interfaces"
@@ -24,4 +23,4 @@ const BaseModal: React.FC<ModalProps> = ({
   )
 }
 
-export default withModalWrapper(BaseModal)
+export default BaseModal

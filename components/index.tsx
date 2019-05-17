@@ -1,3 +1,3 @@
 /// <reference types="styled-components/cssprop" />
 export { default as Button } from "./Button"
-export { Modal, RightPanelModal } from "./Modal"
+export { default as Modal } from "./Modal"

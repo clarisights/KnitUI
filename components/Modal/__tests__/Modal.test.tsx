@@ -1,5 +1,5 @@
 import React from "react"
-import { Modal, RightPanelModal, LeftPanelModal, BottomPanelModal } from "../index"
+import { Modal } from "../index"
 import { render, cleanup, fireEvent } from 'react-testing-library'
 import 'jest-styled-components'
 import 'jest-dom/extend-expect'
@@ -54,7 +54,7 @@ describe("Modal", () => {
       it("with a right panel", () => {
         const { container } = render(
           <ThemeProvider>
-            <RightPanelModal
+            <Modal
               header={{title: "Title"}}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
@@ -62,6 +62,7 @@ describe("Modal", () => {
               size="medium"
               visible
               onClose={() => {}}
+              panel={{ position: "right", content: <div>Panel content</div>}}
             />
           </ThemeProvider>
         )
@@ -72,7 +73,7 @@ describe("Modal", () => {
       it("with a left panel", () => {
         const { container } = render(
           <ThemeProvider>
-            <LeftPanelModal
+            <Modal
               header={{title: "Title"}}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
@@ -80,6 +81,7 @@ describe("Modal", () => {
               size="medium"
               visible
               onClose={() => {}}
+              panel={{ position: "left", content: <div>Panel content</div>}}
             />
           </ThemeProvider>
         )
@@ -90,7 +92,7 @@ describe("Modal", () => {
       it("with a bottom panel", () => {
         const { container } = render(
           <ThemeProvider>
-            <BottomPanelModal
+            <Modal
               header={{title: "Title"}}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
@@ -98,6 +100,7 @@ describe("Modal", () => {
               size="medium"
               visible
               onClose={() => {}}
+              panel={{ position: "bottom", content: <div>Panel content</div>}}
             />
           </ThemeProvider>
         )
@@ -111,7 +114,7 @@ describe("Modal", () => {
     const onCloseStub = jest.fn()
     const { container } = render(
       <ThemeProvider>
-        <BottomPanelModal
+        <Modal
           header={{title: "Title"}}
           body={<div>Body</div>}
           footer={<div>Footer</div>}

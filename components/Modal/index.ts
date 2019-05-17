@@ -1,1 +1,1 @@
-export { Modal, RightPanelModal, LeftPanelModal, BottomPanelModal } from './variants'
+export { default as Modal } from './ModalWrapper'

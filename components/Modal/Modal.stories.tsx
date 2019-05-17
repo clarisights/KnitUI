@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { storiesOf } from "@storybook/react"
-import { Modal, RightPanelModal, LeftPanelModal, BottomPanelModal } from "./index"
+import { Modal } from "./index"
 import { withKnobs, select } from '@storybook/addon-knobs'
 
 const Readme = require("./README.md")
@@ -19,10 +19,10 @@ stories
       sidebar: Readme,
     },
   })
-  .add("with a right section in headerl", () => {
+  .add("simple modal", () => {
     const ModalWrapper = () => {
       const [ modalVisible, setModalVisible ] = useState(true)
-      return (<LeftPanelModal
+      return (<Modal
         header={{title: "Title"}}
         body={<div>Body</div>}
         footer={<div>Footer</div>}
@@ -33,10 +33,10 @@ stories
     }
     return (<ModalWrapper />)
   })
-  .add("with a right section in headerl", () => {
+  .add("with a right section in header", () => {
     const ModalWrapper = () => {
       const [ modalVisible, setModalVisible ] = useState(true)
-      return (<LeftPanelModal
+      return (<Modal
         header={{
           title: "Title",
           rightSection:
@@ -56,14 +56,14 @@ stories
   .add("with right panel", () => {
     const ModalWrapper = () => {
       const [ modalVisible, setModalVisible ] = useState(true)
-      return (<RightPanelModal
+      return (<Modal
         header={{title: "Right panel modal"}}
         body={<div>Body</div>}
         footer={<div>Footer</div>}
-        panelContent={<div>Pannel content</div>}
         size={select('Size', sizeOptions, "medium")}
         visible={modalVisible}
         onClose={() => setModalVisible(false)}
+        panel={{ position: "right", content: <div>Panel content</div>}}
       />)
     }
     return (<ModalWrapper />)
@@ -71,14 +71,14 @@ stories
   .add("with left panel", () => {
     const ModalWrapper = () => {
       const [ modalVisible, setModalVisible ] = useState(true)
-      return (<LeftPanelModal
+      return (<Modal
         header={{title: "Left panel content"}}
         body={<div>Body</div>}
         footer={<div>Footer</div>}
-        panelContent={<div>Panel content</div>}
         size={select('Size', sizeOptions, "medium")}
         visible={modalVisible}
         onClose={() => setModalVisible(false)}
+        panel={{ position: "left", content: <div>Panel content</div>}}
       />)
     }
     return (<ModalWrapper />)
@@ -86,14 +86,14 @@ stories
   .add("with bottom panel", () => {
     const ModalWrapper = () => {
       const [ modalVisible, setModalVisible ] = useState(true)
-      return (<BottomPanelModal
+      return (<Modal
         header={{title: "Bottom panel modal"}}
         body={<div>Body</div>}
         footer={<div>Footer</div>}
-        panelContent={<div>Panel content</div>}
         size={select('Size', sizeOptions, "medium")}
         visible={modalVisible}
         onClose={() => setModalVisible(false)}
+        panel={{ position: "bottom", content: <div>Panel content</div>}}
       />)
     }
     return (<ModalWrapper />)

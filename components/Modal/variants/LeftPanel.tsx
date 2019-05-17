@@ -1,7 +1,6 @@
-import React, { ReactNode } from "react"
+import React from "react"
 import styled from "styled-components"
 
-import withModalWrapper from "./withModalWrapper"
 import { BaseLayout } from './Base'
 import { border } from "../common/styles"
 
@@ -47,4 +46,4 @@ const LeftPanelModal: React.FC<PanelModalProps> = ({
   )
 }
 
-export default withModalWrapper(LeftPanelModal)
+export default LeftPanelModal
