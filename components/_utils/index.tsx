@@ -1,4 +1,4 @@
-import { ThemedStyledFunction } from "styled-components"
+import { ThemedStyledFunction } from "styled-components";
 
 export const insertIf = (
   obj: any = {},
@@ -6,13 +6,13 @@ export const insertIf = (
   isArray: boolean = false
 ) => {
   if (condition) {
-    return obj
+    return obj;
   }
   if (isArray) {
-    return []
+    return [];
   }
-  return {}
-}
+  return {};
+};
 
 // https://github.com/styled-components/styled-components/issues/630
 export function withProps<U>() {
@@ -23,5 +23,5 @@ export function withProps<U>() {
   >(
     fn: ThemedStyledFunction<P, T, O>
   ): ThemedStyledFunction<P & U, T, O & U> =>
-    (fn as unknown) as ThemedStyledFunction<P & U, T, O & U>
+    (fn as unknown) as ThemedStyledFunction<P & U, T, O & U>;
 }

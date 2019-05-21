@@ -18,6 +18,7 @@
     "build-storybook": "build-storybook -c .storybook -o .out",
     "precommit": "lint-staged",
     "lint-staged:ts": "tsc && node node_modules/tslint/bin/tslint --project tsconfig.json",
+    "format": "prettier --write components/**/*.tsx",
     "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
   "husky": {
@@ -27,6 +28,7 @@
   },
   "lint-staged": {
     "components/**/*.tsx": [
+      "yarn format",
       "yarn lint-staged:ts",
       "git add"
     ]

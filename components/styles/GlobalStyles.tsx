@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components"
-import { fontsDefinition } from "./fonts"
+import { createGlobalStyle } from "styled-components";
+import { fontsDefinition } from "./fonts";
 
 const GlobalStyles = createGlobalStyle`
   ${fontsDefinition}
@@ -58,6 +58,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: InterRegular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

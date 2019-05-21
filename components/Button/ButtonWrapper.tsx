@@ -1,84 +1,91 @@
-import React from "react"
-import { Icon } from "../Icon"
-import * as theme from "../styles/variables"
-import chroma from "chroma-js"
-import { ButtonBase, ButtonInset } from "./styledComponents"
+import React from "react";
+import { Icon } from "../Icon";
+import * as theme from "../styles/variables";
+import chroma from "chroma-js";
+import { ButtonBase, ButtonInset } from "./styledComponents";
 
-const { shades, typography, secondaryPalette } = theme
+const { shades, typography, secondaryPalette } = theme;
 
-type ColorPreset = "neutral" | "danger" | "success" | "warning" | "unsaved"
+type ColorPreset = "neutral" | "danger" | "success" | "warning" | "unsaved";
 
-const DEFAULT_COLOR_THEME = "neutral"
+const DEFAULT_COLOR_THEME = "neutral";
 
-const DEFAULT_INSET_BG_COLOR = shades.white
-const DEFAULT_INSET_FONT_COLOR = shades.gray20
+const DEFAULT_INSET_BG_COLOR = shades.white;
+const DEFAULT_INSET_FONT_COLOR = shades.gray20;
 
 interface IColorTheme {
-  background: string,
-  font: string,
-  insetBackground?: string,
-  insetFont?: string
+  background: string;
+  font: string;
+  insetBackground?: string;
+  insetFont?: string;
 }
 
 interface ParsedColorTheme {
-  background: any,
-  font: any,
-  insetBackground?: any,
-  insetFont?: any
+  background: any;
+  font: any;
+  insetBackground?: any;
+  insetFont?: any;
 }
 
 interface ButtonWrapperProps {
   /** The text label to be shown on the button */
-  label?: string
+  label?: string;
   /** Indicates the importance of the button's actions */
-  type?: "primary" | "secondary",
+  type?: "primary" | "secondary";
   /** Indicates the state of an action. Can be a preset string or an object
    * representing custom color theme that overrides the defaults,
    * The color theme should be passed in the form of an object containing two properties,
    * background and font and the values should be a valid hex string or
    * css rgb format.
    */
-  colorTheme?: ColorPreset | IColorTheme,
+  colorTheme?: ColorPreset | IColorTheme;
   /** Inverted color scheme */
-  ghost?: boolean,
+  ghost?: boolean;
   /** Physical area occupied on the screen */
-  size?: "small" | "medium" | "large",
+  size?: "small" | "medium" | "large";
   /** Whether the button should be disabled */
-  disabled?: boolean,
+  disabled?: boolean;
   /** Only text/icon stripping the background */
-  bare?: boolean,
+  bare?: boolean;
   /** An icon type to be rendered in the button */
-  icon?: string,
+  icon?: string;
   /** An inset value, typically used for showing notifications */
-  insetLabel?: string,
+  insetLabel?: string;
   /** A location to navigate to on click of the button */
-  href?: string,
+  href?: string;
   /** An event handler to be called on click of the button */
-  onClick?: (event) => void
+  onClick?: (event) => void;
 }
 
-const parseColorTheme = (colorTheme) => {
-  let parsedColorTheme: ParsedColorTheme = { ...secondaryPalette[DEFAULT_COLOR_THEME] }
+const parseColorTheme = colorTheme => {
+  let parsedColorTheme: ParsedColorTheme = {
+    ...secondaryPalette[DEFAULT_COLOR_THEME]
+  };
   // Get the color theme based on variant and override if explicitly provided
   if (typeof colorTheme === "string") {
-    parsedColorTheme = { ...secondaryPalette[colorTheme!] }
+    parsedColorTheme = { ...secondaryPalette[colorTheme!] };
   } else {
-    colorTheme = colorTheme || secondaryPalette[DEFAULT_COLOR_THEME]
-    if (colorTheme && chroma.valid(colorTheme.background) && chroma.valid(colorTheme.font)) {
-      parsedColorTheme.background = chroma(colorTheme.background)
-      parsedColorTheme.font = chroma(colorTheme.font)
+    colorTheme = colorTheme || secondaryPalette[DEFAULT_COLOR_THEME];
+    if (
+      colorTheme &&
+      chroma.valid(colorTheme.background) &&
+      chroma.valid(colorTheme.font)
+    ) {
+      parsedColorTheme.background = chroma(colorTheme.background);
+      parsedColorTheme.font = chroma(colorTheme.font);
     }
   }
 
   // Inset color schemes are optional and will be defaulted to a value if not supplied
   parsedColorTheme.insetBackground =
-    (chroma.valid(colorTheme.insetBackground) && chroma(colorTheme.insetBackground))
-    || DEFAULT_INSET_BG_COLOR
+    (chroma.valid(colorTheme.insetBackground) &&
+      chroma(colorTheme.insetBackground)) ||
+    DEFAULT_INSET_BG_COLOR;
   parsedColorTheme.insetFont =
-    (chroma.valid(colorTheme.insetFont) && chroma(colorTheme.insetFont))
-    || DEFAULT_INSET_FONT_COLOR
-  return parsedColorTheme
-}
+    (chroma.valid(colorTheme.insetFont) && chroma(colorTheme.insetFont)) ||
+    DEFAULT_INSET_FONT_COLOR;
+  return parsedColorTheme;
+};
 
 const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   label,
@@ -93,13 +100,15 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   insetLabel,
   colorTheme
 }) => {
-  const typographySize = size === "small" ? typography.size12 : typography.size14
-  const baseFontSize = typographySize.fontSize
-  const baseLineHeight = typographySize.lineHeight
-  const insetFontSize = baseFontSize - theme.baseIncrementUnit
-  const lowerTypographyUnit = typography[`size${insetFontSize * 10}`]
-  const insetLineHeight = lowerTypographyUnit && lowerTypographyUnit.lineHeight || baseLineHeight
-  const parsedColorTheme = parseColorTheme(colorTheme)
+  const typographySize =
+    size === "small" ? typography.size12 : typography.size14;
+  const baseFontSize = typographySize.fontSize;
+  const baseLineHeight = typographySize.lineHeight;
+  const insetFontSize = baseFontSize - theme.baseIncrementUnit;
+  const lowerTypographyUnit = typography[`size${insetFontSize * 10}`];
+  const insetLineHeight =
+    (lowerTypographyUnit && lowerTypographyUnit.lineHeight) || baseLineHeight;
+  const parsedColorTheme = parseColorTheme(colorTheme);
 
   return (
     <ButtonBase
@@ -109,24 +118,28 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       ghost={ghost!}
       size={size!}
       disabled={disabled}
-      onClick={(e) => (onClick && onClick(e) || href && (window.location.assign(href)))}
+      onClick={e =>
+        (onClick && onClick(e)) || (href && window.location.assign(href))
+      }
       bare={bare!}
       colorTheme={parsedColorTheme}
       fontSize={baseFontSize}
       lineHeight={baseLineHeight}
     >
-      {icon ? <Icon type={icon} /> : null }
+      {icon ? <Icon type={icon} /> : null}
       {label}
-      {insetLabel ?
+      {insetLabel ? (
         <ButtonInset
           label={insetLabel}
           backgroundColor={parsedColorTheme.insetBackground}
           fontColor={parsedColorTheme.insetFont}
           fontSize={`${insetFontSize}rem`}
           lineHeight={`${insetLineHeight}rem`}
-        /> : null}
+        />
+      ) : null}
     </ButtonBase>
-)}
+  );
+};
 
 ButtonWrapper.defaultProps = {
   type: "primary",
@@ -134,7 +147,7 @@ ButtonWrapper.defaultProps = {
   ghost: false,
   disabled: false,
   size: "medium",
-  bare: false,
-}
+  bare: false
+};
 
-export default ButtonWrapper
+export default ButtonWrapper;

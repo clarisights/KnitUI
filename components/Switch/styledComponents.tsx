@@ -1,8 +1,8 @@
-import RCSwitch from "rc-switch"
-import styled from "styled-components"
+import RCSwitch from "rc-switch";
+import styled from "styled-components";
 
-const isSmall = size => size === "small"
-const isDisabled = props => props.disabled
+const isSmall = size => size === "small";
+const isDisabled = props => props.disabled;
 
 export const StyledSwitch = styled(RCSwitch)`
   &.knit-switch {
@@ -132,4 +132,4 @@ export const StyledSwitch = styled(RCSwitch)`
       transform: translateY(-50%) scale(1);
     }
   }
-`
+`;
