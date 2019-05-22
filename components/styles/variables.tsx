@@ -126,3 +126,8 @@ export const switchCheckedBorderColor = "hsl(118, 100%, 21%)"
 export const switchCheckedBgColor = "hsl(118, 100%, 21%)"
 export const switchCheckedDisabledBorderColor = "hsl(0, 0%, 90%)"
 export const switchCheckedDisabledBgColor = "hsl(0, 0%, 90%)"
+
+// Breadcrumb
+export const breadcrumbHover = "#F2F2F2"
+export const breadcrumbColor = "#4C4C4C"
+export const breadcrumbLinkColor = "#0F74BD"
