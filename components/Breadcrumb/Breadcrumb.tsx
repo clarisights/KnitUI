@@ -1,4 +1,4 @@
-import React, { SFC, ReactNode, CSSProperties, Component, cloneElement } from 'react'
+import React, { ReactNode, ReactElement, CSSProperties, Component, cloneElement } from 'react'
 import BreadcrumbItem, { BreadcrumbItemProps } from './BreadcrumbItem'
 
 export interface BreadcrumbProps {
@@ -28,7 +28,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
         return element
       }
       const sep = index === children && children.length - 1 ? '' : separator;
-      return cloneElement(element as React.ReactElement<any>, {
+      return cloneElement(element as ReactElement<any>, {
         separator: sep,
         key: index
       })
@@ -44,9 +44,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   render() {
     return (
       <>
-        {
-          this.renderBreadcrumbs()
-        }
+        { this.renderBreadcrumbs() }
       </>
     )
   }
