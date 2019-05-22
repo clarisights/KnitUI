@@ -22,7 +22,6 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   }
 
   renderBreadcrumbs = (): ReactNode => {
-    console.log('asd')
     const { children, className, separator, style } = this.props;
     const crumbs = React.Children.map(children, (element: ReactNode, index) => {
       if (!element) {
