@@ -27,7 +27,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
       if (!element) {
         return element
       }
-      const sep = index === children && children.length - 1 ? '' : separator;
+      const sep = index === (children && children.length - 1) ? '' : separator
       return cloneElement(element as ReactElement<any>, {
         separator: sep,
         key: index
