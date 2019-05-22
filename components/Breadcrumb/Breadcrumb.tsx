@@ -1,13 +1,17 @@
-import React, { SFC, ReactNode, CSSProperties, Component } from 'react'
+import React, { SFC, ReactNode, CSSProperties, Component, cloneElement } from 'react'
 import BreadcrumbItem, { BreadcrumbItemProps } from './BreadcrumbItem'
 
 export interface BreadcrumbProps {
   /** crumbs of the data to be shown */
-  crumbs: string[] | ReactNode[],
+  crumbs?: string[] | ReactNode[];
   /** separate to be using between crumbs */
-  separator?: string | ReactNode,
+  separator?: string | ReactNode;
   /** styles specified by the user */
-  style?: CSSProperties
+  style?: CSSProperties;
+  /** Breadcrumb Items in children */
+  children?: ReactNode[],
+  /** className for user to specify their class */
+  className?: string
 }
 
 export default class Breadcrumb extends Component<BreadcrumbProps, any> {
@@ -17,17 +21,32 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
     separator: '/'
   }
 
-  renderBreadcrumbs = (crumbs: string[] | ReactNode[], separator: string | ReactNode): ReactNode => {
-    return crumbs.map((crumb, i) => <span>{crumb}<span> {i !== crumbs.length - 1 && separator} </span></span>)
+  renderBreadcrumbs = (): ReactNode => {
+    console.log('asd')
+    const { children, className, separator, style } = this.props;
+    const crumbs = React.Children.map(children, (element: ReactNode, index) => {
+      if (!element) {
+        return element
+      }
+      const sep = index === children && children.length - 1 ? '' : separator;
+      return cloneElement(element as React.ReactElement<any>, {
+        separator: sep,
+        key: index
+      })
+    })
+    return (
+      <div className={className} style={style}>
+        {crumbs}
+      </div>
+    )
+
   }
-  
+
   render() {
-    const { crumbs, separator } = this.props
-    console.log(crumbs)
     return (
       <>
         {
-          this.renderBreadcrumbs(crumbs, separator)
+          this.renderBreadcrumbs()
         }
       </>
     )
