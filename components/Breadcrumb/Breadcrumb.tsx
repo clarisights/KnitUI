@@ -2,14 +2,12 @@ import React, { ReactNode, ReactElement, CSSProperties, Component, cloneElement 
 import BreadcrumbItem, { BreadcrumbItemProps } from './BreadcrumbItem'
 
 export interface BreadcrumbProps {
-  /** crumbs of the data to be shown */
-  crumbs?: string[] | ReactNode[];
   /** separate to be using between crumbs */
-  separator?: string | ReactNode;
+  separator?: string | ReactNode
   /** styles specified by the user */
-  style?: CSSProperties;
+  style?: CSSProperties
   /** Breadcrumb Items in children */
-  children?: ReactNode[],
+  children?: ReactNode[]
   /** className for user to specify their class */
   className?: string
 }
@@ -27,25 +25,24 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
       if (!element) {
         return element
       }
+      // Separator to be used among children, nothing for last child
       const sep = index === (children && children.length - 1) ? '' : separator
       return cloneElement(element as ReactElement<any>, {
         separator: sep,
         key: index
       })
     })
-    return (
-      <div className={className} style={style}>
-        {crumbs}
-      </div>
-    )
+    console.log(crumbs)
+    return crumbs
 
   }
 
   render() {
+    const { className, style } = this.props
     return (
-      <>
-        { this.renderBreadcrumbs() }
-      </>
-    )
+      <div className={className || ''} style={style}>
+        {this.renderBreadcrumbs()}
+      </div>
+    );
   }
 }
