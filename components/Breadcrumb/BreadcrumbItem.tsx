@@ -1,13 +1,11 @@
 import React, { SFC, ReactNode, CSSProperties } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import * as theme from "../styles/variables"
 
 const {
   typography: { size14 },
   inputBorderRadius,
-  breadcrumbColor,
-  breadcrumbHover,
-  breadcrumbLinkColor
+  shades: { gray30, gray95, blue40 }
 } = theme
 export interface BreadcrumbItemProps {
   /** Link to the route which breadcrumb item should redirect to */
@@ -20,39 +18,49 @@ export interface BreadcrumbItemProps {
   className?: string
 }
 
-const StyledText: any = styled.span`
+const sharedStyles = css`
   font-size: ${`${size14.fontSize}rem`};
   line-height: ${size14.lineHeight};
-  color: ${(props: any) => props.link ? breadcrumbLinkColor : breadcrumbColor};
   border-radius: ${inputBorderRadius};
-  text-decoration: ${(props: any) => props.link ? 'underline' : 'none'};
   padding: 0 3px 0 3px;
-  cursor: ${(props: any) => props.link ? 'pointer' : 'default'};
   &:hover {
-    background-color: ${(props: any) => props.separator ? '' : breadcrumbHover}
+    background-color: ${(props: any) =>
+      props.separator ? "" : gray95};
   }
+`;
+
+const StyledText: any = styled.span`
+  ${sharedStyles}
+  cursor: "default";
+  color: ${gray30};
 `
+
+const StyledLink: any = styled.a`
+  ${sharedStyles}
+  text-decoration: "underline";
+  color: ${blue40};
+`;
 
 const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
   const { separator, children, style, className, ...restProps } = props
   let link
-
+  console.log(children)
   if ('href' in props) {
     link = (
-      <StyledText link {...restProps}>{ children }</StyledText>
-    )
-  } else {
-    link = (
-      <StyledText {...restProps}>
+      <StyledLink link {...restProps}>{ children }</StyledLink>
+      )
+    } else {
+      link = (
+        <StyledText {...restProps}>
         { children }
       </StyledText>
     )
   }
+  console.log(link)
 
   return (
     <span className={className || ''} {...restProps} style={style}>
       {link}
-      <StyledText separator>{separator}</StyledText>
     </span>
   );
 }

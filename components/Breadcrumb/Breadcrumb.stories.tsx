@@ -24,7 +24,7 @@ storiesOf("Breadcrumb", module)
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item><a href="/dashboard/reports/50467">50467</a></Breadcrumb.Item>
     </Breadcrumb>
   ))
   .add("Breadcrumb with separator", () => (
