@@ -1,36 +1,36 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { Button } from "./index";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { Button } from "./index"
 import {
   withKnobs,
   text,
   boolean,
   select,
-  object
-} from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
-const Readme = require("./README.md");
+  object,
+} from "@storybook/addon-knobs"
+import { action } from "@storybook/addon-actions"
+const Readme = require("./README.md")
 
-const stories = storiesOf("Buttons", module);
-stories.addDecorator(withKnobs);
+const stories = storiesOf("Buttons", module)
+stories.addDecorator(withKnobs)
 
 const typeOptions = {
   Primary: "primary",
-  Secondary: "secondary"
-};
+  Secondary: "secondary",
+}
 
 const sizeOptions = {
   Small: "small",
   Medium: "medium",
-  Large: "large"
-};
+  Large: "large",
+}
 
 const colorThemeOptions = {
   Neutral: "neutral",
   Danger: "danger",
   Warning: "warning",
-  Unsaved: "unsaved"
-};
+  Unsaved: "unsaved",
+}
 
 stories
   .addParameters({
@@ -38,8 +38,8 @@ stories
       // Show readme before story
       codeTheme: "shades-of-purple",
       // Show readme at the addons panel
-      sidebar: Readme
-    }
+      sidebar: Readme,
+    },
   })
   .add("Simple primary with text", () => (
     <Button
@@ -135,7 +135,7 @@ stories
         background: "#9242f4",
         font: "#f4eb41",
         insetBackground: "#000000",
-        insetFont: "#ffffff"
+        insetFont: "#ffffff",
       })}
     />
   ))
@@ -150,4 +150,4 @@ stories
       insetLabel={text("InsetLabel", "10")}
       href="/sample"
     />
-  ));
+  ))
