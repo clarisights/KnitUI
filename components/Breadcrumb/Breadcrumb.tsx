@@ -32,7 +32,6 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
         key: index
       })
     })
-    console.log(crumbs)
     return crumbs
 
   }
