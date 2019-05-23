@@ -47,7 +47,7 @@ describe("Button", () => {
           <Button
             label="button"
             size={size}
-            icon="Info"
+            icon="oInfo"
           />)
         expect(asFragment()).toMatchSnapshot()
       })
@@ -57,7 +57,7 @@ describe("Button", () => {
           <Button
             label="button"
             size={size}
-            icon="Info"
+            icon="oInfo"
             bare
           />)
         expect(asFragment()).toMatchSnapshot()
@@ -79,7 +79,7 @@ describe("Button", () => {
         <Button
           label="button"
           size={size}
-          icon="Info"
+          icon="oInfo"
         />)
       expect(asFragment()).toMatchSnapshot()
     })
@@ -89,7 +89,7 @@ describe("Button", () => {
         <Button
           label="button"
           size={size}
-          icon="Info"
+          icon="oInfo"
           insetLabel={"10"}
         />)
       expect(asFragment()).toMatchSnapshot()
