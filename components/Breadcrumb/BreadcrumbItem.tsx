@@ -31,13 +31,13 @@ const sharedStyles = css`
 
 const StyledText: any = styled.span`
   ${sharedStyles}
-  cursor: "default";
+  cursor: default;
   color: ${gray30};
 `
 
 const StyledLink: any = styled.a`
   ${sharedStyles}
-  text-decoration: "underline";
+  text-decoration: underline;
   color: ${blue40};
 `;
 
@@ -59,6 +59,7 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
   return (
     <span className={className || ''} {...restProps} style={style}>
       {link}
+      <StyledText separator>{ separator }</StyledText>
     </span>
   );
 }
