@@ -1,6 +1,6 @@
 import React, { SFC, ReactNode, CSSProperties } from 'react'
 import styled from 'styled-components'
-import * as theme from "../styles/variables";
+import * as theme from "../styles/variables"
 
 const {
   typography: { size14 },
@@ -23,23 +23,13 @@ export interface BreadcrumbItemProps {
 const StyledText: any = styled.span`
   font-size: ${`${size14.fontSize}rem`};
   line-height: ${size14.lineHeight};
-  color: ${breadcrumbColor};
+  color: ${(props: any) => props.link ? breadcrumbLinkColor : breadcrumbColor};
   border-radius: ${inputBorderRadius};
+  text-decoration: ${(props: any) => props.link ? 'underline' : 'none'};
   padding: 0 3px 0 3px;
-  cursor: default;
+  cursor: ${(props: any) => props.link ? 'pointer' : 'default'};
   &:hover {
     background-color: ${(props: any) => props.separator ? '' : breadcrumbHover}
-  }
-`
-
-const StyledLink: any = styled.a`
-  font-size: ${`${size14.fontSize}rem`};
-  line-height: ${size14.lineHeight};
-  color: ${breadcrumbLinkColor};
-  border-radius: ${inputBorderRadius};
-  padding: 0 3px 0 3px;
-  &:hover {
-    background-color: ${breadcrumbHover};
   }
 `
 
@@ -47,9 +37,9 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
   const { separator, children, style, className, ...restProps } = props
   let link
 
-  if('href' in props) {
+  if ('href' in props) {
     link = (
-      <StyledLink {...restProps}>{ children }</StyledLink>
+      <StyledText link {...restProps}>{ children }</StyledText>
     )
   } else {
     link = (
