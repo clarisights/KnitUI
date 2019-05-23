@@ -1,4 +1,4 @@
-import React, { SFC, ReactNode } from 'react'
+import React, { SFC, ReactNode, CSSProperties } from 'react'
 import styled from 'styled-components'
 import * as theme from "../styles/variables";
 
@@ -9,11 +9,15 @@ const {
   breadcrumbHover,
   breadcrumbLinkColor
 } = theme
-
-
 export interface BreadcrumbItemProps {
+  /** Link to the route which breadcrumb item should redirect to */
   href?: string
+  /** Separator to be used */
   separator?: string | ReactNode
+  /** Custom styles of the breadcrumb item */
+  style?: CSSProperties
+  /** className to be passed to the item */
+  className?: string
 }
 
 const StyledText: any = styled.span`
@@ -22,6 +26,7 @@ const StyledText: any = styled.span`
   color: ${breadcrumbColor};
   border-radius: ${inputBorderRadius};
   padding: 0 3px 0 3px;
+  cursor: default;
   &:hover {
     background-color: ${(props: any) => props.separator ? '' : breadcrumbHover}
   }
@@ -39,7 +44,7 @@ const StyledLink: any = styled.a`
 `
 
 const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
-  const { separator, children, ...restProps } = props
+  const { separator, children, style, className, ...restProps } = props
   let link
 
   if('href' in props) {
@@ -55,7 +60,7 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
   }
 
   return (
-    <span>
+    <span className={className || ''} {...restProps} style={style}>
       {link}
       <StyledText separator>{separator}</StyledText>
     </span>
