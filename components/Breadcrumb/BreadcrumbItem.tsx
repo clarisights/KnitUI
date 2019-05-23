@@ -44,7 +44,6 @@ const StyledLink: any = styled.a`
 const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
   const { separator, children, style, className, ...restProps } = props
   let link
-  console.log(children)
   if ('href' in props) {
     link = (
       <StyledLink link {...restProps}>{ children }</StyledLink>
@@ -56,7 +55,6 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
       </StyledText>
     )
   }
-  console.log(link)
 
   return (
     <span className={className || ''} {...restProps} style={style}>
