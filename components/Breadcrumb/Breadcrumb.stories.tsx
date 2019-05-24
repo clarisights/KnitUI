@@ -5,11 +5,11 @@ import { Icon } from "../Icon";
 
 const sep = <span>🐉</span>;
 const customStyle = {
-  fontSize: '4rem',
   border: '2px solid red'
 }
 
 const customItemStyle = {
+  color: 'black',
   border: '2px solid red'
 }
 
