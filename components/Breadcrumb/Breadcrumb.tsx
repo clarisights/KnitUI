@@ -28,22 +28,16 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
 
   renderBreadcrumbs = (): ReactNode => {
     const { children, truncateTo = Infinity, separator } = this.props;
-    const updatedChilds = Array.isArray(children) ? this.insertSeparators(children, separator, truncateTo): children
-    const crumbs = React.Children.map(updatedChilds, (element: ReactNode, index) => {
+    const updatedChildren = Array.isArray(children) ? this.insertSeparators(children, separator, truncateTo) : children
+    const crumbs = React.Children.map(updatedChildren, (element: ReactNode, index) => {
       if (!element) {
         return element
       }
-      // Separator to be used among children, nothing for last child
-      const sep = index === (children && children.length - 1) ? '' : separator
       return cloneElement(element as ReactElement<any>, {
         key: index
       })
     })
     return crumbs
-  }
-
-  renderAllChild = () => {
-    this.setState({ showAll: true })
   }
 
   // Logic to insert separators among the list of children
@@ -57,7 +51,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
     crumbs.forEach((crumb: ReactNode, index: number) => {
       const insertStuff =
         index === 0 || index >= crumbs.length - truncateTo || showAll
-      if(insertStuff) {
+      if (insertStuff) {
         updatedCrumbs.push(crumb)
         // Insert nodes till last element
         if (index < crumbs.length - 1) {
@@ -65,8 +59,12 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
             <StyledText separator>{separator}</StyledText>
           )
         }
-      } else if(!truncated) {
-        updatedCrumbs.push(<StyledText onClick={() => this.renderAllChild()}>...</StyledText>)
+      } else if (!truncated) {
+        updatedCrumbs.push(
+          <StyledText onClick={() => this.setState({ showAll: true })}>
+            ...
+          </StyledText>
+        )
         updatedCrumbs.push(
           <StyledText separator>{separator}</StyledText>
         )
