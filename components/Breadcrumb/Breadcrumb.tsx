@@ -1,5 +1,5 @@
 import React, { ReactNode, ReactElement, CSSProperties, Component, cloneElement } from 'react'
-import BreadcrumbItem, { BreadcrumbItemProps, StyledText } from './BreadcrumbItem'
+import { BreadcrumbItemProps, StyledText, StyledActive } from './BreadcrumbItem'
 
 export interface BreadcrumbProps {
   /** separate to be using between crumbs */
@@ -14,6 +14,8 @@ export interface BreadcrumbProps {
   maxWidth?: string
   /** Level till which the crumbs are to be shown (from end) First is shown anyways */
   truncateTo?: number
+  /** Styles for the active item */
+  activeStyles?: CSSProperties
 }
 
 export default class Breadcrumb extends Component<BreadcrumbProps, any> {
