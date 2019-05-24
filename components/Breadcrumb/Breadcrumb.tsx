@@ -24,7 +24,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
 
   renderBreadcrumbs = (): ReactNode => {
     const { children, className, separator, style } = this.props;
-    const updatedChilds = this.insertSeparators(children, separator)
+    const updatedChilds = Array.isArray(children) ? this.insertSeparators(children, separator): children
     const crumbs = React.Children.map(updatedChilds, (element: ReactNode, index) => {
       if (!element) {
         return element
