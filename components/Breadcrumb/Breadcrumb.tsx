@@ -7,24 +7,28 @@ export interface BreadcrumbProps {
   /** styles specified by the user */
   style?: CSSProperties
   /** Breadcrumb Items in children */
-  children?: ReactNode[]
+  children?: ReactNode[] | ReactNode
   /** className for user to specify their class */
   className?: string
   /** Max width of the breadcrumb to be wrapped in */
   maxWidth?: string
+  /** Level till which the crumbs are to be shown (from end) First is shown anyways */
+  truncateTo?: number
 }
-
 
 export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   static Item: React.FunctionComponent<BreadcrumbItemProps>
-
   static defaultProps = {
     separator: '/'
   }
 
+  state = {
+    showAll: false
+  }
+
   renderBreadcrumbs = (): ReactNode => {
-    const { children, className, separator, style } = this.props;
-    const updatedChilds = Array.isArray(children) ? this.insertSeparators(children, separator): children
+    const { children, truncateTo = Infinity, separator } = this.props;
+    const updatedChilds = Array.isArray(children) ? this.insertSeparators(children, separator, truncateTo): children
     const crumbs = React.Children.map(updatedChilds, (element: ReactNode, index) => {
       if (!element) {
         return element
@@ -38,16 +42,35 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
     return crumbs
   }
 
+  renderAllChild = () => {
+    this.setState({ showAll: true })
+  }
+
   // Logic to insert separators among the list of children
-  insertSeparators = (crumbs: ReactNode[], separator: ReactNode | string) => {
-    const updatedCrumbs: ReactNode[] = []
+  insertSeparators = (crumbs: ReactNode[], separator: ReactNode | string, truncateTo: number) => {
+    // Container where we insert nodes and separators in appropriate places
+    const updatedCrumbs: ReactNode[] = [];
+    // bool to check whether all items are to be shown
+    const { showAll } = this.state
+    // A bool to check whether the ... is inserted or not
+    let truncated = false;
     crumbs.forEach((crumb: ReactNode, index: number) => {
-      updatedCrumbs.push(crumb)
-      // Insert nodes till last element
-      if (index < crumbs.length - 1) {
+      const insertStuff =
+        index === 0 || index >= crumbs.length - truncateTo || showAll
+      if(insertStuff) {
+        updatedCrumbs.push(crumb)
+        // Insert nodes till last element
+        if (index < crumbs.length - 1) {
+          updatedCrumbs.push(
+            <StyledText separator>{separator}</StyledText>
+          )
+        }
+      } else if(!truncated) {
+        updatedCrumbs.push(<StyledText onClick={() => this.renderAllChild()}>...</StyledText>)
         updatedCrumbs.push(
           <StyledText separator>{separator}</StyledText>
         )
+        truncated = true
       }
     })
     return updatedCrumbs

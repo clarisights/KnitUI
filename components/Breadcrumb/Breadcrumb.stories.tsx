@@ -112,4 +112,20 @@ storiesOf("Breadcrumb", module)
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
     </Breadcrumb>
+  ))
+  .add("Breadcrumb with truncated state", () => (
+    <Breadcrumb truncateTo={2}>
+      <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+      <Breadcrumb.Item>Reports</Breadcrumb.Item>
+      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+      <Breadcrumb.Item>Reports</Breadcrumb.Item>
+      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+      <Breadcrumb.Item>Reports</Breadcrumb.Item>
+      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+      <Breadcrumb.Item>Reports</Breadcrumb.Item>
+      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+    </Breadcrumb>
   ));
