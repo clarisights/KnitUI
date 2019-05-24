@@ -3,38 +3,30 @@ import styled from "styled-components"
 import * as Icons from "./Icons"
 import { withProps } from "../_utils"
 
-interface IconProps {
-  SVGHeight?: number
-  SVGWidth?: number
-  customStyles?: any
+interface IIconProps {
+  type: string
+  height?: string
+  width?: string
+  customStyles?: string
 }
 
-const StyledIconWrapper: any = withProps<IconProps>()(styled.span)`
+const StyledIconWrapper: any = withProps<IIconProps>()(styled.span)`
   cursor: inherit;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: ${props => props.SVGHeight};
-  width: ${({ SVGWidth }) => SVGWidth};
   & svg {
-    padding: 2px;
-    margin: 2px;
-    height: ${props => props.SVGHeight};
-    width: ${({ SVGWidth }) => SVGWidth};
-    ${({ customStyles }) => customStyles};
+   ${({ customStyles }) => customStyles};
   }
 `
 
-const Icon: any = props => {
-  const { type, height = "28px", width = "28px", customStyles = "" } = props
-  const icon = Icons[`IconSystem${type}`]()
+const Icon: any = (props: IIconProps) => {
+  const { type, height = "18px", width = "18px", customStyles = "" } = props
+  const svgStyles = { height, width }
+  // If type is not provided, then "oCheckBoxOutlineBlank" is used as placeholder icon
+  const defaultType = "oCheckBoxOutlineBlank"
+  const icon =
+    type && Icons[type] ? Icons[type](svgStyles) : Icons[defaultType](svgStyles)
   return (
-    <StyledIconWrapper
-      {...props}
-      SVGWidth={width}
-      SVGHeight={height}
-      customStyles={customStyles}>
+    <StyledIconWrapper {...props} customStyles={customStyles}>
       {icon}
     </StyledIconWrapper>
   )
