@@ -30,7 +30,7 @@ const sharedStyles = css`
   }
 `;
 
-const StyledText: any = styled.span`
+export const StyledText: any = styled.span`
   ${sharedStyles}
   cursor: default;
   color: ${gray30};
@@ -40,31 +40,17 @@ const StyledText: any = styled.span`
   }
 `;
 
-const StyledLink: any = styled.a`
-  ${sharedStyles}
-  text-decoration: underline;
-  color: ${blue40};
-`;
-
 const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
   const { separator, children, style, className, ...restProps } = props
-  let link
-  if ('href' in props) {
-    link = (
-      <StyledLink link {...restProps}>{ children }</StyledLink>
-      )
-    } else {
-      link = (
-        <StyledText {...restProps}>
-        { children }
-      </StyledText>
-    )
-  }
+  const link = (
+    <StyledText {...restProps}>
+    { children }
+  </StyledText>
+)
 
   return (
     <span className={className || ''} {...restProps} style={style}>
       {link}
-      <StyledText separator>{ separator }</StyledText>
     </span>
   );
 }
