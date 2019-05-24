@@ -10,6 +10,8 @@ export interface BreadcrumbProps {
   children?: ReactNode[]
   /** className for user to specify their class */
   className?: string
+  /** Max width of the breadcrumb to be wrapped in */
+  maxWidth?: string
 }
 
 
@@ -52,7 +54,8 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   }
 
   render() {
-    const { className, style } = this.props
+    let { className, style, maxWidth } = this.props
+    style = {...style, display: 'flex', maxWidth, flexWrap: 'wrap' }
     return (
       <div className={className || ''} style={style}>
         {this.renderBreadcrumbs()}
