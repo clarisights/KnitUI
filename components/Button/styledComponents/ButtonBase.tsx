@@ -137,7 +137,7 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
     return `1px solid ${borderColor}`
   }
 
-  const getIconColor = (state) => {
+  const getIconColor = (state: ButtonState) => {
     if (!bare) {
       return baseFontColor
     }
@@ -149,6 +149,15 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
       default:
         return baseBackgroundColor
     }
+  }
+
+  const getIconMargin = () => {
+    return (
+      icon && label ?
+        size === "small" ? "0.2rem" : "0.4rem"
+          :
+        "0rem"
+    )
   }
 
   const StyledButton = styled.button`
@@ -166,8 +175,11 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
     border-style: none;
     box-sizing: border-box;
     border: ${getBorder("default")};
-    svg path {
-      fill: ${getIconColor("default")};
+    svg {
+      margin-right: ${getIconMargin()};
+      path {
+        fill: ${getIconColor("default")};
+      }
     }
     :hover, :active, :focus {
       background-color: ${getBackgroundColor("hover")};

@@ -30,6 +30,4 @@ config/base.yaml
 /.vscode/
 /coverage
 /build
-yarn.lock
-package-lock.json
 /.history
