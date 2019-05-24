@@ -91,7 +91,7 @@ stories
   ))
   .add("Icon", () => (
     <Button
-      icon={text("Icon", "Info")}
+      icon={text("Icon", "oInfo")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}
       disabled={boolean("Disabled", false)}
@@ -101,7 +101,7 @@ stories
   ))
   .add("Icon with text", () => (
     <Button
-      icon={text("Icon", "Info")}
+      icon={text("Icon", "oInfo")}
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}
@@ -112,7 +112,7 @@ stories
   ))
   .add("Icon with text and an inset", () => (
     <Button
-      icon={text("Icon", "Info")}
+      icon={text("Icon", "oInfo")}
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}
@@ -124,7 +124,7 @@ stories
   ))
   .add("With a custom color scheme", () => (
     <Button
-      icon={text("Icon", "Info")}
+      icon={text("Icon", "oInfo")}
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
       disabled={boolean("Disabled", false)}
@@ -141,7 +141,7 @@ stories
   ))
   .add("With an href", () => (
     <Button
-      icon={text("Icon", "Info")}
+      icon={text("Icon", "oInfo")}
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}

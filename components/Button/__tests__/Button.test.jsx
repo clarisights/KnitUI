@@ -33,14 +33,14 @@ describe("Button", () => {
 
       it("renders with an icon correctly", () => {
         const { asFragment } = render(
-          <Button label="button" size={size} icon="Info" />
+          <Button label="button" size={size} icon="oInfo" />
         )
         expect(asFragment()).toMatchSnapshot()
       })
 
       it("renders with a bare icon correctly", () => {
         const { asFragment } = render(
-          <Button label="button" size={size} icon="Info" bare />
+          <Button label="button" size={size} icon="oInfo" bare />
         )
         expect(asFragment()).toMatchSnapshot()
       })
@@ -55,14 +55,14 @@ describe("Button", () => {
 
     it("renders with text and an icon correctly", () => {
       const { asFragment } = render(
-        <Button label="button" size={size} icon="Info" />
+        <Button label="button" size={size} icon="oInfo" />
       )
       expect(asFragment()).toMatchSnapshot()
     })
 
     it("renders with text, icon and inset correctly", () => {
       const { asFragment } = render(
-        <Button label="button" size={size} icon="Info" insetLabel={"10"} />
+        <Button label="button" size={size} icon="oInfo" insetLabel={"10"} />
       )
       expect(asFragment()).toMatchSnapshot()
     })
