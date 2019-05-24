@@ -6,8 +6,9 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import { Modal, LeftPanelModal, RightPanelModal, BottomPanelModal } from "./variants/index"
-
+import * as theme from "../styles/variables"
 import { StyleContext } from "./common/contexts"
+import { Icon } from "../Icon"
 
 const sizeToWidth = {
   "small": "49rem",
@@ -34,7 +35,6 @@ export interface ModalWrapperProps {
   /** Function to be executed when the modal is dismissed */
   onClose: () => void,
   panel?: { position: "left" | "right" | "bottom", content: ReactNode }
-  [propName: string]: any,
 }
 
 /**
@@ -50,10 +50,9 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     horizontal: "2.8rem"
   },
   getContainer = () => document.getElementsByTagName('body')[0],
-  visible = true,
+  visible = false,
   onClose,
   panel,
-  ...props
 }) => {
 
   /**
@@ -61,17 +60,23 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
    * panel prop and its position.
    * @param modalProps
    */
-  const ModalProxy = (modalProps) => {
+  const ModalProxy = (
+    modalProps: {
+        header: ReactNode,
+        footer: ReactNode,
+        body: ReactNode
+      }
+  ) => {
     if (!panel) {
       return <Modal {...modalProps} />
     }
     switch (panel.position) {
       case "left":
-        return <LeftPanelModal {...modalProps} />
+        return <LeftPanelModal {...modalProps} panelContent={panel.content} />
       case "right":
-        return <RightPanelModal {...modalProps} />
+        return <RightPanelModal {...modalProps} panelContent={panel.content} />
       case "bottom":
-        return <BottomPanelModal {...modalProps} />
+        return <BottomPanelModal {...modalProps} panelContent={panel.content} />
       default:
         return <Modal {...modalProps} />
     }
@@ -95,12 +100,12 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       `top: 2.5rem;`
       }
       opacity: unset;
-      text-shadow: unset;
-      color: ${scProps => scProps.theme.shades.gray90};
-      background-color: ${scProps => scProps.theme.shades.gray50};
-      border-radius: 11px;
-      span {
-        padding: 0px 0.5rem;
+      padding: 0.15rem;
+      background-color: ${theme.shades.gray50};
+      border-radius: 999px;
+      svg {
+          fill: ${theme.shades.gray90};
+        }
       }
     }
   `
@@ -111,12 +116,12 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
         getContainer={getContainer}
         visible={visible}
         onClose={onClose}
+        closeIcon={<Icon type="oClear" />}
       >
         <ModalProxy
           header={<Header {...header} />}
           body={<Main setBodyRef={setBodyRef}>{body}</Main>}
           footer={<Footer showBorder={showFooterBorder}>{footer}</Footer>}
-          {...props}
         />
       </StyledContainer>
     </StyleContext.Provider>

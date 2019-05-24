@@ -58,7 +58,6 @@ describe("Modal", () => {
               header={{title: "Title"}}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
-              panelContent={<div>Pannel content</div>}
               size="medium"
               visible
               onClose={() => {}}
@@ -77,7 +76,6 @@ describe("Modal", () => {
               header={{title: "Title"}}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
-              panelContent={<div>Pannel content</div>}
               size="medium"
               visible
               onClose={() => {}}
@@ -96,7 +94,6 @@ describe("Modal", () => {
               header={{title: "Title"}}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
-              panelContent={<div>Pannel content</div>}
               size="medium"
               visible
               onClose={() => {}}
@@ -118,7 +115,6 @@ describe("Modal", () => {
           header={{title: "Title"}}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
-          panelContent={<div>Pannel content</div>}
           size="medium"
           visible
           onClose={onCloseStub}

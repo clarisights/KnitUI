@@ -126,3 +126,22 @@ stories
     }
     return (<ModalWrapper />)
   })
+  .add("with a button for openning the modal", () => {
+    const ModalWrapper = () => {
+      const [ modalVisible, setModalVisible ] = useState(false)
+      return (
+        <>
+          <Modal
+            header={{title: "Right panel modal"}}
+            body={<div style={{height: "1000px"}}>Body</div>}
+            footer={<div>Footer</div>}
+            size={select('Size', sizeOptions, "medium")}
+            visible={modalVisible}
+            onClose={() => setModalVisible(false)}
+          />
+          <button onClick={() => setModalVisible(true)}>Open modal</button>
+        </>
+      )
+    }
+    return (<ModalWrapper />)
+  })

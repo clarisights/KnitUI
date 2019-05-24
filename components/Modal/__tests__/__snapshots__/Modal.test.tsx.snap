@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal with size large with a bottom panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12,10 +12,18 @@ exports[`Modal with size large with a bottom panel 1`] = `
   height: 100%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -35,17 +43,16 @@ exports[`Modal with size large with a bottom panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -55,13 +62,13 @@ exports[`Modal with size large with a bottom panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,7 +87,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -88,7 +95,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -116,46 +123,59 @@ exports[`Modal with size large with a bottom panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
             </div>
           </div>
           <div
-            class="c7"
+            class="c8"
           >
             <div>
-              Pannel content
+              Panel content
             </div>
           </div>
         </div>
@@ -171,7 +191,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size large with a left panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -182,7 +202,7 @@ exports[`Modal with size large with a left panel 1`] = `
   height: 100%;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -199,12 +219,12 @@ exports[`Modal with size large with a left panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   width: 210px;
   border-right: 1px solid #d9d9d9;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -213,6 +233,14 @@ exports[`Modal with size large with a left panel 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -232,17 +260,16 @@ exports[`Modal with size large with a left panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -252,13 +279,13 @@ exports[`Modal with size large with a left panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -277,7 +304,7 @@ exports[`Modal with size large with a left panel 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -285,7 +312,7 @@ exports[`Modal with size large with a left panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c9 {
+.c10 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -313,49 +340,62 @@ exports[`Modal with size large with a left panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
-            <div
-              class="c6"
-            >
-              <div>
-                Pannel content
-              </div>
-            </div>
             <div
               class="c7"
             >
+              <div>
+                Panel content
+              </div>
+            </div>
+            <div
+              class="c8"
+            >
               <div
-                class="c8"
+                class="c9"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c9"
+                class="c10"
               >
                 <div>
                   Footer
@@ -376,7 +416,7 @@ exports[`Modal with size large with a left panel 1`] = `
 `;
 
 exports[`Modal with size large with a right panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -387,7 +427,7 @@ exports[`Modal with size large with a right panel 1`] = `
   height: 100%;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -404,7 +444,7 @@ exports[`Modal with size large with a right panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -418,9 +458,17 @@ exports[`Modal with size large with a right panel 1`] = `
   flex-direction: column;
 }
 
-.c9 {
+.c10 {
   width: 210px;
   border-left: 1px solid #d9d9d9;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -440,17 +488,16 @@ exports[`Modal with size large with a right panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -460,13 +507,13 @@ exports[`Modal with size large with a right panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -485,7 +532,7 @@ exports[`Modal with size large with a right panel 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -493,7 +540,7 @@ exports[`Modal with size large with a right panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c8 {
+.c9 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -521,42 +568,55 @@ exports[`Modal with size large with a right panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div
-              class="c6"
+              class="c7"
             >
               <div
-                class="c7"
+                class="c8"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c8"
+                class="c9"
               >
                 <div>
                   Footer
@@ -564,10 +624,10 @@ exports[`Modal with size large with a right panel 1`] = `
               </div>
             </div>
             <div
-              class="c9"
+              class="c10"
             >
               <div>
-                Pannel content
+                Panel content
               </div>
             </div>
           </div>
@@ -584,7 +644,7 @@ exports[`Modal with size large with a right panel 1`] = `
 `;
 
 exports[`Modal with size large with right section in header 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -593,6 +653,14 @@ exports[`Modal with size large with right section in header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -613,17 +681,16 @@ exports[`Modal with size large with right section in header 1`] = `
   right: -1rem;
   top: -1rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -633,13 +700,13 @@ exports[`Modal with size large with right section in header 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -658,7 +725,7 @@ exports[`Modal with size large with right section in header 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -666,7 +733,7 @@ exports[`Modal with size large with right section in header 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -694,25 +761,38 @@ exports[`Modal with size large with right section in header 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             >
               <div>
                 <div>
@@ -722,14 +802,14 @@ exports[`Modal with size large with right section in header 1`] = `
             </div>
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
@@ -748,7 +828,7 @@ exports[`Modal with size large with right section in header 1`] = `
 `;
 
 exports[`Modal with size large with simple config 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -757,6 +837,14 @@ exports[`Modal with size large with simple config 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -776,17 +864,16 @@ exports[`Modal with size large with simple config 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -796,13 +883,13 @@ exports[`Modal with size large with simple config 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -821,7 +908,7 @@ exports[`Modal with size large with simple config 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -829,7 +916,7 @@ exports[`Modal with size large with simple config 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -857,36 +944,49 @@ exports[`Modal with size large with simple config 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
@@ -905,7 +1005,7 @@ exports[`Modal with size large with simple config 1`] = `
 `;
 
 exports[`Modal with size medium with a bottom panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -916,10 +1016,18 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   height: 100%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -939,17 +1047,16 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -959,13 +1066,13 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -984,7 +1091,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -992,7 +1099,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -1020,46 +1127,59 @@ exports[`Modal with size medium with a bottom panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
             </div>
           </div>
           <div
-            class="c7"
+            class="c8"
           >
             <div>
-              Pannel content
+              Panel content
             </div>
           </div>
         </div>
@@ -1075,7 +1195,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size medium with a left panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1086,7 +1206,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   height: 100%;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1103,12 +1223,12 @@ exports[`Modal with size medium with a left panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   width: 210px;
   border-right: 1px solid #d9d9d9;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1117,6 +1237,14 @@ exports[`Modal with size medium with a left panel 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -1136,17 +1264,16 @@ exports[`Modal with size medium with a left panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1156,13 +1283,13 @@ exports[`Modal with size medium with a left panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1181,7 +1308,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1189,7 +1316,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c9 {
+.c10 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -1217,49 +1344,62 @@ exports[`Modal with size medium with a left panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
-            <div
-              class="c6"
-            >
-              <div>
-                Pannel content
-              </div>
-            </div>
             <div
               class="c7"
             >
+              <div>
+                Panel content
+              </div>
+            </div>
+            <div
+              class="c8"
+            >
               <div
-                class="c8"
+                class="c9"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c9"
+                class="c10"
               >
                 <div>
                   Footer
@@ -1280,7 +1420,7 @@ exports[`Modal with size medium with a left panel 1`] = `
 `;
 
 exports[`Modal with size medium with a right panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1291,7 +1431,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   height: 100%;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1308,7 +1448,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1322,9 +1462,17 @@ exports[`Modal with size medium with a right panel 1`] = `
   flex-direction: column;
 }
 
-.c9 {
+.c10 {
   width: 210px;
   border-left: 1px solid #d9d9d9;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -1344,17 +1492,16 @@ exports[`Modal with size medium with a right panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1364,13 +1511,13 @@ exports[`Modal with size medium with a right panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1389,7 +1536,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1397,7 +1544,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c8 {
+.c9 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -1425,42 +1572,55 @@ exports[`Modal with size medium with a right panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div
-              class="c6"
+              class="c7"
             >
               <div
-                class="c7"
+                class="c8"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c8"
+                class="c9"
               >
                 <div>
                   Footer
@@ -1468,10 +1628,10 @@ exports[`Modal with size medium with a right panel 1`] = `
               </div>
             </div>
             <div
-              class="c9"
+              class="c10"
             >
               <div>
-                Pannel content
+                Panel content
               </div>
             </div>
           </div>
@@ -1488,7 +1648,7 @@ exports[`Modal with size medium with a right panel 1`] = `
 `;
 
 exports[`Modal with size medium with right section in header 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1497,6 +1657,14 @@ exports[`Modal with size medium with right section in header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -1517,17 +1685,16 @@ exports[`Modal with size medium with right section in header 1`] = `
   right: -1rem;
   top: -1rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1537,13 +1704,13 @@ exports[`Modal with size medium with right section in header 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1562,7 +1729,7 @@ exports[`Modal with size medium with right section in header 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1570,7 +1737,7 @@ exports[`Modal with size medium with right section in header 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -1598,25 +1765,38 @@ exports[`Modal with size medium with right section in header 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             >
               <div>
                 <div>
@@ -1626,14 +1806,14 @@ exports[`Modal with size medium with right section in header 1`] = `
             </div>
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
@@ -1652,7 +1832,7 @@ exports[`Modal with size medium with right section in header 1`] = `
 `;
 
 exports[`Modal with size medium with simple config 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1661,6 +1841,14 @@ exports[`Modal with size medium with simple config 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -1680,17 +1868,16 @@ exports[`Modal with size medium with simple config 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1700,13 +1887,13 @@ exports[`Modal with size medium with simple config 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1725,7 +1912,7 @@ exports[`Modal with size medium with simple config 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1733,7 +1920,7 @@ exports[`Modal with size medium with simple config 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -1761,36 +1948,49 @@ exports[`Modal with size medium with simple config 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
@@ -1809,7 +2009,7 @@ exports[`Modal with size medium with simple config 1`] = `
 `;
 
 exports[`Modal with size small with a bottom panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1820,10 +2020,18 @@ exports[`Modal with size small with a bottom panel 1`] = `
   height: 100%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -1843,17 +2051,16 @@ exports[`Modal with size small with a bottom panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1863,13 +2070,13 @@ exports[`Modal with size small with a bottom panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1888,7 +2095,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1896,7 +2103,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -1924,46 +2131,59 @@ exports[`Modal with size small with a bottom panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
             </div>
           </div>
           <div
-            class="c7"
+            class="c8"
           >
             <div>
-              Pannel content
+              Panel content
             </div>
           </div>
         </div>
@@ -1979,7 +2199,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size small with a left panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1990,7 +2210,7 @@ exports[`Modal with size small with a left panel 1`] = `
   height: 100%;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2007,12 +2227,12 @@ exports[`Modal with size small with a left panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   width: 210px;
   border-right: 1px solid #d9d9d9;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2021,6 +2241,14 @@ exports[`Modal with size small with a left panel 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -2040,17 +2268,16 @@ exports[`Modal with size small with a left panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2060,13 +2287,13 @@ exports[`Modal with size small with a left panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2085,7 +2312,7 @@ exports[`Modal with size small with a left panel 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2093,7 +2320,7 @@ exports[`Modal with size small with a left panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c9 {
+.c10 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -2121,49 +2348,62 @@ exports[`Modal with size small with a left panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
-            <div
-              class="c6"
-            >
-              <div>
-                Pannel content
-              </div>
-            </div>
             <div
               class="c7"
             >
+              <div>
+                Panel content
+              </div>
+            </div>
+            <div
+              class="c8"
+            >
               <div
-                class="c8"
+                class="c9"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c9"
+                class="c10"
               >
                 <div>
                   Footer
@@ -2184,7 +2424,7 @@ exports[`Modal with size small with a left panel 1`] = `
 `;
 
 exports[`Modal with size small with a right panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2195,7 +2435,7 @@ exports[`Modal with size small with a right panel 1`] = `
   height: 100%;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2212,7 +2452,7 @@ exports[`Modal with size small with a right panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -2226,9 +2466,17 @@ exports[`Modal with size small with a right panel 1`] = `
   flex-direction: column;
 }
 
-.c9 {
+.c10 {
   width: 210px;
   border-left: 1px solid #d9d9d9;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -2248,17 +2496,16 @@ exports[`Modal with size small with a right panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2268,13 +2515,13 @@ exports[`Modal with size small with a right panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2293,7 +2540,7 @@ exports[`Modal with size small with a right panel 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2301,7 +2548,7 @@ exports[`Modal with size small with a right panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c8 {
+.c9 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -2329,42 +2576,55 @@ exports[`Modal with size small with a right panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div
-              class="c6"
+              class="c7"
             >
               <div
-                class="c7"
+                class="c8"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c8"
+                class="c9"
               >
                 <div>
                   Footer
@@ -2372,10 +2632,10 @@ exports[`Modal with size small with a right panel 1`] = `
               </div>
             </div>
             <div
-              class="c9"
+              class="c10"
             >
               <div>
-                Pannel content
+                Panel content
               </div>
             </div>
           </div>
@@ -2392,7 +2652,7 @@ exports[`Modal with size small with a right panel 1`] = `
 `;
 
 exports[`Modal with size small with right section in header 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2401,6 +2661,14 @@ exports[`Modal with size small with right section in header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -2421,17 +2689,16 @@ exports[`Modal with size small with right section in header 1`] = `
   right: -1rem;
   top: -1rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2441,13 +2708,13 @@ exports[`Modal with size small with right section in header 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2466,7 +2733,7 @@ exports[`Modal with size small with right section in header 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2474,7 +2741,7 @@ exports[`Modal with size small with right section in header 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -2502,25 +2769,38 @@ exports[`Modal with size small with right section in header 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             >
               <div>
                 <div>
@@ -2530,14 +2810,14 @@ exports[`Modal with size small with right section in header 1`] = `
             </div>
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
@@ -2556,7 +2836,7 @@ exports[`Modal with size small with right section in header 1`] = `
 `;
 
 exports[`Modal with size small with simple config 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2565,6 +2845,14 @@ exports[`Modal with size small with simple config 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -2584,17 +2872,16 @@ exports[`Modal with size small with simple config 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2604,13 +2891,13 @@ exports[`Modal with size small with simple config 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2629,7 +2916,7 @@ exports[`Modal with size small with simple config 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2637,7 +2924,7 @@ exports[`Modal with size small with simple config 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -2665,36 +2952,49 @@ exports[`Modal with size small with simple config 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
@@ -2713,7 +3013,7 @@ exports[`Modal with size small with simple config 1`] = `
 `;
 
 exports[`Modal with size x-large with a bottom panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2724,10 +3024,18 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   height: 100%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -2747,17 +3055,16 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2767,13 +3074,13 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2792,7 +3099,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2800,7 +3107,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -2828,46 +3135,59 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
             </div>
           </div>
           <div
-            class="c7"
+            class="c8"
           >
             <div>
-              Pannel content
+              Panel content
             </div>
           </div>
         </div>
@@ -2883,7 +3203,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size x-large with a left panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2894,7 +3214,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   height: 100%;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2911,12 +3231,12 @@ exports[`Modal with size x-large with a left panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   width: 210px;
   border-right: 1px solid #d9d9d9;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2925,6 +3245,14 @@ exports[`Modal with size x-large with a left panel 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -2944,17 +3272,16 @@ exports[`Modal with size x-large with a left panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2964,13 +3291,13 @@ exports[`Modal with size x-large with a left panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2989,7 +3316,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2997,7 +3324,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c9 {
+.c10 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -3025,49 +3352,62 @@ exports[`Modal with size x-large with a left panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
-            <div
-              class="c6"
-            >
-              <div>
-                Pannel content
-              </div>
-            </div>
             <div
               class="c7"
             >
+              <div>
+                Panel content
+              </div>
+            </div>
+            <div
+              class="c8"
+            >
               <div
-                class="c8"
+                class="c9"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c9"
+                class="c10"
               >
                 <div>
                   Footer
@@ -3088,7 +3428,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
 `;
 
 exports[`Modal with size x-large with a right panel 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3099,7 +3439,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   height: 100%;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3116,7 +3456,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3130,9 +3470,17 @@ exports[`Modal with size x-large with a right panel 1`] = `
   flex-direction: column;
 }
 
-.c9 {
+.c10 {
   width: 210px;
   border-left: 1px solid #d9d9d9;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -3152,17 +3500,16 @@ exports[`Modal with size x-large with a right panel 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3172,13 +3519,13 @@ exports[`Modal with size x-large with a right panel 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3197,7 +3544,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -3205,7 +3552,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   flex: 1 1 auto;
 }
 
-.c8 {
+.c9 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -3233,42 +3580,55 @@ exports[`Modal with size x-large with a right panel 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div
-              class="c6"
+              class="c7"
             >
               <div
-                class="c7"
+                class="c8"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c8"
+                class="c9"
               >
                 <div>
                   Footer
@@ -3276,10 +3636,10 @@ exports[`Modal with size x-large with a right panel 1`] = `
               </div>
             </div>
             <div
-              class="c9"
+              class="c10"
             >
               <div>
-                Pannel content
+                Panel content
               </div>
             </div>
           </div>
@@ -3296,7 +3656,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
 `;
 
 exports[`Modal with size x-large with right section in header 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3305,6 +3665,14 @@ exports[`Modal with size x-large with right section in header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -3325,17 +3693,16 @@ exports[`Modal with size x-large with right section in header 1`] = `
   right: -1rem;
   top: -1rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3345,13 +3712,13 @@ exports[`Modal with size x-large with right section in header 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3370,7 +3737,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -3378,7 +3745,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -3406,25 +3773,38 @@ exports[`Modal with size x-large with right section in header 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             >
               <div>
                 <div>
@@ -3434,14 +3814,14 @@ exports[`Modal with size x-large with right section in header 1`] = `
             </div>
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
@@ -3460,7 +3840,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
 `;
 
 exports[`Modal with size x-large with simple config 1`] = `
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3469,6 +3849,14 @@ exports[`Modal with size x-large with simple config 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+}
+
+.c1 {
+  cursor: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -3488,17 +3876,16 @@ exports[`Modal with size x-large with simple config 1`] = `
 .c0 .rc-dialog-close {
   top: 2.5rem;
   opacity: unset;
-  text-shadow: unset;
-  color: #e6e6e6;
+  padding: 0.15rem;
   background-color: #808080;
-  border-radius: 11px;
+  border-radius: 999px;
 }
 
-.c0 .rc-dialog-close span {
-  padding: 0px 0.5rem;
+.c0 .rc-dialog-close svg {
+  fill: #e6e6e6;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3508,13 +3895,13 @@ exports[`Modal with size x-large with simple config 1`] = `
   background: #f2f2f2;
 }
 
-.c3 {
+.c4 {
   font-size: 20px;
   line-height: 30px;
   color: #333333;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3533,7 +3920,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   padding: 2.1rem 2.8rem 0rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -3541,7 +3928,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
+.c7 {
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
@@ -3569,36 +3956,49 @@ exports[`Modal with size x-large with simple config 1`] = `
         class="rc-dialog-close"
       >
         <span
-          class="rc-dialog-close-x"
-        />
+          class="c1"
+          type="oClear"
+        >
+          <svg
+            fill="#000"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
       </button>
       <div
         class="rc-dialog-body"
       >
         <div
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <div
-              class="c3"
+              class="c4"
             >
               Title
             </div>
             <div
-              class="c4"
+              class="c5"
             />
           </div>
           <div
-            class="c5"
+            class="c6"
           >
             <div>
               Body
             </div>
           </div>
           <div
-            class="c6"
+            class="c7"
           >
             <div>
               Footer
