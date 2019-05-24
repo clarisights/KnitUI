@@ -12,7 +12,6 @@ interface IIconProps {
 
 const StyledIconWrapper: any = withProps<IIconProps>()(styled.span)`
   cursor: inherit;
-  display: flex;
   & svg {
    ${({ customStyles }) => customStyles};
   }
