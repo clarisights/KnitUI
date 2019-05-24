@@ -19,6 +19,7 @@ export interface BreadcrumbItemProps {
 }
 
 const sharedStyles = css`
+
   font-size: ${`${size14.fontSize}rem`};
   line-height: ${size14.lineHeight};
   border-radius: ${inputBorderRadius};
@@ -33,7 +34,11 @@ const StyledText: any = styled.span`
   ${sharedStyles}
   cursor: default;
   color: ${gray30};
-`
+  a {
+    text-decoration: underline;
+    color: ${blue40};
+  }
+`;
 
 const StyledLink: any = styled.a`
   ${sharedStyles}

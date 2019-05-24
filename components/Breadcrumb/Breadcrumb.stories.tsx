@@ -1,6 +1,7 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import Breadcrumb from './index'
+import { Icon } from "../Icon";
 
 const sep = <span>🐉</span>;
 const customStyle = {
@@ -48,6 +49,18 @@ storiesOf("Breadcrumb", module)
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item style={customItemStyle}>Reports</Breadcrumb.Item>
       <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+    </Breadcrumb>
+  ))
+  .add("Breadcrumb with icon", () => (
+    <Breadcrumb>
+      <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+      <Breadcrumb.Item>
+        <Icon height="18px" width="18px" type="oAddCircle" />
+        Reports
+      </Breadcrumb.Item>
+      <Breadcrumb.Item>
+        <a href="/dashboard/reports/50467">50467</a>
+      </Breadcrumb.Item>
     </Breadcrumb>
   ))
   .add("Breadcrumb with no childs", () => <Breadcrumb />)
