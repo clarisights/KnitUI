@@ -17,7 +17,9 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "precommit": "lint-staged",
-    "lint-staged:ts": "tsc && node node_modules/tslint/bin/tslint --project tsconfig.json"
+    "lint-staged:ts": "tsc && node node_modules/tslint/bin/tslint --project tsconfig.json",
+    "format": "prettier --write components/**/*.{tsx,ts,jsx,js,json}",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
   "husky": {
     "hooks": {
@@ -25,7 +27,8 @@
     }
   },
   "lint-staged": {
-    "components/**/*.tsx": [
+    "components/**/*.{tsx, jsx, ts, js, json}": [
+      "yarn format",
       "yarn lint-staged:ts",
       "git add"
     ]
@@ -73,6 +76,7 @@
     "jest-styled-components": "^6.3.1",
     "lint-staged": "^8.1.5",
     "npm-run-all": "^4.1.5",
+    "prettier": "^1.17.1",
     "react": "^16.8.6",
     "react-docgen-typescript-loader": "^3.0.1",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
