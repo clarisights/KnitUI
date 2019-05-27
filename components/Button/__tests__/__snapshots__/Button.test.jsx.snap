@@ -201,7 +201,7 @@ exports[`Button renders with a custom color theme correctly 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with a specified color preset corretly 1`] = `
+exports[`Button renders with a specified color preset correctly 1`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-box;
@@ -268,7 +268,7 @@ exports[`Button renders with a specified color preset corretly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with a specified color preset corretly 2`] = `
+exports[`Button renders with a specified color preset correctly 2`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-box;
@@ -335,7 +335,7 @@ exports[`Button renders with a specified color preset corretly 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with a specified color preset corretly 3`] = `
+exports[`Button renders with a specified color preset correctly 3`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-box;
@@ -664,10 +664,6 @@ exports[`Button renders with text and an icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -755,10 +751,6 @@ exports[`Button renders with text and an icon correctly 2`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -846,10 +838,6 @@ exports[`Button renders with text and an icon correctly 3`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -937,10 +925,6 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -1047,10 +1031,6 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -1157,10 +1137,6 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -1468,10 +1444,6 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -1559,10 +1531,6 @@ exports[`Button with size large renders with an icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -1851,10 +1819,6 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -1942,10 +1906,6 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -2234,10 +2194,6 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
@@ -2325,10 +2281,6 @@ exports[`Button with size small renders with an icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 {
