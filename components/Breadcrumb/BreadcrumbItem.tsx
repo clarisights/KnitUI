@@ -21,6 +21,8 @@ export interface BreadcrumbItemProps {
   activeStyles?: CSSProperties
   /** Styles for all crumbs */
   childStyle?: CSSProperties
+  /** onClick event */
+  onClick?: (event) => void
 }
 
 const sharedStyles = css`
@@ -57,6 +59,7 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
     style,
     activeStyles,
     className,
+    onClick,
     ...restProps
   } = props
   let link
@@ -64,6 +67,7 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
     link = (
       <StyledActive
         style={{ ...childStyle, ...style, ...activeStyles }}
+        onClick={onClick}
         className={className}
         {...restProps}>
         {children}
@@ -73,6 +77,7 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
     link = (
       <StyledText
         style={{ ...childStyle, ...style }}
+        onClick={onClick}
         className={className}
         {...restProps}>
         {children}
