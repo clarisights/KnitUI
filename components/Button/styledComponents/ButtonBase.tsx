@@ -7,24 +7,24 @@ const { shades } = theme
 type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
 
 interface ParsedColorTheme {
-  background: any,
-  font: any,
-  insetBackground?: any,
+  background: any
+  font: any
+  insetBackground?: any
   insetFont?: any
 }
 
 interface ButtonBaseProps {
   label?: string
-  type: "primary" | "secondary",
-  colorTheme: ParsedColorTheme,
-  ghost: boolean,
-  size: "small" | "medium" | "large",
-  disabled?: boolean,
-  bare: boolean,
-  icon?: string,
-  insetLabel?: string,
-  onClick?: (event) => void,
-  fontSize: number,
+  type: "primary" | "secondary"
+  colorTheme: ParsedColorTheme
+  ghost: boolean
+  size: "small" | "medium" | "large"
+  disabled?: boolean
+  bare: boolean
+  icon?: string
+  insetLabel?: string
+  onClick?: (event) => void
+  fontSize: number
   lineHeight: number
 }
 
@@ -40,24 +40,30 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
   colorTheme,
   fontSize,
   lineHeight,
-  children
+  children,
 }) => {
   const iconOnly = icon && !label
   // Ghost buttons have their font and background colors interchanged
   const baseFontColor = ghost ? colorTheme.background : colorTheme.font
   const baseBackgroundColor = ghost ? colorTheme.font : colorTheme.background
-  const lightenedBackgroundColor = baseBackgroundColor.set('hsl.l', '+0.1')
-  const lightenedFontColor = baseFontColor.set('hsl.l', '+0.3') // Used for ghost
+  const lightenedBackgroundColor = baseBackgroundColor.set("hsl.l", "+0.1")
+  const lightenedFontColor = baseFontColor.set("hsl.l", "+0.3") // Used for ghost
   const highlightColor = shades.lightBlue
 
   const getFontColor = (state: ButtonState) => {
     switch (state) {
       case "default":
-        if (bare) { return baseBackgroundColor }
+        if (bare) {
+          return baseBackgroundColor
+        }
         return baseFontColor
       case "hover":
-        if (bare) { return lightenedBackgroundColor }
-        if (ghost) { return lightenedFontColor }
+        if (bare) {
+          return lightenedBackgroundColor
+        }
+        if (ghost) {
+          return lightenedFontColor
+        }
         return baseFontColor
       default:
         return baseFontColor
@@ -77,13 +83,13 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
   const iconPaddings = {
     small: 0.3,
     medium: 0.5,
-    large: 0.7
+    large: 0.7,
   }
 
   const verticalPaddings = {
     small: 0.1,
     medium: 0.4,
-    large: 0.6
+    large: 0.6,
   }
 
   const horizontalPaddings = {
@@ -98,12 +104,11 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
     large: {
       primary: fontSize,
       secondary: fontSize / 2,
-    }
+    },
   }
 
   const getVerticalPadding = () => {
-    return iconOnly ?
-    iconPaddings[size!] : verticalPaddings[size!]
+    return iconOnly ? iconPaddings[size!] : verticalPaddings[size!]
   }
 
   const getRightPadding = () => {
@@ -152,12 +157,7 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
   }
 
   const getIconMargin = () => {
-    return (
-      icon && label ?
-        size === "small" ? "0.2rem" : "0.4rem"
-          :
-        "0rem"
-    )
+    return icon && label ? (size === "small" ? "0.2rem" : "0.4rem") : "0rem"
   }
 
   const StyledButton = styled.button`
@@ -181,10 +181,13 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
         fill: ${getIconColor("default")};
       }
     }
-    :hover, :active, :focus {
+    :hover,
+    :active,
+    :focus {
       background-color: ${getBackgroundColor("hover")};
     }
-    :active, :focus{
+    :active,
+    :focus {
       border: ${getBorder("active")};
       svg path {
         fill: ${getIconColor("focus")};
@@ -200,10 +203,7 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
     }
   `
   return (
-    <StyledButton
-      onClick={onClick}
-      disabled={disabled}
-    >
+    <StyledButton onClick={onClick} disabled={disabled}>
       {children}
     </StyledButton>
   )
