@@ -34,7 +34,10 @@ export interface ModalWrapperProps {
   visible?: boolean,
   /** Function to be executed when the modal is dismissed */
   onClose: () => void,
-  panel?: { position: "left" | "right" | "bottom", content: ReactNode }
+  /** Addon panel that is attached to the modal */
+  panel?: { position: "left" | "right" | "bottom", content: ReactNode },
+  /** to unmount child compenents on onClose */
+  destroyOnClose?: boolean
 }
 
 /**
@@ -53,6 +56,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   visible = false,
   onClose,
   panel,
+  destroyOnClose = false
 }) => {
 
   /**
@@ -117,6 +121,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
         visible={visible}
         onClose={onClose}
         closeIcon={<Icon type="oClear" />}
+        destroyOnClose={destroyOnClose}
       >
         <ModalProxy
           header={<Header {...header} />}
