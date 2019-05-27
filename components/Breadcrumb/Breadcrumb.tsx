@@ -1,5 +1,11 @@
-import React, { ReactNode, ReactElement, CSSProperties, Component, cloneElement } from 'react'
-import { BreadcrumbItemProps, StyledText, StyledActive } from './BreadcrumbItem'
+import React, {
+  ReactNode,
+  ReactElement,
+  CSSProperties,
+  Component,
+  cloneElement,
+} from "react"
+import { BreadcrumbItemProps, StyledText, StyledActive } from "./BreadcrumbItem"
 
 export interface BreadcrumbProps {
   /** separate to be using between crumbs */
@@ -21,50 +27,64 @@ export interface BreadcrumbProps {
 export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   static Item: React.FunctionComponent<BreadcrumbItemProps>
   static defaultProps = {
-    separator: '/'
+    separator: "/",
   }
 
   state = {
-    showAll: false
+    showAll: false,
   }
 
   renderBreadcrumbs = (): ReactNode => {
-    const { children, truncateTo = Infinity, separator, activeStyles } = this.props;
-    const updatedChildren = Array.isArray(children) ? this.insertSeparators(children, separator, truncateTo) : children
-    const crumbs = React.Children.map(updatedChildren, (element: ReactNode, index) => {
-      if (!element) {
-        return element
+    const {
+      children,
+      truncateTo = Infinity,
+      separator,
+      activeStyles,
+    } = this.props
+    const updatedChildren = Array.isArray(children)
+      ? this.insertSeparators(children, separator, truncateTo)
+      : children
+    const crumbs = React.Children.map(
+      updatedChildren,
+      (element: ReactNode, index) => {
+        if (!element) {
+          return element
+        }
+        return cloneElement(element as ReactElement<any>, {
+          key: index,
+          activeStyles,
+        })
       }
-      return cloneElement(element as ReactElement<any>, {
-        key: index,
-        activeStyles
-      })
-    })
+    )
     return crumbs
   }
 
   // Logic to insert separators among the list of children
-  insertSeparators = (crumbs: ReactNode[], separator: ReactNode | string, truncateTo: number) => {
+  insertSeparators = (
+    crumbs: ReactNode[],
+    separator: ReactNode | string,
+    truncateTo: number
+  ) => {
     // Container where we insert nodes and separators in appropriate places
-    const updatedCrumbs: ReactNode[] = [];
+    const updatedCrumbs: ReactNode[] = []
     // bool to check whether all items are to be shown
     const { showAll } = this.state
     // A bool to check whether the ... is inserted or not
-    let truncated = false;
+    let truncated = false
     crumbs.forEach((crumb: ReactNode, index: number) => {
       const insertStuff =
         index === 0 || index >= crumbs.length - truncateTo || showAll
       if (insertStuff) {
-        if(index !== crumbs.length - 1) {
+        if (index !== crumbs.length - 1) {
           updatedCrumbs.push(crumb)
         } else {
-          updatedCrumbs.push(cloneElement(crumb as ReactElement<any>, {activeElement: true}))
+          updatedCrumbs.push(
+            cloneElement(crumb as ReactElement<any>, { activeElement: true })
+          )
         }
         // Insert nodes till last element
         if (index < crumbs.length - 1) {
-          updatedCrumbs.push(
-            <StyledText separator>{separator}</StyledText>
-          )
+          updatedCrumbs.push(<StyledText separator>{separator}</StyledText>)
         }
       } else if (!truncated) {
         updatedCrumbs.push(
@@ -72,9 +92,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
             ...
           </StyledText>
         )
-        updatedCrumbs.push(
-          <StyledText separator>{separator}</StyledText>
-        )
+        updatedCrumbs.push(<StyledText separator>{separator}</StyledText>)
         truncated = true
       }
     })
@@ -89,12 +107,12 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
       flexWrap: "wrap",
       width: "fit-content",
       alignItems: "center",
-      ...style
+      ...style,
     }
     return (
-      <div className={className || ''} style={parentStyle}>
+      <div className={className || ""} style={parentStyle}>
         {this.renderBreadcrumbs()}
       </div>
-    );
+    )
   }
 }

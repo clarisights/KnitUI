@@ -88,7 +88,7 @@ export const shades = {
 
   // Shades of blue
   lightBlue: chroma.hsl(205, 0.85, 0.65),
-  blue40: chroma.hsl(205, 0.85, 0.40)
+  blue40: chroma.hsl(205, 0.85, 0.4),
 }
 
 // Properties
@@ -128,4 +128,3 @@ export const switchCheckedBorderColor = "hsl(118, 100%, 21%)"
 export const switchCheckedBgColor = "hsl(118, 100%, 21%)"
 export const switchCheckedDisabledBorderColor = "hsl(0, 0%, 90%)"
 export const switchCheckedDisabledBgColor = "hsl(0, 0%, 90%)"
-
