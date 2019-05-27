@@ -19,14 +19,14 @@ const customActiveStyle = {
 }
 
 storiesOf("Breadcrumb", module)
-  .add("Basic Breadcrumb", () => (
+  .add("Basic", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with link tag", () => (
+  .add("With link tag", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
@@ -35,35 +35,35 @@ storiesOf("Breadcrumb", module)
       </Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with separator", () => (
+  .add("With custom separator", () => (
     <Breadcrumb separator={sep}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with custom styles", () => (
+  .add("With custom parent styles", () => (
     <Breadcrumb style={customStyle}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with custom styles on item", () => (
+  .add("With custom styles on item", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item style={customItemStyle}>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with custom styles on active item", () => (
+  .add("With custom styles on active item", () => (
     <Breadcrumb activeStyles={customActiveStyle}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with icon", () => (
+  .add("With icon", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>
@@ -75,69 +75,69 @@ storiesOf("Breadcrumb", module)
       </Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with no childs", () => <Breadcrumb />)
-  .add("Breadcrumb with single child", () => (
+  .add("With no childs", () => <Breadcrumb />)
+  .add("With single child", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with too many childs", () => (
+  .add("With too many childs", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with max width", () => (
+  .add("With max width", () => (
     <Breadcrumb maxWidth="200px">
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
   .add("Breadcrumb with truncated state", () => (
     <Breadcrumb truncateTo={2}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
