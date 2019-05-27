@@ -67,7 +67,7 @@ describe("Button", () => {
       expect(asFragment()).toMatchSnapshot()
     })
 
-    it("renders with a specified color preset corretly", () => {
+    it("renders with a specified color preset correctly", () => {
       const { asFragment } = render(
         <Button label="button" colorTheme="danger" />
       )
