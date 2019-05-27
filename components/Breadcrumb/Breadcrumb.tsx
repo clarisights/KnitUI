@@ -82,9 +82,9 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
     // A bool to check whether the ... is inserted or not
     let truncated = false
     crumbs.forEach((crumb: ReactNode, index: number) => {
-      const shouldInsertSeparator =
+      const shouldInsertCrumbs =
         index === 0 || index >= crumbs.length - truncateTo || showAll
-      if (shouldInsertSeparator) {
+      if (shouldInsertCrumbs) {
         if (index !== crumbs.length - 1) {
           updatedCrumbs.push(crumb)
         } else {
