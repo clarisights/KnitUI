@@ -2,9 +2,7 @@ import React, { useState, ReactNode } from "react"
 import Container from "./components/Container"
 import styled from "styled-components"
 
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import { Header, Footer, Main } from './components'
 import { Modal, LeftPanelModal, RightPanelModal, BottomPanelModal } from "./variants/index"
 import * as theme from "../styles/variables"
 import { StyleContext } from "./common/contexts"
