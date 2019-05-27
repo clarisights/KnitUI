@@ -19,6 +19,8 @@ export interface BreadcrumbItemProps {
   className?: string
   /** Styling of the active element if any */
   activeStyles?: CSSProperties
+  /** Styles for all crumbs */
+  childStyle?: CSSProperties
 }
 
 const sharedStyles = css`
@@ -51,6 +53,7 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
   const {
     separator,
     children,
+    childStyle,
     style,
     activeStyles,
     className,
@@ -60,7 +63,7 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
   if ("activeElement" in props) {
     link = (
       <StyledActive
-        style={{ ...style, ...activeStyles }}
+        style={{ ...childStyle, ...style, ...activeStyles }}
         className={className}
         {...restProps}>
         {children}
@@ -68,7 +71,10 @@ const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
     )
   } else {
     link = (
-      <StyledText style={style} className={className} {...restProps}>
+      <StyledText
+        style={{ ...childStyle, ...style }}
+        className={className}
+        {...restProps}>
         {children}
       </StyledText>
     )
