@@ -17,48 +17,50 @@ export interface BreadcrumbItemProps {
   style?: CSSProperties
   /** className to be passed to the item */
   className?: string
+  /** Styling of the active element if any */
+  activeStyles?: CSSProperties
 }
 
 const sharedStyles = css`
   font-size: ${`${size14.fontSize}rem`};
-  line-height: ${size14.lineHeight};
+  line-height: ${size14.lineHeight}rem;
   border-radius: ${inputBorderRadius};
   padding: 0 3px 0 3px;
   &:hover {
-    background-color: ${(props: any) =>
-      props.separator ? "" : Neutral10.hex};
+    background-color: ${(props: any) => (props.separator ? "" : Neutral10.hex)};
   }
+  cursor: ${(props: any) => (props.separator ? "default" : "pointer")};
 `;
 
 export const StyledText: any = styled.span`
   ${sharedStyles}
-  cursor: pointer;
   color: ${Neutral50.hex};
-  &:active {
-    text-decoration: underline;
-    color: ${blue40};
-  }
 `;
 
-export const styledActive: any = styled.a`
+export const StyledActive: any = styled.span`
   ${sharedStyles}
   color: ${Neutral90.hex}
 `;
 
 const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {
-  const { separator, children, style, className, ...restProps } = props
+  const { separator, children, style, activeStyles, className, ...restProps } = props
   let link;
-  link = (
-    <StyledText {...restProps}>
-    { children }
-  </StyledText>
-)
+  if('activeElement' in props) {
+    link = (
+      <StyledActive style={{...style, ...activeStyles}} className={className} {...restProps}>
+        {children}
+      </StyledActive>
+    )
+  } else {
+    link = (
+      <StyledText style={style} className={className} {...restProps}>
+        { children }
+      </StyledText>
+    )
+  }
 
-  return (
-    <span>
-      {React.cloneElement(link, {style, className, ...restProps})}
-    </span>
-  );
+
+  return link;
 }
 
 export default BreadcrumbItem

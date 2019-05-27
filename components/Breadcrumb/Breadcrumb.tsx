@@ -29,14 +29,15 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   }
 
   renderBreadcrumbs = (): ReactNode => {
-    const { children, truncateTo = Infinity, separator } = this.props;
+    const { children, truncateTo = Infinity, separator, activeStyles } = this.props;
     const updatedChildren = Array.isArray(children) ? this.insertSeparators(children, separator, truncateTo) : children
     const crumbs = React.Children.map(updatedChildren, (element: ReactNode, index) => {
       if (!element) {
         return element
       }
       return cloneElement(element as ReactElement<any>, {
-        key: index
+        key: index,
+        activeStyles
       })
     })
     return crumbs
@@ -54,7 +55,11 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
       const insertStuff =
         index === 0 || index >= crumbs.length - truncateTo || showAll
       if (insertStuff) {
-        updatedCrumbs.push(crumb)
+        if(index !== crumbs.length - 1) {
+          updatedCrumbs.push(crumb)
+        } else {
+          updatedCrumbs.push(cloneElement(crumb as ReactElement<any>, {activeElement: true}))
+        }
         // Insert nodes till last element
         if (index < crumbs.length - 1) {
           updatedCrumbs.push(
@@ -77,10 +82,17 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   }
 
   render() {
-    let { className, style, maxWidth } = this.props
-    style = {...style, display: 'flex', maxWidth, flexWrap: 'wrap' }
+    const { className, style, maxWidth } = this.props
+    const parentStyle: CSSProperties = {
+      display: "flex",
+      maxWidth,
+      flexWrap: "wrap",
+      width: "fit-content",
+      alignItems: "center",
+      ...style
+    }
     return (
-      <div className={className || ''} style={style}>
+      <div className={className || ''} style={parentStyle}>
         {this.renderBreadcrumbs()}
       </div>
     );
