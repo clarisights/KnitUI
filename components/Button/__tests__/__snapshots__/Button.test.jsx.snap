@@ -201,7 +201,7 @@ exports[`Button renders with a custom color theme correctly 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with a specified color preset corretly 1`] = `
+exports[`Button renders with a specified color preset correctly 1`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-box;
@@ -268,7 +268,7 @@ exports[`Button renders with a specified color preset corretly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with a specified color preset corretly 2`] = `
+exports[`Button renders with a specified color preset correctly 2`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-box;
@@ -335,7 +335,7 @@ exports[`Button renders with a specified color preset corretly 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with a specified color preset corretly 3`] = `
+exports[`Button renders with a specified color preset correctly 3`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-box;

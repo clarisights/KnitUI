@@ -87,7 +87,7 @@ describe("Breadcrumb", () => {
 
   it("renders with custom active item styles correctly", () => {
       const { asFragment } = render(
-        <Breadcrumb childStyle={customChildStyle}>
+        <Breadcrumb childStyle={customActiveStyle}>
           <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
           <Breadcrumb.Item>Reports</Breadcrumb.Item>
           <Breadcrumb.Item>50467</Breadcrumb.Item>
