@@ -78,7 +78,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
     crumbs: ReactNode[],
     separator: ReactNode | string,
     truncateTo: number,
-    childStyle: CSSProperties
+    childStyle?: CSSProperties
   ) => {
     // Container where we insert nodes and separators in appropriate places
     const updatedCrumbs: ReactNode[] = []
