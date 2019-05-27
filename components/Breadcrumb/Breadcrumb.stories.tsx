@@ -13,6 +13,11 @@ const customItemStyle = {
   border: '2px solid red'
 }
 
+const customActiveStyle = {
+  textDecoration: 'underline',
+  color: 'blue'
+}
+
 storiesOf("Breadcrumb", module)
   .add("Basic Breadcrumb", () => (
     <Breadcrumb>
@@ -21,7 +26,7 @@ storiesOf("Breadcrumb", module)
       <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
-  .add("Breadcrumb with link", () => (
+  .add("Breadcrumb with link tag", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
@@ -49,6 +54,13 @@ storiesOf("Breadcrumb", module)
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item style={customItemStyle}>Reports</Breadcrumb.Item>
       <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
+    </Breadcrumb>
+  ))
+  .add("Breadcrumb with custom styles on active item", () => (
+    <Breadcrumb activeStyles={customActiveStyle}>
+      <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+      <Breadcrumb.Item>Reports</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
   .add("Breadcrumb with icon", () => (
