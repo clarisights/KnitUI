@@ -1,9 +1,13 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
+import { withKnobs, text, number, object } from "@storybook/addon-knobs"
 import Breadcrumb from "./index"
 import { Icon } from "../Icon"
+const Readme = require("./Breadcrumb.README.md")
 
-const sep = <span>🐉</span>
+const stories = storiesOf("Breadcrumb", module)
+stories.addDecorator(withKnobs)
+
 const customStyle = {
   border: "2px solid red",
 }
@@ -22,7 +26,15 @@ const customChildStyle = {
   fontSize: "1.8rem",
 }
 
-storiesOf("Breadcrumb", module)
+stories
+  .addParameters({
+    readme: {
+      // Show readme before story
+      codeTheme: "shades-of-purple",
+      // Show readme at the addons panel
+      sidebar: Readme,
+    },
+  })
   .add("Basic", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
@@ -40,21 +52,21 @@ storiesOf("Breadcrumb", module)
     </Breadcrumb>
   ))
   .add("With custom separator", () => (
-    <Breadcrumb separator={sep}>
+    <Breadcrumb separator={text("Separator", "🐉")}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
   .add("With custom parent styles", () => (
-    <Breadcrumb rootStyle={customStyle}>
+    <Breadcrumb rootStyle={object("Parent Style", customStyle)}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
   .add("With custom child styles", () => (
-    <Breadcrumb childStyle={customChildStyle}>
+    <Breadcrumb childStyle={object("Child Style", customChildStyle)}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
@@ -63,12 +75,14 @@ storiesOf("Breadcrumb", module)
   .add("With custom styles on item", () => (
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
-      <Breadcrumb.Item style={customItemStyle}>Reports</Breadcrumb.Item>
+      <Breadcrumb.Item style={object("Item Style", customItemStyle)}>
+        Reports
+      </Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
     </Breadcrumb>
   ))
   .add("With custom styles on active item", () => (
-    <Breadcrumb activeStyles={customActiveStyle}>
+    <Breadcrumb activeStyles={object("Active Item Style", customActiveStyle)}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
@@ -78,7 +92,7 @@ storiesOf("Breadcrumb", module)
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>
-        <Icon height="18px" width="18px" type="oAddCircle" />
+        <Icon height="18px" width="18px" type={text("Icon", "oAddCircle")} />
         Reports
       </Breadcrumb.Item>
       <Breadcrumb.Item>
@@ -137,7 +151,7 @@ storiesOf("Breadcrumb", module)
     </Breadcrumb>
   ))
   .add("Breadcrumb with truncated state", () => (
-    <Breadcrumb truncateTo={2}>
+    <Breadcrumb truncateTo={number("Truncate To", 2)}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
