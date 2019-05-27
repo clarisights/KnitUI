@@ -1,21 +1,21 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import Breadcrumb from './index'
-import { Icon } from "../Icon";
+import Breadcrumb from "./index"
+import { Icon } from "../Icon"
 
-const sep = <span>🐉</span>;
+const sep = <span>🐉</span>
 const customStyle = {
-  border: '2px solid red'
+  border: "2px solid red",
 }
 
 const customItemStyle = {
-  color: 'black',
-  border: '2px solid red'
+  color: "black",
+  border: "2px solid red",
 }
 
 const customActiveStyle = {
-  textDecoration: 'underline',
-  color: 'blue'
+  textDecoration: "underline",
+  color: "blue",
 }
 
 storiesOf("Breadcrumb", module)
@@ -140,4 +140,4 @@ storiesOf("Breadcrumb", module)
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item href="/dashboard/reports/50467">50467</Breadcrumb.Item>
     </Breadcrumb>
-  ));
+  ))
