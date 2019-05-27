@@ -1,6 +1,6 @@
 import React from "react"
 import Breadcrumb from "../index"
-import { Icon } from '../../Icon'
+import { Icon } from "../../Icon"
 import { render, cleanup, fireEvent } from "react-testing-library"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
@@ -26,7 +26,7 @@ const customChildStyle = {
 }
 
 describe("Breadcrumb", () => {
-  describe('basic', () => {
+  describe("basic", () => {
     it("renders basic breadcrumb correctly", () => {
       const { asFragment } = render(
         <Breadcrumb>
@@ -86,15 +86,15 @@ describe("Breadcrumb", () => {
   })
 
   it("renders with custom active item styles correctly", () => {
-      const { asFragment } = render(
-        <Breadcrumb childStyle={customActiveStyle}>
-          <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
-          <Breadcrumb.Item>Reports</Breadcrumb.Item>
-          <Breadcrumb.Item>50467</Breadcrumb.Item>
-        </Breadcrumb>
-      )
-      expect(asFragment()).toMatchSnapshot()
-    })
+    const { asFragment } = render(
+      <Breadcrumb childStyle={customActiveStyle}>
+        <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+        <Breadcrumb.Item>Reports</Breadcrumb.Item>
+        <Breadcrumb.Item>50467</Breadcrumb.Item>
+      </Breadcrumb>
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
 
   it("renders with icon correctly", () => {
     const { asFragment } = render(
@@ -113,9 +113,7 @@ describe("Breadcrumb", () => {
   })
 
   it("renders no child correctly", () => {
-    const { asFragment } = render(
-      <Breadcrumb />
-    )
+    const { asFragment } = render(<Breadcrumb />)
     expect(asFragment()).toMatchSnapshot()
   })
 
