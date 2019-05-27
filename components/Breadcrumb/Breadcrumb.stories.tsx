@@ -15,7 +15,7 @@ const customItemStyle = {
 
 const customActiveStyle = {
   textDecoration: "underline",
-  color: "blue",
+  color: "#0F74BD",
 }
 
 storiesOf("Breadcrumb", module)

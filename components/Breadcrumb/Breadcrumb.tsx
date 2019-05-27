@@ -5,7 +5,8 @@ import React, {
   Component,
   cloneElement,
 } from "react"
-import { BreadcrumbItemProps, StyledText, StyledActive } from "./BreadcrumbItem"
+import styled from "styled-components"
+import { BreadcrumbItemProps, StyledText } from "./BreadcrumbItem"
 
 export interface BreadcrumbProps {
   /** separate to be using between crumbs */
@@ -24,10 +25,19 @@ export interface BreadcrumbProps {
   activeStyles?: CSSProperties
 }
 
+const StyledParent: any = styled.div`
+  display: flex;
+  max-width: ${(props: any) => props.maxWidth};
+  flex-wrap: wrap;
+  width: fit-content;
+  align-items: center;
+`
+
 export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   static Item: React.FunctionComponent<BreadcrumbItemProps>
   static defaultProps = {
     separator: "/",
+    truncateTo: Infinity,
   }
 
   state = {
@@ -42,7 +52,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
       activeStyles,
     } = this.props
     const updatedChildren = Array.isArray(children)
-      ? this.insertSeparators(children, separator, truncateTo)
+      ? this.preprocessCrumbs(children, separator, truncateTo)
       : children
     const crumbs = React.Children.map(
       updatedChildren,
@@ -60,7 +70,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   }
 
   // Logic to insert separators among the list of children
-  insertSeparators = (
+  preprocessCrumbs = (
     crumbs: ReactNode[],
     separator: ReactNode | string,
     truncateTo: number
@@ -72,9 +82,9 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
     // A bool to check whether the ... is inserted or not
     let truncated = false
     crumbs.forEach((crumb: ReactNode, index: number) => {
-      const insertStuff =
+      const shouldInsertSeparator =
         index === 0 || index >= crumbs.length - truncateTo || showAll
-      if (insertStuff) {
+      if (shouldInsertSeparator) {
         if (index !== crumbs.length - 1) {
           updatedCrumbs.push(crumb)
         } else {
@@ -101,18 +111,13 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
 
   render() {
     const { className, style, maxWidth } = this.props
-    const parentStyle: CSSProperties = {
-      display: "flex",
-      maxWidth,
-      flexWrap: "wrap",
-      width: "fit-content",
-      alignItems: "center",
-      ...style,
-    }
     return (
-      <div className={className || ""} style={parentStyle}>
+      <StyledParent
+        className={className || ""}
+        maxWidth={maxWidth}
+        style={style}>
         {this.renderBreadcrumbs()}
-      </div>
+      </StyledParent>
     )
   }
 }

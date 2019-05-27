@@ -30,6 +30,11 @@ const sharedStyles = css`
     background-color: ${(props: any) => (props.separator ? "" : Neutral10.hex)};
   }
   cursor: ${(props: any) => (props.separator ? "default" : "pointer")};
+  a,
+  * a {
+    text-decoration: underline;
+    color: ${blue40};
+  }
 `
 
 export const StyledText: any = styled.span`
