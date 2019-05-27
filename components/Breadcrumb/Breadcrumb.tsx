@@ -11,15 +11,17 @@ import { BreadcrumbItemProps, StyledText } from "./BreadcrumbItem"
 export interface BreadcrumbProps {
   /** separate to be using between crumbs */
   separator?: string | ReactNode
-  /** styles specified by the user */
-  style?: CSSProperties
+  /** Styles applied to the root */
+  rootStyle?: CSSProperties
+  /** Styles applied to each child */
+  childStyle?: CSSProperties
   /** Breadcrumb Items in children */
   children?: ReactNode[] | ReactNode
   /** className for user to specify their class */
   className?: string
   /** Max width of the breadcrumb to be wrapped in */
   maxWidth?: string
-  /** Level till which the crumbs are to be shown (from end) First is shown anyways */
+  /** Level till which the crumbs are to be shown (from end). First is shown anyways */
   truncateTo?: number
   /** Styles for the active item */
   activeStyles?: CSSProperties
@@ -50,9 +52,10 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
       truncateTo = Infinity,
       separator,
       activeStyles,
+      childStyle,
     } = this.props
     const updatedChildren = Array.isArray(children)
-      ? this.preprocessCrumbs(children, separator, truncateTo)
+      ? this.preprocessCrumbs(children, separator, truncateTo, childStyle)
       : children
     const crumbs = React.Children.map(
       updatedChildren,
@@ -73,7 +76,8 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   preprocessCrumbs = (
     crumbs: ReactNode[],
     separator: ReactNode | string,
-    truncateTo: number
+    truncateTo: number,
+    childStyle: CSSProperties
   ) => {
     // Container where we insert nodes and separators in appropriate places
     const updatedCrumbs: ReactNode[] = []
@@ -86,23 +90,40 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
         index === 0 || index >= crumbs.length - truncateTo || showAll
       if (shouldInsertCrumbs) {
         if (index !== crumbs.length - 1) {
-          updatedCrumbs.push(crumb)
+          updatedCrumbs.push(
+            cloneElement(crumb as ReactElement<any>, {
+              childStyle,
+            })
+          )
         } else {
           updatedCrumbs.push(
-            cloneElement(crumb as ReactElement<any>, { activeElement: true })
+            cloneElement(crumb as ReactElement<any>, {
+              activeElement: true,
+              childStyle,
+            })
           )
         }
         // Insert nodes till last element
         if (index < crumbs.length - 1) {
-          updatedCrumbs.push(<StyledText separator>{separator}</StyledText>)
+          updatedCrumbs.push(
+            <StyledText style={childStyle} separator>
+              {separator}
+            </StyledText>
+          )
         }
       } else if (!truncated) {
         updatedCrumbs.push(
-          <StyledText onClick={() => this.setState({ showAll: true })}>
+          <StyledText
+            style={childStyle}
+            onClick={() => this.setState({ showAll: true })}>
             ...
           </StyledText>
         )
-        updatedCrumbs.push(<StyledText separator>{separator}</StyledText>)
+        updatedCrumbs.push(
+          <StyledText style={childStyle} separator>
+            {separator}
+          </StyledText>
+        )
         truncated = true
       }
     })
@@ -110,12 +131,12 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
   }
 
   render() {
-    const { className, style, maxWidth } = this.props
+    const { className, rootStyle, maxWidth } = this.props
     return (
       <StyledParent
         className={className || ""}
         maxWidth={maxWidth}
-        style={style}>
+        style={rootStyle}>
         {this.renderBreadcrumbs()}
       </StyledParent>
     )

@@ -18,6 +18,10 @@ const customActiveStyle = {
   color: "#0F74BD",
 }
 
+const customChildStyle = {
+  fontSize: "1.8rem",
+}
+
 storiesOf("Breadcrumb", module)
   .add("Basic", () => (
     <Breadcrumb>
@@ -43,7 +47,14 @@ storiesOf("Breadcrumb", module)
     </Breadcrumb>
   ))
   .add("With custom parent styles", () => (
-    <Breadcrumb style={customStyle}>
+    <Breadcrumb rootStyle={customStyle}>
+      <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+      <Breadcrumb.Item>Reports</Breadcrumb.Item>
+      <Breadcrumb.Item>50467</Breadcrumb.Item>
+    </Breadcrumb>
+  ))
+  .add("With custom child styles", () => (
+    <Breadcrumb childStyle={customChildStyle}>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>Reports</Breadcrumb.Item>
       <Breadcrumb.Item>50467</Breadcrumb.Item>
