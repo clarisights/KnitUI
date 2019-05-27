@@ -86,6 +86,13 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
     const { showAll } = this.state
     // A bool to check whether the ... is inserted or not
     let truncated = false
+    // Handle the range of truncateTo
+    if (truncateTo < 1) {
+      truncateTo = 1
+      console.warn(
+        `Prop 'truncateTo' has been set to 1 since it's the lowest possible value`
+      )
+    }
     crumbs.forEach((crumb: ReactNode, index: number) => {
       const shouldInsertCrumbs =
         index === 0 || index >= crumbs.length - truncateTo || showAll
