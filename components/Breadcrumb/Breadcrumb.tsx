@@ -65,6 +65,7 @@ export default class Breadcrumb extends Component<BreadcrumbProps, any> {
         }
         return cloneElement(element as ReactElement<any>, {
           key: index,
+          childStyle,
           activeStyles,
         })
       }
