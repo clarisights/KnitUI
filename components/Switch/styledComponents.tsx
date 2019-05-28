@@ -16,7 +16,7 @@ export const StyledSwitch = styled(RCSwitch)`
     line-height: ${({ size }) => (isSmall(size) ? "8px" : "14px")};
     padding: 0;
     vertical-align: middle;
-    border-radius: 20px 20px;
+    border-radius: 80px;
     border: 1px solid ${({ theme }) => theme.wrapperBorderColor};
     background-color: ${({ theme }) => theme.wrapperBgColor};
     cursor: pointer;
@@ -54,7 +54,7 @@ export const StyledSwitch = styled(RCSwitch)`
       animation-name: rcSwitchOn;
     }
     &:focus {
-      box-shadow: 0 0 0 2px tint(#2db7f5, 80%);
+      box-shadow: 0 0 2px #0066FF;
       outline: none;
     }
     &.knit-switch-checked {
