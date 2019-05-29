@@ -1,11 +1,19 @@
 import RCCheckbox from "rc-checkbox"
 import styled from "styled-components"
+import * as theme from "../../components/styles/variables"
+
+const { checkboxCheckedColor } = theme
 
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
 
 export const StyledCheckbox = styled(RCCheckbox)`
   &.knit-checkbox {
+    &.knit-checkbox-checked {
+      .knit-checkbox-inner {
+        border-color: ${checkboxCheckedColor};
+      }
+    }
     white-space: nowrap;
     cursor: pointer;
     outline: none;
@@ -20,7 +28,7 @@ export const StyledCheckbox = styled(RCCheckbox)`
       display: inline-block;
       width: 14px;
       height: 14px;
-      border-width: 1px;
+      border-width: 1.56px;
       border-style: solid;
       border-radius: 3px;
       border-color: #d9d9d9;
@@ -30,8 +38,8 @@ export const StyledCheckbox = styled(RCCheckbox)`
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
         position: absolute;
-        left: 4px;
-        top: 1px;
+        left: 3px;
+        top: 0px;
         display: table;
         width: 5px;
         height: 8px;
@@ -47,68 +55,48 @@ export const StyledCheckbox = styled(RCCheckbox)`
     .knit-checkbox-input {
       position: absolute;
       left: 0;
-      z-index: 9999;
       cursor: pointer;
+      z-index: 9999;
       opacity: 0;
       top: 0;
       bottom: 0;
       right: 0;
     }
-    &.knit-checkbox-checked:hover {
-      .knit-checkbox-inner {
-        border-color: #3dbcf6;
-      }
+    &+span {
+      margin-left: 10px;
     }
     &.knit-checkbox-checked {
       .knit-checkbox-inner {
-        border-color: #3dbcf6;
-        background-color: #3dbcf6;
+        background-color: ${checkboxCheckedColor};
       }
-    }
-    &.knit-checkbox-checked {
-      .knit-checkbox-inner {
-        &:after {
-          transform: rotate(45deg);
-          position: absolute;
-          left: 4px;
-          top: 1px;
-          display: table;
-          width: 5px;
-          height: 8px;
-          border: 2px solid #ffffff;
-          border-top: 0;
-          border-left: 0;
-          content: ' ';
-          animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-          animation-duration: 0.3s;
-          animation-name: amCheckboxOut;
+      &:focus {
+        .knit-checkbox-inner {
+          border-color: #3dbcf6;
         }
       }
     }
-    &-disabled.knit-checkbox-checked:hover $-inner {
-      border-color: #d9d9d9;
-    }
-    &-disabled.knit-checkbox-checked &-inner {
-      background-color: #f3f3f3;
-      border-color: #d9d9d9;
-    }
-    &-disabled.knit-checkbox-checked &-inner::after {
-      animation-name: none;
-      border-color: #cccccc;
-    }
-    &-disabled:hover &-inner {
-      border-color: #d9d9d9;
-    }
-    &-disabled &-inner {
-      border-color: #d9d9d9;
-      background-color: #f3f3f3;
-    }
-    &-disabled &-inner::after {
-      animation-name: none;
-      border-color: #f3f3f3;
-    }
-    &-disabled &-inner-input {
-      cursor: default;
+    &.knit-checkbox-disabled {
+      &+span {
+        color: #808080;
+      }
+      &.knit-checkbox-checked {
+        .knit-checkbox-inner {
+          background-color: ${checkboxCheckedColor};
+          border-color: ${checkboxCheckedColor};
+          &:after {
+            animation-name: none;
+            border-color: #cccccc;
+          }
+        }
+      }
+      cursor: not-allowed;
+      .knit-checkbox-input {
+        cursor: not-allowed;
+      }
+      .knit-checkbox-inner {
+        background-color: #ffffff;
+        opacity: 0.6;
+      }
     }
   }
   @keyframes amCheckboxIn {

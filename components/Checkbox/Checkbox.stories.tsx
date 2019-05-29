@@ -11,9 +11,8 @@ storiesOf("Checkbox", module)
     <Checkbox>Hey!</Checkbox>
   ))
   .add("Default with disabled", () => <Checkbox disabled />)
-  .add("Default with children", () => (
-    <Checkbox />
-  ))
+  .add("Default with disabled but checked", () => <Checkbox disabled checked/>)
+  .add("Default with label and disabled with checked", () => <Checkbox disabled checked>Checkbox Disabled</Checkbox>)
   .add("Small with children", () => (
     <Checkbox size="small" />
   ))
