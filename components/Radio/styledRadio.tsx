@@ -48,6 +48,10 @@ export const StyledRadio = styled(RCCheckbox)`
       }
     }
 
+    &+span {
+      margin-left: 10px;
+    }
+
     .knit-radio-input {
       position: absolute;
       left: 0;
