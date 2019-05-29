@@ -1,5 +1,5 @@
-import React, { SFC, ReactNode, CSSProperties } from "react"
-import { StyledCheckbox } from "./styledComponents"
+import React, { useState, useEffect, SFC, ReactNode, CSSProperties } from "react"
+import { StyledCheckbox } from './styledComponents'
 
 type SizeType = "small" | "default"
 
@@ -20,6 +20,8 @@ interface CheckboxProps {
   children?: ReactNode
   /** Custom styles applied to the root element */
   style?: CSSProperties
+  /** Custom styles for the checkbox */
+  labelStyle?: CSSProperties
   /** size of the switch */
   size?: SizeType
   /** value of the checkbox */
@@ -27,14 +29,14 @@ interface CheckboxProps {
 }
 
 const Checkbox: SFC<CheckboxProps> = props => {
-  const { style, className, children } = props
+  const { style, className, children, labelStyle } = props
   return (
     <label
       className={className}
       style={style}
     >
       <StyledCheckbox prefixCls="knit-checkbox" {...props} />
-      {children !== undefined && <span>{children}</span>}
+      {children !== undefined && <span style={labelStyle}>{children}</span>}
     </label>
   )
 
