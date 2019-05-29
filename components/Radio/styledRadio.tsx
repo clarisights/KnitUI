@@ -63,6 +63,10 @@ export const StyledRadio: any = styled(RadioWrapper)`
       margin-left: 10px;
     }
 
+    &+span {
+      margin-left: 10px;
+    }
+
     .knit-radio-input {
       position: absolute;
       left: 0;
