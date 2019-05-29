@@ -2,7 +2,7 @@ import RCCheckbox from "rc-checkbox"
 import styled from "styled-components"
 import * as theme from "../../components/styles/variables"
 
-const { checkboxCheckedColor } = theme
+const { checkboxCheckedColor, smallCheckboxSize, mediumCheckboxSize, tickHeight, tickWidth } = theme
 
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
@@ -23,11 +23,13 @@ export const StyledCheckbox = styled(RCCheckbox)`
     vertical-align: middle;
     .knit-checkbox-inner {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       top: 0;
       left: 0;
-      display: inline-block;
-      width: 14px;
-      height: 14px;
+      width: ${({ size }) => isSmall(size) ? smallCheckboxSize : mediumCheckboxSize};
+      height: ${({ size }) => isSmall(size) ? smallCheckboxSize : mediumCheckboxSize};
       border-width: 1.56px;
       border-style: solid;
       border-radius: 3px;
@@ -35,14 +37,12 @@ export const StyledCheckbox = styled(RCCheckbox)`
       background-color: #ffffff;
       transition: border-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
       &:after {
+        margin-bottom: 20%;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        position: absolute;
-        left: 3px;
-        top: 0px;
         display: table;
-        width: 5px;
-        height: 8px;
+        width: ${tickWidth};
+        height: ${tickHeight};
         border: 2px solid #ffffff;
         border-top: 0;
         border-left: 0;
@@ -72,6 +72,7 @@ export const StyledCheckbox = styled(RCCheckbox)`
       &:focus {
         .knit-checkbox-inner {
           border-color: #3dbcf6;
+          box-shadow: 0px 0px 2px #0066FF;
         }
       }
     }

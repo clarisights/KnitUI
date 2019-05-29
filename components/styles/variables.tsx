@@ -128,4 +128,8 @@ export const switchCheckedDisabledBorderColor = "hsl(0, 0%, 90%)"
 export const switchCheckedDisabledBgColor = "hsl(0, 0%, 90%)"
 
 // checkbox
+export const smallCheckboxSize = "1.2rem"
+export const mediumCheckboxSize = "1.4rem"
+export const tickHeight = "0.8rem"
+export const tickWidth = "0.5rem"
 export const checkboxCheckedColor = "hsl(215.9, 100%, 20%)"
