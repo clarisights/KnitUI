@@ -1,6 +1,7 @@
 import RCCheckbox from "rc-checkbox"
 import styled from "styled-components"
 import * as theme from "../../components/styles/variables"
+import { Neutral0, Neutral50, Neutral30, Neutral40, Azure80 } from "../styles/palette"
 
 const { checkboxCheckedColor, smallCheckboxSize, mediumCheckboxSize, tickHeight, tickWidth } = theme
 
@@ -33,8 +34,8 @@ export const StyledCheckbox = styled(RCCheckbox)`
       border-width: 1.56px;
       border-style: solid;
       border-radius: 3px;
-      border-color: #d9d9d9;
-      background-color: #ffffff;
+      border-color: ${Neutral30.hex};
+      background-color: ${Neutral0.hex};
       transition: border-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
       &:after {
         margin-bottom: 20%;
@@ -43,7 +44,7 @@ export const StyledCheckbox = styled(RCCheckbox)`
         display: table;
         width: ${tickWidth};
         height: ${tickHeight};
-        border: 2px solid #ffffff;
+        border: 2px solid ${Neutral0.hex};
         border-top: 0;
         border-left: 0;
         content: ' ';
@@ -71,14 +72,14 @@ export const StyledCheckbox = styled(RCCheckbox)`
       }
       &:focus {
         .knit-checkbox-inner {
-          border-color: #3dbcf6;
+          border-color: ${Azure80.hex};
           box-shadow: 0px 0px 2px #0066FF;
         }
       }
     }
     &.knit-checkbox-disabled {
       &+span {
-        color: #808080;
+        color: ${Neutral50.hex};
       }
       &.knit-checkbox-checked {
         .knit-checkbox-inner {
@@ -86,7 +87,7 @@ export const StyledCheckbox = styled(RCCheckbox)`
           border-color: ${checkboxCheckedColor};
           &:after {
             animation-name: none;
-            border-color: #cccccc;
+            border-color: ${Neutral40.hex};
           }
         }
       }
@@ -95,7 +96,7 @@ export const StyledCheckbox = styled(RCCheckbox)`
         cursor: not-allowed;
       }
       .knit-checkbox-inner {
-        background-color: #ffffff;
+        background-color: ${Neutral0.hex};
         opacity: 0.6;
       }
     }
