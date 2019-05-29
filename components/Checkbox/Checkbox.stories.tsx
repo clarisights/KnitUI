@@ -8,7 +8,7 @@ storiesOf("Checkbox", module)
     <Checkbox defaultChecked />
   ))
   .add("Small with default checked", () => (
-    <Checkbox size="small" />
+    <Checkbox size="small" checked />
   ))
   .add("Checkbox with label", () => (
     <Checkbox>Checkbox</Checkbox>
