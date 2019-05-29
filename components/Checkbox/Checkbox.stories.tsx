@@ -4,11 +4,14 @@ import { Checkbox } from "./index"
 
 storiesOf("Checkbox", module)
   .add("Basic", () => <Checkbox />)
+  .add("Default with checked", () => (
+    <Checkbox defaultChecked />
+  ))
   .add("Small with default checked", () => (
-  <Checkbox size="small" defaultChecked />
+    <Checkbox size="small" />
   ))
   .add("Checkbox with label", () => (
-    <Checkbox>Hey!</Checkbox>
+    <Checkbox>Checkbox</Checkbox>
   ))
   .add("Default with disabled", () => <Checkbox disabled />)
   .add("Default with disabled but checked", () => <Checkbox disabled checked/>)
