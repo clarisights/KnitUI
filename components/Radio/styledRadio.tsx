@@ -40,9 +40,7 @@ export const StyledRadio = styled(RCCheckbox)`
       border-style: solid;
       border-radius: 14px;
       border-color: ${Blue100.hex};
-      background-color: #ffffff;
-      transition: border-color @duration @ease-in-out-circ,
-        background-color @duration @ease-in-out-circ;
+      background-color: ${Neutral0.hex};
       &:after {
         position: absolute;
         width: ${({ size }): any =>
@@ -60,12 +58,10 @@ export const StyledRadio = styled(RCCheckbox)`
         transform: scale(0);
         -webkit-transform: scale(0);
         opacity: 0;
-        transition: transform @duration @ease-in-out-circ,
-          opacity @duration @ease-in-out-circ,
-          background-color @duration @ease-in-out-circ;
-        -webkit-transition: -webkit-transform @duration @ease-in-out-circ,
-          opacity @duration @ease-in-out-circ,
-          background-color @duration @ease-in-out-circ;
+      }
+      &:focus {
+        box-shadow: 0px 0px 2px #0066ff;
+        outline: none;
       }
     }
 

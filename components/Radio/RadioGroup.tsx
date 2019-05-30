@@ -44,7 +44,9 @@ const defaultRadioProps: RadioGroupProps = {
 
 const renderRadio = (props, value, setValue) => {
   const propsToPass = _.omit(props, ["children"])
-  return props.children.map((Radio, index) => {
+  let Radios = props.children || <></>
+  if (!Array.isArray(Radios)) Radios = [Radios]
+  return Radios.map((Radio, index) => {
     return cloneElement(Radio, {
       groupValue: value,
       setValue,

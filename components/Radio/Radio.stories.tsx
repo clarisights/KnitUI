@@ -9,8 +9,8 @@ storiesOf("Radio", module)
       <Radio value={2}>Option 2</Radio>
     </RadioGroup>
   ))
-  .add("Small with 2 in group and disabled", () => (
-    <RadioGroup size="small" disabled>
+  .add("Small with 2 in group with disabled", () => (
+    <RadioGroup size="small" disabled defaultValue={1}>
       <Radio value={1}>Option 1</Radio>
       <Radio value={2}>Option 2</Radio>
     </RadioGroup>
@@ -22,7 +22,7 @@ storiesOf("Radio", module)
     </RadioGroup>
   ))
   .add("Medium with 2 in group and disabled", () => (
-    <RadioGroup size="medium" disabled>
+    <RadioGroup size="medium" disabled defaultValue={1}>
       <Radio value={1} />
       <Radio value={2} />
     </RadioGroup>
