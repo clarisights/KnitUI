@@ -1,5 +1,5 @@
 {
-  "name": "Knit-UI",
+  "name": "knit-ui",
   "version": "0.1.0",
   "description": "Component library for Clarisights",
   "main": "lib/index.js",
