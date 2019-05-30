@@ -1,9 +1,21 @@
 import RCCheckbox from "rc-checkbox"
 import styled from "styled-components"
 import * as theme from "../styles/variables"
-import { Neutral0, Neutral50, Neutral30, Neutral40, Azure80, Blue100 } from "../styles/palette"
+import {
+  Neutral0,
+  Neutral50,
+  Neutral30,
+  Neutral40,
+  Azure80,
+  Blue100,
+} from "../styles/palette"
 
-const { checkboxCheckedColor, smallCheckboxSize, mediumCheckboxSize, tickHeight, tickWidth } = theme
+const {
+  smallRadioSize,
+  mediumRadioSize,
+  smallRadioBead,
+  mediumRadioBead,
+} = theme
 
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
@@ -19,35 +31,46 @@ export const StyledRadio = styled(RCCheckbox)`
       top: 0;
       left: 0;
       display: inline-block;
-      width: 10px;
-      height: 10px;
+      width: ${({ size }) =>
+        isSmall(size) ? smallRadioSize : mediumRadioSize};
+      height: ${({ size }) =>
+        isSmall(size) ? smallRadioSize : mediumRadioSize};
       border-width: 1px;
+      cursor: pointer;
       border-style: solid;
       border-radius: 14px;
       border-color: ${Blue100.hex};
       background-color: #ffffff;
-      transition: border-color @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+      transition: border-color @duration @ease-in-out-circ,
+        background-color @duration @ease-in-out-circ;
       &:after {
         position: absolute;
-        width: 6px;
-        height: 6px;
-        left: 2px;
-        top: 2px;
+        width: ${({ size }): any =>
+          isSmall(size) ? smallRadioBead : mediumRadioBead};
+        height: ${({ size }): any =>
+          isSmall(size) ? smallRadioBead : mediumRadioBead};
+        left: 3px;
+        top: 3px;
         border-radius: 6px;
         display: table;
         border-top: 0;
         border-left: 0;
-        content: ' ';
+        content: " ";
         background-color: ${Blue100.hex};
         transform: scale(0);
         -webkit-transform: scale(0);
         opacity: 0;
-        transition: transform @duration @ease-in-out-circ,opacity @duration @ease-in-out-circ,background-color @duration @ease-in-out-circ;
-        -webkit-transition: -webkit-transform @duration @ease-in-out-circ,opacity @duration @ease-in-out-circ,background-color @duration @ease-in-out-circ;
+        transition: transform @duration @ease-in-out-circ,
+          opacity @duration @ease-in-out-circ,
+          background-color @duration @ease-in-out-circ;
+        -webkit-transition: -webkit-transform @duration @ease-in-out-circ,
+          opacity @duration @ease-in-out-circ,
+          background-color @duration @ease-in-out-circ;
       }
     }
 
-    &+span {
+    & + span {
+      cursor: ${props => (isDisabled(props) ? "not-allowed" : "pointer")};
       margin-left: 10px;
     }
 
@@ -68,8 +91,12 @@ export const StyledRadio = styled(RCCheckbox)`
           transform: scale(1);
           -webkit-transform: scale(1);
           opacity: 1;
-          transition: transform @duration @ease-out-back,opacity @duration @ease-in-out-circ,background-color @duration @ease-in-out-circ;
-          -webkit-transition: -webkit-transform @duration @ease-out-back,opacity @duration @ease-in-out-circ,background-color @duration @ease-in-out-circ;
+          transition: transform @duration @ease-out-back,
+            opacity @duration @ease-in-out-circ,
+            background-color @duration @ease-in-out-circ;
+          -webkit-transition: -webkit-transform @duration @ease-out-back,
+            opacity @duration @ease-in-out-circ,
+            background-color @duration @ease-in-out-circ;
         }
       }
     }
@@ -80,8 +107,8 @@ export const StyledRadio = styled(RCCheckbox)`
         opacity: 0.6;
         background-color: #f3f3f3;
       }
-      &+span {
-        color: #808080;
+      & + span {
+        color: ${Neutral50.hex};
       }
       .knit-radio-input {
         cursor: not-allowed;
