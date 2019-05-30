@@ -54,7 +54,7 @@ export const StyledSwitch = styled(RCSwitch)`
       animation-name: rcSwitchOn;
     }
     &:focus {
-      box-shadow: 0 0 2px #0066FF;
+      box-shadow: 0 0 2px #0066ff;
       outline: none;
     }
     &.knit-switch-checked {

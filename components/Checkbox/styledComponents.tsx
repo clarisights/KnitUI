@@ -1,9 +1,21 @@
 import RCCheckbox from "rc-checkbox"
 import styled from "styled-components"
 import * as theme from "../../components/styles/variables"
-import { Neutral0, Neutral50, Neutral30, Neutral40, Azure80 } from "../styles/palette"
+import {
+  Neutral0,
+  Neutral50,
+  Neutral30,
+  Neutral40,
+  Azure80,
+} from "../styles/palette"
 
-const { checkboxCheckedColor, smallCheckboxSize, mediumCheckboxSize, tickHeight, tickWidth } = theme
+const {
+  checkboxCheckedColor,
+  smallCheckboxSize,
+  mediumCheckboxSize,
+  tickHeight,
+  tickWidth,
+} = theme
 
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
@@ -29,14 +41,17 @@ export const StyledCheckbox = styled(RCCheckbox)`
       align-items: center;
       top: 0;
       left: 0;
-      width: ${({ size }) => isSmall(size) ? smallCheckboxSize : mediumCheckboxSize};
-      height: ${({ size }) => isSmall(size) ? smallCheckboxSize : mediumCheckboxSize};
+      width: ${({ size }) =>
+        isSmall(size) ? smallCheckboxSize : mediumCheckboxSize};
+      height: ${({ size }) =>
+        isSmall(size) ? smallCheckboxSize : mediumCheckboxSize};
       border-width: 1.56px;
       border-style: solid;
       border-radius: 3px;
       border-color: ${Neutral30.hex};
       background-color: ${Neutral0.hex};
-      transition: border-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      transition: border-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+        background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
       &:after {
         margin-bottom: 20%;
         -webkit-transform: rotate(45deg);
@@ -47,7 +62,7 @@ export const StyledCheckbox = styled(RCCheckbox)`
         border: 2px solid ${Neutral0.hex};
         border-top: 0;
         border-left: 0;
-        content: ' ';
+        content: " ";
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
         animation-duration: 0.3s;
         animation-name: amCheckboxOut;
@@ -63,7 +78,7 @@ export const StyledCheckbox = styled(RCCheckbox)`
       bottom: 0;
       right: 0;
     }
-    &+span {
+    & + span {
       margin-left: 10px;
     }
     &.knit-checkbox-checked {
@@ -73,12 +88,12 @@ export const StyledCheckbox = styled(RCCheckbox)`
       &:focus {
         .knit-checkbox-inner {
           border-color: ${Azure80.hex};
-          box-shadow: 0px 0px 2px #0066FF;
+          box-shadow: 0px 0px 2px #0066ff;
         }
       }
     }
     &.knit-checkbox-disabled {
-      &+span {
+      & + span {
         color: ${Neutral50.hex};
       }
       &.knit-checkbox-checked {
