@@ -1,11 +1,18 @@
-import React, { SFC, ReactNode, CSSProperties, useState, cloneElement } from 'react'
-import { RadioProps } from './Radio'
+import React, {
+  SFC,
+  ReactNode,
+  CSSProperties,
+  useState,
+  cloneElement,
+} from "react"
+import _ from "lodash"
+import { RadioProps } from "./Radio"
 
 export interface RadioChangeEventTarget extends RadioProps {
   checked: boolean
 }
 
-type size = 'small' | 'medium'
+type size = "small" | "medium"
 
 export interface RadioChangeEvent {
   target: RadioChangeEventTarget
@@ -16,7 +23,7 @@ export interface RadioChangeEvent {
 
 interface RadioGroupProps {
   /** Value of the radio group */
-  value?: any,
+  value?: any
   /** Custom styles for each radio button */
   radioStyle?: CSSProperties
   /** Function to call when radio is changed */
@@ -27,26 +34,30 @@ interface RadioGroupProps {
   size?: size
   /** children nodes */
   children?: ReactNode
+  /** Whether the group is disabled */
+  disabled?: boolean
 }
 
 const defaultRadioProps: RadioGroupProps = {
-  size: 'medium'
+  size: "medium",
 }
 
 const renderRadio = (props, value, setValue) => {
+  const propsToPass = _.omit(props, ["children"])
   return props.children.map((Radio, index) => {
-    return cloneElement(Radio, {groupValue: value, setValue, key: index})
+    return cloneElement(Radio, {
+      groupValue: value,
+      setValue,
+      key: index,
+      ...propsToPass,
+    })
   })
 }
 
 const RadioGroup: SFC<RadioGroupProps> = props => {
   const [value, setValue] = useState(props.value || props.defaultValue)
 
-  return (
-    <div>
-      {renderRadio(props, value, setValue)}
-    </div>
-  )
+  return <div>{renderRadio(props, value, setValue)}</div>
 }
 
 RadioGroup.defaultProps = defaultRadioProps
