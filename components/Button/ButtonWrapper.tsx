@@ -1,5 +1,5 @@
 import React from "react"
-import { Icon } from "../Icon"
+import Icon from "../Icon"
 import * as theme from "../styles/variables"
 import chroma from "chroma-js"
 import { ButtonBase, ButtonInset } from "./styledComponents"

@@ -1,6 +1,6 @@
 {
   "name": "knit-ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Component library for Clarisights",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -8,6 +8,10 @@
   "author": "Rohan Malhotra <rohan.root@gmail.com>",
   "license": "MIT",
   "private": false,
+  "files": [
+    "lib",
+    "es"
+  ],
   "scripts": {
     "test": "jest --verbose=false --no-cache",
     "prebuild": "rm -rf lib && rm -rf es",
