@@ -3,7 +3,7 @@ import { StyledRadio } from './styledRadio'
 
 type SizeType = "small" | "default"
 
-interface CheckboxProps {
+export interface RadioProps {
   /** whether checked by default */
   defaultChecked?: boolean
   /** called when switch is checked or unchecked */
@@ -26,20 +26,26 @@ interface CheckboxProps {
   size?: SizeType
   /** value of the checkbox */
   value?: any
+  /** Value of the radio group */
+  groupValue?: any
+  /** Function to set the value of radio on the group */
+  setValue?: (val: any) => void | any
 }
 
-const Checkbox: SFC<CheckboxProps> = props => {
-  const { style, className, children, labelStyle } = props
+const isChecked = (groupValue, value) => groupValue === value
+
+const Radio: SFC<RadioProps> = props => {
+  const { style, className, children, labelStyle, setValue, value, groupValue } = props
   return (
     <label
       className={className}
       style={{display: 'flex', ...style}}
     >
-      <StyledRadio prefixCls="knit-radio" type="radio" {...props} />
+      <StyledRadio onChange={() => setValue && setValue(value)} prefixCls="knit-radio" checked={isChecked(groupValue, value)} value={value} type="radio" {...props} />
       {children !== undefined && <span style={labelStyle}>{children}</span>}
     </label>
   )
 
 }
 
-export default Checkbox
+export default Radio
