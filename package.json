@@ -16,7 +16,7 @@
     "test": "jest --verbose=false --no-cache",
     "prebuild": "rm -rf lib && rm -rf es",
     "build": "npm-run-all --parallel build:cjs build:es",
-    "build:cjs": "NODE_ENV=production babel --extensions .ts,.tsx components --out-dir lib --ignore components/**/*.test.jsx,components/**/__tests__,components/**/*.spec.jsx,components/**/__snapshots__,components/**/*.stories.tsx,components/**/*.md",
+    "build:cjs": "NODE_ENV=production babel --extensions .ts,.tsx,.js,.jsx components --out-dir lib --ignore components/**/*.test.jsx,components/**/__tests__,components/**/*.spec.jsx,components/**/__snapshots__,components/**/*.stories.tsx,components/**/*.md",
     "build:es": "NODE_ENV=production BABEL_ENV=es babel --extensions .ts,.tsx,.js,.jsx components --out-dir es --ignore components/**/*.test.jsx,components/**/__tests__,components/**/*.spec.jsx,components/**/__snapshots__,components/**/*.stories.tsx,components/**/*.md",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
