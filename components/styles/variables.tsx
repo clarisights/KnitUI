@@ -1,4 +1,4 @@
-import chroma from 'chroma-js'
+import chroma from "chroma-js"
 
 // Helpers
 const multiply = (a: number, b: number) => a * b
@@ -16,28 +16,28 @@ export const unit18 = 1.8
 export const typography = {
   size10: {
     fontSize: 1.0,
-    lineHeight: 1.6
+    lineHeight: 1.6,
   },
   size12: {
     fontSize: 1.2,
-    lineHeight: 1.8
+    lineHeight: 1.8,
   },
   size14: {
     fontSize: 1.4,
-    lineHeight: 2.0
+    lineHeight: 2.0,
   },
   size16: {
     fontSize: 1.6,
-    lineHeight: 2.0
+    lineHeight: 2.0,
   },
   size18: {
     fontSize: 1.8,
-    lineHeight: 2.4
+    lineHeight: 2.4,
   },
   size20: {
     fontSize: 2.0,
-    lineHeight: 2.8
-  }
+    lineHeight: 2.8,
+  },
 }
 
 // Type
@@ -74,7 +74,7 @@ export const secondaryPalette = {
   unsaved: {
     background: chroma.hsl(288, 0.2, 0.35),
     font: chroma.hsl(0, 0, 1),
-  }
+  },
 }
 
 export const shades = {
