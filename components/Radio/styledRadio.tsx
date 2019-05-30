@@ -15,7 +15,6 @@ export const StyledRadio = styled(RCCheckbox)`
     display: inline-block;
     position: relative;
     .knit-radio-inner {
-      border: 2px solid red;
       position: relative;
       top: 0;
       left: 0;
