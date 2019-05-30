@@ -1,5 +1,5 @@
 import React, { useEffect, SFC, ReactNode, CSSProperties } from "react"
-import { StyledRadio } from './styledRadio'
+import { StyledRadio } from "./styledRadio"
 
 type SizeType = "small" | "default"
 
@@ -35,17 +35,28 @@ export interface RadioProps {
 const isChecked = (groupValue, value) => groupValue === value
 
 const Radio: SFC<RadioProps> = props => {
-  const { style, className, children, labelStyle, setValue, value, groupValue } = props
+  const {
+    style,
+    className,
+    children,
+    labelStyle,
+    setValue,
+    value,
+    groupValue,
+  } = props
   return (
-    <label
-      className={className}
-      style={{display: 'flex', ...style}}
-    >
-      <StyledRadio onChange={() => setValue && setValue(value)} prefixCls="knit-radio" checked={isChecked(groupValue, value)} value={value} type="radio" {...props} />
+    <label className={className} style={{ display: "flex", ...style }}>
+      <StyledRadio
+        onChange={() => setValue && setValue(value)}
+        prefixCls="knit-radio"
+        checked={isChecked(groupValue, value)}
+        value={value}
+        type="radio"
+        {...props}
+      />
       {children !== undefined && <span style={labelStyle}>{children}</span>}
     </label>
   )
-
 }
 
 export default Radio
