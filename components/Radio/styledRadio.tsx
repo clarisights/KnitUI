@@ -63,7 +63,8 @@ export const StyledRadio: any = styled(RadioWrapper)`
       margin-left: 10px;
     }
 
-    &+span {
+    & + span {
+      cursor: ${props => (isDisabled(props) ? "not-allowed" : "pointer")};
       margin-left: 10px;
     }
 
