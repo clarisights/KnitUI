@@ -664,6 +664,9 @@ exports[`Button renders with text and an icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -728,7 +731,9 @@ exports[`Button renders with text and an icon correctly 1`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -751,6 +756,9 @@ exports[`Button renders with text and an icon correctly 2`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -815,7 +823,9 @@ exports[`Button renders with text and an icon correctly 2`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -838,6 +848,9 @@ exports[`Button renders with text and an icon correctly 3`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -902,7 +915,9 @@ exports[`Button renders with text and an icon correctly 3`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -925,6 +940,9 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1003,7 +1021,9 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -1031,6 +1051,9 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1109,7 +1132,9 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -1137,6 +1162,9 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1215,7 +1243,9 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -1444,6 +1474,9 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1508,7 +1541,9 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -1531,6 +1566,9 @@ exports[`Button with size large renders with an icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1595,7 +1633,9 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -1819,6 +1859,9 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1883,7 +1926,9 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -1906,6 +1951,9 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1970,7 +2018,9 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -2194,6 +2244,9 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -2258,7 +2311,9 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"
@@ -2281,6 +2336,9 @@ exports[`Button with size small renders with an icon correctly 1`] = `
 <DocumentFragment>
   .c1 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -2345,7 +2403,9 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   >
     <span
       class="c1"
+      height="18px"
       type="oInfo"
+      width="18px"
     >
       <svg
         fill="#000"

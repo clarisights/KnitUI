@@ -12,6 +12,9 @@ interface IIconProps {
 
 const StyledIconWrapper: any = withProps<IIconProps>()(styled.span)`
   cursor: inherit;
+  display: inline-block;
+  height: ${({ height }) => height};
+  width: ${({ width }) => width};
   & svg {
    ${({ customStyles }) => customStyles};
   }
@@ -25,7 +28,11 @@ const Icon: any = (props: IIconProps) => {
   const icon =
     type && Icons[type] ? Icons[type](svgStyles) : Icons[defaultType](svgStyles)
   return (
-    <StyledIconWrapper {...props} customStyles={customStyles}>
+    <StyledIconWrapper
+      {...props}
+      height={height}
+      width={width}
+      customStyles={customStyles}>
       {icon}
     </StyledIconWrapper>
   )
