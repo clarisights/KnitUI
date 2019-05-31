@@ -90,7 +90,6 @@
     "@storybook/addon-backgrounds": "^5.0.10",
     "@types/styled-components": "^4.1.14",
     "chroma-js": "^2.0.3",
-    "rc-checkbox": "^2.1.6",
     "rc-switch": "^1.9.0",
     "react-test-renderer": "^16.8.6",
     "styled-components": "^4.2.0"

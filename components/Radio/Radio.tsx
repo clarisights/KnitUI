@@ -1,4 +1,4 @@
-import React, { useEffect, SFC, ReactNode, CSSProperties } from "react"
+import React, { SFC, ReactNode, CSSProperties } from "react"
 import { StyledRadio } from "./styledRadio"
 
 type SizeType = "small" | "default"

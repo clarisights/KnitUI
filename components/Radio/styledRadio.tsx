@@ -1,6 +1,6 @@
-import RCCheckbox from "rc-checkbox"
 import styled from "styled-components"
 import * as theme from "../styles/variables"
+import RadioWrapper from "./RadioWrapper"
 import {
   Neutral0,
   Neutral50,
@@ -20,7 +20,7 @@ const {
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
 
-export const StyledRadio = styled(RCCheckbox)`
+export const StyledRadio: any = styled(RadioWrapper)`
   &.knit-radio {
     white-space: nowrap;
     outline: none;
