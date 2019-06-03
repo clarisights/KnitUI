@@ -12,7 +12,7 @@ const Radio: SFC<RadioProps> = props => {
         type="radio"
         {...props}
       />
-      {children !== undefined && <span style={labelStyle}>{children}</span>}
+      {!children && <span style={labelStyle}>{children}</span>}
     </label>
   )
 }
