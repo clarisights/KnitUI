@@ -94,13 +94,8 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   const StyledContainer = styled(Container)`
     width: ${sizeToWidth[size!]} !important;
     .rc-dialog-close {
-      ${header.rightSection ?
-      `
-        right: -1rem;
-        top: -1rem;
-      ` :
-      `top: 2.5rem;`
-      }
+      right: -1rem;
+      top: -1rem;
       opacity: unset;
       padding: 0.15rem;
       background-color: ${theme.shades.gray50};
