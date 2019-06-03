@@ -1,5 +1,5 @@
 import React from "react"
-import { Button } from "../index"
+import Button from "../index"
 import { render, cleanup, fireEvent } from "react-testing-library"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
