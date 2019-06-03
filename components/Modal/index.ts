@@ -1,1 +1,2 @@
-export { default as Modal } from './ModalWrapper'
+import Modal from './ModalWrapper'
+export default Modal

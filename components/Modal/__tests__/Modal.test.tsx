@@ -1,5 +1,5 @@
 import React from "react"
-import { Modal } from "../index"
+import Modal from "../index"
 import { render, cleanup, fireEvent } from 'react-testing-library'
 import 'jest-styled-components'
 import 'jest-dom/extend-expect'

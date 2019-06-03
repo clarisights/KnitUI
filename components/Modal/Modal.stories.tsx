@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { storiesOf } from "@storybook/react"
-import { Modal } from "./index"
+import Modal from "./index"
 import { withKnobs, select } from '@storybook/addon-knobs'
 
 const Readme = require("./README.md")
