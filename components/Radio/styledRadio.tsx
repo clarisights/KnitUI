@@ -1,14 +1,7 @@
 import styled from "styled-components"
 import * as theme from "../styles/variables"
 import RadioWrapper from "./RadioWrapper"
-import {
-  Neutral0,
-  Neutral50,
-  Neutral30,
-  Neutral40,
-  Azure80,
-  Blue100,
-} from "../styles/palette"
+import { Neutral0, Neutral50, Blue100 } from "../styles/palette"
 
 const {
   smallRadioSize,
