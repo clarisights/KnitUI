@@ -1,4 +1,4 @@
-import React, { useState, useEffect, SFC, CSSProperties } from "react"
+import React, { SFC, CSSProperties } from "react"
 
 interface RadioWrapperProps {
   prefixCls?: string
@@ -15,6 +15,8 @@ interface RadioWrapperProps {
   readOnly?: boolean
   autoFocus?: boolean
   value?: any
+  groupValue?: string | number
+  setValue?: (e) => void | any
   size?: string
 }
 
@@ -32,22 +34,20 @@ const RadioWrapper: SFC<RadioWrapperProps> = props => {
     autoFocus,
     onChange,
     value,
+    groupValue,
+    setValue,
     ...others
   } = props
 
-  const on = props.checked || props.defaultChecked
-
-  const [checked, updateChecked] = useState(on)
-
-  useEffect(() => {
-    updateChecked(props.checked)
-  }, [checked, disabled])
+  const isChecked = () => value === groupValue || props.defaultChecked
 
   const handleChange = e => {
     if (props.disabled) {
       return
     }
-    updateChecked(e.target.checked)
+    if (setValue) {
+      setValue(value)
+    }
     if (onChange) {
       onChange({
         target: {
@@ -76,7 +76,7 @@ const RadioWrapper: SFC<RadioWrapperProps> = props => {
     return prev
   }, {})
 
-  const checkedClass = props.checked ? `${prefixCls}-checked` : ""
+  const checkedClass = isChecked() ? `${prefixCls}-checked` : ""
   const disabledClass = props.disabled ? `${prefixCls}-disabled` : ""
   const rootClass = `${prefixCls} ${className} ${checkedClass} ${disabledClass}`
 
@@ -89,7 +89,7 @@ const RadioWrapper: SFC<RadioWrapperProps> = props => {
         disabled={disabled}
         tabIndex={tabIndex}
         className={`${prefixCls}-input`}
-        checked={!!props.checked}
+        checked={!!isChecked()}
         onClick={onClick}
         onFocus={onFocus}
         onBlur={onBlur}
