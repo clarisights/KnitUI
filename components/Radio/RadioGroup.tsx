@@ -2,7 +2,7 @@ import React, {
   SFC,
   ReactNode,
   CSSProperties,
-  useState,
+  Component,
   cloneElement,
 } from "react"
 import _ from "lodash"
@@ -38,10 +38,6 @@ interface RadioGroupProps {
   disabled?: boolean
 }
 
-const defaultRadioProps: RadioGroupProps = {
-  size: "medium",
-}
-
 const renderRadio = (props, value, setValue) => {
   const propsToPass = _.omit(props, ["children"])
   let Radios = props.children || <></>
@@ -56,12 +52,21 @@ const renderRadio = (props, value, setValue) => {
   })
 }
 
-const RadioGroup: SFC<RadioGroupProps> = props => {
-  const [value, setValue] = useState(props.value || props.defaultValue)
+export default class RadioGroup extends Component<RadioGroupProps, any> {
+  static Item: React.FunctionComponent<RadioProps>
 
-  return <div>{renderRadio(props, value, setValue)}</div>
+  static defaultProps = {
+    size: "medium",
+  }
+
+  state = {
+    value: this.props.value || this.props.defaultValue,
+  }
+
+  setValue = value => {
+    this.setState({ value })
+  }
+  render() {
+    return <div>{renderRadio(this.props, this.state.value, this.setValue)}</div>
+  }
 }
-
-RadioGroup.defaultProps = defaultRadioProps
-
-export default RadioGroup

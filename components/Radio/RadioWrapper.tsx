@@ -4,7 +4,6 @@ interface RadioWrapperProps {
   prefixCls?: string
   className?: string
   style?: CSSProperties
-  id?: string
   defaultChecked?: boolean
   checked?: boolean
   disabled?: boolean
@@ -24,7 +23,6 @@ const RadioWrapper: SFC<RadioWrapperProps> = props => {
     prefixCls,
     className,
     style,
-    id,
     disabled,
     readOnly,
     tabIndex,
@@ -86,7 +84,6 @@ const RadioWrapper: SFC<RadioWrapperProps> = props => {
     <span className={rootClass} style={style}>
       <input
         name={name}
-        id={id}
         type="radio"
         readOnly={readOnly}
         disabled={disabled}

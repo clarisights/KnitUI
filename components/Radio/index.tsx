@@ -1,4 +1,6 @@
 import Radio from "./Radio"
 import RadioGroup from "./RadioGroup"
 
-export { Radio, RadioGroup }
+RadioGroup.Item = Radio
+
+export default RadioGroup
