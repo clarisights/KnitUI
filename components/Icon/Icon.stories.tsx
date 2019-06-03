@@ -5,3 +5,6 @@ import Icon from "./index"
 storiesOf("Icon", module)
   .add("Basic Icon", () => <Icon type="oAddCircle" />)
   .add("Icon with color", () => <Icon type="oAddCircle" fill="red" />)
+  .add("Icon with multiple fills", () => (
+    <Icon type="oFormatColorText" fill="black" fill2="red" />
+  ))

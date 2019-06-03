@@ -4,6 +4,7 @@ type IconType = {
   height?: string
   width?: string
   fill?: string
+  fill2?: string
 }
 
 /**Custom Icons**/
@@ -5639,6 +5640,7 @@ export const oFormatColorFill = ({
   height = "24px",
   width = "24px",
   fill = "#000",
+  fill2 = "#000",
 }: IconType) => (
   <svg
     height={height}
@@ -5647,7 +5649,7 @@ export const oFormatColorFill = ({
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg">
     <path d="M16.5601 8.94L7.62006 0L6.21006 1.41L8.59006 3.79L3.44006 8.94C2.85006 9.53 2.85006 10.48 3.44006 11.06L8.94006 16.56C9.23006 16.85 9.62006 17 10.0001 17C10.3801 17 10.7701 16.85 11.0601 16.56L16.5601 11.06C17.1501 10.48 17.1501 9.53 16.5601 8.94ZM5.21006 10L10.0001 5.21L14.7901 10H5.21006ZM19.0001 11.5C19.0001 11.5 17.0001 13.67 17.0001 15C17.0001 16.1 17.9001 17 19.0001 17C20.1001 17 21.0001 16.1 21.0001 15C21.0001 13.67 19.0001 11.5 19.0001 11.5Z" />
-    <path d="M0 20H24V24H0V20Z" fill="black" fillOpacity="0.36" />
+    <path d="M0 20H24V24H0V20Z" fill={fill2} />
   </svg>
 )
 export const oFormatColorReset = ({
@@ -5668,6 +5670,7 @@ export const oFormatColorText = ({
   height = "24px",
   width = "24px",
   fill = "#000",
+  fill2 = "#000",
 }: IconType) => (
   <svg
     height={height}
@@ -5675,10 +5678,10 @@ export const oFormatColorText = ({
     fill={fill}
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 20H24V24H0V20Z" fillOpacity="0.36" />
+    <path d="M0 20H24V24H0V20Z" fill={fill2} />
     <path
       d="M11 3L5.5 17H7.75L8.87 14H15.12L16.24 17H18.49L13 3H11ZM9.62 12L12 5.67L14.38 12H9.62Z"
-      fill="black"
+      fill={fill}
     />
   </svg>
 )

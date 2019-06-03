@@ -8,6 +8,7 @@ interface IIconProps {
   height?: string
   width?: string
   fill?: string
+  fill2?: string
   customStyles?: string
 }
 
@@ -28,8 +29,9 @@ const Icon: any = (props: IIconProps) => {
     width = "18px",
     fill = "#000",
     customStyles = "",
+    fill2 = "#000",
   } = props
-  const svgStyles = { height, width, fill }
+  const svgStyles = { height, width, fill, fill2 }
   // If type is not provided, then "oCheckBoxOutlineBlank" is used as placeholder icon
   const defaultType = "oCheckBoxOutlineBlank"
   const icon =
