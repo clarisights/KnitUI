@@ -1,7 +1,6 @@
 import React, { useState, ReactNode } from "react"
 import Container from "./components/Container"
 import styled from "styled-components"
-
 import { Header, Footer, Main } from './components'
 import { Modal, LeftPanelModal, RightPanelModal, BottomPanelModal } from "./variants/index"
 import * as theme from "../styles/variables"
@@ -91,6 +90,15 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     }
   }
 
+  const appearDuration = 250
+  const transitionName = `modal`
+  const maskTransitionName = `modalMask`
+  const constMaskDuration = 100
+  const modalTransitionPath = `cubic-bezier(1, 0, 1, 1)`
+
+  // Animations on leave are not working for rc-dialog, Related issues:
+  // https://github.com/react-component/dialog/issues/78
+  // https://github.com/facebook/react/issues/10826
   const StyledContainer = styled(Container)`
     width: ${sizeToWidth[size!]} !important;
     .rc-dialog-close {
@@ -105,6 +113,45 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
         }
       }
     }
+    &.${transitionName}-appear {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    &.${transitionName}-appear.${transitionName}-appear-active {
+      opacity: 1;
+      transform: scale(1.0);
+      transition: opacity ${appearDuration}ms ease-out, transform ${appearDuration}ms ${modalTransitionPath};
+    }
+
+    &.${transitionName}-leave {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &.${transitionName}-leave.${transitionName}-leave-active {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity ${appearDuration}ms ease-out, transform ${appearDuration}ms ${modalTransitionPath};
+    }
+
+    &.${maskTransitionName}-appear {
+      opacity: 0;
+    }
+
+    &.${maskTransitionName}-appear.${maskTransitionName}-appear-active {
+      opacity: 1;
+      transition: opacity ${constMaskDuration}ms ease-out;
+    }
+
+    &.${maskTransitionName}-appear {
+      opacity: 1;
+    }
+
+    &.${maskTransitionName}-appear.${maskTransitionName}-appear-active {
+      opacity: 0;
+      transition: opacity ${constMaskDuration}ms ease-out;
+    }
   `
 
   return (
@@ -115,6 +162,8 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
         onClose={onClose}
         closeIcon={<Icon type="oClear" />}
         destroyOnClose={destroyOnClose}
+        transitionName={transitionName}
+        maskTransitionName={maskTransitionName}
       >
         <ModalProxy
           header={<Header {...header} />}
