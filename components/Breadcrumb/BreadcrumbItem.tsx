@@ -30,6 +30,8 @@ const sharedStyles = css`
   line-height: ${size14.lineHeight}rem;
   border-radius: ${inputBorderRadius};
   padding: 0 3px 0 3px;
+  display: flex;
+  align-items: center;
   &:hover {
     background-color: ${(props: any) => (props.separator ? "" : Neutral10.hex)};
   }
