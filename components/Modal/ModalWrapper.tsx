@@ -1,5 +1,4 @@
 import React, { useState, ReactNode } from "react"
-import Container from "./components/Container"
 import styled from "styled-components"
 import { Header, Footer, Main } from "./components"
 import {
@@ -9,8 +8,10 @@ import {
   BottomPanelModal,
 } from "./variants/index"
 import * as theme from "../styles/variables"
-import { StyleContext } from "./common/contexts"
 import Icon from "../Icon"
+import Dialog from "rc-dialog"
+import "rc-dialog/assets/index.css"
+import { borderRadius } from "./common/styles"
 
 const sizeToWidth = {
   small: "49rem",
@@ -54,7 +55,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     vertical: "2.1rem",
     horizontal: "2.8rem",
   },
-  getContainer = () => document.getElementsByTagName("body")[0],
+  getContainer,
   visible = false,
   onClose,
   panel,
@@ -98,10 +99,19 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   const constMaskDuration = 100
   const modalTransitionPath = `cubic-bezier(1, 0, 1, 1)`
 
-  // Animations on leave are not working for rc-dialog, Related issues:
-  // https://github.com/react-component/dialog/issues/78
-  // https://github.com/facebook/react/issues/10826
-  const StyledContainer = styled(Container)`
+  // Animations on leave are not working for rc-dialog, this happens only when
+  // styiling the Dialog using styled components. It is probably the case that
+  // the Dialog component is being re-created on close, causing the previous
+  // stored ref to be lost
+  const StyledDialog = styled(Dialog)`
+    .rc-dialog-body {
+      padding: 0;
+      height: calc(100vh - 14rem);
+      min-height: 35rem;
+    }
+    .rc-dialog-content {
+      border-radius: ${borderRadius};
+    }
     width: ${sizeToWidth[size!]} !important;
     .rc-dialog-close {
       right: -1rem;
@@ -158,22 +168,20 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   `
 
   return (
-    <StyleContext.Provider value={{ padding }}>
-      <StyledContainer
-        getContainer={getContainer}
-        visible={visible}
-        onClose={onClose}
-        closeIcon={<Icon type="oClear" />}
-        destroyOnClose={destroyOnClose}
-        transitionName={transitionName}
-        maskTransitionName={maskTransitionName}>
-        <ModalProxy
-          header={<Header {...header} />}
-          body={<Main setBodyRef={setBodyRef}>{body}</Main>}
-          footer={<Footer showBorder={showFooterBorder}>{footer}</Footer>}
-        />
-      </StyledContainer>
-    </StyleContext.Provider>
+    <StyledDialog
+      getContainer={getContainer}
+      visible={visible}
+      onClose={onClose}
+      closeIcon={<Icon type="oClear" />}
+      destroyOnClose={destroyOnClose}
+      transitionName={transitionName}
+      maskTransitionName={maskTransitionName}>
+      <ModalProxy
+        header={<Header {...header} />}
+        body={<Main setBodyRef={setBodyRef}>{body}</Main>}
+        footer={<Footer showBorder={showFooterBorder}>{footer}</Footer>}
+      />
+    </StyledDialog>
   )
 }
 

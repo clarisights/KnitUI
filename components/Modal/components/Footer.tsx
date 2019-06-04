@@ -1,7 +1,6 @@
-import React, { ReactNode, useContext } from "react"
+import React, { ReactNode } from "react"
 import styled from "styled-components"
-import { border } from "../common/styles"
-import { StyleContext } from "../common/contexts"
+import { border, padding } from "../common/styles"
 
 const Footer = ({
   children,
@@ -10,12 +9,8 @@ const Footer = ({
   children: ReactNode
   showBorder: boolean
 }) => {
-  const {
-    padding: { horizontal, vertical },
-  } = useContext(StyleContext)
-
   const StyledDiv = styled.div`
-    padding: ${`${vertical} ${horizontal}`};
+    padding: ${`${padding.vertical} ${padding.horizontal}`};
     justify-self: flex-end;
     border-top: ${showBorder ? border : `none`};
   `

@@ -1,7 +1,6 @@
-import React, { ReactNode, useContext } from "react"
+import React, { ReactNode } from "react"
 import styled from "styled-components"
-import { StyleContext } from "../common/contexts"
-import { borderRadius } from "../common/styles"
+import { borderRadius, padding } from "../common/styles"
 
 interface HeaderProps {
   title: string
@@ -15,12 +14,9 @@ const Header: React.FC<HeaderProps> = ({
   title: string
   rightSection: ReactNode
 }) => {
-  const {
-    padding: { horizontal, vertical },
-  } = useContext(StyleContext)
   const Container = styled.div`
     display: flex;
-    padding: ${`${vertical} ${horizontal}`};
+    padding: ${`${padding.vertical} ${padding.horizontal}`};
     border-radius: ${`${borderRadius} ${borderRadius} 0rem 0rem`};
     background: ${props => props.theme.shades.gray95};
   `

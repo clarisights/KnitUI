@@ -1,6 +1,6 @@
-import React, { useContext, ReactNode } from "react"
+import React, { ReactNode } from "react"
 import styled from "styled-components"
-import { StyleContext } from "../common/contexts"
+import { padding } from "../common/styles"
 
 export default ({
   children,
@@ -9,11 +9,8 @@ export default ({
   children: ReactNode
   setBodyRef: (instance: HTMLDivElement | null) => void
 }) => {
-  const {
-    padding: { horizontal, vertical },
-  } = useContext(StyleContext)
   const Main = styled.div`
-    padding: ${`${vertical} ${horizontal} 0rem`};
+    padding: ${`${padding.vertical} ${padding.horizontal} 0rem`};
     overflow-y: auto;
     flex: 1 1 auto;
   `
