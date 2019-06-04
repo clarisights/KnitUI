@@ -1,4 +1,4 @@
-import { CSSProperties, ReactNode } from 'react';
+import { CSSProperties, ReactNode } from "react"
 
 export interface RadioWrapperProps {
   prefixCls?: string
@@ -68,5 +68,3 @@ export interface RadioProps {
   /** value of the checkbox */
   value?: any
 }
-
-
