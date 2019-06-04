@@ -7,6 +7,14 @@ exports[`Breadcrumb basic renders basic breadcrumb correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -27,6 +35,14 @@ exports[`Breadcrumb basic renders basic breadcrumb correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -43,6 +59,14 @@ exports[`Breadcrumb basic renders basic breadcrumb correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -114,6 +138,14 @@ exports[`Breadcrumb basic renders with a custom separator correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -134,6 +166,14 @@ exports[`Breadcrumb basic renders with a custom separator correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -150,6 +190,14 @@ exports[`Breadcrumb basic renders with a custom separator correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -221,6 +269,14 @@ exports[`Breadcrumb basic renders with a link clearly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -241,6 +297,14 @@ exports[`Breadcrumb basic renders with a link clearly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -257,6 +321,14 @@ exports[`Breadcrumb basic renders with a link clearly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -332,6 +404,14 @@ exports[`Breadcrumb basic renders with custom child styles correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -352,6 +432,14 @@ exports[`Breadcrumb basic renders with custom child styles correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -368,6 +456,14 @@ exports[`Breadcrumb basic renders with custom child styles correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -444,6 +540,14 @@ exports[`Breadcrumb basic renders with custom parent style correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -464,6 +568,14 @@ exports[`Breadcrumb basic renders with custom parent style correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -480,6 +592,14 @@ exports[`Breadcrumb basic renders with custom parent style correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -552,6 +672,14 @@ exports[`Breadcrumb renders a single correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -628,6 +756,14 @@ exports[`Breadcrumb renders with a specified max width correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -648,6 +784,14 @@ exports[`Breadcrumb renders with a specified max width correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -664,6 +808,14 @@ exports[`Breadcrumb renders with a specified max width correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -886,6 +1038,14 @@ exports[`Breadcrumb renders with a truncated state correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -906,6 +1066,14 @@ exports[`Breadcrumb renders with a truncated state correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -922,6 +1090,14 @@ exports[`Breadcrumb renders with a truncated state correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -1003,6 +1179,14 @@ exports[`Breadcrumb renders with custom active item styles correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -1023,6 +1207,14 @@ exports[`Breadcrumb renders with custom active item styles correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -1039,6 +1231,14 @@ exports[`Breadcrumb renders with custom active item styles correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -1115,6 +1315,14 @@ exports[`Breadcrumb renders with icon correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #808080;
 }
@@ -1135,6 +1343,14 @@ exports[`Breadcrumb renders with icon correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: default;
   color: #808080;
 }
@@ -1151,6 +1367,14 @@ exports[`Breadcrumb renders with icon correctly 1`] = `
   line-height: 2rem;
   border-radius: 4px;
   padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   color: #1A1A1A;
 }
@@ -1185,6 +1409,9 @@ exports[`Breadcrumb renders with icon correctly 1`] = `
 
 .c3 {
   cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 <div

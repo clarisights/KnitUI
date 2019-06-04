@@ -1,6 +1,6 @@
 import React from "react"
 import Breadcrumb from "../index"
-import { Icon } from "../../Icon"
+import Icon from "../../Icon"
 import { render, cleanup, fireEvent } from "react-testing-library"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
