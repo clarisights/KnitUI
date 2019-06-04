@@ -1,19 +1,23 @@
-import React, { ReactNode, useContext } from 'react'
-import styled from 'styled-components'
+import React, { ReactNode, useContext } from "react"
+import styled from "styled-components"
 import { StyleContext } from "../common/contexts"
 import { borderRadius } from "../common/styles"
 
 interface HeaderProps {
-  title: string,
+  title: string
   rightSection?: ReactNode
 }
 
-const Header: React.FC<HeaderProps> = (
-  { title, rightSection }
-    :
-  { title: string, rightSection: ReactNode}
-) => {
-  const { padding: {horizontal, vertical} } = useContext(StyleContext)
+const Header: React.FC<HeaderProps> = ({
+  title,
+  rightSection,
+}: {
+  title: string
+  rightSection: ReactNode
+}) => {
+  const {
+    padding: { horizontal, vertical },
+  } = useContext(StyleContext)
   const Container = styled.div`
     display: flex;
     padding: ${`${vertical} ${horizontal}`};

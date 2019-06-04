@@ -9,11 +9,7 @@ export const BaseLayout = styled.div`
   height: 100%;
 `
 
-const BaseModal: React.FC<ModalProps> = ({
-   header,
-   body,
-   footer,
-  }) => {
+const BaseModal: React.FC<ModalProps> = ({ header, body, footer }) => {
   return (
     <BaseLayout>
       {header}

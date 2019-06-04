@@ -1,21 +1,21 @@
 import React from "react"
 import Modal from "../index"
-import { render, cleanup, fireEvent } from 'react-testing-library'
-import 'jest-styled-components'
-import 'jest-dom/extend-expect'
+import { render, cleanup, fireEvent } from "react-testing-library"
+import "jest-styled-components"
+import "jest-dom/extend-expect"
 import { ThemeProvider } from "../../styles"
 
 afterEach(cleanup)
 
 describe("Modal", () => {
   const sizes = ["small", "medium", "large", "x-large"]
-  sizes.forEach((size) => {
+  sizes.forEach(size => {
     describe(`with size ${size}`, () => {
       it("with simple config", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{title: "Title"}}
+              header={{ title: "Title" }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -24,7 +24,9 @@ describe("Modal", () => {
             />
           </ThemeProvider>
         )
-        const dialogContainer = container.parentElement!.querySelector(".rc-dialog-wrap")
+        const dialogContainer = container.parentElement!.querySelector(
+          ".rc-dialog-wrap"
+        )
         expect(dialogContainer).toMatchSnapshot()
       })
 
@@ -34,10 +36,11 @@ describe("Modal", () => {
             <Modal
               header={{
                 title: "Title",
-                rightSection:
+                rightSection: (
                   <div>
                     <div>The right section</div>
                   </div>
+                ),
               }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
@@ -47,7 +50,9 @@ describe("Modal", () => {
             />
           </ThemeProvider>
         )
-        const dialogContainer = container.parentElement!.querySelector(".rc-dialog-wrap")
+        const dialogContainer = container.parentElement!.querySelector(
+          ".rc-dialog-wrap"
+        )
         expect(dialogContainer).toMatchSnapshot()
       })
 
@@ -55,17 +60,19 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{title: "Title"}}
+              header={{ title: "Title" }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
               visible
               onClose={() => {}}
-              panel={{ position: "right", content: <div>Panel content</div>}}
+              panel={{ position: "right", content: <div>Panel content</div> }}
             />
           </ThemeProvider>
         )
-        const dialogContainer = container.parentElement!.querySelector(".rc-dialog-wrap")
+        const dialogContainer = container.parentElement!.querySelector(
+          ".rc-dialog-wrap"
+        )
         expect(dialogContainer).toMatchSnapshot()
       })
 
@@ -73,17 +80,19 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{title: "Title"}}
+              header={{ title: "Title" }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
               visible
               onClose={() => {}}
-              panel={{ position: "left", content: <div>Panel content</div>}}
+              panel={{ position: "left", content: <div>Panel content</div> }}
             />
           </ThemeProvider>
         )
-        const dialogContainer = container.parentElement!.querySelector(".rc-dialog-wrap")
+        const dialogContainer = container.parentElement!.querySelector(
+          ".rc-dialog-wrap"
+        )
         expect(dialogContainer).toMatchSnapshot()
       })
 
@@ -91,17 +100,19 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{title: "Title"}}
+              header={{ title: "Title" }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
               visible
               onClose={() => {}}
-              panel={{ position: "bottom", content: <div>Panel content</div>}}
+              panel={{ position: "bottom", content: <div>Panel content</div> }}
             />
           </ThemeProvider>
         )
-        const dialogContainer = container.parentElement!.querySelector(".rc-dialog-wrap")
+        const dialogContainer = container.parentElement!.querySelector(
+          ".rc-dialog-wrap"
+        )
         expect(dialogContainer).toMatchSnapshot()
       })
     })
@@ -112,7 +123,7 @@ describe("Modal", () => {
     const { container } = render(
       <ThemeProvider>
         <Modal
-          header={{title: "Title"}}
+          header={{ title: "Title" }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
           size="medium"
@@ -122,7 +133,9 @@ describe("Modal", () => {
       </ThemeProvider>
     )
 
-    const dialogContainer = container.parentElement!.querySelector(".rc-dialog-wrap")
+    const dialogContainer = container.parentElement!.querySelector(
+      ".rc-dialog-wrap"
+    )
     const closeButton = dialogContainer!.querySelector(".rc-dialog-close")
     fireEvent.click(closeButton!)
     expect(onCloseStub).toBeCalled()

@@ -1,6 +1,6 @@
-import Dialog from 'rc-dialog'
-import styled from 'styled-components'
-import 'rc-dialog/assets/index.css'
+import Dialog from "rc-dialog"
+import styled from "styled-components"
+import "rc-dialog/assets/index.css"
 import { borderRadius } from "../common/styles"
 
 const Container = styled(Dialog)`

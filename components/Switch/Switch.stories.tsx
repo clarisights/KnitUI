@@ -1,6 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { Switch } from "./index"
+import Switch from "./index"
 
 storiesOf("Switch", module)
   .add("Basic switch", () => <Switch />)

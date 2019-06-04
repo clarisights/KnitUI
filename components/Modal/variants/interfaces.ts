@@ -1,9 +1,9 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react"
 
 export interface ModalProps {
-  header: ReactNode,
-  body: ReactNode,
-  footer: ReactNode,
+  header: ReactNode
+  body: ReactNode
+  footer: ReactNode
 }
 
 export interface PanelModalProps extends ModalProps {

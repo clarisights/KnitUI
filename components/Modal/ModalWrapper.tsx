@@ -1,38 +1,43 @@
 import React, { useState, ReactNode } from "react"
 import Container from "./components/Container"
 import styled from "styled-components"
-import { Header, Footer, Main } from './components'
-import { Modal, LeftPanelModal, RightPanelModal, BottomPanelModal } from "./variants/index"
+import { Header, Footer, Main } from "./components"
+import {
+  Modal,
+  LeftPanelModal,
+  RightPanelModal,
+  BottomPanelModal,
+} from "./variants/index"
 import * as theme from "../styles/variables"
 import { StyleContext } from "./common/contexts"
-import { Icon } from "../Icon"
+import Icon from "../Icon"
 
 const sizeToWidth = {
-  "small": "49rem",
-  "medium": "63rem",
-  "large": "91rem",
-  "x-large": "105rem"
+  small: "49rem",
+  medium: "63rem",
+  large: "91rem",
+  "x-large": "105rem",
 }
 
 export interface ModalWrapperProps {
   /** Contents to be rendered in the header section */
-  header: { title: string, rightSection?: ReactNode },
+  header: { title: string; rightSection?: ReactNode }
   /** Contents to be rendered on in the body section */
-  body: ReactNode,
+  body: ReactNode
   /** Contents to be rendered on in the footer section */
-  footer: ReactNode,
+  footer: ReactNode
   /** The padding values to be applied */
-  padding?: { vertical: string, horizontal: string },
+  padding?: { vertical: string; horizontal: string }
   /** Size values representing the amount of physical space occupied */
-  size?: "small" | "medium" | "large" | "x-large",
+  size?: "small" | "medium" | "large" | "x-large"
   /** The DOM node under which the modal should reside */
-  getContainer?: () => HTMLElement,
+  getContainer?: () => HTMLElement
   /** Controls the visibility of the modal */
-  visible?: boolean,
+  visible?: boolean
   /** Function to be executed when the modal is dismissed */
-  onClose: () => void,
+  onClose: () => void
   /** Addon panel that is attached to the modal */
-  panel?: { position: "left" | "right" | "bottom", content: ReactNode },
+  panel?: { position: "left" | "right" | "bottom"; content: ReactNode }
   /** to unmount child compenents on onClose */
   destroyOnClose?: boolean
 }
@@ -47,27 +52,24 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   footer,
   padding = {
     vertical: "2.1rem",
-    horizontal: "2.8rem"
+    horizontal: "2.8rem",
   },
-  getContainer = () => document.getElementsByTagName('body')[0],
+  getContainer = () => document.getElementsByTagName("body")[0],
   visible = false,
   onClose,
   panel,
-  destroyOnClose = false
+  destroyOnClose = false,
 }) => {
-
   /**
    * Renders the appopriate variant based on the availability of a
    * panel prop and its position.
    * @param modalProps
    */
-  const ModalProxy = (
-    modalProps: {
-        header: ReactNode,
-        footer: ReactNode,
-        body: ReactNode
-      }
-  ) => {
+  const ModalProxy = (modalProps: {
+    header: ReactNode
+    footer: ReactNode
+    body: ReactNode
+  }) => {
     if (!panel) {
       return <Modal {...modalProps} />
     }
@@ -155,7 +157,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   `
 
   return (
-    <StyleContext.Provider value={{padding}}>
+    <StyleContext.Provider value={{ padding }}>
       <StyledContainer
         getContainer={getContainer}
         visible={visible}
@@ -163,8 +165,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
         closeIcon={<Icon type="oClear" />}
         destroyOnClose={destroyOnClose}
         transitionName={transitionName}
-        maskTransitionName={maskTransitionName}
-      >
+        maskTransitionName={maskTransitionName}>
         <ModalProxy
           header={<Header {...header} />}
           body={<Main setBodyRef={setBodyRef}>{body}</Main>}

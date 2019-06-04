@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { BaseLayout } from './Base'
+import { BaseLayout } from "./Base"
 import { border } from "../common/styles"
 import { PanelModalProps } from "./interfaces"
 
@@ -15,7 +15,7 @@ const BottomPanelModal: React.FC<PanelModalProps> = ({
   header,
   footer,
   body,
-  panelContent
+  panelContent,
 }) => {
   return (
     <BaseLayout>
