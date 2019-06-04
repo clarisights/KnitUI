@@ -1,26 +1,7 @@
-import React, { SFC, CSSProperties } from "react"
+import React, { SFC } from "react"
+import { RadioWrapperProps } from "./Interface"
 
-interface RadioWrapperProps {
-  prefixCls?: string
-  className?: string
-  style?: CSSProperties
-  defaultChecked?: boolean
-  checked?: boolean
-  disabled?: boolean
-  onFocus?: (e) => void | any
-  onBlur?: (e) => void | any
-  onChange?: (e) => void | any
-  onClick?: (e) => void | any
-  tabIndex?: number
-  readOnly?: boolean
-  autoFocus?: boolean
-  value?: any
-  groupValue?: string | number
-  setValue?: (e) => void | any
-  size?: string
-}
-
-const RadioWrapper: SFC<RadioWrapperProps> = props => {
+const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
   const {
     prefixCls,
     className,
@@ -103,7 +84,7 @@ const RadioWrapper: SFC<RadioWrapperProps> = props => {
   )
 }
 
-RadioWrapper.defaultProps = {
+const defaultProps = {
   prefixCls: "knit-radio",
   className: "",
   style: {},

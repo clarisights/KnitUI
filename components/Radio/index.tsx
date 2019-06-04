@@ -3,4 +3,4 @@ import RadioGroup from "./RadioGroup"
 
 RadioGroup.Item = Radio
 
-export default RadioGroup
+export { RadioGroup as default }
