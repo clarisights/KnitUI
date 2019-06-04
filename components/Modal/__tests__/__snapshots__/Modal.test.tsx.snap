@@ -20,10 +20,9 @@ exports[`Modal with size large with a bottom panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -45,6 +44,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -179,7 +179,9 @@ exports[`Modal with size large with a bottom panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -292,10 +294,9 @@ exports[`Modal with size large with a left panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -317,6 +318,7 @@ exports[`Modal with size large with a left panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -451,7 +453,9 @@ exports[`Modal with size large with a left panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -575,10 +579,9 @@ exports[`Modal with size large with a right panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -600,6 +603,7 @@ exports[`Modal with size large with a right panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -734,7 +738,9 @@ exports[`Modal with size large with a right panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -822,10 +828,9 @@ exports[`Modal with size large with right section in header 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -847,6 +852,7 @@ exports[`Modal with size large with right section in header 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -981,7 +987,9 @@ exports[`Modal with size large with right section in header 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -1060,10 +1068,9 @@ exports[`Modal with size large with simple config 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1085,6 +1092,7 @@ exports[`Modal with size large with simple config 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -1219,7 +1227,9 @@ exports[`Modal with size large with simple config 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -1298,10 +1308,9 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1323,6 +1332,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -1457,7 +1467,9 @@ exports[`Modal with size medium with a bottom panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -1570,10 +1582,9 @@ exports[`Modal with size medium with a left panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1595,6 +1606,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -1729,7 +1741,9 @@ exports[`Modal with size medium with a left panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -1853,10 +1867,9 @@ exports[`Modal with size medium with a right panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -1878,6 +1891,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -2012,7 +2026,9 @@ exports[`Modal with size medium with a right panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -2100,10 +2116,9 @@ exports[`Modal with size medium with right section in header 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -2125,6 +2140,7 @@ exports[`Modal with size medium with right section in header 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -2259,7 +2275,9 @@ exports[`Modal with size medium with right section in header 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -2338,10 +2356,9 @@ exports[`Modal with size medium with simple config 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -2363,6 +2380,7 @@ exports[`Modal with size medium with simple config 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -2497,7 +2515,9 @@ exports[`Modal with size medium with simple config 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -2576,10 +2596,9 @@ exports[`Modal with size small with a bottom panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -2601,6 +2620,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -2735,7 +2755,9 @@ exports[`Modal with size small with a bottom panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -2848,10 +2870,9 @@ exports[`Modal with size small with a left panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -2873,6 +2894,7 @@ exports[`Modal with size small with a left panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -3007,7 +3029,9 @@ exports[`Modal with size small with a left panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -3131,10 +3155,9 @@ exports[`Modal with size small with a right panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -3156,6 +3179,7 @@ exports[`Modal with size small with a right panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -3290,7 +3314,9 @@ exports[`Modal with size small with a right panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -3378,10 +3404,9 @@ exports[`Modal with size small with right section in header 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -3403,6 +3428,7 @@ exports[`Modal with size small with right section in header 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -3537,7 +3563,9 @@ exports[`Modal with size small with right section in header 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -3616,10 +3644,9 @@ exports[`Modal with size small with simple config 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -3641,6 +3668,7 @@ exports[`Modal with size small with simple config 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -3775,7 +3803,9 @@ exports[`Modal with size small with simple config 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -3854,10 +3884,9 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -3879,6 +3908,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -4013,7 +4043,9 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -4126,10 +4158,9 @@ exports[`Modal with size x-large with a left panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -4151,6 +4182,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -4285,7 +4317,9 @@ exports[`Modal with size x-large with a left panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -4409,10 +4443,9 @@ exports[`Modal with size x-large with a right panel 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -4434,6 +4467,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -4568,7 +4602,9 @@ exports[`Modal with size x-large with a right panel 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -4656,10 +4692,9 @@ exports[`Modal with size x-large with right section in header 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -4681,6 +4716,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -4815,7 +4851,9 @@ exports[`Modal with size x-large with right section in header 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"
@@ -4894,10 +4932,9 @@ exports[`Modal with size x-large with simple config 1`] = `
 
 .c1 {
   cursor: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .c0 {
@@ -4919,6 +4956,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   top: -1rem;
   opacity: unset;
   padding: 0.15rem;
+  line-height: 0;
   background-color: #808080;
   border-radius: 999px;
 }
@@ -5053,7 +5091,9 @@ exports[`Modal with size x-large with simple config 1`] = `
       >
         <span
           class="c1"
+          height="18px"
           type="oClear"
+          width="18px"
         >
           <svg
             fill="#000"

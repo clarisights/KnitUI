@@ -108,6 +108,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       top: -1rem;
       opacity: unset;
       padding: 0.15rem;
+      line-height: 0;
       background-color: ${theme.shades.gray50};
       border-radius: 999px;
       svg {
