@@ -93,11 +93,14 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     }
   }
 
+  // Animation related
   const appearDuration = 250
   const transitionName = `modal`
   const maskTransitionName = `modalMask`
-  const constMaskDuration = 100
-  const modalTransitionPath = `cubic-bezier(1, 0, 1, 1)`
+  const maskDuration = 100
+  const modalEnterTransitionPath = `cubic-bezier(0, 0, 0, 1)`
+  const modalLeaveTransitionPath = `cubic-bezier(1, 0, 1, 1)`
+  const animationDelay = `50ms`
 
   // Animations on leave are not working for rc-dialog, this happens only when
   // styiling the Dialog using styled components. It is probably the case that
@@ -134,7 +137,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     &.${transitionName}-appear.${transitionName}-appear-active {
       opacity: 1;
       transform: scale(1.0);
-      transition: opacity ${appearDuration}ms ease-out, transform ${appearDuration}ms ${modalTransitionPath};
+      transition: opacity ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay}, transform ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay};
     }
 
     &.${transitionName}-leave {
@@ -145,7 +148,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     &.${transitionName}-leave.${transitionName}-leave-active {
       opacity: 0;
       transform: scale(0.9);
-      transition: opacity ${appearDuration}ms ease-out, transform ${appearDuration}ms ${modalTransitionPath};
+      transition: opacity ${appearDuration}ms ${modalLeaveTransitionPath}, transform ${appearDuration}ms ${modalLeaveTransitionPath};
     }
 
     &.${maskTransitionName}-appear {
@@ -154,16 +157,16 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
 
     &.${maskTransitionName}-appear.${maskTransitionName}-appear-active {
       opacity: 1;
-      transition: opacity ${constMaskDuration}ms ease-out;
+      transition: opacity ${maskDuration}ms ease-out;
     }
 
-    &.${maskTransitionName}-appear {
+    &.${maskTransitionName}-leave {
       opacity: 1;
     }
 
-    &.${maskTransitionName}-appear.${maskTransitionName}-appear-active {
+    &.${maskTransitionName}-leave.${maskTransitionName}-leave-active {
       opacity: 0;
-      transition: opacity ${constMaskDuration}ms ease-out;
+      transition: opacity ${maskDuration}ms ease-out;
     }
   `
 

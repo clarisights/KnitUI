@@ -65,9 +65,9 @@ exports[`Modal with size large with a bottom panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -82,9 +82,9 @@ exports[`Modal with size large with a bottom panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -97,11 +97,11 @@ exports[`Modal with size large with a bottom panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -339,9 +339,9 @@ exports[`Modal with size large with a left panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -356,9 +356,9 @@ exports[`Modal with size large with a left panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -371,11 +371,11 @@ exports[`Modal with size large with a left panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -624,9 +624,9 @@ exports[`Modal with size large with a right panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -641,9 +641,9 @@ exports[`Modal with size large with a right panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -656,11 +656,11 @@ exports[`Modal with size large with a right panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -873,9 +873,9 @@ exports[`Modal with size large with right section in header 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -890,9 +890,9 @@ exports[`Modal with size large with right section in header 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -905,11 +905,11 @@ exports[`Modal with size large with right section in header 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -1113,9 +1113,9 @@ exports[`Modal with size large with simple config 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -1130,9 +1130,9 @@ exports[`Modal with size large with simple config 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -1145,11 +1145,11 @@ exports[`Modal with size large with simple config 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -1353,9 +1353,9 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -1370,9 +1370,9 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -1385,11 +1385,11 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -1627,9 +1627,9 @@ exports[`Modal with size medium with a left panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -1644,9 +1644,9 @@ exports[`Modal with size medium with a left panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -1659,11 +1659,11 @@ exports[`Modal with size medium with a left panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -1912,9 +1912,9 @@ exports[`Modal with size medium with a right panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -1929,9 +1929,9 @@ exports[`Modal with size medium with a right panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -1944,11 +1944,11 @@ exports[`Modal with size medium with a right panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -2161,9 +2161,9 @@ exports[`Modal with size medium with right section in header 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -2178,9 +2178,9 @@ exports[`Modal with size medium with right section in header 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -2193,11 +2193,11 @@ exports[`Modal with size medium with right section in header 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -2401,9 +2401,9 @@ exports[`Modal with size medium with simple config 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -2418,9 +2418,9 @@ exports[`Modal with size medium with simple config 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -2433,11 +2433,11 @@ exports[`Modal with size medium with simple config 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -2641,9 +2641,9 @@ exports[`Modal with size small with a bottom panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -2658,9 +2658,9 @@ exports[`Modal with size small with a bottom panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -2673,11 +2673,11 @@ exports[`Modal with size small with a bottom panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -2915,9 +2915,9 @@ exports[`Modal with size small with a left panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -2932,9 +2932,9 @@ exports[`Modal with size small with a left panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -2947,11 +2947,11 @@ exports[`Modal with size small with a left panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -3200,9 +3200,9 @@ exports[`Modal with size small with a right panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -3217,9 +3217,9 @@ exports[`Modal with size small with a right panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -3232,11 +3232,11 @@ exports[`Modal with size small with a right panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -3449,9 +3449,9 @@ exports[`Modal with size small with right section in header 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -3466,9 +3466,9 @@ exports[`Modal with size small with right section in header 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -3481,11 +3481,11 @@ exports[`Modal with size small with right section in header 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -3689,9 +3689,9 @@ exports[`Modal with size small with simple config 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -3706,9 +3706,9 @@ exports[`Modal with size small with simple config 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -3721,11 +3721,11 @@ exports[`Modal with size small with simple config 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -3929,9 +3929,9 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -3946,9 +3946,9 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -3961,11 +3961,11 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -4203,9 +4203,9 @@ exports[`Modal with size x-large with a left panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -4220,9 +4220,9 @@ exports[`Modal with size x-large with a left panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -4235,11 +4235,11 @@ exports[`Modal with size x-large with a left panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -4488,9 +4488,9 @@ exports[`Modal with size x-large with a right panel 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -4505,9 +4505,9 @@ exports[`Modal with size x-large with a right panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -4520,11 +4520,11 @@ exports[`Modal with size x-large with a right panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -4737,9 +4737,9 @@ exports[`Modal with size x-large with right section in header 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -4754,9 +4754,9 @@ exports[`Modal with size x-large with right section in header 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -4769,11 +4769,11 @@ exports[`Modal with size x-large with right section in header 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -4977,9 +4977,9 @@ exports[`Modal with size x-large with simple config 1`] = `
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -4994,9 +4994,9 @@ exports[`Modal with size x-large with simple config 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms ease-out,-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms ease-out,transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear {
@@ -5009,11 +5009,11 @@ exports[`Modal with size x-large with simple config 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-leave {
   opacity: 1;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-leave.modalMask-leave-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
