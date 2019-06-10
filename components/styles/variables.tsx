@@ -81,6 +81,9 @@ export const shades = {
   // Shades of gray
   white: chroma.hsl(0, 0, 1),
   gray95: chroma.hsl(0, 0, 0.95),
+  gray90: chroma.hsl(0, 0, 0.9),
+  gray85: chroma.hsl(0, 0, 0.85),
+  gray50: chroma.hsl(0, 0, 0.5),
   gray20: chroma.hsl(0, 0, 0.2),
   black: chroma.hsl(0, 0, 0),
   transparent: chroma.hsl(0, 0, 0, 0),

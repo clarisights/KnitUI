@@ -21,7 +21,6 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true, // enable --allowSyntheticDefaultImports for typesystem compatibility.
     "skipLibCheck": true,
-    "typeRoots": ["./typings"]
   },
   "include": ["components/**/*"],
   "exclude": ["node_modules", "build", "scripts", "lib", "es"]
