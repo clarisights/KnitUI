@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "../index"
+import Button from "../"
 import { render, cleanup, fireEvent } from "react-testing-library"
 import { ThemeProvider } from "../../styles"
 import "jest-styled-components"

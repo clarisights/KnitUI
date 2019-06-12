@@ -51,7 +51,18 @@ stories
       focus={boolean("Focus", false)}
     />
   ))
-  .add("With left addon", () => (
+  .add("With an outline", () => (
+    <Label
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", true)}
+      outlined={boolean("Outlined", true)}
+      focus={boolean("Focus", false)}
+    />
+  ))
+  .add("With left icon", () => (
     <Label
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
@@ -60,10 +71,10 @@ stories
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
-      icons={{ left: "oInfo" }}
+      icons={{ left: "oDragIndicator" }}
     />
   ))
-  .add("With right addon", () => (
+  .add("With right icon", () => (
     <Label
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
@@ -72,10 +83,10 @@ stories
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
-      icons={{ right: "oInfo" }}
+      icons={{ right: "oClose" }}
     />
   ))
-  .add("With a left and a right addon", () => (
+  .add("With a left and a right icons", () => (
     <Label
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
@@ -84,7 +95,7 @@ stories
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
-      icons={{ left: "oInfo", right: "oInfo" }}
+      icons={{ left: "oDragIndicator", right: "oClose" }}
     />
   ))
   .add("Inline", () => (
