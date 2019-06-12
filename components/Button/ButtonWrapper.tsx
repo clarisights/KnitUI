@@ -1,4 +1,5 @@
 import React, { useContext, SyntheticEvent } from "react"
+import BaseComponent from "../BaseComponent"
 import Icon from "../Icon"
 import { ButtonBase, ButtonInset } from "./styledComponents"
 import { ThemeContext } from "styled-components"
@@ -115,4 +116,4 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   )
 }
 
-export default ButtonWrapper
+export default BaseComponent(ButtonWrapper)

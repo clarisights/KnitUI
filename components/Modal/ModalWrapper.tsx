@@ -1,5 +1,6 @@
 import React, { useState, useContext, ReactNode } from "react"
-import styled from "styled-components"
+import BaseComponent from "../BaseComponent"
+import styled, { ThemeContext } from "styled-components"
 import Dialog from "rc-dialog"
 
 import { Header, Footer, Main } from "./components"
@@ -208,4 +209,4 @@ ModalWrapper.defaultProps = {
   destroyOnClose: false,
 }
 
-export default ModalWrapper
+export default BaseComponent(ModalWrapper)

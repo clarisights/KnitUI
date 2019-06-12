@@ -34,7 +34,7 @@ stories
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
@@ -45,7 +45,7 @@ stories
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       rounded={boolean("Rounded", true)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
@@ -56,7 +56,7 @@ stories
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
@@ -68,7 +68,7 @@ stories
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
@@ -88,13 +88,9 @@ stories
     />
   ))
   .add("Inline", () => (
-    <Label
-      text={text("text", "Label")}
+    <Label.Inline
+      text={text("text", "inline label")}
       expanded={boolean("Expanded", false)}
-      size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
-      rounded={boolean("Rounded", false)}
-      outlined={boolean("Outlined", false)}
-      focus={boolean("Focus", false)}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
     />
   ))

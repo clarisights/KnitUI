@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
+import BaseComponent from "../BaseComponent"
 
 import { fontSizeType, ColorPreset, CustomColor } from "../_utils/types"
 import { parseColorPreset, parseCustomColor } from "../_utils"
@@ -34,7 +35,9 @@ const InlineLabel: InlineLabelType = ({
 }) => {
   const themeContext = useContext(ThemeContext)
   const { typography } = themeContext
-  const lineHeight = typography[fontSize].lineHeight
+  const selectedtTypography = typography[fontSize]
+  fontSize = selectedtTypography.fontSize
+  const lineHeight = selectedtTypography.lineHeight
   const parsedColorTheme = customColor
     ? parseCustomColor(customColor)
     : parseColorPreset(colorPreset)
@@ -45,7 +48,7 @@ const InlineLabel: InlineLabelType = ({
   const horizontalPadding = expanded ? "0.3rem" : "0rem"
 
   const StyledDiv = styled.div`
-    lineheightdisplay: inline-flex;
+    display: inline-flex;
     align-items: center;
     padding: ${`${verticalPadding} ${horizontalPadding}`};
     background-color: ${backgroundColor};
@@ -65,4 +68,4 @@ const InlineLabel: InlineLabelType = ({
   )
 }
 
-export default InlineLabel
+export default BaseComponent(InlineLabel)

@@ -4,6 +4,7 @@ import { ThemeContext } from "styled-components"
 import { ColorPreset, CustomColor } from "../_utils/types"
 import { parseCustomColor, parseColorPreset } from "../_utils"
 import Icon from "../Icon"
+import BaseComponent from "../BaseComponent"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
@@ -144,4 +145,4 @@ const Label: ILabel = ({
   )
 }
 
-export default Label
+export default BaseComponent(Label)
