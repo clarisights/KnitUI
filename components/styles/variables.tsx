@@ -13,28 +13,30 @@ export const unit14 = 1.4
 export const unit16 = 1.6
 export const unit18 = 1.8
 
+export type fontSizeType = 10 | 12 | 14 | 16 | 18 | 20
+
 export const typography = {
-  size10: {
+  10: {
     fontSize: 1.0,
     lineHeight: 1.6,
   },
-  size12: {
+  12: {
     fontSize: 1.2,
     lineHeight: 1.8,
   },
-  size14: {
+  14: {
     fontSize: 1.4,
     lineHeight: 2.0,
   },
-  size16: {
+  16: {
     fontSize: 1.6,
     lineHeight: 2.0,
   },
-  size18: {
+  18: {
     fontSize: 1.8,
     lineHeight: 2.4,
   },
-  size20: {
+  20: {
     fontSize: 2.0,
     lineHeight: 2.8,
   },

@@ -103,8 +103,10 @@ describe("Button", () => {
             colorTheme={{
               background: "#f142f4",
               font: "#f4f141",
-              insetBackground: "#000000",
-              insetFont: "#FFFFFF",
+            }}
+            insetColorTheme={{
+              background: "#000000",
+              font: "#FFFFFF",
             }}
           />
         </ThemeProvider>

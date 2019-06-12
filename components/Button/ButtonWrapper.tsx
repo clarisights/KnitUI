@@ -1,28 +1,18 @@
 import React, { SyntheticEvent } from "react"
 import Icon from "../Icon"
 import * as theme from "../styles/variables"
-import chroma from "chroma-js"
 import { ButtonBase, ButtonInset } from "./styledComponents"
+import { parseColorTheme } from "../_utils"
 
-import { ColorPreset, IColorTheme } from "../_utils/types"
+import { InputColorTheme } from "../_utils/types"
 
-const { shades, typography, secondaryPalette } = theme
+const { shades, typography } = theme
 
 const DEFAULT_COLOR_THEME = "neutral"
 
-const DEFAULT_INSET_BG_COLOR = shades.white
-const DEFAULT_INSET_FONT_COLOR = shades.gray20
-
-interface IButtonColorTheme extends IColorTheme {
-  insetBackground?: string,
-  insetFont?: string
-}
-
-interface ParsedColorTheme {
-  background: any
-  font: any
-  insetBackground?: any
-  insetFont?: any
+const DEFAULT_INSET_THEME = {
+  background: shades.white,
+  font: shades.gray20,
 }
 
 interface ButtonWrapperProps {
@@ -36,7 +26,9 @@ interface ButtonWrapperProps {
    * background and font and the values should be a valid hex string or
    * css rgb format.
    */
-  colorTheme?: ColorPreset | IButtonColorTheme,
+  colorTheme?: InputColorTheme
+  /** Color theme for the inset */
+  insetColorTheme?: InputColorTheme
   /** Inverted color scheme */
   ghost?: boolean
   /** Physical area occupied on the screen */
@@ -55,58 +47,32 @@ interface ButtonWrapperProps {
   onClick?: (event) => void
 }
 
-const parseColorTheme = colorTheme => {
-  let parsedColorTheme: ParsedColorTheme = {
-    ...secondaryPalette[DEFAULT_COLOR_THEME],
-  }
-  // Get the color theme based on variant and override if explicitly provided
-  if (typeof colorTheme === "string") {
-    parsedColorTheme = { ...secondaryPalette[colorTheme!] }
-  } else {
-    colorTheme = colorTheme || secondaryPalette[DEFAULT_COLOR_THEME]
-    if (
-      colorTheme &&
-      chroma.valid(colorTheme.background) &&
-      chroma.valid(colorTheme.font)
-    ) {
-      parsedColorTheme.background = chroma(colorTheme.background)
-      parsedColorTheme.font = chroma(colorTheme.font)
-    }
-  }
-
-  // Inset color schemes are optional and will be defaulted to a value if not supplied
-  parsedColorTheme.insetBackground =
-    (chroma.valid(colorTheme.insetBackground) &&
-      chroma(colorTheme.insetBackground)) ||
-    DEFAULT_INSET_BG_COLOR
-  parsedColorTheme.insetFont =
-    (chroma.valid(colorTheme.insetFont) && chroma(colorTheme.insetFont)) ||
-    DEFAULT_INSET_FONT_COLOR
-  return parsedColorTheme
-}
-
 const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   label,
-  type,
-  ghost,
-  size,
-  disabled,
+  type = "primary",
+  ghost = false,
+  size = "medium",
+  disabled = false,
   href,
   onClick,
   icon,
-  bare,
+  bare = false,
   insetLabel,
-  colorTheme,
+  colorTheme = DEFAULT_COLOR_THEME,
+  insetColorTheme = DEFAULT_INSET_THEME,
 }) => {
-  const typographySize =
-    size === "small" ? typography.size12 : typography.size14
+  const typographySize = size === "small" ? typography[12] : typography[14]
   const baseFontSize = typographySize.fontSize
   const baseLineHeight = typographySize.lineHeight
   const insetFontSize = baseFontSize - theme.baseIncrementUnit
-  const lowerTypographyUnit = typography[`size${insetFontSize * 10}`]
+  const lowerTypographyUnit = typography[`${insetFontSize * 10}`]
   const insetLineHeight =
     (lowerTypographyUnit && lowerTypographyUnit.lineHeight) || baseLineHeight
   const parsedColorTheme = parseColorTheme(colorTheme)
+  const parsedInsetColorTheme = parseColorTheme(
+    insetColorTheme,
+    DEFAULT_INSET_THEME
+  )
 
   return (
     <ButtonBase
@@ -130,8 +96,8 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       {insetLabel ? (
         <ButtonInset
           customProps={{
-            backgroundColor: parsedColorTheme.insetBackground,
-            fontColor: parsedColorTheme.insetFont,
+            backgroundColor: parsedInsetColorTheme.background,
+            fontColor: parsedInsetColorTheme.font,
             fontSize: `${insetFontSize}rem`,
             lineHeight: `${insetLineHeight}rem`,
           }}>
@@ -140,15 +106,6 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       ) : null}
     </ButtonBase>
   )
-}
-
-ButtonWrapper.defaultProps = {
-  type: "primary",
-  colorTheme: DEFAULT_COLOR_THEME,
-  ghost: false,
-  disabled: false,
-  size: "medium",
-  bare: false,
 }
 
 export default ButtonWrapper

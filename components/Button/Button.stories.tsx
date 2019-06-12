@@ -134,8 +134,10 @@ stories
       colorTheme={object("Color theme", {
         background: "#9242f4",
         font: "#f4eb41",
-        insetBackground: "#000000",
-        insetFont: "#ffffff",
+      })}
+      insetColorTheme={object("Color theme", {
+        background: "#000000",
+        font: "#ffffff",
       })}
     />
   ))

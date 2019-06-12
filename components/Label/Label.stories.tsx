@@ -1,30 +1,28 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import Label from "./Label"
-import { Icon } from "../Icon"
-import { withKnobs, text, boolean, select, object } from '@storybook/addon-knobs'
-import { action } from '@storybook/addon-actions'
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs"
 const Readme = require("./README.md")
 
-const stories = storiesOf('Labels', module)
+const stories = storiesOf("Labels", module)
 stories.addDecorator(withKnobs)
 
 const typeOptions = {
-  'Compact': 'compact',
-  'Expanded': 'expanded'
+  Compact: "compact",
+  Expanded: "expanded",
 }
 
 const sizeOptions = {
-  'Small': 'small',
-  'Medium': 'medium',
-  'Large': 'large'
+  Small: "small",
+  Medium: "medium",
+  Large: "large",
 }
 
 const colorThemeOptions = {
-  'Neutral': 'neutral',
-  "Danger": "danger",
-  "Warning": "warning",
-  "Unsaved": "unsaved"
+  Neutral: "neutral",
+  Danger: "danger",
+  Warning: "warning",
+  Unsaved: "unsaved",
 }
 
 stories
@@ -36,60 +34,72 @@ stories
       sidebar: Readme,
     },
   })
-  .add("Simple label with text", () =>
+  .add("Simple label with text", () => (
     <Label
-      text={text('text', 'Label')}
-      type={select('Type', typeOptions, 'primary')}
-      size={select('Size', sizeOptions, 'medium')}
-      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
-      rounded={boolean('Rounded', false)}
-      outlined={boolean('Outlined', false)}
-      focus={boolean('Focus', false)}
-      inline={boolean('Inline', false)}
-    />)
-  .add("Rounded", () =>
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+    />
+  ))
+  .add("Rounded", () => (
     <Label
-      text={text('text', 'Label')}
-      type={select('Type', typeOptions, 'primary')}
-      size={select('Size', sizeOptions, 'medium')}
-      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
-      rounded={boolean('Rounded', true)}
-      outlined={boolean('Outlined', false)}
-      focus={boolean('Focus', false)}
-      inline={boolean('Inline', false)}
-    />)
-  .add("With left addon", () =>
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", true)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+    />
+  ))
+  .add("With left addon", () => (
     <Label
-      text={text('text', 'Label')}
-      type={select('Type', typeOptions, 'primary')}
-      size={select('Size', sizeOptions, 'medium')}
-      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
-      rounded={boolean('Rounded', false)}
-      outlined={boolean('Outlined', false)}
-      focus={boolean('Focus', false)}
-      icon={{position: "left", type: "oInfo"}}
-      inline={boolean('Inline', false)}
-    />)
-  .add("With right addon", () =>
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+      icons={{ left: "oInfo" }}
+    />
+  ))
+  .add("With right addon", () => (
     <Label
-      text={text('text', 'Label')}
-      type={select('Type', typeOptions, 'primary')}
-      size={select('Size', sizeOptions, 'medium')}
-      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
-      rounded={boolean('Rounded', false)}
-      outlined={boolean('Outlined', false)}
-      focus={boolean('Focus', false)}
-      icon={{position: "right", type: "oInfo"}}
-      inline={boolean('Inline', false)}
-    />)
-    .add("Inline", () =>
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+      icons={{ right: "oInfo" }}
+    />
+  ))
+  .add("With a left and a right addon", () => (
     <Label
-      text={text('text', 'Label')}
-      type={select('Type', typeOptions, 'primary')}
-      size={select('Size', sizeOptions, 'medium')}
-      colorTheme={select('Color theme', colorThemeOptions, "neutral")}
-      rounded={boolean('Rounded', false)}
-      outlined={boolean('Outlined', false)}
-      focus={boolean('Focus', false)}
-      inline={boolean('Inline', true)}
-    />)
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+      icons={{ left: "oInfo", right: "oInfo" }}
+    />
+  ))
+  .add("Inline", () => (
+    <Label
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+    />
+  ))
