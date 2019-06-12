@@ -1,19 +1,11 @@
-import React, { SyntheticEvent } from "react"
+import React, { SyntheticEvent, useContext } from "react"
 import Icon from "../Icon"
-import * as theme from "../styles/variables"
 import { ButtonBase, ButtonInset } from "./styledComponents"
+import { ThemeContext } from "styled-components"
 import { parseColorTheme } from "../_utils"
-
 import { InputColorTheme } from "../_utils/types"
 
-const { shades, typography } = theme
-
 const DEFAULT_COLOR_THEME = "neutral"
-
-const DEFAULT_INSET_THEME = {
-  background: shades.white,
-  font: shades.gray20,
-}
 
 interface ButtonWrapperProps {
   /** The text label to be shown on the button */
@@ -59,15 +51,28 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   bare = false,
   insetLabel,
   colorTheme = DEFAULT_COLOR_THEME,
-  insetColorTheme = DEFAULT_INSET_THEME,
+  insetColorTheme,
 }) => {
+  const themeContext = useContext(ThemeContext)
+  const { shades, typography } = themeContext
+
+  // Cannot be set as default arg since theme is not available in that context
+  const DEFAULT_INSET_THEME = {
+    background: shades.white,
+    font: shades.gray20,
+  }
+  insetColorTheme = insetColorTheme || DEFAULT_INSET_THEME
+
+  // Typography
   const typographySize = size === "small" ? typography[12] : typography[14]
   const baseFontSize = typographySize.fontSize
   const baseLineHeight = typographySize.lineHeight
-  const insetFontSize = baseFontSize - theme.baseIncrementUnit
+  const insetFontSize = baseFontSize - themeContext.baseIncrementUnit
   const lowerTypographyUnit = typography[`${insetFontSize * 10}`]
   const insetLineHeight =
     (lowerTypographyUnit && lowerTypographyUnit.lineHeight) || baseLineHeight
+
+  // Colors
   const parsedColorTheme = parseColorTheme(colorTheme)
   const parsedInsetColorTheme = parseColorTheme(
     insetColorTheme,

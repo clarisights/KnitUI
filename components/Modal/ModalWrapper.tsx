@@ -1,5 +1,7 @@
-import React, { useState, ReactNode } from "react"
+import React, { useState, useContext, ReactNode } from "react"
 import styled from "styled-components"
+import Dialog from "rc-dialog"
+
 import { Header, Footer, Main } from "./components"
 import {
   Modal,
@@ -8,7 +10,6 @@ import {
   BottomPanelModal,
 } from "./variants/index"
 import Icon from "../Icon"
-import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
 import { borderRadius } from "./common/styles"
 
@@ -139,6 +140,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   panel,
   destroyOnClose,
 }) => {
+  // Revert to default padding if not explicitly supplied.
   /**
    * Renders the appopriate variant based on the availability of a
    * panel prop and its position.

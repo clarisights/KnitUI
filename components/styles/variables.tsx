@@ -13,8 +13,6 @@ export const unit14 = 1.4
 export const unit16 = 1.6
 export const unit18 = 1.8
 
-export type fontSizeType = 10 | 12 | 14 | 16 | 18 | 20
-
 export const typography = {
   10: {
     fontSize: 1.0,
@@ -134,3 +132,11 @@ export const switchCheckedBorderColor = "hsl(118, 100%, 21%)"
 export const switchCheckedBgColor = "hsl(118, 100%, 21%)"
 export const switchCheckedDisabledBorderColor = "hsl(0, 0%, 90%)"
 export const switchCheckedDisabledBgColor = "hsl(0, 0%, 90%)"
+
+// Modal
+export const modalBorder = `1px solid ${shades.gray85}`
+export const modalBorderRadius = "0.4rem"
+export const modalPadding = {
+  vertical: "2.1rem",
+  horizontal: "2.8rem",
+}

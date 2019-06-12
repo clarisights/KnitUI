@@ -1,16 +1,11 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import Label from "./Label"
+import Label from "./"
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs"
 const Readme = require("./README.md")
 
 const stories = storiesOf("Labels", module)
 stories.addDecorator(withKnobs)
-
-const typeOptions = {
-  Compact: "compact",
-  Expanded: "expanded",
-}
 
 const sizeOptions = {
   Small: "small",

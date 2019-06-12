@@ -1,10 +1,9 @@
-import React from "react"
+import React, { useContext } from "react"
 import styled from "styled-components"
 
-import { InputColorTheme } from "../_utils/types"
+import { InputColorTheme, fontSizeType } from "../_utils/types"
 import { parseColorTheme } from "../_utils"
-import * as theme from "../styles/variables"
-const { typography } = theme
+import { ThemeContext } from "styled-components"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
@@ -12,7 +11,7 @@ interface InlineLabelPropTypes {
   /** Text to be rendered on the label */
   text: string
   /** Font size of the text */
-  fontSize?: theme.fontSizeType
+  fontSize?: fontSizeType
   /** Thee spaciousness in the label */
   expanded?: boolean
   /** Defines the colors for the background and font */
@@ -27,6 +26,8 @@ const InlineLabel: InlineLabelType = ({
   colorTheme = DEFAULT_COLOR_THEME,
   fontSize = 12,
 }) => {
+  const themeContext = useContext(ThemeContext)
+  const { typography } = themeContext
   const lineHeight = typography[fontSize].lineHeight
   const parsedColorTheme = parseColorTheme(colorTheme)
   const backgroundColor = parsedColorTheme.background

@@ -1,6 +1,7 @@
 import Label from "./Label"
 import InlineLabel from "./InlineLabel"
+import BaseComponent from "../BaseComponent"
 
 Label.Inline = InlineLabel
 
-export default Label
+export default BaseComponent(Label)

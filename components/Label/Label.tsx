@@ -1,10 +1,8 @@
-import React from "react"
+import React, { useContext } from "react"
 import styled from "styled-components"
-
+import { ThemeContext } from "styled-components"
 import { InputColorTheme } from "../_utils/types"
 import { parseColorTheme } from "../_utils"
-import * as theme from "../styles/variables"
-const { shades, typography } = theme
 import Icon from "../Icon"
 
 const DEFAULT_COLOR_THEME = "neutral"
@@ -44,12 +42,13 @@ const Label: ILabel = ({
   icons,
   focus,
 }) => {
+  const themeContext = useContext(ThemeContext)
+  const { shades, typography } = themeContext
   const typographySize = {
     small: typography[12],
     medium: typography[14],
     large: typography[14],
   }
-
   const fontSize = typographySize[size].fontSize
   const lineHeight = typographySize[size].lineHeight
   const parsedColorTheme = parseColorTheme(colorTheme)

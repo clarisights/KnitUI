@@ -1,2 +1,4 @@
+import BaseComponent from "../BaseComponent"
 import Modal from "./ModalWrapper"
-export default Modal
+
+export default BaseComponent(Modal)

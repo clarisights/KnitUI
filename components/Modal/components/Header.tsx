@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode, useContext } from "react"
+import styled, { ThemeContext } from "styled-components"
 import { borderRadius, padding } from "../common/styles"
 
 const Container = styled.div`

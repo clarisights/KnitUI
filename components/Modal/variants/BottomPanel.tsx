@@ -1,15 +1,8 @@
-import React from "react"
-import styled from "styled-components"
+import React, { useContext } from "react"
+import styled, { ThemeContext } from "styled-components"
 
 import { BaseLayout } from "./Base"
-import { border } from "../common/styles"
 import { PanelModalProps } from "./interfaces"
-
-const BottomSection = styled.div`
-  box-sizing: border-box;
-  height: 8.4rem;
-  border-top: ${border};
-`
 
 const BottomPanelModal: React.FC<PanelModalProps> = ({
   header,
@@ -17,6 +10,12 @@ const BottomPanelModal: React.FC<PanelModalProps> = ({
   body,
   panelContent,
 }) => {
+  const { modalBorder } = useContext(ThemeContext)
+  const BottomSection = styled.div`
+    box-sizing: border-box;
+    height: 8.4rem;
+    border-top: ${modalBorder};
+  `
   return (
     <BaseLayout>
       {header}

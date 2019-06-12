@@ -1,2 +1,4 @@
+import BaseComponent from "../BaseComponent"
 import Button from "./ButtonWrapper"
-export default Button
+
+export default BaseComponent(Button)

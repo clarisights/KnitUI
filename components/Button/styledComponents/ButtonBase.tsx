@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { IStyled } from "../../common/types"
+import { SyntheticEvent } from "react"
 
 type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
 
@@ -20,7 +21,7 @@ interface BaseButtonProps {
   bare: boolean
   icon?: string
   insetLabel?: string
-  onClick?: (event) => void
+  onClick?: (event: SyntheticEvent) => void
   fontSize: number
   lineHeight: number
 }
