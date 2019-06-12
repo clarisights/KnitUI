@@ -55,7 +55,7 @@ export const parseColorTheme = (
   defaultTheme: ParsedColorTheme = secondaryPalette[DEFAULT_COLOR_THEME]
 ) => {
   // Make a copy to prevent changes to the input object
-  let parsedColorTheme: ParsedColorTheme = { ...defaultTheme}
+  let parsedColorTheme: ParsedColorTheme = { ...defaultTheme }
   // Get the color theme based on variant and override if explicitly provided
   if (typeof colorTheme === "string") {
     parsedColorTheme = { ...secondaryPalette[colorTheme!] }
