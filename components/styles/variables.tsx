@@ -1,4 +1,5 @@
 import chroma from "chroma-js"
+import * as palette from "./palette"
 
 // Helpers
 const multiply = (a: number, b: number) => a * b
@@ -50,34 +51,37 @@ export const fontSize18 = "1.8rem" // for Headings
 export const fontSize20 = "2rem"
 
 // Colors
+const hslToChroma = (hsl: Array<number>) => {
+  const [h, s, l] = hsl
+  return chroma.hsl(h, s / 100, l / 100)
+}
+
 export const primaryHues = {
   default: "#293979",
 }
 
 export const secondaryPalette = {
-  neutral: chroma.hsl(216, 1, 0.2),
-  danger: chroma.hsl(0, 1, 0.3),
-  success: chroma.hsl(118, 1, 0.2),
-  warning: chroma.hsl(47, 1, 0.5),
-  unsaved: chroma.hsl(288, 0.2, 0.35),
+  neutral: hslToChroma(palette.Blue100.hsl),
+  danger: hslToChroma(palette.Crimson80.hsl),
+  success: hslToChroma(palette.Green80.hsl),
+  warning: hslToChroma(palette.Yellow80.hsl),
+  unsaved: hslToChroma(palette.Magenta80.hsl),
 }
 
 export const shades = {
   // Shades of gray
-  white: chroma.hsl(0, 0, 1),
-  gray95: chroma.hsl(0, 0, 0.95),
-  gray90: chroma.hsl(0, 0, 0.9),
-  gray85: chroma.hsl(0, 0, 0.85),
-  gray50: chroma.hsl(0, 0, 0.5),
-  gray20: chroma.hsl(0, 0, 0.2),
-  gray30: chroma.hsl(0, 0, 0.3),
+  white: hslToChroma(palette.Neutral0.hsl),
+  gray95: hslToChroma(palette.Neutral10.hsl),
+  gray90: hslToChroma(palette.Neutral20.hsl),
+  gray85: hslToChroma(palette.Neutral30.hsl),
+  gray50: hslToChroma(palette.Neutral50.hsl),
+  gray20: hslToChroma(palette.Neutral80.hsl),
   black: chroma.hsl(0, 0, 0),
   transparent: chroma.hsl(0, 0, 0, 0),
 
   // Shades of blue
-  lightBlue: chroma.hsl(205, 0.85, 0.65),
-  blue40: chroma.hsl(205, 0.85, 0.4),
-  blue50: chroma.hsl(216, 1, 0.5)
+  lightBlue: hslToChroma(palette.Azure80.hsl),
+  blue50: chroma.hsl(216, 1, 0.5),
 }
 
 // Properties
