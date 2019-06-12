@@ -2,26 +2,16 @@ import React, { useContext } from "react"
 import styled from "styled-components"
 import BaseComponent from "../BaseComponent"
 
-import { fontSizeType, ColorPreset, CustomColor } from "../_utils/types"
+import { fontSizeType } from "../_utils/types"
 import { parseColorPreset, parseCustomColor } from "../_utils"
 import { ThemeContext } from "styled-components"
+import { BaseLabelProps } from "./common/types"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
-interface InlineLabelPropTypes {
-  /** Text to be rendered on the label */
-  text: string
+interface InlineLabelPropTypes extends BaseLabelProps {
   /** Font size of the text */
   fontSize?: fontSizeType
-  /** Thee spaciousness in the label */
-  expanded?: boolean
-  /**
-   * One of a set of predefined values that are representative of
-   * the type of action
-   */
-  colorPreset?: ColorPreset
-  /** Addons to be placed adjacent to the label text */
-  customColor?: CustomColor
 }
 
 export type InlineLabelType = React.FC<InlineLabelPropTypes>

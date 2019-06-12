@@ -1,33 +1,22 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
 import { ThemeContext } from "styled-components"
-import { ColorPreset, CustomColor } from "../_utils/types"
 import { parseCustomColor, parseColorPreset } from "../_utils"
 import Icon from "../Icon"
 import BaseComponent from "../BaseComponent"
+import { BaseLabelProps } from "./common/types"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
 import { InlineLabelType } from "./InlineLabel"
 
-interface LabelPropTypes {
-  /** Text to be rendered on the label */
-  text: string
-  /** Thee spaciousness in the label */
-  expanded?: boolean
+interface LabelPropTypes extends BaseLabelProps {
   /** The amount of physical space occupied */
   size?: "small" | "medium" | "large"
   /** Whether the edges of the label should be rounded */
   rounded?: boolean
   /** Whether the label should have a distinct outline */
   outlined?: boolean
-  /**
-   * One of a set of predefined values that are representative of
-   * the type of action
-   */
-  colorPreset?: ColorPreset
-  /** Addons to be placed adjacent to the label text */
-  customColor?: CustomColor
   /** Override defaults, should be valid CSS string */
   icons?: { left?: string; right?: string }
   /** Label is focussed or being dragged */
