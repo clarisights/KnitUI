@@ -46,7 +46,19 @@ stories
       label={text("Label", "Button")}
       type={select("Type", typeOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      ghost={boolean("Ghost", false)}
+      disabled={boolean("Disabled", false)}
+      bare={boolean("Bare", false)}
+      onClick={action("button-click")}
+    />
+  ))
+  .add("With a non-default color preset", () => (
+    <Button
+      label={text("Label", "Button")}
+      type={select("Type", typeOptions, "primary")}
+      size={select("Size", sizeOptions, "medium")}
+      colorPreset={select("Color preset", colorThemeOptions, "danger")}
       ghost={boolean("Ghost", false)}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
@@ -58,7 +70,7 @@ stories
       label={text("Label", "Button")}
       type={select("Type", typeOptions, "secondary")}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
@@ -70,7 +82,7 @@ stories
       label={text("Label", "Button")}
       type={select("Type", typeOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", true)}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
@@ -82,7 +94,7 @@ stories
       label={text("Label", "Button")}
       type={select("Type", typeOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}
       disabled={boolean("Disabled", false)}
       insetLabel={text("InsetLabel", "10")}
@@ -93,7 +105,7 @@ stories
     <Button
       icon={text("Icon", "oInfo")}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       onClick={action("button-click")}
@@ -104,7 +116,7 @@ stories
       icon={text("Icon", "oInfo")}
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       onClick={action("button-click")}
@@ -115,7 +127,7 @@ stories
       icon={text("Icon", "oInfo")}
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       insetLabel={text("InsetLabel", "10")}
@@ -131,14 +143,8 @@ stories
       bare={boolean("Bare", false)}
       onClick={action("button-click")}
       insetLabel={text("InsetLabel", "10")}
-      colorTheme={object("Color theme", {
-        background: "#9242f4",
-        font: "#f4eb41",
-      })}
-      insetColorTheme={object("Color theme", {
-        background: "#000000",
-        font: "#ffffff",
-      })}
+      customColor={text("Custom Color", "#9242f4")}
+      insetCustomColor={text("Custom Color", "#000000")}
     />
   ))
   .add("With an href", () => (
@@ -146,7 +152,7 @@ stories
       icon={text("Icon", "oInfo")}
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       insetLabel={text("InsetLabel", "10")}

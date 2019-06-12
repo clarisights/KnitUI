@@ -89,7 +89,7 @@ describe("Button", () => {
     it("renders with a specified color preset correctly", () => {
       const { asFragment } = render(
         <ThemeProvider>
-          <Button label="button" colorTheme="danger" />
+          <Button label="button" colorPreset="danger" />
         </ThemeProvider>
       )
       expect(asFragment()).toMatchSnapshot()
@@ -100,14 +100,8 @@ describe("Button", () => {
         <ThemeProvider>
           <Button
             label="button"
-            colorTheme={{
-              background: "#f142f4",
-              font: "#f4f141",
-            }}
-            insetColorTheme={{
-              background: "#000000",
-              font: "#FFFFFF",
-            }}
+            customColor="#f142f4"
+            insetCustomColor="#000000"
           />
         </ThemeProvider>
       )

@@ -1,6 +1,6 @@
 import { ThemedStyledFunction } from "styled-components"
 import chroma from "chroma-js"
-import { InputColorTheme, ParsedColorTheme } from "./types"
+import { ColorPreset } from "./types"
 import * as theme from "../styles/variables"
 const { secondaryPalette } = theme
 
@@ -32,35 +32,42 @@ export function withProps<U>() {
 
 // Color utils
 
-const DEFAULT_COLOR_THEME = "neutral"
+const DEFAULT_COLOR_PRESET = "neutral"
 
 /**
- * Parses the values in custom color theme into chroma objects
- * @param colorTheme
+ * Determines the appropriate font color based on the background color.
  */
-export const parseCustomColorTheme = <T>(colorTheme: T) => {
-  if (!colorTheme) throw new Error("Invalid color theme provided")
-  const parsedColorTheme: T = { ...colorTheme }
-  Object.entries(colorTheme).forEach(([key, value]) => {
-    if (!chroma.valid(value)) {
-      throw new Error("Provided color theme contatins invalid color values")
-    }
-    parsedColorTheme[key] = chroma(value)
-  })
-  return parsedColorTheme
+const getFontColor = backGroundColor => {
+  const [r, g, b] = backGroundColor.rgb()
+  // check calculates Luminance
+  const threshold = 1 - (0.299 * r + 0.587 * g + 0.114 * b) / 255
+  return threshold < 0.5 ? chroma("black") : chroma("white")
 }
 
-export const parseColorTheme = (
-  colorTheme: InputColorTheme,
-  defaultTheme: ParsedColorTheme = secondaryPalette[DEFAULT_COLOR_THEME]
-) => {
-  // Make a copy to prevent changes to the input object
-  let parsedColorTheme: ParsedColorTheme = { ...defaultTheme }
-  // Get the color theme based on variant and override if explicitly provided
-  if (typeof colorTheme === "string") {
-    parsedColorTheme = { ...secondaryPalette[colorTheme!] }
-  } else {
-    parsedColorTheme = parseCustomColorTheme(colorTheme)
+const createParsedColorTheme = backgroundColor => ({
+  background: backgroundColor,
+  font: getFontColor(backgroundColor),
+})
+
+/**
+ * Creates an object with background and font properties initialized
+ * with appropriate chroma colors.
+ * @param backGroundColor A plain CSS color string
+ */
+export const parseCustomColor = (backgroundColor: string) => {
+  if (!chroma.valid(backgroundColor)) {
+    throw new Error("Provided color theme contatins invalid color values")
   }
-  return parsedColorTheme
+  backgroundColor = chroma(backgroundColor)
+  return createParsedColorTheme(backgroundColor)
+}
+
+/**
+ * Creates an object with background and font properties initialized
+ * with appropriate chroma colors.
+ * @param backGroundColor One of the predefined preset values
+ */
+export const parseColorPreset = (backgroundColor: ColorPreset) => {
+  backgroundColor = secondaryPalette[backgroundColor]
+  return createParsedColorTheme(backgroundColor)
 }

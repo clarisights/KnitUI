@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
 import { ThemeContext } from "styled-components"
-import { InputColorTheme } from "../_utils/types"
-import { parseColorTheme } from "../_utils"
+import { ColorPreset, CustomColor } from "../_utils/types"
+import { parseCustomColor, parseColorPreset } from "../_utils"
 import Icon from "../Icon"
 
 const DEFAULT_COLOR_THEME = "neutral"
@@ -20,9 +20,14 @@ interface LabelPropTypes {
   rounded?: boolean
   /** Whether the label should have a distinct outline */
   outlined?: boolean
-  /** Defines the colors for the background and font */
-  colorTheme?: InputColorTheme
+  /**
+   * One of a set of predefined values that are representative of
+   * the type of action
+   */
+  colorPreset?: ColorPreset
   /** Addons to be placed adjacent to the label text */
+  customColor?: CustomColor
+  /** Override defaults, should be valid CSS string */
   icons?: { left?: string; right?: string }
   /** Label is focussed or being dragged */
   focus?: boolean
@@ -38,7 +43,8 @@ const Label: ILabel = ({
   size = "medium",
   rounded = false,
   outlined = false,
-  colorTheme = DEFAULT_COLOR_THEME,
+  colorPreset = DEFAULT_COLOR_THEME,
+  customColor,
   icons,
   focus,
 }) => {
@@ -51,7 +57,9 @@ const Label: ILabel = ({
   }
   const fontSize = typographySize[size].fontSize
   const lineHeight = typographySize[size].lineHeight
-  const parsedColorTheme = parseColorTheme(colorTheme)
+  const parsedColorTheme = customColor
+    ? parseCustomColor(customColor)
+    : parseColorPreset(colorPreset)
   const backgroundColor = parsedColorTheme.background
   const fontColor = parsedColorTheme.font
   const darkenedBorderColor = backgroundColor.set("hsl.l", "-0.2")

@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
 
-import { InputColorTheme, fontSizeType } from "../_utils/types"
-import { parseColorTheme } from "../_utils"
+import { fontSizeType, ColorPreset, CustomColor } from "../_utils/types"
+import { parseColorPreset, parseCustomColor } from "../_utils"
 import { ThemeContext } from "styled-components"
 
 const DEFAULT_COLOR_THEME = "neutral"
@@ -14,8 +14,13 @@ interface InlineLabelPropTypes {
   fontSize?: fontSizeType
   /** Thee spaciousness in the label */
   expanded?: boolean
-  /** Defines the colors for the background and font */
-  colorTheme?: InputColorTheme
+  /**
+   * One of a set of predefined values that are representative of
+   * the type of action
+   */
+  colorPreset?: ColorPreset
+  /** Addons to be placed adjacent to the label text */
+  customColor?: CustomColor
 }
 
 export type InlineLabelType = React.FC<InlineLabelPropTypes>
@@ -23,13 +28,16 @@ export type InlineLabelType = React.FC<InlineLabelPropTypes>
 const InlineLabel: InlineLabelType = ({
   expanded = false,
   text,
-  colorTheme = DEFAULT_COLOR_THEME,
+  colorPreset = DEFAULT_COLOR_THEME,
+  customColor,
   fontSize = 12,
 }) => {
   const themeContext = useContext(ThemeContext)
   const { typography } = themeContext
   const lineHeight = typography[fontSize].lineHeight
-  const parsedColorTheme = parseColorTheme(colorTheme)
+  const parsedColorTheme = customColor
+    ? parseCustomColor(customColor)
+    : parseColorPreset(colorPreset)
   const backgroundColor = parsedColorTheme.background
   const fontColor = parsedColorTheme.font
 

@@ -15,7 +15,7 @@ exports[`Button renders with a custom color theme correctly 1`] = `
   line-height: 2rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  color: #f4f141;
+  color: #000000;
   background-color: #f142f4;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -46,12 +46,12 @@ exports[`Button renders with a custom color theme correctly 1`] = `
 
 .c0:active svg path,
 .c0:focus svg path {
-  fill: #f4f141;
+  fill: #000000;
 }
 
 .c0:hover {
   border: 1px solid #00000000;
-  color: #f4f141;
+  color: #000000;
 }
 
 .c0:disabled {
@@ -82,7 +82,7 @@ exports[`Button renders with a custom color theme correctly 2`] = `
   line-height: 2rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  color: #f4f141;
+  color: #000000;
   background-color: #f142f4;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -113,12 +113,12 @@ exports[`Button renders with a custom color theme correctly 2`] = `
 
 .c0:active svg path,
 .c0:focus svg path {
-  fill: #f4f141;
+  fill: #000000;
 }
 
 .c0:hover {
   border: 1px solid #00000000;
-  color: #f4f141;
+  color: #000000;
 }
 
 .c0:disabled {
@@ -149,7 +149,7 @@ exports[`Button renders with a custom color theme correctly 3`] = `
   line-height: 2rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  color: #f4f141;
+  color: #000000;
   background-color: #f142f4;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -180,12 +180,12 @@ exports[`Button renders with a custom color theme correctly 3`] = `
 
 .c0:active svg path,
 .c0:focus svg path {
-  fill: #f4f141;
+  fill: #000000;
 }
 
 .c0:hover {
   border: 1px solid #00000000;
-  color: #f4f141;
+  color: #000000;
 }
 
 .c0:disabled {

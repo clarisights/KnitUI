@@ -1,9 +1,9 @@
-import React, { SyntheticEvent, useContext } from "react"
+import React, { useContext, SyntheticEvent } from "react"
 import Icon from "../Icon"
 import { ButtonBase, ButtonInset } from "./styledComponents"
 import { ThemeContext } from "styled-components"
-import { parseColorTheme } from "../_utils"
-import { InputColorTheme } from "../_utils/types"
+import { parseCustomColor, parseColorPreset } from "../_utils"
+import { ColorPreset, CustomColor } from "../_utils/types"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
@@ -12,15 +12,15 @@ interface ButtonWrapperProps {
   label?: string
   /** Indicates the importance of the button's actions */
   type?: "primary" | "secondary"
-  /** Indicates the state of an action. Can be a preset string or an object
-   * representing custom color theme that overrides the defaults,
-   * The color theme should be passed in the form of an object containing two properties,
-   * background and font and the values should be a valid hex string or
-   * css rgb format.
+  /**
+   * One of a set of predefined values that are representative of
+   * the type of action
    */
-  colorTheme?: InputColorTheme
-  /** Color theme for the inset */
-  insetColorTheme?: InputColorTheme
+  colorPreset?: ColorPreset
+  /** Override preset colors, should be valid CSS string */
+  customColor?: CustomColor
+  /** Override defaults, should be valid CSS string */
+  insetCustomColor?: CustomColor
   /** Inverted color scheme */
   ghost?: boolean
   /** Physical area occupied on the screen */
@@ -36,7 +36,7 @@ interface ButtonWrapperProps {
   /** A location to navigate to on click of the button */
   href?: string
   /** An event handler to be called on click of the button */
-  onClick?: (event) => void
+  onClick?: (event: SyntheticEvent) => void
 }
 
 const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
@@ -50,18 +50,12 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   icon,
   bare = false,
   insetLabel,
-  colorTheme = DEFAULT_COLOR_THEME,
-  insetColorTheme,
+  colorPreset = DEFAULT_COLOR_THEME,
+  customColor,
+  insetCustomColor,
 }) => {
   const themeContext = useContext(ThemeContext)
   const { shades, typography } = themeContext
-
-  // Cannot be set as default arg since theme is not available in that context
-  const DEFAULT_INSET_THEME = {
-    background: shades.white,
-    font: shades.gray20,
-  }
-  insetColorTheme = insetColorTheme || DEFAULT_INSET_THEME
 
   // Typography
   const typographySize = size === "small" ? typography[12] : typography[14]
@@ -73,11 +67,19 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
     (lowerTypographyUnit && lowerTypographyUnit.lineHeight) || baseLineHeight
 
   // Colors
-  const parsedColorTheme = parseColorTheme(colorTheme)
-  const parsedInsetColorTheme = parseColorTheme(
-    insetColorTheme,
-    DEFAULT_INSET_THEME
-  )
+
+  // Cannot be set as default arg since theme is not available in that context
+  const DEFAULT_INSET_THEME = {
+    background: shades.white,
+    font: shades.gray20,
+  }
+
+  const insetColorTheme = insetCustomColor
+    ? parseCustomColor(insetCustomColor)
+    : DEFAULT_INSET_THEME
+  const parsedColorTheme = customColor
+    ? parseCustomColor(customColor)
+    : parseColorPreset(colorPreset)
 
   return (
     <ButtonBase
@@ -101,8 +103,8 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       {insetLabel ? (
         <ButtonInset
           customProps={{
-            backgroundColor: parsedInsetColorTheme.background,
-            fontColor: parsedInsetColorTheme.font,
+            backgroundColor: insetColorTheme.background,
+            fontColor: insetColorTheme.font,
             fontSize: `${insetFontSize}rem`,
             lineHeight: `${insetLineHeight}rem`,
           }}>

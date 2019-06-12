@@ -55,26 +55,11 @@ export const primaryHues = {
 }
 
 export const secondaryPalette = {
-  neutral: {
-    background: chroma.hsl(216, 1, 0.2),
-    font: chroma.hsl(0, 0, 1),
-  },
-  danger: {
-    background: chroma.hsl(0, 1, 0.3),
-    font: chroma.hsl(0, 0, 1),
-  },
-  success: {
-    background: chroma.hsl(118, 1, 0.2),
-    font: chroma.hsl(0, 0, 1),
-  },
-  warning: {
-    background: chroma.hsl(47, 1, 0.5),
-    font: chroma.hsl(0, 0, 0),
-  },
-  unsaved: {
-    background: chroma.hsl(288, 0.2, 0.35),
-    font: chroma.hsl(0, 0, 1),
-  },
+  neutral: chroma.hsl(216, 1, 0.2),
+  danger: chroma.hsl(0, 1, 0.3),
+  success: chroma.hsl(118, 1, 0.2),
+  warning: chroma.hsl(47, 1, 0.5),
+  unsaved: chroma.hsl(288, 0.2, 0.35),
 }
 
 export const shades = {
