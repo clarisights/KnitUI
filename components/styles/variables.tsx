@@ -14,6 +14,7 @@ export const unit14 = 1.4
 export const unit16 = 1.6
 export const unit18 = 1.8
 
+// Font size and line height associations
 export const typography = {
   10: {
     fontSize: 1.0,
@@ -51,36 +52,53 @@ export const fontSize18 = "1.8rem" // for Headings
 export const fontSize20 = "2rem"
 
 // Colors
+
+/**
+ * Used for parsing hsl color values defined in [h, s, l] format
+ * into a chroma object
+ */
 const hslToChroma = (hsl: Array<number>) => {
   const [h, s, l] = hsl
   return chroma.hsl(h, s / 100, l / 100)
 }
 
+/**
+ * Create a new palette by parsing the corresponding color values
+ * into chroma objects.
+ */
+export const chromaPalette = Object.entries(palette)
+  .map(([colorName, values]) => ({
+    [colorName]: hslToChroma(values.hsl),
+  }))
+  .reduce((acc, cur) => ({ ...acc, ...cur }), {})
+
 export const primaryHues = {
   default: "#293979",
 }
 
+// TODO: This mapping should be defined by UX
 export const secondaryPalette = {
-  neutral: hslToChroma(palette.Blue100.hsl),
-  danger: hslToChroma(palette.Crimson80.hsl),
-  success: hslToChroma(palette.Green80.hsl),
-  warning: hslToChroma(palette.Yellow80.hsl),
-  unsaved: hslToChroma(palette.Magenta80.hsl),
+  neutral: chromaPalette.Blue100,
+  danger: chromaPalette.Crimson80,
+  success: chromaPalette.Green80,
+  warning: chromaPalette.Yellow80,
+  unsaved: chromaPalette.Magenta80,
 }
 
+// TODO: Remove this and its references and use chromaPallete directly
 export const shades = {
   // Shades of gray
-  white: hslToChroma(palette.Neutral0.hsl),
-  gray95: hslToChroma(palette.Neutral10.hsl),
-  gray90: hslToChroma(palette.Neutral20.hsl),
-  gray85: hslToChroma(palette.Neutral30.hsl),
-  gray50: hslToChroma(palette.Neutral50.hsl),
-  gray20: hslToChroma(palette.Neutral80.hsl),
-  black: chroma.hsl(0, 0, 0),
+  white: chromaPalette.Neutral0,
+  gray95: chromaPalette.Neutral10,
+  gray90: chromaPalette.Neutral20,
+  gray85: chromaPalette.Neutral30,
+  gray50: chromaPalette.Neutral50,
+  gray20: chromaPalette.Neutral80,
+  black: chromaPalette.Neutral90,
   transparent: chroma.hsl(0, 0, 0, 0),
 
   // Shades of blue
-  lightBlue: hslToChroma(palette.Azure80.hsl),
+  lightBlue: chromaPalette.Azure80,
   blue50: chroma.hsl(216, 1, 0.5),
 }
 
