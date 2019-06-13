@@ -17,7 +17,10 @@ interface LabelPropTypes extends BaseLabelProps {
   rounded?: boolean
   /** Whether the label should have a distinct outline */
   outlined?: boolean
-  /** Override defaults, should be valid CSS string */
+  /**
+   * Icons to be rendered in the label. They can be on left,
+   * a right or on both sides of the text
+   * */
   icons?: { left?: string; right?: string }
   /** Label is focussed or being dragged */
   focus?: boolean
