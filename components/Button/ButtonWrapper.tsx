@@ -1,44 +1,12 @@
 import React, { useContext, SyntheticEvent } from "react"
 import BaseComponent from "../BaseComponent"
 import Icon from "../Icon"
-import { ButtonBase, ButtonInset } from "./styledComponents"
+import { ButtonBase, ButtonInset } from "./components"
 import { ThemeContext } from "styled-components"
 import { parseCustomColor, parseColorPreset } from "../_utils"
-import { ColorPreset, CustomColor } from "../_utils/types"
+import { ButtonWrapperProps } from "./types"
 
 const DEFAULT_COLOR_THEME = "neutral"
-
-interface ButtonWrapperProps {
-  /** The text label to be shown on the button */
-  label?: string
-  /** Indicates the importance of the button's actions */
-  type?: "primary" | "secondary"
-  /**
-   * One of a set of predefined values that are representative of
-   * the type of action
-   */
-  colorPreset?: ColorPreset
-  /** Override preset colors, should be valid CSS string */
-  customColor?: CustomColor
-  /** Override defaults, should be valid CSS string */
-  insetCustomColor?: CustomColor
-  /** Inverted color scheme */
-  ghost?: boolean
-  /** Physical area occupied on the screen */
-  size?: "small" | "medium" | "large"
-  /** Whether the button should be disabled */
-  disabled?: boolean
-  /** Only text/icon stripping the background */
-  bare?: boolean
-  /** An icon type to be rendered in the button */
-  icon?: string
-  /** An inset value, typically used for showing notifications */
-  insetLabel?: string
-  /** A location to navigate to on click of the button */
-  href?: string
-  /** An event handler to be called on click of the button */
-  onClick?: (event: SyntheticEvent) => void
-}
 
 const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   label,
@@ -54,6 +22,8 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   colorPreset = DEFAULT_COLOR_THEME,
   customColor,
   insetCustomColor,
+  className,
+  style,
 }) => {
   const themeContext = useContext(ThemeContext)
   const { shades, typography } = themeContext
@@ -98,7 +68,10 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       onClick={(e: SyntheticEvent) =>
         (onClick && onClick(e)) || (href && window.location.assign(href))
       }
-      disabled={disabled}>
+      disabled={disabled}
+      className={className}
+      style={style}>
+    >
       {icon ? <Icon type={icon} /> : null}
       {label}
       {insetLabel ? (

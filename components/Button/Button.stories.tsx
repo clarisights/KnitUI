@@ -159,3 +159,13 @@ stories
       href="/sample"
     />
   ))
+  .add("With custom styles", () => (
+    <Button
+      label={text("Label", "Button")}
+      size={select("Size", sizeOptions, "medium")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      disabled={boolean("Disabled", false)}
+      bare={boolean("Bare", false)}
+      style={object("Style", { backgroundColor: "red" })}
+    />
+  ))

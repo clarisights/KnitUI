@@ -109,6 +109,20 @@ describe("Button", () => {
     })
   })
 
+  it("should apply provided classname", () => {
+    const { asFragment } = render(
+      <Button label="button" className="custom-class" />
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it("should apply provided styled", () => {
+    const { asFragment } = render(
+      <Button label="button" style={{ backgroundColor: "red" }} />
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
   it("should call the provided onClick function", () => {
     const onClick = jest.fn()
     const { getByText } = render(

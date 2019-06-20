@@ -24,6 +24,8 @@ interface BaseButtonProps {
   onClick?: (event: SyntheticEvent) => void
   fontSize: number
   lineHeight: number
+  className: string
+  style: string
 }
 
 type IStyledBaseButton = IStyled<BaseButtonProps>

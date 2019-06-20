@@ -1269,6 +1269,141 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
 </DocumentFragment>
 `;
 
+exports[`Button should apply provided classname 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="custom-class c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button should apply provided styled 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    style="background-color: red;"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
 exports[`Button with size large renders a bare variant correctly 1`] = `
 <DocumentFragment>
   .c0 {
