@@ -66,6 +66,20 @@ describe("Button", () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
+  it("custom class", () => {
+    const { asFragment } = render(
+      <Label text="label" className="custom-class" />
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it("custom style", () => {
+    const { asFragment } = render(
+      <Label text="label" style={{ backgroundColor: "red" }} />
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
   it("inline compact", () => {
     const { asFragment } = render(<Label.Inline text="label" />)
     expect(asFragment()).toMatchSnapshot()
@@ -73,6 +87,20 @@ describe("Button", () => {
 
   it("inline expanded", () => {
     const { asFragment } = render(<Label.Inline text="label" expanded />)
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it("custom class", () => {
+    const { asFragment } = render(
+      <Label.Inline text="label" className="custom-class" />
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it("custom style", () => {
+    const { asFragment } = render(
+      <Label.Inline text="label" style={{ backgroundColor: "red" }} />
+    )
     expect(asFragment()).toMatchSnapshot()
   })
 })

@@ -1,3 +1,5 @@
+import { CSSObject } from "styled-components"
+
 export type ColorPreset =
   | "neutral"
   | "danger"
@@ -13,3 +15,10 @@ export interface ParsedColorTheme {
 }
 
 export type fontSizeType = 10 | 12 | 14 | 16 | 18 | 20
+
+export interface BaseComponentProps {
+  /** CSS classname to be added */
+  className?: string
+  /** CSS styles to be adeed */
+  style?: CSSObject
+}

@@ -2,19 +2,11 @@ import React, { useContext } from "react"
 import styled from "styled-components"
 import BaseComponent from "../BaseComponent"
 
-import { fontSizeType } from "../_utils/types"
 import { parseColorPreset, parseCustomColor } from "../_utils"
 import { ThemeContext } from "styled-components"
-import { BaseLabelProps } from "./common/types"
+import { InlineLabelType } from "./types"
 
 const DEFAULT_COLOR_THEME = "neutral"
-
-interface InlineLabelPropTypes extends BaseLabelProps {
-  /** Font size of the text */
-  fontSize?: fontSizeType
-}
-
-export type InlineLabelType = React.FC<InlineLabelPropTypes>
 
 const InlineLabel: InlineLabelType = ({
   expanded = false,
@@ -22,6 +14,8 @@ const InlineLabel: InlineLabelType = ({
   colorPreset = DEFAULT_COLOR_THEME,
   customColor,
   fontSize = 12,
+  className,
+  style,
 }) => {
   const themeContext = useContext(ThemeContext)
   const { typography } = themeContext
@@ -52,7 +46,7 @@ const InlineLabel: InlineLabelType = ({
   `
 
   return (
-    <StyledDiv>
+    <StyledDiv className={className} style={style}>
       <span>{text}</span>
     </StyledDiv>
   )

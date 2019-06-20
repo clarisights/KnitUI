@@ -1,6 +1,5 @@
-import { ColorPreset, CustomColor } from "../_utils/types"
+import { ColorPreset, CustomColor, BaseComponentProps } from "../_utils/types"
 import { SyntheticEvent } from "react"
-import { CSSObject } from "styled-components"
 
 export interface ParsedColorTheme {
   background: any
@@ -9,7 +8,7 @@ export interface ParsedColorTheme {
   insetFont?: any
 }
 
-export interface ButtonBaseProps {
+export interface ButtonBaseProps extends BaseComponentProps {
   /** The text label to be shown on the button */
   label?: string
   /** Indicates the importance of the button's actions */
@@ -29,10 +28,6 @@ export interface ButtonBaseProps {
   icon?: string
   /** An event handler to be called on click of the button */
   onClick?: (event: SyntheticEvent) => void
-  /** CSS classname to be added */
-  className?: string
-  /** CSS styles to be adeed */
-  style?: CSSObject
 }
 
 export interface ButtonWrapperProps extends ButtonBaseProps {

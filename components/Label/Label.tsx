@@ -4,31 +4,9 @@ import { ThemeContext } from "styled-components"
 import { parseCustomColor, parseColorPreset } from "../_utils"
 import Icon from "../Icon"
 import BaseComponent from "../BaseComponent"
-import { BaseLabelProps } from "./common/types"
+import { ILabel } from "./types"
 
 const DEFAULT_COLOR_THEME = "neutral"
-
-import { InlineLabelType } from "./InlineLabel"
-
-interface LabelPropTypes extends BaseLabelProps {
-  /** The amount of physical space occupied */
-  size?: "small" | "medium" | "large"
-  /** Whether the edges of the label should be rounded */
-  rounded?: boolean
-  /** Whether the label should have a distinct outline */
-  outlined?: boolean
-  /**
-   * Icons to be rendered in the label. They can be on left,
-   * a right or on both sides of the text
-   * */
-  icons?: { left?: string; right?: string }
-  /** Label is focussed or being dragged */
-  focus?: boolean
-}
-
-interface ILabel extends React.FC<LabelPropTypes> {
-  Inline?: InlineLabelType
-}
 
 const Label: ILabel = ({
   expanded = false,
@@ -40,6 +18,8 @@ const Label: ILabel = ({
   customColor,
   icons,
   focus,
+  className,
+  style,
 }) => {
   const themeContext = useContext(ThemeContext)
   const { shades, typography } = themeContext
@@ -129,7 +109,7 @@ const Label: ILabel = ({
   `
 
   return (
-    <StyledDiv>
+    <StyledDiv className={className} style={style}>
       {showLeftIcon ? <StyledIcon type={icons!.left} /> : null}
       <span>{text}</span>
       {showRightIcon ? <StyledIcon type={icons!.right} /> : null}

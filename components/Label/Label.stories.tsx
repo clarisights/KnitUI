@@ -1,7 +1,13 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import Label from "./"
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs"
+import {
+  withKnobs,
+  text,
+  boolean,
+  select,
+  object,
+} from "@storybook/addon-knobs"
 const Readme = require("./README.md")
 
 const stories = storiesOf("Labels", module)
@@ -98,10 +104,30 @@ stories
       icons={{ left: "oDragIndicator", right: "oClose" }}
     />
   ))
+  .add("With custom style", () => (
+    <Label
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+      style={object("Style", { backgroundColor: "red" })}
+    />
+  ))
   .add("Inline", () => (
     <Label.Inline
       text={text("text", "inline label")}
       expanded={boolean("Expanded", false)}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+    />
+  ))
+  .add("Inline with custom style", () => (
+    <Label.Inline
+      text={text("text", "inline label")}
+      expanded={boolean("Expanded", false)}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      style={object("Style", { backgroundColor: "red" })}
     />
   ))
