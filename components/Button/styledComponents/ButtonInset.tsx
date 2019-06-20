@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
 
 interface ButtonInsetProps {
-  label: string,
-  backgroundColor: string,
-  fontColor: string,
-  fontSize: string,
+  label: string
+  backgroundColor: string
+  fontColor: string
+  fontSize: string
   lineHeight: string
 }
 
@@ -14,7 +14,7 @@ const ButtonInset: React.FC<ButtonInsetProps> = ({
   backgroundColor,
   fontColor,
   fontSize,
-  lineHeight
+  lineHeight,
 }) => {
   const StyledDiv = styled.div`
     display: inline-flex;
@@ -26,7 +26,7 @@ const ButtonInset: React.FC<ButtonInsetProps> = ({
     margin-left: 0.4rem;
     padding: 0rem 0.3rem 0rem 0.3rem;
   `
-  return (<>{label ? <StyledDiv>{label}</StyledDiv> : null}</>)
+  return <>{label ? <StyledDiv>{label}</StyledDiv> : null}</>
 }
 
 export default ButtonInset
