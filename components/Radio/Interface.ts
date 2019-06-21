@@ -40,6 +40,8 @@ export interface RadioGroupProps {
   children?: ReactNode
   /** Whether the group is disabled */
   disabled?: boolean
+  /** Custom class that needs ot be passed to the group */
+  className?: string
 }
 
 export interface RadioChangeEventTarget extends RadioProps {

@@ -1,5 +1,4 @@
-import React, { SFC, ReactNode, CSSProperties } from "react"
-import { StyledRadioRoot } from "./styledRadio"
+import React, { SFC } from "react"
 import RadioWrapper from "./RadioWrapper"
 import { RadioProps } from "./Interface"
 
