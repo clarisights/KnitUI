@@ -9,6 +9,16 @@ storiesOf("Radio", module)
       <RadioGroup.Item value={2}>Option 2</RadioGroup.Item>
     </RadioGroup>
   ))
+  .add("Small with 2 in group and default checked", () => (
+    <RadioGroup size="small">
+      <RadioGroup.Item checked value={1}>
+        Option 1
+      </RadioGroup.Item>
+      <RadioGroup.Item checked value={2}>
+        Option 2
+      </RadioGroup.Item>
+    </RadioGroup>
+  ))
   .add("Small with 2 in group with disabled", () => (
     <RadioGroup size="small" disabled defaultValue={1}>
       <RadioGroup.Item value={1}>Option 1</RadioGroup.Item>

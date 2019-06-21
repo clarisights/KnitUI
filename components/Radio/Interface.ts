@@ -65,4 +65,6 @@ export interface RadioProps {
   size?: size
   /** value of the checkbox */
   value?: any
+  /** if the radio is checked */
+  checked?: boolean
 }

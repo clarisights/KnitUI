@@ -6,7 +6,7 @@ import {
   StyledRadioInner,
 } from "./styledRadio"
 
-const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
+const RadioWrapper: SFC<RadioWrapperProps> = props => {
   const {
     prefixCls,
     className,
@@ -65,7 +65,8 @@ const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
 
   const checkedClass = checked ? `${prefixCls}-checked` : ""
   const disabledClass = props.disabled ? `${prefixCls}-disabled` : ""
-  const rootClass = `${prefixCls} ${className} ${checkedClass} ${disabledClass}`
+  const rootClass = `${prefixCls} ${className ||
+    ""} ${checkedClass} ${disabledClass}`
 
   const styleProps = { size, disabled }
 
@@ -92,12 +93,11 @@ const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
   )
 }
 
-const defaultProps = {
+RadioWrapper.defaultProps = {
   prefixCls: "knit-radio",
   className: "",
   style: {},
   size: "medium",
-  defaultChecked: false,
   onFocus() {},
   onBlur() {},
   onChange() {},

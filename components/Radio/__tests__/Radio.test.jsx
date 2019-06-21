@@ -6,7 +6,6 @@ import "jest-dom/extend-expect"
 
 afterEach(cleanup)
 
-
 describe("Radio", () => {
   describe("renders radio correctly", () => {
     it("Small with 2 in group", () => {
@@ -49,9 +48,7 @@ describe("Radio", () => {
     })
 
     it("renders with no child correctly", () => {
-      const { asFragment } = render(
-        <RadioGroup />
-      )
+      const { asFragment } = render(<RadioGroup />)
       expect(asFragment()).toMatchSnapshot()
     })
 
@@ -59,15 +56,33 @@ describe("Radio", () => {
       const onClick = jest.fn()
       const { container } = render(
         <RadioGroup>
-          <RadioGroup.Item onClick={onClick} value={1}>Option 1</RadioGroup.Item>
+          <RadioGroup.Item onClick={onClick} value={1}>
+            Option 1
+          </RadioGroup.Item>
           <RadioGroup.Item value={2} />
         </RadioGroup>
       )
       // Select first input
-      expect(container.querySelector('input')).toBeInTheDocument()
-      fireEvent.click(container.querySelector('input'))
+      expect(container.querySelector("input")).toBeInTheDocument()
+      fireEvent.click(container.querySelector("input"))
       expect(onClick).toBeCalled()
       expect(onClick.mock.calls[0].length).toBe(1)
+    })
+
+    it("should call the provided onChange function", () => {
+      const onChange = jest.fn()
+      const { container, debug } = render(
+        <RadioGroup className="abc" onChange={onChange}>
+          <RadioGroup.Item value={1}>Option 1</RadioGroup.Item>
+          <RadioGroup.Item value={2} />
+        </RadioGroup>
+      )
+      debug(container)
+      // Select first input
+      expect(container.querySelector(".abc")).toBeInTheDocument()
+      fireEvent.click(container.querySelector(".abc"))
+      expect(onChange).toBeCalled()
+      expect(onChange.mock.calls[0].length).toBe(1)
     })
 
     it("should change the radio on click", () => {
@@ -78,10 +93,9 @@ describe("Radio", () => {
         </RadioGroup>
       )
       // Select first input
-      expect(container.querySelector('input')).toBeInTheDocument()
-      fireEvent.click(container.querySelector('input'))
+      expect(container.querySelector("input")).toBeInTheDocument()
+      fireEvent.click(container.querySelector("input"))
       expect(asFragment()).toMatchSnapshot()
     })
   })
-
 })
