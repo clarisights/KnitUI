@@ -16,6 +16,6 @@ module.exports = {
   setupFilesAfterEnv: [
     "react-testing-library/cleanup-after-each"
   ],
-  modulePathIgnorePatterns: ["<rootDir>/build"],
-  testPathIgnorePatterns: ["<rootDir>/build/", "<rootDir>/node_modules/"]
+  modulePathIgnorePatterns: ["<rootDir>/build", "<rootDir>/es", "<rootDir>/lib"],
+  testPathIgnorePatterns: ["<rootDir>/build/", "<rootDir>/es", "<rootDir>/lib", "<rootDir>/node_modules/"]
 }

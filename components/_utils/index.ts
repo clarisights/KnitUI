@@ -2,7 +2,7 @@ import { ThemedStyledFunction } from "styled-components"
 import chroma from "chroma-js"
 import { ColorPreset } from "./types"
 import * as theme from "../styles/variables"
-const { secondaryPalette } = theme
+const { secondaryPalette, chromaPalette } = theme
 
 export const insertIf = (
   obj: any = {},
@@ -32,16 +32,14 @@ export function withProps<U>() {
 
 // Color utils
 
-const DEFAULT_COLOR_PRESET = "neutral"
-
 /**
  * Determines the appropriate font color based on the background color.
  */
-const getFontColor = backGroundColor => {
+export const getFontColor = backGroundColor => {
   const [r, g, b] = backGroundColor.rgb()
   // check calculates Luminance
   const threshold = 1 - (0.299 * r + 0.587 * g + 0.114 * b) / 255
-  return threshold < 0.5 ? chroma("black") : chroma("white")
+  return threshold < 0.5 ? chromaPalette.Neutral90 : chromaPalette.Neutral0
 }
 
 const createParsedColorTheme = backgroundColor => ({

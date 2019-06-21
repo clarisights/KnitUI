@@ -15,7 +15,7 @@ exports[`Button renders with a custom color theme correctly 1`] = `
   line-height: 2rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  color: #000000;
+  color: #1a1a1a;
   background-color: #f142f4;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -30,7 +30,7 @@ exports[`Button renders with a custom color theme correctly 1`] = `
 }
 
 .c0 span svg path {
-  fill: #f4f141;
+  fill: #1a1a1a;
 }
 
 .c0:hover,
@@ -46,12 +46,12 @@ exports[`Button renders with a custom color theme correctly 1`] = `
 
 .c0:active svg path,
 .c0:focus svg path {
-  fill: #000000;
+  fill: #1a1a1a;
 }
 
 .c0:hover {
   border: 1px solid #00000000;
-  color: #000000;
+  color: #1a1a1a;
 }
 
 .c0:disabled {
@@ -82,7 +82,7 @@ exports[`Button renders with a custom color theme correctly 2`] = `
   line-height: 2rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  color: #000000;
+  color: #1a1a1a;
   background-color: #f142f4;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -97,7 +97,7 @@ exports[`Button renders with a custom color theme correctly 2`] = `
 }
 
 .c0 span svg path {
-  fill: #f4f141;
+  fill: #1a1a1a;
 }
 
 .c0:hover,
@@ -113,12 +113,12 @@ exports[`Button renders with a custom color theme correctly 2`] = `
 
 .c0:active svg path,
 .c0:focus svg path {
-  fill: #000000;
+  fill: #1a1a1a;
 }
 
 .c0:hover {
   border: 1px solid #00000000;
-  color: #000000;
+  color: #1a1a1a;
 }
 
 .c0:disabled {
@@ -149,7 +149,7 @@ exports[`Button renders with a custom color theme correctly 3`] = `
   line-height: 2rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  color: #000000;
+  color: #1a1a1a;
   background-color: #f142f4;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -164,7 +164,7 @@ exports[`Button renders with a custom color theme correctly 3`] = `
 }
 
 .c0 span svg path {
-  fill: #f4f141;
+  fill: #1a1a1a;
 }
 
 .c0:hover,
@@ -180,12 +180,12 @@ exports[`Button renders with a custom color theme correctly 3`] = `
 
 .c0:active svg path,
 .c0:focus svg path {
-  fill: #000000;
+  fill: #1a1a1a;
 }
 
 .c0:hover {
   border: 1px solid #00000000;
-  color: #000000;
+  color: #1a1a1a;
 }
 
 .c0:disabled {
