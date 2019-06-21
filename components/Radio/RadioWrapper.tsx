@@ -1,11 +1,17 @@
 import React, { SFC } from "react"
 import { RadioWrapperProps } from "./Interface"
+import {
+  StyledRadioRoot,
+  StyledRadioInput,
+  StyledRadioInner,
+} from "./styledRadio"
 
 const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
   const {
     prefixCls,
     className,
     style,
+    size,
     disabled,
     readOnly,
     tabIndex,
@@ -15,12 +21,10 @@ const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
     autoFocus,
     onChange,
     value,
-    groupValue,
+    checked,
     setValue,
     ...others
   } = props
-
-  const isChecked = () => value === groupValue || props.defaultChecked
 
   const handleChange = e => {
     if (props.disabled) {
@@ -59,20 +63,22 @@ const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
     return prev
   }, {})
 
-  const checkedClass = isChecked() ? `${prefixCls}-checked` : ""
+  const checkedClass = checked ? `${prefixCls}-checked` : ""
   const disabledClass = props.disabled ? `${prefixCls}-disabled` : ""
   const rootClass = `${prefixCls} ${className} ${checkedClass} ${disabledClass}`
 
+  const styleProps = { size, disabled }
+
   return (
-    <span className={rootClass} style={style}>
-      <input
+    <StyledRadioRoot className={rootClass} {...styleProps} style={style}>
+      <StyledRadioInput
         name={name}
         type="radio"
         readOnly={readOnly}
         disabled={disabled}
         tabIndex={tabIndex}
         className={`${prefixCls}-input`}
-        checked={!!isChecked()}
+        checked={checked}
         onClick={onClick}
         onFocus={onFocus}
         onBlur={onBlur}
@@ -81,8 +87,8 @@ const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
         value={value}
         {...globalProps}
       />
-      <span className={`${prefixCls}-inner`} />
-    </span>
+      <StyledRadioInner {...styleProps} className={`${prefixCls}-inner`} />
+    </StyledRadioRoot>
   )
 }
 
@@ -90,6 +96,7 @@ const defaultProps = {
   prefixCls: "knit-radio",
   className: "",
   style: {},
+  size: "medium",
   defaultChecked: false,
   onFocus() {},
   onBlur() {},

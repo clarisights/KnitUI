@@ -21,8 +21,8 @@ storiesOf("Radio", module)
       <RadioGroup.Item value={2} />
     </RadioGroup>
   ))
-  .add("Medium with 2 in group and disabled", () => (
-    <RadioGroup size="medium" disabled defaultValue={1}>
+  .add("Medium with 2 in group and with default value", () => (
+    <RadioGroup size="medium" defaultValue={1}>
       <RadioGroup.Item value={1} />
       <RadioGroup.Item value={2} />
     </RadioGroup>

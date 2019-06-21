@@ -1,18 +1,14 @@
 import React, { SFC, ReactNode, CSSProperties } from "react"
-import { StyledRadio } from "./styledRadio"
+import { StyledRadioRoot } from "./styledRadio"
+import RadioWrapper from "./RadioWrapper"
 import { RadioProps } from "./Interface"
 
 const Radio: SFC<RadioProps> = props => {
   const { style, className, children, labelStyle, value } = props
   return (
     <label className={className} style={{ display: "flex", ...style }}>
-      <StyledRadio
-        prefixCls="knit-radio"
-        value={value}
-        type="radio"
-        {...props}
-      />
-      {!children && <span style={labelStyle}>{children}</span>}
+      <RadioWrapper prefixCls="knit-radio" value={value} {...props} />
+      {children && <span style={labelStyle}>{children}</span>}
     </label>
   )
 }

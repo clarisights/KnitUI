@@ -3,15 +3,15 @@ import _ from "lodash"
 import { RadioGroupProps, RadioProps } from "./Interface"
 
 const renderRadio = (props, value, setValue) => {
-  const propsToPass = _.omit(props, ["children"])
+  const propsToPass = _.omit(props, ["children", "defaultValue"])
   let Radios = props.children || <></>
   if (!Array.isArray(Radios)) Radios = [Radios]
   return Radios.map((Radio, index) => {
     return cloneElement(Radio, {
-      groupValue: value,
       setValue,
       style: props.style,
       key: index,
+      checked: value === Radio.props.value,
       ...propsToPass,
     })
   })

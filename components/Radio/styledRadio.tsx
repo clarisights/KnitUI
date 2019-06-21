@@ -1,74 +1,19 @@
 import styled from "styled-components"
-import RadioWrapper from "./RadioWrapper"
 import { Neutral0, Neutral50, Blue100 } from "../styles/palette"
 
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
 
-export const StyledRadio: any = styled(RadioWrapper)`
+export const StyledRadioRoot: any = styled.span`
   &.knit-radio {
     white-space: nowrap;
     outline: none;
     display: inline-block;
     position: relative;
-    .knit-radio-inner {
-      position: relative;
-      top: 0;
-      left: 0;
-      display: inline-block;
-      width: ${({ theme, size }) =>
-        isSmall(size) ? theme.smallRadioSize : theme.mediumRadioSize};
-      height: ${({ theme, size }) =>
-        isSmall(size) ? theme.smallRadioSize : theme.mediumRadioSize};
-      border-width: 1px;
-      cursor: pointer;
-      border-style: solid;
-      border-radius: 14px;
-      border-color: ${Blue100.hex};
-      background-color: ${Neutral0.hex};
-      &:after {
-        position: absolute;
-        width: ${({ theme, size }): any =>
-          isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
-        height: ${({ theme, size }): any =>
-          isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
-        left: 3px;
-        top: 3px;
-        border-radius: 6px;
-        display: table;
-        border-top: 0;
-        border-left: 0;
-        content: " ";
-        background-color: ${Blue100.hex};
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        opacity: 0;
-      }
-      &:focus {
-        box-shadow: 0px 0px 2px ${({ theme }) => theme.switchFocusColor};
-        outline: none;
-      }
-    }
 
     & + span {
       cursor: ${props => (isDisabled(props) ? "not-allowed" : "pointer")};
       margin-left: 10px;
-    }
-
-    & + span {
-      cursor: ${props => (isDisabled(props) ? "not-allowed" : "pointer")};
-      margin-left: 10px;
-    }
-
-    .knit-radio-input {
-      position: absolute;
-      left: 0;
-      z-index: 9999;
-      cursor: pointer;
-      opacity: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
     }
 
     &.knit-radio-checked {
@@ -101,4 +46,56 @@ export const StyledRadio: any = styled(RadioWrapper)`
       }
     }
   }
+`
+
+export const StyledRadioInner: any = styled.span<{
+  size: string
+}>`
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: ${({ theme, size }) =>
+    isSmall(size) ? theme.smallRadioSize : theme.mediumRadioSize};
+  height: ${({ theme, size }) =>
+    isSmall(size) ? theme.smallRadioSize : theme.mediumRadioSize};
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: ${Blue100.hex};
+  background-color: ${Neutral0.hex};
+  &:after {
+    position: absolute;
+    width: ${({ theme, size }): any =>
+      isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
+    height: ${({ theme, size }): any =>
+      isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
+    left: 3px;
+    top: 3px;
+    border-radius: 6px;
+    display: table;
+    border-top: 0;
+    border-left: 0;
+    content: " ";
+    background-color: ${Blue100.hex};
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  &:focus {
+    box-shadow: 0px 0px 2px ${({ theme }) => theme.switchFocusColor};
+    outline: none;
+  }
+`
+
+export const StyledRadioInput: any = styled.input`
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 `

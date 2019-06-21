@@ -4,7 +4,6 @@ export interface RadioWrapperProps {
   prefixCls?: string
   className?: string
   style?: CSSProperties
-  defaultChecked?: boolean
   checked?: boolean
   disabled?: boolean
   onFocus?: (e) => void | any
@@ -15,7 +14,6 @@ export interface RadioWrapperProps {
   readOnly?: boolean
   autoFocus?: boolean
   value?: any
-  groupValue?: string | number
   setValue?: (e) => void | any
   size?: string
 }
