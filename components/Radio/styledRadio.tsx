@@ -1,14 +1,6 @@
 import styled from "styled-components"
-import * as theme from "../styles/variables"
 import RadioWrapper from "./RadioWrapper"
 import { Neutral0, Neutral50, Blue100 } from "../styles/palette"
-
-const {
-  smallRadioSize,
-  mediumRadioSize,
-  smallRadioBead,
-  mediumRadioBead,
-} = theme
 
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
@@ -24,10 +16,10 @@ export const StyledRadio: any = styled(RadioWrapper)`
       top: 0;
       left: 0;
       display: inline-block;
-      width: ${({ size }) =>
-        isSmall(size) ? smallRadioSize : mediumRadioSize};
-      height: ${({ size }) =>
-        isSmall(size) ? smallRadioSize : mediumRadioSize};
+      width: ${({ theme, size }) =>
+        isSmall(size) ? theme.smallRadioSize : theme.mediumRadioSize};
+      height: ${({ theme, size }) =>
+        isSmall(size) ? theme.smallRadioSize : theme.mediumRadioSize};
       border-width: 1px;
       cursor: pointer;
       border-style: solid;
@@ -36,10 +28,10 @@ export const StyledRadio: any = styled(RadioWrapper)`
       background-color: ${Neutral0.hex};
       &:after {
         position: absolute;
-        width: ${({ size }): any =>
-          isSmall(size) ? smallRadioBead : mediumRadioBead};
-        height: ${({ size }): any =>
-          isSmall(size) ? smallRadioBead : mediumRadioBead};
+        width: ${({ theme, size }): any =>
+          isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
+        height: ${({ theme, size }): any =>
+          isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
         left: 3px;
         top: 3px;
         border-radius: 6px;
@@ -53,7 +45,7 @@ export const StyledRadio: any = styled(RadioWrapper)`
         opacity: 0;
       }
       &:focus {
-        box-shadow: 0px 0px 2px #0066ff;
+        box-shadow: 0px 0px 2px ${({ theme }) => theme.switchFocusColor};
         outline: none;
       }
     }
@@ -99,7 +91,7 @@ export const StyledRadio: any = styled(RadioWrapper)`
       .knit-radio-inner {
         cursor: not-allowed;
         opacity: 0.6;
-        background-color: #f3f3f3;
+        background-color: ${({ theme }) => theme.radioDisabledColor};
       }
       & + span {
         color: ${Neutral50.hex};

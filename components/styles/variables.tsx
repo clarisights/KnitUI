@@ -129,16 +129,11 @@ export const switchCheckedBorderColor = "hsl(118, 100%, 21%)"
 export const switchCheckedBgColor = "hsl(118, 100%, 21%)"
 export const switchCheckedDisabledBorderColor = "hsl(0, 0%, 90%)"
 export const switchCheckedDisabledBgColor = "hsl(0, 0%, 90%)"
-
-// checkbox
-export const smallCheckboxSize = "1.2rem"
-export const mediumCheckboxSize = "1.4rem"
-export const tickHeight = "0.8rem"
-export const tickWidth = "0.5rem"
-export const checkboxCheckedColor = "hsl(215.9, 100%, 20%)"
+export const switchFocusColor = "hsl(216, 100%, 20%)"
 
 // radio
 export const smallRadioSize = "1.2rem"
 export const mediumRadioSize = "1.4rem"
 export const smallRadioBead = "0.6rem"
 export const mediumRadioBead = "0.8rem"
+export const radioDisabledColor = shades.gray95

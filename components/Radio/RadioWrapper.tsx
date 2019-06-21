@@ -46,6 +46,8 @@ const RadioWrapper: SFC<RadioWrapperProps> = (props = defaultProps) => {
     }
   }
 
+  // https://github.com/react-component/checkbox/blob/3efbcecbe41533c90a0844d836adbc28c8b0a7ff/src/Checkbox.jsx#L116
+  // Pass aria and data, props, role the the created element
   const globalProps = Object.keys(others).reduce((prev, key) => {
     if (
       key.substr(0, 5) === "aria-" ||

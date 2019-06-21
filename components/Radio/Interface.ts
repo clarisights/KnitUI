@@ -30,8 +30,6 @@ export interface RadioChangeEvent {
 }
 
 export interface RadioGroupProps {
-  /** Value of the radio group */
-  value?: any
   /** Custom styles for each radio button */
   style?: CSSProperties
   /** Function to call when radio is changed */

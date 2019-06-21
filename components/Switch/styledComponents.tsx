@@ -54,7 +54,7 @@ export const StyledSwitch = styled(RCSwitch)`
       animation-name: rcSwitchOn;
     }
     &:focus {
-      box-shadow: 0 0 2px #0066ff;
+      box-shadow: 0 0 2px ${({ theme }) => theme.switchFocusColor};
       outline: none;
     }
     &.knit-switch-checked {
@@ -74,12 +74,8 @@ export const StyledSwitch = styled(RCSwitch)`
       &:after {
         left: ${({ theme, size }) =>
           isSmall(size)
-            ? `calc(${theme.switchWrapperWidthSm} - ${
-                theme.switchTrackerWidthSm
-              } - 2px)`
-            : `calc(${theme.switchWrapperWidth} - ${
-                theme.switchTrackerWidth
-              } - 2px)`};
+            ? `calc(${theme.switchWrapperWidthSm} - ${theme.switchTrackerWidthSm} - 2px)`
+            : `calc(${theme.switchWrapperWidth} - ${theme.switchTrackerWidth} - 2px)`};
       }
     }
 
