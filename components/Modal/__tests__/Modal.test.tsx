@@ -161,24 +161,17 @@ describe("Modal", () => {
         />
       </ThemeProvider>
     )
-    const dialogContainer = container.parentElement!.querySelector(
-      ".rc-dialog-wrap"
+    const dialog = container.parentElement!.querySelector(
+      ".rc-dialog-wrap .rc-dialog"
     )
-    expect(dialogContainer).toMatchSnapshot()
+    expect(dialog).toHaveStyle("color: red")
   })
 
   it("with a custom class", () => {
     const { container } = render(
       <ThemeProvider>
         <Modal
-          header={{
-            title: "Title",
-            rightSection: (
-              <div>
-                <div>The right section</div>
-              </div>
-            ),
-          }}
+          header={{ title: "Title" }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
           visible
@@ -187,9 +180,9 @@ describe("Modal", () => {
         />
       </ThemeProvider>
     )
-    const dialogContainer = container.parentElement!.querySelector(
-      ".rc-dialog-wrap"
+    const dialog = container.parentElement!.querySelector(
+      ".rc-dialog-wrap .rc-dialog"
     )
-    expect(dialogContainer).toMatchSnapshot()
+    expect(dialog).toHaveClass("custom-class")
   })
 })

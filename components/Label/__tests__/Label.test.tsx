@@ -1,12 +1,12 @@
 import React from "react"
 import Label from "../"
-import { render, cleanup, fireEvent } from "react-testing-library"
+import { render, cleanup } from "react-testing-library"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
 
 afterEach(cleanup)
 
-describe("Button", () => {
+describe("Label", () => {
   const sizes = ["small", "medium", "large"]
 
   // All tests are executes for each of the three sizes
@@ -91,16 +91,18 @@ describe("Button", () => {
   })
 
   it("custom class", () => {
-    const { asFragment } = render(
+    const { container } = render(
       <Label.Inline text="label" className="custom-class" />
     )
-    expect(asFragment()).toMatchSnapshot()
+    const label = container.firstChild
+    expect(label).toHaveClass("custom-class")
   })
 
   it("custom style", () => {
-    const { asFragment } = render(
+    const { container } = render(
       <Label.Inline text="label" style={{ backgroundColor: "red" }} />
     )
-    expect(asFragment()).toMatchSnapshot()
+    const label = container.firstChild
+    expect(label).toHaveStyle("background-color: red")
   })
 })

@@ -110,17 +110,17 @@ describe("Button", () => {
   })
 
   it("should apply provided classname", () => {
-    const { asFragment } = render(
+    const { container } = render(
       <Button label="button" className="custom-class" />
     )
-    expect(asFragment()).toMatchSnapshot()
+    expect(container.firstChild).toHaveClass("custom-class")
   })
 
   it("should apply provided styled", () => {
-    const { asFragment } = render(
+    const { container } = render(
       <Button label="button" style={{ backgroundColor: "red" }} />
     )
-    expect(asFragment()).toMatchSnapshot()
+    expect(container.firstChild).toHaveStyle("background-color: red")
   })
 
   it("should call the provided onClick function", () => {
