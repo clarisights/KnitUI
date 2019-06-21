@@ -1,0 +1,963 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
+<DocumentFragment>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: not-allowed;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined knit-radio-checked knit-radio-disabled c0"
+      disabled=""
+    >
+      <input
+        checked=""
+        class="knit-radio-input c1"
+        disabled=""
+        name="nodejs"
+        type="radio"
+        value="1"
+      />
+      <span
+        class="knit-radio-inner c2"
+        disabled=""
+      />
+    </span>
+    <span>
+      Option 1
+    </span>
+  </label>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: not-allowed;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined  knit-radio-disabled c0"
+      disabled=""
+    >
+      <input
+        class="knit-radio-input c1"
+        disabled=""
+        name="nodejs"
+        type="radio"
+        value="2"
+      />
+      <span
+        class="knit-radio-inner c2"
+        disabled=""
+      />
+    </span>
+    <span>
+      Option 2
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Radio renders radio correctly Small with 2 in group 1`] = `
+<DocumentFragment>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined   c0"
+    >
+      <input
+        class="knit-radio-input c1"
+        name="nodejs"
+        type="radio"
+        value="1"
+      />
+      <span
+        class="knit-radio-inner c2"
+      />
+    </span>
+    <span>
+      Option 1
+    </span>
+  </label>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined   c0"
+    >
+      <input
+        class="knit-radio-input c1"
+        name="nodejs"
+        type="radio"
+        value="2"
+      />
+      <span
+        class="knit-radio-inner c2"
+      />
+    </span>
+    <span>
+      Option 2
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] = `
+<DocumentFragment>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: not-allowed;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined knit-radio-checked knit-radio-disabled c0"
+      disabled=""
+    >
+      <input
+        checked=""
+        class="knit-radio-input c1"
+        disabled=""
+        name="nodejs"
+        type="radio"
+        value="1"
+      />
+      <span
+        class="knit-radio-inner c2"
+        disabled=""
+      />
+    </span>
+    <span>
+      Option 1
+    </span>
+  </label>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: not-allowed;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined  knit-radio-disabled c0"
+      disabled=""
+    >
+      <input
+        class="knit-radio-input c1"
+        disabled=""
+        name="nodejs"
+        type="radio"
+        value="2"
+      />
+      <span
+        class="knit-radio-inner c2"
+        disabled=""
+      />
+    </span>
+    <span>
+      Option 2
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Radio renders radio correctly renders with no child correctly 1`] = `<DocumentFragment />`;
+
+exports[`Radio renders radio correctly renders with single child correctly 1`] = `
+<DocumentFragment>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined   c0"
+    >
+      <input
+        class="knit-radio-input c1"
+        name="nodejs"
+        type="radio"
+        value="1"
+      />
+      <span
+        class="knit-radio-inner c2"
+      />
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Radio renders radio correctly should change the radio on click 1`] = `
+<DocumentFragment>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined knit-radio-checked  c0"
+    >
+      <input
+        class="knit-radio-input c1"
+        name="nodejs"
+        type="radio"
+        value="1"
+      />
+      <span
+        class="knit-radio-inner c2"
+      />
+    </span>
+    <span>
+      Option 1
+    </span>
+  </label>
+  .c0.knit-radio {
+  white-space: nowrap;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+.c0.knit-radio + span {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-inner {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0.knit-radio.knit-radio-disabled + span {
+  color: #808080;
+}
+
+.c0.knit-radio.knit-radio-disabled .knit-radio-input {
+  cursor: not-allowed;
+}
+
+.c2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 14px;
+  border-color: #002966;
+  background-color: #FFFFFF;
+}
+
+.c2:after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: " ";
+  background-color: #002966;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+
+.c2:focus {
+  box-shadow: 0px 0px 2px;
+  outline: none;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+<label
+    style="display: flex;"
+  >
+    <span
+      class="knit-radio undefined   c0"
+    >
+      <input
+        class="knit-radio-input c1"
+        name="nodejs"
+        type="radio"
+        value="2"
+      />
+      <span
+        class="knit-radio-inner c2"
+      />
+    </span>
+  </label>
+</DocumentFragment>
+`;
