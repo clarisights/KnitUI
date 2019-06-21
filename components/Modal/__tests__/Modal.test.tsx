@@ -140,4 +140,56 @@ describe("Modal", () => {
     fireEvent.click(closeButton!)
     expect(onCloseStub).toBeCalled()
   })
+
+  it("with a custom style", () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Modal
+          header={{
+            title: "Title",
+            rightSection: (
+              <div>
+                <div>The right section</div>
+              </div>
+            ),
+          }}
+          body={<div>Body</div>}
+          footer={<div>Footer</div>}
+          visible
+          style={{ color: "red" }}
+          onClose={() => {}}
+        />
+      </ThemeProvider>
+    )
+    const dialogContainer = container.parentElement!.querySelector(
+      ".rc-dialog-wrap"
+    )
+    expect(dialogContainer).toMatchSnapshot()
+  })
+
+  it("with a custom class", () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Modal
+          header={{
+            title: "Title",
+            rightSection: (
+              <div>
+                <div>The right section</div>
+              </div>
+            ),
+          }}
+          body={<div>Body</div>}
+          footer={<div>Footer</div>}
+          visible
+          className="custom-class"
+          onClose={() => {}}
+        />
+      </ThemeProvider>
+    )
+    const dialogContainer = container.parentElement!.querySelector(
+      ".rc-dialog-wrap"
+    )
+    expect(dialogContainer).toMatchSnapshot()
+  })
 })

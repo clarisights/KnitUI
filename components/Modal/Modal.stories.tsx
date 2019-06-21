@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { storiesOf } from "@storybook/react"
 import Modal from "./"
-import { withKnobs, select } from "@storybook/addon-knobs"
+import { withKnobs, select, object } from "@storybook/addon-knobs"
 
 const Readme = require("./README.md")
 
@@ -157,6 +157,27 @@ stories
             size={select("Size", sizeOptions, "medium")}
             visible={modalVisible}
             onClose={() => setModalVisible(false)}
+          />
+          <button onClick={() => setModalVisible(true)}>Open modal</button>
+        </>
+      )
+    }
+    return <ModalWrapper />
+  })
+  .add("with custom style", () => {
+    const ModalWrapper = () => {
+      const [modalVisible, setModalVisible] = useState(false)
+      return (
+        <>
+          <Modal
+            header={{ title: "Right panel modal" }}
+            body={<div style={{ height: "1000px" }}>Body</div>}
+            footer={<div>Footer</div>}
+            size={select("Size", sizeOptions, "medium")}
+            visible={modalVisible}
+            onClose={() => setModalVisible(false)}
+            style={object("Style", { color: "red" })}
+            className="custom-class"
           />
           <button onClick={() => setModalVisible(true)}>Open modal</button>
         </>

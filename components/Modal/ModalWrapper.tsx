@@ -2,6 +2,7 @@ import React, { useState, useContext, ReactNode } from "react"
 import BaseComponent from "../BaseComponent"
 import styled, { ThemeContext } from "styled-components"
 import Dialog from "rc-dialog"
+import "rc-dialog/assets/index.css"
 
 import { Header, Footer, Main } from "./components"
 import {
@@ -13,6 +14,7 @@ import {
 import Icon from "../Icon"
 import "rc-dialog/assets/index.css"
 import { borderRadius } from "./common/styles"
+import { BaseComponentProps } from "../_utils/types"
 
 const sizeToWidth = {
   small: "49rem",
@@ -21,7 +23,7 @@ const sizeToWidth = {
   "x-large": "105rem",
 }
 
-export interface ModalWrapperProps {
+export interface ModalWrapperProps extends BaseComponentProps {
   /** Contents to be rendered in the header section */
   header: { title: string; rightSection?: ReactNode }
   /** Contents to be rendered on in the body section */
@@ -140,6 +142,8 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   onClose,
   panel,
   destroyOnClose,
+  className,
+  style,
 }) => {
   // Revert to default padding if not explicitly supplied.
   /**
@@ -185,7 +189,9 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       closeIcon={<Icon type="oClear" />}
       destroyOnClose={destroyOnClose}
       transitionName={transitionName}
-      maskTransitionName={maskTransitionName}>
+      maskTransitionName={maskTransitionName}
+      className={className}
+      style={style}>
       <ModalProxy
         header={<Header {...header} />}
         body={<Main ref={setBodyRef}>{body}</Main>}
