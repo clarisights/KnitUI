@@ -159,4 +159,6 @@ Breadcrumb.defaultProps = {
   truncateTo: Infinity,
 }
 
+Breadcrumb.Item = BreadcrumbItem
+
 export default Breadcrumb
