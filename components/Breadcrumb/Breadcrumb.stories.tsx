@@ -2,7 +2,7 @@ import React from "react"
 import { storiesOf } from "@storybook/react"
 import { withKnobs, text, number, object } from "@storybook/addon-knobs"
 import Breadcrumb from "./index"
-import { Icon } from "../Icon"
+import Icon from "../Icon"
 const Readme = require("./Breadcrumb.README.md")
 
 const stories = storiesOf("Breadcrumb", module)
