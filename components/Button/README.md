@@ -28,4 +28,6 @@ import { Button } from "KnitUI"
 | insetLabel   | string  | Yes | None    |  An inset value, typically used for showing notifications |
 | href   | string  | Yes | None    |  A location to navigate to |
 | onClick   | Function  | Yes | None    | A click handler to be executed on click of the button. Will receive the `event` as an argument |
+| className | string | Yes | None | CSS class name to be added |
+| style | CSS Object | Yes | None | CSS style to be added |
 

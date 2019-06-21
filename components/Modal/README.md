@@ -35,4 +35,5 @@ return <ModalWrapper />
 | onClose    | Function | Yes | None |unction to be executed when the modal is dismissed |
 | panel | `{ position: "left" | "right" | "bottom"; content: ReactNode }` | Yes | None | Addon panel that is attached to the modal  
 | destroyOnClose   | boolean | `false` | to unmount child compenents on onClose |
-
+| className | string | Yes | None | CSS class name to be added |
+| style | CSS Object | Yes | None | CSS style to be added |
