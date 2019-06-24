@@ -71,14 +71,13 @@ describe("Radio", () => {
 
     it("should call the provided onChange function", () => {
       const onChange = jest.fn()
-      const { container, debug } = render(
+      const { container } = render(
         <RadioGroup className="abc" onChange={onChange}>
           <RadioGroup.Item value={1}>Option 1</RadioGroup.Item>
           <RadioGroup.Item value={2} />
         </RadioGroup>
       )
-      debug(container)
-      // Select first input
+      // select container element
       expect(container.querySelector(".abc")).toBeInTheDocument()
       fireEvent.click(container.querySelector(".abc"))
       expect(onChange).toBeCalled()
