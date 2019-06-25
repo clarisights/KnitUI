@@ -1,7 +1,5 @@
 export interface IStyled<PropType> {
-  customProps: {
-    showBorder: PropType
-  }
+  customProps: PropType
   theme: any
   [htmlProp: string]: any
 }

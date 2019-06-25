@@ -1,16 +1,14 @@
 import styled from "styled-components"
+import { IStyled } from "../../common/types"
 
 interface ButtonInsetProps {
-  customProps: {
-    backgroundColor: string
-    fontColor: string
-    fontSize: string
-    lineHeight: string
-  }
-  theme: any
+  backgroundColor: string
+  fontColor: string
+  fontSize: string
+  lineHeight: string
 }
 
-const ButtonInset = styled.div<ButtonInsetProps>`
+const ButtonInset = styled.div<IStyled<ButtonInsetProps>>`
   display: inline-flex;
   background-color: ${({ customProps }) => customProps.backgroundColor};
   color: ${({ customProps }) => customProps.fontColor};

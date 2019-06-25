@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { HTMLProps } from "react"
+import { IStyled } from "../../common/types"
 
 type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
 
@@ -10,25 +10,22 @@ interface ParsedColorTheme {
   insetFont?: any
 }
 
-interface IStyledBaseButton {
-  customProps: {
-    label?: string
-    kind: "primary" | "secondary"
-    colorTheme: ParsedColorTheme
-    ghost: boolean
-    size: "small" | "medium" | "large"
-    disabled?: boolean
-    bare: boolean
-    icon?: string
-    insetLabel?: string
-    onClick?: (event) => void
-    fontSize: number
-    lineHeight: number
-  }
-  theme: any
-  [propName: string]: any
+interface BaseButtonProps {
+  label?: string
+  kind: "primary" | "secondary"
+  colorTheme: ParsedColorTheme
+  ghost: boolean
+  size: "small" | "medium" | "large"
+  disabled?: boolean
+  bare: boolean
+  icon?: string
+  insetLabel?: string
+  onClick?: (event) => void
+  fontSize: number
+  lineHeight: number
 }
 
+type IStyledBaseButton = IStyled<BaseButtonProps>
 // Paddings
 
 const ICON_PADDINGS = {
