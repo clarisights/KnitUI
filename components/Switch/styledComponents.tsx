@@ -74,12 +74,8 @@ export const StyledSwitch = styled(RCSwitch)`
       &:after {
         left: ${({ theme, size }) =>
           isSmall(size)
-            ? `calc(${theme.switchWrapperWidthSm} - ${
-                theme.switchTrackerWidthSm
-              } - 2px)`
-            : `calc(${theme.switchWrapperWidth} - ${
-                theme.switchTrackerWidth
-              } - 2px)`};
+            ? `calc(${theme.switchWrapperWidthSm} - ${theme.switchTrackerWidthSm} - 2px)`
+            : `calc(${theme.switchWrapperWidth} - ${theme.switchTrackerWidth} - 2px)`};
       }
     }
 

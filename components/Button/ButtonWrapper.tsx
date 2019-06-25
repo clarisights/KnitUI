@@ -1,4 +1,4 @@
-import React from "react"
+import React, { SyntheticEvent } from "react"
 import Icon from "../Icon"
 import * as theme from "../styles/variables"
 import chroma from "chroma-js"
@@ -31,7 +31,7 @@ interface ButtonWrapperProps {
   /** The text label to be shown on the button */
   label?: string
   /** Indicates the importance of the button's actions */
-  type?: "primary" | "secondary"
+  kind?: "primary" | "secondary"
   /** Indicates the state of an action. Can be a preset string or an object
    * representing custom color theme that overrides the defaults,
    * The color theme should be passed in the form of an object containing two properties,
@@ -89,7 +89,7 @@ const parseColorTheme = colorTheme => {
 
 const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   label,
-  type,
+  kind,
   ghost,
   size,
   disabled,
@@ -112,36 +112,40 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
 
   return (
     <ButtonBase
-      label={label}
-      icon={icon}
-      type={type!}
-      ghost={ghost!}
-      size={size!}
-      disabled={disabled}
-      onClick={e =>
+      customProps={{
+        label,
+        icon,
+        kind,
+        ghost,
+        size,
+        bare,
+        colorTheme: parsedColorTheme,
+        fontSize: baseFontSize,
+        lineHeight: baseLineHeight,
+      }}
+      onClick={(e: SyntheticEvent) =>
         (onClick && onClick(e)) || (href && window.location.assign(href))
       }
-      bare={bare!}
-      colorTheme={parsedColorTheme}
-      fontSize={baseFontSize}
-      lineHeight={baseLineHeight}>
+      disabled={disabled}>
       {icon ? <Icon type={icon} /> : null}
       {label}
       {insetLabel ? (
         <ButtonInset
-          label={insetLabel}
-          backgroundColor={parsedColorTheme.insetBackground}
-          fontColor={parsedColorTheme.insetFont}
-          fontSize={`${insetFontSize}rem`}
-          lineHeight={`${insetLineHeight}rem`}
-        />
+          customProps={{
+            backgroundColor: parsedColorTheme.insetBackground,
+            fontColor: parsedColorTheme.insetFont,
+            fontSize: `${insetFontSize}rem`,
+            lineHeight: `${insetLineHeight}rem`,
+          }}>
+          {insetLabel}
+        </ButtonInset>
       ) : null}
     </ButtonBase>
   )
 }
 
 ButtonWrapper.defaultProps = {
-  type: "primary",
+  kind: "primary",
   colorTheme: DEFAULT_COLOR_THEME,
   ghost: false,
   disabled: false,

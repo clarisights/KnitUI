@@ -25,11 +25,11 @@ exports[`Button renders with a custom color theme correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #f4f141;
 }
 
@@ -92,11 +92,11 @@ exports[`Button renders with a custom color theme correctly 2`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #f4f141;
 }
 
@@ -159,11 +159,11 @@ exports[`Button renders with a custom color theme correctly 3`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #f4f141;
 }
 
@@ -226,11 +226,11 @@ exports[`Button renders with a specified color preset corretly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -293,11 +293,11 @@ exports[`Button renders with a specified color preset corretly 2`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -360,11 +360,11 @@ exports[`Button renders with a specified color preset corretly 3`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -427,11 +427,11 @@ exports[`Button renders with inset correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -513,11 +513,11 @@ exports[`Button renders with inset correctly 2`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -599,11 +599,11 @@ exports[`Button renders with inset correctly 3`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -692,11 +692,11 @@ exports[`Button renders with text and an icon correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.2rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -784,11 +784,11 @@ exports[`Button renders with text and an icon correctly 2`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.4rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -876,11 +876,11 @@ exports[`Button renders with text and an icon correctly 3`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.4rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -968,11 +968,11 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.2rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -1079,11 +1079,11 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.4rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -1190,11 +1190,11 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.4rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -1294,11 +1294,11 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -1361,11 +1361,11 @@ exports[`Button with size large renders a ghost variant correctly 1`] = `
   border: 1px solid #002966;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -1428,11 +1428,11 @@ exports[`Button with size large renders a primary variant with a label correctly
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -1502,11 +1502,11 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.4rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -1594,11 +1594,11 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.4rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -1679,11 +1679,11 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -1746,11 +1746,11 @@ exports[`Button with size medium renders a ghost variant correctly 1`] = `
   border: 1px solid #002966;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -1813,11 +1813,11 @@ exports[`Button with size medium renders a primary variant with a label correctl
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -1887,11 +1887,11 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.4rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -1979,11 +1979,11 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.4rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -2064,11 +2064,11 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -2131,11 +2131,11 @@ exports[`Button with size small renders a ghost variant correctly 1`] = `
   border: 1px solid #002966;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -2198,11 +2198,11 @@ exports[`Button with size small renders a primary variant with a label correctly
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
@@ -2272,11 +2272,11 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.2rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #002966;
 }
 
@@ -2364,11 +2364,11 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   border: 1px solid #00000000;
 }
 
-.c0 svg {
+.c0 span {
   margin-right: 0.2rem;
 }
 
-.c0 svg path {
+.c0 span svg path {
   fill: #ffffff;
 }
 
