@@ -44,7 +44,7 @@ stories
   .add("Simple primary with text", () => (
     <Button
       label={text("Label", "Button")}
-      kind={select("Kind", typeOptions, "primary")}
+      type={select("Type", typeOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}
@@ -56,7 +56,7 @@ stories
   .add("Simple secondary with text", () => (
     <Button
       label={text("Label", "Button")}
-      kind={select("Kind", typeOptions, "secondary")}
+      type={select("Type", typeOptions, "secondary")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}
@@ -68,7 +68,7 @@ stories
   .add("Ghost (inverted color scheme)", () => (
     <Button
       label={text("Label", "Button")}
-      kind={select("Kind", typeOptions, "primary")}
+      type={select("Type", typeOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", true)}
@@ -80,7 +80,7 @@ stories
   .add("With an inset", () => (
     <Button
       label={text("Label", "Button")}
-      kind={select("Kind", typeOptions, "primary")}
+      type={select("Type", typeOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}

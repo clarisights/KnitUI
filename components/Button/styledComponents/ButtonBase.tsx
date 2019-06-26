@@ -12,7 +12,7 @@ interface ParsedColorTheme {
 
 interface BaseButtonProps {
   label?: string
-  kind: "primary" | "secondary"
+  type: "primary" | "secondary"
   colorTheme: ParsedColorTheme
   ghost: boolean
   size: "small" | "medium" | "large"
@@ -42,7 +42,7 @@ const VERTICAL_PADINGS = {
 
 const getHorizontalPadding = (props: IStyledBaseButton) => {
   const {
-    customProps: { size, kind, fontSize },
+    customProps: { size, type, fontSize },
   } = props
   const paddings = {
     small: {
@@ -58,7 +58,7 @@ const getHorizontalPadding = (props: IStyledBaseButton) => {
       secondary: fontSize / 2,
     },
   }
-  return paddings[size][kind]
+  return paddings[size][type]
 }
 
 const getRightPadding = (props: IStyledBaseButton) => {

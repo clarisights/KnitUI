@@ -31,7 +31,7 @@ interface ButtonWrapperProps {
   /** The text label to be shown on the button */
   label?: string
   /** Indicates the importance of the button's actions */
-  kind?: "primary" | "secondary"
+  type?: "primary" | "secondary"
   /** Indicates the state of an action. Can be a preset string or an object
    * representing custom color theme that overrides the defaults,
    * The color theme should be passed in the form of an object containing two properties,
@@ -89,7 +89,7 @@ const parseColorTheme = colorTheme => {
 
 const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   label,
-  kind,
+  type,
   ghost,
   size,
   disabled,
@@ -115,7 +115,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       customProps={{
         label,
         icon,
-        kind,
+        type,
         ghost,
         size,
         bare,
@@ -145,7 +145,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
 }
 
 ButtonWrapper.defaultProps = {
-  kind: "primary",
+  type: "primary",
   colorTheme: DEFAULT_COLOR_THEME,
   ghost: false,
   disabled: false,
