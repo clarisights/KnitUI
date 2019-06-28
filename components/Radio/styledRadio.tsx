@@ -1,10 +1,11 @@
 import styled from "styled-components"
 import { Neutral0, Neutral50, Blue100 } from "../styles/palette"
+import { RadioWrapperProps } from "./Interface"
 
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
 
-export const StyledRadioRoot: any = styled.span`
+export const StyledRadioRoot = styled.span<RadioWrapperProps>`
   &.knit-radio {
     white-space: nowrap;
     outline: none;
@@ -48,8 +49,8 @@ export const StyledRadioRoot: any = styled.span`
   }
 `
 
-export const StyledRadioInner: any = styled.span<{
-  size: string
+export const StyledRadioInner = styled.span<{
+  size: string | undefined
 }>`
   position: relative;
   top: 0;
@@ -67,9 +68,9 @@ export const StyledRadioInner: any = styled.span<{
   background-color: ${Neutral0.hex};
   &:after {
     position: absolute;
-    width: ${({ theme, size }): any =>
+    width: ${({ theme, size }) =>
       isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
-    height: ${({ theme, size }): any =>
+    height: ${({ theme, size }) =>
       isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
     left: 3px;
     top: 3px;
@@ -89,7 +90,7 @@ export const StyledRadioInner: any = styled.span<{
   }
 `
 
-export const StyledRadioInput: any = styled.input`
+export const StyledRadioInput = styled.input`
   position: absolute;
   left: 0;
   z-index: 9999;
