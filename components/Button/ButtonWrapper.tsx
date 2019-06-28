@@ -1,4 +1,4 @@
-import React from "react"
+import React, { SyntheticEvent } from "react"
 import Icon from "../Icon"
 import * as theme from "../styles/variables"
 import chroma from "chroma-js"
@@ -112,29 +112,33 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
 
   return (
     <ButtonBase
-      label={label}
-      icon={icon}
-      type={type!}
-      ghost={ghost!}
-      size={size!}
-      disabled={disabled}
-      onClick={e =>
+      customProps={{
+        label,
+        icon,
+        type,
+        ghost,
+        size,
+        bare,
+        colorTheme: parsedColorTheme,
+        fontSize: baseFontSize,
+        lineHeight: baseLineHeight,
+      }}
+      onClick={(e: SyntheticEvent) =>
         (onClick && onClick(e)) || (href && window.location.assign(href))
       }
-      bare={bare!}
-      colorTheme={parsedColorTheme}
-      fontSize={baseFontSize}
-      lineHeight={baseLineHeight}>
+      disabled={disabled}>
       {icon ? <Icon type={icon} /> : null}
       {label}
       {insetLabel ? (
         <ButtonInset
-          label={insetLabel}
-          backgroundColor={parsedColorTheme.insetBackground}
-          fontColor={parsedColorTheme.insetFont}
-          fontSize={`${insetFontSize}rem`}
-          lineHeight={`${insetLineHeight}rem`}
-        />
+          customProps={{
+            backgroundColor: parsedColorTheme.insetBackground,
+            fontColor: parsedColorTheme.insetFont,
+            fontSize: `${insetFontSize}rem`,
+            lineHeight: `${insetLineHeight}rem`,
+          }}>
+          {insetLabel}
+        </ButtonInset>
       ) : null}
     </ButtonBase>
   )

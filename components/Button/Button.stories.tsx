@@ -56,7 +56,7 @@ stories
   .add("Simple secondary with text", () => (
     <Button
       label={text("Label", "Button")}
-      type={select("Type", typeOptions, "primary")}
+      type={select("Type", typeOptions, "secondary")}
       size={select("Size", sizeOptions, "medium")}
       colorTheme={select("Color theme", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}

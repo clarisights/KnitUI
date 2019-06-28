@@ -1,21 +1,16 @@
-import React, { ReactNode } from "react"
 import styled from "styled-components"
 import { border, padding } from "../common/styles"
+import { IStyled } from "../../common/types"
 
-const Footer = ({
-  children,
-  showBorder,
-}: {
-  children: ReactNode
+interface FooterProps {
   showBorder: boolean
-}) => {
-  const StyledDiv = styled.div`
-    padding: ${`${padding.vertical} ${padding.horizontal}`};
-    justify-self: flex-end;
-    border-top: ${showBorder ? border : `none`};
-  `
-
-  return <StyledDiv>{children}</StyledDiv>
 }
+
+const Footer = styled.div<IStyled<FooterProps>>`
+  padding: ${`${padding.vertical} ${padding.horizontal}`};
+  justify-self: flex-end;
+  border-top: ${({ customProps: { showBorder } }) =>
+    showBorder ? border : `none`};
+`
 
 export default Footer

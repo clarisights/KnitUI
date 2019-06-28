@@ -7,7 +7,6 @@ import {
   RightPanelModal,
   BottomPanelModal,
 } from "./variants/index"
-import * as theme from "../styles/variables"
 import Icon from "../Icon"
 import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
@@ -43,23 +42,102 @@ export interface ModalWrapperProps {
   destroyOnClose?: boolean
 }
 
+interface IStyledDialog {
+  customProps: ModalWrapperProps
+  theme: any
+  [propName: string]: any
+}
+
+// Animation related
+const appearDuration = 250
+const transitionName = `modal`
+const maskTransitionName = `modalMask`
+const maskDuration = 100
+const modalEnterTransitionPath = `cubic-bezier(0, 0, 0, 1)`
+const modalLeaveTransitionPath = `cubic-bezier(1, 0, 1, 1)`
+const animationDelay = `50ms`
+
+// Animations on leave are not working for rc-dialog, this happens only when
+// styiling the Dialog using styled components. It is probably the case that
+// the Dialog component is being re-created on close, causing the previous
+// stored ref to be lost
+const StyledDialog = styled(Dialog)<IStyledDialog>`
+  .rc-dialog-body {
+    padding: 0;
+    height: calc(100vh - 14rem);
+    min-height: 35rem;
+  }
+  .rc-dialog-content {
+    border-radius: ${borderRadius};
+  }
+  width: ${({ customProps: { size } }) => sizeToWidth[size!]} !important;
+  .rc-dialog-close {
+    right: -1rem;
+    top: -1rem;
+    opacity: unset;
+    padding: 0.15rem;
+    line-height: 0;
+    background-color: ${({ theme }) => theme.shades.gray50};
+    border-radius: 999px;
+    svg {
+        fill: ${({ theme }) => theme.shades.gray90};
+      }
+    }
+  }
+  &.${transitionName}-appear {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  &.${transitionName}-appear.${transitionName}-appear-active {
+    opacity: 1;
+    transform: scale(1.0);
+    transition: opacity ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay}, transform ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay};
+  }
+
+  &.${transitionName}-leave {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.${transitionName}-leave.${transitionName}-leave-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity ${appearDuration}ms ${modalLeaveTransitionPath}, transform ${appearDuration}ms ${modalLeaveTransitionPath};
+  }
+
+  &.${maskTransitionName}-appear {
+    opacity: 0;
+  }
+
+  &.${maskTransitionName}-appear.${maskTransitionName}-appear-active {
+    opacity: 1;
+    transition: opacity ${maskDuration}ms ease-out;
+  }
+
+  &.${maskTransitionName}-leave {
+    opacity: 1;
+  }
+
+  &.${maskTransitionName}-leave.${maskTransitionName}-leave-active {
+    opacity: 0;
+    transition: opacity ${maskDuration}ms ease-out;
+  }
+`
+
 /**
  * The external interface for the modal
  */
 const ModalWrapper: React.FC<ModalWrapperProps> = ({
-  size = "medium",
+  size,
   header,
   body,
   footer,
-  padding = {
-    vertical: "2.1rem",
-    horizontal: "2.8rem",
-  },
   getContainer,
-  visible = false,
+  visible,
   onClose,
   panel,
-  destroyOnClose = false,
+  destroyOnClose,
 }) => {
   /**
    * Renders the appopriate variant based on the availability of a
@@ -93,85 +171,11 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     }
   }
 
-  // Animation related
-  const appearDuration = 250
-  const transitionName = `modal`
-  const maskTransitionName = `modalMask`
-  const maskDuration = 100
-  const modalEnterTransitionPath = `cubic-bezier(0, 0, 0, 1)`
-  const modalLeaveTransitionPath = `cubic-bezier(1, 0, 1, 1)`
-  const animationDelay = `50ms`
-
-  // Animations on leave are not working for rc-dialog, this happens only when
-  // styiling the Dialog using styled components. It is probably the case that
-  // the Dialog component is being re-created on close, causing the previous
-  // stored ref to be lost
-  const StyledDialog = styled(Dialog)`
-    .rc-dialog-body {
-      padding: 0;
-      height: calc(100vh - 14rem);
-      min-height: 35rem;
-    }
-    .rc-dialog-content {
-      border-radius: ${borderRadius};
-    }
-    width: ${sizeToWidth[size!]} !important;
-    .rc-dialog-close {
-      right: -1rem;
-      top: -1rem;
-      opacity: unset;
-      padding: 0.15rem;
-      line-height: 0;
-      background-color: ${theme.shades.gray50};
-      border-radius: 999px;
-      svg {
-          fill: ${theme.shades.gray90};
-        }
-      }
-    }
-    &.${transitionName}-appear {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-
-    &.${transitionName}-appear.${transitionName}-appear-active {
-      opacity: 1;
-      transform: scale(1.0);
-      transition: opacity ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay}, transform ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay};
-    }
-
-    &.${transitionName}-leave {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    &.${transitionName}-leave.${transitionName}-leave-active {
-      opacity: 0;
-      transform: scale(0.9);
-      transition: opacity ${appearDuration}ms ${modalLeaveTransitionPath}, transform ${appearDuration}ms ${modalLeaveTransitionPath};
-    }
-
-    &.${maskTransitionName}-appear {
-      opacity: 0;
-    }
-
-    &.${maskTransitionName}-appear.${maskTransitionName}-appear-active {
-      opacity: 1;
-      transition: opacity ${maskDuration}ms ease-out;
-    }
-
-    &.${maskTransitionName}-leave {
-      opacity: 1;
-    }
-
-    &.${maskTransitionName}-leave.${maskTransitionName}-leave-active {
-      opacity: 0;
-      transition: opacity ${maskDuration}ms ease-out;
-    }
-  `
-
   return (
     <StyledDialog
+      customProps={{
+        size,
+      }}
       getContainer={getContainer}
       visible={visible}
       onClose={onClose}
@@ -181,11 +185,25 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       maskTransitionName={maskTransitionName}>
       <ModalProxy
         header={<Header {...header} />}
-        body={<Main setBodyRef={setBodyRef}>{body}</Main>}
-        footer={<Footer showBorder={showFooterBorder}>{footer}</Footer>}
+        body={<Main ref={setBodyRef}>{body}</Main>}
+        footer={
+          <Footer customProps={{ showBorder: showFooterBorder }}>
+            {footer}
+          </Footer>
+        }
       />
     </StyledDialog>
   )
+}
+
+ModalWrapper.defaultProps = {
+  size: "medium",
+  padding: {
+    vertical: "2.1rem",
+    horizontal: "2.8rem",
+  },
+  visible: false,
+  destroyOnClose: false,
 }
 
 export default ModalWrapper

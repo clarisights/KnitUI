@@ -1,6 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal with size large with a bottom panel 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -107,55 +156,6 @@ exports[`Modal with size large with a bottom panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -248,6 +248,55 @@ exports[`Modal with size large with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size large with a left panel 1`] = `
+.c9 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -379,55 +428,6 @@ exports[`Modal with size large with a left panel 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c10 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -530,6 +530,55 @@ exports[`Modal with size large with a left panel 1`] = `
 `;
 
 exports[`Modal with size large with a right panel 1`] = `
+.c8 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -664,55 +713,6 @@ exports[`Modal with size large with a right panel 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c9 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -815,6 +815,55 @@ exports[`Modal with size large with a right panel 1`] = `
 `;
 
 exports[`Modal with size large with right section in header 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -913,55 +962,6 @@ exports[`Modal with size large with right section in header 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -1055,6 +1055,55 @@ exports[`Modal with size large with right section in header 1`] = `
 `;
 
 exports[`Modal with size large with simple config 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1155,55 +1204,6 @@ exports[`Modal with size large with simple config 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -1289,6 +1289,55 @@ exports[`Modal with size large with simple config 1`] = `
 `;
 
 exports[`Modal with size medium with a bottom panel 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1395,55 +1444,6 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -1536,6 +1536,55 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size medium with a left panel 1`] = `
+.c9 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1667,55 +1716,6 @@ exports[`Modal with size medium with a left panel 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c10 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -1818,6 +1818,55 @@ exports[`Modal with size medium with a left panel 1`] = `
 `;
 
 exports[`Modal with size medium with a right panel 1`] = `
+.c8 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1952,55 +2001,6 @@ exports[`Modal with size medium with a right panel 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c9 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -2103,6 +2103,55 @@ exports[`Modal with size medium with a right panel 1`] = `
 `;
 
 exports[`Modal with size medium with right section in header 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2201,55 +2250,6 @@ exports[`Modal with size medium with right section in header 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -2343,6 +2343,55 @@ exports[`Modal with size medium with right section in header 1`] = `
 `;
 
 exports[`Modal with size medium with simple config 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2443,55 +2492,6 @@ exports[`Modal with size medium with simple config 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -2577,6 +2577,55 @@ exports[`Modal with size medium with simple config 1`] = `
 `;
 
 exports[`Modal with size small with a bottom panel 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2683,55 +2732,6 @@ exports[`Modal with size small with a bottom panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -2824,6 +2824,55 @@ exports[`Modal with size small with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size small with a left panel 1`] = `
+.c9 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2955,55 +3004,6 @@ exports[`Modal with size small with a left panel 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c10 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -3106,6 +3106,55 @@ exports[`Modal with size small with a left panel 1`] = `
 `;
 
 exports[`Modal with size small with a right panel 1`] = `
+.c8 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3242,55 +3291,6 @@ exports[`Modal with size small with a right panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c9 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -3391,6 +3391,55 @@ exports[`Modal with size small with a right panel 1`] = `
 `;
 
 exports[`Modal with size small with right section in header 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3489,55 +3538,6 @@ exports[`Modal with size small with right section in header 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -3631,6 +3631,55 @@ exports[`Modal with size small with right section in header 1`] = `
 `;
 
 exports[`Modal with size small with simple config 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3731,55 +3780,6 @@ exports[`Modal with size small with simple config 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -3865,6 +3865,55 @@ exports[`Modal with size small with simple config 1`] = `
 `;
 
 exports[`Modal with size x-large with a bottom panel 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3971,55 +4020,6 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -4112,6 +4112,55 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size x-large with a left panel 1`] = `
+.c9 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4245,55 +4294,6 @@ exports[`Modal with size x-large with a left panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c10 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -4394,6 +4394,55 @@ exports[`Modal with size x-large with a left panel 1`] = `
 `;
 
 exports[`Modal with size x-large with a right panel 1`] = `
+.c8 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4530,55 +4579,6 @@ exports[`Modal with size x-large with a right panel 1`] = `
   transition: opacity 100ms ease-out;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c9 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
 <div
   class="rc-dialog-wrap "
   role="dialog"
@@ -4679,6 +4679,55 @@ exports[`Modal with size x-large with a right panel 1`] = `
 `;
 
 exports[`Modal with size x-large with right section in header 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4777,55 +4826,6 @@ exports[`Modal with size x-large with right section in header 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
@@ -4919,6 +4919,55 @@ exports[`Modal with size x-large with right section in header 1`] = `
 `;
 
 exports[`Modal with size x-large with simple config 1`] = `
+.c6 {
+  padding: 2.1rem 2.8rem 0rem;
+  overflow-y: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.1rem 2.8rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  background: #f2f2f2;
+}
+
+.c4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  padding: 2.1rem 2.8rem;
+  justify-self: flex-end;
+  border-top: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5017,55 +5066,6 @@ exports[`Modal with size x-large with simple config 1`] = `
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.1rem 2.8rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-}
-
-.c4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #333333;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  padding: 2.1rem 2.8rem 0rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c7 {
-  padding: 2.1rem 2.8rem;
-  justify-self: flex-end;
-  border-top: none;
 }
 
 <div
