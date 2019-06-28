@@ -25,7 +25,7 @@ export interface BreadcrumbItemProps {
   onClick?: (event) => void
 }
 
-const sharedStyles = css`
+const sharedStyles = css<BreadcrumbItemProps>`
   font-size: ${`${size14.fontSize}rem`};
   line-height: ${size14.lineHeight}rem;
   border-radius: ${inputBorderRadius};
@@ -33,9 +33,9 @@ const sharedStyles = css`
   display: flex;
   align-items: center;
   &:hover {
-    background-color: ${(props: any) => (props.separator ? "" : Neutral10.hex)};
+    background-color: ${props => (props.separator ? "" : Neutral10.hex)};
   }
-  cursor: ${(props: any) => (props.separator ? "default" : "pointer")};
+  cursor: ${props => (props.separator ? "default" : "pointer")};
   a,
   * a {
     text-decoration: underline;
@@ -43,12 +43,12 @@ const sharedStyles = css`
   }
 `
 
-export const StyledText: any = styled.span`
+export const StyledText = styled.span`
   ${sharedStyles}
   color: ${Neutral50.hex};
 `
 
-export const StyledActive: any = styled.span`
+export const StyledActive = styled.span`
   ${sharedStyles}
   color: ${Neutral90.hex}
 `

@@ -29,9 +29,9 @@ export interface BreadcrumbProps {
   activeStyles?: CSSProperties
 }
 
-const StyledParent: any = styled.div`
+const StyledParent = styled.div<BreadcrumbProps>`
   display: flex;
-  max-width: ${(props: any) => props.maxWidth};
+  max-width: ${props => props.maxWidth};
   flex-wrap: wrap;
   width: fit-content;
   align-items: center;
