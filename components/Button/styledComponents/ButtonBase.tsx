@@ -1,8 +1,5 @@
-import React from "react"
 import styled from "styled-components"
-import * as theme from "../../styles/variables"
-
-const { shades } = theme
+import { IStyled } from "../../common/types"
 
 type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
 
@@ -13,7 +10,7 @@ interface ParsedColorTheme {
   insetFont?: any
 }
 
-interface ButtonBaseProps {
+interface BaseButtonProps {
   label?: string
   type: "primary" | "secondary"
   colorTheme: ParsedColorTheme
@@ -28,71 +25,26 @@ interface ButtonBaseProps {
   lineHeight: number
 }
 
-const ButtonBase: React.FC<ButtonBaseProps> = ({
-  label,
-  type,
-  ghost,
-  size,
-  disabled,
-  onClick,
-  icon,
-  bare,
-  colorTheme,
-  fontSize,
-  lineHeight,
-  children,
-}) => {
-  const iconOnly = icon && !label
-  // Ghost buttons have their font and background colors interchanged
-  const baseFontColor = ghost ? colorTheme.background : colorTheme.font
-  const baseBackgroundColor = ghost ? colorTheme.font : colorTheme.background
-  const lightenedBackgroundColor = baseBackgroundColor.set("hsl.l", "+0.1")
-  const lightenedFontColor = baseFontColor.set("hsl.l", "+0.3") // Used for ghost
-  const highlightColor = shades.lightBlue
+type IStyledBaseButton = IStyled<BaseButtonProps>
+// Paddings
 
-  const getFontColor = (state: ButtonState) => {
-    switch (state) {
-      case "default":
-        if (bare) {
-          return baseBackgroundColor
-        }
-        return baseFontColor
-      case "hover":
-        if (bare) {
-          return lightenedBackgroundColor
-        }
-        if (ghost) {
-          return lightenedFontColor
-        }
-        return baseFontColor
-      default:
-        return baseFontColor
-    }
-  }
+const ICON_PADDINGS = {
+  small: 0.3,
+  medium: 0.5,
+  large: 0.7,
+}
 
-  const getBackgroundColor = (state: ButtonState) => {
-    if (bare) {
-      return state === "default" ? shades.transparent : shades.gray95
-    }
-    if (ghost) {
-      return shades.white
-    }
-    return state === "default" ? baseBackgroundColor : lightenedBackgroundColor
-  }
+const VERTICAL_PADINGS = {
+  small: 0.1,
+  medium: 0.4,
+  large: 0.6,
+}
 
-  const iconPaddings = {
-    small: 0.3,
-    medium: 0.5,
-    large: 0.7,
-  }
-
-  const verticalPaddings = {
-    small: 0.1,
-    medium: 0.4,
-    large: 0.6,
-  }
-
-  const horizontalPaddings = {
+const getHorizontalPadding = (props: IStyledBaseButton) => {
+  const {
+    customProps: { size, type, fontSize },
+  } = props
+  const paddings = {
     small: {
       primary: fontSize / 2,
       secondary: fontSize / 2,
@@ -106,107 +58,192 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
       secondary: fontSize / 2,
     },
   }
-
-  const getVerticalPadding = () => {
-    return iconOnly ? iconPaddings[size!] : verticalPaddings[size!]
-  }
-
-  const getRightPadding = () => {
-    if (iconOnly) {
-      return iconPaddings[size!]
-    }
-    return horizontalPaddings[size!][type!]
-  }
-
-  const getLeftPadding = () => {
-    if (icon) {
-      return iconPaddings[size!]
-    }
-    return horizontalPaddings[size!][type!]
-  }
-
-  const getBorder = (state: ButtonState) => {
-    let borderColor
-    switch (state) {
-      case "active":
-      case "focus":
-        borderColor = ghost ? baseFontColor : highlightColor
-        break
-      case "hover":
-        borderColor = ghost ? lightenedFontColor : shades.transparent
-        break
-      default:
-        borderColor = ghost ? baseFontColor : shades.transparent
-        break
-    }
-    return `1px solid ${borderColor}`
-  }
-
-  const getIconColor = (state: ButtonState) => {
-    if (!bare) {
-      return baseFontColor
-    }
-    switch (state) {
-      case "focus":
-      case "active":
-        return lightenedBackgroundColor
-      case "default":
-      default:
-        return baseBackgroundColor
-    }
-  }
-
-  const getIconMargin = () => {
-    return icon && label ? (size === "small" ? "0.2rem" : "0.4rem") : "0rem"
-  }
-
-  const StyledButton = styled.button`
-    display: flex;
-    align-items: center;
-    font-size: ${`${fontSize}rem`};
-    line-height: ${`${lineHeight}rem`};
-    padding-left: ${`${getLeftPadding()}rem`};
-    padding-right: ${`${getRightPadding()}rem`};
-    color: ${getFontColor("default")};
-    background-color: ${getBackgroundColor("default")};
-    padding-top: ${`${getVerticalPadding()}rem`};
-    padding-bottom: ${`${getVerticalPadding()}rem`};
-    border-radius: 0.4rem;
-    border-style: none;
-    box-sizing: border-box;
-    border: ${getBorder("default")};
-    svg {
-      margin-right: ${getIconMargin()};
-      path {
-        fill: ${getIconColor("default")};
-      }
-    }
-    :hover,
-    :active,
-    :focus {
-      background-color: ${getBackgroundColor("hover")};
-    }
-    :active,
-    :focus {
-      border: ${getBorder("active")};
-      svg path {
-        fill: ${getIconColor("focus")};
-      }
-    }
-    :hover {
-      border: ${getBorder("hover")};
-      color: ${getFontColor("hover")};
-    }
-    :disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-  `
-  return (
-    <StyledButton onClick={onClick} disabled={disabled}>
-      {children}
-    </StyledButton>
-  )
+  return paddings[size][type]
 }
 
-export default ButtonBase
+const getRightPadding = (props: IStyledBaseButton) => {
+  const {
+    customProps: { icon, label, size },
+  } = props
+  if (icon && !label) {
+    return ICON_PADDINGS[size!]
+  }
+  return getHorizontalPadding(props)
+}
+
+const getLeftPadding = (props: IStyledBaseButton) => {
+  const {
+    customProps: { icon, size },
+  } = props
+  if (icon) {
+    return ICON_PADDINGS[size!]
+  }
+  return getHorizontalPadding(props)
+}
+
+const getVerticalPadding = (props: IStyledBaseButton) => {
+  const {
+    customProps: { icon, label, size },
+  } = props
+  const iconOnly = icon && !label
+  return iconOnly ? ICON_PADDINGS[size!] : VERTICAL_PADINGS[size!]
+}
+
+// Colors
+
+const getHighlighColor = (props: IStyledBaseButton) =>
+  props.theme.shades.lightBlue
+
+const getBaseBackgroundColor = (props: IStyledBaseButton) => {
+  const {
+    customProps: { ghost, colorTheme },
+  } = props
+  return ghost ? colorTheme.font : colorTheme.background
+}
+
+const getBaseFontColor = (props: IStyledBaseButton) => {
+  const {
+    customProps: { ghost, colorTheme },
+  } = props
+  return ghost ? colorTheme.background : colorTheme.font
+}
+
+const getLightenedBackgroundColor = (props: IStyledBaseButton) => {
+  return getBaseBackgroundColor(props).set("hsl.l", "+0.1")
+}
+
+const getLightenedFontColor = (props: IStyledBaseButton) => {
+  return getBaseFontColor(props).set("hsl.l", "+0.3") // Used for ghost
+}
+
+const getFontColor = (state: ButtonState, props: IStyledBaseButton) => {
+  const {
+    customProps: { bare, ghost },
+  } = props
+  const baseFontColor = getBaseFontColor(props)
+  switch (state) {
+    case "default":
+      if (bare) {
+        return getBaseBackgroundColor(props)
+      }
+      return baseFontColor
+    case "hover":
+      if (bare) {
+        return getLightenedBackgroundColor(props)
+      }
+      if (ghost) {
+        return getLightenedFontColor(props)
+      }
+      return baseFontColor
+    default:
+      return baseFontColor
+  }
+}
+
+const getBackgroundColor = (state: ButtonState, props: IStyledBaseButton) => {
+  const {
+    customProps: { bare, ghost },
+    theme,
+  } = props
+  if (bare) {
+    return state === "default" ? theme.shades.transparent : theme.shades.gray95
+  }
+  if (ghost) {
+    return theme.shades.white
+  }
+  return state === "default"
+    ? getBaseBackgroundColor(props)
+    : getLightenedBackgroundColor(props)
+}
+
+const getIconColor = (state: ButtonState, props: IStyledBaseButton) => {
+  const {
+    customProps: { bare },
+  } = props
+  if (!bare) {
+    return getBaseFontColor(props)
+  }
+  switch (state) {
+    case "focus":
+    case "active":
+      return getLightenedBackgroundColor(props)
+    case "default":
+    default:
+      return getBaseBackgroundColor(props)
+  }
+}
+
+const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
+  const {
+    customProps: { ghost },
+    theme,
+  } = props
+  let borderColor
+  switch (state) {
+    case "active":
+    case "focus":
+      borderColor = ghost ? getBaseFontColor(props) : getHighlighColor(props)
+      break
+    case "hover":
+      borderColor = ghost
+        ? getLightenedFontColor(props)
+        : theme.shades.transparent
+      break
+    default:
+      borderColor = ghost ? getBaseFontColor(props) : theme.shades.transparent
+      break
+  }
+  return `1px solid ${borderColor}`
+}
+
+const getIconMargin = (props: IStyledBaseButton) => {
+  const {
+    customProps: { icon, label, size },
+  } = props
+  return icon && label ? (size === "small" ? "0.2rem" : "0.4rem") : "0rem"
+}
+
+const StyledButton = styled.button<IStyledBaseButton>`
+  display: flex;
+  align-items: center;
+  font-size: ${({ customProps: { fontSize } }) => `${fontSize}rem`};
+  line-height: ${({ customProps: { lineHeight } }) => `${lineHeight}rem`};
+  padding-left: ${props => `${getLeftPadding(props)}rem`};
+  padding-right: ${props => `${getRightPadding(props)}rem`};
+  color: ${props => getFontColor("default", props)};
+  background-color: ${props => getBackgroundColor("default", props)};
+  padding-top: ${props => `${getVerticalPadding(props)}rem`};
+  padding-bottom: ${props => `${getVerticalPadding(props)}rem`};
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: ${props => getBorder("default", props)};
+  span {
+    margin-right: ${props => getIconMargin(props)};
+    svg path {
+      fill: ${props => getIconColor("default", props)};
+    }
+  }
+  :hover,
+  :active,
+  :focus {
+    background-color: ${props => getBackgroundColor("hover", props)};
+  }
+  :active,
+  :focus {
+    border: ${props => getBorder("active", props)};
+    svg path {
+      fill: ${props => getIconColor("focus", props)};
+    }
+  }
+  :hover {
+    border: ${props => getBorder("hover", props)};
+    color: ${props => getFontColor("hover", props)};
+  }
+  :disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+`
+
+export default StyledButton
