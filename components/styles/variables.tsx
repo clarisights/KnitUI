@@ -99,6 +99,7 @@ export const shades = {
 
   // Shades of blue
   lightBlue: chromaPalette.Azure80,
+  blue40: chroma.hsl(205, 0.85, 0.4),
   blue50: chroma.hsl(216, 1, 0.5),
 }
 

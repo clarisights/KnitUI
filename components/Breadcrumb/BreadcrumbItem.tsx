@@ -3,8 +3,10 @@ import styled, { css } from "styled-components"
 import * as theme from "../styles/variables"
 import { Neutral90, Neutral50, Neutral10 } from "../styles/palette"
 
+const TYPOGRAPHY_SIZE = 14
+
 const {
-  typography: { size14 },
+  typography,
   inputBorderRadius,
   shades: { blue40 },
 } = theme
@@ -26,8 +28,8 @@ export interface BreadcrumbItemProps {
 }
 
 const sharedStyles = css<BreadcrumbItemProps>`
-  font-size: ${`${size14.fontSize}rem`};
-  line-height: ${size14.lineHeight}rem;
+  font-size: ${`${typography[TYPOGRAPHY_SIZE].fontSize}rem`};
+  line-height: ${typography[TYPOGRAPHY_SIZE].lineHeight}rem;
   border-radius: ${inputBorderRadius};
   padding: 0 3px 0 3px;
   display: flex;
