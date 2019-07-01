@@ -1,6 +1,6 @@
-import React, { useState, useContext, ReactNode } from "react"
+import React, { useState, ReactNode } from "react"
 import BaseComponent from "../BaseComponent"
-import styled, { ThemeContext } from "styled-components"
+import styled from "styled-components"
 import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
 
@@ -145,7 +145,6 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   className,
   style,
 }) => {
-  // Revert to default padding if not explicitly supplied.
   /**
    * Renders the appopriate variant based on the availability of a
    * panel prop and its position.

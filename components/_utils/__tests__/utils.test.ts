@@ -1,10 +1,6 @@
-import {
-  getFontColor,
-  parseColorPreset,
-  parseCustomColor
-} from "../index"
+import { getFontColor, parseColorPreset, parseCustomColor } from "../index"
 import { chromaPalette } from "../../styles/variables"
-const {Neutral0, Neutral90 } = chromaPalette;
+const { Neutral0, Neutral90 } = chromaPalette
 
 describe("_utils", () => {
   describe("getFontColor", () => {

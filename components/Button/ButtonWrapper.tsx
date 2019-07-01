@@ -71,7 +71,6 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       disabled={disabled}
       className={className}
       style={style}>
-    >
       {icon ? <Icon type={icon} /> : null}
       {label}
       {insetLabel ? (
