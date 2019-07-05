@@ -22,10 +22,6 @@ exports[`Label custom class 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 <div
     class="custom-class c0"
   >
@@ -56,10 +52,6 @@ exports[`Label custom style 1`] = `
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
-}
-
-.c0 svg path {
-  fill: #ffffff;
 }
 
 <div
@@ -95,10 +87,6 @@ exports[`Label focused 1`] = `
   box-shadow: 0rem 0rem 0.2rem #0066ff;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 <div
     class="c0"
   >
@@ -128,10 +116,6 @@ exports[`Label inline compact 1`] = `
   box-sizing: border-box;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 <div
     class="c0"
   >
@@ -159,10 +143,6 @@ exports[`Label inline expanded 1`] = `
   font-size: 1.2rem;
   line-height: 1.8rem;
   box-sizing: border-box;
-}
-
-.c0 svg path {
-  fill: #ffffff;
 }
 
 <div
@@ -197,10 +177,6 @@ exports[`Label outlined 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 <div
     class="c0"
   >
@@ -231,10 +207,6 @@ exports[`Label rounded 1`] = `
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
-}
-
-.c0 svg path {
-  fill: #ffffff;
 }
 
 <div
@@ -269,10 +241,6 @@ exports[`Label with size large compact 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 <div
     class="c0"
   >
@@ -303,10 +271,6 @@ exports[`Label with size large expanded 1`] = `
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
-}
-
-.c0 svg path {
-  fill: #ffffff;
 }
 
 <div
@@ -348,13 +312,12 @@ exports[`Label with size large left and right icons 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
+.c1 {
+  margin-right: 0.4rem;
 }
 
-.c1 {
+.c3 {
   margin-left: 0.4rem;
-  margin-right: 0.4rem;
 }
 
 <div
@@ -362,12 +325,13 @@ exports[`Label with size large left and right icons 1`] = `
   >
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oDragIndicator"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -382,13 +346,14 @@ exports[`Label with size large left and right icons 1`] = `
       label
     </span>
     <span
-      class="c1 c2"
+      class="c3 c2"
+      fill="#ffffff"
       height="18px"
       type="oClose"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -432,10 +397,6 @@ exports[`Label with size large left icon 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 .c1 {
   margin-right: 0.4rem;
 }
@@ -445,12 +406,13 @@ exports[`Label with size large left icon 1`] = `
   >
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oDragIndicator"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -497,10 +459,6 @@ exports[`Label with size large right icon 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 .c1 {
   margin-left: 0.4rem;
 }
@@ -513,12 +471,13 @@ exports[`Label with size large right icon 1`] = `
     </span>
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oClose"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -555,10 +514,6 @@ exports[`Label with size medium compact 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 <div
     class="c0"
   >
@@ -589,10 +544,6 @@ exports[`Label with size medium expanded 1`] = `
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
-}
-
-.c0 svg path {
-  fill: #ffffff;
 }
 
 <div
@@ -634,13 +585,12 @@ exports[`Label with size medium left and right icons 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
+.c1 {
+  margin-right: 0.4rem;
 }
 
-.c1 {
+.c3 {
   margin-left: 0.4rem;
-  margin-right: 0.4rem;
 }
 
 <div
@@ -648,12 +598,13 @@ exports[`Label with size medium left and right icons 1`] = `
   >
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oDragIndicator"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -668,13 +619,14 @@ exports[`Label with size medium left and right icons 1`] = `
       label
     </span>
     <span
-      class="c1 c2"
+      class="c3 c2"
+      fill="#ffffff"
       height="18px"
       type="oClose"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -718,10 +670,6 @@ exports[`Label with size medium left icon 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 .c1 {
   margin-right: 0.4rem;
 }
@@ -731,12 +679,13 @@ exports[`Label with size medium left icon 1`] = `
   >
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oDragIndicator"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -783,10 +732,6 @@ exports[`Label with size medium right icon 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 .c1 {
   margin-left: 0.4rem;
 }
@@ -799,12 +744,13 @@ exports[`Label with size medium right icon 1`] = `
     </span>
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oClose"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -841,10 +787,6 @@ exports[`Label with size small compact 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 <div
     class="c0"
   >
@@ -875,10 +817,6 @@ exports[`Label with size small expanded 1`] = `
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
-}
-
-.c0 svg path {
-  fill: #ffffff;
 }
 
 <div
@@ -920,13 +858,12 @@ exports[`Label with size small left and right icons 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
+.c1 {
+  margin-right: 0.2rem;
 }
 
-.c1 {
+.c3 {
   margin-left: 0.2rem;
-  margin-right: 0.2rem;
 }
 
 <div
@@ -934,12 +871,13 @@ exports[`Label with size small left and right icons 1`] = `
   >
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oDragIndicator"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -954,13 +892,14 @@ exports[`Label with size small left and right icons 1`] = `
       label
     </span>
     <span
-      class="c1 c2"
+      class="c3 c2"
+      fill="#ffffff"
       height="18px"
       type="oClose"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -1004,10 +943,6 @@ exports[`Label with size small left icon 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 .c1 {
   margin-right: 0.2rem;
 }
@@ -1017,12 +952,13 @@ exports[`Label with size small left icon 1`] = `
   >
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oDragIndicator"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"
@@ -1069,10 +1005,6 @@ exports[`Label with size small right icon 1`] = `
   box-shadow: none;
 }
 
-.c0 svg path {
-  fill: #ffffff;
-}
-
 .c1 {
   margin-left: 0.2rem;
 }
@@ -1085,12 +1017,13 @@ exports[`Label with size small right icon 1`] = `
     </span>
     <span
       class="c1 c2"
+      fill="#ffffff"
       height="18px"
       type="oClose"
       width="18px"
     >
       <svg
-        fill="#000"
+        fill="#ffffff"
         height="18px"
         viewBox="0 0 24 24"
         width="18px"

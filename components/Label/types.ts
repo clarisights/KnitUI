@@ -44,5 +44,5 @@ export interface LabelPropTypes extends BaseLabelProps {
 }
 
 export interface ILabel extends React.FC<LabelPropTypes> {
-  Inline?: InlineLabelType
+  Inline: InlineLabelType
 }

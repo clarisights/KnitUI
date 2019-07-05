@@ -7,6 +7,6 @@
  */
 export interface IStyled<PropType> {
   customProps: PropType
-  theme: any
+  theme?: any
   [htmlProp: string]: any
 }

@@ -1,5 +1,4 @@
 import React, { useState, ReactNode } from "react"
-import BaseComponent from "../BaseComponent"
 import styled from "styled-components"
 import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
@@ -214,4 +213,4 @@ ModalWrapper.defaultProps = {
   destroyOnClose: false,
 }
 
-export default BaseComponent(ModalWrapper)
+export default ModalWrapper

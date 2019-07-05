@@ -1,55 +1,68 @@
-import React, { useContext } from "react"
+import React from "react"
 import styled from "styled-components"
-import BaseComponent from "../BaseComponent"
-
+import { IStyled } from "../common/types"
+import { InlineLabelProps } from "./types"
 import { parseColorPreset, parseCustomColor } from "../_utils"
-import { ThemeContext } from "styled-components"
 import { InlineLabelType } from "./types"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
-const InlineLabel: InlineLabelType = ({
-  expanded = false,
-  text,
-  colorPreset = DEFAULT_COLOR_THEME,
-  customColor,
-  fontSize = 12,
-  className,
-  style,
-}) => {
-  const themeContext = useContext(ThemeContext)
-  const { typography } = themeContext
-  const selectedtTypography = typography[fontSize]
-  fontSize = selectedtTypography.fontSize
-  const lineHeight = selectedtTypography.lineHeight
-  const parsedColorTheme = customColor
-    ? parseCustomColor(customColor)
-    : parseColorPreset(colorPreset)
-  const backgroundColor = parsedColorTheme.background
-  const fontColor = parsedColorTheme.font
+const getFontSize = props => {
+  const {
+    customProps: { fontSize },
+    theme: { typography },
+  } = props
+  return typography[fontSize].fontSize
+}
 
-  const verticalPadding = "0rem"
-  const horizontalPadding = expanded ? "0.3rem" : "0rem"
+const geLineHeight = props => {
+  const {
+    customProps: { fontSize },
+    theme: { typography },
+  } = props
+  return typography[fontSize].lineHeight
+}
 
-  const StyledDiv = styled.div`
-    display: inline-flex;
-    align-items: center;
-    padding: ${`${verticalPadding} ${horizontalPadding}`};
-    background-color: ${backgroundColor};
-    color: ${fontColor};
-    font-size: ${`${fontSize}rem`};
-    line-height: ${`${lineHeight}rem`};
-    box-sizing: border-box;
-    svg path {
-      fill: ${fontColor};
-    }
-  `
+const parseColorTheme = ({ customProps: { customColor, colorPreset } }) =>
+  customColor ? parseCustomColor(customColor) : parseColorPreset(colorPreset)
 
+const getBackgroundColor = props => parseColorTheme(props).background
+
+const getFontColor = props => parseColorTheme(props).font
+
+const verticalPadding = "0rem"
+const getHorizontalPadding = props => {
+  const {
+    customProps: { expanded },
+  } = props
+  return expanded ? "0.3rem" : "0rem"
+}
+
+const StyledDiv = styled.div<IStyled<InlineLabelProps>>`
+  display: inline-flex;
+  align-items: center;
+  padding: ${props => `${verticalPadding} ${getHorizontalPadding(props)}`};
+  background-color: ${props => getBackgroundColor(props)};
+  color: ${props => getFontColor(props)};
+  font-size: ${props => `${getFontSize(props)}rem`};
+  line-height: ${props => `${geLineHeight(props)}rem`};
+  box-sizing: border-box;
+`
+
+const InlineLabel: InlineLabelType = ({ className, style, ...rest }) => {
+  const { text } = rest
+  const scProps = { className, style, customProps: rest }
   return (
-    <StyledDiv className={className} style={style}>
+    <StyledDiv {...scProps} className={className} style={style}>
       <span>{text}</span>
     </StyledDiv>
   )
 }
 
-export default BaseComponent(InlineLabel)
+InlineLabel.defaultProps = {
+  expanded: false,
+  fontSize: 12,
+  colorPreset: DEFAULT_COLOR_THEME,
+}
+
+export default InlineLabel

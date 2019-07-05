@@ -22,6 +22,15 @@ describe("Button", () => {
         expect(asFragment()).toMatchSnapshot()
       })
 
+      it("renders a primary variant with a label correctly", () => {
+        const { asFragment } = render(
+          <ThemeProvider>
+            <Button label="button" size={size} type="secondary" />
+          </ThemeProvider>
+        )
+        expect(asFragment()).toMatchSnapshot()
+      })
+
       it("renders a ghost variant correctly", () => {
         const { asFragment } = render(
           <ThemeProvider>
@@ -111,14 +120,18 @@ describe("Button", () => {
 
   it("should apply provided classname", () => {
     const { container } = render(
-      <Button label="button" className="custom-class" />
+      <ThemeProvider>
+        <Button label="button" className="custom-class" />
+      </ThemeProvider>
     )
     expect(container.firstChild).toHaveClass("custom-class")
   })
 
   it("should apply provided styled", () => {
     const { container } = render(
-      <Button label="button" style={{ backgroundColor: "red" }} />
+      <ThemeProvider>
+        <Button label="button" style={{ backgroundColor: "red" }} />
+      </ThemeProvider>
     )
     expect(container.firstChild).toHaveStyle("background-color: red")
   })

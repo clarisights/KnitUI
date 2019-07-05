@@ -97,7 +97,7 @@ stories
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
-      colorTheme={select("Color theme", colorThemeOptions, "neutral")}
+      colorPreset={select("Color theme", colorThemeOptions, "neutral")}
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
