@@ -1,7 +1,8 @@
-import React, { SFC, ReactNode, CSSProperties } from "react"
+import React, { SFC } from "react"
 import styled, { css } from "styled-components"
-import * as theme from "../styles/variables"
-import { Neutral90, Neutral50, Neutral10 } from "../styles/palette"
+import * as theme from "../../common/styles/variables"
+import { Neutral90, Neutral50, Neutral10 } from "../../common/styles/palette"
+import { BreadcrumbItemProps } from "./types"
 
 const TYPOGRAPHY_SIZE = 14
 
@@ -10,22 +11,6 @@ const {
   inputBorderRadius,
   shades: { blue40 },
 } = theme
-export interface BreadcrumbItemProps {
-  /** Link to the route which breadcrumb item should redirect to */
-  href?: string
-  /** Separator to be used */
-  separator?: string | ReactNode
-  /** Custom styles of the breadcrumb item */
-  style?: CSSProperties
-  /** className to be passed to the item */
-  className?: string
-  /** Styling of the active element if any */
-  activeStyles?: CSSProperties
-  /** Styles for all crumbs */
-  childStyle?: CSSProperties
-  /** onClick event */
-  onClick?: (event) => void
-}
 
 const sharedStyles = css<BreadcrumbItemProps>`
   font-size: ${`${typography[TYPOGRAPHY_SIZE].fontSize}rem`};

@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import { parseCustomColor, parseColorPreset } from "../_utils"
+import { parseCustomColor, parseColorPreset } from "../../common/_utils"
 import Icon from "../Icon"
 import { ILabel, LabelPropTypes } from "./types"
 import InlineLabel from "./InlineLabel"
-import { IStyled } from "../common/types"
+import { IStyled } from "../../common/types"
 
 const DEFAULT_COLOR_THEME = "neutral"
 

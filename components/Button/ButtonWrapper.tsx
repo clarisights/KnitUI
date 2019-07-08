@@ -2,7 +2,7 @@ import React, { useContext, SyntheticEvent } from "react"
 import Icon from "../Icon"
 import { ButtonBase, ButtonInset } from "./components"
 import { ThemeContext } from "styled-components"
-import { parseCustomColor, parseColorPreset } from "../_utils"
+import { parseCustomColor, parseColorPreset } from "../../common/_utils"
 import { ButtonWrapperProps } from "./types"
 
 const DEFAULT_COLOR_THEME = "neutral"

@@ -4,6 +4,7 @@
   "description": "Component library for Clarisights",
   "main": "lib/index.js",
   "module": "es/index.js",
+  "types": "index.d.ts",
   "repository": "git@github.com:adwyze/KnitUI.git",
   "author": "Rohan Malhotra <rohan.root@gmail.com>",
   "license": "MIT",

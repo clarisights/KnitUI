@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import * as Icons from "./Icons"
-import { withProps } from "../_utils"
+import { withProps } from "../../common/_utils"
 
-interface IIconProps {
+export interface IIconProps {
   type: string
   height?: string
   width?: string

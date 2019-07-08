@@ -1,7 +1,7 @@
 import React, { SFC, ReactNode } from "react"
 import styled from "styled-components"
 import _ from "lodash"
-import { insertIf } from "../_utils"
+import { insertIf } from "../../common/_utils"
 
 interface ITheme {
   inputError: string

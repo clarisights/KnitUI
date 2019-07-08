@@ -2,32 +2,13 @@ import React, {
   ReactNode,
   ReactElement,
   CSSProperties,
-  Component,
   cloneElement,
   useState,
 } from "react"
 import styled from "styled-components"
-import { BreadcrumbItemProps, StyledText } from "./BreadcrumbItem"
+import { StyledText } from "./BreadcrumbItem"
 import BreadcrumbItem from "./BreadcrumbItem"
-
-export interface BreadcrumbProps {
-  /** separate to be using between crumbs */
-  separator?: string | ReactNode
-  /** Styles applied to the root */
-  rootStyle?: CSSProperties
-  /** Styles applied to each child */
-  childStyle?: CSSProperties
-  /** Breadcrumb Items in children */
-  children?: ReactNode[] | ReactNode
-  /** className for user to specify their class */
-  className?: string
-  /** Max width of the breadcrumb to be wrapped in */
-  maxWidth?: string
-  /** Level till which the crumbs are to be shown (from end). First is shown anyways */
-  truncateTo?: number
-  /** Styles for the active item */
-  activeStyles?: CSSProperties
-}
+import { BreadcrumbProps, IBreadCrumb } from "./types"
 
 const StyledParent = styled.div<BreadcrumbProps>`
   display: flex;
@@ -37,9 +18,7 @@ const StyledParent = styled.div<BreadcrumbProps>`
   align-items: center;
 `
 
-const Breadcrumb: React.FC<BreadcrumbProps> & {
-  Item: React.FC<BreadcrumbItemProps>
-} = props => {
+const Breadcrumb: IBreadCrumb = props => {
   const {
     className,
     rootStyle,

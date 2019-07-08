@@ -1,6 +1,6 @@
 import { ThemedStyledFunction } from "styled-components"
 import chroma from "chroma-js"
-import { ColorPreset } from "./types"
+import { ColorPreset } from "../types"
 import * as theme from "../styles/variables"
 const { secondaryPalette, chromaPalette } = theme
 

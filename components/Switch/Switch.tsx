@@ -4,7 +4,7 @@ import { StyledSwitch } from "./styledComponents"
 
 type SizeType = "small" | "default"
 
-interface SwitchProps {
+export interface SwitchProps {
   /** whether checked by default */
   defaultChecked?: boolean
   /** called when switch is checked or unchecked */

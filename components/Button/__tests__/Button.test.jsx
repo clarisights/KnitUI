@@ -1,7 +1,7 @@
 import React from "react"
 import Button from "../"
 import { render, cleanup, fireEvent } from "react-testing-library"
-import { ThemeProvider } from "../../styles"
+import { ThemeProvider } from "../../../common/styles"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
 

@@ -1,4 +1,8 @@
-import { ColorPreset, CustomColor, BaseComponentProps } from "../_utils/types"
+import {
+  ColorPreset,
+  CustomColor,
+  BaseComponentProps,
+} from "../../common/types"
 import { SyntheticEvent } from "react"
 
 export interface ParsedColorTheme {

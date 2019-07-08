@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { IStyled } from "../../common/types"
+import { IStyled } from "../../../common/types"
 
 interface ButtonInsetProps {
   backgroundColor: string

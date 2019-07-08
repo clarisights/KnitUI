@@ -1,11 +1,12 @@
-import React, { ReactNode, useContext } from "react"
-import styled, { ThemeContext } from "styled-components"
-import { borderRadius, padding } from "../common/styles"
+import React, { ReactNode } from "react"
+import styled from "styled-components"
 
 const Container = styled.div`
   display: flex;
-  padding: ${`${padding.vertical} ${padding.horizontal}`};
-  border-radius: ${`${borderRadius} ${borderRadius} 0rem 0rem`};
+  padding: ${({ theme: { modalPadding } }) =>
+    `${modalPadding.vertical} ${modalPadding.horizontal}`};
+  border-radius: ${({ theme: { modalBorderRadius } }) =>
+    `${modalBorderRadius} ${modalBorderRadius} 0rem 0rem`};
   background: ${({ theme }) => theme.shades.gray95};
 `
 const TitleSection = styled.div`

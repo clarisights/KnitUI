@@ -3,7 +3,7 @@ import Modal from "../index"
 import { render, cleanup, fireEvent } from "react-testing-library"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
-import { ThemeProvider } from "../../styles"
+import { ThemeProvider } from "../../../common/styles"
 
 afterEach(cleanup)
 

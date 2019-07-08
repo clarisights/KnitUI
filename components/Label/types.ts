@@ -3,7 +3,7 @@ import {
   CustomColor,
   BaseComponentProps,
   fontSizeType,
-} from "../_utils/types"
+} from "../../common/types"
 import React from "react"
 
 export interface BaseLabelProps extends BaseComponentProps {

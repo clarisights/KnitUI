@@ -12,8 +12,7 @@ import {
 } from "./variants/index"
 import Icon from "../Icon"
 import "rc-dialog/assets/index.css"
-import { borderRadius } from "./common/styles"
-import { BaseComponentProps } from "../_utils/types"
+import { BaseComponentProps } from "../../common/types"
 
 const sizeToWidth = {
   small: "49rem",
@@ -71,7 +70,7 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
     min-height: 35rem;
   }
   .rc-dialog-content {
-    border-radius: ${borderRadius};
+    border-radius: ${({ theme: { modalBorderRadius } }) => modalBorderRadius};
   }
   width: ${({ customProps: { size } }) => sizeToWidth[size!]} !important;
   .rc-dialog-close {
