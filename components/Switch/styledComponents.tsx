@@ -9,16 +9,18 @@ export const StyledSwitch = styled(RCSwitch)`
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-    width: ${({ theme, size }) =>
-      isSmall(size) ? theme.switchWrapperWidthSm : theme.switchWrapperWidth};
-    height: ${({ theme, size }) =>
-      isSmall(size) ? theme.switchWrapperHeightSm : theme.switchWrapperHeight};
+    width: ${({ theme: { knitui }, size }) =>
+      isSmall(size) ? knitui.switchWrapperWidthSm : knitui.switchWrapperWidth};
+    height: ${({ theme: { knitui }, size }) =>
+      isSmall(size)
+        ? knitui.switchWrapperHeightSm
+        : knitui.switchWrapperHeight};
     line-height: ${({ size }) => (isSmall(size) ? "8px" : "14px")};
     padding: 0;
     vertical-align: middle;
     border-radius: 20px 20px;
-    border: 1px solid ${({ theme }) => theme.wrapperBorderColor};
-    background-color: ${({ theme }) => theme.wrapperBgColor};
+    border: 1px solid ${({ theme: { knitui } }) => knitui.wrapperBorderColor};
+    background-color: ${({ theme: { knitui } }) => knitui.wrapperBgColor};
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1);
     .knit-switch-inner {
@@ -30,12 +32,14 @@ export const StyledSwitch = styled(RCSwitch)`
     }
     &:after {
       position: absolute;
-      width: ${({ size, theme }) =>
-        isSmall(size) ? theme.switchTrackerWidthSm : theme.switchTrackerWidth};
-      height: ${({ size, theme }) =>
+      width: ${({ size, theme: { knitui } }) =>
         isSmall(size)
-          ? theme.switchTrackerHeightSm
-          : theme.switchTrackerHeight};
+          ? knitui.switchTrackerWidthSm
+          : knitui.switchTrackerWidth};
+      height: ${({ size, theme: { knitui } }) =>
+        isSmall(size)
+          ? knitui.switchTrackerHeightSm
+          : knitui.switchTrackerHeight};
       left: 2px;
       top: 50%;
       transform: translateY(-50%) scale(1);
@@ -59,23 +63,23 @@ export const StyledSwitch = styled(RCSwitch)`
     }
     &.knit-switch-checked {
       border: 1px solid
-        ${({ disabled, theme }) =>
+        ${({ disabled, theme: { knitui } }) =>
           disabled
-            ? theme.switchCheckedDisabledBorderColor
-            : theme.switchCheckedBorderColor};
-      background-color: ${({ theme, disabled }) =>
+            ? knitui.switchCheckedDisabledBorderColor
+            : knitui.switchCheckedBorderColor};
+      background-color: ${({ theme: { knitui }, disabled }) =>
         disabled
-          ? theme.switchCheckedDisabledBgColor
-          : theme.switchCheckedBgColor};
+          ? knitui.switchCheckedDisabledBgColor
+          : knitui.switchCheckedBgColor};
       .knit-switch-inner {
         left: 6px;
       }
 
       &:after {
-        left: ${({ theme, size }) =>
+        left: ${({ theme: { knitui }, size }) =>
           isSmall(size)
-            ? `calc(${theme.switchWrapperWidthSm} - ${theme.switchTrackerWidthSm} - 2px)`
-            : `calc(${theme.switchWrapperWidth} - ${theme.switchTrackerWidth} - 2px)`};
+            ? `calc(${knitui.switchWrapperWidthSm} - ${knitui.switchTrackerWidthSm} - 2px)`
+            : `calc(${knitui.switchWrapperWidth} - ${knitui.switchTrackerWidth} - 2px)`};
       }
     }
 

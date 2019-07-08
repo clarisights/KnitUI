@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 const Main = styled.div`
-  padding: ${({ theme: { modalPadding } }) =>
-    `${modalPadding.vertical} ${modalPadding.horizontal} 0rem`};
+  padding: ${({ theme: { knitui } }) =>
+    `${knitui.modalPadding.vertical} ${knitui.modalPadding.horizontal} 0rem`};
   overflow-y: auto;
   flex: 1 1 auto;
 `

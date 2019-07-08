@@ -18,7 +18,9 @@ const typographySize = {
 
 const getFontSize = (props: IStyledLabel) => {
   const {
-    theme: { typography },
+    theme: {
+      knitui: { typography },
+    },
     customProps: { size },
   } = props
   return typography[typographySize[size!]].fontSize
@@ -26,7 +28,9 @@ const getFontSize = (props: IStyledLabel) => {
 
 const geLineHeight = (props: IStyledLabel) => {
   const {
-    theme: { typography },
+    theme: {
+      knitui: { typography },
+    },
     customProps: { size },
   } = props
   return typography[typographySize[size!]].lineHeight
@@ -124,7 +128,9 @@ const getBorderRadius = (props: IStyledLabel) => {
 
 const getBoxShadow = (props: IStyledLabel) => {
   const {
-    theme: { shades },
+    theme: {
+      knitui: { shades },
+    },
     customProps: { focus },
   } = props
   return focus ? `0rem 0rem 0.2rem ${shades.blue50}` : "none"

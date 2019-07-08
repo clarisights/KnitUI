@@ -6,11 +6,11 @@ interface FooterProps {
 }
 
 const Footer = styled.div<IStyled<FooterProps>>`
-  padding: ${({ theme: { modalPadding } }) =>
-    `${modalPadding.vertical} ${modalPadding.horizontal}`};
+  padding: ${({ theme: { knitui } }) =>
+    `${knitui.modalPadding.vertical} ${knitui.modalPadding.horizontal}`};
   justify-self: flex-end;
-  border-top: ${({ customProps: { showBorder }, theme: { modalBorder } }) =>
-    showBorder ? modalBorder : `none`};
+  border-top: ${({ customProps: { showBorder }, theme: { knitui } }) =>
+    showBorder ? knitui.modalBorder : `none`};
 `
 
 export default Footer

@@ -20,7 +20,7 @@ exports[`Breadcrumb basic renders basic breadcrumb correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -68,11 +68,11 @@ exports[`Breadcrumb basic renders basic breadcrumb correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c3:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c3 a,
@@ -151,7 +151,7 @@ exports[`Breadcrumb basic renders with a custom separator correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -199,11 +199,11 @@ exports[`Breadcrumb basic renders with a custom separator correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c3:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c3 a,
@@ -282,7 +282,7 @@ exports[`Breadcrumb basic renders with a link clearly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -330,11 +330,11 @@ exports[`Breadcrumb basic renders with a link clearly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c3:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c3 a,
@@ -417,7 +417,7 @@ exports[`Breadcrumb basic renders with custom child styles correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -465,11 +465,11 @@ exports[`Breadcrumb basic renders with custom child styles correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c3:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c3 a,
@@ -553,7 +553,7 @@ exports[`Breadcrumb basic renders with custom parent style correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -601,11 +601,11 @@ exports[`Breadcrumb basic renders with custom parent style correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c3:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c3 a,
@@ -685,7 +685,7 @@ exports[`Breadcrumb renders a single correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -769,7 +769,7 @@ exports[`Breadcrumb renders with a specified max width correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -817,11 +817,11 @@ exports[`Breadcrumb renders with a specified max width correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c3:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c3 a,
@@ -1051,7 +1051,7 @@ exports[`Breadcrumb renders with a truncated state correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -1099,11 +1099,11 @@ exports[`Breadcrumb renders with a truncated state correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c3:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c3 a,
@@ -1192,7 +1192,7 @@ exports[`Breadcrumb renders with custom active item styles correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -1240,11 +1240,11 @@ exports[`Breadcrumb renders with custom active item styles correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c3:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c3 a,
@@ -1328,7 +1328,7 @@ exports[`Breadcrumb renders with icon correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c1 a,
@@ -1376,11 +1376,11 @@ exports[`Breadcrumb renders with icon correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .c4:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .c4 a,

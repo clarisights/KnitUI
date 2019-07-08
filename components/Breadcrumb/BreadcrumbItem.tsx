@@ -1,43 +1,38 @@
 import React, { SFC } from "react"
 import styled, { css } from "styled-components"
-import * as theme from "../../common/styles/variables"
-import { Neutral90, Neutral50, Neutral10 } from "../../common/styles/palette"
 import { BreadcrumbItemProps } from "./types"
 
 const TYPOGRAPHY_SIZE = 14
 
-const {
-  typography,
-  inputBorderRadius,
-  shades: { blue40 },
-} = theme
-
 const sharedStyles = css<BreadcrumbItemProps>`
-  font-size: ${`${typography[TYPOGRAPHY_SIZE].fontSize}rem`};
-  line-height: ${typography[TYPOGRAPHY_SIZE].lineHeight}rem;
-  border-radius: ${inputBorderRadius};
+  font-size: ${({ theme: { knitui } }) =>
+    `${knitui.typography[TYPOGRAPHY_SIZE].fontSize}rem`};
+  line-height: ${({ theme: { knitui } }) =>
+    `${knitui.typography[TYPOGRAPHY_SIZE].lineHeight}rem`};
+  border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
   padding: 0 3px 0 3px;
   display: flex;
   align-items: center;
   &:hover {
-    background-color: ${props => (props.separator ? "" : Neutral10.hex)};
+    background-color: ${({ separator, theme: { knitui } }) =>
+      separator ? "" : knitui.shades.gray95};
   }
   cursor: ${props => (props.separator ? "default" : "pointer")};
   a,
   * a {
     text-decoration: underline;
-    color: ${blue40};
+    color: ${({ theme: { knitui } }) => knitui.shades.blue40};
   }
 `
 
-export const StyledText = styled.span`
+export const StyledText = styled.span<BreadcrumbItemProps>`
   ${sharedStyles}
-  color: ${Neutral50.hex};
+  color: ${({ theme: { knitui } }) => knitui.shades.gray50};
 `
 
-export const StyledActive = styled.span`
+export const StyledActive = styled.span<BreadcrumbItemProps>`
   ${sharedStyles}
-  color: ${Neutral90.hex}
+  color: ${({ theme: { knitui } }) => knitui.shades.black}
 `
 
 const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {

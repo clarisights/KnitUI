@@ -13,7 +13,7 @@ const Layout = styled.div`
 
 const LeftSection = styled.div`
   width: 210px;
-  border-right: ${({ theme }) => theme.modalBorder};
+  border-right: ${({ theme: { knitui } }) => knitui.modalBorder};
 `
 
 const RightSection = styled.div`

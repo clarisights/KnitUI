@@ -7,7 +7,7 @@ import { PanelModalProps } from "./interfaces"
 const BottomSection = styled.div`
   box-sizing: border-box;
   height: 8.4rem;
-  border-top: ${({ theme }) => theme.modalBorder};
+  border-top: ${({ theme: { knitui } }) => knitui.modalBorder};
 `
 
 const BottomPanelModal: React.FC<PanelModalProps> = ({

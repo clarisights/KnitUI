@@ -1,5 +1,5 @@
-import React, { useContext } from "react"
-import styled, { ThemeContext } from "styled-components"
+import React from "react"
+import styled from "styled-components"
 
 import { BaseLayout } from "./Base"
 import { PanelModalProps } from "./interfaces"
@@ -20,7 +20,7 @@ const LeftSection = styled.div`
 
 const RightSection = styled.div`
   width: 210px;
-  border-left: ${({ theme }) => theme.modalBorder};
+  border-left: ${({ theme: { knitui } }) => knitui.modalBorder};
 `
 
 const RightPanelModal: React.FC<PanelModalProps> = ({
@@ -29,8 +29,6 @@ const RightPanelModal: React.FC<PanelModalProps> = ({
   body,
   panelContent,
 }) => {
-  const { modalBorder } = useContext(ThemeContext)
-
   return (
     <BaseLayout>
       {header}

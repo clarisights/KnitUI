@@ -25,14 +25,15 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   style,
 }) => {
   const themeContext = useContext(ThemeContext)
-  const { shades, typography } = themeContext
+  const { knitui } = themeContext
 
   // Typography
-  const typographySize = size === "small" ? typography[12] : typography[14]
+  const typographySize =
+    size === "small" ? knitui.typography[12] : knitui.typography[14]
   const baseFontSize = typographySize.fontSize
   const baseLineHeight = typographySize.lineHeight
-  const insetFontSize = baseFontSize - themeContext.baseIncrementUnit
-  const lowerTypographyUnit = typography[`${insetFontSize * 10}`]
+  const insetFontSize = baseFontSize - knitui.baseIncrementUnit
+  const lowerTypographyUnit = knitui.typography[`${insetFontSize * 10}`]
   const insetLineHeight =
     (lowerTypographyUnit && lowerTypographyUnit.lineHeight) || baseLineHeight
 
@@ -40,8 +41,8 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
 
   // Cannot be set as default arg since theme is not available in that context
   const DEFAULT_INSET_THEME = {
-    background: shades.white,
-    font: shades.gray20,
+    background: knitui.shades.white,
+    font: knitui.shades.gray20,
   }
 
   const insetColorTheme = insetCustomColor

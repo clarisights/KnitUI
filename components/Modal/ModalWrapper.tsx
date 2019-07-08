@@ -70,7 +70,7 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
     min-height: 35rem;
   }
   .rc-dialog-content {
-    border-radius: ${({ theme: { modalBorderRadius } }) => modalBorderRadius};
+    border-radius: ${({ theme: { knitui } }) => knitui.modalBorderRadius};
   }
   width: ${({ customProps: { size } }) => sizeToWidth[size!]} !important;
   .rc-dialog-close {
@@ -79,10 +79,10 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
     opacity: unset;
     padding: 0.15rem;
     line-height: 0;
-    background-color: ${({ theme }) => theme.shades.gray50};
+    background-color: ${({ theme: { knitui } }) => knitui.shades.gray50};
     border-radius: 999px;
     svg {
-        fill: ${({ theme }) => theme.shades.gray90};
+        fill: ${({ theme: { knitui } }) => knitui.shades.gray90};
       }
     }
   }

@@ -95,7 +95,7 @@ const getVerticalPadding = (props: IStyledBaseButton) => {
 // Colors
 
 const getHighlighColor = (props: IStyledBaseButton) =>
-  props.theme.shades.lightBlue
+  props.theme.knitui.shades.lightBlue
 
 const getBaseBackgroundColor = (props: IStyledBaseButton) => {
   const {
@@ -146,13 +146,15 @@ const getFontColor = (state: ButtonState, props: IStyledBaseButton) => {
 const getBackgroundColor = (state: ButtonState, props: IStyledBaseButton) => {
   const {
     customProps: { bare, ghost },
-    theme,
+    theme: { knitui },
   } = props
   if (bare) {
-    return state === "default" ? theme.shades.transparent : theme.shades.gray95
+    return state === "default"
+      ? knitui.shades.transparent
+      : knitui.shades.gray95
   }
   if (ghost) {
-    return theme.shades.white
+    return knitui.shades.white
   }
   return state === "default"
     ? getBaseBackgroundColor(props)
@@ -179,7 +181,7 @@ const getIconColor = (state: ButtonState, props: IStyledBaseButton) => {
 const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
   const {
     customProps: { ghost },
-    theme,
+    theme: { knitui },
   } = props
   let borderColor
   switch (state) {
@@ -190,10 +192,10 @@ const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
     case "hover":
       borderColor = ghost
         ? getLightenedFontColor(props)
-        : theme.shades.transparent
+        : knitui.shades.transparent
       break
     default:
-      borderColor = ghost ? getBaseFontColor(props) : theme.shades.transparent
+      borderColor = ghost ? getBaseFontColor(props) : knitui.shades.transparent
       break
   }
   return `1px solid ${borderColor}`

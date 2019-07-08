@@ -10,7 +10,9 @@ const DEFAULT_COLOR_THEME = "neutral"
 const getFontSize = props => {
   const {
     customProps: { fontSize },
-    theme: { typography },
+    theme: {
+      knitui: { typography },
+    },
   } = props
   return typography[fontSize].fontSize
 }
@@ -18,7 +20,9 @@ const getFontSize = props => {
 const geLineHeight = props => {
   const {
     customProps: { fontSize },
-    theme: { typography },
+    theme: {
+      knitui: { typography },
+    },
   } = props
   return typography[fontSize].lineHeight
 }

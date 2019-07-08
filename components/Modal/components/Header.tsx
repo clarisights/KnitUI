@@ -3,16 +3,16 @@ import styled from "styled-components"
 
 const Container = styled.div`
   display: flex;
-  padding: ${({ theme: { modalPadding } }) =>
-    `${modalPadding.vertical} ${modalPadding.horizontal}`};
-  border-radius: ${({ theme: { modalBorderRadius } }) =>
-    `${modalBorderRadius} ${modalBorderRadius} 0rem 0rem`};
-  background: ${({ theme }) => theme.shades.gray95};
+  padding: ${({ theme: { knitui } }) =>
+    `${knitui.modalPadding.vertical} ${knitui.modalPadding.horizontal}`};
+  border-radius: ${({ theme: { knitui } }) =>
+    `${knitui.modalBorderRadius} ${knitui.modalBorderRadius} 0rem 0rem`};
+  background: ${({ theme: { knitui } }) => knitui.shades.gray95};
 `
 const TitleSection = styled.div`
   font-size: 20px;
   line-height: 30px;
-  color: ${({ theme }) => theme.shades.gray20};
+  color: ${({ theme: { knitui } }) => knitui.shades.gray20};
 `
 
 const RightSection = styled.div`

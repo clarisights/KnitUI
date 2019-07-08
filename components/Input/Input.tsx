@@ -4,10 +4,12 @@ import _ from "lodash"
 import { insertIf } from "../../common/_utils"
 
 interface ITheme {
-  inputError: string
-  inputSuccess: string
-  inputBorderColor: string
-  inputColor: string
+  knitui: {
+    inputError: string
+    inputSuccess: string
+    inputBorderColor: string
+    inputColor: string
+  }
 }
 
 const getInputBorder = (props: {
@@ -15,13 +17,17 @@ const getInputBorder = (props: {
   error?: boolean
   success?: boolean
 }) => {
-  const { theme, error, success } = props
+  const {
+    theme: { knitui },
+    error,
+    success,
+  } = props
   if (error) {
-    return theme.inputError
+    return knitui.inputError
   } else if (success) {
-    return theme.inputSuccess
+    return knitui.inputSuccess
   }
-  return theme.inputBorderColor
+  return knitui.inputBorderColor
 }
 
 const getLabelColor = (props: {
@@ -29,13 +35,17 @@ const getLabelColor = (props: {
   error: boolean
   success: boolean
 }) => {
-  const { theme, error, success } = props
+  const {
+    theme: { knitui },
+    error,
+    success,
+  } = props
   if (error) {
-    return theme.inputError
+    return knitui.inputError
   } else if (success) {
-    return theme.inputSuccess
+    return knitui.inputSuccess
   }
-  return theme.inputColor
+  return knitui.inputColor
 }
 
 const getPadding = size => {
@@ -64,30 +74,30 @@ const StyledInput: any = styled.input`
   height: ${({ size }) => getHeight(size)};
   width: 100%;
   border: ${props =>
-    `${props.theme.inputBorderWidth} solid ${getInputBorder(props)}`};
-  border-radius: ${({ theme }) => theme.inputBorderRadius};
+    `${props.theme.knitui.inputBorderWidth} solid ${getInputBorder(props)}`};
+  border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
   padding: ${({ size }) => getPadding(size)};
   box-sizing: border-box;
   margin-bottom: 2px;
-  background-color: ${({ theme }) => theme.inputBgDefault};
-  color: ${({ theme }) => theme.inputColor};
+  background-color: ${({ theme: { knitui } }) => knitui.inputBgDefault};
+  color: ${({ theme: { knitui } }) => knitui.inputColor};
   &:hover {
-    background-color: ${({ theme }) => theme.inputBgHover};
-    color: ${({ theme }) => theme.inputColor};
+    background-color: ${({ theme: { knitui } }) => knitui.inputBgHover};
+    color: ${({ theme: { knitui } }) => knitui.inputColor};
   }
   &:focus {
-    outline: ${({ theme }) => theme.inputFocusOutline};
-    background-color: ${({ theme }) => theme.inputBgFocus};
-    box-shadow: ${({ theme }) => theme.inputFocusBoxShadow};
+    outline: ${({ theme: { knitui } }) => knitui.inputFocusOutline};
+    background-color: ${({ theme: { knitui } }) => knitui.inputBgFocus};
+    box-shadow: ${({ theme: { knitui } }) => knitui.inputFocusBoxShadow};
   }
   &:active {
-    background-color: ${({ theme }) => theme.inputBgActive};
+    background-color: ${({ theme: { knitui } }) => knitui.inputBgActive};
     ::placeholder {
-      color: ${({ theme }) => theme.inputPlaceholderColorActive};
+      color: ${({ theme: { knitui } }) => knitui.inputPlaceholderColorActive};
     }
   }
   ::placeholder {
-    color: ${({ theme }) => theme.inputPlaceholderColor};
+    color: ${({ theme: { knitui } }) => knitui.inputPlaceholderColor};
   }
 `
 
