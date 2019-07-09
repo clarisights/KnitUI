@@ -12,11 +12,6 @@ const customStyle = {
   border: "2px solid red",
 }
 
-const customItemStyle = {
-  color: "black",
-  border: "2px solid red",
-}
-
 const customActiveStyle = {
   textDecoration: "underline",
   color: "#0F74BD",

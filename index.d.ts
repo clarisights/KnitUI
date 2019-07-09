@@ -1,12 +1,12 @@
 import { ReactInstance } from "react";
 
-import { ButtonWrapperProps } from "./components/Button/types"
-import { IIconProps } from "./components/Icon/Icon"
-import { IInputProps } from "./components/Input/Input"
-import { SwitchProps } from "./components/Switch/Switch"
-import { BreadcrumbProps, BreadcrumbItemProps } from "./components/Breadcrumb/types"
-import { LabelPropTypes, InlineLabelProps } from "./components/Label/types"
-import { ModalWrapperProps } from "./components/Modal/ModalWrapper"
+import { ButtonWrapperProps } from "./src/components/Button/types"
+import { IIconProps } from "./src/components/Icon/Icon"
+import { IInputProps } from "./src/components/Input/Input"
+import { SwitchProps } from "./src/components/Switch/Switch"
+import { BreadcrumbProps, BreadcrumbItemProps } from "./src/components/Breadcrumb/types"
+import { LabelPropTypes, InlineLabelProps } from "./src/components/Label/types"
+import { ModalWrapperProps } from "./src/components/Modal/ModalWrapper"
 
 
 export function Button(props: ButtonWrapperProps): ReactInstance;

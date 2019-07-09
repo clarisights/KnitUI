@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "../"
+import Button from ".."
 import { render, cleanup, fireEvent } from "react-testing-library"
 import { ThemeProvider } from "../../../common/styles"
 import "jest-styled-components"
@@ -11,7 +11,7 @@ describe("Button", () => {
   const sizes = ["small", "medium", "large"]
 
   // All tests are executes for each of the three sizes
-  sizes.forEach(size => {
+  sizes.forEach((size: "small" | "medium" | "large") => {
     describe(`with size ${size}`, () => {
       it("renders a primary variant with a label correctly", () => {
         const { asFragment } = render(
