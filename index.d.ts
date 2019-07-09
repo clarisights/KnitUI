@@ -4,32 +4,23 @@ import { ButtonWrapperProps } from "./src/components/Button/types"
 import { IIconProps } from "./src/components/Icon/Icon"
 import { IInputProps } from "./src/components/Input/Input"
 import { SwitchProps } from "./src/components/Switch/Switch"
-import { BreadcrumbProps, BreadcrumbItemProps } from "./src/components/Breadcrumb/types"
-import { LabelPropTypes, InlineLabelProps } from "./src/components/Label/types"
+import { IBreadCrumb } from "./src/components/Breadcrumb/types"
+import { ILabel } from "./src/components/Label/types"
 import { ModalWrapperProps } from "./src/components/Modal/ModalWrapper"
 
 
-export function Button(props: ButtonWrapperProps): ReactInstance;
+export const Button: React.FC<ButtonWrapperProps>
 
-export function Icon(props: IIconProps): ReactInstance;
+export const Icon: React.FC<IIconProps>
 
-export function Input(props: IInputProps): ReactInstance;
+export const Input: React.FC<IInputProps>
 
-export function Switch(props: SwitchProps): ReactInstance;
+export const Switch: React.FC<SwitchProps>
 
-export function Breadcrumb(props: BreadcrumbProps): ReactInstance
+export const Breadcrumb: IBreadCrumb
 
-/**
- * Using namespaces to support syntax like `Breadcrumb.Item`
- */
-export namespace Breadcrumb {
-  export function Item(props: BreadcrumbItemProps): ReactInstance
-}
+export const Label: ILabel
 
-export function Label(props: LabelPropTypes): ReactInstance
+export const Modal: React.FC<ModalWrapperProps>
 
-export namespace Label {
-  export function Inline(props: InlineLabelProps): ReactInstance
-}
-
-export function Modal(props: ModalWrapperProps): ReactInstance
+export const ThemeProvider: React.FC
