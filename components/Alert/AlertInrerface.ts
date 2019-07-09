@@ -3,7 +3,7 @@ type sizeType = "x-small" | "small" | "medium" | "large"
 export type alertType = "standard" | "warning" | "success" | "error"
 
 export type actionType = {
-  text: string
+  text: string,
   callback: Function
 }
 
@@ -19,7 +19,7 @@ export interface AlertProps {
   // time after which we need to dismiss, effective when auto dismiss is set
   dismissDuration?: number
   // heading of the alert
-  heading?: string
+  heading?: string,
   // icon to be shown
   showIcon?: boolean
   // custom icon, effective when showIcon is set
@@ -36,9 +36,9 @@ export interface AlertProps {
 
 export interface AlertContainerProps {
   // type of the alert
-  type: alertType | undefined
+  type: alertType
   // Size of the alert, default is small
-  size: sizeType | undefined
+  size: sizeType
 }
 
 export interface AlertState {
@@ -46,6 +46,6 @@ export interface AlertState {
 }
 
 export interface AlertContentWrapperProps {
-  heading?: string
+  heading?: string,
   multiLine?: boolean
 }

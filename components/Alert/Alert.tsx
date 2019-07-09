@@ -22,7 +22,7 @@ const defaultIcons = {
 const renderIcon = (
   type: alertType,
   icon: string | undefined,
-  multiLine: boolean | undefined,
+  multiLine: boolean,
   image: string | undefined
 ) => {
   if (image) return <StyledAlertPicture multiLine={multiLine} src={image} />
@@ -37,7 +37,10 @@ const renderIcon = (
   )
 }
 
-const renderActions = (actions: Array<actionType>, multiLine: boolean | undefined) => {
+const renderActions = (
+  actions: Array<actionType>,
+  multiLine: boolean | undefined
+) => {
   // Only pick top 2 actions in case more are supplied
   actions = actions.slice(0, 2)
   return (
@@ -54,10 +57,10 @@ const renderActions = (actions: Array<actionType>, multiLine: boolean | undefine
 const Alert: React.FC<AlertProps> = props => {
   const [open, setOpen] = useState(false)
   const {
-    type,
-    size,
+    type = "standard",
+    size = "small",
     content,
-    multiLine,
+    multiLine = false,
     children,
     autoDismiss,
     dismissDuration,
@@ -79,7 +82,8 @@ const Alert: React.FC<AlertProps> = props => {
   return (
     <>
       <AlertContainer {...containerProps}>
-        {(showIcon || image) && renderIcon(type || "standard", icon, multiLine, image)}
+        {(showIcon || image) &&
+          renderIcon(type, icon, multiLine, image)}
         <AlertContentWrapper {...contentProps}>
           {heading && multiLine && <AlertHeading>{heading}</AlertHeading>}
           <AlertContent multiLine={multiLine}>{props.content}</AlertContent>
