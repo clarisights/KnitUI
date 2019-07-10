@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Neutral0, Neutral50, Blue100 } from "../styles/palette"
+import { Neutral0, Neutral50, Blue100 } from "../../common/styles/palette"
 import { RadioWrapperProps } from "./Interface"
 
 const isSmall = size => size === "small"
