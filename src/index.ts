@@ -1,2 +1,2 @@
 export * from "./components"
-export { default as ThemeProvider } from "./common/styles"
+export { ThemeProvider } from "./common/styles"
