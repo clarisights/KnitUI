@@ -1,0 +1,2626 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders with a custom color theme correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #1a1a1a;
+  background-color: #f142f4;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #1a1a1a;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f572f7;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #1a1a1a;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #1a1a1a;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with a custom color theme correctly 2`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #1a1a1a;
+  background-color: #f142f4;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #1a1a1a;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f572f7;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #1a1a1a;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #1a1a1a;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with a custom color theme correctly 3`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #1a1a1a;
+  background-color: #f142f4;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #1a1a1a;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f572f7;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #1a1a1a;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #1a1a1a;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with a specified color preset correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #990000;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #cc0000;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with a specified color preset correctly 2`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #990000;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #cc0000;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with a specified color preset correctly 3`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #990000;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #cc0000;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with inset correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+}
+
+<button
+    class="c0"
+  >
+    button
+    <div
+      class="c1"
+    >
+      10
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with inset correctly 2`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+}
+
+<button
+    class="c0"
+  >
+    button
+    <div
+      class="c1"
+    >
+      10
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with inset correctly 3`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+}
+
+<button
+    class="c0"
+  >
+    button
+    <div
+      class="c1"
+    >
+      10
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text and an icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.2rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text and an icon correctly 2`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text and an icon correctly 3`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text, icon and inset correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.2rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+    <div
+      class="c2"
+    >
+      10
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text, icon and inset correctly 2`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+    <div
+      class="c2"
+    >
+      10
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text, icon and inset correctly 3`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+    <div
+      class="c2"
+    >
+      10
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders a bare variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders a ghost variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #ffffff;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #002966;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #002966;
+}
+
+.c0:hover {
+  border: 1px solid #0066ff;
+  color: #0066ff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders a primary variant with a label correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders a primary variant with a label correctly 2`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders with a bare icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size large renders with an icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders a bare variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders a ghost variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #ffffff;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #002966;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #002966;
+}
+
+.c0:hover {
+  border: 1px solid #0066ff;
+  color: #0066ff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders a primary variant with a label correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders a primary variant with a label correctly 2`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders with a bare icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size medium renders with an icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders a bare variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders a ghost variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #002966;
+  background-color: #ffffff;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #002966;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #002966;
+}
+
+.c0:hover {
+  border: 1px solid #0066ff;
+  color: #0066ff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders a primary variant with a label correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders a primary variant with a label correctly 2`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders with a bare icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.6rem;
+  color: #002966;
+  background-color: #00000000;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.2rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #f2f2f2;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #003d99;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size small renders with an icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.2rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  background-color: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2;
+}
+
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    <span
+      class="c1"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    button
+  </button>
+</DocumentFragment>
+`;
