@@ -3,10 +3,10 @@ import { withInfo } from "@storybook/addon-info"
 import { addReadme, configureReadme } from "storybook-readme"
 import React from "react"
 import theme from "./theme"
-import { GlobalStyles, ThemeProvider } from "../components/styles"
+import { GlobalStyles, ThemeProvider } from "../src/common/styles"
 
 // automatically import all files ending in *.stories.tsx
-const req = require.context("../components", true, /.stories.tsx$/)
+const req = require.context("../src/components", true, /.stories.tsx$/)
 
 const ThemeProviderDecorator = storyFn => (
   <ThemeProvider>{storyFn()}</ThemeProvider>

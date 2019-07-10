@@ -1,0 +1,1469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb basic renders basic breadcrumb correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c3:hover {
+  background-color: #f2f2f2;
+}
+
+.c3 a,
+.c3 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c3"
+    >
+      50467
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb basic renders with a custom separator correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c3:hover {
+  background-color: #f2f2f2;
+}
+
+.c3 a,
+.c3 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      🐉
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      🐉
+    </span>
+    <span
+      class="c3"
+    >
+      50467
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb basic renders with a link clearly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c3:hover {
+  background-color: #f2f2f2;
+}
+
+.c3 a,
+.c3 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c3"
+    >
+      <a
+        href="/dashboard/reports/50467"
+      >
+        50467
+      </a>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb basic renders with custom child styles correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c3:hover {
+  background-color: #f2f2f2;
+}
+
+.c3 a,
+.c3 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+      style="font-size: 1.8rem;"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+      style="font-size: 1.8rem;"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+      style="font-size: 1.8rem;"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+      style="font-size: 1.8rem;"
+    >
+      /
+    </span>
+    <span
+      class="c3"
+      style="font-size: 1.8rem;"
+    >
+      50467
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb basic renders with custom parent style correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c3:hover {
+  background-color: #f2f2f2;
+}
+
+.c3 a,
+.c3 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+    style="border: 2px solid red;"
+  >
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c3"
+    >
+      50467
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders a single correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders no child correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders with a specified max width correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c3:hover {
+  background-color: #f2f2f2;
+}
+
+.c3 a,
+.c3 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 200px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      50467
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      50467
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      50467
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      50467
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      50467
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c3"
+    >
+      50467
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders with a truncated state correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c3:hover {
+  background-color: #f2f2f2;
+}
+
+.c3 a,
+.c3 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      ...
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c3"
+    >
+      50467
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders with custom active item styles correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c3:hover {
+  background-color: #f2f2f2;
+}
+
+.c3 a,
+.c3 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+      style="text-decoration: underline; color: rgb(15, 116, 189);"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+      style="text-decoration: underline; color: rgb(15, 116, 189);"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+      style="text-decoration: underline; color: rgb(15, 116, 189);"
+    >
+      Reports
+    </span>
+    <span
+      class="c2"
+      style="text-decoration: underline; color: rgb(15, 116, 189);"
+    >
+      /
+    </span>
+    <span
+      class="c3"
+      style="text-decoration: underline; color: rgb(15, 116, 189);"
+    >
+      50467
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders with icon correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808080;
+}
+
+.c1:hover {
+  background-color: #f2f2f2;
+}
+
+.c1 a,
+.c1 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  color: #808080;
+}
+
+.c2 a,
+.c2 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.c4:hover {
+  background-color: #f2f2f2;
+}
+
+.c4 a,
+.c4 * a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #0f74bd;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Dashboard
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c1"
+    >
+      <span
+        class="c3"
+        height="18px"
+        type="oAddCircle"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17 13H13V17H11V13H7V11H11V7H13V11H17V13Z"
+          />
+        </svg>
+      </span>
+      Reports
+    </span>
+    <span
+      class="c2"
+    >
+      /
+    </span>
+    <span
+      class="c4"
+    >
+      <a
+        href="/dashboard/reports/50467"
+      >
+        50467
+      </a>
+    </span>
+  </div>
+</DocumentFragment>
+`;

@@ -22,6 +22,6 @@
     "esModuleInterop": true, // enable --allowSyntheticDefaultImports for typesystem compatibility.
     "skipLibCheck": true,
   },
-  "include": ["components/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "build", "scripts", "lib", "es"]
 }
