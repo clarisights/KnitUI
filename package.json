@@ -54,6 +54,8 @@
     "@storybook/addon-storyshots": "^5.0.11",
     "@storybook/addon-storysource": "^5.0.11",
     "@storybook/react": "^5.0.10",
+    "@storybook/addon-backgrounds": "^5.0.10",
+    "@types/styled-components": "^4.1.14",
     "@types/jest": "^24.0.13",
     "@types/storybook__react": "^4.0.1",
     "awesome-typescript-loader": "^5.2.1",
@@ -78,15 +80,13 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.4.5"
+    "typescript": "^3.4.5",
+    "react-test-renderer": "^16.8.6"
   },
   "dependencies": {
-    "@storybook/addon-backgrounds": "^5.0.10",
-    "@types/styled-components": "^4.1.14",
     "chroma-js": "^2.0.3",
     "rc-dialog": "^7.3.1",
     "rc-switch": "^1.9.0",
-    "react-test-renderer": "^16.8.6",
     "styled-components": "^4.2.0"
   }
 }
