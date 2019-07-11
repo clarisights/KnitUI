@@ -4,7 +4,7 @@
   "description": "Component library for Clarisights",
   "main": "build/lib/index.js",
   "module": "build/es/index.js",
-  "types": "index.d.ts",
+  "types": "build/types/bundle.d.ts",
   "repository": "git@github.com:adwyze/KnitUI.git",
   "author": "Rohan Malhotra <rohan.root@gmail.com>",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "scripts": {
     "test": "jest --verbose=false --no-cache",
     "prebuild": "rm -rf build",
-    "build": "npm-run-all --parallel build:cjs build:es",
+    "build": "npm run dts:generate; npm run dts:bundle; npm-run-all --parallel build:cjs build:es",
     "build:cjs": "NODE_ENV=production babel --extensions .ts,.tsx,.js,.jsx src --out-dir build/lib --ignore **/*.test.tsx,**/__tests__,**/__mocks__,**/*.spec.*,**/__snapshots__,**/*.stories.tsx,**/*.md && cp -r src/common/assets build/es/common/assets && cp -r src/common/assets build/lib/common/assets",
     "build:es": "NODE_ENV=production BABEL_ENV=es babel --extensions .ts,.tsx,.js,.jsx src --out-dir build/es --ignore **/*.test.tsx,**/__tests__,**/__mocks__,**/*.spec.*,**/__snapshots__,**/*.stories.tsx,**/*.md && cp -r src/common/assets build/es/common/assets && cp -r src/common/assets build/lib/common/assets",
     "storybook": "start-storybook -p 9001 -c .storybook",
@@ -23,7 +23,9 @@
     "precommit": "lint-staged",
     "lint-staged:ts": "tsc && node node_modules/tslint/bin/tslint --project tsconfig.json",
     "format": "prettier --write components/**/*.{tsx,ts,jsx,js,json}",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json"
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "dts:generate": "tsc --emitDeclarationOnly",
+    "dts:bundle": "dts-bundle --name knit-ui --main ./build/types/index.d.ts --out 'bundle.d.ts'"
   },
   "husky": {
     "hooks": {
