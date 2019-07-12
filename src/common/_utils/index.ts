@@ -36,10 +36,8 @@ export function withProps<U>() {
  * Determines the appropriate font color based on the background color.
  */
 export const getFontColor = backGroundColor => {
-  const [r, g, b] = backGroundColor.rgb()
-  // check calculates Luminance
-  const threshold = 1 - (0.299 * r + 0.587 * g + 0.114 * b) / 255
-  return threshold < 0.5 ? chromaPalette.Neutral90 : chromaPalette.Neutral0
+  const lightness = backGroundColor.get("hsl.l")
+  return lightness >= 0.5 ? chromaPalette.Neutral90 : chromaPalette.Neutral0
 }
 
 const createParsedColorTheme = backgroundColor => ({
