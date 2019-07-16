@@ -1,9 +1,10 @@
-import styled from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import {
   AlertProps,
   AlertContainerProps,
   AlertContentWrapperProps,
-} from "./AlertInrerface"
+  placementType,
+} from "./AlertInterface"
 import { Magenta80, Yellow80, Green80, Crimson80 } from "../styles/palette"
 import { ReactNode } from "react"
 import Icon from "../Icon"
@@ -38,6 +39,23 @@ const getBackground = (type: string) => {
   }
 }
 
+// Animations for all placements entering in screen
+const slideLeft = keyframes`
+  from { margin-left: 100%; }
+  to   { margin-left: 0%; }
+`
+const slideRight = keyframes`
+  from { margin-left: -100%; }
+  to   { margin-left: 0%; }
+`
+const animation = css<{ placement: placementType }>`
+  animation: 0.5s ease-in
+    ${({ placement }) =>
+      placement === "bottomRight" || placement === "topRight"
+        ? slideLeft
+        : slideRight};
+`
+
 export const AlertContainer = styled.div<AlertContainerProps>`
   width: ${({ size }) => getWidth(size)}px;
   background: ${({ type }) => getBackground(type)};
@@ -47,6 +65,16 @@ export const AlertContainer = styled.div<AlertContainerProps>`
   color: #FFFFFF;
   display: flex;
   padding: 14px 14px 14px 0;
+  margin: 5px 0 5px 0;
+  overflow: hidden;
+  
+  ${animation}
+
+  opacity: 1.0;
+  transition: opacity 0.5s;
+  &.hide{
+    opacity: 0.0;
+  }
 `
 
 export const AlertContentWrapper = styled.div<AlertContentWrapperProps>`
@@ -68,11 +96,20 @@ export const AlertContent = styled.div<{
   color: ${({ multiLine }) => (multiLine ? "#DDD1E0" : "#FFF")};
 `
 
-export const StyledAlertIcon = styled(Icon)`
+export const StyledAlertIcon = styled(Icon).attrs(props => ({
+  width: "20px",
+  height: "20px",
+}))`
   margin: ${({ multiLine }) => (multiLine ? "2px" : 0)} 0 2px 14px;
 `
 
-export const CloseIcon = styled(Icon)``
+export const CloseIcon = styled(Icon).attrs(props => ({
+  type: "oClose",
+  fill: "#fff",
+}))`
+  padding-left: 14px;
+  cursor: pointer;
+`
 
 export const AlertHeading = styled.div`
   font-family: Inter;
@@ -95,6 +132,7 @@ export const StyledAlertAction = styled.div`
   line-height: 20px;
   cursor: pointer;
 `
+
 export const AlertActionsWrapper = styled.div<{
   multiLine: boolean | undefined
 }>`

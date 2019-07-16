@@ -2,8 +2,14 @@ type sizeType = "x-small" | "small" | "medium" | "large"
 
 export type alertType = "standard" | "warning" | "success" | "error"
 
+export type placementType =
+  | "topLeft"
+  | "topRight"
+  | "bottomLeft"
+  | "bottomRight"
+
 export type actionType = {
-  text: string,
+  text: string
   callback: Function
 }
 
@@ -19,7 +25,7 @@ export interface AlertProps {
   // time after which we need to dismiss, effective when auto dismiss is set
   dismissDuration?: number
   // heading of the alert
-  heading?: string,
+  heading?: string
   // icon to be shown
   showIcon?: boolean
   // custom icon, effective when showIcon is set
@@ -32,6 +38,10 @@ export interface AlertProps {
   actions?: Array<actionType>
   // Function to call once the alert is closed
   onClose?: (event) => void
+  // position on window where it will be displayed
+  placement?: placementType
+  // key to reference Element from Alerts Container (help in remove function)
+  key?: string
 }
 
 export interface AlertContainerProps {
@@ -39,6 +49,8 @@ export interface AlertContainerProps {
   type: alertType
   // Size of the alert, default is small
   size: sizeType
+  // placement of notification on screen
+  placement: placementType
 }
 
 export interface AlertState {
@@ -46,6 +58,6 @@ export interface AlertState {
 }
 
 export interface AlertContentWrapperProps {
-  heading?: string,
+  heading?: string
   multiLine?: boolean
 }
