@@ -33,11 +33,17 @@ export function withProps<U>() {
 // Color utils
 
 /**
+ * Checks if the color is light or darks based on its L value in
+ * the HSL color scale.
+ * @param color A chroma color instance
+ */
+export const isLightColor = color => color.get("hsl.l") >= 0.5
+
+/**
  * Determines the appropriate font color based on the background color.
  */
 export const getFontColor = backGroundColor => {
-  const lightness = backGroundColor.get("hsl.l")
-  return lightness >= 0.5 ? chromaPalette.Neutral90 : chromaPalette.Neutral0
+  return isLightColor(backGroundColor) ? chromaPalette.Neutral90 : chromaPalette.Neutral0
 }
 
 const createParsedColorTheme = backgroundColor => ({
