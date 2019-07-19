@@ -106,6 +106,7 @@ stories
       icon={text("Icon", "oInfo")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      ghost={boolean("Ghost", false)}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       onClick={action("button-click")}
@@ -117,6 +118,7 @@ stories
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      ghost={boolean("Ghost", false)}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       onClick={action("button-click")}
@@ -128,6 +130,7 @@ stories
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      ghost={boolean("Ghost", false)}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       insetLabel={text("InsetLabel", "10")}
@@ -145,6 +148,7 @@ stories
       insetLabel={text("InsetLabel", "10")}
       customColor={text("Custom Color", "#9242f4")}
       insetCustomColor={text("Custom Color", "#000000")}
+      ghost={boolean("Ghost", false)}
     />
   ))
   .add("With an href", () => (
@@ -153,6 +157,7 @@ stories
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      ghost={boolean("Ghost", false)}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       insetLabel={text("InsetLabel", "10")}
@@ -164,6 +169,7 @@ stories
       label={text("Label", "Button")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      ghost={boolean("Ghost", false)}
       disabled={boolean("Disabled", false)}
       bare={boolean("Bare", false)}
       style={object("Style", { backgroundColor: "red" })}
