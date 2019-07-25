@@ -90,6 +90,8 @@
     "chroma-js": "^2.0.3",
     "rc-dialog": "^7.3.1",
     "rc-switch": "^1.9.0",
+    "react-spring": "^8.0.27",
+    "react-test-renderer": "^16.8.6",
     "styled-components": "^4.2.0"
   }
 }

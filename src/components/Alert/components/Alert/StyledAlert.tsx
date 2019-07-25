@@ -1,13 +1,13 @@
 import styled, { css, keyframes } from "styled-components"
+import { AlertContainerProps, AlertContentWrapperProps } from "./AlertInterface"
 import {
-  AlertProps,
-  AlertContainerProps,
-  AlertContentWrapperProps,
-  placementType,
-} from "./AlertInterface"
-import { Magenta80, Yellow80, Green80, Crimson80 } from "../styles/palette"
+  Magenta80,
+  Yellow80,
+  Green80,
+  Crimson80,
+} from "../../../../common/styles/palette"
 import { ReactNode } from "react"
-import Icon from "../Icon"
+import Icon from "../../../Icon/index"
 
 const getWidth = (size: string) => {
   switch (size) {
@@ -39,23 +39,6 @@ const getBackground = (type: string) => {
   }
 }
 
-// Animations for all placements entering in screen
-const slideLeft = keyframes`
-  from { margin-left: 100%; }
-  to   { margin-left: 0%; }
-`
-const slideRight = keyframes`
-  from { margin-left: -100%; }
-  to   { margin-left: 0%; }
-`
-const animation = css<{ placement: placementType }>`
-  animation: 0.5s ease-in
-    ${({ placement }) =>
-      placement === "bottomRight" || placement === "topRight"
-        ? slideLeft
-        : slideRight};
-`
-
 export const AlertContainer = styled.div<AlertContainerProps>`
   width: ${({ size }) => getWidth(size)}px;
   background: ${({ type }) => getBackground(type)};
@@ -67,14 +50,6 @@ export const AlertContainer = styled.div<AlertContainerProps>`
   padding: 14px 14px 14px 0;
   margin: 5px 0 5px 0;
   overflow: hidden;
-  
-  ${animation}
-
-  opacity: 1.0;
-  transition: opacity 0.5s;
-  &.hide{
-    opacity: 0.0;
-  }
 `
 
 export const AlertContentWrapper = styled.div<AlertContentWrapperProps>`

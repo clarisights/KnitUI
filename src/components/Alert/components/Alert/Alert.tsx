@@ -56,7 +56,6 @@ const renderActions = (
 
 const Alert: React.FC<AlertProps> = (props: any) => {
   const [open, setOpen] = useState(true)
-  const [show, setShow] = useState(true)
   const {
     type = "standard",
     size = "small",
@@ -81,30 +80,21 @@ const Alert: React.FC<AlertProps> = (props: any) => {
     console.error("Please pass multiLine prop to use headings")
   }
 
-  //*** This below implementation have possibility of improvement, console giving warning
-  // about memory leak & should be handle using useEffect clean function
-
   // To Auto dismiss the alert after some duration, can use transition delay check out again
   if (autoDismiss) {
     setTimeout(() => {
-      fadeAway(undefined)
+      fadeAway()
     }, dismissDuration)
   }
 
   // called by both AutoDismiss and Close Icon click
-  const fadeAway = event => {
-    setTimeout(() => {
-      setShow(false)
-      if (onClose) {
-        onClose(event)
-      }
-    }, 500)
-    setOpen(false)
+  const fadeAway = (event?: Event): void => {
+    if (onClose) {
+      onClose(event)
+    }
   }
 
-  //*** */
-
-  return show ? (
+  return (
     <AlertContainer className={open ? "" : "hide"} {...containerProps}>
       {(showIcon || image) && renderIcon(type, icon, multiLine, image)}
       <AlertContentWrapper {...contentProps}>
@@ -112,13 +102,9 @@ const Alert: React.FC<AlertProps> = (props: any) => {
         <AlertContent multiLine={multiLine}>{props.content}</AlertContent>
         {actions && renderActions(actions, multiLine)}
       </AlertContentWrapper>
-      {!autoDismiss ? (
-        <CloseIcon onClick={(e: Event) => fadeAway(e)} />
-      ) : (
-        undefined
-      )}
+      {!autoDismiss && <CloseIcon onClick={(e: Event) => fadeAway(e)} />}
     </AlertContainer>
-  ) : null
+  )
 }
 
 Alert.defaultProps = {
