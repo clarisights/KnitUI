@@ -1,3 +1,4 @@
+import { ReactNode } from "react"
 import styled, { css, keyframes } from "styled-components"
 import { AlertContainerProps, AlertContentWrapperProps } from "./AlertInterface"
 import {
@@ -5,9 +6,10 @@ import {
   Yellow80,
   Green80,
   Crimson80,
-} from "../../../../common/styles/palette"
-import { ReactNode } from "react"
-import Icon from "../../../Icon/index"
+  Neutral10,
+  Neutral0,
+} from "../../common/styles/palette"
+import Icon from "../Icon/index"
 
 const getWidth = (size: string) => {
   switch (size) {
@@ -45,11 +47,17 @@ export const AlertContainer = styled.div<AlertContainerProps>`
   border-radius: 4px;
   border: 1px solid ${({ type }) => getBackground(type)}
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: ${Neutral10.hex};
   display: flex;
   padding: 14px 14px 14px 0;
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
   overflow: hidden;
+  opacity: 1;
+  transition: all 1s;
+
+  &.hide{
+    opacity: 0;
+  }
 `
 
 export const AlertContentWrapper = styled.div<AlertContentWrapperProps>`
@@ -67,8 +75,8 @@ export const AlertContent = styled.div<{
 }>`
   font-size: 1.4rem;
   line-height: 2rem;
-  font-family: Inter;
-  color: ${({ multiLine }) => (multiLine ? "#DDD1E0" : "#FFF")};
+  font-family: InterRegular;
+  color: ${({ multiLine }) => (multiLine ? "#DDD1E0" : Neutral10.hex)};
 `
 
 export const StyledAlertIcon = styled(Icon).attrs(props => ({
@@ -80,14 +88,14 @@ export const StyledAlertIcon = styled(Icon).attrs(props => ({
 
 export const CloseIcon = styled(Icon).attrs(props => ({
   type: "oClose",
-  fill: "#fff",
+  fill: Neutral0.hex,
 }))`
   padding-left: 14px;
   cursor: pointer;
 `
 
 export const AlertHeading = styled.div`
-  font-family: Inter;
+  font-family: InterRegular;
   font-size: 1.8rem;
   line-height: 24px;
 `

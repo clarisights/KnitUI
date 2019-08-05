@@ -1,18 +1,23 @@
+// Size types of the alert components
 type sizeType = "x-small" | "small" | "medium" | "large"
 
+// Type of alert in particular which define it's other property like color, icon,...
 export type alertType = "standard" | "warning" | "success" | "error"
 
+// define where will be the placement in the container
 export type placementType =
   | "topLeft"
   | "topRight"
   | "bottomLeft"
   | "bottomRight"
 
+// Type of buttons given to have action
 export type actionType = {
   text: string
   callback: Function
 }
 
+// Alert Props are attributes which are used to define alert
 export interface AlertProps {
   // type of the alert
   type?: alertType
@@ -26,9 +31,8 @@ export interface AlertProps {
   dismissDuration?: number
   // heading of the alert
   heading?: string
-  // icon to be shown
-  showIcon?: boolean
-  // custom icon, effective when showIcon is set
+  // custom icon, effective when mention in React Component or as Prop in object passed to API,
+  // for use of default icon just pass it empty or undefined
   icon?: string
   // image url to be shown, overrides icon when both are specified
   image?: string
@@ -44,6 +48,7 @@ export interface AlertProps {
   key?: string
 }
 
+// Properties required by outer container, size, type and placement
 export interface AlertContainerProps {
   // type of the alert
   type: alertType
@@ -53,11 +58,9 @@ export interface AlertContainerProps {
   placement: placementType
 }
 
-export interface AlertState {
-  closed: boolean
-}
-
 export interface AlertContentWrapperProps {
+  // heading of the alert
   heading?: string
+  // whether alert is multiline, defaults to false
   multiLine?: boolean
 }

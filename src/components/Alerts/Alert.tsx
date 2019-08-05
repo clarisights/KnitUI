@@ -11,6 +11,7 @@ import {
   AlertActionsWrapper,
   CloseIcon,
 } from "./StyledAlert"
+import { Neutral0 } from "../../common/styles/palette"
 
 const defaultIcons = {
   standard: "oInfo",
@@ -27,12 +28,14 @@ const renderIcon = (
 ) => {
   if (image) return <StyledAlertPicture multiLine={multiLine} src={image} />
   if (icon)
-    return <StyledAlertIcon multiLine={multiLine} type={icon} fill="#FFF" />
+    return (
+      <StyledAlertIcon multiLine={multiLine} type={icon} fill={Neutral0.hex} />
+    )
   return (
     <StyledAlertIcon
       multiLine={multiLine}
       type={defaultIcons[type]}
-      fill="#FFF"
+      fill={Neutral0.hex}
     />
   )
 }
@@ -41,8 +44,11 @@ const renderActions = (
   actions: Array<actionType>,
   multiLine: boolean | undefined
 ) => {
+  // console.error("Only two actions can be add to Alert, others will be ignored")
+
   // Only pick top 2 actions in case more are supplied
   actions = actions.slice(0, 2)
+
   return (
     <AlertActionsWrapper multiLine={multiLine}>
       {actions.map(action => (
@@ -65,7 +71,6 @@ const Alert: React.FC<AlertProps> = (props: any) => {
     autoDismiss,
     dismissDuration = 5000, //default autoDismiss period if autoDismiss=true
     heading,
-    showIcon,
     icon,
     image,
     actions,
@@ -75,28 +80,45 @@ const Alert: React.FC<AlertProps> = (props: any) => {
 
   const containerProps = { type, size, content, placement }
   const contentProps = { heading, multiLine }
+  const isIcon = props.hasOwnProperty("icon")
 
-  if (heading && !multiLine) {
-    console.error("Please pass multiLine prop to use headings")
-  }
+  // Execute once, when Component will be mounted
+  useEffect(() => {
+    if (props.hasOwnProperty("actions") && actions.length > 2) {
+      // Show error when more than two actions are passed
+      try {
+        if (actions.length > 2) {
+          throw Error(
+            "Only two actions can be add to Alert, others will be ignored"
+          )
+        }
+      } catch (error) {
+        console.error(error.message)
+      }
+    }
+    // heading & multiline are
+    try {
+      if (heading && !multiLine) {
+        throw Error("Please pass multiLine prop to use headings")
+      }
+    } catch (error) {
+      console.error(error.message)
+    }
+  }, [])
 
   // To Auto dismiss the alert after some duration, can use transition delay check out again
   if (autoDismiss) {
-    setTimeout(() => {
-      fadeAway()
-    }, dismissDuration)
+    setTimeout(() => fadeAway(), dismissDuration)
   }
 
   // called by both AutoDismiss and Close Icon click
   const fadeAway = (event?: Event): void => {
-    if (onClose) {
-      onClose(event)
-    }
+    onClose ? onClose(event) : setOpen(false)
   }
 
   return (
     <AlertContainer className={open ? "" : "hide"} {...containerProps}>
-      {(showIcon || image) && renderIcon(type, icon, multiLine, image)}
+      {(isIcon || image) && renderIcon(type, icon, multiLine, image)}
       <AlertContentWrapper {...contentProps}>
         {heading && multiLine && <AlertHeading>{heading}</AlertHeading>}
         <AlertContent multiLine={multiLine}>{props.content}</AlertContent>
