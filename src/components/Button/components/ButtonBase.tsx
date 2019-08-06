@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { IStyled } from "../../../common/types"
 import { SyntheticEvent } from "react"
+import { isLightColor } from "../../../common/_utils"
 
 type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
 
@@ -111,12 +112,16 @@ const getBaseFontColor = (props: IStyledBaseButton) => {
   return ghost ? colorTheme.background : colorTheme.font
 }
 
-const getLightenedBackgroundColor = (props: IStyledBaseButton) => {
-  return getBaseBackgroundColor(props).set("hsl.l", "+0.1")
+const getHoverBackgroundColor = (props: IStyledBaseButton) => {
+  return isLightColor(getBaseBackgroundColor(props)) ?
+   getBaseBackgroundColor(props).set("hsl.l", "-0.1") :
+   getBaseBackgroundColor(props).set("hsl.l", "+0.1")
 }
 
-const getLightenedFontColor = (props: IStyledBaseButton) => {
-  return getBaseFontColor(props).set("hsl.l", "+0.3") // Used for ghost
+const getHoverFontColor = (props: IStyledBaseButton) => {
+  return isLightColor(getBaseFontColor(props)) ?
+   getBaseFontColor(props).set("hsl.l", "-0.3") :
+   getBaseFontColor(props).set("hsl.l", "+0.3")
 }
 
 const getFontColor = (state: ButtonState, props: IStyledBaseButton) => {
@@ -132,10 +137,10 @@ const getFontColor = (state: ButtonState, props: IStyledBaseButton) => {
       return baseFontColor
     case "hover":
       if (bare) {
-        return getLightenedBackgroundColor(props)
+        return getHoverBackgroundColor(props)
       }
       if (ghost) {
-        return getLightenedFontColor(props)
+        return getHoverFontColor(props)
       }
       return baseFontColor
     default:
@@ -158,23 +163,30 @@ const getBackgroundColor = (state: ButtonState, props: IStyledBaseButton) => {
   }
   return state === "default"
     ? getBaseBackgroundColor(props)
-    : getLightenedBackgroundColor(props)
+    : getHoverBackgroundColor(props)
 }
 
 const getIconColor = (state: ButtonState, props: IStyledBaseButton) => {
   const {
-    customProps: { bare },
+    customProps: { bare, ghost },
   } = props
   if (!bare) {
-    return getBaseFontColor(props)
+    switch(state) {
+      case "hover":
+      case "active":
+      case "focus":
+        return ghost ? getHoverFontColor(props) : getBaseFontColor(props)
+      default:
+        return getBaseFontColor(props)
+    }
   }
   switch (state) {
     case "focus":
     case "active":
-      return getLightenedBackgroundColor(props)
+      return getHoverFontColor(props)
     case "default":
     default:
-      return getBaseBackgroundColor(props)
+      return getFontColor("default", props)
   }
 }
 
@@ -191,7 +203,7 @@ const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
       break
     case "hover":
       borderColor = ghost
-        ? getLightenedFontColor(props)
+        ? getHoverFontColor(props)
         : knitui.shades.transparent
       break
     default:
@@ -233,6 +245,9 @@ const StyledButton = styled.button<IStyledBaseButton>`
   :active,
   :focus {
     background-color: ${props => getBackgroundColor("hover", props)};
+    svg path {
+      fill: ${props => getIconColor("hover", props)};
+    }
   }
   :active,
   :focus {
