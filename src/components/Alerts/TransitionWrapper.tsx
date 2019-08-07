@@ -86,7 +86,7 @@ const TransitionWrapper = (props: {
   const Wrapper = getWrapper()
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="alert-wrapper">
       {transitionProps.map(
         ({
           key,

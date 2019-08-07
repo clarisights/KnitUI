@@ -117,14 +117,22 @@ const Alert: React.FC<AlertProps> = (props: any) => {
   }
 
   return (
-    <AlertContainer className={open ? "" : "hide"} {...containerProps}>
+    <AlertContainer
+      data-testid="alert-container"
+      className={open ? "" : "hide"}
+      {...containerProps}>
       {(isIcon || image) && renderIcon(type, icon, multiLine, image)}
       <AlertContentWrapper {...contentProps}>
         {heading && multiLine && <AlertHeading>{heading}</AlertHeading>}
         <AlertContent multiLine={multiLine}>{props.content}</AlertContent>
         {actions && renderActions(actions, multiLine)}
       </AlertContentWrapper>
-      {!autoDismiss && <CloseIcon onClick={(e: Event) => fadeAway(e)} />}
+      {!autoDismiss && (
+        <CloseIcon
+          data-testid="alert-close"
+          onClick={(e: Event) => fadeAway(e)}
+        />
+      )}
     </AlertContainer>
   )
 }

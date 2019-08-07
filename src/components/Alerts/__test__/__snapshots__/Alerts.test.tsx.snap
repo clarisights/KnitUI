@@ -1,0 +1,1565 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert Component Tests different sizes large alert render 1`] = `
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  width: 350px;
+  background: #64476B;
+  border-radius: 4px;
+  border: 1px solid #64476B;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #F2F2F2;
+}
+
+.c1 {
+  margin: 0 0 2px 14px;
+}
+
+.c5 {
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0"
+    content="Hello there"
+    data-testid="alert-container"
+    type="standard"
+  >
+    <span
+      class="c1 c2"
+      fill="#FFFFFF"
+      height="20px"
+      type="oInfo"
+      width="20px"
+    >
+      <svg
+        fill="#FFFFFF"
+        height="20px"
+        viewBox="0 0 24 24"
+        width="20px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        Hello there
+      </div>
+    </div>
+    <span
+      class="c5 c6"
+      data-testid="alert-close"
+      fill="#FFFFFF"
+      height="18px"
+      type="oClose"
+      width="18px"
+    >
+      <svg
+        fill="#FFFFFF"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different sizes medium alert render 1`] = `
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  width: 350px;
+  background: #64476B;
+  border-radius: 4px;
+  border: 1px solid #64476B;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #F2F2F2;
+}
+
+.c1 {
+  margin: 0 0 2px 14px;
+}
+
+.c5 {
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0"
+    content="Hello there"
+    data-testid="alert-container"
+    type="standard"
+  >
+    <span
+      class="c1 c2"
+      fill="#FFFFFF"
+      height="20px"
+      type="oInfo"
+      width="20px"
+    >
+      <svg
+        fill="#FFFFFF"
+        height="20px"
+        viewBox="0 0 24 24"
+        width="20px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        Hello there
+      </div>
+    </div>
+    <span
+      class="c5 c6"
+      data-testid="alert-close"
+      fill="#FFFFFF"
+      height="18px"
+      type="oClose"
+      width="18px"
+    >
+      <svg
+        fill="#FFFFFF"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different sizes small alert render 1`] = `
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  width: 350px;
+  background: #64476B;
+  border-radius: 4px;
+  border: 1px solid #64476B;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #F2F2F2;
+}
+
+.c1 {
+  margin: 0 0 2px 14px;
+}
+
+.c5 {
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0"
+    content="Hello there"
+    data-testid="alert-container"
+    type="standard"
+  >
+    <span
+      class="c1 c2"
+      fill="#FFFFFF"
+      height="20px"
+      type="oInfo"
+      width="20px"
+    >
+      <svg
+        fill="#FFFFFF"
+        height="20px"
+        viewBox="0 0 24 24"
+        width="20px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        Hello there
+      </div>
+    </div>
+    <span
+      class="c5 c6"
+      data-testid="alert-close"
+      fill="#FFFFFF"
+      height="18px"
+      type="oClose"
+      width="18px"
+    >
+      <svg
+        fill="#FFFFFF"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different sizes x-small alert render 1`] = `
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c0 {
+  width: 350px;
+  background: #64476B;
+  border-radius: 4px;
+  border: 1px solid #64476B;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #F2F2F2;
+}
+
+.c1 {
+  margin: 0 0 2px 14px;
+}
+
+.c5 {
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0"
+    content="Hello there"
+    data-testid="alert-container"
+    type="standard"
+  >
+    <span
+      class="c1 c2"
+      fill="#FFFFFF"
+      height="20px"
+      type="oInfo"
+      width="20px"
+    >
+      <svg
+        fill="#FFFFFF"
+        height="20px"
+        viewBox="0 0 24 24"
+        width="20px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        Hello there
+      </div>
+    </div>
+    <span
+      class="c5 c6"
+      data-testid="alert-close"
+      fill="#FFFFFF"
+      height="18px"
+      type="oClose"
+      width="18px"
+    >
+      <svg
+        fill="#FFFFFF"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`AlertWrapper Component Test Adding 3 alerts component to render 1`] = `
+.c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.c8 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c10 {
+  width: 350px;
+  background: #64476B;
+  border-radius: 4px;
+  border: 1px solid #64476B;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c10.hide {
+  opacity: 0;
+}
+
+.c9 {
+  width: 280px;
+  background: #990000;
+  border-radius: 4px;
+  border: 1px solid #990000;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c9.hide {
+  opacity: 0;
+}
+
+.c2 {
+  width: 770px;
+  background: #036600;
+  border-radius: 4px;
+  border: 1px solid #036600;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c2.hide {
+  opacity: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c6 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #F2F2F2;
+}
+
+.c14 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #DDD1E0;
+}
+
+.c3 {
+  margin: 0 0 2px 14px;
+}
+
+.c11 {
+  margin: 2px 0 2px 14px;
+}
+
+.c7 {
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.c13 {
+  font-family: InterRegular;
+  font-size: 1.8rem;
+  line-height: 24px;
+}
+
+.c0 {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 {
+  margin: 4px 0;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-wrapper"
+  >
+    <div
+      class="c1"
+      style="height: 0px; opacity: 0;"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="c2"
+          content="Hello there, this is alert component"
+          data-testid="alert-container"
+          type="success"
+        >
+          <span
+            class="c3 c4"
+            fill="#FFFFFF"
+            height="20px"
+            type="oCheckCircle"
+            width="20px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+              />
+            </svg>
+          </span>
+          <div
+            class="c5"
+          >
+            <div
+              class="c6"
+            >
+              Hello there, this is alert component
+            </div>
+          </div>
+          <span
+            class="c7 c8"
+            data-testid="alert-close"
+            fill="#FFFFFF"
+            height="18px"
+            type="oClose"
+            width="18px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="18px"
+              viewBox="0 0 24 24"
+              width="18px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c1"
+      style="height: 0px; opacity: 0;"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="c9"
+          content="Hello there, this is alert component"
+          data-testid="alert-container"
+          type="error"
+        >
+          <span
+            class="c3 c4"
+            fill="#FFFFFF"
+            height="20px"
+            type="oError"
+            width="20px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"
+              />
+            </svg>
+          </span>
+          <div
+            class="c5"
+          >
+            <div
+              class="c6"
+            >
+              Hello there, this is alert component
+            </div>
+          </div>
+          <span
+            class="c7 c8"
+            data-testid="alert-close"
+            fill="#FFFFFF"
+            height="18px"
+            type="oClose"
+            width="18px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="18px"
+              viewBox="0 0 24 24"
+              width="18px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c1"
+      style="height: 0px; opacity: 0;"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="c10"
+          content="Hello there, this is alert component"
+          data-testid="alert-container"
+          type="standard"
+        >
+          <span
+            class="c11 c4"
+            fill="#FFFFFF"
+            height="20px"
+            type="oInfo"
+            width="20px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+              />
+            </svg>
+          </span>
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+            >
+              This is Heading
+            </div>
+            <div
+              class="c14"
+            >
+              Hello there, this is alert component
+            </div>
+          </div>
+          <span
+            class="c7 c8"
+            data-testid="alert-close"
+            fill="#FFFFFF"
+            height="18px"
+            type="oClose"
+            width="18px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="18px"
+              viewBox="0 0 24 24"
+              width="18px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AlertWrapper Component Test Remove 1 of 3 alerts component rendered 1`] = `
+.c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.c8 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c9 {
+  width: 350px;
+  background: #64476B;
+  border-radius: 4px;
+  border: 1px solid #64476B;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c9.hide {
+  opacity: 0;
+}
+
+.c2 {
+  width: 770px;
+  background: #036600;
+  border-radius: 4px;
+  border: 1px solid #036600;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c2.hide {
+  opacity: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c6 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #F2F2F2;
+}
+
+.c13 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #DDD1E0;
+}
+
+.c3 {
+  margin: 0 0 2px 14px;
+}
+
+.c10 {
+  margin: 2px 0 2px 14px;
+}
+
+.c7 {
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.c12 {
+  font-family: InterRegular;
+  font-size: 1.8rem;
+  line-height: 24px;
+}
+
+.c0 {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 {
+  margin: 4px 0;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-wrapper"
+  >
+    <div
+      class="c1"
+      style="height: 0px; opacity: 1;"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="c2"
+          content="Hello there, this is alert component"
+          data-testid="alert-container"
+          type="success"
+        >
+          <span
+            class="c3 c4"
+            fill="#FFFFFF"
+            height="20px"
+            type="oCheckCircle"
+            width="20px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+              />
+            </svg>
+          </span>
+          <div
+            class="c5"
+          >
+            <div
+              class="c6"
+            >
+              Hello there, this is alert component
+            </div>
+          </div>
+          <span
+            class="c7 c8"
+            data-testid="alert-close"
+            fill="#FFFFFF"
+            height="18px"
+            type="oClose"
+            width="18px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="18px"
+              viewBox="0 0 24 24"
+              width="18px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c1"
+      style="height: 0px; opacity: 1;"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="c9"
+          content="Hello there, this is alert component"
+          data-testid="alert-container"
+          type="standard"
+        >
+          <span
+            class="c10 c4"
+            fill="#FFFFFF"
+            height="20px"
+            type="oInfo"
+            width="20px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+              />
+            </svg>
+          </span>
+          <div
+            class="c11"
+          >
+            <div
+              class="c12"
+            >
+              This is Heading
+            </div>
+            <div
+              class="c13"
+            >
+              Hello there, this is alert component
+            </div>
+          </div>
+          <span
+            class="c7 c8"
+            data-testid="alert-close"
+            fill="#FFFFFF"
+            height="18px"
+            type="oClose"
+            width="18px"
+          >
+            <svg
+              fill="#FFFFFF"
+              height="18px"
+              viewBox="0 0 24 24"
+              width="18px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`api call for Alerts Add 3 alerts, remove one api call 1`] = `
+.c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.c8 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c10 {
+  width: 350px;
+  background: #64476B;
+  border-radius: 4px;
+  border: 1px solid #64476B;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c10.hide {
+  opacity: 0;
+}
+
+.c9 {
+  width: 280px;
+  background: #990000;
+  border-radius: 4px;
+  border: 1px solid #990000;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c9.hide {
+  opacity: 0;
+}
+
+.c2 {
+  width: 770px;
+  background: #036600;
+  border-radius: 4px;
+  border: 1px solid #036600;
+  box-sizing: border-box;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 14px 14px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.c2.hide {
+  opacity: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.4rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c6 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #F2F2F2;
+}
+
+.c14 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: InterRegular;
+  color: #DDD1E0;
+}
+
+.c3 {
+  margin: 0 0 2px 14px;
+}
+
+.c11 {
+  margin: 2px 0 2px 14px;
+}
+
+.c7 {
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.c13 {
+  font-family: InterRegular;
+  font-size: 1.8rem;
+  line-height: 24px;
+}
+
+.c0 {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 {
+  margin: 4px 0;
+}
+
+<div
+  class="c0"
+  data-testid="alert-wrapper"
+>
+  <div
+    class="c1"
+    style="height: 0px; opacity: 0;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="c2"
+        content="Hello there, this is alert component"
+        data-testid="alert-container"
+        type="success"
+      >
+        <span
+          class="c3 c4"
+          fill="#FFFFFF"
+          height="20px"
+          type="oCheckCircle"
+          width="20px"
+        >
+          <svg
+            fill="#FFFFFF"
+            height="20px"
+            viewBox="0 0 24 24"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+            />
+          </svg>
+        </span>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            Hello there, this is alert component
+          </div>
+        </div>
+        <span
+          class="c7 c8"
+          data-testid="alert-close"
+          fill="#FFFFFF"
+          height="18px"
+          type="oClose"
+          width="18px"
+        >
+          <svg
+            fill="#FFFFFF"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1"
+    style="height: 0px; opacity: 0;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="c9"
+        content="Hello there, this is alert component"
+        data-testid="alert-container"
+        type="error"
+      >
+        <span
+          class="c3 c4"
+          fill="#FFFFFF"
+          height="20px"
+          type="oError"
+          width="20px"
+        >
+          <svg
+            fill="#FFFFFF"
+            height="20px"
+            viewBox="0 0 24 24"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"
+            />
+          </svg>
+        </span>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            Hello there, this is alert component
+          </div>
+        </div>
+        <span
+          class="c7 c8"
+          data-testid="alert-close"
+          fill="#FFFFFF"
+          height="18px"
+          type="oClose"
+          width="18px"
+        >
+          <svg
+            fill="#FFFFFF"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1"
+    style="height: 0px; opacity: 0;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="c10"
+        content="Hello there, this is alert component"
+        data-testid="alert-container"
+        type="standard"
+      >
+        <span
+          class="c11 c4"
+          fill="#FFFFFF"
+          height="20px"
+          type="oInfo"
+          width="20px"
+        >
+          <svg
+            fill="#FFFFFF"
+            height="20px"
+            viewBox="0 0 24 24"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+            />
+          </svg>
+        </span>
+        <div
+          class="c12"
+        >
+          <div
+            class="c13"
+          >
+            This is Heading
+          </div>
+          <div
+            class="c14"
+          >
+            Hello there, this is alert component
+          </div>
+        </div>
+        <span
+          class="c7 c8"
+          data-testid="alert-close"
+          fill="#FFFFFF"
+          height="18px"
+          type="oClose"
+          width="18px"
+        >
+          <svg
+            fill="#FFFFFF"
+            height="18px"
+            viewBox="0 0 24 24"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
