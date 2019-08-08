@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { storiesOf } from "@storybook/react"
 import Modal from "./"
 import { withKnobs, select, object } from "@storybook/addon-knobs"
+import styled from "styled-components"
 
 const Readme = require("./README.md")
 
@@ -38,15 +39,15 @@ stories
   .add("with a right section in header", () => {
     const ModalWrapper = () => {
       const [modalVisible, setModalVisible] = useState(true)
+      const StyledRightSection = styled.div`
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+      `
       return (
         <Modal
           header={{
             title: "Title",
-            rightSection: (
-              <div>
-                <div>The right section</div>
-              </div>
-            ),
+            rightSection: (<StyledRightSection>The right section</StyledRightSection>),
           }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
