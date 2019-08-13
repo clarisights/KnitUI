@@ -136,6 +136,8 @@ const getFontColor = (state: ButtonState, props: IStyledBaseButton) => {
       }
       return baseFontColor
     case "hover":
+    case "active":
+    case "focus":
       if (bare) {
         return getHoverBackgroundColor(props)
       }
@@ -166,29 +168,6 @@ const getBackgroundColor = (state: ButtonState, props: IStyledBaseButton) => {
     : getHoverBackgroundColor(props)
 }
 
-const getIconColor = (state: ButtonState, props: IStyledBaseButton) => {
-  const {
-    customProps: { bare, ghost },
-  } = props
-  if (!bare) {
-    switch(state) {
-      case "hover":
-      case "active":
-      case "focus":
-        return ghost ? getHoverFontColor(props) : getBaseFontColor(props)
-      default:
-        return getBaseFontColor(props)
-    }
-  }
-  switch (state) {
-    case "focus":
-    case "active":
-      return getHoverFontColor(props)
-    case "default":
-    default:
-      return getFontColor("default", props)
-  }
-}
 
 const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
   const {
@@ -199,7 +178,7 @@ const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
   switch (state) {
     case "active":
     case "focus":
-      borderColor = ghost ? getBaseFontColor(props) : getHighlighColor(props)
+      borderColor = getHighlighColor(props)
       break
     case "hover":
       borderColor = ghost
@@ -238,27 +217,26 @@ const StyledButton = styled.button<IStyledBaseButton>`
   span {
     margin-right: ${props => getIconMargin(props)};
     svg path {
-      fill: ${props => getIconColor("default", props)};
+      fill: ${props => getFontColor("default", props)};
     }
   }
   :hover,
   :active,
   :focus {
+    color: ${props => getFontColor("hover", props)};
     background-color: ${props => getBackgroundColor("hover", props)};
     svg path {
-      fill: ${props => getIconColor("hover", props)};
+      fill: ${props => getFontColor("hover", props)};
     }
   }
   :active,
   :focus {
-    border: ${props => getBorder("active", props)};
-    svg path {
-      fill: ${props => getIconColor("focus", props)};
-    }
+    border: ${props => getBorder("active", props)} !important;
+    box-shadow: 0px 0px 2px hsl(216, 100%, 50%);
+    outline: none;
   }
   :hover {
     border: ${props => getBorder("hover", props)};
-    color: ${props => getFontColor("hover", props)};
   }
   :disabled {
     opacity: 0.5;
