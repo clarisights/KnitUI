@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "build/lib",
+    "outDir": "build/types",
     "module": "commonjs",
     "target": "es5",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "sourceMap": true,
     "allowJs": false,
-    "rootDirs": ["components"],
-    "baseUrl": "components",
+    "rootDirs": ["src"],
+    "baseUrl": "src",
     "jsx": "react",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
@@ -23,5 +23,5 @@
     "skipLibCheck": true,
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", "scripts", "lib", "es"]
+  "exclude": ["node_modules", "build", "scripts", "build"]
 }

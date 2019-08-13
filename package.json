@@ -4,7 +4,7 @@
   "description": "Component library for Clarisights",
   "main": "build/lib/index.js",
   "module": "build/es/index.js",
-  "types": "index.d.ts",
+  "types": "build/types/bundle.d.ts",
   "repository": "git@github.com:adwyze/KnitUI.git",
   "author": "Rohan Malhotra <rohan.root@gmail.com>",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "scripts": {
     "test": "jest --verbose=false --no-cache",
     "prebuild": "rm -rf build",
-    "build": "npm-run-all --parallel build:cjs build:es",
+    "build": "npm run dts:generate; npm run dts:bundle; npm-run-all --parallel build:cjs build:es",
     "build:cjs": "NODE_ENV=production babel --extensions .ts,.tsx,.js,.jsx src --out-dir build/lib --ignore **/*.test.tsx,**/__tests__,**/__mocks__,**/*.spec.*,**/__snapshots__,**/*.stories.tsx,**/*.md && cp -r src/common/assets build/es/common/assets && cp -r src/common/assets build/lib/common/assets",
     "build:es": "NODE_ENV=production BABEL_ENV=es babel --extensions .ts,.tsx,.js,.jsx src --out-dir build/es --ignore **/*.test.tsx,**/__tests__,**/__mocks__,**/*.spec.*,**/__snapshots__,**/*.stories.tsx,**/*.md && cp -r src/common/assets build/es/common/assets && cp -r src/common/assets build/lib/common/assets",
     "storybook": "start-storybook -p 9001 -c .storybook",
@@ -23,7 +23,9 @@
     "precommit": "lint-staged",
     "lint-staged:ts": "tsc && node node_modules/tslint/bin/tslint --project tsconfig.json",
     "format": "prettier --write components/**/*.{tsx,ts,jsx,js,json}",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json"
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "dts:generate": "tsc --emitDeclarationOnly",
+    "dts:bundle": "dts-bundle --name knit-ui --main ./build/types/index.d.ts --out 'bundle.d.ts'"
   },
   "husky": {
     "hooks": {
@@ -49,18 +51,19 @@
     "@babel/preset-typescript": "^7.3.3",
     "@babel/runtime": "^7.4.3",
     "@storybook/addon-actions": "^5.0.10",
+    "@storybook/addon-backgrounds": "^5.0.10",
     "@storybook/addon-info": "^5.0.10",
     "@storybook/addon-knobs": "^5.0.11",
     "@storybook/addon-storyshots": "^5.0.11",
     "@storybook/addon-storysource": "^5.0.11",
     "@storybook/react": "^5.0.10",
-    "@storybook/addon-backgrounds": "^5.0.10",
-    "@types/styled-components": "^4.1.14",
     "@types/jest": "^24.0.13",
     "@types/storybook__react": "^4.0.1",
+    "@types/styled-components": "^4.1.14",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.10.0",
+    "dts-bundle": "^0.7.3",
     "husky": "^1.3.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.3.1",
@@ -73,6 +76,7 @@
     "react-docgen-typescript-loader": "^3.0.1",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-dom": "^16.8.4",
+    "react-test-renderer": "^16.8.6",
     "react-testing-library": "^7.0.0",
     "storybook-readme": "^5.0.0",
     "ts-jest": "^24.0.0",
@@ -80,8 +84,7 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.4.5",
-    "react-test-renderer": "^16.8.6"
+    "typescript": "^3.4.5"
   },
   "dependencies": {
     "chroma-js": "^2.0.3",
