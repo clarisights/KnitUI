@@ -14,16 +14,14 @@ export interface AlertAPIInterface {
 // Alerts save `AlertsWrapper` of 4 corners using [placement]: AlertsWrapperInstance
 const alertsWrappers: { [placement: string]: AlertAPIInterface } = {}
 
-// Const key and placement information pair
-
 // Divs to refer div placement element in below add function
 const div: HTMLElement = document.createElement("div")
 div.classList.add("knit-ui-alerts")
 div.setAttribute("data-testid", "knit-ui-alerts")
 
-let divTopLeft: HTMLElement = document.createElement("div")
+const divTopLeft: HTMLElement = document.createElement("div")
 divTopLeft.classList.add("knit-ui-top-left-alerts")
-divTopLeft = div.appendChild(divTopLeft)
+div.appendChild(divTopLeft)
 
 const divTopRight: HTMLElement = document.createElement("div")
 divTopRight.classList.add("knit-ui-top-right-alerts")
@@ -52,8 +50,7 @@ function add(alertProps: AlertProps): string {
     ? (alertProps.placement as string)
     : "bottomLeft"
 
-  let key = ""
-
+  let key
   // If AlertWrapperInstance instance is not found for particular placement,
   // create div and place it into  DOM outside of current ReactDOM,
   // we can pass our custom HTML Element using getContainer
@@ -95,11 +92,8 @@ function add(alertProps: AlertProps): string {
 }
 
 function remove(key: string): boolean {
-  for (const [_placementProp, wrapper] of Object.entries(alertsWrappers)) {
-    if (wrapper.remove && wrapper.remove(key)) {
-      return true
-    }
-  }
+  for (const [_placementProp, wrapper] of Object.entries(alertsWrappers))
+    if (wrapper.remove && wrapper.remove(key)) return true
   return false
 }
 

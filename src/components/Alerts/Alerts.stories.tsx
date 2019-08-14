@@ -1,6 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import {
   withKnobs,
   text,
@@ -10,7 +10,7 @@ import {
 } from "@storybook/addon-knobs"
 import Alert from "./Alert"
 import { AlertProps, placementType } from "./AlertInterface"
-import Button from "../Button/index"
+import Button from "../Button"
 import Alerts from "./index"
 
 const Readme = require("./Alerts.README.md")
@@ -39,6 +39,42 @@ const Center = styled.div`
 
   justify-content: center;
   align-items: center;
+`
+
+// To modify style of alert using classname, you have to define it's rule in GlobalStyle
+const GlobalStyle = createGlobalStyle`
+  .new_class {
+    border: 2px dashed white;
+    background: skyblue;
+    color: yellow;
+    width: 500px;
+  }
+
+  // To change icon and closeIcon
+  .new_class *[fill]{
+    fill: greenyellow    
+  }
+
+  // To change closeIcon
+  .new_class *[type="oClose"] *[fill]{ //container -> span with type oClose -> svg with fill
+    fill: red;
+  }
+
+  // To change ActionAlertButton
+  .new_class *[class^="StyledAlert__StyledAlertAction"]{
+    border-radius: 4px;
+    padding: 3px;
+    color: black;
+  }
+  .new_class *[class^="StyledAlert__StyledAlertAction"]:hover{
+    background: rgba(255,255,255,0.5);
+    color: black;
+  }
+
+  // To change AlertContent
+  .new_class *[class^="StyledAlert__AlertContent-"]{
+    color: red;
+  }
 `
 
 const AlertButton = (props: any) => {
@@ -73,6 +109,7 @@ const alertArr: AlertProps[] = [
     // heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
     multiLine: false,
     actions: alertActions,
+    onClose: () => {},
   },
   {
     type: "warning",
@@ -92,6 +129,7 @@ const alertArr: AlertProps[] = [
     dismissDuration: 1500,
     multiLine: false,
     icon: "",
+    onClose: () => {},
   },
   {
     type: "success",
@@ -102,7 +140,7 @@ const alertArr: AlertProps[] = [
     dismissDuration: 250,
     heading: "Hi there",
     multiLine: true,
-    icon: ``,
+    icon: "",
     image:
       "https://clarisights-users.s3.eu-central-1.amazonaws.com/production/users/profile_picture_561/1540893983_clarisights.png",
   },
@@ -111,7 +149,13 @@ const alertArr: AlertProps[] = [
 const stories = storiesOf("Alerts", module)
 stories.addDecorator(withKnobs)
 stories.addDecorator(story => (
-  <div style={{ width: "90vw", height: "90vh", border: "1px solid black" }}>
+  <div
+    style={{
+      width: "90vw",
+      height: "90vh",
+      border: "1px solid black",
+      fontSize: "10px",
+    }}>
     {story()}
   </div>
 ))
@@ -130,7 +174,7 @@ stories
       type={select("Type", alertOptions, "standard")}
       content={text("content", "Hey there!")}
       autoDismiss={boolean("Auto Dismiss", true)}
-      dismissDuration={number("Dismiss Duration", 2000)}
+      dismissDuration={number("Dismiss Duration", 4000)}
     />
   ))
   .add("Basic with manual dismiss", () => (
@@ -138,6 +182,7 @@ stories
       type={select("Type", alertOptions, "error")}
       content={text("content", "Hey there!")}
       placement={text("Placement", "bottomRight")}
+      onClose={() => {}}
     />
   ))
   .add("Basic with default icon", () => (
@@ -357,3 +402,67 @@ stories
       </div>
     )
   })
+  .add("custom style using class", () => {
+    return (
+      <React.Fragment>
+        <GlobalStyle />
+        <Center>
+          <Button
+            label={"Custom Style Alert"}
+            onClick={event =>
+              Alerts.add({
+                type: "standard",
+                size: "small",
+                placement: "topRight",
+                autoDismiss: false,
+                dismissDuration: 1500,
+                heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
+                multiLine: true,
+                actions: alertActions,
+                className: "new_class",
+                prefixClassName: "myclass",
+                content: "This is the content",
+                icon: "",
+                onClose: () => {},
+              })
+            }
+          />
+        </Center>
+      </React.Fragment>
+    )
+  })
+  .add("React Component passed as content", () => {
+    return (
+      <React.Fragment>
+        <Center>
+          <Button
+            label={"Content as Component Alert"}
+            onClick={event =>
+              Alerts.add({
+                type: "standard",
+                size: "small",
+                placement: "topRight",
+                autoDismiss: false,
+                dismissDuration: 1500,
+                heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
+                multiLine: true,
+                actions: alertActions,
+                content: <MyComponent />,
+                icon: "",
+                onClose: () => {},
+              })
+            }
+          />
+        </Center>
+      </React.Fragment>
+    )
+  })
+
+const MyStyledComponent = styled.div`
+  border: 1px solid red;
+  color: black;
+`
+
+const MyComponent = () => {
+  return <MyStyledComponent>Component Passed in Content</MyStyledComponent>
+}

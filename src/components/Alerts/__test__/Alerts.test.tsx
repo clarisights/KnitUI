@@ -8,6 +8,7 @@ import {
   wait,
   queryAllByTestId as _queryAllByTestId,
   getAllByText as _getAllByText,
+  waitForDomChange,
 } from "react-testing-library"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
@@ -15,6 +16,7 @@ import Alert from "../Alert"
 import { AlertAPIInterface } from "../api"
 import alerts from "../"
 import AlertsWrapper from "../AlertsWrapper"
+import console = require("console")
 
 afterEach(cleanup)
 
@@ -183,59 +185,72 @@ describe("AlertWrapper Component Test", () => {
   })
 })
 
-describe("api call for Alerts", () => {
-  test("Add 3 alerts, remove one api call", async () => {
-    const keys: string[] = []
-    let key
-
+describe("Custom class and Custom content", () => {
+  test("React component as content", () => {
+    const MyComponent = () => {
+      return <p>Custom Compoenent</p>
+    }
     act(() => {
-      key = alerts.add({
+      alerts.add({
         type: "standard",
-        content: "Hello there, this is alert component",
+        size: "small",
+        placement: "topRight",
+        autoDismiss: false,
+        dismissDuration: 1500,
+        heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
         multiLine: true,
-        heading: "This is Heading",
-        icon: "",
-      })
-      keys.push(key)
-    })
-    act(() => {
-      key = alerts.add({
-        type: "error",
-        content: "Hello there, this is alert component",
-        icon: "",
-        size: "x-small",
-      })
-      keys.push(key)
-    })
-    act(() => {
-      key = alerts.add({
-        type: "success",
-        content: "Hello there, this is alert component",
+        content: <MyComponent />,
         icon: "",
         onClose: () => {},
-        size: "large",
       })
-      keys.push(key)
     })
+    expect(_getAllByText(document.body, "Custom Compoenent")).toHaveLength(1)
+  })
+  cleanup()
 
-    await wait()
-    // Remove Item from Wrapper
-    const wrapper = _getByTestId(document.body, "alert-wrapper")
-    expect(_queryAllByTestId(wrapper, "alert-container")).toHaveLength(3)
-
-    // Test as a user interaction
-    expect(
-      _getAllByText(wrapper, "Hello there, this is alert component")
-    ).toHaveLength(3)
-
-    let status = false
+  test("custom class to content", async () => {
     act(() => {
-      status = alerts.remove(keys[1])
+      alerts.add({
+        type: "standard",
+        size: "small",
+        placement: "topRight",
+        autoDismiss: false,
+        dismissDuration: 1500,
+        heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
+        multiLine: true,
+        className: "clsName",
+        content: "class name",
+        icon: "",
+        onClose: () => {},
+      })
     })
-    // Assert for Remove API worked correctly
-    expect(status).toBe(true)
+    const wrapper = _getByTestId(document.body, "knit-ui-alerts")
+    await waitForDomChange({ container: wrapper })
+    expect(_queryAllByTestId(wrapper, "alert-container")[0]).toHaveClass(
+      "clsName"
+    )
+  })
 
-    // Snapshot
-    expect(wrapper).toMatchSnapshot()
+  test("prefix parameter class to content", async () => {
+    act(() => {
+      alerts.add({
+        type: "standard",
+        size: "small",
+        placement: "topRight",
+        autoDismiss: false,
+        dismissDuration: 1500,
+        heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
+        multiLine: true,
+        prefixClassName: "clsName",
+        content: "class name",
+        icon: "",
+        onClose: () => {},
+      })
+    })
+    const wrapper = _getByTestId(document.body, "knit-ui-alerts")
+    await waitForDomChange({ container: wrapper })
+    expect(_queryAllByTestId(wrapper, "alert-container")[0]).toHaveClass(
+      "clsName-knit-alert"
+    )
   })
 })

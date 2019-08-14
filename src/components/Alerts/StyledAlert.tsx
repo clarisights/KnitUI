@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import React, { ReactNode } from "react"
 import styled, { css, keyframes } from "styled-components"
 import { AlertContainerProps, AlertContentWrapperProps } from "./AlertInterface"
 import {
@@ -9,58 +9,64 @@ import {
   Neutral10,
   Neutral0,
 } from "../../common/styles/palette"
+import { typography } from "../../common/styles/variables"
 import Icon from "../Icon/index"
 
-const getWidth = (size: string) => {
-  switch (size) {
-    case "x-small":
-      return 280
-    case "small":
-      return 350
-    case "medium":
-      return 490
-    case "large":
-      return 770
-    default:
-      return 350
-  }
+const isPrefixClassName = (prefixClassName: string | undefined) =>
+  prefixClassName !== "" && prefixClassName !== undefined
+
+const width = {
+  "x-small": 280,
+  small: 350,
+  medium: 490,
+  large: 770,
 }
 
-const getBackground = (type: string) => {
-  switch (type) {
-    case "standard":
-      return Magenta80.hex
-    case "warning":
-      return Yellow80.hex
-    case "success":
-      return Green80.hex
-    case "error":
-      return Crimson80.hex
-    default:
-      return Magenta80.hex
-  }
+const background = {
+  standard: Magenta80.hex,
+  warning: Yellow80.hex,
+  success: Green80.hex,
+  error: Crimson80.hex,
 }
 
-export const AlertContainer = styled.div<AlertContainerProps>`
-  width: ${({ size }) => getWidth(size)}px;
-  background: ${({ type }) => getBackground(type)};
+const { fontSize: textFontSize, lineHeight: textLineHeight } = typography[14]
+const {
+  fontSize: headingFontSize,
+  lineHeight: headingLineHeight,
+} = typography[18]
+
+export const AlertContainer = styled("div").attrs(
+  (props: AlertContainerProps) => ({
+    className:
+      isPrefixClassName(props.prefixClassName) &&
+      props.prefixClassName + "-knit-alert",
+  })
+)<AlertContainerProps>`
+  width: ${({ size }) => width[size]}px;
+  background: ${({ type }) => background[type]};
   border-radius: 4px;
-  border: 1px solid ${({ type }) => getBackground(type)}
+  border: 1px solid ${({ type }) => background[type]}
   box-sizing: border-box;
   color: ${Neutral10.hex};
   display: flex;
   padding: 14px 14px 14px 0;
-  margin: 5px 0;
   overflow: hidden;
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.5s;
 
-  &.hide{
+  &.hide {
     opacity: 0;
   }
 `
 
-export const AlertContentWrapper = styled.div<AlertContentWrapperProps>`
+//  &${props => props.style}
+export const AlertContentWrapper = styled.div.attrs(
+  ({ prefixClassName }: AlertContentWrapperProps) => ({
+    className:
+      isPrefixClassName(prefixClassName) &&
+      prefixClassName + "-knit-alert-content-wrapper",
+  })
+)<AlertContentWrapperProps>`
   display: flex;
   margin-left: 1.4rem;
   flex-direction: ${({ heading, multiLine }) =>
@@ -69,24 +75,34 @@ export const AlertContentWrapper = styled.div<AlertContentWrapperProps>`
   width: 100%;
 `
 
-export const AlertContent = styled.div<{
-  children: ReactNode
+export const AlertContent = styled.div.attrs(
+  ({ prefixClassName }: { prefixClassName: string }) => ({
+    className:
+      isPrefixClassName(prefixClassName) &&
+      prefixClassName + "-knit-alert-content",
+  })
+)<{
+  children: string | ReactNode
   multiLine?: boolean
+  prefixClassName?: string
 }>`
-  font-size: 1.4rem;
-  line-height: 2rem;
-  font-family: InterRegular;
+  font-size: ${textFontSize}rem;
+  line-height: ${textLineHeight}rem;
   color: ${({ multiLine }) => (multiLine ? "#DDD1E0" : Neutral10.hex)};
 `
 
-export const StyledAlertIcon = styled(Icon).attrs(props => ({
+export const StyledAlertIcon = styled(Icon).attrs(({ prefixClassName }) => ({
+  className:
+    isPrefixClassName(prefixClassName) && prefixClassName + "-knit-alert-icon",
   width: "20px",
   height: "20px",
 }))`
   margin: ${({ multiLine }) => (multiLine ? "2px" : 0)} 0 2px 14px;
 `
 
-export const CloseIcon = styled(Icon).attrs(props => ({
+export const CloseIcon = styled(Icon).attrs(({ prefixClassName }) => ({
+  className:
+    isPrefixClassName(prefixClassName) && prefixClassName + "-knit-alert-close",
   type: "oClose",
   fill: Neutral0.hex,
 }))`
@@ -94,14 +110,26 @@ export const CloseIcon = styled(Icon).attrs(props => ({
   cursor: pointer;
 `
 
-export const AlertHeading = styled.div`
-  font-family: InterRegular;
-  font-size: 1.8rem;
-  line-height: 24px;
+export const AlertHeading = styled.div.attrs(
+  ({ prefixClassName }: { prefixClassName: string | undefined }) => ({
+    className:
+      isPrefixClassName(prefixClassName) &&
+      prefixClassName + "-knit-alert-heading",
+  })
+)<{ prefixClassName?: string | undefined }>`
+  font-size: ${headingFontSize}rem;
+  line-height: ${headingLineHeight}rem;
 `
 
-export const StyledAlertPicture = styled.img<{
+export const StyledAlertPicture = styled.img.attrs(
+  ({ prefixClassName }: { prefixClassName: string | undefined }) => ({
+    className:
+      isPrefixClassName(prefixClassName) &&
+      prefixClassName + "-knit-alert-icon",
+  })
+)<{
   multiLine: boolean | undefined
+  prefixClassName?: string | undefined
 }>`
   min-width: 20px;
   height: 20px;
@@ -109,15 +137,29 @@ export const StyledAlertPicture = styled.img<{
   margin: ${({ multiLine }) => (multiLine ? "2px" : 0)} 0 2px 14px;
 `
 
-export const StyledAlertAction = styled.div`
+export const StyledAlertAction = styled.div.attrs(
+  ({ prefixClassName }: { prefixClassName: string | undefined }) => ({
+    className:
+      isPrefixClassName(prefixClassName) &&
+      prefixClassName + "-knit-alert-action",
+  })
+)<{ prefixClassName: string | undefined }>`
+  flex-shrink: 0;
   text-transform: uppercase;
-  font-size: 1.4rem;
-  line-height: 20px;
+  font-size: ${textFontSize}rem;
+  line-height: ${textLineHeight}rem;
   cursor: pointer;
 `
 
-export const AlertActionsWrapper = styled.div<{
+export const AlertActionsWrapper = styled.div.attrs(
+  ({ prefixClassName }: { prefixClassName: string | undefined }) => ({
+    className:
+      isPrefixClassName(prefixClassName) &&
+      prefixClassName + "-knit-alert-action-wrapper",
+  })
+)<{
   multiLine: boolean | undefined
+  prefixClassName?: string | undefined
 }>`
   margin: ${({ multiLine }) => (multiLine ? "18px" : 0)} 3px 0 0;
   display: flex;

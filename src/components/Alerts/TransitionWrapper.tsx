@@ -20,6 +20,13 @@ interface UserTransitionResultWithLife
   props: { life: string }
 }
 
+const PlacementWrapperDiv = {
+  topLeft: TopLeftBox,
+  topRight: TopRightBox,
+  bottomLeft: BottomLeftBox,
+  bottomRight: BottomRightBox,
+}
+
 //Transition/Animation Using react-spring useTransition
 const TransitionWrapper = (props: {
   alerts: Array<AlertProps>
@@ -39,7 +46,6 @@ const TransitionWrapper = (props: {
   }
   const [alerts, setAlerts] = useState(props.alerts)
   const [alertRefMap] = useState(() => new WeakMap())
-  const [dismissAlertsMap] = useState(() => new WeakMap())
 
   useEffect(() => {
     setAlerts(props.alerts)
@@ -53,7 +59,6 @@ const TransitionWrapper = (props: {
     enter: (item: AlertProps) => async (next: Function) =>
       await next({ height: alertRefMap.get(item), opacity: 1 }),
     leave: (item: AlertProps) => async (next: Function, cancel: Function) => {
-      dismissAlertsMap.set(item, cancel)
       await next({ life: "0%" })
       await next({ opacity: 0 })
       await next({ height: 0 })
@@ -68,22 +73,7 @@ const TransitionWrapper = (props: {
   )
 
   // Return container based on placement prop
-  const getWrapper = () => {
-    switch (props.placement) {
-      case "topLeft":
-        return TopLeftBox
-      case "topRight":
-        return TopRightBox
-      case "bottomLeft":
-        return BottomLeftBox
-      case "bottomRight":
-        return BottomRightBox
-      default:
-        return BottomLeftBox
-    }
-  }
-
-  const Wrapper = getWrapper()
+  const Wrapper = PlacementWrapperDiv[props.placement]
 
   return (
     <Wrapper data-testid="alert-wrapper">
@@ -93,12 +83,6 @@ const TransitionWrapper = (props: {
           item,
           props: { life, ...style },
         }: UserTransitionResultWithLife) => {
-          const curOnClose = item.onClose
-          item.onClose = (e?: Event): void => {
-            if (curOnClose) curOnClose(e)
-            if (dismissAlertsMap.has(item)) dismissAlertsMap.get(item)()
-          }
-
           return (
             <TransitionDiv key={key} style={style}>
               <AlertDiv

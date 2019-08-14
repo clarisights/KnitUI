@@ -1,3 +1,5 @@
+import { ReactNode, ReactComponentElement, CSSProperties } from "react"
+
 // Size types of the alert components
 type sizeType = "x-small" | "small" | "medium" | "large"
 
@@ -13,7 +15,9 @@ export type placementType =
 
 // Type of buttons given to have action
 export type actionType = {
+  // Text To be displayed on action button
   text: string
+  // Callback function when action button is Clicked
   callback: Function
 }
 
@@ -24,7 +28,7 @@ export interface AlertProps {
   // Size of the alert, default is small
   size?: sizeType
   // Main content of the alert
-  content: string
+  content: string | ReactNode
   // whether alert is to be auto dismissed
   autoDismiss?: boolean
   // time after which we need to dismiss, effective when auto dismiss is set
@@ -46,6 +50,10 @@ export interface AlertProps {
   placement?: placementType
   // key to reference Element from Alerts Container (help in remove function)
   key?: string
+  // custom className to be passed
+  className?: string
+  // prefix classname for custom style
+  prefixClassName?: string
 }
 
 // Properties required by outer container, size, type and placement
@@ -56,6 +64,8 @@ export interface AlertContainerProps {
   size: sizeType
   // placement of notification on screen
   placement: placementType
+  // prefix classname for custom style
+  prefixClassName?: string
 }
 
 export interface AlertContentWrapperProps {
@@ -63,4 +73,6 @@ export interface AlertContentWrapperProps {
   heading?: string
   // whether alert is multiline, defaults to false
   multiLine?: boolean
+  // prefix classname for custom style
+  prefixClassName?: string
 }

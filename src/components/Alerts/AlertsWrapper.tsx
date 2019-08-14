@@ -10,7 +10,7 @@ export interface AlertsWrapperProps {
   getContainer?: () => HTMLElement | ReactNode
 }
 
-export interface AlertsWrapperStates {
+export interface AlertsWrapperState {
   // Array of Alert Props object stored as state and passed around to transition wrappers.
   alerts: Array<AlertProps>
 }
@@ -18,7 +18,7 @@ export interface AlertsWrapperStates {
 // Wrapper Component for particular corner, Using React Class Component to access methods using API (callback ref).
 class AlertsWrapper extends React.Component<
   AlertsWrapperProps,
-  AlertsWrapperStates
+  AlertsWrapperState
 > {
   placement: placementType
 
@@ -27,21 +27,19 @@ class AlertsWrapper extends React.Component<
     this.state = {
       alerts: [],
     }
-    this.placement = this.props.placement ? this.props.placement : "bottomLeft"
+    this.placement = this.props.placement || "bottomLeft"
   }
 
   // Passed to API, add Alert to state and generate unique key
   add = (alertProps: AlertProps): string => {
     const key: string = uuid() // To generate Unique key for each Alert Component
-    alertProps = { key: key, ...alertProps }
+    alertProps = { key, ...alertProps }
 
     // Closing Alert will call remove method of this class to update state
     const curOnClose = alertProps.onClose
     alertProps.onClose = event => {
       this.remove(key)
-      if (curOnClose) {
-        curOnClose(event)
-      }
+      curOnClose && curOnClose(event)
     }
 
     this.setState({
@@ -53,17 +51,17 @@ class AlertsWrapper extends React.Component<
 
   // Passed to API, remove Element from state using key
   remove = (key: string): boolean => {
-    let isFound = false
-    this.setState({
-      alerts: this.state.alerts.filter(i => {
-        if (i.key !== key) {
-          isFound = true
-          return true
-        }
-        return false
-      }),
-    })
-    return isFound
+    const index = this.state.alerts.findIndex(i => i.key === key)
+    if (index > -1) {
+      this.setState({
+        alerts: [
+          ...this.state.alerts.slice(0, index),
+          ...this.state.alerts.slice(index + 1),
+        ],
+      })
+      return true
+    }
+    return false
   }
 
   render() {

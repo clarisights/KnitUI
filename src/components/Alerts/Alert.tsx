@@ -24,15 +24,29 @@ const renderIcon = (
   type: alertType,
   icon: string | undefined,
   multiLine: boolean,
-  image: string | undefined
+  image: string | undefined,
+  prefixClassName?: string | undefined
 ) => {
-  if (image) return <StyledAlertPicture multiLine={multiLine} src={image} />
+  if (image)
+    return (
+      <StyledAlertPicture
+        prefixClassName={prefixClassName}
+        multiLine={multiLine}
+        src={image}
+      />
+    )
   if (icon)
     return (
-      <StyledAlertIcon multiLine={multiLine} type={icon} fill={Neutral0.hex} />
+      <StyledAlertIcon
+        prefixClassName={prefixClassName}
+        multiLine={multiLine}
+        type={icon}
+        fill={Neutral0.hex}
+      />
     )
   return (
     <StyledAlertIcon
+      prefixClassName={prefixClassName}
       multiLine={multiLine}
       type={defaultIcons[type]}
       fill={Neutral0.hex}
@@ -42,17 +56,21 @@ const renderIcon = (
 
 const renderActions = (
   actions: Array<actionType>,
-  multiLine: boolean | undefined
+  multiLine: boolean | undefined,
+  prefixClassName?: string
 ) => {
-  // console.error("Only two actions can be add to Alert, others will be ignored")
-
   // Only pick top 2 actions in case more are supplied
   actions = actions.slice(0, 2)
 
   return (
-    <AlertActionsWrapper multiLine={multiLine}>
+    <AlertActionsWrapper
+      prefixClassName={prefixClassName}
+      multiLine={multiLine}>
       {actions.map(action => (
-        <StyledAlertAction key={action.text} onClick={() => action.callback()}>
+        <StyledAlertAction
+          prefixClassName={prefixClassName}
+          key={action.text}
+          onClick={() => action.callback()}>
           {action.text}
         </StyledAlertAction>
       ))}
@@ -67,7 +85,6 @@ const Alert: React.FC<AlertProps> = (props: any) => {
     size = "small",
     content,
     multiLine = false,
-    children,
     autoDismiss,
     dismissDuration = 5000, //default autoDismiss period if autoDismiss=true
     heading,
@@ -76,33 +93,30 @@ const Alert: React.FC<AlertProps> = (props: any) => {
     actions,
     onClose,
     placement = "bottomLeft",
+    className,
+    prefixClassName,
   } = props
 
-  const containerProps = { type, size, content, placement }
-  const contentProps = { heading, multiLine }
+  const containerProps = {
+    type,
+    size,
+    content,
+    placement,
+    prefixClassName,
+  }
+  const contentProps = { heading, multiLine, prefixClassName }
   const isIcon = props.hasOwnProperty("icon")
-
   // Execute once, when Component will be mounted
   useEffect(() => {
+    // Show error when more than two actions are passed
     if (props.hasOwnProperty("actions") && actions.length > 2) {
-      // Show error when more than two actions are passed
-      try {
-        if (actions.length > 2) {
-          throw Error(
-            "Only two actions can be add to Alert, others will be ignored"
-          )
-        }
-      } catch (error) {
-        console.error(error.message)
-      }
+      console.error(
+        "Only two actions can be add to Alert, others will be ignored"
+      )
     }
     // heading & multiline are
-    try {
-      if (heading && !multiLine) {
-        throw Error("Please pass multiLine prop to use headings")
-      }
-    } catch (error) {
-      console.error(error.message)
+    if (heading && !multiLine) {
+      console.error("Please pass multiLine prop to use headings")
     }
   }, [])
 
@@ -113,22 +127,31 @@ const Alert: React.FC<AlertProps> = (props: any) => {
 
   // called by both AutoDismiss and Close Icon click
   const fadeAway = (event?: Event): void => {
-    onClose ? onClose(event) : setOpen(false)
+    onClose && onClose(event)
+    setOpen(false)
   }
 
   return (
     <AlertContainer
       data-testid="alert-container"
-      className={open ? "" : "hide"}
+      className={`${!!className ? className : ""}` + (open ? "" : " hide")}
       {...containerProps}>
-      {(isIcon || image) && renderIcon(type, icon, multiLine, image)}
+      {(isIcon || image) &&
+        renderIcon(type, icon, multiLine, image, prefixClassName)}
       <AlertContentWrapper {...contentProps}>
-        {heading && multiLine && <AlertHeading>{heading}</AlertHeading>}
-        <AlertContent multiLine={multiLine}>{props.content}</AlertContent>
-        {actions && renderActions(actions, multiLine)}
+        {heading && multiLine && (
+          <AlertHeading prefixClassName={prefixClassName}>
+            {heading}
+          </AlertHeading>
+        )}
+        <AlertContent prefixClassName={prefixClassName} multiLine={multiLine}>
+          {props.content}
+        </AlertContent>
+        {actions && renderActions(actions, multiLine, prefixClassName)}
       </AlertContentWrapper>
       {!autoDismiss && (
         <CloseIcon
+          prefixClassName={prefixClassName}
           data-testid="alert-close"
           onClick={(e: Event) => fadeAway(e)}
         />

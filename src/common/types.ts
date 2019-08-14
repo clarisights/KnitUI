@@ -35,4 +35,3 @@ export interface IStyled<PropType> {
   theme?: any
   [htmlProp: string]: any
 }
-
