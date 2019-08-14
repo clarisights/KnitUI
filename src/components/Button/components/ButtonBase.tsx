@@ -199,6 +199,11 @@ const getIconMargin = (props: IStyledBaseButton) => {
   return icon && label ? (size === "small" ? "0.2rem" : "0.4rem") : "0rem"
 }
 
+const getBoxShadow = (props: IStyledBaseButton) => {
+  const { theme: { knitui } } = props
+  return `0px 0px 2px ${knitui.shades.blue50}`
+}
+
 const StyledButton = styled.button<IStyledBaseButton>`
   display: flex;
   align-items: center;
@@ -232,7 +237,7 @@ const StyledButton = styled.button<IStyledBaseButton>`
   :active,
   :focus {
     border: ${props => getBorder("active", props)} !important;
-    box-shadow: 0px 0px 2px hsl(216, 100%, 50%);
+    box-shadow: ${props => getBoxShadow(props)};
     outline: none;
   }
   :hover {
