@@ -86,12 +86,14 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
       }
     }
   }
-  &.${transitionName}-appear {
+  &.${transitionName}-appear,
+  &.${transitionName}-enter {
     opacity: 0;
     transform: scale(0.9);
   }
 
-  &.${transitionName}-appear.${transitionName}-appear-active {
+  &.${transitionName}-appear.${transitionName}-appear-active,
+  &.${transitionName}-enter.${transitionName}-enter-active {
     opacity: 1;
     transform: scale(1.0);
     transition: opacity ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay}, transform ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay};
@@ -108,11 +110,13 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
     transition: opacity ${appearDuration}ms ${modalLeaveTransitionPath}, transform ${appearDuration}ms ${modalLeaveTransitionPath};
   }
 
-  &.${maskTransitionName}-appear {
+  &.${maskTransitionName}-appear,
+  &.${maskTransitionName}-enter {
     opacity: 0;
   }
 
-  &.${maskTransitionName}-appear.${maskTransitionName}-appear-active {
+  &.${maskTransitionName}-appear.${maskTransitionName}-appear-active,
+  &.${maskTransitionName}-enter.${maskTransitionName}-enter-active {
     opacity: 1;
     transition: opacity ${maskDuration}ms ease-out;
   }
