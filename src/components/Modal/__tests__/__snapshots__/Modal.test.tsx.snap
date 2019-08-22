@@ -2,7 +2,7 @@
 
 exports[`Modal with size large with a bottom panel 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -14,7 +14,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -43,7 +43,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -251,7 +251,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
 
 exports[`Modal with size large with a left panel 1`] = `
 .c9 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -263,7 +263,7 @@ exports[`Modal with size large with a left panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -292,7 +292,7 @@ exports[`Modal with size large with a left panel 1`] = `
 }
 
 .c10 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -538,7 +538,7 @@ exports[`Modal with size large with a left panel 1`] = `
 
 exports[`Modal with size large with a right panel 1`] = `
 .c8 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -550,7 +550,7 @@ exports[`Modal with size large with a right panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -579,7 +579,7 @@ exports[`Modal with size large with a right panel 1`] = `
 }
 
 .c9 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -825,7 +825,7 @@ exports[`Modal with size large with a right panel 1`] = `
 
 exports[`Modal with size large with custom title size 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -837,7 +837,7 @@ exports[`Modal with size large with custom title size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -866,7 +866,7 @@ exports[`Modal with size large with custom title size 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -1061,7 +1061,7 @@ exports[`Modal with size large with custom title size 1`] = `
 
 exports[`Modal with size large with no fill 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1073,7 +1073,7 @@ exports[`Modal with size large with no fill 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: none;
   border-bottom: 1px solid #d9d9d9;
@@ -1102,7 +1102,7 @@ exports[`Modal with size large with no fill 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -1297,7 +1297,7 @@ exports[`Modal with size large with no fill 1`] = `
 
 exports[`Modal with size large with right section in header 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1309,7 +1309,7 @@ exports[`Modal with size large with right section in header 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -1338,7 +1338,7 @@ exports[`Modal with size large with right section in header 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -1539,7 +1539,7 @@ exports[`Modal with size large with right section in header 1`] = `
 
 exports[`Modal with size large with simple config 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1551,7 +1551,7 @@ exports[`Modal with size large with simple config 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -1580,7 +1580,7 @@ exports[`Modal with size large with simple config 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -1775,7 +1775,7 @@ exports[`Modal with size large with simple config 1`] = `
 
 exports[`Modal with size medium with a bottom panel 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1787,7 +1787,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -1816,7 +1816,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -2024,7 +2024,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 
 exports[`Modal with size medium with a left panel 1`] = `
 .c9 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -2036,7 +2036,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -2065,7 +2065,7 @@ exports[`Modal with size medium with a left panel 1`] = `
 }
 
 .c10 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -2311,7 +2311,7 @@ exports[`Modal with size medium with a left panel 1`] = `
 
 exports[`Modal with size medium with a right panel 1`] = `
 .c8 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -2323,7 +2323,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -2352,7 +2352,7 @@ exports[`Modal with size medium with a right panel 1`] = `
 }
 
 .c9 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -2598,7 +2598,7 @@ exports[`Modal with size medium with a right panel 1`] = `
 
 exports[`Modal with size medium with custom title size 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -2610,7 +2610,7 @@ exports[`Modal with size medium with custom title size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -2639,7 +2639,7 @@ exports[`Modal with size medium with custom title size 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -2834,7 +2834,7 @@ exports[`Modal with size medium with custom title size 1`] = `
 
 exports[`Modal with size medium with no fill 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -2846,7 +2846,7 @@ exports[`Modal with size medium with no fill 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: none;
   border-bottom: 1px solid #d9d9d9;
@@ -2875,7 +2875,7 @@ exports[`Modal with size medium with no fill 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -3070,7 +3070,7 @@ exports[`Modal with size medium with no fill 1`] = `
 
 exports[`Modal with size medium with right section in header 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3082,7 +3082,7 @@ exports[`Modal with size medium with right section in header 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -3111,7 +3111,7 @@ exports[`Modal with size medium with right section in header 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -3312,7 +3312,7 @@ exports[`Modal with size medium with right section in header 1`] = `
 
 exports[`Modal with size medium with simple config 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3324,7 +3324,7 @@ exports[`Modal with size medium with simple config 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -3353,7 +3353,7 @@ exports[`Modal with size medium with simple config 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -3548,7 +3548,7 @@ exports[`Modal with size medium with simple config 1`] = `
 
 exports[`Modal with size small with a bottom panel 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3560,7 +3560,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -3589,7 +3589,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -3797,7 +3797,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
 
 exports[`Modal with size small with a left panel 1`] = `
 .c9 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3809,7 +3809,7 @@ exports[`Modal with size small with a left panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -3838,7 +3838,7 @@ exports[`Modal with size small with a left panel 1`] = `
 }
 
 .c10 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -4084,7 +4084,7 @@ exports[`Modal with size small with a left panel 1`] = `
 
 exports[`Modal with size small with a right panel 1`] = `
 .c8 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -4096,7 +4096,7 @@ exports[`Modal with size small with a right panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -4125,7 +4125,7 @@ exports[`Modal with size small with a right panel 1`] = `
 }
 
 .c9 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -4371,7 +4371,7 @@ exports[`Modal with size small with a right panel 1`] = `
 
 exports[`Modal with size small with custom title size 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -4383,7 +4383,7 @@ exports[`Modal with size small with custom title size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -4412,7 +4412,7 @@ exports[`Modal with size small with custom title size 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -4607,7 +4607,7 @@ exports[`Modal with size small with custom title size 1`] = `
 
 exports[`Modal with size small with no fill 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -4619,7 +4619,7 @@ exports[`Modal with size small with no fill 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: none;
   border-bottom: 1px solid #d9d9d9;
@@ -4648,7 +4648,7 @@ exports[`Modal with size small with no fill 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -4843,7 +4843,7 @@ exports[`Modal with size small with no fill 1`] = `
 
 exports[`Modal with size small with right section in header 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -4855,7 +4855,7 @@ exports[`Modal with size small with right section in header 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -4884,7 +4884,7 @@ exports[`Modal with size small with right section in header 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -5085,7 +5085,7 @@ exports[`Modal with size small with right section in header 1`] = `
 
 exports[`Modal with size small with simple config 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -5097,7 +5097,7 @@ exports[`Modal with size small with simple config 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -5126,7 +5126,7 @@ exports[`Modal with size small with simple config 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -5321,7 +5321,7 @@ exports[`Modal with size small with simple config 1`] = `
 
 exports[`Modal with size x-large with a bottom panel 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -5333,7 +5333,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -5362,7 +5362,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -5570,7 +5570,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 
 exports[`Modal with size x-large with a left panel 1`] = `
 .c9 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -5582,7 +5582,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -5611,7 +5611,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
 }
 
 .c10 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -5857,7 +5857,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
 
 exports[`Modal with size x-large with a right panel 1`] = `
 .c8 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -5869,7 +5869,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -5898,7 +5898,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
 }
 
 .c9 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -6144,7 +6144,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
 
 exports[`Modal with size x-large with custom title size 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -6156,7 +6156,7 @@ exports[`Modal with size x-large with custom title size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -6185,7 +6185,7 @@ exports[`Modal with size x-large with custom title size 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -6380,7 +6380,7 @@ exports[`Modal with size x-large with custom title size 1`] = `
 
 exports[`Modal with size x-large with no fill 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -6392,7 +6392,7 @@ exports[`Modal with size x-large with no fill 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: none;
   border-bottom: 1px solid #d9d9d9;
@@ -6421,7 +6421,7 @@ exports[`Modal with size x-large with no fill 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -6616,7 +6616,7 @@ exports[`Modal with size x-large with no fill 1`] = `
 
 exports[`Modal with size x-large with right section in header 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -6628,7 +6628,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -6657,7 +6657,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
@@ -6858,7 +6858,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
 
 exports[`Modal with size x-large with simple config 1`] = `
 .c6 {
-  padding: 2.1rem 2.8rem 0rem;
+  padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -6870,7 +6870,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem 2.8rem;
+  padding: 1.4rem 2.1rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
@@ -6899,7 +6899,7 @@ exports[`Modal with size x-large with simple config 1`] = `
 }
 
 .c7 {
-  padding: 2.1rem 2.8rem;
+  padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
 }
