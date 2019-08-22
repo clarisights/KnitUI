@@ -12,14 +12,13 @@ const Layout = styled.div`
 `
 
 const LeftSection = styled.div`
-  width: 100%;
-  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 `
 
 const RightSection = styled.div`
-  width: 210px;
+  width: 21rem;
   border-left: ${({ theme: { knitui } }) => knitui.modalBorder};
 `
 
