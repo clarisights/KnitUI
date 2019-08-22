@@ -2439,14 +2439,16 @@ exports[`Modal with size medium with a right panel 1`] = `
   fill: #e6e6e6;
 }
 
-.c0.modal-appear {
+.c0.modal-appear,
+.c0.modal-enter {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
-.c0.modal-appear.modal-appear-active {
+.c0.modal-appear.modal-appear-active,
+.c0.modal-enter.modal-enter-active {
   opacity: 1;
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
@@ -2473,11 +2475,13 @@ exports[`Modal with size medium with a right panel 1`] = `
   transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-appear,
+.c0.modalMask-enter {
   opacity: 0;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-appear.modalMask-appear-active,
+.c0.modalMask-enter.modalMask-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -2686,14 +2690,16 @@ exports[`Modal with size medium with custom title size 1`] = `
   fill: #e6e6e6;
 }
 
-.c0.modal-appear {
+.c0.modal-appear,
+.c0.modal-enter {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
-.c0.modal-appear.modal-appear-active {
+.c0.modal-appear.modal-appear-active,
+.c0.modal-enter.modal-enter-active {
   opacity: 1;
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
@@ -2720,11 +2726,13 @@ exports[`Modal with size medium with custom title size 1`] = `
   transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-appear,
+.c0.modalMask-enter {
   opacity: 0;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-appear.modalMask-appear-active,
+.c0.modalMask-enter.modalMask-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -2918,14 +2926,16 @@ exports[`Modal with size medium with no fill 1`] = `
   fill: #e6e6e6;
 }
 
-.c0.modal-appear {
+.c0.modal-appear,
+.c0.modal-enter {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
-.c0.modal-appear.modal-appear-active {
+.c0.modal-appear.modal-appear-active,
+.c0.modal-enter.modal-enter-active {
   opacity: 1;
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
@@ -2952,11 +2962,13 @@ exports[`Modal with size medium with no fill 1`] = `
   transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-appear,
+.c0.modalMask-enter {
   opacity: 0;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-appear.modalMask-appear-active,
+.c0.modalMask-enter.modalMask-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -3150,14 +3162,16 @@ exports[`Modal with size medium with right section in header 1`] = `
   fill: #e6e6e6;
 }
 
-.c0.modal-appear {
+.c0.modal-appear,
+.c0.modal-enter {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
-.c0.modal-appear.modal-appear-active {
+.c0.modal-appear.modal-appear-active,
+.c0.modal-enter.modal-enter-active {
   opacity: 1;
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
@@ -3184,11 +3198,13 @@ exports[`Modal with size medium with right section in header 1`] = `
   transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-appear,
+.c0.modalMask-enter {
   opacity: 0;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-appear.modalMask-appear-active,
+.c0.modalMask-enter.modalMask-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -3388,14 +3404,16 @@ exports[`Modal with size medium with simple config 1`] = `
   fill: #e6e6e6;
 }
 
-.c0.modal-appear {
+.c0.modal-appear,
+.c0.modal-enter {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
-.c0.modal-appear.modal-appear-active {
+.c0.modal-appear.modal-appear-active,
+.c0.modal-enter.modal-enter-active {
   opacity: 1;
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
@@ -3422,11 +3440,13 @@ exports[`Modal with size medium with simple config 1`] = `
   transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-appear,
+.c0.modalMask-enter {
   opacity: 0;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-appear.modalMask-appear-active,
+.c0.modalMask-enter.modalMask-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -3626,14 +3646,16 @@ exports[`Modal with size small with a bottom panel 1`] = `
   fill: #e6e6e6;
 }
 
-.c0.modal-appear {
+.c0.modal-appear,
+.c0.modal-enter {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
-.c0.modal-appear.modal-appear-active {
+.c0.modal-appear.modal-appear-active,
+.c0.modal-enter.modal-enter-active {
   opacity: 1;
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
@@ -3660,11 +3682,13 @@ exports[`Modal with size small with a bottom panel 1`] = `
   transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-appear,
+.c0.modalMask-enter {
   opacity: 0;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-appear.modalMask-appear-active,
+.c0.modalMask-enter.modalMask-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -3901,14 +3925,16 @@ exports[`Modal with size small with a left panel 1`] = `
   fill: #e6e6e6;
 }
 
-.c0.modal-appear {
+.c0.modal-appear,
+.c0.modal-enter {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
-.c0.modal-appear.modal-appear-active {
+.c0.modal-appear.modal-appear-active,
+.c0.modal-enter.modal-enter-active {
   opacity: 1;
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
@@ -3935,11 +3961,13 @@ exports[`Modal with size small with a left panel 1`] = `
   transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-appear,
+.c0.modalMask-enter {
   opacity: 0;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-appear.modalMask-appear-active,
+.c0.modalMask-enter.modalMask-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
@@ -4184,14 +4212,16 @@ exports[`Modal with size small with a right panel 1`] = `
   fill: #e6e6e6;
 }
 
-.c0.modal-appear {
+.c0.modal-appear,
+.c0.modal-enter {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
-.c0.modal-appear.modal-appear-active {
+.c0.modal-appear.modal-appear-active,
+.c0.modal-enter.modal-enter-active {
   opacity: 1;
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
@@ -4218,11 +4248,13 @@ exports[`Modal with size small with a right panel 1`] = `
   transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
 }
 
-.c0.modalMask-appear {
+.c0.modalMask-appear,
+.c0.modalMask-enter {
   opacity: 0;
 }
 
-.c0.modalMask-appear.modalMask-appear-active {
+.c0.modalMask-appear.modalMask-appear-active,
+.c0.modalMask-enter.modalMask-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
