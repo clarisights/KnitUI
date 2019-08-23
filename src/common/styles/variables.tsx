@@ -107,6 +107,7 @@ export const shades = {
 export const lineHeight = "2rem"
 export const borderRadius = `${multiply(0.4, baseUnit)}px`
 export const defaultPadding = `${multiply(0.4, baseUnit)}px ${baseUnit}px`
+export const defaultTextPadding = "1.4rem"
 
 // input
 export const inputFocusOutline = "none"
@@ -153,6 +154,7 @@ export const radioDisabledColor = shades.gray95
 export const modalBorder = `1px solid ${shades.gray85}`
 export const modalBorderRadius = "0.4rem"
 export const modalPadding = {
-  vertical: "2.1rem",
-  horizontal: "2.8rem",
+  vertical: "2.8rem",
+  horizontal: "2.1rem",
 }
+export const modalTitleTypographySize = 20

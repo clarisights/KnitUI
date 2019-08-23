@@ -30,6 +30,44 @@ describe("Modal", () => {
         expect(dialogContainer).toMatchSnapshot()
       })
 
+      it("with no fill", () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Modal
+              header={{ title: "Title", noFill: true }}
+              body={<div>Body</div>}
+              footer={<div>Footer</div>}
+              size="medium"
+              visible
+              onClose={() => {}}
+            />
+          </ThemeProvider>
+        )
+        const dialogContainer = container.parentElement!.querySelector(
+          ".rc-dialog-wrap"
+        )
+        expect(dialogContainer).toMatchSnapshot()
+      })
+
+      it("with custom title size", () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Modal
+              header={{ title: "Title", fontSize: 12 }}
+              body={<div>Body</div>}
+              footer={<div>Footer</div>}
+              size="medium"
+              visible
+              onClose={() => {}}
+            />
+          </ThemeProvider>
+        )
+        const dialogContainer = container.parentElement!.querySelector(
+          ".rc-dialog-wrap"
+        )
+        expect(dialogContainer).toMatchSnapshot()
+      })
+
       it("with right section in header", () => {
         const { container } = render(
           <ThemeProvider>

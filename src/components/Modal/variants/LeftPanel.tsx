@@ -12,14 +12,14 @@ const Layout = styled.div`
 `
 
 const LeftSection = styled.div`
-  width: 210px;
+  width: 21rem;
   border-right: ${({ theme: { knitui } }) => knitui.modalBorder};
 `
 
 const RightSection = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 `
 
 const LeftPanelModal: React.FC<PanelModalProps> = ({

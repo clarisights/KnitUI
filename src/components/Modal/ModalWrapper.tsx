@@ -23,7 +23,7 @@ const sizeToWidth = {
 
 export interface ModalWrapperProps extends BaseComponentProps {
   /** Contents to be rendered in the header section */
-  header: { title: string; rightSection?: ReactNode }
+  header: { title: string; rightSection?: ReactNode, noFill?: boolean }
   /** Contents to be rendered on in the body section */
   body: ReactNode
   /** Contents to be rendered on in the footer section */

@@ -20,7 +20,7 @@ stories
       sidebar: Readme,
     },
   })
-  .add("simple modal", () => {
+  .add("basic", () => {
     const ModalWrapper = () => {
       const [modalVisible, setModalVisible] = useState(true)
       return (
@@ -36,18 +36,46 @@ stories
     }
     return <ModalWrapper />
   })
+  .add("with a header without a fill", () => {
+    const ModalWrapper = () => {
+      const [modalVisible, setModalVisible] = useState(true)
+      return (
+        <Modal
+          header={{ title: "Title", noFill: true }}
+          body={<div>Body</div>}
+          footer={<div>Footer</div>}
+          size={select("Size", sizeOptions, "medium")}
+          visible={modalVisible}
+          onClose={() => setModalVisible(false)}
+        />
+      )
+    }
+    return <ModalWrapper />
+  })
+  .add("with a custom sized header", () => {
+    const ModalWrapper = () => {
+      const [modalVisible, setModalVisible] = useState(true)
+      return (
+        <Modal
+          header={{ title: "Title", fontSize: 12 }}
+          body={<div>Body</div>}
+          footer={<div>Footer</div>}
+          size={select("Size", sizeOptions, "medium")}
+          visible={modalVisible}
+          onClose={() => setModalVisible(false)}
+        />
+      )
+    }
+    return <ModalWrapper />
+  })
   .add("with a right section in header", () => {
     const ModalWrapper = () => {
       const [modalVisible, setModalVisible] = useState(true)
-      const StyledRightSection = styled.div`
-        width: 100%;
-        padding: 0px 10px 0px 10px;
-      `
       return (
         <Modal
           header={{
             title: "Title",
-            rightSection: (<StyledRightSection>The right section</StyledRightSection>),
+            rightSection: (<div>The right section</div>),
           }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
