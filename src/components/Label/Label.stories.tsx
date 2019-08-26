@@ -131,3 +131,13 @@ stories
       style={object("Style", { backgroundColor: "red" })}
     />
   ))
+  .add("Inset", () => (
+    <Label
+      text={text("text", "inline label")}
+      expanded={boolean("Expanded", false)}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      insetColor={(text("insetColor", "#4267B2"))}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+    />
+  ))

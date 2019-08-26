@@ -16,7 +16,7 @@ export interface BaseLabelProps extends BaseComponentProps {
    * the type of action
    */
   colorPreset?: ColorPreset
-  /** Addons to be placed adjacent to the label text */
+  /** Custom color to override presets */
   customColor?: CustomColor
 }
 
@@ -41,6 +41,8 @@ export interface LabelPropTypes extends BaseLabelProps {
   icons?: { left?: string; right?: string }
   /** Label is focussed or being dragged */
   focus?: boolean
+  /** If an inset color should be used */
+  insetColor?: CustomColor
 }
 
 export interface ILabel extends React.FC<LabelPropTypes> {

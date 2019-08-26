@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { parseCustomColor, parseColorPreset } from "../../common/_utils"
 import Icon from "../Icon"
 import { ILabel, LabelPropTypes } from "./types"
@@ -7,6 +7,7 @@ import InlineLabel from "./InlineLabel"
 import { IStyled } from "../../common/types"
 
 const DEFAULT_COLOR_THEME = "neutral"
+const INSET_BACKGROUND_COLOR = "#F7F7F7"
 
 type IStyledLabel = IStyled<LabelPropTypes>
 
@@ -37,28 +38,25 @@ const geLineHeight = (props: IStyledLabel) => {
 }
 
 const parseColorTheme = (props: IStyledLabel) => {
-  const {
-    customProps: { customColor, colorPreset },
-  } = props
+  const { customProps: { customColor, colorPreset } } = props
   return customColor
     ? parseCustomColor(customColor)
     : parseColorPreset(colorPreset!)
 }
-const getBackgroundColor = (props: IStyledLabel) =>
-  parseColorTheme(props).background
+const getBackgroundColor = (props: IStyledLabel) => parseColorTheme(props).background
+
 const getFontColor = (props: IStyledLabel) => parseColorTheme(props).font
+
 const getDarkenedBorderColor = (props: IStyledLabel) =>
   getBackgroundColor(props).set("hsl.l", "-0.2")
+
 const showLeftIcon = (props: IStyledLabel) => {
-  const {
-    customProps: { icons },
-  } = props
+  const { customProps: { icons } } = props
   return icons && icons.left
 }
+
 const showRightIcon = (props: IStyledLabel) => {
-  const {
-    customProps: { icons },
-  } = props
+  const { customProps: { icons } } = props
   return icons && icons.right
 }
 
@@ -69,16 +67,12 @@ const verticalPadding = {
 }
 
 const getVerticalPadding = (props: IStyledLabel) => {
-  const {
-    customProps: { size },
-  } = props
+  const { customProps: { size } } = props
   return verticalPadding[size!]
 }
 
 const getHorizontalPadding = (props: IStyledLabel) => {
-  const {
-    customProps: { expanded },
-  } = props
+  const { customProps: { expanded } } = props
   if (expanded) {
     return "1rem"
   }
@@ -86,9 +80,7 @@ const getHorizontalPadding = (props: IStyledLabel) => {
 }
 
 const getLeftPadding = (props: IStyledLabel) => {
-  const {
-    customProps: { size },
-  } = props
+  const { customProps: { size } } = props
   if (showLeftIcon(props)) {
     return size === "small" ? "0.3rem" : "0.5rem"
   }
@@ -96,9 +88,7 @@ const getLeftPadding = (props: IStyledLabel) => {
 }
 
 const getRightPadding = (props: IStyledLabel) => {
-  const {
-    customProps: { size },
-  } = props
+  const { customProps: { size } } = props
   if (showRightIcon(props)) {
     return size === "small" ? "0.3rem" : "0.5rem"
   }
@@ -136,10 +126,26 @@ const getBoxShadow = (props: IStyledLabel) => {
   return focus ? `0rem 0rem 0.2rem ${shades.blue50}` : "none"
 }
 
+const getInsetStyles = (props: IStyledLabel) => {
+  const { insetColor } = props
+  return insetColor ? css`
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 0.3rem;
+      background: ${insetColor};
+      border-radius: 0.2rem 0  0 0.2rem;
+    }
+  ` : ""
+}
+
+
 const StyledDiv = styled.div<IStyledLabel>`
   display: inline-flex;
   align-items: center;
-  border-radius: ${props => getBorderRadius(props)};
   padding: ${props =>
     `${getVerticalPadding(props)} ${getRightPadding(
       props
@@ -148,41 +154,45 @@ const StyledDiv = styled.div<IStyledLabel>`
   color: ${props => getFontColor(props)};
   font-size: ${props => `${getFontSize(props)}rem`};
   line-height: ${props => `${geLineHeight(props)}rem`};
+  border-radius: ${props => getBorderRadius(props)};
   border: ${props => `1px solid ${getBorderColor(props)}`};
   box-sizing: border-box;
   box-shadow: ${props => getBoxShadow(props)};
+  overflow: hidden;
+  ${props => getInsetStyles(props)}
 `
 
 const LeftIcon = styled(Icon)<IStyledLabel>`
   margin-right: ${props => getIconMargin(props)};
 `
-
 const RightIcon = styled(Icon)<IStyledLabel>`
   margin-left: ${props => getIconMargin(props)};
 `
-
 const Label: ILabel = props => {
   const { className, style, ...rest } = props
-  // For styled components, we separate the props that are to be loaded on the DOM
+  const { text, icons, insetColor } = rest
+  if (insetColor) {
+    rest.customColor = INSET_BACKGROUND_COLOR
+  } 
   const scProps = { className, style, customProps: rest }
-  const { text, icons } = rest
+  //For styled components, we separate the props that are to be loaded on the DOM
   return (
-    <StyledDiv {...scProps}>
-      {showLeftIcon(scProps) ? (
-        <LeftIcon
-          {...scProps}
-          fill={getFontColor(scProps)}
-          type={icons!.left}
-        />
-      ) : null}
-      <span>{text}</span>
-      {showRightIcon(scProps) ? (
-        <RightIcon
-          {...scProps}
-          fill={getFontColor(scProps)}
-          type={icons!.right}
-        />
-      ) : null}
+    <StyledDiv {...scProps} insetColor={insetColor}>
+        {showLeftIcon(scProps) ? (
+          <LeftIcon
+            {...scProps}
+            fill={getFontColor(scProps)}
+            type={icons!.left}
+          />
+        ) : null}
+        <span>{text}</span>
+        {showRightIcon(scProps) ? (
+          <RightIcon
+            {...scProps}
+            fill={getFontColor(scProps)}
+            type={icons!.right}
+          />
+        ) : null}
     </StyledDiv>
   )
 }
