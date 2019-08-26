@@ -5,13 +5,18 @@ import { withProps } from "../../common/_utils"
 
 export interface IIconProps {
   type: string
-  height?: string
-  width?: string
+  size?: { width: string; height: string } | string
   fill?: string
   customStyles?: string
 }
 
-const StyledIconWrapper: any = withProps<IIconProps>()(styled.span)`
+interface IIconWrapper {
+  width: string
+  height: string
+  customStyles?: string
+}
+
+const StyledIconWrapper: any = withProps<IIconWrapper>()(styled.span)`
   cursor: inherit;
   display: inline-block;
   height: ${({ height }) => height};
@@ -22,14 +27,18 @@ const StyledIconWrapper: any = withProps<IIconProps>()(styled.span)`
 `
 
 const Icon: any = (props: IIconProps) => {
-  const {
-    type,
-    height = "18px",
-    width = "18px",
-    fill = "#000",
-    customStyles = "",
-  } = props
-  const svgStyles = { height, width, fill }
+  const { type, size, fill = "#000", customStyles = "" } = props
+  let width = "18px",
+    height = "18px"
+  if (typeof size === "string") {
+    width = size
+    height = size
+  } else if (typeof size === "object") {
+    width = size.width
+    height = size.height
+  }
+
+  const svgStyles = { width, height, fill }
   // If type is not provided, then "oCheckBoxOutlineBlank" is used as placeholder icon
   const defaultType = "oCheckBoxOutlineBlank"
   const icon =

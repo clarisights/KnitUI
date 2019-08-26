@@ -110,7 +110,7 @@ describe("Breadcrumb", () => {
         <Breadcrumb>
           <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
           <Breadcrumb.Item>
-            <Icon height="18px" width="18px" type="oAddCircle" />
+            <Icon size="18px" type="oAddCircle" />
             Reports
           </Breadcrumb.Item>
           <Breadcrumb.Item>

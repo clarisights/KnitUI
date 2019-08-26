@@ -12,8 +12,11 @@ const colors = ["#000000", "#990000", "#036600"]
 const allIcons = Object.values(Icons)
 
 stories
-  .add("Basic Icon", () => <Icon type="oAddCircle" />)
-  .add("Icon with color", () => <Icon type="oAddCircle" fill="red" />)
+  .add("Icon", () => {
+    const size = select("Size", sizes, "18px")
+    const color = select("Color", colors, "#000000")
+    return <Icon type="oAddCircle" size={size} fill={color} />
+  })
   .add("All icons", () => {
     const size = select("Size", sizes, "18px")
     const color = select("Color", colors, "#000000")
