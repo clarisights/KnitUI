@@ -92,7 +92,7 @@ stories
     <Breadcrumb>
       <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
       <Breadcrumb.Item>
-        <Icon height="18px" width="18px" type={text("Icon", "oAddCircle")} />
+        <Icon size="18px" type={text("Icon", "oAddCircle")} />
         Reports
       </Breadcrumb.Item>
       <Breadcrumb.Item>
