@@ -113,6 +113,24 @@ describe("Label", () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
+  it("inset", () => {
+    const { asFragment } = render(
+      <ThemeProvider>
+        <Label text="label" insetColor="#4267B2" />
+      </ThemeProvider>
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it("inset with custom color", () => {
+    const { asFragment } = render(
+      <ThemeProvider>
+        <Label text="label" insetColor="#4267B2" customColor="#A7A7A7" />
+      </ThemeProvider>
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
   describe("inline", () => {
     it("compact", () => {
       const { asFragment } = render(

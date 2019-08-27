@@ -35,12 +35,23 @@ stories
       sidebar: Readme,
     },
   })
-  .add("Simple label with text", () => (
+  .add("basic", () => (
     <Label
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+    />
+  ))
+  .add("with custom color", () => (
+    <Label
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      customColor={(text("customColor", "#B267B2"))}
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
@@ -129,5 +140,26 @@ stories
       expanded={boolean("Expanded", false)}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       style={object("Style", { backgroundColor: "red" })}
+    />
+  ))
+  .add("Inset", () => (
+    <Label
+      text={text("text", "inline label")}
+      expanded={boolean("Expanded", false)}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      insetColor={(text("insetColor", "#4267B2"))}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+    />
+  ))
+  .add("Inset with custom background", () => (
+    <Label
+      text={text("text", "inline label")}
+      expanded={boolean("Expanded", false)}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      insetColor={(text("insetColor", "#4267B2"))}
+      customColor={(text("customColor", "#B267B2"))}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
     />
   ))

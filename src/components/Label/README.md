@@ -25,7 +25,7 @@ import { Label } from "KnitUI"
 | icons    | `[{left: string, right: string}]`  | No | None    |  Icons to be rendered in the label. They can be on left, a right or on both sides of the text |
 | className | string | Yes | None | CSS class name to be added |
 | style | CSS Object | Yes | None | CSS style to be added |
-
+| insetColor | string | Yes | None | If provided, will add a small decoration on the label with the given color. Also the background is set to a default which can be changed by `customColor` but not through the `colorPreset` |
 
 ## Inline Label
 
@@ -48,3 +48,4 @@ import { Label } from "KnitUI"
 | fontSize  | number, n be one of `10,12,14,16,18,20`  | Yes | 12 | Size of text in the label |
 | className | string | Yes | None | CSS class name to be added |
 | style | CSS Object | Yes | None | CSS style to be added |
+| insetColor | string | Yes | None | If provided, will add a small decoration on the label with the given color. Also the background is set to a default which can be changed by `customColor` but not through the `colorPreset` |

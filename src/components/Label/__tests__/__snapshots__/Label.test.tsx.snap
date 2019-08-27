@@ -11,15 +11,16 @@ exports[`Label custom class 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 0.7rem 0.2rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -43,15 +44,16 @@ exports[`Label custom style 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 0.7rem 0.2rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -76,15 +78,16 @@ exports[`Label focused 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 0.7rem 0.2rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: 0rem 0rem 0.2rem #0066ff;
+  overflow: hidden;
 }
 
 <div
@@ -155,6 +158,94 @@ exports[`Label inline expanded 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Label inset 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+  background-color: #f7f7f7;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.c0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.3rem;
+  background: #4267B2;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+<div
+    class="c0"
+  >
+    <span>
+      label
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Label inset with custom color 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+  background-color: #a7a7a7;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.c0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.3rem;
+  background: #4267B2;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+<div
+    class="c0"
+  >
+    <span>
+      label
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Label outlined 1`] = `
 <DocumentFragment>
   .c0 {
@@ -166,15 +257,16 @@ exports[`Label outlined 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 0.7rem 0.2rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -198,15 +290,16 @@ exports[`Label rounded 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 999px;
   padding: 0.2rem 0.7rem 0.2rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 999px;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -230,15 +323,16 @@ exports[`Label with size large compact 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.4rem 0.7rem 0.4rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -262,15 +356,16 @@ exports[`Label with size large expanded 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.4rem 1rem 0.4rem 1rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -301,15 +396,16 @@ exports[`Label with size large left and right icons 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.4rem 0.5rem 0.4rem 0.5rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
@@ -386,15 +482,16 @@ exports[`Label with size large left icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.4rem 0.7rem 0.4rem 0.5rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
@@ -448,15 +545,16 @@ exports[`Label with size large right icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.4rem 0.5rem 0.4rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
@@ -503,15 +601,16 @@ exports[`Label with size medium compact 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 0.7rem 0.2rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -535,15 +634,16 @@ exports[`Label with size medium expanded 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 1rem 0.2rem 1rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -574,15 +674,16 @@ exports[`Label with size medium left and right icons 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
@@ -659,15 +760,16 @@ exports[`Label with size medium left icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 0.7rem 0.2rem 0.5rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
@@ -721,15 +823,16 @@ exports[`Label with size medium right icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.2rem 0.5rem 0.2rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
@@ -776,15 +879,16 @@ exports[`Label with size small compact 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.1rem 0.7rem 0.1rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -808,15 +912,16 @@ exports[`Label with size small expanded 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.1rem 1rem 0.1rem 1rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 <div
@@ -847,15 +952,16 @@ exports[`Label with size small left and right icons 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.1rem 0.3rem 0.1rem 0.3rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
@@ -932,15 +1038,16 @@ exports[`Label with size small left icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.1rem 0.7rem 0.1rem 0.3rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
@@ -994,15 +1101,16 @@ exports[`Label with size small right icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 0.1rem 0.3rem 0.1rem 0.7rem;
   background-color: #002966;
   color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .c1 {
