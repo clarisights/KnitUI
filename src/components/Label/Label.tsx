@@ -171,8 +171,12 @@ const RightIcon = styled(Icon)<IStyledLabel>`
 const Label: ILabel = props => {
   const { className, style, ...rest } = props
   const { text, icons, insetColor } = rest
+  /**
+   * If an insetColor is specified, the background color should be set to a default unless
+   * explicitly provided through customColor 
+   */
   if (insetColor) {
-    rest.customColor = INSET_BACKGROUND_COLOR
+    rest.customColor = rest.customColor || INSET_BACKGROUND_COLOR
   } 
   const scProps = { className, style, customProps: rest }
   //For styled components, we separate the props that are to be loaded on the DOM

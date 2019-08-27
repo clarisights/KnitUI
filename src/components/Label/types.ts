@@ -41,7 +41,9 @@ export interface LabelPropTypes extends BaseLabelProps {
   icons?: { left?: string; right?: string }
   /** Label is focussed or being dragged */
   focus?: boolean
-  /** If an inset color should be used */
+  /** If an inset color should be used. If provided, will add a small decoration on the label
+   * with the given color. Also the background is set to a default which can be changed by
+   * `customColor` but not through the `colorPreset`*/
   insetColor?: CustomColor
 }
 

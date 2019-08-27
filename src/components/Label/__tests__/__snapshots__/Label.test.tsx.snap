@@ -202,6 +202,50 @@ exports[`Label inset 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Label inset with custom color 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+  background-color: #a7a7a7;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.c0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.3rem;
+  background: #4267B2;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+<div
+    class="c0"
+  >
+    <span>
+      label
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Label outlined 1`] = `
 <DocumentFragment>
   .c0 {
