@@ -1,15 +1,7 @@
-import { AlertProps, placementType } from "./AlertInterface"
-import { useState, useEffect } from "react"
+import { AlertProps } from "./types"
+import React, { useState, useEffect } from "react"
 import { useTransition, UseTransitionResult } from "react-spring"
-import {
-  TopLeftBox,
-  TopRightBox,
-  BottomLeftBox,
-  BottomRightBox,
-  TransitionDiv,
-  AlertDiv,
-} from "./StyledAlerts"
-import React from "react"
+import { TransitionDiv, AlertDiv } from "./StyledAlerts"
 import Alert from "./Alert"
 import { SpringConfig, State } from "react-spring/renderprops"
 
@@ -19,19 +11,8 @@ interface UserTransitionResultWithLife
   extends UseTransitionResult<AlertProps, object> {
   props: { life: string }
 }
-
-const PlacementWrapperDiv = {
-  topLeft: TopLeftBox,
-  topRight: TopRightBox,
-  bottomLeft: BottomLeftBox,
-  bottomRight: BottomRightBox,
-}
-
 //Transition/Animation Using react-spring useTransition
-const TransitionWrapper = (props: {
-  alerts: Array<AlertProps>
-  placement: placementType
-}) => {
+const TransitionWrapper = (props: { alerts: Array<AlertProps> }) => {
   const config = (_item: AlertProps, state: State): SpringConfig => {
     return {
       duration: 250,
@@ -55,15 +36,11 @@ const TransitionWrapper = (props: {
   // config as function with more than one argument, but it's js implementation does.
   // real interface is `UseTransition`
   const transitionProperties: object = {
-    from: { height: 0, opacity: 0, life: "100%" },
+    from: { height: 0, opacity: 0 },
     enter: (item: AlertProps) => async (next: Function) =>
       await next({ height: alertRefMap.get(item), opacity: 1 }),
-    leave: (item: AlertProps) => async (next: Function, cancel: Function) => {
-      await next({ life: "0%" })
-      await next({ opacity: 0 })
-      await next({ height: 0 })
-    },
-    config: config,
+    leave: { opacity: 0, height: 0 },
+    config,
   }
 
   const transitionProps = useTransition<AlertProps, object>(
@@ -72,11 +49,8 @@ const TransitionWrapper = (props: {
     transitionProperties
   )
 
-  // Return container based on placement prop
-  const Wrapper = PlacementWrapperDiv[props.placement]
-
   return (
-    <Wrapper data-testid="alert-wrapper">
+    <>
       {transitionProps.map(
         ({
           key,
@@ -93,7 +67,7 @@ const TransitionWrapper = (props: {
           )
         }
       )}
-    </Wrapper>
+    </>
   )
 }
 

@@ -5,6 +5,10 @@ const positionBoxStyle = `
 position: fixed;
 overflow: hidden;
 display: flex;
+pointer-events: none;
+> * {
+  pointer-events: auto;
+} 
 `
 
 export const TopLeftBox = styled.div`

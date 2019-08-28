@@ -1,169 +1,213 @@
 import React, { ReactNode } from "react"
 import styled, { css, keyframes } from "styled-components"
-import { AlertContainerProps, AlertContentWrapperProps } from "./AlertInterface"
-import {
-  Magenta80,
-  Yellow80,
-  Green80,
-  Crimson80,
-  Neutral10,
-  Neutral0,
-} from "../../common/styles/palette"
-import { typography } from "../../common/styles/variables"
-import Icon from "../Icon/index"
+import { AlertProps } from "./types"
+import { Icon, Button } from ".."
 
-const isPrefixClassName = (prefixClassName: string | undefined) =>
-  prefixClassName !== "" && prefixClassName !== undefined
+import { IStyled, ColorPreset } from "../../common/types"
+import { parseColorPreset, parseCustomColor } from "../../common/_utils"
+
+type IStyledAlert = IStyled<AlertProps>
 
 const width = {
-  "x-small": 280,
-  small: 350,
-  medium: 490,
-  large: 770,
+  "x-small": 28,
+  small: 35,
+  medium: 49,
+  large: 77,
 }
 
-const background = {
-  standard: Magenta80.hex,
-  warning: Yellow80.hex,
-  success: Green80.hex,
-  error: Crimson80.hex,
+const getWidth = props => {
+  const {
+    customProps: { size },
+  } = props
+  return width[size]
 }
 
-const { fontSize: textFontSize, lineHeight: textLineHeight } = typography[14]
-const {
-  fontSize: headingFontSize,
-  lineHeight: headingLineHeight,
-} = typography[18]
+const getFontSize = (props: IStyledAlert) => {
+  const {
+    theme: {
+      knitui: { typography },
+    },
+  } = props
 
-export const AlertContainer = styled("div").attrs(
-  (props: AlertContainerProps) => ({
-    className:
-      isPrefixClassName(props.prefixClassName) &&
-      props.prefixClassName + "-knit-alert",
-  })
-)<AlertContainerProps>`
-  width: ${({ size }) => width[size]}px;
-  background: ${({ type }) => background[type]};
-  border-radius: 4px;
-  border: 1px solid ${({ type }) => background[type]}
-  box-sizing: border-box;
-  color: ${Neutral10.hex};
+  return typography[14].fontSize
+}
+
+const getLineHeight = (props: IStyledAlert) => {
+  const {
+    theme: {
+      knitui: { typography },
+    },
+  } = props
+
+  return typography[14].lineHeight
+}
+
+const getHeadingFontSize = (props: IStyledAlert) => {
+  const {
+    theme: {
+      knitui: { typography },
+    },
+  } = props
+
+  return typography[18].fontSize
+}
+
+const getHeadingLineHeight = (props: IStyledAlert) => {
+  const {
+    theme: {
+      knitui: { typography },
+    },
+  } = props
+
+  return typography[18].lineHeight
+}
+
+const parseColorTheme = (props: IStyledAlert) => {
+  const {
+    customProps: { customColor, type },
+  } = props
+  return customColor ? parseCustomColor(customColor) : parseColorPreset(type!)
+}
+
+const getBackgroundColor = (props: IStyledAlert) =>
+  parseColorTheme(props).background
+
+const getBorderRadius = (props: IStyledAlert) => {
+  const {
+    theme: {
+      knitui: { borderRadius },
+    },
+  } = props
+  return borderRadius
+}
+
+const getFontColor = (props: IStyledAlert) => parseColorTheme(props).font
+
+const getContentWrapperDirection = (props: IStyledAlert) => {
+  const {
+    customProps: { multiLine, heading, actions },
+  } = props
+  const isAction = actions && actions.length > 0
+  return (heading || isAction) && multiLine ? "column" : "row"
+}
+
+const getIconVerticalAlign = (props: IStyledAlert) => {
+  const {
+    customProps: { multiLine, actions, heading },
+  } = props
+  const isAction = actions && actions.length > 0
+  return (multiLine && !(heading || isAction)) || !multiLine ? "center" : ""
+}
+
+const getIconMargin = (props: IStyledAlert) => {
+  const {
+    customProps: { multiLine, heading },
+  } = props
+  return multiLine && heading ? "0.2rem 1.4rem 0.2rem 0" : "0 1.4rem 0 0"
+}
+
+const getCloseIconMargin = (props: IStyledAlert) => {
+  const {
+    customProps: { multiLine },
+  } = props
+  return `${multiLine ? `-0.4rem -0.4rem` : `0 0`} 0 1.4rem`
+}
+
+const getActionWrapperMargin = (props: IStyledAlert) => {
+  const {
+    customProps: { multiLine },
+  } = props
+  return `${multiLine ? "1.4rem" : `0`} 0 0 0}`
+}
+
+export const AlertContainer = styled("div")<IStyledAlert>`
   display: flex;
-  padding: 14px 14px 14px 0;
+  box-sizing: border-box;
   overflow: hidden;
+
+  width: ${props => getWidth(props)}rem;
+  border-radius: ${props => getBorderRadius(props)};
+  padding: 1.4rem;
+
+  color: ${props => getFontColor(props)};
+  background: ${props => getBackgroundColor(props)};
+
   opacity: 1;
-  transition: all 0.5s;
+  transition: all 0.25s;
 
   &.hide {
     opacity: 0;
   }
 `
 
-//  &${props => props.style}
-export const AlertContentWrapper = styled.div.attrs(
-  ({ prefixClassName }: AlertContentWrapperProps) => ({
-    className:
-      isPrefixClassName(prefixClassName) &&
-      prefixClassName + "-knit-alert-content-wrapper",
-  })
-)<AlertContentWrapperProps>`
+export const AlertContentWrapper = styled.div<IStyledAlert>`
   display: flex;
-  margin-left: 1.4rem;
-  flex-direction: ${({ heading, multiLine }) =>
-    heading && multiLine ? "column" : "row"};
-  justify-content: space-between;
   width: 100%;
+  flex-direction: ${props => getContentWrapperDirection(props)};
+  justify-content: space-between;
+  ${({ customProps: { multiLine } }) =>
+    !multiLine ? "align-items: center;" : ""};
 `
 
-export const AlertContent = styled.div.attrs(
-  ({ prefixClassName }: { prefixClassName: string }) => ({
-    className:
-      isPrefixClassName(prefixClassName) &&
-      prefixClassName + "-knit-alert-content",
+export const AlertContent = styled.div<IStyledAlert>`
+  font-size: ${props => `${getFontSize(props)}rem`};
+  line-height: ${props => `${getLineHeight(props)}rem`};
+  color: ${props => `${getFontColor(props)}`};
+`
+
+export const StyledAlertIcon = styled(Icon).attrs(props => ({
+  fill: getFontColor(props),
+  width: "2rem",
+  height: "2rem",
+}))<IStyledAlert>`
+  align-self: ${props => getIconVerticalAlign(props)};
+  margin: ${props => getIconMargin(props)};
+`
+
+export const CloseIcon = styled(Button).attrs(props => {
+  return {
+    customColor: getBackgroundColor(props as IStyledAlert),
+    style: {
+      padding: "0rem",
+    },
+  }
+})<IStyledAlert>`
+  flex-basis: 0;
+  margin: ${props => getCloseIconMargin(props)};
+  align-self: ${({ customProps: { multiLine } }) =>
+    !multiLine ? "center" : "flex-start"};
+`
+
+export const AlertHeading = styled.div<IStyledAlert>`
+  font-size: ${props => `${getHeadingFontSize(props)}rem`};
+  line-height: ${props => `${getHeadingLineHeight(props)}rem`};
+  margin-bottom: 0.7rem;
+`
+
+export const StyledAlertPicture = styled.img<IStyledAlert>`
+  min-width: 2rem;
+  height: 2rem;
+  border-radius: 1.2rem;
+  align-self: ${props => getIconVerticalAlign(props)};
+  margin: ${props => getIconMargin(props)};
+`
+
+export const StyledAlertAction = styled(Button).attrs(
+  (props: IStyledAlert) => ({
+    customColor: getBackgroundColor(props),
   })
-)<{
-  children: string | ReactNode
-  multiLine?: boolean
-  prefixClassName?: string
-}>`
-  font-size: ${textFontSize}rem;
-  line-height: ${textLineHeight}rem;
-  color: ${({ multiLine }) => (multiLine ? "#DDD1E0" : Neutral10.hex)};
-`
-
-export const StyledAlertIcon = styled(Icon).attrs(({ prefixClassName }) => ({
-  className:
-    isPrefixClassName(prefixClassName) && prefixClassName + "-knit-alert-icon",
-  width: "20px",
-  height: "20px",
-}))`
-  margin: ${({ multiLine }) => (multiLine ? "2px" : 0)} 0 2px 14px;
-`
-
-export const CloseIcon = styled(Icon).attrs(({ prefixClassName }) => ({
-  className:
-    isPrefixClassName(prefixClassName) && prefixClassName + "-knit-alert-close",
-  type: "oClose",
-  fill: Neutral0.hex,
-}))`
-  padding-left: 14px;
-  cursor: pointer;
-`
-
-export const AlertHeading = styled.div.attrs(
-  ({ prefixClassName }: { prefixClassName: string | undefined }) => ({
-    className:
-      isPrefixClassName(prefixClassName) &&
-      prefixClassName + "-knit-alert-heading",
-  })
-)<{ prefixClassName?: string | undefined }>`
-  font-size: ${headingFontSize}rem;
-  line-height: ${headingLineHeight}rem;
-`
-
-export const StyledAlertPicture = styled.img.attrs(
-  ({ prefixClassName }: { prefixClassName: string | undefined }) => ({
-    className:
-      isPrefixClassName(prefixClassName) &&
-      prefixClassName + "-knit-alert-icon",
-  })
-)<{
-  multiLine: boolean | undefined
-  prefixClassName?: string | undefined
-}>`
-  min-width: 20px;
-  height: 20px;
-  border-radius: 12px;
-  margin: ${({ multiLine }) => (multiLine ? "2px" : 0)} 0 2px 14px;
-`
-
-export const StyledAlertAction = styled.div.attrs(
-  ({ prefixClassName }: { prefixClassName: string | undefined }) => ({
-    className:
-      isPrefixClassName(prefixClassName) &&
-      prefixClassName + "-knit-alert-action",
-  })
-)<{ prefixClassName: string | undefined }>`
+)<IStyledAlert>`
   flex-shrink: 0;
   text-transform: uppercase;
-  font-size: ${textFontSize}rem;
-  line-height: ${textLineHeight}rem;
+  font-size: ${props => `${getFontSize(props)}rem`};
+  line-height: ${props => `${getLineHeight(props)}rem`};
   cursor: pointer;
 `
 
-export const AlertActionsWrapper = styled.div.attrs(
-  ({ prefixClassName }: { prefixClassName: string | undefined }) => ({
-    className:
-      isPrefixClassName(prefixClassName) &&
-      prefixClassName + "-knit-alert-action-wrapper",
-  })
-)<{
-  multiLine: boolean | undefined
-  prefixClassName?: string | undefined
-}>`
-  margin: ${({ multiLine }) => (multiLine ? "18px" : 0)} 3px 0 0;
+export const AlertActionsWrapper = styled.span<IStyledAlert>`
+  margin: ${props => getActionWrapperMargin(props)};
   display: flex;
-  div:not(:last-child) {
-    margin-right: 29px;
+  ${StyledAlertAction}:not(:last-child) {
+    margin-right: 0.7rem;
   }
 `

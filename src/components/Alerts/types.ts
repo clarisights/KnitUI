@@ -1,10 +1,10 @@
-import { ReactNode, ReactComponentElement, CSSProperties } from "react"
+import { ReactNode } from "react"
 
 // Size types of the alert components
-type sizeType = "x-small" | "small" | "medium" | "large"
+export type sizeType = "x-small" | "small" | "medium" | "large"
 
 // Type of alert in particular which define it's other property like color, icon,...
-export type alertType = "standard" | "warning" | "success" | "error"
+export type alertType = "neutral" | "warning" | "success" | "danger" | "unsaved"
 
 // define where will be the placement in the container
 export type placementType =
@@ -54,25 +54,13 @@ export interface AlertProps {
   className?: string
   // prefix classname for custom style
   prefixClassName?: string
+  // custom Color is we don't want to use type presetColor
+  customColor?: string
 }
 
-// Properties required by outer container, size, type and placement
-export interface AlertContainerProps {
-  // type of the alert
-  type: alertType
-  // Size of the alert, default is small
-  size: sizeType
-  // placement of notification on screen
-  placement: placementType
-  // prefix classname for custom style
-  prefixClassName?: string
-}
-
-export interface AlertContentWrapperProps {
-  // heading of the alert
-  heading?: string
-  // whether alert is multiline, defaults to false
-  multiLine?: boolean
-  // prefix classname for custom style
-  prefixClassName?: string
+export interface AlertContextInterface {
+  // This function will add alert to your provider and return a unique key to reference the alert
+  addAlert: (AlertProps) => string
+  // This function will remove alert when passed unique key related to each alert
+  removeAlert: (string) => boolean
 }

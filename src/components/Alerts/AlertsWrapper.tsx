@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
 import { v4 as uuid } from "uuid"
-import { placementType, AlertProps } from "./AlertInterface"
+import { placementType, AlertProps } from "./types"
 import TransitionWrapper from "./TransitionWrapper"
 
 export interface AlertsWrapperProps {
@@ -24,9 +24,7 @@ class AlertsWrapper extends React.Component<
 
   constructor(props: AlertsWrapperProps) {
     super(props)
-    this.state = {
-      alerts: [],
-    }
+    this.state = { alerts: [] }
     this.placement = this.props.placement || "bottomLeft"
   }
 
@@ -65,12 +63,7 @@ class AlertsWrapper extends React.Component<
   }
 
   render() {
-    return (
-      <TransitionWrapper
-        placement={this.placement}
-        alerts={this.state.alerts}
-      />
-    )
+    return <TransitionWrapper alerts={this.state.alerts} />
   }
 }
 

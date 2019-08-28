@@ -9,14 +9,14 @@ import {
   number,
 } from "@storybook/addon-knobs"
 import Alert from "./Alert"
-import { AlertProps, placementType } from "./AlertInterface"
-import Button from "../Button"
-import Alerts from "./index"
+import { AlertProps, placementType } from "./types"
+import { Button } from ".."
+import { AlertsProvider, useAlerts } from "./"
 
 const Readme = require("./Alerts.README.md")
 
-const alertOptions = ["standard", "success", "warning", "error"]
-
+const alertOptions = ["neutral", "success", "warning", "danger", "unsaved"]
+const sizeType = ["x-small", "small", "medium", "large"]
 const alertActions = [
   {
     text: "Action 1",
@@ -61,46 +61,104 @@ const GlobalStyle = createGlobalStyle`
   }
 
   // To change ActionAlertButton
-  .new_class *[class^="StyledAlert__StyledAlertAction"]{
+  .new_class *[class*="StyledAlert__StyledAlertAction"]{
     border-radius: 4px;
     padding: 3px;
     color: black;
+    background: skyblue;
   }
-  .new_class *[class^="StyledAlert__StyledAlertAction"]:hover{
+  .new_class *[class*="StyledAlert__StyledAlertAction"]:hover{
     background: rgba(255,255,255,0.5);
     color: black;
   }
 
   // To change AlertContent
-  .new_class *[class^="StyledAlert__AlertContent-"]{
+  .new_class *[class*="StyledAlert__AlertContent-"]{
     color: red;
   }
 `
 
 const AlertButton = (props: any) => {
+  const { addAlert, removeAlert } = useAlerts()
+  const handleClick = event => {
+    addAlert({
+      type: props.type,
+      size: props.size,
+      content: props.content,
+      placement: props.placement,
+      autoDismiss: props.autoDismiss,
+      dismissDuration: props.dismissDuration,
+      heading: props.heading,
+      multiLine: props.multiline,
+      icon: props.icon,
+      onClose: props.onClose,
+    })
+    event.preventDefault()
+  }
+
+  return <Button label={props.placement} onClick={handleClick} />
+}
+
+const AlertsButton = (props: any) => {
+  const { addAlert, removeAlert } = useAlerts()
+  const placements: placementType[] = [
+    "bottomLeft",
+    "topLeft",
+    "topRight",
+    "bottomRight",
+  ]
+  const keys: string[] = []
+
+  const getRandomInt = max => Math.floor(Math.random() * Math.floor(max))
+
+  const handleClick = event => {
+    if (props.hasOwnProperty("isRandom")) {
+      const newAlertsArr: AlertProps[] = []
+      alertArr.map((alert: AlertProps, index: number) => {
+        const tempAlert = alert
+        tempAlert.size = tempAlert.size === "large" ? "medium" : tempAlert.size
+        tempAlert.placement = placements[getRandomInt(4)]
+        newAlertsArr.push(tempAlert)
+      })
+      alertArr.map((alert: AlertProps, index: number) => {
+        const tempAlert = alert
+        tempAlert.size = tempAlert.size === "large" ? "medium" : tempAlert.size
+        tempAlert.placement = placements[getRandomInt(4)]
+        newAlertsArr.push(tempAlert)
+      })
+    }
+
+    props.alerts.map((alert: AlertProps, index: number) => {
+      setTimeout(() => {
+        keys.push(
+          addAlert({ ...alert, placement: props.placement || alert.placement })
+        )
+      }, index * 250)
+    })
+  }
+
+  const handleRemove = () => {
+    if (keys.length > 0) {
+      removeAlert(keys[0])
+      delete keys[0]
+    }
+  }
+
   return (
-    <Button
-      label={props.placement}
-      onClick={event =>
-        Alerts.add({
-          type: props.type,
-          size: props.size,
-          content: props.content,
-          placement: props.placement,
-          autoDismiss: props.autoDismiss,
-          dismissDuration: props.dismissDuration,
-          heading: props.heading,
-          multiLine: props.multiline,
-          icon: props.icon,
-        })
-      }
-    />
+    <>
+      <Button label={props.label} onClick={handleClick} />
+      {props.hasOwnProperty("apiClose") ? (
+        <Button label={"Remove earliest using api"} onClick={handleRemove} />
+      ) : (
+        <></>
+      )}
+    </>
   )
 }
 
 const alertArr: AlertProps[] = [
   {
-    type: "standard",
+    type: "neutral",
     size: "small",
     placement: "topRight",
     content: "Hello There",
@@ -121,7 +179,7 @@ const alertArr: AlertProps[] = [
     multiLine: false,
   },
   {
-    type: "error",
+    type: "danger",
     size: "x-small",
     placement: "topRight",
     content: "Hello There",
@@ -149,15 +207,17 @@ const alertArr: AlertProps[] = [
 const stories = storiesOf("Alerts", module)
 stories.addDecorator(withKnobs)
 stories.addDecorator(story => (
-  <div
-    style={{
-      width: "90vw",
-      height: "90vh",
-      border: "1px solid black",
-      fontSize: "10px",
-    }}>
-    {story()}
-  </div>
+  <AlertsProvider>
+    <div
+      style={{
+        width: "90vw",
+        height: "90vh",
+        border: "1px solid black",
+        fontSize: "10px",
+      }}>
+      {story()}
+    </div>
+  </AlertsProvider>
 ))
 
 stories
@@ -171,7 +231,7 @@ stories
   })
   .add("Basic", () => (
     <Alert
-      type={select("Type", alertOptions, "standard")}
+      type={select("Type", alertOptions, "neutral")}
       content={text("content", "Hey there!")}
       autoDismiss={boolean("Auto Dismiss", true)}
       dismissDuration={number("Dismiss Duration", 4000)}
@@ -179,7 +239,7 @@ stories
   ))
   .add("Basic with manual dismiss", () => (
     <Alert
-      type={select("Type", alertOptions, "error")}
+      type={select("Type", alertOptions, "danger")}
       content={text("content", "Hey there!")}
       placement={text("Placement", "bottomRight")}
       onClose={() => {}}
@@ -195,15 +255,26 @@ stories
   ))
   .add("Basic with custom icon", () => (
     <Alert
-      type={select("Type", alertOptions, "standard")}
+      type={select("Type", alertOptions, "unsaved")}
       icon={text("Custom Image", "oZoomOut")}
       content="Hey there!"
       placement={text("Placement", "topRight")}
     />
   ))
+  .add("Basic with multiLine", () => (
+    <Alert
+      type={select("Type", alertOptions, "success")}
+      multiLine={boolean("Multiline Alert", true)}
+      icon={text("Icon", undefined)}
+      content={text(
+        "content",
+        "This is an alert without action but has too long text that doesn’t fit in max-width. Or should we have character limit on alert messages?"
+      )}
+    />
+  ))
   .add("Basic with heading and multiLine", () => (
     <Alert
-      type={select("Type", alertOptions, "standard")}
+      type={select("Type", alertOptions, "neutral")}
       multiLine={boolean("Multiline Alert", true)}
       icon={text("Icon", undefined)}
       heading={text("Heading", "Heading 1")}
@@ -219,7 +290,7 @@ stories
   .add("Multiline with picture", () => (
     <Alert
       image="https://clarisights-users.s3.eu-central-1.amazonaws.com/production/users/profile_picture_561/1540893983_clarisights.png"
-      type={select("Type", alertOptions, "standard")}
+      type={select("Type", alertOptions, "neutral")}
       multiLine={boolean("Multiline Alert", true)}
       heading={text("Heading", "Heading 1")}
       content={text("content", "Hey there!")}
@@ -228,14 +299,45 @@ stories
   .add("Basic with actions", () => (
     <Alert actions={alertActions} content={text("content", "Hey there!")} />
   ))
+  .add("Multiline with action", () => (
+    <Alert
+      image="https://clarisights-users.s3.eu-central-1.amazonaws.com/production/users/profile_picture_561/1540893983_clarisights.png"
+      type={select("Type", alertOptions, "success")}
+      multiLine={boolean("Multiline Alert", true)}
+      content={text(
+        "content",
+        "This is an alert without action but has too long text that doesn’t fit in max-width. Or should we have character limit on alert messages?"
+      )}
+      actions={alertActions}
+    />
+  ))
   .add("Multiline with picture and actions", () => (
     <Alert
       image="https://clarisights-users.s3.eu-central-1.amazonaws.com/production/users/profile_picture_561/1540893983_clarisights.png"
       actions={alertActions}
-      type={select("Type", alertOptions, "standard")}
+      type={select("Type", alertOptions, "danger")}
       multiLine={boolean("Multiline Alert", true)}
       heading={text("Heading", "Heading 1")}
-      content={text("content", "Hey there!")}
+      content={text(
+        "content",
+        "This is an alert with action but has too long text that doesn’t fit in max-width. "
+      )}
+      size={select("Type", sizeType, "medium")}
+    />
+  ))
+  .add("Custom Color Alert", () => (
+    <Alert
+      image="https://clarisights-users.s3.eu-central-1.amazonaws.com/production/users/profile_picture_561/1540893983_clarisights.png"
+      actions={alertActions}
+      type={select("Type", alertOptions, "warning")}
+      multiLine={boolean("Multiline Alert", true)}
+      heading={text("Heading", "Heading 1")}
+      content={text(
+        "content",
+        "This is an alert with action but has too long text that doesn’t fit in max-width. "
+      )}
+      customColor={text("Custom color", "#D4A867")}
+      size={select("Type", sizeType, "medium")}
     />
   ))
   .add("Basic with large size", () => (
@@ -246,200 +348,128 @@ stories
     />
   ))
   .add("All Test cases just tweak the knobs", () => (
-    <div>
+    <Center>
+      <AlertButton
+        type={select(
+          "type",
+          {
+            neutral: "neutral",
+            unsaved: "unsaved",
+            danger: "danger",
+            warning: "warning",
+            success: "success",
+          },
+          "neutral",
+          "groupID1"
+        )}
+        size={select(
+          "size",
+          {
+            "x-small": "x-small",
+            small: "small",
+            medium: "medium",
+            large: "large",
+          },
+          "small",
+          "groupID1"
+        )}
+        placement={select(
+          "placement",
+          {
+            topLeft: "topLeft",
+            topRight: "topRight",
+            bottomLeft: "bottomLeft",
+            bottomRight: "bottomRight",
+          },
+          "bottomLeft",
+          "groupID1"
+        )}
+        content={text("content", "Hey there", "groupID1")}
+        autoDismiss={boolean("autoDismiss", false, "groupID1")}
+        dismissDuration={number("dismissDuration", undefined, "groupID1")}
+        heading={text("heading", undefined, "groupID1")}
+        multiline={boolean("multiline", false, "groupID1")}
+        icon={text("icon", undefined, "groupID1")}
+        onClose={() => {}}
+      />
+    </Center>
+  ))
+  .add("According to placement cases", () => {
+    return (
       <Center>
-        <AlertButton
-          type={select(
-            "type",
-            {
-              standard: "standard",
-              message: "message",
-              warning: "warning",
-              error: "error",
-            },
-            "standard",
-            "groupID1"
-          )}
-          size={select(
-            "size",
-            {
-              "x-small": "x-small",
-              small: "small",
-              medium: "medium",
-              large: "large",
-            },
-            "small",
-            "groupID1"
-          )}
-          placement={select(
-            "placement",
-            {
-              topLeft: "topLeft",
-              topRight: "topRight",
-              bottomLeft: "bottomLeft",
-              bottomRight: "bottomRight",
-            },
-            "bottomLeft",
-            "groupID1"
-          )}
-          content={text("content", "Hey there", "groupID1")}
-          autoDismiss={boolean("autoDismiss", false, "groupID1")}
-          dismissDuration={number("dismissDuration", undefined, "groupID1")}
-          heading={text("heading", "", "groupID1")}
-          multiline={boolean("multiline", false, "groupID1")}
-          icon={text("icon", undefined, "groupID1")}
+        <AlertsButton label={"topLeft"} alerts={alertArr} placement="topLeft" />
+        <AlertsButton
+          label={"topRight"}
+          alerts={alertArr}
+          placement="topRight"
+        />
+        <AlertsButton
+          label={"bottomLeft"}
+          alerts={alertArr}
+          placement="bottomLeft"
+        />
+        <AlertsButton
+          label={"bottomRight"}
+          alerts={alertArr}
+          placement="bottomRight"
         />
       </Center>
-    </div>
-  ))
-  .add("top left side cases", () => (
-    <div>
-      <Center>
-        <Button
-          label={"topLeft (Press One Time Only)"}
-          onClick={event =>
-            alertArr.map((alert: AlertProps, index: number) => {
-              setTimeout(() => {
-                Alerts.add({ ...alert, placement: "topLeft" })
-              }, index * 500)
-            })
-          }
-        />
-      </Center>
-    </div>
-  ))
-  .add("top right side cases", () => (
-    <div>
-      <Center>
-        <Button
-          label={"topRight (Press One Time Only)"}
-          onClick={event =>
-            alertArr.map((alert: AlertProps, index: number) => {
-              setTimeout(() => {
-                Alerts.add({ ...alert, placement: "topRight" })
-              }, index * 500)
-            })
-          }
-        />
-      </Center>
-    </div>
-  ))
-  .add("bottom left side cases", () => (
-    <div>
-      <Center>
-        <Button
-          label={"bottomLeft (Press One Time Only)"}
-          onClick={event =>
-            alertArr.map((alert: AlertProps, index: number) => {
-              setTimeout(() => {
-                Alerts.add({ ...alert, placement: "bottomLeft" })
-              }, index * 500)
-            })
-          }
-        />
-      </Center>
-    </div>
-  ))
-  .add("bottom right side cases", () => (
-    <div>
-      <Center>
-        <Button
-          label={"bottomRight (Press One Time Only)"}
-          onClick={event =>
-            alertArr.map((alert: AlertProps, index: number) => {
-              setTimeout(() => {
-                Alerts.add({ ...alert, placement: "bottomRight" })
-              }, index * 500)
-            })
-          }
-        />
-      </Center>
-    </div>
-  ))
+    )
+  })
   .add("Any placement position cases", () => {
-    const placements: placementType[] = [
-      "bottomLeft",
-      "topLeft",
-      "topRight",
-      "bottomRight",
-    ]
-    let i = alertArr.length
-    alertArr.map((alert: AlertProps, index: number) => {
-      setTimeout(() => {
-        i = i === alertArr.length ? 0 : i + 1
-        const tempAlert = alert
-        tempAlert.size = tempAlert.size === "large" ? "medium" : tempAlert.size
-        tempAlert.placement = placements[i % 4]
-        Alerts.add(tempAlert)
-      }, index * 200)
-    })
-    alertArr.map((alert: AlertProps, index: number) => {
-      setTimeout(() => {
-        i = i === alertArr.length ? 0 : i + 1
-        const tempAlert = alert
-        tempAlert.size = tempAlert.size === "large" ? "medium" : tempAlert.size
-        tempAlert.placement = placements[i % 4]
-        Alerts.add(tempAlert)
-      }, (index + alertArr.length) * 200)
-    })
-    return <></>
+    return (
+      <Center>
+        <AlertsButton label={"Random Placement"} alerts={alertArr} isRandom />
+      </Center>
+    )
   })
   .add("remove alert using api call", () => {
-    const keysOfAlerts: string[] = []
-    alertArr.map((alert: AlertProps, index: number) => {
-      setTimeout(() => {
-        keysOfAlerts.push(Alerts.add(alert))
-      }, index * 500)
-    })
-    setTimeout(() => {
-      Alerts.remove(keysOfAlerts[1])
-    }, 5000)
     return (
-      <div>
-        <Center>
-          <h2>Remove the second called alert using api</h2>
-        </Center>
-      </div>
+      <Center>
+        <AlertsButton
+          label={"Random Placement"}
+          alerts={[alertArr[0], alertArr[1]]}
+          apiClose
+        />
+      </Center>
     )
   })
-  .add("custom style using class", () => {
-    return (
-      <React.Fragment>
-        <GlobalStyle />
-        <Center>
-          <Button
-            label={"Custom Style Alert"}
-            onClick={event =>
-              Alerts.add({
-                type: "standard",
-                size: "small",
-                placement: "topRight",
-                autoDismiss: false,
-                dismissDuration: 1500,
-                heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
-                multiLine: true,
-                actions: alertActions,
-                className: "new_class",
-                prefixClassName: "myclass",
-                content: "This is the content",
-                icon: "",
-                onClose: () => {},
-              })
-            }
-          />
-        </Center>
-      </React.Fragment>
-    )
-  })
+  .add("custom style using class", () => (
+    <>
+      <GlobalStyle />
+      <Center>
+        <AlertsButton
+          label={"Custom Style Alert"}
+          alerts={[
+            {
+              type: "warning",
+              size: "small",
+              placement: "topRight",
+              autoDismiss: false,
+              dismissDuration: 1500,
+              heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
+              multiLine: true,
+              actions: alertActions,
+              className: "new_class",
+              prefixClassName: "myclass",
+              content: "This is the content",
+              icon: "",
+              onClose: () => {},
+            },
+          ]}
+        />
+      </Center>
+    </>
+  ))
   .add("React Component passed as content", () => {
     return (
-      <React.Fragment>
+      <>
         <Center>
-          <Button
+          <AlertsButton
             label={"Content as Component Alert"}
-            onClick={event =>
-              Alerts.add({
-                type: "standard",
+            alerts={[
+              {
+                type: "warning",
                 size: "small",
                 placement: "topRight",
                 autoDismiss: false,
@@ -450,11 +480,11 @@ stories
                 content: <MyComponent />,
                 icon: "",
                 onClose: () => {},
-              })
-            }
+              },
+            ]}
           />
         </Center>
-      </React.Fragment>
+      </>
     )
   })
 

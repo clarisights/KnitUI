@@ -87,7 +87,6 @@
     "typescript": "^3.4.5"
   },
   "dependencies": {
-    "@storybook/addon-backgrounds": "^5.0.10",
     "@types/styled-components": "^4.1.14",
     "@types/uuid": "^3.4.5",
     "chroma-js": "^2.0.3",

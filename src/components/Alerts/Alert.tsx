@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"
-import { AlertProps, alertType, actionType } from "./AlertInterface"
+import React, { useState, useEffect, SyntheticEvent } from "react"
+import { AlertProps } from "./types"
 import {
   AlertContainer,
   AlertContent,
@@ -11,122 +11,110 @@ import {
   AlertActionsWrapper,
   CloseIcon,
 } from "./StyledAlert"
-import { Neutral0 } from "../../common/styles/palette"
+import { IStyled } from "../../common/types"
+
+type IStyledAlert = IStyled<AlertProps>
 
 const defaultIcons = {
-  standard: "oInfo",
-  error: "oError",
+  neutral: "oInfo",
+  unsaved: "oInfo",
+  danger: "oError",
   warning: "oWarning",
   success: "oCheckCircle",
 }
 
-const renderIcon = (
-  type: alertType,
-  icon: string | undefined,
-  multiLine: boolean,
-  image: string | undefined,
-  prefixClassName?: string | undefined
-) => {
-  if (image)
-    return (
-      <StyledAlertPicture
-        prefixClassName={prefixClassName}
-        multiLine={multiLine}
-        src={image}
-      />
-    )
-  if (icon)
-    return (
-      <StyledAlertIcon
-        prefixClassName={prefixClassName}
-        multiLine={multiLine}
-        type={icon}
-        fill={Neutral0.hex}
-      />
-    )
-  return (
-    <StyledAlertIcon
-      prefixClassName={prefixClassName}
-      multiLine={multiLine}
-      type={defaultIcons[type]}
-      fill={Neutral0.hex}
-    />
-  )
+const getClassName = (prfxCls?: string, suffix?: string) =>
+  prfxCls ? prfxCls + suffix : ""
+
+const renderIcon = (scProps: IStyledAlert) => {
+  const {
+    customProps: { prefixClassName, image, icon, type },
+  } = scProps
+
+  scProps.className = getClassName(prefixClassName, "-knit-alert-icon")
+
+  if (image) return <StyledAlertPicture {...scProps} src={image} />
+  if (icon) return <StyledAlertIcon {...scProps} type={icon} />
+  return <StyledAlertIcon {...scProps} type={defaultIcons[type!]} />
 }
 
-const renderActions = (
-  actions: Array<actionType>,
-  multiLine: boolean | undefined,
-  prefixClassName?: string
-) => {
+const renderActions = (scProps: IStyledAlert) => {
+  let {
+    customProps: { actions, prefixClassName: prfxCls, type },
+  } = scProps
+
+  if (Array.isArray(actions) && actions.length == 0) {
+    return null
+  }
   // Only pick top 2 actions in case more are supplied
-  actions = actions.slice(0, 2)
+  actions = actions!.slice(0, 2)
 
   return (
     <AlertActionsWrapper
-      prefixClassName={prefixClassName}
-      multiLine={multiLine}>
-      {actions.map(action => (
+      className={getClassName(prfxCls, "-knit-alert-action-wrapper")}
+      {...scProps}>
+      {actions!.map(action => (
         <StyledAlertAction
-          prefixClassName={prefixClassName}
+          className={getClassName(prfxCls, "-knit-alert-action")}
+          {...scProps}
           key={action.text}
-          onClick={() => action.callback()}>
-          {action.text}
-        </StyledAlertAction>
+          type="secondary"
+          label={action.text}
+          onClick={() => action.callback()}
+          alertType={type}
+        />
       ))}
     </AlertActionsWrapper>
   )
 }
 
-const Alert: React.FC<AlertProps> = (props: any) => {
-  const [open, setOpen] = useState(true)
+const Alert: React.FC<AlertProps> = (props: AlertProps) => {
+  const { className, ...rest } = props
+
+  const scProps = { className, customProps: rest }
   const {
-    type = "standard",
-    size = "small",
-    content,
-    multiLine = false,
-    autoDismiss,
-    dismissDuration = 5000, //default autoDismiss period if autoDismiss=true
-    heading,
-    icon,
     image,
+    prefixClassName,
+    heading,
+    multiLine,
+    autoDismiss,
+    dismissDuration,
     actions,
     onClose,
-    placement = "bottomLeft",
-    className,
-    prefixClassName,
-  } = props
+  } = rest
 
-  const containerProps = {
-    type,
-    size,
-    content,
-    placement,
-    prefixClassName,
+  const [open, setOpen] = useState(true)
+
+  // To get className
+  const propsWithClass = (suffix: string, className?: string) => {
+    scProps.className =
+      (prefixClassName ? `${prefixClassName}${suffix} ` : "") +
+      (className ? `${className} ` : "")
+    return scProps
   }
-  const contentProps = { heading, multiLine, prefixClassName }
+
   const isIcon = props.hasOwnProperty("icon")
+  const isAction = actions && actions.length > 0
+
   // Execute once, when Component will be mounted
   useEffect(() => {
     // Show error when more than two actions are passed
-    if (props.hasOwnProperty("actions") && actions.length > 2) {
+    if (actions && actions.length > 2) {
       console.error(
         "Only two actions can be add to Alert, others will be ignored"
       )
     }
-    // heading & multiline are
+    // heading only exist if multiline prop is true
     if (heading && !multiLine) {
       console.error("Please pass multiLine prop to use headings")
     }
   }, [])
 
   // To Auto dismiss the alert after some duration, can use transition delay check out again
-  if (autoDismiss) {
-    setTimeout(() => fadeAway(), dismissDuration)
-  }
+  if (autoDismiss) setTimeout(() => fadeAway(), dismissDuration)
 
   // called by both AutoDismiss and Close Icon click
-  const fadeAway = (event?: Event): void => {
+  const fadeAway = (event?: SyntheticEvent): void => {
     onClose && onClose(event)
     setOpen(false)
   }
@@ -134,26 +122,29 @@ const Alert: React.FC<AlertProps> = (props: any) => {
   return (
     <AlertContainer
       data-testid="alert-container"
-      className={`${!!className ? className : ""}` + (open ? "" : " hide")}
-      {...containerProps}>
-      {(isIcon || image) &&
-        renderIcon(type, icon, multiLine, image, prefixClassName)}
-      <AlertContentWrapper {...contentProps}>
+      {...propsWithClass(
+        "-knit-alert",
+        `${scProps.className ? scProps.className : ""}${open ? "" : " hide"}`
+      )}>
+      {(isIcon || image) && renderIcon(scProps)}
+      <AlertContentWrapper {...propsWithClass("-knit-alert-content-wrapper")}>
         {heading && multiLine && (
-          <AlertHeading prefixClassName={prefixClassName}>
+          <AlertHeading {...propsWithClass("-knit-alert-heading")}>
             {heading}
           </AlertHeading>
         )}
-        <AlertContent prefixClassName={prefixClassName} multiLine={multiLine}>
+        <AlertContent {...propsWithClass("-knit-alert-content")}>
           {props.content}
         </AlertContent>
-        {actions && renderActions(actions, multiLine, prefixClassName)}
+        {isAction && renderActions(scProps)}
       </AlertContentWrapper>
       {!autoDismiss && (
         <CloseIcon
-          prefixClassName={prefixClassName}
           data-testid="alert-close"
-          onClick={(e: Event) => fadeAway(e)}
+          icon="oClose"
+          size="small"
+          onClick={(e: SyntheticEvent) => fadeAway(e)}
+          {...propsWithClass("-knit-alert-close")}
         />
       )}
     </AlertContainer>
@@ -161,10 +152,11 @@ const Alert: React.FC<AlertProps> = (props: any) => {
 }
 
 Alert.defaultProps = {
-  type: "standard",
+  type: "neutral",
   size: "small",
   placement: "bottomLeft",
   multiLine: false,
+  actions: [],
 }
 
 export default Alert
