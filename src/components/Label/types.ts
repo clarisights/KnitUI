@@ -18,6 +18,8 @@ export interface BaseLabelProps extends BaseComponentProps {
   colorPreset?: ColorPreset
   /** Custom color to override presets */
   customColor?: CustomColor
+  /** Override the default font colors */
+  customFontColor?: CustomColor 
 }
 
 export interface InlineLabelProps extends BaseLabelProps {

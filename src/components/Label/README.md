@@ -26,6 +26,7 @@ import { Label } from "KnitUI"
 | className | string | Yes | None | CSS class name to be added |
 | style | CSS Object | Yes | None | CSS style to be added |
 | insetColor | string | Yes | None | If provided, will add a small decoration on the label with the given color. Also the background is set to a default which can be changed by `customColor` but not through the `colorPreset` |
+| customFontColor | string | Yes | None | Overrides the default font colors |
 
 ## Inline Label
 
@@ -49,3 +50,4 @@ import { Label } from "KnitUI"
 | className | string | Yes | None | CSS class name to be added |
 | style | CSS Object | Yes | None | CSS style to be added |
 | insetColor | string | Yes | None | If provided, will add a small decoration on the label with the given color. Also the background is set to a default which can be changed by `customColor` but not through the `colorPreset` |
+| customFontColor | string | Yes | None | Overrides the default font colors |

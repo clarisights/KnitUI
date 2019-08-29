@@ -113,6 +113,15 @@ describe("Label", () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
+  it("custom font color", () => {
+    const { asFragment } = render(
+      <ThemeProvider>
+        <Label text="label" customFontColor="#F7B3B3" />
+      </ThemeProvider>
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
   it("inset", () => {
     const { asFragment } = render(
       <ThemeProvider>
