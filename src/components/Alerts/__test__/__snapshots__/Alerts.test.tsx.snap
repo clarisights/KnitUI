@@ -1,0 +1,2385 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert Component Tests different placements bottomLeft side alert render 1`] = `
+.c6 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c6 > * {
+  pointer-events: auto;
+}
+
+.c7 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c7 > * {
+  pointer-events: auto;
+}
+
+.c8 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c8 > * {
+  pointer-events: auto;
+}
+
+.c9 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c5 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c4 span {
+  margin-right: 0rem;
+}
+
+.c4 span svg path {
+  fill: #ffffff;
+}
+
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #ffffff;
+  background-color: #003d99;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #ffffff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #00000000;
+}
+
+.c4:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 35rem;
+  border-radius: 4px;
+  padding: 1.4rem;
+  color: #ffffff;
+  background: #002966;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.c3 {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 0 0 1.4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-container"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Hello there
+      </div>
+    </div>
+    <button
+      class="c3 c4"
+      style="padding: 0rem;"
+    >
+      <span
+        class="c5"
+        height="18px"
+        type="oClose"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    class="knit-ui-alerts"
+  >
+    <div
+      class="c6"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c7"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c8"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c9"
+      data-testid="alerts-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different placements bottomRight side alert render 1`] = `
+.c6 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c6 > * {
+  pointer-events: auto;
+}
+
+.c7 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c7 > * {
+  pointer-events: auto;
+}
+
+.c8 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c8 > * {
+  pointer-events: auto;
+}
+
+.c9 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c5 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c4 span {
+  margin-right: 0rem;
+}
+
+.c4 span svg path {
+  fill: #ffffff;
+}
+
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #ffffff;
+  background-color: #003d99;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #ffffff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #00000000;
+}
+
+.c4:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 35rem;
+  border-radius: 4px;
+  padding: 1.4rem;
+  color: #ffffff;
+  background: #002966;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.c3 {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 0 0 1.4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-container"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Hello there
+      </div>
+    </div>
+    <button
+      class="c3 c4"
+      style="padding: 0rem;"
+    >
+      <span
+        class="c5"
+        height="18px"
+        type="oClose"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    class="knit-ui-alerts"
+  >
+    <div
+      class="c6"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c7"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c8"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c9"
+      data-testid="alerts-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different placements topLeft side alert render 1`] = `
+.c6 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c6 > * {
+  pointer-events: auto;
+}
+
+.c7 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c7 > * {
+  pointer-events: auto;
+}
+
+.c8 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c8 > * {
+  pointer-events: auto;
+}
+
+.c9 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c5 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c4 span {
+  margin-right: 0rem;
+}
+
+.c4 span svg path {
+  fill: #ffffff;
+}
+
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #ffffff;
+  background-color: #003d99;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #ffffff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #00000000;
+}
+
+.c4:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 35rem;
+  border-radius: 4px;
+  padding: 1.4rem;
+  color: #ffffff;
+  background: #002966;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.c3 {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 0 0 1.4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-container"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Hello there
+      </div>
+    </div>
+    <button
+      class="c3 c4"
+      style="padding: 0rem;"
+    >
+      <span
+        class="c5"
+        height="18px"
+        type="oClose"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    class="knit-ui-alerts"
+  >
+    <div
+      class="c6"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c7"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c8"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c9"
+      data-testid="alerts-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different placements topRight side alert render 1`] = `
+.c6 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c6 > * {
+  pointer-events: auto;
+}
+
+.c7 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c7 > * {
+  pointer-events: auto;
+}
+
+.c8 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c8 > * {
+  pointer-events: auto;
+}
+
+.c9 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c5 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c4 span {
+  margin-right: 0rem;
+}
+
+.c4 span svg path {
+  fill: #ffffff;
+}
+
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #ffffff;
+  background-color: #003d99;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #ffffff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #00000000;
+}
+
+.c4:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 35rem;
+  border-radius: 4px;
+  padding: 1.4rem;
+  color: #ffffff;
+  background: #002966;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.c3 {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 0 0 1.4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-container"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Hello there
+      </div>
+    </div>
+    <button
+      class="c3 c4"
+      style="padding: 0rem;"
+    >
+      <span
+        class="c5"
+        height="18px"
+        type="oClose"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    class="knit-ui-alerts"
+  >
+    <div
+      class="c6"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c7"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c8"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c9"
+      data-testid="alerts-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different sizes large alert render 1`] = `
+.c7 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c7 > * {
+  pointer-events: auto;
+}
+
+.c8 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c8 > * {
+  pointer-events: auto;
+}
+
+.c9 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c10 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c10 > * {
+  pointer-events: auto;
+}
+
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c6 span {
+  margin-right: 0rem;
+}
+
+.c6 span svg path {
+  fill: #ffffff;
+}
+
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
+}
+
+.c6:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 77rem;
+  border-radius: 4px;
+  padding: 1.4rem;
+  color: #ffffff;
+  background: #002966;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 0 1.4rem 0 0;
+}
+
+.c5 {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 0 0 1.4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-container"
+  >
+    <span
+      class="c1 c2"
+      fill="#ffffff"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#ffffff"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        Hello there
+      </div>
+    </div>
+    <button
+      class="c5 c6"
+      style="padding: 0rem;"
+    >
+      <span
+        class="c2"
+        height="18px"
+        type="oClose"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    class="knit-ui-alerts"
+  >
+    <div
+      class="c7"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c8"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c9"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c10"
+      data-testid="alerts-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different sizes medium alert render 1`] = `
+.c7 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c7 > * {
+  pointer-events: auto;
+}
+
+.c8 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c8 > * {
+  pointer-events: auto;
+}
+
+.c9 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c10 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c10 > * {
+  pointer-events: auto;
+}
+
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c6 span {
+  margin-right: 0rem;
+}
+
+.c6 span svg path {
+  fill: #ffffff;
+}
+
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
+}
+
+.c6:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 49rem;
+  border-radius: 4px;
+  padding: 1.4rem;
+  color: #ffffff;
+  background: #002966;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 0 1.4rem 0 0;
+}
+
+.c5 {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 0 0 1.4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-container"
+  >
+    <span
+      class="c1 c2"
+      fill="#ffffff"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#ffffff"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        Hello there
+      </div>
+    </div>
+    <button
+      class="c5 c6"
+      style="padding: 0rem;"
+    >
+      <span
+        class="c2"
+        height="18px"
+        type="oClose"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    class="knit-ui-alerts"
+  >
+    <div
+      class="c7"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c8"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c9"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c10"
+      data-testid="alerts-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different sizes small alert render 1`] = `
+.c7 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c7 > * {
+  pointer-events: auto;
+}
+
+.c8 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c8 > * {
+  pointer-events: auto;
+}
+
+.c9 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c10 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c10 > * {
+  pointer-events: auto;
+}
+
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c6 span {
+  margin-right: 0rem;
+}
+
+.c6 span svg path {
+  fill: #ffffff;
+}
+
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
+}
+
+.c6:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 35rem;
+  border-radius: 4px;
+  padding: 1.4rem;
+  color: #ffffff;
+  background: #002966;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 0 1.4rem 0 0;
+}
+
+.c5 {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 0 0 1.4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-container"
+  >
+    <span
+      class="c1 c2"
+      fill="#ffffff"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#ffffff"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        Hello there
+      </div>
+    </div>
+    <button
+      class="c5 c6"
+      style="padding: 0rem;"
+    >
+      <span
+        class="c2"
+        height="18px"
+        type="oClose"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    class="knit-ui-alerts"
+  >
+    <div
+      class="c7"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c8"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c9"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c10"
+      data-testid="alerts-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Alert Component Tests different sizes x-small alert render 1`] = `
+.c7 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c7 > * {
+  pointer-events: auto;
+}
+
+.c8 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c8 > * {
+  pointer-events: auto;
+}
+
+.c9 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  left: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c10 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column-reverse nowrap;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c10 > * {
+  pointer-events: auto;
+}
+
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c6 span {
+  margin-right: 0rem;
+}
+
+.c6 span svg path {
+  fill: #ffffff;
+}
+
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
+}
+
+.c6:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 28rem;
+  border-radius: 4px;
+  padding: 1.4rem;
+  color: #ffffff;
+  background: #002966;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.c0.hide {
+  opacity: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 0 1.4rem 0 0;
+}
+
+.c5 {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 0 0 1.4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="alert-container"
+  >
+    <span
+      class="c1 c2"
+      fill="#ffffff"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#ffffff"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        Hello there
+      </div>
+    </div>
+    <button
+      class="c5 c6"
+      style="padding: 0rem;"
+    >
+      <span
+        class="c2"
+        height="18px"
+        type="oClose"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    class="knit-ui-alerts"
+  >
+    <div
+      class="c7"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c8"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c9"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c10"
+      data-testid="alerts-wrapper"
+    />
+  </div>
+</div>
+`;
