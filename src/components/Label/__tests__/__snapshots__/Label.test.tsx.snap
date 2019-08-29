@@ -3,6 +3,7 @@
 exports[`Label custom class 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -36,6 +37,7 @@ exports[`Label custom class 1`] = `
 exports[`Label custom style 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -70,6 +72,7 @@ exports[`Label custom style 1`] = `
 exports[`Label focused 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -161,6 +164,7 @@ exports[`Label inline expanded 1`] = `
 exports[`Label inset 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -205,6 +209,7 @@ exports[`Label inset 1`] = `
 exports[`Label inset with custom color 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -249,6 +254,7 @@ exports[`Label inset with custom color 1`] = `
 exports[`Label outlined 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -282,6 +288,7 @@ exports[`Label outlined 1`] = `
 exports[`Label rounded 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -315,6 +322,7 @@ exports[`Label rounded 1`] = `
 exports[`Label with size large compact 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -348,6 +356,7 @@ exports[`Label with size large compact 1`] = `
 exports[`Label with size large expanded 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -388,6 +397,7 @@ exports[`Label with size large left and right icons 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -474,6 +484,7 @@ exports[`Label with size large left icon 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -537,6 +548,7 @@ exports[`Label with size large right icon 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -593,6 +605,7 @@ exports[`Label with size large right icon 1`] = `
 exports[`Label with size medium compact 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -626,6 +639,7 @@ exports[`Label with size medium compact 1`] = `
 exports[`Label with size medium expanded 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -666,6 +680,7 @@ exports[`Label with size medium left and right icons 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -752,6 +767,7 @@ exports[`Label with size medium left icon 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -815,6 +831,7 @@ exports[`Label with size medium right icon 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -871,6 +888,7 @@ exports[`Label with size medium right icon 1`] = `
 exports[`Label with size small compact 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -904,6 +922,7 @@ exports[`Label with size small compact 1`] = `
 exports[`Label with size small expanded 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -944,6 +963,7 @@ exports[`Label with size small left and right icons 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1030,6 +1050,7 @@ exports[`Label with size small left icon 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1093,6 +1114,7 @@ exports[`Label with size small right icon 1`] = `
 }
 
 .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
