@@ -144,6 +144,7 @@ const getInsetStyles = (props: IStyledLabel) => {
 
 
 const StyledDiv = styled.div<IStyledLabel>`
+  position: relative;
   display: inline-flex;
   align-items: center;
   padding: ${props =>
