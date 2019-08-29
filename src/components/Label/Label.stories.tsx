@@ -57,6 +57,18 @@ stories
       focus={boolean("Focus", false)}
     />
   ))
+  .add("with a custom font color", () => (
+    <Label
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      customFontColor={text("Custom font color", "#F7B3B3")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+    />
+  ))
   .add("Rounded", () => (
     <Label
       text={text("text", "Label")}

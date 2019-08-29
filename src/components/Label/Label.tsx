@@ -45,7 +45,10 @@ const parseColorTheme = (props: IStyledLabel) => {
 }
 const getBackgroundColor = (props: IStyledLabel) => parseColorTheme(props).background
 
-const getFontColor = (props: IStyledLabel) => parseColorTheme(props).font
+const getFontColor = (props: IStyledLabel) => {
+  const { customProps: { customFontColor } } = props
+  return customFontColor || parseColorTheme(props).font
+}
 
 const getDarkenedBorderColor = (props: IStyledLabel) =>
   getBackgroundColor(props).set("hsl.l", "-0.2")

@@ -33,6 +33,39 @@ exports[`Label custom class 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Label custom font color 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+  background-color: #002966;
+  color: #F7B3B3;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+<div
+    class="c0"
+  >
+    <span>
+      label
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Label custom style 1`] = `
 <DocumentFragment>
   .c0 {
