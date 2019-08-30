@@ -2,6 +2,7 @@ import React, { useState, ReactNode } from "react"
 import styled from "styled-components"
 import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
+import { fontSizeType } from "../../common/types"
 
 import { Header, Footer, Main } from "./components"
 import {
@@ -23,7 +24,7 @@ const sizeToWidth = {
 
 export interface ModalWrapperProps extends BaseComponentProps {
   /** Contents to be rendered in the header section */
-  header: { title: string; rightSection?: ReactNode, noFill?: boolean }
+  header: { title: string; fontSize?: fontSizeType, rightSection?: ReactNode, noFill?: boolean }
   /** Contents to be rendered on in the body section */
   body: ReactNode
   /** Contents to be rendered on in the footer section */
