@@ -47,6 +47,8 @@ export interface LabelPropTypes extends BaseLabelProps {
   insetColor?: CustomColor
 }
 
+export type InlineLabelType = React.FC<InlineLabelProps>
+
 export interface ILabel extends React.FC<LabelPropTypes> {
   Inline: InlineLabelType
 }

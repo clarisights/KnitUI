@@ -1,10 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { IStyled } from "../../common/types"
-import { InlineLabelProps } from "./types"
+import { InlineLabelProps, InlineLabelType } from "./types"
 import { getFontColor, getBackgroundColor } from "./commonUtils"
-
-export type InlineLabelType = React.FC<InlineLabelProps>
 
 const DEFAULT_COLOR_THEME = "neutral"
 
