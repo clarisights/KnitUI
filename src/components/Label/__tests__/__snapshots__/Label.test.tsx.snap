@@ -37,6 +37,7 @@ exports[`Label custom class 1`] = `
 exports[`Label custom font color 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
