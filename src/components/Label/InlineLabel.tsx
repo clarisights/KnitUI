@@ -2,8 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { IStyled } from "../../common/types"
 import { InlineLabelProps } from "./types"
-import { parseColorPreset, parseCustomColor } from "../../common/_utils"
-import { InlineLabelType } from "./types"
+import { getFontColor, getBackgroundColor } from "./commonUtils"
+
+export type InlineLabelType = React.FC<InlineLabelProps>
 
 const DEFAULT_COLOR_THEME = "neutral"
 
@@ -26,13 +27,6 @@ const geLineHeight = props => {
   } = props
   return typography[fontSize].lineHeight
 }
-
-const parseColorTheme = ({ customProps: { customColor, colorPreset } }) =>
-  customColor ? parseCustomColor(customColor) : parseColorPreset(colorPreset)
-
-const getBackgroundColor = props => parseColorTheme(props).background
-
-const getFontColor = props => parseColorTheme(props).font
 
 const verticalPadding = "0rem"
 const getHorizontalPadding = props => {

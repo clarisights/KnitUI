@@ -27,8 +27,6 @@ export interface InlineLabelProps extends BaseLabelProps {
   fontSize?: fontSizeType
 }
 
-export type InlineLabelType = React.FC<InlineLabelProps>
-
 export interface LabelPropTypes extends BaseLabelProps {
   /** The amount of physical space occupied */
   size?: "small" | "medium" | "large"
