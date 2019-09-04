@@ -146,6 +146,14 @@ stories
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
     />
   ))
+  .add("Inline with custom font color", () => (
+    <Label.Inline
+      text={text("text", "inline label")}
+      expanded={boolean("Expanded", false)}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      customFontColor={text("Custom font color", "#F7B3B3")}
+    />
+  ))
   .add("Inline with custom style", () => (
     <Label.Inline
       text={text("text", "inline label")}

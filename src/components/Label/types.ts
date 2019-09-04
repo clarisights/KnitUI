@@ -27,8 +27,6 @@ export interface InlineLabelProps extends BaseLabelProps {
   fontSize?: fontSizeType
 }
 
-export type InlineLabelType = React.FC<InlineLabelProps>
-
 export interface LabelPropTypes extends BaseLabelProps {
   /** The amount of physical space occupied */
   size?: "small" | "medium" | "large"
@@ -48,6 +46,8 @@ export interface LabelPropTypes extends BaseLabelProps {
    * `customColor` but not through the `colorPreset`*/
   insetColor?: CustomColor
 }
+
+export type InlineLabelType = React.FC<InlineLabelProps>
 
 export interface ILabel extends React.FC<LabelPropTypes> {
   Inline: InlineLabelType

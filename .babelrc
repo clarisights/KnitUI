@@ -18,7 +18,8 @@
       {
         "pure": true
       }
-    ]
+    ],
+    "@babel/plugin-proposal-class-properties"
   ],
   "env": {
     "es": {
@@ -41,8 +42,9 @@
           {
             "pure": true
           }
-        ]
-      ]
+        ],
+        "@babel/plugin-proposal-class-properties"
+      ],
     }
   }
 }

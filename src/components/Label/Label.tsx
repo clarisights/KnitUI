@@ -1,10 +1,10 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import { parseCustomColor, parseColorPreset } from "../../common/_utils"
 import Icon from "../Icon"
 import { ILabel, LabelPropTypes } from "./types"
 import InlineLabel from "./InlineLabel"
 import { IStyled } from "../../common/types"
+import { getFontColor, getBackgroundColor } from "./commonUtils"
 
 const DEFAULT_COLOR_THEME = "neutral"
 const INSET_BACKGROUND_COLOR = "#F7F7F7"
@@ -35,19 +35,6 @@ const geLineHeight = (props: IStyledLabel) => {
     customProps: { size },
   } = props
   return typography[typographySize[size!]].lineHeight
-}
-
-const parseColorTheme = (props: IStyledLabel) => {
-  const { customProps: { customColor, colorPreset } } = props
-  return customColor
-    ? parseCustomColor(customColor)
-    : parseColorPreset(colorPreset!)
-}
-const getBackgroundColor = (props: IStyledLabel) => parseColorTheme(props).background
-
-const getFontColor = (props: IStyledLabel) => {
-  const { customProps: { customFontColor } } = props
-  return customFontColor || parseColorTheme(props).font
 }
 
 const getDarkenedBorderColor = (props: IStyledLabel) =>
