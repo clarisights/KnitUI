@@ -1,6 +1,6 @@
 {
   "name": "knit-ui",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Component library for Clarisights",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -10,7 +10,9 @@
   "license": "MIT",
   "private": false,
   "files": [
-    "build"
+    "es",
+    "lib",
+    "types"
   ],
   "scripts": {
     "test": "jest --verbose=false --no-cache",
