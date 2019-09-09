@@ -168,7 +168,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       style={style}>
       <ModalProxy
         header={<Header {...header} />}
-        body={<Main customProps={padding} ref={setBodyRef}>{body}</Main>}
+        body={<Main customProps={{padding}} ref={setBodyRef}>{body}</Main>}
         footer={
           <Footer customProps={{ showBorder: showFooterBorder }}>
             {footer}
@@ -182,8 +182,8 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
 ModalWrapper.defaultProps = {
   size: "medium",
   padding: {
-    vertical: "2.1rem",
-    horizontal: "2.8rem",
+    vertical: "2.8rem",
+    horizontal: "2.1rem",
   },
   visible: false,
   destroyOnClose: false,

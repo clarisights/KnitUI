@@ -2,7 +2,7 @@
 
 exports[`Modal with overriden padding 1`] = `
 .c6 {
-  padding: 2.8rem 2.1rem;
+  padding: 0px 0px;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;

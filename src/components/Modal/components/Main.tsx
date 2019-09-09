@@ -10,7 +10,7 @@ const getPadding = (props: IStyledDialog) => {
 }
 
 const Main = styled.div<IStyledDialog>`
-  padding: ${props => getPadding(props)}
+  padding: ${props => getPadding(props)};
   overflow-y: auto;
   flex: 1 1 auto;
 `
