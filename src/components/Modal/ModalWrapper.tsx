@@ -2,7 +2,7 @@ import React, { useState, ReactNode } from "react"
 import styled from "styled-components"
 import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
-import { fontSizeType } from "../../common/types"
+import { ModalWrapperProps, IStyledDialog } from "./types"
 
 import { Header, Footer, Main } from "./components"
 import {
@@ -13,42 +13,13 @@ import {
 } from "./variants/index"
 import Icon from "../Icon"
 import "rc-dialog/assets/index.css"
-import { BaseComponentProps } from "../../common/types"
+
 
 const sizeToWidth = {
   small: "49rem",
   medium: "63rem",
   large: "91rem",
   "x-large": "105rem",
-}
-
-export interface ModalWrapperProps extends BaseComponentProps {
-  /** Contents to be rendered in the header section */
-  header: { title: string; fontSize?: fontSizeType, rightSection?: ReactNode, noFill?: boolean }
-  /** Contents to be rendered on in the body section */
-  body: ReactNode
-  /** Contents to be rendered on in the footer section */
-  footer: ReactNode
-  /** The padding values to be applied */
-  padding?: { vertical: string; horizontal: string }
-  /** Size values representing the amount of physical space occupied */
-  size?: "small" | "medium" | "large" | "x-large"
-  /** The DOM node under which the modal should reside */
-  getContainer?: () => HTMLElement
-  /** Controls the visibility of the modal */
-  visible?: boolean
-  /** Function to be executed when the modal is dismissed */
-  onClose: () => void
-  /** Addon panel that is attached to the modal */
-  panel?: { position: "left" | "right" | "bottom"; content: ReactNode }
-  /** to unmount child compenents on onClose */
-  destroyOnClose?: boolean
-}
-
-interface IStyledDialog {
-  customProps: ModalWrapperProps
-  theme: any
-  [propName: string]: any
 }
 
 // Animation related
@@ -147,6 +118,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   destroyOnClose,
   className,
   style,
+  padding
 }) => {
   /**
    * Renders the appopriate variant based on the availability of a
@@ -196,7 +168,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       style={style}>
       <ModalProxy
         header={<Header {...header} />}
-        body={<Main ref={setBodyRef}>{body}</Main>}
+        body={<Main customProps={padding} ref={setBodyRef}>{body}</Main>}
         footer={
           <Footer customProps={{ showBorder: showFooterBorder }}>
             {footer}

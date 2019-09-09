@@ -214,3 +214,20 @@ stories
     }
     return <ModalWrapper />
   })
+  .add("with overriden padding", () => {
+    const ModalWrapper = () => {
+      const [modalVisible, setModalVisible] = useState(true)
+      return (
+        <Modal
+          header={{ title: "Title" }}
+          padding={{ horizontal: "0px", vertical: "0px "}}
+          body={<div>Body</div>}
+          footer={<div>Footer</div>}
+          size={select("Size", sizeOptions, "medium")}
+          visible={modalVisible}
+          onClose={() => setModalVisible(false)}
+        />
+      )
+    }
+    return <ModalWrapper />
+  })

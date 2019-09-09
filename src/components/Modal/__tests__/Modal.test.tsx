@@ -223,4 +223,24 @@ describe("Modal", () => {
     )
     expect(dialog).toHaveClass("custom-class")
   })
+
+  it("with overriden padding", () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Modal
+          padding={{ vertical: "0px", horizontal: "0px" }}
+          header={{ title: "Title" }}
+          body={<div>Body</div>}
+          footer={<div>Footer</div>}
+          visible
+          className="custom-class"
+          onClose={() => {}}
+        />
+      </ThemeProvider>
+    )
+    const dialogContainer = container.parentElement!.querySelector(
+      ".rc-dialog-wrap"
+    )
+    expect(dialogContainer).toMatchSnapshot()
+  })
 })
