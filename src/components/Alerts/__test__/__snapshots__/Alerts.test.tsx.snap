@@ -104,8 +104,8 @@ exports[`Alert Component Tests different placements bottomLeft side alert render
 .c5 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c4 {
@@ -117,14 +117,14 @@ exports[`Alert Component Tests different placements bottomLeft side alert render
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -244,15 +244,15 @@ exports[`Alert Component Tests different placements bottomLeft side alert render
     >
       <span
         class="c5"
-        height="18px"
+        height="1.8rem"
         type="oClose"
-        width="18px"
+        width="1.8rem"
       >
         <svg
           fill="#000"
-          height="18px"
+          height="1.8rem"
           viewBox="0 0 24 24"
-          width="18px"
+          width="1.8rem"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -389,8 +389,8 @@ exports[`Alert Component Tests different placements bottomRight side alert rende
 .c5 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c4 {
@@ -402,14 +402,14 @@ exports[`Alert Component Tests different placements bottomRight side alert rende
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -529,15 +529,15 @@ exports[`Alert Component Tests different placements bottomRight side alert rende
     >
       <span
         class="c5"
-        height="18px"
+        height="1.8rem"
         type="oClose"
-        width="18px"
+        width="1.8rem"
       >
         <svg
           fill="#000"
-          height="18px"
+          height="1.8rem"
           viewBox="0 0 24 24"
-          width="18px"
+          width="1.8rem"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -674,8 +674,8 @@ exports[`Alert Component Tests different placements topLeft side alert render 1`
 .c5 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c4 {
@@ -687,14 +687,14 @@ exports[`Alert Component Tests different placements topLeft side alert render 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -814,15 +814,15 @@ exports[`Alert Component Tests different placements topLeft side alert render 1`
     >
       <span
         class="c5"
-        height="18px"
+        height="1.8rem"
         type="oClose"
-        width="18px"
+        width="1.8rem"
       >
         <svg
           fill="#000"
-          height="18px"
+          height="1.8rem"
           viewBox="0 0 24 24"
-          width="18px"
+          width="1.8rem"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -959,8 +959,8 @@ exports[`Alert Component Tests different placements topRight side alert render 1
 .c5 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c4 {
@@ -972,14 +972,14 @@ exports[`Alert Component Tests different placements topRight side alert render 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1099,15 +1099,15 @@ exports[`Alert Component Tests different placements topRight side alert render 1
     >
       <span
         class="c5"
-        height="18px"
+        height="1.8rem"
         type="oClose"
-        width="18px"
+        width="1.8rem"
       >
         <svg
           fill="#000"
-          height="18px"
+          height="1.8rem"
           viewBox="0 0 24 24"
-          width="18px"
+          width="1.8rem"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -1141,7 +1141,7 @@ exports[`Alert Component Tests different placements topRight side alert render 1
 `;
 
 exports[`Alert Component Tests different sizes large alert render 1`] = `
-.c7 {
+.c8 {
   position: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -1160,31 +1160,6 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c7 > * {
-  pointer-events: auto;
-}
-
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
 }
 
 .c8 > * {
@@ -1199,6 +1174,31 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
   display: -ms-flexbox;
   display: flex;
   pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c10 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
   left: 0px;
   bottom: 0px;
   padding-bottom: 10px;
@@ -1212,11 +1212,11 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
   align-items: flex-start;
 }
 
-.c9 > * {
+.c10 > * {
   pointer-events: auto;
 }
 
-.c10 {
+.c11 {
   position: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -1237,7 +1237,7 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
   align-items: flex-end;
 }
 
-.c10 > * {
+.c11 > * {
   pointer-events: auto;
 }
 
@@ -1246,6 +1246,13 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
   display: inline-block;
   height: 18px;
   width: 18px;
+}
+
+.c7 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c6 {
@@ -1257,14 +1264,14 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1409,16 +1416,16 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
       style="padding: 0rem;"
     >
       <span
-        class="c2"
-        height="18px"
+        class="c7"
+        height="1.8rem"
         type="oClose"
-        width="18px"
+        width="1.8rem"
       >
         <svg
           fill="#000"
-          height="18px"
+          height="1.8rem"
           viewBox="0 0 24 24"
-          width="18px"
+          width="1.8rem"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -1432,10 +1439,6 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
     class="knit-ui-alerts"
   >
     <div
-      class="c7"
-      data-testid="alerts-wrapper"
-    />
-    <div
       class="c8"
       data-testid="alerts-wrapper"
     />
@@ -1447,12 +1450,16 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
       class="c10"
       data-testid="alerts-wrapper"
     />
+    <div
+      class="c11"
+      data-testid="alerts-wrapper"
+    />
   </div>
 </div>
 `;
 
 exports[`Alert Component Tests different sizes medium alert render 1`] = `
-.c7 {
+.c8 {
   position: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -1471,31 +1478,6 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c7 > * {
-  pointer-events: auto;
-}
-
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
 }
 
 .c8 > * {
@@ -1510,6 +1492,31 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
   display: -ms-flexbox;
   display: flex;
   pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c10 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
   left: 0px;
   bottom: 0px;
   padding-bottom: 10px;
@@ -1523,11 +1530,11 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
   align-items: flex-start;
 }
 
-.c9 > * {
+.c10 > * {
   pointer-events: auto;
 }
 
-.c10 {
+.c11 {
   position: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -1548,7 +1555,7 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
   align-items: flex-end;
 }
 
-.c10 > * {
+.c11 > * {
   pointer-events: auto;
 }
 
@@ -1557,6 +1564,13 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
   display: inline-block;
   height: 18px;
   width: 18px;
+}
+
+.c7 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c6 {
@@ -1568,14 +1582,14 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1720,16 +1734,16 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
       style="padding: 0rem;"
     >
       <span
-        class="c2"
-        height="18px"
+        class="c7"
+        height="1.8rem"
         type="oClose"
-        width="18px"
+        width="1.8rem"
       >
         <svg
           fill="#000"
-          height="18px"
+          height="1.8rem"
           viewBox="0 0 24 24"
-          width="18px"
+          width="1.8rem"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -1743,10 +1757,6 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
     class="knit-ui-alerts"
   >
     <div
-      class="c7"
-      data-testid="alerts-wrapper"
-    />
-    <div
       class="c8"
       data-testid="alerts-wrapper"
     />
@@ -1758,12 +1768,16 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
       class="c10"
       data-testid="alerts-wrapper"
     />
+    <div
+      class="c11"
+      data-testid="alerts-wrapper"
+    />
   </div>
 </div>
 `;
 
 exports[`Alert Component Tests different sizes small alert render 1`] = `
-.c7 {
+.c8 {
   position: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -1782,31 +1796,6 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c7 > * {
-  pointer-events: auto;
-}
-
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
 }
 
 .c8 > * {
@@ -1821,6 +1810,31 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
   display: -ms-flexbox;
   display: flex;
   pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c10 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
   left: 0px;
   bottom: 0px;
   padding-bottom: 10px;
@@ -1834,11 +1848,11 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
   align-items: flex-start;
 }
 
-.c9 > * {
+.c10 > * {
   pointer-events: auto;
 }
 
-.c10 {
+.c11 {
   position: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -1859,7 +1873,7 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
   align-items: flex-end;
 }
 
-.c10 > * {
+.c11 > * {
   pointer-events: auto;
 }
 
@@ -1868,6 +1882,13 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
   display: inline-block;
   height: 18px;
   width: 18px;
+}
+
+.c7 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c6 {
@@ -1879,14 +1900,14 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2031,16 +2052,16 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
       style="padding: 0rem;"
     >
       <span
-        class="c2"
-        height="18px"
+        class="c7"
+        height="1.8rem"
         type="oClose"
-        width="18px"
+        width="1.8rem"
       >
         <svg
           fill="#000"
-          height="18px"
+          height="1.8rem"
           viewBox="0 0 24 24"
-          width="18px"
+          width="1.8rem"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -2054,10 +2075,6 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
     class="knit-ui-alerts"
   >
     <div
-      class="c7"
-      data-testid="alerts-wrapper"
-    />
-    <div
       class="c8"
       data-testid="alerts-wrapper"
     />
@@ -2069,12 +2086,16 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
       class="c10"
       data-testid="alerts-wrapper"
     />
+    <div
+      class="c11"
+      data-testid="alerts-wrapper"
+    />
   </div>
 </div>
 `;
 
 exports[`Alert Component Tests different sizes x-small alert render 1`] = `
-.c7 {
+.c8 {
   position: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -2093,31 +2114,6 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c7 > * {
-  pointer-events: auto;
-}
-
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
 }
 
 .c8 > * {
@@ -2132,6 +2128,31 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
   display: -ms-flexbox;
   display: flex;
   pointer-events: none;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 > * {
+  pointer-events: auto;
+}
+
+.c10 {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
   left: 0px;
   bottom: 0px;
   padding-bottom: 10px;
@@ -2145,11 +2166,11 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
   align-items: flex-start;
 }
 
-.c9 > * {
+.c10 > * {
   pointer-events: auto;
 }
 
-.c10 {
+.c11 {
   position: fixed;
   overflow: hidden;
   display: -webkit-box;
@@ -2170,7 +2191,7 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
   align-items: flex-end;
 }
 
-.c10 > * {
+.c11 > * {
   pointer-events: auto;
 }
 
@@ -2179,6 +2200,13 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
   display: inline-block;
   height: 18px;
   width: 18px;
+}
+
+.c7 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c6 {
@@ -2190,14 +2218,14 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2342,16 +2370,16 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
       style="padding: 0rem;"
     >
       <span
-        class="c2"
-        height="18px"
+        class="c7"
+        height="1.8rem"
         type="oClose"
-        width="18px"
+        width="1.8rem"
       >
         <svg
           fill="#000"
-          height="18px"
+          height="1.8rem"
           viewBox="0 0 24 24"
-          width="18px"
+          width="1.8rem"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -2365,10 +2393,6 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
     class="knit-ui-alerts"
   >
     <div
-      class="c7"
-      data-testid="alerts-wrapper"
-    />
-    <div
       class="c8"
       data-testid="alerts-wrapper"
     />
@@ -2378,6 +2402,10 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
     />
     <div
       class="c10"
+      data-testid="alerts-wrapper"
+    />
+    <div
+      class="c11"
       data-testid="alerts-wrapper"
     />
   </div>

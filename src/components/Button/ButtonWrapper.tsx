@@ -30,6 +30,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   // Typography
   const typographySize =
     size === "small" ? knitui.typography[12] : knitui.typography[14]
+  const iconSize = size === "small" ? "1.4rem" : "1.8rem"
   const baseFontSize = typographySize.fontSize
   const baseLineHeight = typographySize.lineHeight
   const insetFontSize = baseFontSize - knitui.baseIncrementUnit
@@ -71,7 +72,7 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
       disabled={disabled}
       className={className}
       style={style}>
-      {icon ? <Icon type={icon} /> : null}
+      {icon ? <Icon type={icon} size={iconSize} /> : null}
       {label}
       {insetLabel ? (
         <ButtonInset
