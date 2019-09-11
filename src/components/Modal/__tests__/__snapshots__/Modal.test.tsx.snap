@@ -18,6 +18,7 @@ exports[`Modal with overriden padding 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -254,6 +255,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -503,6 +505,7 @@ exports[`Modal with size large with a left panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -790,6 +793,7 @@ exports[`Modal with size large with a right panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -1077,6 +1081,7 @@ exports[`Modal with size large with custom title size 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 4.6rem;
 }
 
 .c4 {
@@ -1313,6 +1318,7 @@ exports[`Modal with size large with no fill 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: none;
   border-bottom: 1px solid #d9d9d9;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -1549,6 +1555,7 @@ exports[`Modal with size large with right section in header 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -1791,6 +1798,7 @@ exports[`Modal with size large with simple config 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -2027,6 +2035,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -2276,6 +2285,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -2563,6 +2573,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -2850,6 +2861,7 @@ exports[`Modal with size medium with custom title size 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 4.6rem;
 }
 
 .c4 {
@@ -3086,6 +3098,7 @@ exports[`Modal with size medium with no fill 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: none;
   border-bottom: 1px solid #d9d9d9;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -3322,6 +3335,7 @@ exports[`Modal with size medium with right section in header 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -3564,6 +3578,7 @@ exports[`Modal with size medium with simple config 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -3800,6 +3815,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -4049,6 +4065,7 @@ exports[`Modal with size small with a left panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -4336,6 +4353,7 @@ exports[`Modal with size small with a right panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -4623,6 +4641,7 @@ exports[`Modal with size small with custom title size 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 4.6rem;
 }
 
 .c4 {
@@ -4859,6 +4878,7 @@ exports[`Modal with size small with no fill 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: none;
   border-bottom: 1px solid #d9d9d9;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -5095,6 +5115,7 @@ exports[`Modal with size small with right section in header 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -5337,6 +5358,7 @@ exports[`Modal with size small with simple config 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -5573,6 +5595,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -5822,6 +5845,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -6109,6 +6133,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -6396,6 +6421,7 @@ exports[`Modal with size x-large with custom title size 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 4.6rem;
 }
 
 .c4 {
@@ -6632,6 +6658,7 @@ exports[`Modal with size x-large with no fill 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: none;
   border-bottom: 1px solid #d9d9d9;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -6868,6 +6895,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
@@ -7110,6 +7138,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   background: #f2f2f2;
   border-bottom: none;
+  min-height: 5.6rem;
 }
 
 .c4 {
