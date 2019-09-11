@@ -58,6 +58,10 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: InterRegular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
 `
 
 export default GlobalStyles

@@ -19,6 +19,8 @@ interface HeaderProps {
 
 type IStyledHeaderProps = IStyled<HeaderProps>
 
+const VERTICAL_PADDING = 1.4;
+
 const getFontSize = (props: IStyledHeaderProps) => {
   const { customProps: { fontSize }, theme: { knitui } } = props
   const typographySize = fontSize || knitui.modalTitleTypographySize
@@ -28,7 +30,12 @@ const getFontSize = (props: IStyledHeaderProps) => {
 const getLineHeight = (props: IStyledHeaderProps) => {
   const { customProps: { fontSize }, theme: { knitui } } = props
   const typographySize = fontSize || knitui.modalTitleTypographySize
-  return `${knitui.typography[typographySize].lineHeight}rem`
+  return knitui.typography[typographySize].lineHeight
+}
+
+const getMinHeight = (props: IStyledHeaderProps) => {
+  const lineHeight = getLineHeight(props)
+  return lineHeight + 2 * VERTICAL_PADDING
 }
 
 const Container = styled.div<IStyledHeaderProps>`
@@ -39,10 +46,11 @@ const Container = styled.div<IStyledHeaderProps>`
     `${knitui.modalBorderRadius} ${knitui.modalBorderRadius} 0rem 0rem`};
   background: ${({ theme: { knitui }, customProps: { noFill } }) => noFill ? "none" : knitui.shades.gray95};
   border-bottom: ${({ customProps: { noFill }, theme: { knitui }}) => noFill ? knitui.modalBorder : "none"};
+  min-height: ${props => `${getMinHeight(props)}rem`}
 `
 const TitleSection = styled.div<IStyledHeaderProps>`
   font-size: ${props => getFontSize(props) };
-  line-height: ${props => getLineHeight(props)};
+  line-height: ${props => `${getLineHeight(props)}rem`};
   color: ${({ theme: { knitui } }) => knitui.shades.gray20};
   margin-right: 1.4rem;
 `
