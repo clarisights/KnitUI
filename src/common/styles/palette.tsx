@@ -98,6 +98,11 @@ export const Wood10 = {
 The neutrals bring balance to the color palette, and used for actions that either don’t need direct attention or reduce focus from those already taking more than needed. Darker neutrals are used for shadows, borders, etc.
 */
 
+export const Neutral05 = {
+  hsl: [0, 0, 97],
+  hex: "#F7F7F7",
+}
+
 export const Neutral10 = {
   hsl: [0, 0, 95],
   hex: "#F2F2F2",
@@ -116,6 +121,11 @@ export const Neutral30 = {
 export const Neutral40 = {
   hsl: [0, 0, 80],
   hex: "#CCCCCC",
+}
+
+export const Neutral45 = {
+  hsl: [0, 0, 65],
+  hex: "#A6A6A6",
 }
 
 export const Neutral50 = {
@@ -141,4 +151,9 @@ export const Neutral80 = {
 export const Neutral90 = {
   hsl: [0, 0, 10],
   hex: "#1A1A1A",
+}
+
+export const Azure100 = {
+  hsl: [205, 85, 40],
+  hex: "#0F74BD",
 }
