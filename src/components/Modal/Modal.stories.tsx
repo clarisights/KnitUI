@@ -160,7 +160,7 @@ stories
       return (
         <Modal
           header={{ title: "Right panel modal" }}
-          body={<div style={{ height: "1000px" }}>Body</div>}
+          body={<div>Body</div>}
           footer={
             <div>
               <button onClick={() => setModalVisible(false)}>Close</button>
@@ -181,7 +181,7 @@ stories
         <>
           <Modal
             header={{ title: "Right panel modal" }}
-            body={<div style={{ height: "1000px" }}>Body</div>}
+            body={<div>Body</div>}
             footer={<div>Footer</div>}
             size={select("Size", sizeOptions, "medium")}
             visible={modalVisible}
@@ -200,7 +200,7 @@ stories
         <>
           <Modal
             header={{ title: "Right panel modal" }}
-            body={<div style={{ height: "1000px" }}>Body</div>}
+            body={<div>Body</div>}
             footer={<div>Footer</div>}
             size={select("Size", sizeOptions, "medium")}
             visible={modalVisible}
