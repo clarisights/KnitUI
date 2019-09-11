@@ -142,7 +142,6 @@ const Alert: React.FC<AlertProps> = (props: AlertProps) => {
         <CloseIcon
           data-testid="alert-close"
           icon="oClose"
-          size="small"
           onClick={(e: SyntheticEvent) => fadeAway(e)}
           {...propsWithClass("-knit-alert-close")}
         />

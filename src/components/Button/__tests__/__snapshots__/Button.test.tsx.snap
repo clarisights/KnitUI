@@ -692,8 +692,8 @@ exports[`Button renders with text and an icon correctly 1`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 .c0 {
@@ -761,15 +761,15 @@ exports[`Button renders with text and an icon correctly 1`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.4rem"
       type="oInfo"
-      width="18px"
+      width="1.4rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.4rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.4rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -787,8 +787,8 @@ exports[`Button renders with text and an icon correctly 2`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c0 {
@@ -856,15 +856,15 @@ exports[`Button renders with text and an icon correctly 2`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.8rem"
       type="oInfo"
-      width="18px"
+      width="1.8rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.8rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.8rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -882,8 +882,8 @@ exports[`Button renders with text and an icon correctly 3`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c0 {
@@ -951,15 +951,15 @@ exports[`Button renders with text and an icon correctly 3`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.8rem"
       type="oInfo"
-      width="18px"
+      width="1.8rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.8rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.8rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -977,8 +977,8 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 .c0 {
@@ -1060,15 +1060,15 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.4rem"
       type="oInfo"
-      width="18px"
+      width="1.4rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.4rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.4rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -1091,8 +1091,8 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c0 {
@@ -1174,15 +1174,15 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.8rem"
       type="oInfo"
-      width="18px"
+      width="1.8rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.8rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.8rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -1205,8 +1205,8 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c0 {
@@ -1288,15 +1288,15 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.8rem"
       type="oInfo"
-      width="18px"
+      width="1.8rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.8rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.8rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -1599,8 +1599,8 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c0 {
@@ -1668,15 +1668,15 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.8rem"
       type="oInfo"
-      width="18px"
+      width="1.8rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.8rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.8rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -1694,8 +1694,8 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c0 {
@@ -1763,15 +1763,15 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.8rem"
       type="oInfo"
-      width="18px"
+      width="1.8rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.8rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.8rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -2069,8 +2069,8 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c0 {
@@ -2138,15 +2138,15 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.8rem"
       type="oInfo"
-      width="18px"
+      width="1.8rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.8rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.8rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -2164,8 +2164,8 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .c0 {
@@ -2233,15 +2233,15 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.8rem"
       type="oInfo"
-      width="18px"
+      width="1.8rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.8rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.8rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -2539,8 +2539,8 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 .c0 {
@@ -2608,15 +2608,15 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.4rem"
       type="oInfo"
-      width="18px"
+      width="1.4rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.4rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.4rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -2634,8 +2634,8 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   .c1 {
   cursor: inherit;
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 .c0 {
@@ -2703,15 +2703,15 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   >
     <span
       class="c1"
-      height="18px"
+      height="1.4rem"
       type="oInfo"
-      width="18px"
+      width="1.4rem"
     >
       <svg
         fill="#000"
-        height="18px"
+        height="1.4rem"
         viewBox="0 0 24 24"
-        width="18px"
+        width="1.4rem"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
