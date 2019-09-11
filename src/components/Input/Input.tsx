@@ -155,7 +155,7 @@ export interface IInputProps
   inputSize?: "large" | "small" | "default"
 }
 
-const RenderInput: SFC<IInputProps> = props => {
+const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
   const {
     placeholder,
     value,
@@ -184,12 +184,13 @@ const RenderInput: SFC<IInputProps> = props => {
         error={error}
         success={success}
         onChange={onChange}
+        ref={ref}
         {...insertIf({ value }, !!value)}
       />
       {labelDOM}
     </>
   )
-}
+})
 
 function renderInputAddons(
   children: React.ReactElement<any>,
@@ -229,9 +230,9 @@ function renderInputAddons(
   return children
 }
 
-const Input: SFC<IInputProps> = props => {
-  const InputElem = RenderInput(props)
+const Input = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
+  const InputElem = <RenderInput {...props} ref={ref} />
   return renderInputAddons(InputElem as React.ReactElement<any>, props)
-}
+})
 
 export default Input
