@@ -96,7 +96,7 @@ const getVerticalPadding = (props: IStyledBaseButton) => {
 // Colors
 
 const getHighlighColor = (props: IStyledBaseButton) =>
-  props.theme.knitui.shades.lightBlue
+  props.theme.knitui.chromaPalette.Azure80
 
 const getBaseBackgroundColor = (props: IStyledBaseButton) => {
   const {
@@ -113,15 +113,15 @@ const getBaseFontColor = (props: IStyledBaseButton) => {
 }
 
 const getHoverBackgroundColor = (props: IStyledBaseButton) => {
-  return isLightColor(getBaseBackgroundColor(props)) ?
-   getBaseBackgroundColor(props).set("hsl.l", "-0.1") :
-   getBaseBackgroundColor(props).set("hsl.l", "+0.1")
+  return isLightColor(getBaseBackgroundColor(props))
+    ? getBaseBackgroundColor(props).set("hsl.l", "-0.1")
+    : getBaseBackgroundColor(props).set("hsl.l", "+0.1")
 }
 
 const getHoverFontColor = (props: IStyledBaseButton) => {
-  return isLightColor(getBaseFontColor(props)) ?
-   getBaseFontColor(props).set("hsl.l", "-0.3") :
-   getBaseFontColor(props).set("hsl.l", "+0.3")
+  return isLightColor(getBaseFontColor(props))
+    ? getBaseFontColor(props).set("hsl.l", "-0.3")
+    : getBaseFontColor(props).set("hsl.l", "+0.3")
 }
 
 const getFontColor = (state: ButtonState, props: IStyledBaseButton) => {
@@ -161,13 +161,12 @@ const getBackgroundColor = (state: ButtonState, props: IStyledBaseButton) => {
       : knitui.shades.gray95
   }
   if (ghost) {
-    return knitui.shades.white
+    return knitui.chromaPalette.Neutral0 // white
   }
   return state === "default"
     ? getBaseBackgroundColor(props)
     : getHoverBackgroundColor(props)
 }
-
 
 const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
   const {
@@ -181,9 +180,7 @@ const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
       borderColor = getHighlighColor(props)
       break
     case "hover":
-      borderColor = ghost
-        ? getHoverFontColor(props)
-        : knitui.shades.transparent
+      borderColor = ghost ? getHoverFontColor(props) : knitui.shades.transparent
       break
     default:
       borderColor = ghost ? getBaseFontColor(props) : knitui.shades.transparent
@@ -200,7 +197,9 @@ const getIconMargin = (props: IStyledBaseButton) => {
 }
 
 const getBoxShadow = (props: IStyledBaseButton) => {
-  const { theme: { knitui } } = props
+  const {
+    theme: { knitui },
+  } = props
   return `0px 0px 2px ${knitui.shades.blue50}`
 }
 

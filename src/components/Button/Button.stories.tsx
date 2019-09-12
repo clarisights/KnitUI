@@ -151,6 +151,23 @@ stories
       ghost={boolean("Ghost", false)}
     />
   ))
+  .add("With a custom color object scheme", () => (
+    <Button
+      icon={text("Icon", "oInfo")}
+      label={text("Label", "Button")}
+      size={select("Size", sizeOptions, "medium")}
+      disabled={boolean("Disabled", false)}
+      bare={boolean("Bare", false)}
+      onClick={action("button-click")}
+      insetLabel={text("InsetLabel", "10")}
+      customColor={object("Custom Color", {
+        color: "#939323",
+        secondaryColor: "#800204",
+      })}
+      insetCustomColor={text("Custom Color", "#000000")}
+      ghost={boolean("Ghost", false)}
+    />
+  ))
   .add("With an href", () => (
     <Button
       icon={text("Icon", "oInfo")}

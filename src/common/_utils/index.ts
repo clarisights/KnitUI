@@ -1,6 +1,6 @@
 import { ThemedStyledFunction } from "styled-components"
 import chroma from "chroma-js"
-import { ColorPreset } from "../types"
+import { ColorPreset, CustomColor } from "../types"
 import * as theme from "../styles/variables"
 const { secondaryPalette, chromaPalette } = theme
 
@@ -43,7 +43,9 @@ export const isLightColor = color => color.get("hsl.l") >= 0.5
  * Determines the appropriate font color based on the background color.
  */
 export const getFontColor = backGroundColor => {
-  return isLightColor(backGroundColor) ? chromaPalette.Neutral90 : chromaPalette.Neutral0
+  return isLightColor(backGroundColor)
+    ? chromaPalette.Neutral90
+    : chromaPalette.Neutral0
 }
 
 const createParsedColorTheme = backgroundColor => ({
@@ -56,12 +58,25 @@ const createParsedColorTheme = backgroundColor => ({
  * with appropriate chroma colors.
  * @param backGroundColor A plain CSS color string
  */
-export const parseCustomColor = (backgroundColor: string) => {
-  if (!chroma.valid(backgroundColor)) {
-    throw new Error("Provided color theme contatins invalid color values")
+export const parseCustomColor = (customColor: CustomColor) => {
+  if (
+    !(
+      chroma.valid(customColor) ||
+      (typeof customColor === "object" &&
+        chroma.valid(customColor.color) &&
+        chroma.valid(customColor.secondaryColor))
+    )
+  ) {
+    throw new Error("Provided color theme contains invalid color values")
   }
-  backgroundColor = chroma(backgroundColor)
-  return createParsedColorTheme(backgroundColor)
+  if (typeof customColor === "object") {
+    return {
+      font: chroma(customColor.secondaryColor),
+      background: chroma(customColor.color),
+    }
+  }
+  customColor = chroma(customColor)
+  return createParsedColorTheme(customColor)
 }
 
 /**

@@ -7,7 +7,7 @@ export type ColorPreset =
   | "warning"
   | "unsaved"
 
-export type CustomColor = string
+export type CustomColor = string | { color: string, secondaryColor: string }
 
 export interface ParsedColorTheme {
   background: any
