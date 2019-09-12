@@ -2,6 +2,7 @@ import React, { SFC, ReactNode } from "react"
 import styled from "styled-components"
 import _ from "lodash"
 import { insertIf } from "../../common/_utils"
+import { IStyled } from "../../common/types"
 
 interface ITheme {
   knitui: {
@@ -12,15 +13,39 @@ interface ITheme {
   }
 }
 
-const getInputBorder = (props: {
-  theme: ITheme
+export interface IInputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  /** This is a placeholder description */
+  placeholder?: string
+  /** This is a value of the input */
+  value?: string
+  /** To enable error state */
   error?: boolean
+  /** To enable success state */
   success?: boolean
-}) => {
+  /** content to be shown above the input as a label */
+  label?: string | ReactNode
+  /** content to be shown below the input as a notification  */
+  notification?: string | ReactNode
+  /** onChange handler */
+  onChange: (e: React.FormEvent<HTMLInputElement>) => any
+  /** to show after input */
+  addonAfter?: string | ReactNode
+  /** to show before input */
+  addonBefore?: string | ReactNode
+  /** the size of the input */
+  inputSize?: "large" | "small"
+}
+
+type IStyledInput = IStyled<IInputProps>
+
+const getInputBorder = (props: IStyledInput) => {
   const {
     theme: { knitui },
-    error,
-    success,
+    customProps: {
+      error,
+      success
+    }
   } = props
   if (error) {
     return knitui.inputError
@@ -30,15 +55,13 @@ const getInputBorder = (props: {
   return knitui.inputBorderColor
 }
 
-const getLabelColor = (props: {
-  theme: ITheme
-  error: boolean
-  success: boolean
-}) => {
+const getLabelColor = (props: IStyledInput) => {
   const {
     theme: { knitui },
-    error,
-    success,
+    customProps: {
+      error,
+      success
+    }
   } = props
   if (error) {
     return knitui.inputError
@@ -48,39 +71,63 @@ const getLabelColor = (props: {
   return knitui.inputColor
 }
 
-const getPadding = size => {
-  switch (size) {
-    case "small":
-      return "0 1rem"
-    case "large":
-      return "0.8rem 1rem"
-    default:
-      return "0.4rem 1rem"
+const getPadding = (props: IStyledInput) => {
+  const { customProps: { inputSize }} = props
+  const HORIZONTAL_PADDING = "1.4rem"
+  switch (inputSize) {
+      case "small":
+        return `0.1rem  ${HORIZONTAL_PADDING}`
+      case "large":
+          return `0.6rem  ${HORIZONTAL_PADDING}`
+      default:
+        return `0.4rem  ${HORIZONTAL_PADDING}`
   }
 }
 
-const getHeight = size => {
-  switch (size) {
-    case "small":
-      return "2rem"
-    case "large":
-      return "3.6rem"
-    default:
-      return "2.8rem"
+const inputSizeToTypographySize = {
+  "small" : 12,
+  "default": 14,
+  'large': 14
+}
+
+const getHeight = (props: IStyledInput) => {
+  const { customProps: { inputSize }} = props
+  switch (inputSize) {
+      case "small":
+        return "2rem"
+      case "large":
+          return "3.2rem"
+      default:
+        return "2.8rem"
   }
 }
 
-const StyledInput: any = styled.input`
-  height: ${({ size }) => getHeight(size)};
+const getFontSize = (props: IStyledInput) => {
+  const { customProps: { inputSize }, theme: { knitui }} = props
+  const typographySize = inputSizeToTypographySize[inputSize!]
+  return knitui.typography[typographySize].fontSize
+}
+
+const getLineHeight = (props: IStyledInput) => {
+  const { customProps: { inputSize }, theme: { knitui }} = props
+  const typographySize = inputSizeToTypographySize[inputSize!]
+  return knitui.typography[typographySize].lineHeight
+}
+
+
+const StyledInput: any = styled.input<IStyledInput>`
+  height: ${props => getHeight(props)};
   width: 100%;
+  margin: 0.4rem 0;
   border: ${props =>
     `${props.theme.knitui.inputBorderWidth} solid ${getInputBorder(props)}`};
   border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
-  padding: ${({ size }) => getPadding(size)};
+  padding: ${props => getPadding(props)};
   box-sizing: border-box;
-  margin-bottom: 2px;
   background-color: ${({ theme: { knitui } }) => knitui.inputBgDefault};
   color: ${({ theme: { knitui } }) => knitui.inputColor};
+  font-size: ${props => `${getFontSize(props)}rem`};
+  line-height: ${props => `${getLineHeight(props)}rem`};
   &:hover {
     background-color: ${({ theme: { knitui } }) => knitui.inputBgHover};
     color: ${({ theme: { knitui } }) => knitui.inputColor};
@@ -124,36 +171,9 @@ const AddonContainer = styled.span`
   transform: translateY(-50%);
 `
 
-const StyledLabel: any = styled.label`
-  color: ${props =>
-    getLabelColor(props as {
-      theme: ITheme
-      error: boolean
-      success: boolean
-    })};
+const StyledLabel = styled.label<IStyledInput>`
+  color: ${props => getLabelColor(props)};
 `
-
-export interface IInputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
-  /** This is a placeholder description */
-  placeholder?: string
-  /** This is a value of the input */
-  value?: string
-  /** To enable error state */
-  error?: boolean
-  /** To enable success state */
-  success?: boolean
-  /** text for the label */
-  labelText?: string | ReactNode
-  /** onChange handler */
-  onChange: (e: React.FormEvent<HTMLInputElement>) => any
-  /** to show after input */
-  addonAfter?: string | ReactNode
-  /** to show before input */
-  addonBefore?: string | ReactNode
-  /** the size of the input */
-  inputSize?: "large" | "small" | "default"
-}
 
 const RenderInput: SFC<IInputProps> = props => {
   const {
@@ -162,31 +182,48 @@ const RenderInput: SFC<IInputProps> = props => {
     onChange,
     error,
     success,
-    labelText,
-    inputSize = "default",
+    label,
+    inputSize = "large",
+    notification
   } = props
+  const customProps={
+    inputSize,
+    error,
+    success
+  }
   let labelDOM: null | ReactNode = null
-  if (labelText) {
-    if (_.isString(labelText)) {
+  let notificationDOM: null | ReactNode = null
+
+  if (label) {
+    labelDOM = label
+    if (_.isString(label)) {
       labelDOM = (
-        <StyledLabel success={success} error={error}>
-          {labelText}
+        <StyledLabel customProps={customProps}>
+          {label}
         </StyledLabel>
       )
     }
-    labelDOM = labelText
   }
+
+  if (notification) {
+    notificationDOM = notification
+    if (_.isString(label)) {
+      notificationDOM = (
+        <div>{notification}</div>
+      )
+    }
+  }
+
   return (
     <>
+      {labelDOM}
       <StyledInput
-        size={inputSize}
+        customProps={customProps}
         placeholder={placeholder}
-        error={error}
-        success={success}
         onChange={onChange}
         {...insertIf({ value }, !!value)}
       />
-      {labelDOM}
+      {notificationDOM}
     </>
   )
 }
