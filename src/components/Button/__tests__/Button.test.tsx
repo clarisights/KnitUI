@@ -116,6 +116,19 @@ describe("Button", () => {
       )
       expect(asFragment()).toMatchSnapshot()
     })
+
+    it("renders with a custom color object correctly", () => {
+      const { asFragment } = render(
+        <ThemeProvider>
+          <Button
+            label="button"
+            customColor={{ color: "#f142f4", secondaryColor: "#873421" }}
+            insetCustomColor="#000000"
+          />
+        </ThemeProvider>
+      )
+      expect(asFragment()).toMatchSnapshot()
+    })
   })
 
   it("should apply provided classname", () => {

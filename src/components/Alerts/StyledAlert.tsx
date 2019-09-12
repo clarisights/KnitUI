@@ -70,7 +70,7 @@ const parseColorTheme = (props: IStyledAlert) => {
 }
 
 const getBackgroundColor = (props: IStyledAlert) =>
-  parseColorTheme(props).background
+  parseColorTheme(props).background.hex()
 
 const getBorderRadius = (props: IStyledAlert) => {
   const {
