@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react"
 import Input from "./index"
 import Icon from "../Icon"
 import { action } from "@storybook/addon-actions"
-const Readme = require("./Input.README.md")
+const Readme = require("./README.md")
 
 storiesOf("Input", module)
   .addParameters({

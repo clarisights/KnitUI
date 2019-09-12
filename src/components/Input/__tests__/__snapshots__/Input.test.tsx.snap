@@ -38,12 +38,12 @@ exports[`Input with a custom label 1`] = `
     </span>
   </div>
   .c0 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -59,7 +59,7 @@ exports[`Input with a custom label 1`] = `
 .c0:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c0:active {
@@ -108,12 +108,12 @@ exports[`Input with a custom label 1`] = `
 exports[`Input with a custom notification 1`] = `
 <DocumentFragment>
   .c0 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -129,7 +129,7 @@ exports[`Input with a custom notification 1`] = `
 .c0:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c0:active {
@@ -224,12 +224,12 @@ exports[`Input with a text label 1`] = `
     label
   </label>
   .c0 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -245,7 +245,7 @@ exports[`Input with a text label 1`] = `
 .c0:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c0:active {
@@ -305,12 +305,12 @@ exports[`Input with a text label and a text notification 1`] = `
     label
   </label>
   .c0 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -326,7 +326,7 @@ exports[`Input with a text label and a text notification 1`] = `
 .c0:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c0:active {
@@ -385,12 +385,12 @@ exports[`Input with a text label and a text notification 1`] = `
 exports[`Input with a text notification 1`] = `
 <DocumentFragment>
   .c0 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -406,7 +406,7 @@ exports[`Input with a text notification 1`] = `
 .c0:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c0:active {
@@ -456,12 +456,12 @@ exports[`Input with a text notification 1`] = `
 exports[`Input with left addon renders correctly 1`] = `
 <DocumentFragment>
   .c3 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -477,7 +477,7 @@ exports[`Input with left addon renders correctly 1`] = `
 .c3:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c3:active {
@@ -579,12 +579,12 @@ exports[`Input with left addon renders correctly 1`] = `
 exports[`Input with left and right addons renders correctly 1`] = `
 <DocumentFragment>
   .c3 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -600,7 +600,7 @@ exports[`Input with left and right addons renders correctly 1`] = `
 .c3:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c3:active {
@@ -702,12 +702,12 @@ exports[`Input with left and right addons renders correctly 1`] = `
 exports[`Input with right addon renders correctly 1`] = `
 <DocumentFragment>
   .c1 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -723,7 +723,7 @@ exports[`Input with right addon renders correctly 1`] = `
 .c1:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c1:active {
@@ -846,7 +846,7 @@ exports[`Input with size large renders correctly 1`] = `
 .c0:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c0:active {
@@ -916,7 +916,7 @@ exports[`Input with size small renders correctly 1`] = `
 .c0:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c0:active {
@@ -965,12 +965,12 @@ exports[`Input with size small renders correctly 1`] = `
 exports[`Input with size undefined renders correctly 1`] = `
 <DocumentFragment>
   .c0 {
-  height: 3.2rem;
+  height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
   color: hsl(0,0%,5%);
@@ -986,7 +986,7 @@ exports[`Input with size undefined renders correctly 1`] = `
 .c0:focus {
   outline: none;
   background-color: hsl(0,0%,100%);
-  box-shadow: 0 0 2px hsl(216,100%,44%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
 .c0:active {

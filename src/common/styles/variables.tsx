@@ -124,7 +124,7 @@ export const inputBorderColor = "#d9d9d9"
 export const inputBorderWidth = "1px"
 export const inputError = "#990000"
 export const inputSuccess = "#05b300"
-export const inputFocusBoxShadow = "0 0 2px hsl(216, 100%, 44%)"
+export const inputFocusBoxShadow = "0 0 2px hsl(216, 100%, 50%)"
 
 // switch
 export const switchWrapperHeight = "1.6rem"
