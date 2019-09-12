@@ -1,0 +1,1033 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input with a custom label 1`] = `
+<DocumentFragment>
+  .c0 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+<div
+    css="
+              display: flex;
+              align-items: center;
+            "
+  >
+    <span>
+      Label
+    </span>
+    <span
+      class="c0"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+  </div>
+  .c0 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c0:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+<input
+    class="c0"
+    placeholder="placeholder"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input with a custom notification 1`] = `
+<DocumentFragment>
+  .c0 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c0:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+<input
+    class="c0"
+    placeholder="placeholder"
+  />
+  .c0 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+<div
+    css="
+              display: flex;
+              align-items: center;
+            "
+  >
+    <span>
+      Notification
+    </span>
+    <span
+      class="c0"
+      height="18px"
+      type="oInfo"
+      width="18px"
+    >
+      <svg
+        fill="#000"
+        height="18px"
+        viewBox="0 0 24 24"
+        width="18px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input with a text label 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: hsl(0,0%,5%);
+}
+
+<label
+    class="c0"
+  >
+    label
+  </label>
+  .c0 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c0:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+<input
+    class="c0"
+    placeholder="placeholder"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input with a text label and a text notification 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: hsl(0,0%,5%);
+}
+
+<label
+    class="c0"
+  >
+    label
+  </label>
+  .c0 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c0:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+<input
+    class="c0"
+    placeholder="placeholder"
+  />
+  .c0 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+<div
+    class="c0"
+  >
+    notification
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input with a text notification 1`] = `
+<DocumentFragment>
+  .c0 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c0:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+<input
+    class="c0"
+    placeholder="placeholder"
+  />
+  notification
+</DocumentFragment>
+`;
+
+exports[`Input with left addon renders correctly 1`] = `
+<DocumentFragment>
+  .c3 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c3:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c3:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c3:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c3:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c3:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c3:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c3:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c3::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c3::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c3:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c3::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0 input {
+  padding-left: 34px;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="18px"
+        type="oInfo"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+    </span>
+    <input
+      class="c3"
+      placeholder="placeholder"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with left and right addons renders correctly 1`] = `
+<DocumentFragment>
+  .c3 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c3:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c3:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c3:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c3:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c3:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c3:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c3:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c3::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c3::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c3:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c3::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0 input {
+  padding-left: 34px;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="18px"
+        type="oInfo"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+    </span>
+    <input
+      class="c3"
+      placeholder="placeholder"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with right addon renders correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c1:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c1:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c1:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c1:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c1:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c1:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c1:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0 input {
+  padding-right: 34px;
+}
+
+.c2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c3 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+<span
+    class="c0"
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+    />
+    <span
+      class="c2"
+    >
+      <span
+        class="c3"
+        height="18px"
+        type="oInfo"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with size large renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c0:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+<input
+    class="c0"
+    placeholder="placeholder"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input with size small renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  height: 2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.1rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c0:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+<input
+    class="c0"
+    placeholder="placeholder"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input with size undefined renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  height: 3.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,5%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+  color: hsl(0,0%,5%);
+}
+
+.c0:focus {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 0 2px hsl(216,100%,44%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:active::-webkit-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::-moz-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active:-ms-input-placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0:active::placeholder {
+  color: hsl(0,0%,80%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,60%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,60%);
+}
+
+<input
+    class="c0"
+    placeholder="placeholder"
+  />
+</DocumentFragment>
+`;

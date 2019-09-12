@@ -1,20 +1,12 @@
 import React, { SFC, ReactNode } from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import _ from "lodash"
 import { insertIf } from "../../common/_utils"
 import { IStyled } from "../../common/types"
-
-interface ITheme {
-  knitui: {
-    inputError: string
-    inputSuccess: string
-    inputBorderColor: string
-    inputColor: string
-  }
-}
+import { BaseComponentProps } from "../../common/types"
 
 export interface IInputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
+  extends React.InputHTMLAttributes<HTMLInputElement>, BaseComponentProps {
   /** This is a placeholder description */
   placeholder?: string
   /** This is a value of the input */
@@ -34,7 +26,7 @@ export interface IInputProps
   /** to show before input */
   addonBefore?: string | ReactNode
   /** the size of the input */
-  inputSize?: "large" | "small"
+  inputSize?: "large" | "default" | "small",
 }
 
 type IStyledInput = IStyled<IInputProps>
@@ -171,8 +163,18 @@ const AddonContainer = styled.span`
   transform: translateY(-50%);
 `
 
+const labelStyle = css`
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+`
+
 const StyledLabel = styled.label<IStyledInput>`
+  ${labelStyle}
   color: ${props => getLabelColor(props)};
+`
+
+const NotificationContainer = styled.div`
+  ${labelStyle}
 `
 
 const RenderInput: SFC<IInputProps> = props => {
@@ -183,8 +185,10 @@ const RenderInput: SFC<IInputProps> = props => {
     error,
     success,
     label,
-    inputSize = "large",
-    notification
+    inputSize = "default",
+    notification,
+    className,
+    style
   } = props
   const customProps={
     inputSize,
@@ -209,7 +213,7 @@ const RenderInput: SFC<IInputProps> = props => {
     notificationDOM = notification
     if (_.isString(label)) {
       notificationDOM = (
-        <div>{notification}</div>
+        <NotificationContainer>{notification}</NotificationContainer>
       )
     }
   }
@@ -220,6 +224,8 @@ const RenderInput: SFC<IInputProps> = props => {
       <StyledInput
         customProps={customProps}
         placeholder={placeholder}
+        className={className}
+        style={style}
         onChange={onChange}
         {...insertIf({ value }, !!value)}
       />

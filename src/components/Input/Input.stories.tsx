@@ -11,7 +11,7 @@ storiesOf("Input", module)
       sidebar: Readme,
     },
   })
-  .add("Basic input", () => (
+  .add("basic", () => (
     <div
       style={{
         width: 240,
@@ -19,7 +19,7 @@ storiesOf("Input", module)
       <Input onChange={action("input changed")} placeholder="basic usage" />
     </div>
   ))
-  .add("Input with label", () => (
+  .add("with label", () => (
     <div
       style={{
         width: 240,
@@ -27,11 +27,76 @@ storiesOf("Input", module)
       <Input
         onChange={action("input changed")}
         placeholder="input with label"
-        labelText="here we go!"
+        label="here we go!"
       />
     </div>
   ))
-  .add("Input with success", () => (
+  .add("with a custom label", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with custom label"
+        label={(
+          <div css={`
+            display: flex;
+            align-items: center;
+          `}>
+            <span>Label</span>
+            <Icon type="oInfo" />
+          </div>
+        )}
+      />
+    </div>
+  ))
+  .add("with notification", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with label"
+        notification="a firendly notification"
+      />
+    </div>
+  ))
+  .add("with a custom notification", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with custom notification"
+        notification={(
+          <div css={`
+            display: flex;
+            align-items: center;
+          `}>
+            <span>Notification</span>
+            <Icon type="oInfo" />
+          </div>
+        )}
+      />
+    </div>
+  ))
+  .add("with notification and label", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="input with label"
+        label="label"
+        notification="a firendly notification"
+      />
+    </div>
+  ))
+  .add("with success", () => (
     <div
       style={{
         width: 240,
@@ -43,7 +108,7 @@ storiesOf("Input", module)
       />
     </div>
   ))
-  .add("Input with label and error", () => (
+  .add("with label and error", () => (
     <div
       style={{
         width: 240,
@@ -51,12 +116,12 @@ storiesOf("Input", module)
       <Input
         onChange={action("input changed")}
         placeholder="input with label"
-        labelText="here we go!"
+        label="here we go!"
         error
       />
     </div>
   ))
-  .add("Input with addonBefore", () => (
+  .add("with addonBefore", () => (
     <div
       style={{
         width: 240,
@@ -68,7 +133,7 @@ storiesOf("Input", module)
       />
     </div>
   ))
-  .add("Input with addonAfter", () => (
+  .add("with addonAfter", () => (
     <div
       style={{
         width: 240,
@@ -80,7 +145,7 @@ storiesOf("Input", module)
       />
     </div>
   ))
-  .add("Basic input small", () => (
+  .add("basic small", () => (
     <div
       style={{
         width: 240,
@@ -92,7 +157,7 @@ storiesOf("Input", module)
       />
     </div>
   ))
-  .add("Basic input large", () => (
+  .add("basic large", () => (
     <div
       style={{
         width: 240,
