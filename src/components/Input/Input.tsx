@@ -66,6 +66,23 @@ const inputSizeToTypographySize = {
   'large': 14
 }
 
+const getInputBorderColor = (props: IStyledInput, state: string) => {
+  const { theme: { knitui }, customProps: { error, success } } = props
+  if (error) {
+    return knitui.inputError
+  } else if (success) {
+    return knitui.inputSuccess
+  }
+  if (state === "focus" || state === "active"){
+    return knitui.inputFocusBorderColor 
+  }
+  return knitui.inputBorderColor
+}
+
+const getInputBorder = (props: IStyledInput, state: string) => 
+  `1px solid ${getInputBorderColor(props, state)}`
+
+
 const getHeight = (props: IStyledInput) => {
   const { customProps: { inputSize }} = props
   switch (inputSize) {
@@ -97,7 +114,7 @@ const StyledInput: any = styled.input<IStyledInput>`
   margin: 0.4rem 0;
   border: none;
   border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
-  border: ${({ theme: { knitui } }) => knitui.inputBorder};
+  border: ${props => getInputBorder(props, "default")};
   padding: ${props => getPadding(props)};
   box-sizing: border-box;
   background-color: ${({ theme: { knitui } }) => knitui.inputBgDefault};
@@ -111,7 +128,7 @@ const StyledInput: any = styled.input<IStyledInput>`
   &:focus, &:active {
     outline: ${({ theme: { knitui } }) => knitui.inputFocusOutline};
     background-color: ${({ theme: { knitui } }) => knitui.inputBgFocus};
-    border: ${({ theme: { knitui } }) => knitui.inputFocusBorder};
+    border: ${props => getInputBorder(props, "focus")};
     box-shadow: ${({ theme: { knitui } }) => knitui.inputFocusBoxShadow};
   }
   ::placeholder {
