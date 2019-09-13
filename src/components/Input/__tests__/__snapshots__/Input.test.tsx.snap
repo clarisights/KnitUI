@@ -41,8 +41,8 @@ exports[`Input with a custom label 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -56,30 +56,12 @@ exports[`Input with a custom label 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c0:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -111,8 +93,8 @@ exports[`Input with a custom notification 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -126,30 +108,12 @@ exports[`Input with a custom notification 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c0:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -227,8 +191,8 @@ exports[`Input with a text label 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -242,30 +206,12 @@ exports[`Input with a text label 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c0:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -308,8 +254,8 @@ exports[`Input with a text label and a text notification 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -323,30 +269,12 @@ exports[`Input with a text label and a text notification 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c0:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -388,8 +316,8 @@ exports[`Input with a text notification 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -403,30 +331,12 @@ exports[`Input with a text notification 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c0:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -459,8 +369,8 @@ exports[`Input with left addon renders correctly 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -474,30 +384,12 @@ exports[`Input with left addon renders correctly 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c3:focus {
+.c3:focus,
+.c3:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c3:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c3:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c3:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c3:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c3:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c3::-webkit-input-placeholder {
@@ -529,6 +421,10 @@ exports[`Input with left addon renders correctly 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -582,8 +478,8 @@ exports[`Input with left and right addons renders correctly 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -597,30 +493,12 @@ exports[`Input with left and right addons renders correctly 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c3:focus {
+.c3:focus,
+.c3:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c3:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c3:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c3:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c3:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c3:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c3::-webkit-input-placeholder {
@@ -652,6 +530,10 @@ exports[`Input with left and right addons renders correctly 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -705,8 +587,8 @@ exports[`Input with right addon renders correctly 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -720,30 +602,12 @@ exports[`Input with right addon renders correctly 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c1:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c1:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c1:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c1:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c1:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -775,6 +639,10 @@ exports[`Input with right addon renders correctly 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -828,8 +696,8 @@ exports[`Input with size large renders correctly 1`] = `
   height: 3.2rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.6rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -843,30 +711,12 @@ exports[`Input with size large renders correctly 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c0:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -898,8 +748,8 @@ exports[`Input with size small renders correctly 1`] = `
   height: 2rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.1rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -913,30 +763,12 @@ exports[`Input with size small renders correctly 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c0:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -968,8 +800,8 @@ exports[`Input with size undefined renders correctly 1`] = `
   height: 2.8rem;
   width: 100%;
   margin: 0.4rem 0;
-  border: 1px solid #d9d9d9;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.4rem 1.4rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
@@ -983,30 +815,12 @@ exports[`Input with size undefined renders correctly 1`] = `
   color: hsl(0,0%,5%);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:active {
   outline: none;
   background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0:active {
-  background-color: hsl(0,0%,100%);
-}
-
-.c0:active::-webkit-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::-moz-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active:-ms-input-placeholder {
-  color: hsl(0,0%,80%);
-}
-
-.c0:active::placeholder {
-  color: hsl(0,0%,80%);
 }
 
 .c0::-webkit-input-placeholder {

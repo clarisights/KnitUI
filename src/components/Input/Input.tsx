@@ -112,7 +112,6 @@ const StyledInput: any = styled.input<IStyledInput>`
   height: ${props => getHeight(props)};
   width: 100%;
   margin: 0.4rem 0;
-  border: none;
   border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
   border: ${props => getInputBorder(props, "default")};
   padding: ${props => getPadding(props)};
@@ -153,7 +152,7 @@ const AddonAfterSpan = styled(AddonSpan)`
   }
 `
 
-const AddonContainer = styled.div`
+const AddonContainer = styled.span`
   display: flex;
   position: absolute;
   top: 50%;
