@@ -125,6 +125,8 @@ export const inputFocusBorderColor = chromaPalette.Azure80
 export const inputError = "#990000"
 export const inputSuccess = "#05b300"
 export const inputFocusBoxShadow = "0 0 2px hsl(216, 100%, 50%)"
+export const inputBorder = `1px solid transparent`
+export const inputFocusBorder = `1px solid ${chromaPalette.Azure80}`
 
 // switch
 export const switchWrapperHeight = "1.6rem"
