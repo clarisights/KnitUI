@@ -1,4 +1,4 @@
-import { CSSObject } from "styled-components"
+import { CSSProperties } from "react"
 
 export type ColorPreset =
   | "neutral"
@@ -20,7 +20,7 @@ export interface BaseComponentProps {
   /** CSS classname to be added */
   className?: string
   /** CSS styles to be adeed */
-  style?: CSSObject
+  style?: CSSProperties
 }
 
 /**
