@@ -31,22 +31,6 @@ export interface IInputProps
 
 type IStyledInput = IStyled<IInputProps>
 
-const getInputBorder = (props: IStyledInput) => {
-  const {
-    theme: { knitui },
-    customProps: {
-      error,
-      success
-    }
-  } = props
-  if (error) {
-    return knitui.inputError
-  } else if (success) {
-    return knitui.inputSuccess
-  }
-  return knitui.inputBorderColor
-}
-
 const getLabelColor = (props: IStyledInput) => {
   const {
     theme: { knitui },
@@ -111,9 +95,9 @@ const StyledInput: any = styled.input<IStyledInput>`
   height: ${props => getHeight(props)};
   width: 100%;
   margin: 0.4rem 0;
-  border: ${props =>
-    `${props.theme.knitui.inputBorderWidth} solid ${getInputBorder(props)}`};
+  border: none;
   border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
+  border: ${({ theme: { knitui } }) => knitui.inputBorder};
   padding: ${props => getPadding(props)};
   box-sizing: border-box;
   background-color: ${({ theme: { knitui } }) => knitui.inputBgDefault};
@@ -124,16 +108,11 @@ const StyledInput: any = styled.input<IStyledInput>`
     background-color: ${({ theme: { knitui } }) => knitui.inputBgHover};
     color: ${({ theme: { knitui } }) => knitui.inputColor};
   }
-  &:focus {
+  &:focus, &:active {
     outline: ${({ theme: { knitui } }) => knitui.inputFocusOutline};
     background-color: ${({ theme: { knitui } }) => knitui.inputBgFocus};
+    border: ${({ theme: { knitui } }) => knitui.inputFocusBorder};
     box-shadow: ${({ theme: { knitui } }) => knitui.inputFocusBoxShadow};
-  }
-  &:active {
-    background-color: ${({ theme: { knitui } }) => knitui.inputBgActive};
-    ::placeholder {
-      color: ${({ theme: { knitui } }) => knitui.inputPlaceholderColorActive};
-    }
   }
   ::placeholder {
     color: ${({ theme: { knitui } }) => knitui.inputPlaceholderColor};
@@ -157,7 +136,8 @@ const AddonAfterSpan = styled(AddonSpan)`
   }
 `
 
-const AddonContainer = styled.span`
+const AddonContainer = styled.div`
+  display: flex;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
