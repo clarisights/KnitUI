@@ -7,7 +7,7 @@ interface FooterProps {
 
 const Footer = styled.div<IStyled<FooterProps>>`
   padding: ${({ theme: { knitui } }) =>
-    `${knitui.modalPadding.vertical} ${knitui.modalPadding.horizontal}`};
+    `${knitui.modalPadding.vertical}rem ${knitui.modalPadding.horizontal}`}rem;
   justify-self: flex-end;
   border-top: ${({ customProps: { showBorder }, theme: { knitui } }) =>
     showBorder ? knitui.modalBorder : `none`};

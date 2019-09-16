@@ -6,7 +6,7 @@ const getPadding = (props: IStyledDialog) => {
   return padding ?
     `${padding.vertical} ${padding.horizontal}`
       :
-    `${knitui.modalPadding.vertical} ${knitui.modalPadding.horizontal}`
+    `${knitui.modalPadding.vertical}rem ${knitui.modalPadding.horizontal}rem`
 }
 
 const Main = styled.div<IStyledDialog>`

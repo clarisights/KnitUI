@@ -154,7 +154,7 @@ export const radioDisabledColor = shades.gray95
 export const modalBorder = `1px solid ${shades.gray85}`
 export const modalBorderRadius = "0.4rem"
 export const modalPadding = {
-  vertical: "2.8rem",
-  horizontal: "2.1rem",
+  vertical: 2.8,
+  horizontal: 2.1,
 }
 export const modalTitleTypographySize = 20
