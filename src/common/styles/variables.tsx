@@ -158,4 +158,8 @@ export const modalPadding = {
   vertical: 2.8,
   horizontal: 2.1,
 }
+export const modalHeaderPadding = {
+  vertical: 1.4,
+  horizontal: 2.1,
+}
 export const modalTitleTypographySize = 20

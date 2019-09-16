@@ -41,7 +41,7 @@ const getMinHeight = (props: IStyledHeaderProps) => {
 const Container = styled.div<IStyledHeaderProps>`
   display: flex;
   padding: ${({ theme: { knitui } }) =>
-    `1.4rem ${knitui.modalPadding.horizontal}rem`};
+    `${knitui.modalHeaderPadding.vertical}rem ${knitui.modalHeaderPadding.horizontal}rem`};
   border-radius: ${({ theme: { knitui } }) =>
     `${knitui.modalBorderRadius} ${knitui.modalBorderRadius} 0rem 0rem`};
   background: ${({ theme: { knitui }, customProps: { noFill } }) => noFill ? "none" : knitui.shades.gray95};
