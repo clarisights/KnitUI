@@ -40,7 +40,7 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
   .rc-dialog-body {
     padding: 0;
     height: auto;
-    max-height: calc(100vh - 14rem);
+    max-height: ${({ theme: { knitui } }) => `calc(100vh - ${knitui.modalMaxContentHeightOffset}rem)`};
     min-height: 35rem;
   }
   .rc-dialog-content {
@@ -160,9 +160,8 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   const typographySize = header.fontSize || knitui.modalTitleTypographySize
   const lineHeight = knitui.typography[typographySize].lineHeight
   const verticalPadding = knitui.modalPadding.vertical
-  const baseHeightOffset = 14
   const headerHeight = lineHeight + 2 * verticalPadding;
-  const totalOffset = baseHeightOffset + headerHeight 
+  const totalOffset = knitui.modalMaxContentHeightOffset + headerHeight 
   const maxContentHeight = `calc(100vh - ${totalOffset}rem)`
 
   return (

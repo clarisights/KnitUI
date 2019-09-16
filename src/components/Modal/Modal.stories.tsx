@@ -246,7 +246,7 @@ stories
   })
   .add("with custom style", () => {
     const ModalWrapper = () => {
-      const [modalVisible, setModalVisible] = useState(false)
+      const [modalVisible, setModalVisible] = useState(true)
       return (
         <>
           <Modal
@@ -259,7 +259,6 @@ stories
             style={object("Style", { color: "red" })}
             className="custom-class"
           />
-          <button onClick={() => setModalVisible(true)}>Open modal</button>
         </>
       )
     }

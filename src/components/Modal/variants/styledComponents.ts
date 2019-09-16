@@ -39,8 +39,5 @@ export const Content = styled.div<IStyledModal>`
 `
 
 export const VerticalLayoutContent = styled(Content)`
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   max-height: ${props => props.customProps.maxContentHeight};
 `
