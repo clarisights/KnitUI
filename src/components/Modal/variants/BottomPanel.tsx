@@ -14,12 +14,13 @@ const BottomPanelModal: React.FC<PanelModalProps> = ({
   footer,
   body,
   panelContent,
-  maxContentHeight
+  maxContentHeight,
+  minContentHeight
 }) => {
   return (
     <BaseLayout>
       {header}
-      <VerticalLayoutContent customProps={{maxContentHeight}}>
+      <VerticalLayoutContent customProps={{maxContentHeight, minContentHeight}}>
         {body}
         {footer}
         <BottomSection>{panelContent}</BottomSection>

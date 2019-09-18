@@ -23,6 +23,7 @@ export const Layout = styled.div<IStyledPanelModal>`
   align-items: stretch;
   flex: 1 1 auto;
   max-height: ${props => props.customProps.maxContentHeight};
+  min-height: ${props => props.customProps.minContentHeight};
 `
 
 // Applies to left and right panels only
@@ -40,4 +41,5 @@ export const Content = styled.div<IStyledModal>`
 
 export const VerticalLayoutContent = styled(Content)`
   max-height: ${props => props.customProps.maxContentHeight};
+  min-height: ${props => props.customProps.minContentHeight};
 `

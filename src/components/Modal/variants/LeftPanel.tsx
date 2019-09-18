@@ -9,12 +9,13 @@ const LeftPanelModal: React.FC<PanelModalProps> = ({
   footer,
   body,
   panelContent,
-  maxContentHeight
+  maxContentHeight,
+  minContentHeight
 }) => {
   return (
     <BaseLayout>
       {header}
-      <Layout customProps={{maxContentHeight}}>
+      <Layout customProps={{maxContentHeight, minContentHeight}}>
         <PanelSection customProps={{location: "left"}}>{panelContent}</PanelSection>
         <Content>
           {body}

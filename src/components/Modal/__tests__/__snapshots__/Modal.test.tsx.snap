@@ -74,6 +74,7 @@ exports[`Modal with overriden padding 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -332,6 +333,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c9 {
@@ -606,6 +608,7 @@ exports[`Modal with size large with a left panel 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c7 {
@@ -898,6 +901,7 @@ exports[`Modal with size large with a right panel 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c10 {
@@ -1187,6 +1191,7 @@ exports[`Modal with size large with custom title size 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 18.6rem);
+  min-height: 30.4rem;
 }
 
 .c1 {
@@ -1445,6 +1450,7 @@ exports[`Modal with size large with no fill 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -1703,6 +1709,7 @@ exports[`Modal with size large with right section in header 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -1967,6 +1974,7 @@ exports[`Modal with size large with simple config 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -2225,6 +2233,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c9 {
@@ -2499,6 +2508,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c7 {
@@ -2791,6 +2801,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c10 {
@@ -3080,6 +3091,7 @@ exports[`Modal with size medium with custom title size 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 18.6rem);
+  min-height: 30.4rem;
 }
 
 .c1 {
@@ -3338,6 +3350,7 @@ exports[`Modal with size medium with no fill 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -3596,6 +3609,7 @@ exports[`Modal with size medium with right section in header 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -3860,6 +3874,7 @@ exports[`Modal with size medium with simple config 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -4118,6 +4133,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c9 {
@@ -4392,6 +4408,7 @@ exports[`Modal with size small with a left panel 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c7 {
@@ -4684,6 +4701,7 @@ exports[`Modal with size small with a right panel 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c10 {
@@ -4973,6 +4991,7 @@ exports[`Modal with size small with custom title size 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 18.6rem);
+  min-height: 30.4rem;
 }
 
 .c1 {
@@ -5231,6 +5250,7 @@ exports[`Modal with size small with no fill 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -5489,6 +5509,7 @@ exports[`Modal with size small with right section in header 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -5753,6 +5774,7 @@ exports[`Modal with size small with simple config 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -6011,6 +6033,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c9 {
@@ -6285,6 +6308,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c7 {
@@ -6577,6 +6601,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c10 {
@@ -6866,6 +6891,7 @@ exports[`Modal with size x-large with custom title size 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 18.6rem);
+  min-height: 30.4rem;
 }
 
 .c1 {
@@ -7124,6 +7150,7 @@ exports[`Modal with size x-large with no fill 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -7382,6 +7409,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -7646,6 +7674,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {

@@ -41,7 +41,7 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
     padding: 0;
     height: auto;
     max-height: ${({ theme: { knitui } }) => `calc(100vh - ${knitui.modalMaxContentHeightOffset}rem)`};
-    min-height: 35rem;
+    min-height: ${({ theme: { knitui } }) => `${knitui.modalMinHeight}rem`};
   }
   .rc-dialog-content {
     border-radius: ${({ theme: { knitui } }) => knitui.modalBorderRadius};
@@ -129,6 +129,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
    */
   const ModalProxy = (modalProps: {
     maxContentHeight: string
+    minContentHeight: string
     header: ReactNode
     footer: ReactNode
     body: ReactNode
@@ -163,6 +164,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   const headerHeight = lineHeight + 2 * verticalPadding;
   const totalOffset = knitui.modalMaxContentHeightOffset + headerHeight 
   const maxContentHeight = `calc(100vh - ${totalOffset}rem)`
+  const minContentHeight = `${knitui.modalMinHeight - headerHeight}rem`
 
   return (
     <StyledDialog
@@ -180,6 +182,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       style={style}>
       <ModalProxy
         maxContentHeight={maxContentHeight}
+        minContentHeight={minContentHeight}
         header={<Header {...header} />}
         body={<Main customProps={{padding}} ref={setBodyRef}>{body}</Main>}
         footer={

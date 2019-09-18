@@ -163,3 +163,4 @@ export const modalHeaderPadding = {
   horizontal: 2.1,
 }
 export const modalTitleTypographySize = 20
+export const modalMinHeight = 35

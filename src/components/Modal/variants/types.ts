@@ -6,6 +6,7 @@ export interface ModalProps {
   body: ReactNode
   footer: ReactNode
   maxContentHeight: string
+  minContentHeight: string
 }
 
 export interface PanelModalProps extends ModalProps {
