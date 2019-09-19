@@ -39,15 +39,16 @@ storiesOf("Input", module)
       <Input
         onChange={action("input changed")}
         placeholder="input with custom label"
-        label={(
-          <div css={`
-            display: flex;
-            align-items: center;
-          `}>
+        label={
+          <div
+            css={`
+              display: flex;
+              align-items: center;
+            `}>
             <span>Label</span>
             <Icon type="oInfo" />
           </div>
-        )}
+        }
       />
     </div>
   ))
@@ -71,15 +72,16 @@ storiesOf("Input", module)
       <Input
         onChange={action("input changed")}
         placeholder="input with custom notification"
-        notification={(
-          <div css={`
-            display: flex;
-            align-items: center;
-          `}>
+        notification={
+          <div
+            css={`
+              display: flex;
+              align-items: center;
+            `}>
             <span>Notification</span>
             <Icon type="oInfo" />
           </div>
-        )}
+        }
       />
     </div>
   ))
