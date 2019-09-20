@@ -6,7 +6,8 @@ import { IStyled } from "../../common/types"
 import { BaseComponentProps } from "../../common/types"
 
 export interface IInputProps
-  extends React.InputHTMLAttributes<HTMLInputElement>, BaseComponentProps {
+  extends React.InputHTMLAttributes<HTMLInputElement>,
+    BaseComponentProps {
   /** This is a placeholder description */
   placeholder?: string
   /** This is a value of the input */
@@ -26,7 +27,7 @@ export interface IInputProps
   /** to show before input */
   addonBefore?: string | ReactNode
   /** the size of the input */
-  inputSize?: "large" | "default" | "small",
+  inputSize?: "large" | "default" | "small"
 }
 
 type IStyledInput = IStyled<IInputProps>
@@ -34,10 +35,7 @@ type IStyledInput = IStyled<IInputProps>
 const getLabelColor = (props: IStyledInput) => {
   const {
     theme: { knitui },
-    customProps: {
-      error,
-      success
-    }
+    customProps: { error, success },
   } = props
   if (error) {
     return knitui.inputError
@@ -48,65 +46,76 @@ const getLabelColor = (props: IStyledInput) => {
 }
 
 const getPadding = (props: IStyledInput) => {
-  const { customProps: { inputSize }} = props
+  const {
+    customProps: { inputSize },
+  } = props
   const HORIZONTAL_PADDING = "1.4rem"
   switch (inputSize) {
-      case "small":
-        return `0.1rem  ${HORIZONTAL_PADDING}`
-      case "large":
-          return `0.6rem  ${HORIZONTAL_PADDING}`
-      default:
-        return `0.4rem  ${HORIZONTAL_PADDING}`
+    case "small":
+      return `0.1rem  ${HORIZONTAL_PADDING}`
+    case "large":
+      return `0.6rem  ${HORIZONTAL_PADDING}`
+    default:
+      return `0.4rem  ${HORIZONTAL_PADDING}`
   }
 }
 
 const inputSizeToTypographySize = {
-  "small" : 12,
-  "default": 14,
-  'large': 14
+  small: 12,
+  default: 14,
+  large: 14,
 }
 
 const getInputBorderColor = (props: IStyledInput, state: string) => {
-  const { theme: { knitui }, customProps: { error, success } } = props
+  const {
+    theme: { knitui },
+    customProps: { error, success },
+  } = props
   if (error) {
     return knitui.inputError
   } else if (success) {
     return knitui.inputSuccess
   }
-  if (state === "focus" || state === "active"){
-    return knitui.inputFocusBorderColor 
+  if (state === "focus" || state === "active") {
+    return knitui.inputFocusBorderColor
   }
   return knitui.inputBorderColor
 }
 
-const getInputBorder = (props: IStyledInput, state: string) => 
+const getInputBorder = (props: IStyledInput, state: string) =>
   `1px solid ${getInputBorderColor(props, state)}`
 
-
 const getHeight = (props: IStyledInput) => {
-  const { customProps: { inputSize }} = props
+  const {
+    customProps: { inputSize },
+  } = props
   switch (inputSize) {
-      case "small":
-        return "2rem"
-      case "large":
-          return "3.2rem"
-      default:
-        return "2.8rem"
+    case "small":
+      return "2rem"
+    case "large":
+      return "3.2rem"
+    default:
+      return "2.8rem"
   }
 }
 
 const getFontSize = (props: IStyledInput) => {
-  const { customProps: { inputSize }, theme: { knitui }} = props
+  const {
+    customProps: { inputSize },
+    theme: { knitui },
+  } = props
   const typographySize = inputSizeToTypographySize[inputSize!]
   return knitui.typography[typographySize].fontSize
 }
 
 const getLineHeight = (props: IStyledInput) => {
-  const { customProps: { inputSize }, theme: { knitui }} = props
+  const {
+    customProps: { inputSize },
+    theme: { knitui },
+  } = props
   const typographySize = inputSizeToTypographySize[inputSize!]
   return knitui.typography[typographySize].lineHeight
 }
-
 
 const StyledInput: any = styled.input<IStyledInput>`
   height: ${props => getHeight(props)};
@@ -124,7 +133,8 @@ const StyledInput: any = styled.input<IStyledInput>`
     background-color: ${({ theme: { knitui } }) => knitui.inputBgHover};
     color: ${({ theme: { knitui } }) => knitui.inputColor};
   }
-  &:focus, &:active {
+  &:focus,
+  &:active {
     outline: ${({ theme: { knitui } }) => knitui.inputFocusOutline};
     background-color: ${({ theme: { knitui } }) => knitui.inputBgFocus};
     border: ${props => getInputBorder(props, "focus")};
@@ -184,12 +194,15 @@ const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
     inputSize = "default",
     notification,
     className,
-    style
+    style,
+    addonAfter,
+    addonBefore,
+    ...rest
   } = props
-  const customProps={
+  const customProps = {
     inputSize,
     error,
-    success
+    success,
   }
   let labelDOM: null | ReactNode = null
   let notificationDOM: null | ReactNode = null
@@ -197,11 +210,7 @@ const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
   if (label) {
     labelDOM = label
     if (_.isString(label)) {
-      labelDOM = (
-        <StyledLabel customProps={customProps}>
-          {label}
-        </StyledLabel>
-      )
+      labelDOM = <StyledLabel customProps={customProps}>{label}</StyledLabel>
     }
   }
 
@@ -225,6 +234,7 @@ const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
         onChange={onChange}
         ref={ref}
         {...insertIf({ value }, !!value)}
+        {...rest}
       />
       {notificationDOM}
     </>
