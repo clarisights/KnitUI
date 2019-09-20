@@ -1,5 +1,5 @@
-import React from "react"
-import styled, { css } from "styled-components"
+import React, { useContext } from "react"
+import styled, { css, ThemeContext } from "styled-components"
 import Icon from "../Icon"
 import { ILabel, LabelPropTypes } from "./types"
 import InlineLabel from "./InlineLabel"
@@ -41,12 +41,16 @@ const getDarkenedBorderColor = (props: IStyledLabel) =>
   getBackgroundColor(props).set("hsl.l", "-0.2")
 
 const showLeftIcon = (props: IStyledLabel) => {
-  const { customProps: { icons } } = props
+  const {
+    customProps: { icons },
+  } = props
   return icons && icons.left
 }
 
 const showRightIcon = (props: IStyledLabel) => {
-  const { customProps: { icons } } = props
+  const {
+    customProps: { icons },
+  } = props
   return icons && icons.right
 }
 
@@ -57,12 +61,16 @@ const verticalPadding = {
 }
 
 const getVerticalPadding = (props: IStyledLabel) => {
-  const { customProps: { size } } = props
+  const {
+    customProps: { size },
+  } = props
   return verticalPadding[size!]
 }
 
 const getHorizontalPadding = (props: IStyledLabel) => {
-  const { customProps: { expanded } } = props
+  const {
+    customProps: { expanded },
+  } = props
   if (expanded) {
     return "1rem"
   }
@@ -70,7 +78,9 @@ const getHorizontalPadding = (props: IStyledLabel) => {
 }
 
 const getLeftPadding = (props: IStyledLabel) => {
-  const { customProps: { size } } = props
+  const {
+    customProps: { size },
+  } = props
   if (showLeftIcon(props)) {
     return size === "small" ? "0.3rem" : "0.5rem"
   }
@@ -78,7 +88,9 @@ const getLeftPadding = (props: IStyledLabel) => {
 }
 
 const getRightPadding = (props: IStyledLabel) => {
-  const { customProps: { size } } = props
+  const {
+    customProps: { size },
+  } = props
   if (showRightIcon(props)) {
     return size === "small" ? "0.3rem" : "0.5rem"
   }
@@ -118,20 +130,21 @@ const getBoxShadow = (props: IStyledLabel) => {
 
 const getInsetStyles = (props: IStyledLabel) => {
   const { insetColor } = props
-  return insetColor ? css`
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 0.3rem;
-      background: ${insetColor};
-      border-radius: 0.2rem 0  0 0.2rem;
-    }
-  ` : ""
+  return insetColor
+    ? css`
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 0.3rem;
+          background: ${insetColor};
+          border-radius: 0.2rem 0 0 0.2rem;
+        }
+      `
+    : ""
 }
-
 
 const StyledDiv = styled.div<IStyledLabel>`
   position: relative;
@@ -163,31 +176,36 @@ const Label: ILabel = props => {
   const { className, style, ...rest } = props
   const { text, icons, insetColor } = rest
   /**
+   * Styled Component theme should be needed here, because getFontColor take theme
+   * as argument
+   */
+  const theme = useContext(ThemeContext)
+  /**
    * If an insetColor is specified, the background color should be set to a default unless
-   * explicitly provided through customColor 
+   * explicitly provided through customColor
    */
   if (insetColor) {
     rest.customColor = rest.customColor || INSET_BACKGROUND_COLOR
-  } 
-  const scProps = { className, style, customProps: rest }
+  }
+  const scProps = { className, style, theme, customProps: rest }
   //For styled components, we separate the props that are to be loaded on the DOM
   return (
     <StyledDiv {...scProps} insetColor={insetColor}>
-        {showLeftIcon(scProps) ? (
-          <LeftIcon
-            {...scProps}
-            fill={getFontColor(scProps)}
-            type={icons!.left}
-          />
-        ) : null}
-        <span>{text}</span>
-        {showRightIcon(scProps) ? (
-          <RightIcon
-            {...scProps}
-            fill={getFontColor(scProps)}
-            type={icons!.right}
-          />
-        ) : null}
+      {showLeftIcon(scProps) ? (
+        <LeftIcon
+          {...scProps}
+          fill={getFontColor(scProps)}
+          type={icons!.left}
+        />
+      ) : null}
+      <span>{text}</span>
+      {showRightIcon(scProps) ? (
+        <RightIcon
+          {...scProps}
+          fill={getFontColor(scProps)}
+          type={icons!.right}
+        />
+      ) : null}
     </StyledDiv>
   )
 }

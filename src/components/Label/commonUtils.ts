@@ -7,14 +7,20 @@ type IStyledInlineLabel = IStyled<InlineLabelProps>
 type GenericLabelProps = IStyledLabel | IStyledInlineLabel
 
 export const parseColorTheme = (props: GenericLabelProps) => {
-  const { customProps: { customColor, colorPreset } } = props
+  const {
+    customProps: { customColor, colorPreset },
+    theme: { knitui: theme },
+  } = props
   return customColor
-    ? parseCustomColor(customColor)
-    : parseColorPreset(colorPreset!)
+    ? parseCustomColor(theme, customColor)
+    : parseColorPreset(theme, colorPreset!)
 }
-export const getBackgroundColor = (props: GenericLabelProps) => parseColorTheme(props).background
+export const getBackgroundColor = (props: GenericLabelProps) =>
+  parseColorTheme(props).background
 
 export const getFontColor = (props: GenericLabelProps) => {
-  const { customProps: { customFontColor } } = props
+  const {
+    customProps: { customFontColor },
+  } = props
   return customFontColor || parseColorTheme(props).font
 }

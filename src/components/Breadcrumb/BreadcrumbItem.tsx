@@ -15,7 +15,7 @@ const sharedStyles = css<BreadcrumbItemProps>`
   align-items: center;
   &:hover {
     background-color: ${({ separator, theme: { knitui } }) =>
-      separator ? "" : knitui.shades.gray95};
+      separator ? "" : knitui.chromaPalette.Neutral10};
   }
   cursor: ${props => (props.separator ? "default" : "pointer")};
   a,
@@ -27,12 +27,12 @@ const sharedStyles = css<BreadcrumbItemProps>`
 
 export const StyledText = styled.span<BreadcrumbItemProps>`
   ${sharedStyles}
-  color: ${({ theme: { knitui } }) => knitui.shades.gray50};
+  color: ${({ theme: { knitui } }) => knitui.chromaPalette.Neutral50};
 `
 
 export const StyledActive = styled.span<BreadcrumbItemProps>`
   ${sharedStyles}
-  color: ${({ theme: { knitui } }) => knitui.shades.black}
+  color: ${({ theme: { knitui } }) => knitui.chromaPalette.Neutral90}
 `
 
 const BreadcrumbItem: SFC<BreadcrumbItemProps> = props => {

@@ -15,7 +15,6 @@ import {
 import Icon from "../Icon"
 import "rc-dialog/assets/index.css"
 
-
 const sizeToWidth = {
   small: "49rem",
   medium: "63rem",
@@ -53,10 +52,11 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
     opacity: unset;
     padding: 0.15rem;
     line-height: 0;
-    background-color: ${({ theme: { knitui } }) => knitui.shades.gray50};
+    background-color: ${({ theme: { knitui } }) =>
+      knitui.chromaPalette.Neutral50};
     border-radius: 999px;
     svg {
-        fill: ${({ theme: { knitui } }) => knitui.shades.gray90};
+        fill: ${({ theme: { knitui } }) => knitui.chromaPalette.Neutral20};
       }
     }
   }
@@ -120,7 +120,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   destroyOnClose,
   className,
   style,
-  padding
+  padding,
 }) => {
   /**
    * Renders the appopriate variant based on the availability of a
@@ -184,7 +184,11 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
         maxContentHeight={maxContentHeight}
         minContentHeight={minContentHeight}
         header={<Header {...header} />}
-        body={<Main customProps={{padding}} ref={setBodyRef}>{body}</Main>}
+        body={
+          <Main customProps={{ padding }} ref={setBodyRef}>
+            {body}
+          </Main>
+        }
         footer={
           <Footer customProps={{ showBorder: showFooterBorder }}>
             {footer}

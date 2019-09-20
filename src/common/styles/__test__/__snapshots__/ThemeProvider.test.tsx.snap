@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Passing Custom Theme Changing palette color Blue100 to #1182D4 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bwzfXH iRfXCP"
+  >
+    Changed Color of Neutral
+  </button>
+</DocumentFragment>
+`;

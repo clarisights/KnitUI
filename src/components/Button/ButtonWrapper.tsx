@@ -42,16 +42,16 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
 
   // Cannot be set as default arg since theme is not available in that context
   const DEFAULT_INSET_THEME = {
-    background: knitui.shades.white,
-    font: knitui.shades.gray20,
+    background: knitui.chromaPalette.Neutral0,
+    font: knitui.chromaPalette.Neutral80,
   }
 
   const insetColorTheme = insetCustomColor
-    ? parseCustomColor(insetCustomColor)
+    ? parseCustomColor(knitui, insetCustomColor)
     : DEFAULT_INSET_THEME
   const parsedColorTheme = customColor
-    ? parseCustomColor(customColor)
-    : parseColorPreset(colorPreset)
+    ? parseCustomColor(knitui, customColor)
+    : parseColorPreset(knitui, colorPreset)
 
   return (
     <ButtonBase

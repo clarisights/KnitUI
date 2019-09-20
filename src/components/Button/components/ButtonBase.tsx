@@ -158,7 +158,7 @@ const getBackgroundColor = (state: ButtonState, props: IStyledBaseButton) => {
   if (bare) {
     return state === "default"
       ? knitui.shades.transparent
-      : knitui.shades.gray95
+      : knitui.chromaPalette.Neutral10
   }
   if (ghost) {
     return knitui.chromaPalette.Neutral0 // white

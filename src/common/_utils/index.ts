@@ -1,8 +1,6 @@
 import { ThemedStyledFunction } from "styled-components"
 import chroma from "chroma-js"
 import { ColorPreset, CustomColor } from "../types"
-import * as theme from "../styles/variables"
-const { secondaryPalette, chromaPalette } = theme
 
 export const insertIf = (
   obj: any = {},
@@ -42,15 +40,15 @@ export const isLightColor = color => color.get("hsl.l") >= 0.5
 /**
  * Determines the appropriate font color based on the background color.
  */
-export const getFontColor = backGroundColor => {
+export const getFontColor = (theme, backGroundColor) => {
   return isLightColor(backGroundColor)
-    ? chromaPalette.Neutral90
-    : chromaPalette.Neutral0
+    ? theme.chromaPalette.Neutral90
+    : theme.chromaPalette.Neutral0
 }
 
-const createParsedColorTheme = backgroundColor => ({
+const createParsedColorTheme = (theme, backgroundColor) => ({
   background: backgroundColor,
-  font: getFontColor(backgroundColor),
+  font: getFontColor(theme, backgroundColor),
 })
 
 /**
@@ -58,7 +56,7 @@ const createParsedColorTheme = backgroundColor => ({
  * with appropriate chroma colors.
  * @param backGroundColor A plain CSS color string
  */
-export const parseCustomColor = (customColor: CustomColor) => {
+export const parseCustomColor = (theme, customColor: CustomColor) => {
   if (
     !(
       chroma.valid(customColor) ||
@@ -76,7 +74,7 @@ export const parseCustomColor = (customColor: CustomColor) => {
     }
   }
   customColor = chroma(customColor)
-  return createParsedColorTheme(customColor)
+  return createParsedColorTheme(theme, customColor)
 }
 
 /**
@@ -84,7 +82,7 @@ export const parseCustomColor = (customColor: CustomColor) => {
  * with appropriate chroma colors.
  * @param backGroundColor One of the predefined preset values
  */
-export const parseColorPreset = (backgroundColor: ColorPreset) => {
-  backgroundColor = secondaryPalette[backgroundColor]
-  return createParsedColorTheme(backgroundColor)
+export const parseColorPreset = (theme, backgroundColor: ColorPreset) => {
+  backgroundColor = theme.secondaryPalette[backgroundColor]
+  return createParsedColorTheme(theme, backgroundColor)
 }
