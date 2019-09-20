@@ -3,7 +3,7 @@ import styled, { css, keyframes } from "styled-components"
 import { AlertProps } from "./types"
 import { Icon, Button } from ".."
 
-import { IStyled, ColorPreset } from "../../common/types"
+import { IStyled } from "../../common/types"
 import { parseColorPreset, parseCustomColor } from "../../common/_utils"
 
 type IStyledAlert = IStyled<AlertProps>
@@ -65,8 +65,11 @@ const getHeadingLineHeight = (props: IStyledAlert) => {
 const parseColorTheme = (props: IStyledAlert) => {
   const {
     customProps: { customColor, type },
+    theme: { knitui: theme },
   } = props
-  return customColor ? parseCustomColor(customColor) : parseColorPreset(type!)
+  return customColor
+    ? parseCustomColor(theme, customColor)
+    : parseColorPreset(theme, type!)
 }
 
 const getBackgroundColor = (props: IStyledAlert) =>

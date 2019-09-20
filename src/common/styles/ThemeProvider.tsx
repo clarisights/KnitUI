@@ -1,9 +1,9 @@
 import React from "react"
 import { ThemeProvider as Theme } from "styled-components"
-import * as theme from "./variables"
+import { palette as defaultPalette, generateTheme } from "./"
 
-const ThemeProvider = ({ children }) => {
-  return <Theme theme={{knitui: theme}}>{children}</Theme>
-}
+const ThemeProvider = ({ children, theme = generateTheme(defaultPalette) }) => (
+  <Theme theme={theme}>{children}</Theme>
+)
 
 export default ThemeProvider
