@@ -1,8 +1,9 @@
-import React, { useState, ReactNode } from "react"
+import React, { useState, useContext, ReactNode } from "react"
 import styled from "styled-components"
 import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
 import { ModalWrapperProps, IStyledDialog } from "./types"
+import { ThemeContext } from "styled-components"
 
 import { Header, Footer, Main } from "./components"
 import {
@@ -38,8 +39,9 @@ const animationDelay = `50ms`
 const StyledDialog = styled(Dialog)<IStyledDialog>`
   .rc-dialog-body {
     padding: 0;
-    height: calc(100vh - 14rem);
-    min-height: 35rem;
+    height: auto;
+    max-height: ${({ theme: { knitui } }) => `calc(100vh - ${knitui.modalMaxContentHeightOffset}rem)`};
+    min-height: ${({ theme: { knitui } }) => `${knitui.modalMinHeight}rem`};
   }
   .rc-dialog-content {
     border-radius: ${({ theme: { knitui } }) => knitui.modalBorderRadius};
@@ -126,6 +128,8 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
    * @param modalProps
    */
   const ModalProxy = (modalProps: {
+    maxContentHeight: string
+    minContentHeight: string
     header: ReactNode
     footer: ReactNode
     body: ReactNode
@@ -152,6 +156,16 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     }
   }
 
+  const themeContext = useContext(ThemeContext)
+  const { knitui } = themeContext
+  const typographySize = header.fontSize || knitui.modalTitleTypographySize
+  const lineHeight = knitui.typography[typographySize].lineHeight
+  const verticalPadding = knitui.modalHeaderPadding.vertical
+  const headerHeight = lineHeight + 2 * verticalPadding;
+  const totalOffset = knitui.modalMaxContentHeightOffset + headerHeight 
+  const maxContentHeight = `calc(100vh - ${totalOffset}rem)`
+  const minContentHeight = `${knitui.modalMinHeight - headerHeight}rem`
+
   return (
     <StyledDialog
       customProps={{
@@ -167,6 +181,8 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       className={className}
       style={style}>
       <ModalProxy
+        maxContentHeight={maxContentHeight}
+        minContentHeight={minContentHeight}
         header={<Header {...header} />}
         body={<Main customProps={{padding}} ref={setBodyRef}>{body}</Main>}
         footer={

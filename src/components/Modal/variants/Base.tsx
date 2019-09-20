@@ -1,20 +1,15 @@
 import React from "react"
-import styled from "styled-components"
+import { BaseLayout, VerticalLayoutContent  } from "./styledComponents"
+import { ModalProps } from "./types"
 
-import { ModalProps } from "./interfaces"
-
-export const BaseLayout = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`
-
-const BaseModal: React.FC<ModalProps> = ({ header, body, footer }) => {
+const BaseModal: React.FC<ModalProps> = ({ header, body, footer, maxContentHeight, minContentHeight }) => {
   return (
     <BaseLayout>
       {header}
-      {body}
-      {footer}
+      <VerticalLayoutContent customProps={{maxContentHeight, minContentHeight}}>
+        {body}
+        {footer}
+      </VerticalLayoutContent>
     </BaseLayout>
   )
 }

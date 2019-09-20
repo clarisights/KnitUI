@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal with overriden padding 1`] = `
-.c6 {
+.c7 {
   padding: 0px 0px;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -43,7 +43,7 @@ exports[`Modal with overriden padding 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -58,6 +58,23 @@ exports[`Modal with overriden padding 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -73,7 +90,8 @@ exports[`Modal with overriden padding 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -214,15 +232,19 @@ exports[`Modal with overriden padding 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -238,7 +260,7 @@ exports[`Modal with overriden padding 1`] = `
 `;
 
 exports[`Modal with size large with a bottom panel 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -280,7 +302,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -295,9 +317,26 @@ exports[`Modal with size large with a bottom panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
-.c8 {
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
+}
+
+.c9 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
@@ -316,7 +355,8 @@ exports[`Modal with size large with a bottom panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -457,22 +497,26 @@ exports[`Modal with size large with a bottom panel 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
-          </div>
-          <div
-            class="c8"
-          >
-            <div>
-              Panel content
+            <div
+              class="c9"
+            >
+              <div>
+                Panel content
+              </div>
             </div>
           </div>
         </div>
@@ -545,6 +589,7 @@ exports[`Modal with size large with a left panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
 .c6 {
@@ -562,11 +607,14 @@ exports[`Modal with size large with a left panel 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c7 {
   width: 21rem;
   border-right: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 
 .c8 {
@@ -596,7 +644,8 @@ exports[`Modal with size large with a left panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -833,6 +882,7 @@ exports[`Modal with size large with a right panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
 .c6 {
@@ -850,6 +900,14 @@ exports[`Modal with size large with a right panel 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
+}
+
+.c10 {
+  width: 21rem;
+  border-left: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 
 .c7 {
@@ -866,11 +924,6 @@ exports[`Modal with size large with a right panel 1`] = `
   flex-grow: 1;
 }
 
-.c10 {
-  width: 21rem;
-  border-left: 1px solid #d9d9d9;
-}
-
 .c1 {
   cursor: inherit;
   display: inline-block;
@@ -884,7 +937,8 @@ exports[`Modal with size large with a right panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -1064,7 +1118,7 @@ exports[`Modal with size large with a right panel 1`] = `
 `;
 
 exports[`Modal with size large with custom title size 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1106,7 +1160,7 @@ exports[`Modal with size large with custom title size 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -1121,6 +1175,23 @@ exports[`Modal with size large with custom title size 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 18.6rem);
+  min-height: 30.4rem;
 }
 
 .c1 {
@@ -1136,7 +1207,8 @@ exports[`Modal with size large with custom title size 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -1277,15 +1349,19 @@ exports[`Modal with size large with custom title size 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -1301,7 +1377,7 @@ exports[`Modal with size large with custom title size 1`] = `
 `;
 
 exports[`Modal with size large with no fill 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1343,7 +1419,7 @@ exports[`Modal with size large with no fill 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -1358,6 +1434,23 @@ exports[`Modal with size large with no fill 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -1373,7 +1466,8 @@ exports[`Modal with size large with no fill 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -1514,15 +1608,19 @@ exports[`Modal with size large with no fill 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -1538,7 +1636,7 @@ exports[`Modal with size large with no fill 1`] = `
 `;
 
 exports[`Modal with size large with right section in header 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1580,7 +1678,7 @@ exports[`Modal with size large with right section in header 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -1595,6 +1693,23 @@ exports[`Modal with size large with right section in header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -1610,7 +1725,8 @@ exports[`Modal with size large with right section in header 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -1757,15 +1873,19 @@ exports[`Modal with size large with right section in header 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -1781,7 +1901,7 @@ exports[`Modal with size large with right section in header 1`] = `
 `;
 
 exports[`Modal with size large with simple config 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -1823,7 +1943,7 @@ exports[`Modal with size large with simple config 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -1838,6 +1958,23 @@ exports[`Modal with size large with simple config 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -1853,7 +1990,8 @@ exports[`Modal with size large with simple config 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -1994,15 +2132,19 @@ exports[`Modal with size large with simple config 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -2018,7 +2160,7 @@ exports[`Modal with size large with simple config 1`] = `
 `;
 
 exports[`Modal with size medium with a bottom panel 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2060,7 +2202,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -2075,9 +2217,26 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
-.c8 {
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
+}
+
+.c9 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
@@ -2096,7 +2255,8 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -2237,22 +2397,26 @@ exports[`Modal with size medium with a bottom panel 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
-          </div>
-          <div
-            class="c8"
-          >
-            <div>
-              Panel content
+            <div
+              class="c9"
+            >
+              <div>
+                Panel content
+              </div>
             </div>
           </div>
         </div>
@@ -2325,6 +2489,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
 .c6 {
@@ -2342,11 +2507,14 @@ exports[`Modal with size medium with a left panel 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c7 {
   width: 21rem;
   border-right: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 
 .c8 {
@@ -2376,7 +2544,8 @@ exports[`Modal with size medium with a left panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -2613,6 +2782,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
 .c6 {
@@ -2630,6 +2800,14 @@ exports[`Modal with size medium with a right panel 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
+}
+
+.c10 {
+  width: 21rem;
+  border-left: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 
 .c7 {
@@ -2646,11 +2824,6 @@ exports[`Modal with size medium with a right panel 1`] = `
   flex-grow: 1;
 }
 
-.c10 {
-  width: 21rem;
-  border-left: 1px solid #d9d9d9;
-}
-
 .c1 {
   cursor: inherit;
   display: inline-block;
@@ -2664,7 +2837,8 @@ exports[`Modal with size medium with a right panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -2844,7 +3018,7 @@ exports[`Modal with size medium with a right panel 1`] = `
 `;
 
 exports[`Modal with size medium with custom title size 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2886,7 +3060,7 @@ exports[`Modal with size medium with custom title size 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -2901,6 +3075,23 @@ exports[`Modal with size medium with custom title size 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 18.6rem);
+  min-height: 30.4rem;
 }
 
 .c1 {
@@ -2916,7 +3107,8 @@ exports[`Modal with size medium with custom title size 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -3057,15 +3249,19 @@ exports[`Modal with size medium with custom title size 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -3081,7 +3277,7 @@ exports[`Modal with size medium with custom title size 1`] = `
 `;
 
 exports[`Modal with size medium with no fill 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -3123,7 +3319,7 @@ exports[`Modal with size medium with no fill 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -3138,6 +3334,23 @@ exports[`Modal with size medium with no fill 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -3153,7 +3366,8 @@ exports[`Modal with size medium with no fill 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -3294,15 +3508,19 @@ exports[`Modal with size medium with no fill 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -3318,7 +3536,7 @@ exports[`Modal with size medium with no fill 1`] = `
 `;
 
 exports[`Modal with size medium with right section in header 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -3360,7 +3578,7 @@ exports[`Modal with size medium with right section in header 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -3375,6 +3593,23 @@ exports[`Modal with size medium with right section in header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -3390,7 +3625,8 @@ exports[`Modal with size medium with right section in header 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -3537,15 +3773,19 @@ exports[`Modal with size medium with right section in header 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -3561,7 +3801,7 @@ exports[`Modal with size medium with right section in header 1`] = `
 `;
 
 exports[`Modal with size medium with simple config 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -3603,7 +3843,7 @@ exports[`Modal with size medium with simple config 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -3618,6 +3858,23 @@ exports[`Modal with size medium with simple config 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -3633,7 +3890,8 @@ exports[`Modal with size medium with simple config 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -3774,15 +4032,19 @@ exports[`Modal with size medium with simple config 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -3798,7 +4060,7 @@ exports[`Modal with size medium with simple config 1`] = `
 `;
 
 exports[`Modal with size small with a bottom panel 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -3840,7 +4102,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -3855,9 +4117,26 @@ exports[`Modal with size small with a bottom panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
-.c8 {
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
+}
+
+.c9 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
@@ -3876,7 +4155,8 @@ exports[`Modal with size small with a bottom panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -4017,22 +4297,26 @@ exports[`Modal with size small with a bottom panel 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
-          </div>
-          <div
-            class="c8"
-          >
-            <div>
-              Panel content
+            <div
+              class="c9"
+            >
+              <div>
+                Panel content
+              </div>
             </div>
           </div>
         </div>
@@ -4105,6 +4389,7 @@ exports[`Modal with size small with a left panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
 .c6 {
@@ -4122,11 +4407,14 @@ exports[`Modal with size small with a left panel 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c7 {
   width: 21rem;
   border-right: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 
 .c8 {
@@ -4156,7 +4444,8 @@ exports[`Modal with size small with a left panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -4393,6 +4682,7 @@ exports[`Modal with size small with a right panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
 .c6 {
@@ -4410,6 +4700,14 @@ exports[`Modal with size small with a right panel 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
+}
+
+.c10 {
+  width: 21rem;
+  border-left: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 
 .c7 {
@@ -4426,11 +4724,6 @@ exports[`Modal with size small with a right panel 1`] = `
   flex-grow: 1;
 }
 
-.c10 {
-  width: 21rem;
-  border-left: 1px solid #d9d9d9;
-}
-
 .c1 {
   cursor: inherit;
   display: inline-block;
@@ -4444,7 +4737,8 @@ exports[`Modal with size small with a right panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -4624,7 +4918,7 @@ exports[`Modal with size small with a right panel 1`] = `
 `;
 
 exports[`Modal with size small with custom title size 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -4666,7 +4960,7 @@ exports[`Modal with size small with custom title size 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -4681,6 +4975,23 @@ exports[`Modal with size small with custom title size 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 18.6rem);
+  min-height: 30.4rem;
 }
 
 .c1 {
@@ -4696,7 +5007,8 @@ exports[`Modal with size small with custom title size 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -4837,15 +5149,19 @@ exports[`Modal with size small with custom title size 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -4861,7 +5177,7 @@ exports[`Modal with size small with custom title size 1`] = `
 `;
 
 exports[`Modal with size small with no fill 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -4903,7 +5219,7 @@ exports[`Modal with size small with no fill 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -4918,6 +5234,23 @@ exports[`Modal with size small with no fill 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -4933,7 +5266,8 @@ exports[`Modal with size small with no fill 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -5074,15 +5408,19 @@ exports[`Modal with size small with no fill 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -5098,7 +5436,7 @@ exports[`Modal with size small with no fill 1`] = `
 `;
 
 exports[`Modal with size small with right section in header 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -5140,7 +5478,7 @@ exports[`Modal with size small with right section in header 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -5155,6 +5493,23 @@ exports[`Modal with size small with right section in header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -5170,7 +5525,8 @@ exports[`Modal with size small with right section in header 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -5317,15 +5673,19 @@ exports[`Modal with size small with right section in header 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -5341,7 +5701,7 @@ exports[`Modal with size small with right section in header 1`] = `
 `;
 
 exports[`Modal with size small with simple config 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -5383,7 +5743,7 @@ exports[`Modal with size small with simple config 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -5398,6 +5758,23 @@ exports[`Modal with size small with simple config 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -5413,7 +5790,8 @@ exports[`Modal with size small with simple config 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -5554,15 +5932,19 @@ exports[`Modal with size small with simple config 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -5578,7 +5960,7 @@ exports[`Modal with size small with simple config 1`] = `
 `;
 
 exports[`Modal with size x-large with a bottom panel 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -5620,7 +6002,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -5635,9 +6017,26 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
-.c8 {
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
+}
+
+.c9 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
@@ -5656,7 +6055,8 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -5797,22 +6197,26 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
-          </div>
-          <div
-            class="c8"
-          >
-            <div>
-              Panel content
+            <div
+              class="c9"
+            >
+              <div>
+                Panel content
+              </div>
             </div>
           </div>
         </div>
@@ -5885,6 +6289,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
 .c6 {
@@ -5902,11 +6307,14 @@ exports[`Modal with size x-large with a left panel 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c7 {
   width: 21rem;
   border-right: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 
 .c8 {
@@ -5936,7 +6344,8 @@ exports[`Modal with size x-large with a left panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -6173,6 +6582,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
 }
 
 .c6 {
@@ -6190,6 +6600,14 @@ exports[`Modal with size x-large with a right panel 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
+}
+
+.c10 {
+  width: 21rem;
+  border-left: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 
 .c7 {
@@ -6206,11 +6624,6 @@ exports[`Modal with size x-large with a right panel 1`] = `
   flex-grow: 1;
 }
 
-.c10 {
-  width: 21rem;
-  border-left: 1px solid #d9d9d9;
-}
-
 .c1 {
   cursor: inherit;
   display: inline-block;
@@ -6224,7 +6637,8 @@ exports[`Modal with size x-large with a right panel 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -6404,7 +6818,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
 `;
 
 exports[`Modal with size x-large with custom title size 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -6446,7 +6860,7 @@ exports[`Modal with size x-large with custom title size 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -6461,6 +6875,23 @@ exports[`Modal with size x-large with custom title size 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 18.6rem);
+  min-height: 30.4rem;
 }
 
 .c1 {
@@ -6476,7 +6907,8 @@ exports[`Modal with size x-large with custom title size 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -6617,15 +7049,19 @@ exports[`Modal with size x-large with custom title size 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -6641,7 +7077,7 @@ exports[`Modal with size x-large with custom title size 1`] = `
 `;
 
 exports[`Modal with size x-large with no fill 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -6683,7 +7119,7 @@ exports[`Modal with size x-large with no fill 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -6698,6 +7134,23 @@ exports[`Modal with size x-large with no fill 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -6713,7 +7166,8 @@ exports[`Modal with size x-large with no fill 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -6854,15 +7308,19 @@ exports[`Modal with size x-large with no fill 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -6878,7 +7336,7 @@ exports[`Modal with size x-large with no fill 1`] = `
 `;
 
 exports[`Modal with size x-large with right section in header 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -6920,7 +7378,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -6935,6 +7393,23 @@ exports[`Modal with size x-large with right section in header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -6950,7 +7425,8 @@ exports[`Modal with size x-large with right section in header 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -7097,15 +7573,19 @@ exports[`Modal with size x-large with right section in header 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
@@ -7121,7 +7601,7 @@ exports[`Modal with size x-large with right section in header 1`] = `
 `;
 
 exports[`Modal with size x-large with simple config 1`] = `
-.c6 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -7163,7 +7643,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -7178,6 +7658,23 @@ exports[`Modal with size x-large with simple config 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  min-height: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-height: calc(100vh - 19.6rem);
+  min-height: 29.4rem;
 }
 
 .c1 {
@@ -7193,7 +7690,8 @@ exports[`Modal with size x-large with simple config 1`] = `
 
 .c0 .rc-dialog-body {
   padding: 0;
-  height: calc(100vh - 14rem);
+  height: auto;
+  max-height: calc(100vh - 14rem);
   min-height: 35rem;
 }
 
@@ -7334,15 +7832,19 @@ exports[`Modal with size x-large with simple config 1`] = `
           <div
             class="c6"
           >
-            <div>
-              Body
+            <div
+              class="c7"
+            >
+              <div>
+                Body
+              </div>
             </div>
-          </div>
-          <div
-            class="c7"
-          >
-            <div>
-              Footer
+            <div
+              class="c8"
+            >
+              <div>
+                Footer
+              </div>
             </div>
           </div>
         </div>
