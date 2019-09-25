@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import styled, { css, ThemeContext } from "styled-components"
+import _ from "lodash"
 import Icon from "../Icon"
 import { ILabel, LabelPropTypes } from "./types"
 import InlineLabel from "./InlineLabel"
@@ -187,25 +188,47 @@ const Label: ILabel = props => {
   if (insetColor) {
     rest.customColor = rest.customColor || INSET_BACKGROUND_COLOR
   }
+
   const scProps = { className, style, theme, customProps: rest }
-  //For styled components, we separate the props that are to be loaded on the DOM
-  return (
-    <StyledDiv {...scProps} insetColor={insetColor}>
-      {showLeftIcon(scProps) ? (
+
+  const renderLeftIcon = () => {
+    if (!showLeftIcon(scProps)) {
+      return null
+    }
+    if (_.isString(icons!.left)) {
+      return (
         <LeftIcon
           {...scProps}
           fill={getFontColor(scProps)}
           type={icons!.left}
         />
-      ) : null}
-      <span>{text}</span>
-      {showRightIcon(scProps) ? (
+      )
+    }
+    return icons!.left
+  }
+
+  const renderRightIcon = () => {
+    if (!showRightIcon(scProps)) {
+      return null
+    }
+    if (_.isString(icons!.right)) {
+      return (
         <RightIcon
           {...scProps}
           fill={getFontColor(scProps)}
           type={icons!.right}
         />
-      ) : null}
+      )
+    }
+    return icons!.right
+  }
+
+  //For styled components, we separate the props that are to be loaded on the DOM
+  return (
+    <StyledDiv {...scProps} insetColor={insetColor}>
+      {renderLeftIcon()}
+      <span>{text}</span>
+      {renderRightIcon()}
     </StyledDiv>
   )
 }

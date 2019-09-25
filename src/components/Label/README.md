@@ -22,7 +22,7 @@ import { Label } from "KnitUI"
 | rounded  | boolean | Yes | `false` | Whether the label should have rounded edges |
 | outlined  | boolean | Yes | `false` |  Whether the label be outlined |
 | focus  | boolean | Yes | `false ` | Label is focussed or being dragge |
-| icons    | `[{left: string, right: string}]`  | No | None    |  Icons to be rendered in the label. They can be on left, a right or on both sides of the text |
+| icons    | `{left: string | ReactNode, right: string | ReactNode}`  | No | None    |  Icons to be rendered in the label. They can be on left, a right or on both sides of the text |
 | className | string | Yes | None | CSS class name to be added |
 | style | CSS Object | Yes | None | CSS style to be added |
 | insetColor | string | Yes | None | If provided, will add a small decoration on the label with the given color. Also the background is set to a default which can be changed by `customColor` but not through the `colorPreset` |
