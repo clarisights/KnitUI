@@ -1,5 +1,5 @@
 import React from "react"
-import Button from ".."
+import { Button, ButtonGroup } from ".."
 import { render, cleanup, fireEvent } from "react-testing-library"
 import { ThemeProvider } from "../../../common/styles"
 import "jest-styled-components"
@@ -170,5 +170,17 @@ describe("Button", () => {
     )
     fireEvent.click(getByText("button"))
     expect(window.location.assign).toBeCalledWith("/sample")
+  })
+  it("Button group snapshot", () => {
+    const { asFragment } = render(
+      <ThemeProvider>
+        <ButtonGroup>
+          <Button icon="oInfo" />
+          <Button label="Dropdown" />
+          <Button icon="oExpandMore" />
+        </ButtonGroup>
+      </ThemeProvider>
+    )
+    expect(asFragment()).toMatchSnapshot()
   })
 })

@@ -1,6 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import Button from "./"
+import { Button, ButtonGroup } from "./"
 import {
   withKnobs,
   text,
@@ -192,3 +192,12 @@ stories
       style={object("Style", { backgroundColor: "red" })}
     />
   ))
+  .add("Button Group", () => {
+    return (
+      <ButtonGroup>
+        <Button icon="oInfo" />
+        <Button label="Dropdown" />
+        <Button icon="oExpandMore" />
+      </ButtonGroup>
+    )
+  })
