@@ -98,11 +98,19 @@ const getRightPadding = (props: IStyledLabel) => {
   return getHorizontalPadding(props)
 }
 
-const getIconMargin = (props: IStyledLabel) => {
+const getTextMargin = (props: IStyledLabel) => {
   const {
     customProps: { size },
   } = props
   return size === "small" ? "0.2rem" : "0.4rem"
+}
+
+const getTextLeftMargin = (props: IStyledLabel) => {
+  return showLeftIcon(props) ? getTextMargin(props) : "0rem"
+}
+
+const getTextRightMargin = (props: IStyledLabel) => {
+  return showRightIcon(props) ? getTextMargin(props) : "0rem"
 }
 
 const getBorderColor = (props: IStyledLabel) => {
@@ -167,12 +175,10 @@ const StyledDiv = styled.div<IStyledLabel>`
   ${props => getInsetStyles(props)}
 `
 
-const LeftIcon = styled(Icon)<IStyledLabel>`
-  margin-right: ${props => getIconMargin(props)};
+const StyledTextSpan = styled.span<IStyledLabel>`
+  margin: 0rem ${props => getTextRightMargin(props)} 0rem ${props => getTextLeftMargin(props)};
 `
-const RightIcon = styled(Icon)<IStyledLabel>`
-  margin-left: ${props => getIconMargin(props)};
-`
+
 const Label: ILabel = props => {
   const { className, style, ...rest } = props
   const { text, icons, insetColor } = rest
@@ -197,8 +203,7 @@ const Label: ILabel = props => {
     }
     if (_.isString(icons!.left)) {
       return (
-        <LeftIcon
-          {...scProps}
+        <Icon
           fill={getFontColor(scProps)}
           type={icons!.left}
         />
@@ -213,8 +218,7 @@ const Label: ILabel = props => {
     }
     if (_.isString(icons!.right)) {
       return (
-        <RightIcon
-          {...scProps}
+        <Icon
           fill={getFontColor(scProps)}
           type={icons!.right}
         />
@@ -227,7 +231,7 @@ const Label: ILabel = props => {
   return (
     <StyledDiv {...scProps} insetColor={insetColor}>
       {renderLeftIcon()}
-      <span>{text}</span>
+      <StyledTextSpan {...scProps} >{text}</StyledTextSpan>
       {renderRightIcon()}
     </StyledDiv>
   )
