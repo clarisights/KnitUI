@@ -1,6 +1,7 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import Label from "./"
+import { Icon } from ".."
 import {
   withKnobs,
   text,
@@ -8,6 +9,7 @@ import {
   select,
   object,
 } from "@storybook/addon-knobs"
+import { action } from "@storybook/addon-actions"
 const Readme = require("./README.md")
 
 const stories = storiesOf("Labels", module)
@@ -113,6 +115,18 @@ stories
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
       icons={{ right: "oClose" }}
+    />
+  ))
+  .add("With a custom right addon", () => (
+    <Label
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+      icons={{ right: (<Icon type="oClose" style={{cursor: "pointer"}} fill="#FFFFFF" onClick={action("icon click")} />) }}
     />
   ))
   .add("With a left and a right icons", () => (

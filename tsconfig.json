@@ -20,7 +20,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true, // enable --allowSyntheticDefaultImports for typesystem compatibility.
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build", "scripts", "build"]

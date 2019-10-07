@@ -4,7 +4,7 @@ import {
   BaseComponentProps,
   fontSizeType,
 } from "../../common/types"
-import React from "react"
+import React, { ReactNode } from "react"
 
 export interface BaseLabelProps extends BaseComponentProps {
   /** Text to be rendered on the label */
@@ -38,7 +38,7 @@ export interface LabelPropTypes extends BaseLabelProps {
    * Icons to be rendered in the label. They can be on left,
    * a right or on both sides of the text
    * */
-  icons?: { left?: string; right?: string }
+  icons?: { left?: string | ReactNode; right?: string | ReactNode }
   /** Label is focussed or being dragged */
   focus?: boolean
   /** If an inset color should be used. If provided, will add a small decoration on the label

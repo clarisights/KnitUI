@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import styled, { css, ThemeContext } from "styled-components"
+import _ from "lodash"
 import Icon from "../Icon"
 import { ILabel, LabelPropTypes } from "./types"
 import InlineLabel from "./InlineLabel"
@@ -97,11 +98,19 @@ const getRightPadding = (props: IStyledLabel) => {
   return getHorizontalPadding(props)
 }
 
-const getIconMargin = (props: IStyledLabel) => {
+const getTextMargin = (props: IStyledLabel) => {
   const {
     customProps: { size },
   } = props
   return size === "small" ? "0.2rem" : "0.4rem"
+}
+
+const getTextLeftMargin = (props: IStyledLabel) => {
+  return showLeftIcon(props) ? getTextMargin(props) : "0rem"
+}
+
+const getTextRightMargin = (props: IStyledLabel) => {
+  return showRightIcon(props) ? getTextMargin(props) : "0rem"
 }
 
 const getBorderColor = (props: IStyledLabel) => {
@@ -166,12 +175,10 @@ const StyledDiv = styled.div<IStyledLabel>`
   ${props => getInsetStyles(props)}
 `
 
-const LeftIcon = styled(Icon)<IStyledLabel>`
-  margin-right: ${props => getIconMargin(props)};
+const StyledTextSpan = styled.span<IStyledLabel>`
+  margin: 0rem ${props => getTextRightMargin(props)} 0rem ${props => getTextLeftMargin(props)};
 `
-const RightIcon = styled(Icon)<IStyledLabel>`
-  margin-left: ${props => getIconMargin(props)};
-`
+
 const Label: ILabel = props => {
   const { className, style, ...rest } = props
   const { text, icons, insetColor } = rest
@@ -187,25 +194,45 @@ const Label: ILabel = props => {
   if (insetColor) {
     rest.customColor = rest.customColor || INSET_BACKGROUND_COLOR
   }
+
   const scProps = { className, style, theme, customProps: rest }
-  //For styled components, we separate the props that are to be loaded on the DOM
-  return (
-    <StyledDiv {...scProps} insetColor={insetColor}>
-      {showLeftIcon(scProps) ? (
-        <LeftIcon
-          {...scProps}
+
+  const renderLeftIcon = () => {
+    if (!showLeftIcon(scProps)) {
+      return null
+    }
+    if (_.isString(icons!.left)) {
+      return (
+        <Icon
           fill={getFontColor(scProps)}
           type={icons!.left}
         />
-      ) : null}
-      <span>{text}</span>
-      {showRightIcon(scProps) ? (
-        <RightIcon
-          {...scProps}
+      )
+    }
+    return icons!.left
+  }
+
+  const renderRightIcon = () => {
+    if (!showRightIcon(scProps)) {
+      return null
+    }
+    if (_.isString(icons!.right)) {
+      return (
+        <Icon
           fill={getFontColor(scProps)}
           type={icons!.right}
         />
-      ) : null}
+      )
+    }
+    return icons!.right
+  }
+
+  //For styled components, we separate the props that are to be loaded on the DOM
+  return (
+    <StyledDiv {...scProps} insetColor={insetColor}>
+      {renderLeftIcon()}
+      <StyledTextSpan {...scProps} >{text}</StyledTextSpan>
+      {renderRightIcon()}
     </StyledDiv>
   )
 }

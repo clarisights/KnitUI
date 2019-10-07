@@ -1,5 +1,6 @@
 import React from "react"
 import Label from "../"
+import { Icon } from "../../"
 import { render, cleanup } from "react-testing-library"
 import { ThemeProvider } from "../../../common/styles"
 import "jest-styled-components"
@@ -66,6 +67,15 @@ describe("Label", () => {
         expect(asFragment()).toMatchSnapshot()
       })
     })
+  })
+
+  it("right custom addon", () => {
+    const { asFragment } = render(
+      <ThemeProvider>
+        <Label text="label" icons={{ right: <Icon type="oClose" style={{cursor: "pointer"}} fill="#FFFFFF" /> }} />
+      </ThemeProvider>
+    )
+    expect(asFragment()).toMatchSnapshot()
   })
 
   it("outlined", () => {
