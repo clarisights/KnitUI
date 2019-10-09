@@ -613,6 +613,9 @@ exports[`Modal with size large with a left panel 1`] = `
 
 .c7 {
   width: 21rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-right: 1px solid #d9d9d9;
   overflow-y: auto;
 }
@@ -906,6 +909,9 @@ exports[`Modal with size large with a right panel 1`] = `
 
 .c10 {
   width: 21rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-left: 1px solid #d9d9d9;
   overflow-y: auto;
 }
@@ -2513,6 +2519,9 @@ exports[`Modal with size medium with a left panel 1`] = `
 
 .c7 {
   width: 21rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-right: 1px solid #d9d9d9;
   overflow-y: auto;
 }
@@ -2806,6 +2815,9 @@ exports[`Modal with size medium with a right panel 1`] = `
 
 .c10 {
   width: 21rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-left: 1px solid #d9d9d9;
   overflow-y: auto;
 }
@@ -4413,6 +4425,9 @@ exports[`Modal with size small with a left panel 1`] = `
 
 .c7 {
   width: 21rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-right: 1px solid #d9d9d9;
   overflow-y: auto;
 }
@@ -4706,6 +4721,9 @@ exports[`Modal with size small with a right panel 1`] = `
 
 .c10 {
   width: 21rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-left: 1px solid #d9d9d9;
   overflow-y: auto;
 }
@@ -6313,6 +6331,9 @@ exports[`Modal with size x-large with a left panel 1`] = `
 
 .c7 {
   width: 21rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-right: 1px solid #d9d9d9;
   overflow-y: auto;
 }
@@ -6606,6 +6627,9 @@ exports[`Modal with size x-large with a right panel 1`] = `
 
 .c10 {
   width: 21rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   border-left: 1px solid #d9d9d9;
   overflow-y: auto;
 }

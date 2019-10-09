@@ -29,6 +29,7 @@ export const Layout = styled.div<IStyledPanelModal>`
 // Applies to left and right panels only
 export const PanelSection = styled.div<IStyledPanelModal>`
   width: 21rem;
+  flex-shrink: 0;
   ${props => getPanelBorder(props)}
   overflow-y: auto;
 `
