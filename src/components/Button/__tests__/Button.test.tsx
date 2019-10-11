@@ -171,13 +171,28 @@ describe("Button", () => {
     fireEvent.click(getByText("button"))
     expect(window.location.assign).toBeCalledWith("/sample")
   })
-  it("Button group snapshot", () => {
+})
+
+describe("Button Group : ", () => {
+  it("Button group : snapshot", () => {
     const { asFragment } = render(
       <ThemeProvider>
         <ButtonGroup>
           <Button icon="oInfo" />
           <Button label="Dropdown" />
           <Button icon="oExpandMore" />
+        </ButtonGroup>
+      </ThemeProvider>
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+  it("Button group with all ghost buttons : snapshot", () => {
+    const { asFragment } = render(
+      <ThemeProvider>
+        <ButtonGroup>
+          <Button icon="oInfo" ghost />
+          <Button label="Dropdown" ghost />
+          <Button icon="oExpandMore" ghost />
         </ButtonGroup>
       </ThemeProvider>
     )

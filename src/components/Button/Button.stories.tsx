@@ -195,9 +195,38 @@ stories
   .add("Button Group", () => {
     return (
       <ButtonGroup>
-        <Button icon="oInfo" />
-        <Button label="Dropdown" />
-        <Button icon="oExpandMore" />
+        <Button
+          label={text("Label 1", "")}
+          type={select("Type 1", typeOptions, "primary")}
+          size={select("Size 1", sizeOptions, "medium")}
+          colorPreset={select("Color preset 1", colorThemeOptions, "neutral")}
+          ghost={boolean("Ghost 1", false)}
+          disabled={boolean("Disabled 1", false)}
+          bare={boolean("Bare 1", false)}
+          onClick={action("button-click 1")}
+          icon={text("Icon 1", "oInfo")}
+        />
+        <Button
+          label={text("Label 2", "Dropdown")}
+          type={select("Type 2", typeOptions, "primary")}
+          size={select("Size 2", sizeOptions, "medium")}
+          colorPreset={select("Color preset 2", colorThemeOptions, "neutral")}
+          ghost={boolean("Ghost 2", false)}
+          disabled={boolean("Disabled 2", false)}
+          bare={boolean("Bare 2", false)}
+          onClick={action("button-click 2")}
+        />
+        <Button
+          label={text("Label 3", "")}
+          type={select("Type 3", typeOptions, "primary")}
+          size={select("Size 3", sizeOptions, "medium")}
+          colorPreset={select("Color preset 3", colorThemeOptions, "neutral")}
+          ghost={boolean("Ghost 3", false)}
+          disabled={boolean("Disabled 3", false)}
+          bare={boolean("Bare 3", false)}
+          onClick={action("button-click 3")}
+          icon={text("Icon 3", "oExpandMore")}
+        />
       </ButtonGroup>
     )
   })

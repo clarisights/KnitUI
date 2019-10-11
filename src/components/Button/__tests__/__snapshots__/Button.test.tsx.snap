@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Button group snapshot 1`] = `
+exports[`Button Group :  Button group : snapshot 1`] = `
 <DocumentFragment>
   .c3 {
   cursor: inherit;
@@ -129,6 +129,13 @@ exports[`Button Button group snapshot 1`] = `
   cursor: not-allowed;
 }
 
+.c4 {
+  margin-left: -1px;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.2);
+  z-index: 1;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -154,12 +161,6 @@ exports[`Button Button group snapshot 1`] = `
   content: "";
   display: block;
   width: 1px;
-}
-
-.c4 {
-  margin-left: -1px;
-  border: none;
-  border-left: 1px solid rgba(255,255,255,0.2);
 }
 
 <div
@@ -198,6 +199,255 @@ exports[`Button Button group snapshot 1`] = `
     <hr
       class="c4"
     />
+    <button
+      class="c1 c2"
+    >
+      <span
+        class="c3"
+        height="1.8rem"
+        type="oExpandMore"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.59 8.59009L12 13.1701L7.41 8.59009L6 10.0001L12 16.0001L18 10.0001L16.59 8.59009Z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
+<DocumentFragment>
+  .c3 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #002966;
+  background-color: #ffffff;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c4 span {
+  margin-right: 0rem;
+}
+
+.c4 span svg path {
+  fill: #002966;
+}
+
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #0066ff;
+  background-color: #ffffff;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #0066ff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #0066ff;
+}
+
+.c4:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #002966;
+  background-color: #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c2 span {
+  margin-right: 0rem;
+}
+
+.c2 span svg path {
+  fill: #002966;
+}
+
+.c2:hover,
+.c2:active,
+.c2:focus {
+  color: #0066ff;
+  background-color: #ffffff;
+}
+
+.c2:hover svg path,
+.c2:active svg path,
+.c2:focus svg path {
+  fill: #0066ff;
+}
+
+.c2:active,
+.c2:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c2:hover {
+  border: 1px solid #0066ff;
+}
+
+.c2:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c5 .c1 {
+  border-radius: 0rem;
+}
+
+.c5 .c1:first-of-type {
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.c5 .c1:last-of-type {
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.c5 .c1:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  width: 1px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .c1 {
+  border-radius: 0rem;
+}
+
+.c0 .c1:first-of-type {
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.c0 .c1:last-of-type {
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.c0 .c1:not(:last-of-type) {
+  border-right: 0px;
+}
+
+.c0 .c1:hover,
+.c0 .c1:focus {
+  border-right: 1px solid;
+}
+
+.c0 .c1:hover+.c1:focus {
+  margin-left: -1px;
+}
+
+.c0 .c1:focus {
+  box-shadow: 0 0 2px;
+  z-index: 1;
+}
+
+.c0 .c1:hover+.c1,
+.c0 .c1:focus+.c1 {
+  border-left: 0px;
+}
+
+<div
+    class="c0"
+  >
+    <button
+      class="c1 c2"
+    >
+      <span
+        class="c3"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+    </button>
+    <button
+      class="c1 c4"
+    >
+      Dropdown
+    </button>
     <button
       class="c1 c2"
     >

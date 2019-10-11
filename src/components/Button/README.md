@@ -35,6 +35,8 @@ import { Button } from "KnitUI"
 
 Button Group is container which have buttons as it's child and group them together for specific style.
 
+> **_Note:_** Button Group apply largest button's height to all buttons & consider ideal case that all button's are of default type or ghost, not mix of both of them, it works fine with having mix type but separator may have different width than in ideal case
+
 ### Usage
 
 ```javascript
