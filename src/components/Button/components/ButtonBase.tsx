@@ -232,6 +232,7 @@ const StyledButton = styled.button<IStyledBaseButton>`
     svg path {
       fill: ${props => getFontColor("hover", props)};
     }
+    cursor: pointer;
   }
   :active,
   :focus {
