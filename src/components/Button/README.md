@@ -30,3 +30,21 @@ import { Button } from "KnitUI"
 | onClick          | Function                                                              | Yes      | None      | A click handler to be executed on click of the button. Will receive the `event` as an argument                                          |
 | className        | string                                                                | Yes      | None      | CSS class name to be added                                                                                                              |
 | style            | CSS Object                                                            | Yes      | None      | CSS style to be added                                                                                                                   |
+
+# Button Group
+
+Button Group is container which have buttons as it's child and group them together for specific style.
+
+> **_Note:_** Button Group apply largest button's height to all buttons & consider ideal case that all button's are of default type or ghost, not mix of both of them, it works fine with having mix type but separator may have different width than in ideal case
+
+### Usage
+
+```javascript
+import { ButtonGroup } from "KnitUI"
+
+<ButtonGroup>
+  <Button icon="oInfo" />
+  <Button label="Dropdown" />
+  <Button icon="oExpandMore" />
+</ButtonGroup>)
+```

@@ -1,12 +1,13 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import Button from "./"
+import { Button, ButtonGroup } from "./"
 import {
   withKnobs,
   text,
   boolean,
   select,
   object,
+  optionsKnob as options,
 } from "@storybook/addon-knobs"
 import { action } from "@storybook/addon-actions"
 const Readme = require("./README.md")
@@ -192,3 +193,56 @@ stories
       style={object("Style", { backgroundColor: "red" })}
     />
   ))
+  .add("Button Group", () => {
+    // props which should be same for all Buttons in ButtonGroup
+    const type = options("type", typeOptions, "primary", {
+      display: "inline-radio",
+    })
+    const size = options("size", sizeOptions, "medium", {
+      display: "inline-radio",
+    })
+    const colorPreset = options("colorPreset", colorThemeOptions, "neutral", {
+      display: "inline-radio",
+    })
+    const ghost = boolean("ghost", false)
+    const disabled = boolean("disabled", false)
+    const bare = boolean("bare", false)
+
+    return (
+      <ButtonGroup>
+        <Button
+          label={text("Label 1", "")}
+          type={type}
+          size={size}
+          colorPreset={colorPreset}
+          ghost={ghost}
+          disabled={disabled}
+          bare={bare}
+          onClick={action("button-click 1")}
+          icon={text("Icon 1", "oInfo")}
+        />
+        <Button
+          label={text("Label 2", "Dropdown")}
+          type={type}
+          size={size}
+          colorPreset={colorPreset}
+          ghost={ghost}
+          disabled={disabled}
+          bare={bare}
+          onClick={action("button-click 2")}
+          icon={text("Icon 2", "")}
+        />
+        <Button
+          label={text("Label 3", "")}
+          type={type}
+          size={size}
+          colorPreset={colorPreset}
+          ghost={ghost}
+          disabled={disabled}
+          bare={bare}
+          onClick={action("button-click 3")}
+          icon={text("Icon 3", "oExpandMore")}
+        />
+      </ButtonGroup>
+    )
+  })
