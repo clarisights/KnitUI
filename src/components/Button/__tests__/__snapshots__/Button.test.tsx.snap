@@ -512,6 +512,7 @@ exports[`Button renders with a custom color object correctly 1`] = `
 .c0:focus {
   color: #873421;
   background-color: #ed12f1;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -582,6 +583,7 @@ exports[`Button renders with a custom color object correctly 2`] = `
 .c0:focus {
   color: #873421;
   background-color: #ed12f1;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -652,6 +654,7 @@ exports[`Button renders with a custom color object correctly 3`] = `
 .c0:focus {
   color: #873421;
   background-color: #ed12f1;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -722,6 +725,7 @@ exports[`Button renders with a custom color theme correctly 1`] = `
 .c0:focus {
   color: #1a1a1a;
   background-color: #ed12f1;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -792,6 +796,7 @@ exports[`Button renders with a custom color theme correctly 2`] = `
 .c0:focus {
   color: #1a1a1a;
   background-color: #ed12f1;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -862,6 +867,7 @@ exports[`Button renders with a custom color theme correctly 3`] = `
 .c0:focus {
   color: #1a1a1a;
   background-color: #ed12f1;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -932,6 +938,7 @@ exports[`Button renders with a specified color preset correctly 1`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #cc0000;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1002,6 +1009,7 @@ exports[`Button renders with a specified color preset correctly 2`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #cc0000;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1072,6 +1080,7 @@ exports[`Button renders with a specified color preset correctly 3`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #cc0000;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1142,6 +1151,7 @@ exports[`Button renders with inset correctly 1`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1231,6 +1241,7 @@ exports[`Button renders with inset correctly 2`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1320,6 +1331,7 @@ exports[`Button renders with inset correctly 3`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1416,6 +1428,7 @@ exports[`Button renders with text and an icon correctly 1`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1511,6 +1524,7 @@ exports[`Button renders with text and an icon correctly 2`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1606,6 +1620,7 @@ exports[`Button renders with text and an icon correctly 3`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1701,6 +1716,7 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1815,6 +1831,7 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -1929,6 +1946,7 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2036,6 +2054,7 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
 .c0:focus {
   color: #003d99;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2106,6 +2125,7 @@ exports[`Button with size large renders a ghost variant correctly 1`] = `
 .c0:focus {
   color: #0066ff;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2176,6 +2196,7 @@ exports[`Button with size large renders a primary variant with a label correctly
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2246,6 +2267,7 @@ exports[`Button with size large renders a primary variant with a label correctly
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2323,6 +2345,7 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
 .c0:focus {
   color: #003d99;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2418,6 +2441,7 @@ exports[`Button with size large renders with an icon correctly 1`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2506,6 +2530,7 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
 .c0:focus {
   color: #003d99;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2576,6 +2601,7 @@ exports[`Button with size medium renders a ghost variant correctly 1`] = `
 .c0:focus {
   color: #0066ff;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2646,6 +2672,7 @@ exports[`Button with size medium renders a primary variant with a label correctl
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2716,6 +2743,7 @@ exports[`Button with size medium renders a primary variant with a label correctl
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2793,6 +2821,7 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
 .c0:focus {
   color: #003d99;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2888,6 +2917,7 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -2976,6 +3006,7 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
 .c0:focus {
   color: #003d99;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -3046,6 +3077,7 @@ exports[`Button with size small renders a ghost variant correctly 1`] = `
 .c0:focus {
   color: #0066ff;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -3116,6 +3148,7 @@ exports[`Button with size small renders a primary variant with a label correctly
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -3186,6 +3219,7 @@ exports[`Button with size small renders a primary variant with a label correctly
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -3263,6 +3297,7 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
 .c0:focus {
   color: #003d99;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
@@ -3358,6 +3393,7 @@ exports[`Button with size small renders with an icon correctly 1`] = `
 .c0:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c0:hover svg path,
