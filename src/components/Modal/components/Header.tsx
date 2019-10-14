@@ -8,7 +8,7 @@ import { IStyled, fontSizeType } from "../../../common/types"
  * the places instead of having them duplicated.
  */
 interface HeaderProps {
-  title: string
+  leftSection: ReactNode
   fontSize?: fontSizeType
   rightSection?: ReactNode
   noFill?: boolean
@@ -36,9 +36,31 @@ const getLineHeight = (props: IStyledHeaderProps) => {
   return knitui.typography[typographySize].lineHeight
 }
 
+const getFontColor = (props: IStyledHeaderProps, color: string) => {
+  const {
+    theme: { knitui },
+  } = props
+
+  return knitui.chromaPalette[color].hex()
+}
+
 const getMinHeight = (props: IStyledHeaderProps) => {
   const lineHeight = getLineHeight(props)
   return lineHeight + 2 * VERTICAL_PADDING
+}
+
+const getHeadingStyle = (props: IStyledHeaderProps) => {
+  const headingFontSize = getFontSize(props)
+  const headingLineHeight = `${getLineHeight(props)}rem`
+  const color = getFontColor(props, "Neutral80")
+  const style = props.addHeadingStyle
+    ? `
+      font-size: ${headingFontSize};
+      line-height: ${headingLineHeight};
+      color: ${color};
+      margin-right: 1.4rem;`
+    : ``
+  return style
 }
 
 const Container = styled.div<IStyledHeaderProps>`
@@ -53,11 +75,14 @@ const Container = styled.div<IStyledHeaderProps>`
     noFill ? knitui.modalBorder : "none"};
   min-height: ${props => `${getMinHeight(props)}rem`};
 `
-const TitleSection = styled.div<IStyledHeaderProps>`
-  font-size: ${props => getFontSize(props)};
-  line-height: ${props => `${getLineHeight(props)}rem`};
-  color: ${({ theme: { knitui } }) => knitui.chromaPalette.Neutral80};
-  margin-right: 1.4rem;
+const LeftSection = styled.div<IStyledHeaderProps>`
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+
+  /** If leftSection is simply string, add style of heading
+   else user passed Element should have style itself. */
+  ${props => getHeadingStyle(props)}
 `
 
 const RightSection = styled.div`
@@ -67,11 +92,14 @@ const RightSection = styled.div`
 `
 
 const Header: React.FC<HeaderProps> = props => {
-  const { title, rightSection } = props
+  const { leftSection, rightSection } = props
   const scProps = { customProps: props }
+  const isString = typeof leftSection === "string"
   return (
     <Container {...scProps}>
-      <TitleSection {...scProps}>{title}</TitleSection>
+      <LeftSection addHeadingStyle={isString} {...scProps}>
+        {leftSection}
+      </LeftSection>
       <RightSection>{rightSection}</RightSection>
     </Container>
   )

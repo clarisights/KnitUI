@@ -4,7 +4,13 @@ import { fontSizeType } from "../../common/types"
 
 export interface ModalWrapperProps extends BaseComponentProps {
   /** Contents to be rendered in the header section */
-  header: { title: string; fontSize?: fontSizeType, rightSection?: ReactNode, noFill?: boolean }
+  header: {
+    /** leftSection is string, then behave like heading, & styles are added accordingly else passed element */
+    leftSection: ReactNode
+    fontSize?: fontSizeType
+    rightSection?: ReactNode
+    noFill?: boolean
+  }
   /** Contents to be rendered on in the body section */
   body: ReactNode
   /** Contents to be rendered on in the footer section */
