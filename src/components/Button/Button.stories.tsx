@@ -294,3 +294,51 @@ stories
       </Button.Group>
     )
   })
+  .add("Button Group Custom Style & Classname", () => {
+    const defaultStyle = {
+      border: "1px solid red",
+      borderRadius: "4px",
+    }
+    const style = object("style", defaultStyle)
+    const className = text("text", "HelloGroup")
+
+    // props which should be same for all Buttons in ButtonGroup
+    const type = options("type", typeOptions, "primary", {
+      display: "inline-radio",
+    })
+    const size = options("size", sizeOptions, "medium", {
+      display: "inline-radio",
+    })
+    const colorPreset = options("colorPreset", colorThemeOptions, "neutral", {
+      display: "inline-radio",
+    })
+    const ghost = boolean("ghost", false)
+    const disabled = boolean("disabled", false)
+    const bare = boolean("bare", false)
+    return (
+      <ButtonGroup style={style} className={className}>
+        <Button
+          label={text("Label 2", "Dropdown")}
+          type={type}
+          size={size}
+          colorPreset={colorPreset}
+          ghost={ghost}
+          disabled={disabled}
+          bare={bare}
+          onClick={action("button-click 2")}
+          icon={text("Icon 2", "")}
+        />
+        <Button
+          label={text("Label 3", "")}
+          type={type}
+          size={size}
+          colorPreset={colorPreset}
+          ghost={ghost}
+          disabled={disabled}
+          bare={bare}
+          onClick={action("button-click 3")}
+          icon={text("Icon 3", "oExpandMore")}
+        />
+      </ButtonGroup>
+    )
+  })
