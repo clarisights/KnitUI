@@ -7,6 +7,7 @@ import {
   boolean,
   select,
   object,
+  optionsKnob as options,
 } from "@storybook/addon-knobs"
 import { action } from "@storybook/addon-actions"
 const Readme = require("./README.md")
@@ -193,37 +194,52 @@ stories
     />
   ))
   .add("Button Group", () => {
+    // props which should be same for all Buttons in ButtonGroup
+    const type = options("type", typeOptions, "primary", {
+      display: "inline-radio",
+    })
+    const size = options("size", sizeOptions, "medium", {
+      display: "inline-radio",
+    })
+    const colorPreset = options("colorPreset", colorThemeOptions, "neutral", {
+      display: "inline-radio",
+    })
+    const ghost = boolean("ghost", false)
+    const disabled = boolean("disabled", false)
+    const bare = boolean("bare", false)
+
     return (
       <ButtonGroup>
         <Button
           label={text("Label 1", "")}
-          type={select("Type 1", typeOptions, "primary")}
-          size={select("Size 1", sizeOptions, "medium")}
-          colorPreset={select("Color preset 1", colorThemeOptions, "neutral")}
-          ghost={boolean("Ghost 1", false)}
-          disabled={boolean("Disabled 1", false)}
-          bare={boolean("Bare 1", false)}
+          type={type}
+          size={size}
+          colorPreset={colorPreset}
+          ghost={ghost}
+          disabled={disabled}
+          bare={bare}
           onClick={action("button-click 1")}
           icon={text("Icon 1", "oInfo")}
         />
         <Button
           label={text("Label 2", "Dropdown")}
-          type={select("Type 2", typeOptions, "primary")}
-          size={select("Size 2", sizeOptions, "medium")}
-          colorPreset={select("Color preset 2", colorThemeOptions, "neutral")}
-          ghost={boolean("Ghost 2", false)}
-          disabled={boolean("Disabled 2", false)}
-          bare={boolean("Bare 2", false)}
+          type={type}
+          size={size}
+          colorPreset={colorPreset}
+          ghost={ghost}
+          disabled={disabled}
+          bare={bare}
           onClick={action("button-click 2")}
+          icon={text("Icon 2", "")}
         />
         <Button
           label={text("Label 3", "")}
-          type={select("Type 3", typeOptions, "primary")}
-          size={select("Size 3", sizeOptions, "medium")}
-          colorPreset={select("Color preset 3", colorThemeOptions, "neutral")}
-          ghost={boolean("Ghost 3", false)}
-          disabled={boolean("Disabled 3", false)}
-          bare={boolean("Bare 3", false)}
+          type={type}
+          size={size}
+          colorPreset={colorPreset}
+          ghost={ghost}
+          disabled={disabled}
+          bare={bare}
           onClick={action("button-click 3")}
           icon={text("Icon 3", "oExpandMore")}
         />
