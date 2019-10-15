@@ -2,9 +2,25 @@ import { ReactNode } from "react"
 import { BaseComponentProps } from "../../common/types"
 import { fontSizeType } from "../../common/types"
 
+export interface TitleProps {
+  title: string
+  // FontSize is optional with default value 2rem
+  fontSize?: fontSizeType
+}
+
+export interface HeaderProps {
+  /** LeftSection can be either Title with string passed in object, or
+   * ReactNode.
+   * @type {TitleProps | ReactNode}
+   */
+  leftSection: TitleProps | ReactNode
+  rightSection?: ReactNode
+  noFill?: boolean
+}
+
 export interface ModalWrapperProps extends BaseComponentProps {
   /** Contents to be rendered in the header section */
-  header: { title: string; fontSize?: fontSizeType, rightSection?: ReactNode, noFill?: boolean }
+  header: HeaderProps
   /** Contents to be rendered on in the body section */
   body: ReactNode
   /** Contents to be rendered on in the footer section */

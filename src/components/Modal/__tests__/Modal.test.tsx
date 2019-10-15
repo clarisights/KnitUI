@@ -15,7 +15,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ title: "Title" }}
+              header={{ leftSection: { title: "Title" } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -34,7 +34,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ title: "Title", noFill: true }}
+              header={{ leftSection: { title: "Title" }, noFill: true }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -53,7 +53,26 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ title: "Title", fontSize: 12 }}
+              header={{ leftSection: { title: "Title", fontSize: 12 } }}
+              body={<div>Body</div>}
+              footer={<div>Footer</div>}
+              size="medium"
+              visible
+              onClose={() => {}}
+            />
+          </ThemeProvider>
+        )
+        const dialogContainer = container.parentElement!.querySelector(
+          ".rc-dialog-wrap"
+        )
+        expect(dialogContainer).toMatchSnapshot()
+      })
+
+      it("with left section in header", () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Modal
+              header={{ leftSection: <div>The left section</div> }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -73,7 +92,7 @@ describe("Modal", () => {
           <ThemeProvider>
             <Modal
               header={{
-                title: "Title",
+                leftSection: { title: "Title" },
                 rightSection: (
                   <div>
                     <div>The right section</div>
@@ -98,7 +117,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ title: "Title" }}
+              header={{ leftSection: { title: "Title" } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -118,7 +137,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ title: "Title" }}
+              header={{ leftSection: { title: "Title" } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -138,7 +157,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ title: "Title" }}
+              header={{ leftSection: { title: "Title" } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -161,7 +180,7 @@ describe("Modal", () => {
     const { container } = render(
       <ThemeProvider>
         <Modal
-          header={{ title: "Title" }}
+          header={{ leftSection: { title: "Title" } }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
           size="medium"
@@ -184,7 +203,7 @@ describe("Modal", () => {
       <ThemeProvider>
         <Modal
           header={{
-            title: "Title",
+            leftSection: { title: "Title" },
             rightSection: (
               <div>
                 <div>The right section</div>
@@ -209,7 +228,7 @@ describe("Modal", () => {
     const { container } = render(
       <ThemeProvider>
         <Modal
-          header={{ title: "Title" }}
+          header={{ leftSection: { title: "Title" } }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
           visible
@@ -229,7 +248,7 @@ describe("Modal", () => {
       <ThemeProvider>
         <Modal
           padding={{ vertical: "0px", horizontal: "0px" }}
-          header={{ title: "Title" }}
+          header={{ leftSection: { title: "Title" } }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
           visible
