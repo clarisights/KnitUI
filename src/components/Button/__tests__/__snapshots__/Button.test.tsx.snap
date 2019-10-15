@@ -45,6 +45,7 @@ exports[`Button Group :  Button group : snapshot 1`] = `
 .c5:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c5:hover svg path,
@@ -105,6 +106,7 @@ exports[`Button Group :  Button group : snapshot 1`] = `
 .c2:focus {
   color: #ffffff;
   background-color: #003d99;
+  cursor: pointer;
 }
 
 .c2:hover svg path,
@@ -137,10 +139,10 @@ exports[`Button Group :  Button group : snapshot 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .c1 {
@@ -270,6 +272,7 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
 .c4:focus {
   color: #0066ff;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .c4:hover svg path,
@@ -330,6 +333,7 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
 .c2:focus {
   color: #0066ff;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .c2:hover svg path,
@@ -375,10 +379,10 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .c1 {

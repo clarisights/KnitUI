@@ -1,8 +1,9 @@
 import React, { ReactNode, ReactElement } from "react"
 import styled from "styled-components"
 import { ButtonBase } from "./components"
+import { BaseComponentProps } from "../../common/types"
 
-const getStyleForGhostButtons = props => {
+const getStyleForGhostButtons = (props: ButtonGroupWrapperProps) => {
   const style = props.isAllGhost
     ? `
         & ${ButtonBase}:not(:last-of-type){
@@ -39,12 +40,13 @@ const StyledVerticalBar = styled.hr`
   z-index: 1;
 `
 
-type ButtonGroupWrapperProps = {
+interface ButtonGroupWrapperProps extends ButtonGroupProps {
   isAllGhost: boolean
-  children: ReactNode
 }
 const ButtonGroupWrapper = styled.div<ButtonGroupWrapperProps>`
-  display: flex;
+  //To have width equal to all of it's child component.
+  display: inline-flex;
+
   & ${ButtonBase} {
     border-radius: 0rem;
   }
@@ -61,9 +63,13 @@ const ButtonGroupWrapper = styled.div<ButtonGroupWrapperProps>`
   ${props => getStyleForGhostButtons(props)}
 `
 
-const ButtonGroup: React.FC = props => {
+interface ButtonGroupProps extends BaseComponentProps {
+  children: ReactNode
+  [htmlProp: string]: any
+}
+const ButtonGroup: React.FC<ButtonGroupProps> = props => {
   const childrenCount = React.Children.count(props.children)
-
+  const { children, ...rest } = props
   let countGhost = 0
   React.Children.forEach(props.children, (child: ReactElement, i) => {
     if (child.props.ghost) countGhost += 1
@@ -71,7 +77,7 @@ const ButtonGroup: React.FC = props => {
 
   const isAllGhost = countGhost === childrenCount ? true : false
   return (
-    <ButtonGroupWrapper isAllGhost={isAllGhost}>
+    <ButtonGroupWrapper isAllGhost={isAllGhost} {...rest}>
       {React.Children.map(props.children, (child: ReactElement, i: Number) =>
         i == childrenCount - 1 ? (
           child
