@@ -1,18 +1,7 @@
 import React, { ReactNode } from "react"
 import styled from "styled-components"
 import { IStyled, fontSizeType } from "../../../common/types"
-
-/**
- * This type definintion has common elments from the parent (ModalWrapper)
- * Ideally we need to find a way to resue the same type definition in both
- * the places instead of having them duplicated.
- */
-interface HeaderProps {
-  leftSection: ReactNode
-  fontSize?: fontSizeType
-  rightSection?: ReactNode
-  noFill?: boolean
-}
+import { HeaderProps, TitleProps } from "../types"
 
 type IStyledHeaderProps = IStyled<HeaderProps>
 
@@ -20,19 +9,21 @@ const VERTICAL_PADDING = 1.4
 
 const getFontSize = (props: IStyledHeaderProps) => {
   const {
-    customProps: { fontSize },
+    customProps: { leftSection },
     theme: { knitui },
   } = props
-  const typographySize = fontSize || knitui.modalTitleTypographySize
+  const typographySize =
+    (leftSection as TitleProps).fontSize || knitui.modalTitleTypographySize
   return `${knitui.typography[typographySize].fontSize}rem`
 }
 
 const getLineHeight = (props: IStyledHeaderProps) => {
   const {
-    customProps: { fontSize },
+    customProps: { leftSection },
     theme: { knitui },
   } = props
-  const typographySize = fontSize || knitui.modalTitleTypographySize
+  const typographySize =
+    (leftSection as TitleProps).fontSize || knitui.modalTitleTypographySize
   return knitui.typography[typographySize].lineHeight
 }
 
@@ -94,11 +85,11 @@ const RightSection = styled.div`
 const Header: React.FC<HeaderProps> = props => {
   const { leftSection, rightSection } = props
   const scProps = { customProps: props }
-  const isString = typeof leftSection === "string"
+  const isTitle = !!(leftSection as TitleProps).title
   return (
     <Container {...scProps}>
-      <LeftSection addHeadingStyle={isString} {...scProps}>
-        {leftSection}
+      <LeftSection addHeadingStyle={isTitle} {...scProps}>
+        {isTitle ? (leftSection as TitleProps).title : leftSection}
       </LeftSection>
       <RightSection>{rightSection}</RightSection>
     </Container>

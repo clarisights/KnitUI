@@ -2,9 +2,8 @@ import React, { useState, useContext, ReactNode } from "react"
 import styled from "styled-components"
 import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
-import { ModalWrapperProps, IStyledDialog } from "./types"
+import { ModalWrapperProps, IStyledDialog, TitleProps } from "./types"
 import { ThemeContext } from "styled-components"
-
 import { Header, Footer, Main } from "./components"
 import {
   Modal,
@@ -159,7 +158,9 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
 
   const themeContext = useContext(ThemeContext)
   const { knitui } = themeContext
-  const typographySize = header.fontSize || knitui.modalTitleTypographySize
+  const typographySize =
+    (header.leftSection as TitleProps).fontSize ||
+    knitui.modalTitleTypographySize
   const lineHeight = knitui.typography[typographySize].lineHeight
   const verticalPadding = knitui.modalHeaderPadding.vertical
   const headerHeight = lineHeight + 2 * verticalPadding

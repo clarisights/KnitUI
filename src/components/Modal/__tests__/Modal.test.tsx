@@ -15,7 +15,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ leftSection: "Title" }}
+              header={{ leftSection: { title: "Title" } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -34,7 +34,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ leftSection: "Title", noFill: true }}
+              header={{ leftSection: { title: "Title" }, noFill: true }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -53,7 +53,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ leftSection: "Title", fontSize: 12 }}
+              header={{ leftSection: { title: "Title", fontSize: 12 } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -92,7 +92,7 @@ describe("Modal", () => {
           <ThemeProvider>
             <Modal
               header={{
-                leftSection: "Title",
+                leftSection: { title: "Title" },
                 rightSection: (
                   <div>
                     <div>The right section</div>
@@ -117,7 +117,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ leftSection: "Title" }}
+              header={{ leftSection: { title: "Title" } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -137,7 +137,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ leftSection: "Title" }}
+              header={{ leftSection: { title: "Title" } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -157,7 +157,7 @@ describe("Modal", () => {
         const { container } = render(
           <ThemeProvider>
             <Modal
-              header={{ leftSection: "Title" }}
+              header={{ leftSection: { title: "Title" } }}
               body={<div>Body</div>}
               footer={<div>Footer</div>}
               size="medium"
@@ -180,7 +180,7 @@ describe("Modal", () => {
     const { container } = render(
       <ThemeProvider>
         <Modal
-          header={{ leftSection: "Title" }}
+          header={{ leftSection: { title: "Title" } }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
           size="medium"
@@ -203,7 +203,7 @@ describe("Modal", () => {
       <ThemeProvider>
         <Modal
           header={{
-            leftSection: "Title",
+            leftSection: { title: "Title" },
             rightSection: (
               <div>
                 <div>The right section</div>
@@ -228,7 +228,7 @@ describe("Modal", () => {
     const { container } = render(
       <ThemeProvider>
         <Modal
-          header={{ leftSection: "Title" }}
+          header={{ leftSection: { title: "Title" } }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
           visible
@@ -248,7 +248,7 @@ describe("Modal", () => {
       <ThemeProvider>
         <Modal
           padding={{ vertical: "0px", horizontal: "0px" }}
-          header={{ leftSection: "Title" }}
+          header={{ leftSection: { title: "Title" } }}
           body={<div>Body</div>}
           footer={<div>Footer</div>}
           visible
