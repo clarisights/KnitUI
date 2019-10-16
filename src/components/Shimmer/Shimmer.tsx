@@ -1,15 +1,12 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import { BaseComponentProps } from "../../common/types"
 
 type heightType = "small" | "medium" | "large"
 
-export interface IShimmerProps {
+export interface IShimmerProps extends BaseComponentProps {
   /** This is a placeholder description */
   height?: heightType
-  /** className */
-  className?: string
-  /** style */
-  style?: {}
 }
 
 const shim = keyframes`
