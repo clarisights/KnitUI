@@ -1,6 +1,6 @@
 {
   "name": "knit-ui",
-  "version": "0.4.7",
+  "version": "0.4.9",
   "description": "Component library for Clarisights",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "test": "jest --verbose=false --no-cache",
+    "test:coverage": "jest --coverage --verbose=false --no-cache",
     "prebuild": "rm -rf build",
     "build": "npm run dts:generate; npm run dts:bundle; npm-run-all --parallel build:cjs build:es; cp package.json build",
     "build:cjs": "NODE_ENV=production babel --extensions .ts,.tsx,.js,.jsx src --out-dir build/lib --ignore **/*.test.tsx,**/__tests__,**/__mocks__,**/*.spec.*,**/__snapshots__,**/*.stories.tsx,**/*.md && cp -r src/common/assets build/es/common/assets && cp -r src/common/assets build/lib/common/assets",
