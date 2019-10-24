@@ -1,9 +1,10 @@
 import React from "react"
-import Modal from "../index"
+import Modal, { Header, Body, Footer } from "../index"
 import { render, cleanup, fireEvent } from "react-testing-library"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
 import { ThemeProvider } from "../../../common/styles"
+import { Panel } from "../wrappers/Panel"
 
 afterEach(cleanup)
 
@@ -14,97 +15,15 @@ describe("Modal", () => {
       it("with simple config", () => {
         const { container } = render(
           <ThemeProvider>
-            <Modal
-              header={{ leftSection: { title: "Title" } }}
-              body={<div>Body</div>}
-              footer={<div>Footer</div>}
-              size="medium"
-              visible
-              onClose={() => {}}
-            />
-          </ThemeProvider>
-        )
-        const dialogContainer = container.parentElement!.querySelector(
-          ".rc-dialog-wrap"
-        )
-        expect(dialogContainer).toMatchSnapshot()
-      })
-
-      it("with no fill", () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Modal
-              header={{ leftSection: { title: "Title" }, noFill: true }}
-              body={<div>Body</div>}
-              footer={<div>Footer</div>}
-              size="medium"
-              visible
-              onClose={() => {}}
-            />
-          </ThemeProvider>
-        )
-        const dialogContainer = container.parentElement!.querySelector(
-          ".rc-dialog-wrap"
-        )
-        expect(dialogContainer).toMatchSnapshot()
-      })
-
-      it("with custom title size", () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Modal
-              header={{ leftSection: { title: "Title", fontSize: 12 } }}
-              body={<div>Body</div>}
-              footer={<div>Footer</div>}
-              size="medium"
-              visible
-              onClose={() => {}}
-            />
-          </ThemeProvider>
-        )
-        const dialogContainer = container.parentElement!.querySelector(
-          ".rc-dialog-wrap"
-        )
-        expect(dialogContainer).toMatchSnapshot()
-      })
-
-      it("with left section in header", () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Modal
-              header={{ leftSection: <div>The left section</div> }}
-              body={<div>Body</div>}
-              footer={<div>Footer</div>}
-              size="medium"
-              visible
-              onClose={() => {}}
-            />
-          </ThemeProvider>
-        )
-        const dialogContainer = container.parentElement!.querySelector(
-          ".rc-dialog-wrap"
-        )
-        expect(dialogContainer).toMatchSnapshot()
-      })
-
-      it("with right section in header", () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Modal
-              header={{
-                leftSection: { title: "Title" },
-                rightSection: (
-                  <div>
-                    <div>The right section</div>
-                  </div>
-                ),
-              }}
-              body={<div>Body</div>}
-              footer={<div>Footer</div>}
-              size="medium"
-              visible
-              onClose={() => {}}
-            />
+            <Modal size="medium" visible onClose={() => {}}>
+              <Header>Title</Header>
+              <Body>
+                <div>Body</div>
+              </Body>
+              <Footer>
+                <div>Footer</div>
+              </Footer>
+            </Modal>
           </ThemeProvider>
         )
         const dialogContainer = container.parentElement!.querySelector(
@@ -116,15 +35,18 @@ describe("Modal", () => {
       it("with a right panel", () => {
         const { container } = render(
           <ThemeProvider>
-            <Modal
-              header={{ leftSection: { title: "Title" } }}
-              body={<div>Body</div>}
-              footer={<div>Footer</div>}
-              size="medium"
-              visible
-              onClose={() => {}}
-              panel={{ position: "right", content: <div>Panel content</div> }}
-            />
+            <Modal size="medium" visible onClose={() => {}} panel="right">
+              <Header>Title</Header>
+              <Body>
+                <div>Body</div>
+              </Body>
+              <Footer>
+                <div>Footer</div>
+              </Footer>
+              <Panel>
+                <div>Panel content</div>
+              </Panel>
+            </Modal>
           </ThemeProvider>
         )
         const dialogContainer = container.parentElement!.querySelector(
@@ -136,15 +58,18 @@ describe("Modal", () => {
       it("with a left panel", () => {
         const { container } = render(
           <ThemeProvider>
-            <Modal
-              header={{ leftSection: { title: "Title" } }}
-              body={<div>Body</div>}
-              footer={<div>Footer</div>}
-              size="medium"
-              visible
-              onClose={() => {}}
-              panel={{ position: "left", content: <div>Panel content</div> }}
-            />
+            <Modal size="medium" visible onClose={() => {}} panel="left">
+              <Header>Title</Header>
+              <Body>
+                <div>Body</div>
+              </Body>
+              <Footer>
+                <div>Footer</div>
+              </Footer>
+              <Panel>
+                <div>Panel content</div>
+              </Panel>
+            </Modal>
           </ThemeProvider>
         )
         const dialogContainer = container.parentElement!.querySelector(
@@ -156,15 +81,18 @@ describe("Modal", () => {
       it("with a bottom panel", () => {
         const { container } = render(
           <ThemeProvider>
-            <Modal
-              header={{ leftSection: { title: "Title" } }}
-              body={<div>Body</div>}
-              footer={<div>Footer</div>}
-              size="medium"
-              visible
-              onClose={() => {}}
-              panel={{ position: "bottom", content: <div>Panel content</div> }}
-            />
+            <Modal size="medium" visible onClose={() => {}} panel="bottom">
+              <Header>Title</Header>
+              <Body>
+                <div>Body</div>
+              </Body>
+              <Footer>
+                <div>Footer</div>
+              </Footer>
+              <Panel>
+                <div>Panel content</div>
+              </Panel>
+            </Modal>
           </ThemeProvider>
         )
         const dialogContainer = container.parentElement!.querySelector(
@@ -179,14 +107,15 @@ describe("Modal", () => {
     const onCloseStub = jest.fn()
     const { container } = render(
       <ThemeProvider>
-        <Modal
-          header={{ leftSection: { title: "Title" } }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
-          size="medium"
-          visible
-          onClose={onCloseStub}
-        />
+        <Modal size="medium" visible onClose={onCloseStub}>
+          <Header>Title</Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
+            <div>Footer</div>
+          </Footer>
+        </Modal>
       </ThemeProvider>
     )
 
@@ -201,21 +130,15 @@ describe("Modal", () => {
   it("with a custom style", () => {
     const { container } = render(
       <ThemeProvider>
-        <Modal
-          header={{
-            leftSection: { title: "Title" },
-            rightSection: (
-              <div>
-                <div>The right section</div>
-              </div>
-            ),
-          }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
-          visible
-          style={{ color: "red" }}
-          onClose={() => {}}
-        />
+        <Modal visible style={{ color: "red" }} onClose={() => {}}>
+          <Header>Title</Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
+            <div>Footer</div>
+          </Footer>
+        </Modal>
       </ThemeProvider>
     )
     const dialog = container.parentElement!.querySelector(
@@ -227,14 +150,15 @@ describe("Modal", () => {
   it("with a custom class", () => {
     const { container } = render(
       <ThemeProvider>
-        <Modal
-          header={{ leftSection: { title: "Title" } }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
-          visible
-          className="custom-class"
-          onClose={() => {}}
-        />
+        <Modal visible className="custom-class" onClose={() => {}}>
+          <Header>Title</Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
+            <div>Footer</div>
+          </Footer>
+        </Modal>
       </ThemeProvider>
     )
     const dialog = container.parentElement!.querySelector(
@@ -248,13 +172,17 @@ describe("Modal", () => {
       <ThemeProvider>
         <Modal
           padding={{ vertical: "0px", horizontal: "0px" }}
-          header={{ leftSection: { title: "Title" } }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
           visible
           className="custom-class"
-          onClose={() => {}}
-        />
+          onClose={() => {}}>
+          <Header>Title</Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
+            <div>Footer</div>
+          </Footer>
+        </Modal>
       </ThemeProvider>
     )
     const dialogContainer = container.parentElement!.querySelector(
