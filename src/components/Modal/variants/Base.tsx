@@ -7,6 +7,7 @@ import { getChildrenWithTypes } from "../helpers"
 const BaseModal: React.FC<ModalProps> = ({
   maxContentHeight,
   minContentHeight,
+  padding,
   children,
 }) => {
   const childrenArray = React.Children.toArray(children)
@@ -16,7 +17,7 @@ const BaseModal: React.FC<ModalProps> = ({
       <Header>{childrenToRender["header"]}</Header>
       <VerticalLayoutContent
         customProps={{ maxContentHeight, minContentHeight }}>
-        <Main>{childrenToRender["body"]}</Main>
+        <Main customProps={{ padding }}>{childrenToRender["body"]}</Main>
         <Footer>{childrenToRender["footer"]}</Footer>
       </VerticalLayoutContent>
     </BaseLayout>

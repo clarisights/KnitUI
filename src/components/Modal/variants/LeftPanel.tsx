@@ -9,6 +9,7 @@ const LeftPanelModal: React.FC<PanelModalProps> = ({
   maxContentHeight,
   minContentHeight,
   children,
+  padding,
 }) => {
   const childrenArray = React.Children.toArray(children)
   const childrenToRender = getChildrenWithTypes(childrenArray)
@@ -20,7 +21,7 @@ const LeftPanelModal: React.FC<PanelModalProps> = ({
           {childrenToRender["panel"]}
         </PanelSection>
         <Content>
-          <Main>{childrenToRender["body"]}</Main>
+          <Main customProps={{ padding }}>{childrenToRender["body"]}</Main>
           <Footer>{childrenToRender["footer"]}</Footer>
         </Content>
       </Layout>

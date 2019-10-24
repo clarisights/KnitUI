@@ -18,8 +18,8 @@ const StyledMain = styled.div<IStyledDialog>`
   flex: 1 1 auto;
 `
 
-function Main({ children, padding }) {
-  return <StyledMain customProps={{ padding }}>{children}</StyledMain>
+function Main({ children, customProps = {} }) {
+  return <StyledMain customProps={customProps}>{children}</StyledMain>
 }
 
 Main.defaultProps = {
