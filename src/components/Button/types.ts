@@ -3,7 +3,7 @@ import {
   CustomColor,
   BaseComponentProps,
 } from "../../common/types"
-import { SyntheticEvent } from "react"
+import { SyntheticEvent, ReactNode } from "react"
 
 export interface ParsedColorTheme {
   background: any
@@ -50,4 +50,13 @@ export interface BaseButtonProps extends ButtonBaseProps {
   colorTheme: ParsedColorTheme
   fontSize: number
   lineHeight: number
+}
+
+export interface ButtonGroupProps extends BaseComponentProps {
+  children: ReactNode
+  [htmlProp: string]: any
+}
+
+export interface ButtonWrapperInterface<T> extends React.FC<T> {
+  Group: React.FunctionComponent<ButtonGroupProps>
 }

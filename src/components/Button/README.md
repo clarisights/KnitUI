@@ -40,11 +40,11 @@ Button Group is container which have buttons as it's child and group them togeth
 ### Usage
 
 ```javascript
-import { ButtonGroup } from "KnitUI"
+import { Button } from "KnitUI"
 
-<ButtonGroup>
+<Button.Group>
   <Button icon="oInfo" />
   <Button label="Dropdown" />
   <Button icon="oExpandMore" />
-</ButtonGroup>)
+</Button.Group>)
 ```

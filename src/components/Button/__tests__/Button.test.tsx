@@ -1,5 +1,5 @@
 import React from "react"
-import { Button, ButtonGroup } from ".."
+import Button from "../"
 import { render, cleanup, fireEvent } from "react-testing-library"
 import { ThemeProvider } from "../../../common/styles"
 import "jest-styled-components"
@@ -177,11 +177,11 @@ describe("Button Group : ", () => {
   it("Button group : snapshot", () => {
     const { asFragment } = render(
       <ThemeProvider>
-        <ButtonGroup>
+        <Button.Group>
           <Button icon="oInfo" />
           <Button label="Dropdown" />
           <Button icon="oExpandMore" />
-        </ButtonGroup>
+        </Button.Group>
       </ThemeProvider>
     )
     expect(asFragment()).toMatchSnapshot()
@@ -189,11 +189,11 @@ describe("Button Group : ", () => {
   it("Button group with all ghost buttons : snapshot", () => {
     const { asFragment } = render(
       <ThemeProvider>
-        <ButtonGroup>
+        <Button.Group>
           <Button icon="oInfo" ghost />
           <Button label="Dropdown" ghost />
           <Button icon="oExpandMore" ghost />
-        </ButtonGroup>
+        </Button.Group>
       </ThemeProvider>
     )
     expect(asFragment()).toMatchSnapshot()

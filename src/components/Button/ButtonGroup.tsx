@@ -1,7 +1,7 @@
 import React, { ReactNode, ReactElement } from "react"
 import styled from "styled-components"
 import { ButtonBase } from "./components"
-import { BaseComponentProps } from "../../common/types"
+import { ButtonGroupProps } from "./types"
 
 const getStyleForGhostButtons = (props: ButtonGroupWrapperProps) => {
   const style = props.isAllGhost
@@ -63,19 +63,17 @@ const ButtonGroupWrapper = styled.div<ButtonGroupWrapperProps>`
   ${props => getStyleForGhostButtons(props)}
 `
 
-interface ButtonGroupProps extends BaseComponentProps {
-  children: ReactNode
-  [htmlProp: string]: any
-}
 const ButtonGroup: React.FC<ButtonGroupProps> = props => {
-  const childrenCount = React.Children.count(props.children)
   const { children, ...rest } = props
+
+  const childrenCount = React.Children.count(children)
   let countGhost = 0
-  React.Children.forEach(props.children, (child: ReactElement, i) => {
+  React.Children.forEach(children, (child: ReactElement, i) => {
     if (child.props.ghost) countGhost += 1
   })
 
   const isAllGhost = countGhost === childrenCount ? true : false
+
   return (
     <ButtonGroupWrapper isAllGhost={isAllGhost} {...rest}>
       {React.Children.map(props.children, (child: ReactElement, i: Number) =>
