@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal with overriden padding 1`] = `
-.c7 {
+.c5 {
   padding: 0px 0px;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -21,41 +21,7 @@ exports[`Modal with overriden padding 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -73,7 +39,7 @@ exports[`Modal with overriden padding 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -232,27 +198,20 @@ exports[`Modal with overriden padding 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
@@ -272,7 +231,7 @@ exports[`Modal with overriden padding 1`] = `
 `;
 
 exports[`Modal with size large with a bottom panel 1`] = `
-.c7 {
+.c5 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -292,41 +251,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -344,7 +269,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -360,7 +285,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c9 {
+.c7 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
@@ -509,34 +434,27 @@ exports[`Modal with size large with a bottom panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
               </div>
             </div>
             <div
-              class="c9"
+              class="c7"
             >
               <div>
                 Panel content
@@ -556,7 +474,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size large with a left panel 1`] = `
-.c9 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -576,41 +494,7 @@ exports[`Modal with size large with a left panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c10 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -628,7 +512,7 @@ exports[`Modal with size large with a left panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -647,7 +531,7 @@ exports[`Modal with size large with a left panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c7 {
+.c5 {
   width: 21rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -656,7 +540,7 @@ exports[`Modal with size large with a left panel 1`] = `
   overflow-y: auto;
 }
 
-.c8 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -813,37 +697,30 @@ exports[`Modal with size large with a left panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Panel content
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div
-                class="c9"
+                class="c7"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c10"
+                class="c8"
               >
                 <div>
                   Footer
@@ -864,7 +741,7 @@ exports[`Modal with size large with a left panel 1`] = `
 `;
 
 exports[`Modal with size large with a right panel 1`] = `
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -884,41 +761,7 @@ exports[`Modal with size large with a right panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
+.c7 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -936,7 +779,7 @@ exports[`Modal with size large with a right panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -955,7 +798,7 @@ exports[`Modal with size large with a right panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c10 {
+.c8 {
   width: 21rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -964,7 +807,7 @@ exports[`Modal with size large with a right panel 1`] = `
   overflow-y: auto;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1121,30 +964,23 @@ exports[`Modal with size large with a right panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div
-                class="c8"
+                class="c6"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c9"
+                class="c7"
               >
                 <div>
                   Footer
@@ -1152,7 +988,7 @@ exports[`Modal with size large with a right panel 1`] = `
               </div>
             </div>
             <div
-              class="c10"
+              class="c8"
             >
               <div>
                 Panel content
@@ -1171,1096 +1007,8 @@ exports[`Modal with size large with a right panel 1`] = `
 </div>
 `;
 
-exports[`Modal with size large with custom title size 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 4.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 18.6rem);
-  min-height: 30.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size large with left section in header 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              <div>
-                The left section
-              </div>
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size large with no fill 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: none;
-  border-bottom: 1px solid #d9d9d9;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size large with right section in header 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            >
-              <div>
-                <div>
-                  The right section
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
 exports[`Modal with size large with simple config 1`] = `
-.c7 {
+.c5 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2280,41 +1028,7 @@ exports[`Modal with size large with simple config 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -2332,7 +1046,7 @@ exports[`Modal with size large with simple config 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2491,27 +1205,20 @@ exports[`Modal with size large with simple config 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
@@ -2531,7 +1238,7 @@ exports[`Modal with size large with simple config 1`] = `
 `;
 
 exports[`Modal with size medium with a bottom panel 1`] = `
-.c7 {
+.c5 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2551,41 +1258,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -2603,7 +1276,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2619,7 +1292,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c9 {
+.c7 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
@@ -2768,34 +1441,27 @@ exports[`Modal with size medium with a bottom panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
               </div>
             </div>
             <div
-              class="c9"
+              class="c7"
             >
               <div>
                 Panel content
@@ -2815,7 +1481,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size medium with a left panel 1`] = `
-.c9 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -2835,41 +1501,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c10 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -2887,7 +1519,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2906,7 +1538,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c7 {
+.c5 {
   width: 21rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -2915,7 +1547,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   overflow-y: auto;
 }
 
-.c8 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3072,37 +1704,30 @@ exports[`Modal with size medium with a left panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Panel content
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div
-                class="c9"
+                class="c7"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c10"
+                class="c8"
               >
                 <div>
                   Footer
@@ -3123,7 +1748,7 @@ exports[`Modal with size medium with a left panel 1`] = `
 `;
 
 exports[`Modal with size medium with a right panel 1`] = `
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -3143,41 +1768,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
+.c7 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -3195,7 +1786,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3214,7 +1805,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c10 {
+.c8 {
   width: 21rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -3223,7 +1814,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   overflow-y: auto;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3380,30 +1971,23 @@ exports[`Modal with size medium with a right panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div
-                class="c8"
+                class="c6"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c9"
+                class="c7"
               >
                 <div>
                   Footer
@@ -3411,7 +1995,7 @@ exports[`Modal with size medium with a right panel 1`] = `
               </div>
             </div>
             <div
-              class="c10"
+              class="c8"
             >
               <div>
                 Panel content
@@ -3430,1096 +2014,8 @@ exports[`Modal with size medium with a right panel 1`] = `
 </div>
 `;
 
-exports[`Modal with size medium with custom title size 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 4.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 18.6rem);
-  min-height: 30.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size medium with left section in header 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              <div>
-                The left section
-              </div>
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size medium with no fill 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: none;
-  border-bottom: 1px solid #d9d9d9;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size medium with right section in header 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            >
-              <div>
-                <div>
-                  The right section
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
 exports[`Modal with size medium with simple config 1`] = `
-.c7 {
+.c5 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -4539,41 +2035,7 @@ exports[`Modal with size medium with simple config 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -4591,7 +2053,7 @@ exports[`Modal with size medium with simple config 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4750,27 +2212,20 @@ exports[`Modal with size medium with simple config 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
@@ -4790,7 +2245,7 @@ exports[`Modal with size medium with simple config 1`] = `
 `;
 
 exports[`Modal with size small with a bottom panel 1`] = `
-.c7 {
+.c5 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -4810,41 +2265,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -4862,7 +2283,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4878,7 +2299,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c9 {
+.c7 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
@@ -5027,34 +2448,27 @@ exports[`Modal with size small with a bottom panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
               </div>
             </div>
             <div
-              class="c9"
+              class="c7"
             >
               <div>
                 Panel content
@@ -5074,7 +2488,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size small with a left panel 1`] = `
-.c9 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -5094,41 +2508,7 @@ exports[`Modal with size small with a left panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c10 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -5146,7 +2526,7 @@ exports[`Modal with size small with a left panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5165,7 +2545,7 @@ exports[`Modal with size small with a left panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c7 {
+.c5 {
   width: 21rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -5174,7 +2554,7 @@ exports[`Modal with size small with a left panel 1`] = `
   overflow-y: auto;
 }
 
-.c8 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5331,37 +2711,30 @@ exports[`Modal with size small with a left panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Panel content
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div
-                class="c9"
+                class="c7"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c10"
+                class="c8"
               >
                 <div>
                   Footer
@@ -5382,7 +2755,7 @@ exports[`Modal with size small with a left panel 1`] = `
 `;
 
 exports[`Modal with size small with a right panel 1`] = `
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -5402,41 +2775,7 @@ exports[`Modal with size small with a right panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
+.c7 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -5454,7 +2793,7 @@ exports[`Modal with size small with a right panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5473,7 +2812,7 @@ exports[`Modal with size small with a right panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c10 {
+.c8 {
   width: 21rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -5482,7 +2821,7 @@ exports[`Modal with size small with a right panel 1`] = `
   overflow-y: auto;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5639,30 +2978,23 @@ exports[`Modal with size small with a right panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div
-                class="c8"
+                class="c6"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c9"
+                class="c7"
               >
                 <div>
                   Footer
@@ -5670,7 +3002,7 @@ exports[`Modal with size small with a right panel 1`] = `
               </div>
             </div>
             <div
-              class="c10"
+              class="c8"
             >
               <div>
                 Panel content
@@ -5689,1096 +3021,8 @@ exports[`Modal with size small with a right panel 1`] = `
 </div>
 `;
 
-exports[`Modal with size small with custom title size 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 4.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 18.6rem);
-  min-height: 30.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size small with left section in header 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              <div>
-                The left section
-              </div>
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size small with no fill 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: none;
-  border-bottom: 1px solid #d9d9d9;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size small with right section in header 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            >
-              <div>
-                <div>
-                  The right section
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
 exports[`Modal with size small with simple config 1`] = `
-.c7 {
+.c5 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -6798,41 +3042,7 @@ exports[`Modal with size small with simple config 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -6850,7 +3060,7 @@ exports[`Modal with size small with simple config 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7009,27 +3219,20 @@ exports[`Modal with size small with simple config 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
@@ -7049,7 +3252,7 @@ exports[`Modal with size small with simple config 1`] = `
 `;
 
 exports[`Modal with size x-large with a bottom panel 1`] = `
-.c7 {
+.c5 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -7069,41 +3272,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -7121,7 +3290,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7137,7 +3306,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c9 {
+.c7 {
   box-sizing: border-box;
   height: 8.4rem;
   border-top: 1px solid #d9d9d9;
@@ -7286,34 +3455,27 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
               </div>
             </div>
             <div
-              class="c9"
+              class="c7"
             >
               <div>
                 Panel content
@@ -7333,7 +3495,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 `;
 
 exports[`Modal with size x-large with a left panel 1`] = `
-.c9 {
+.c7 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -7353,41 +3515,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c10 {
+.c8 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -7405,7 +3533,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7424,7 +3552,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c7 {
+.c5 {
   width: 21rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -7433,7 +3561,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   overflow-y: auto;
 }
 
-.c8 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7590,37 +3718,30 @@ exports[`Modal with size x-large with a left panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Panel content
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div
-                class="c9"
+                class="c7"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c10"
+                class="c8"
               >
                 <div>
                   Footer
@@ -7641,7 +3762,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
 `;
 
 exports[`Modal with size x-large with a right panel 1`] = `
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -7661,41 +3782,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
+.c7 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -7713,7 +3800,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7732,7 +3819,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   min-height: 29.4rem;
 }
 
-.c10 {
+.c8 {
   width: 21rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -7741,7 +3828,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   overflow-y: auto;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7898,30 +3985,23 @@ exports[`Modal with size x-large with a right panel 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div
-                class="c8"
+                class="c6"
               >
                 <div>
                   Body
                 </div>
               </div>
               <div
-                class="c9"
+                class="c7"
               >
                 <div>
                   Footer
@@ -7929,7 +4009,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
               </div>
             </div>
             <div
-              class="c10"
+              class="c8"
             >
               <div>
                 Panel content
@@ -7948,1096 +4028,8 @@ exports[`Modal with size x-large with a right panel 1`] = `
 </div>
 `;
 
-exports[`Modal with size x-large with custom title size 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 4.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 18.6rem);
-  min-height: 30.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size x-large with left section in header 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              <div>
-                The left section
-              </div>
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size x-large with no fill 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: none;
-  border-bottom: 1px solid #d9d9d9;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal with size x-large with right section in header 1`] = `
-.c7 {
-  padding: 2.8rem 2.1rem;
-  overflow-y: auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.4rem 2.1rem;
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
-  border-bottom: none;
-  min-height: 5.6rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  padding: 2.8rem 2.1rem;
-  justify-self: flex-end;
-  border-top: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-  min-height: inherit;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-height: calc(100vh - 19.6rem);
-  min-height: 29.4rem;
-}
-
-.c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-.c0 {
-  width: 63rem !important;
-}
-
-.c0 .rc-dialog-body {
-  padding: 0;
-  height: auto;
-  max-height: calc(100vh - 14rem);
-  min-height: 35rem;
-}
-
-.c0 .rc-dialog-content {
-  border-radius: 0.4rem;
-}
-
-.c0 .rc-dialog-close {
-  right: -1rem;
-  top: -1rem;
-  opacity: unset;
-  padding: 0.15rem;
-  line-height: 0;
-  background-color: #808080;
-  border-radius: 999px;
-}
-
-.c0 .rc-dialog-close svg {
-  fill: #e6e6e6;
-}
-
-.c0.modal-appear,
-.c0.modal-enter {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.c0.modal-appear.modal-appear-active,
-.c0.modal-enter.modal-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-}
-
-.c0.modal-leave {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0.modal-leave.modal-leave-active {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-}
-
-.c0.modalMask-appear,
-.c0.modalMask-enter {
-  opacity: 0;
-}
-
-.c0.modalMask-appear.modalMask-appear-active,
-.c0.modalMask-enter.modalMask-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-.c0.modalMask-leave {
-  opacity: 1;
-}
-
-.c0.modalMask-leave.modalMask-leave-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out;
-  transition: opacity 100ms ease-out;
-}
-
-<div
-  class="rc-dialog-wrap "
-  role="dialog"
-  tabindex="-1"
->
-  <div
-    class="rc-dialog c0 modal-appear"
-    role="document"
-  >
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-    <div
-      class="rc-dialog-content"
-    >
-      <button
-        aria-label="Close"
-        class="rc-dialog-close"
-      >
-        <span
-          class="c1"
-          height="18px"
-          type="oClear"
-          width="18px"
-        >
-          <svg
-            fill="#000"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div
-        class="rc-dialog-body"
-      >
-        <div
-          class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            >
-              <div>
-                <div>
-                  The right section
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="c6"
-          >
-            <div
-              class="c7"
-            >
-              <div>
-                Body
-              </div>
-            </div>
-            <div
-              class="c8"
-            >
-              <div>
-                Footer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      style="width: 0px; height: 0px; overflow: hidden;"
-      tabindex="0"
-    />
-  </div>
-</div>
-`;
-
 exports[`Modal with size x-large with simple config 1`] = `
-.c7 {
+.c5 {
   padding: 2.8rem 2.1rem;
   overflow-y: auto;
   -webkit-flex: 1 1 auto;
@@ -9057,41 +4049,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   min-height: 5.6rem;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #333333;
-  margin-right: 1.4rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
+.c6 {
   padding: 2.8rem 2.1rem;
   justify-self: flex-end;
   border-top: none;
@@ -9109,7 +4067,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   min-height: inherit;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9268,27 +4226,20 @@ exports[`Modal with size x-large with simple config 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
-            >
-              Title
-            </div>
-            <div
-              class="c5"
-            />
+            Title
           </div>
           <div
-            class="c6"
+            class="c4"
           >
             <div
-              class="c7"
+              class="c5"
             >
               <div>
                 Body
               </div>
             </div>
             <div
-              class="c8"
+              class="c6"
             >
               <div>
                 Footer
