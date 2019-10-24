@@ -13,18 +13,10 @@ export interface HeaderProps {
    * ReactNode.
    * @type {TitleProps | ReactNode}
    */
-  leftSection: TitleProps | ReactNode
-  rightSection?: ReactNode
   noFill?: boolean
 }
 
 export interface ModalWrapperProps extends BaseComponentProps {
-  /** Contents to be rendered in the header section */
-  header: HeaderProps
-  /** Contents to be rendered on in the body section */
-  body: ReactNode
-  /** Contents to be rendered on in the footer section */
-  footer: ReactNode
   /** The padding values to be applied */
   padding?: { vertical: string; horizontal: string }
   /** Size values representing the amount of physical space occupied */
@@ -36,7 +28,7 @@ export interface ModalWrapperProps extends BaseComponentProps {
   /** Function to be executed when the modal is dismissed */
   onClose: () => void
   /** Addon panel that is attached to the modal */
-  panel?: { position: "left" | "right" | "bottom"; content: ReactNode }
+  panel?: "left" | "right" | "bottom"
   /** to unmount child compenents on onClose */
   destroyOnClose?: boolean
 }
