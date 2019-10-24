@@ -14,6 +14,7 @@ const BottomSection = styled.div`
 const BottomPanelModal: React.FC<PanelModalProps> = ({
   maxContentHeight,
   minContentHeight,
+  padding,
   children,
 }) => {
   const childrenArray = React.Children.toArray(children)
@@ -23,7 +24,7 @@ const BottomPanelModal: React.FC<PanelModalProps> = ({
       <Header>{childrenToRender["header"]}</Header>
       <VerticalLayoutContent
         customProps={{ maxContentHeight, minContentHeight }}>
-        <Main>{childrenToRender["body"]}</Main>
+        <Main customProps={{ padding }}>{childrenToRender["body"]}</Main>
         <Footer>{childrenToRender["footer"]}</Footer>
         <BottomSection>{childrenToRender["panel"]}</BottomSection>
       </VerticalLayoutContent>

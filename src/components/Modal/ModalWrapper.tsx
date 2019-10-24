@@ -117,6 +117,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   destroyOnClose,
   className,
   style,
+  padding,
   children,
 }) => {
   /**
@@ -128,6 +129,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
     if (!panel) {
       return (
         <Modal
+          padding={padding}
           maxContentHeight={maxContentHeight}
           minContentHeight={minContentHeight}>
           {children}
@@ -138,6 +140,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       case "left":
         return (
           <LeftPanelModal
+            padding={padding}
             maxContentHeight={maxContentHeight}
             minContentHeight={minContentHeight}>
             {children}
@@ -146,6 +149,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       case "right":
         return (
           <RightPanelModal
+            padding={padding}
             maxContentHeight={maxContentHeight}
             minContentHeight={minContentHeight}>
             {children}
@@ -154,6 +158,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       case "bottom":
         return (
           <BottomPanelModal
+            padding={padding}
             maxContentHeight={maxContentHeight}
             minContentHeight={minContentHeight}>
             {children}
@@ -162,6 +167,7 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       default:
         return (
           <Modal
+            padding={padding}
             maxContentHeight={maxContentHeight}
             minContentHeight={minContentHeight}>
             {children}
