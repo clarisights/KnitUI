@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import { storiesOf } from "@storybook/react"
-import Modal from "./"
+import Modal, { Body, Footer, Header } from "./"
 import { withKnobs, select, object } from "@storybook/addon-knobs"
+import { Panel } from "./wrappers/Panel"
 
 const Readme = require("./README.md")
 
@@ -24,98 +25,19 @@ stories
       const [modalVisible, setModalVisible] = useState(true)
       return (
         <Modal
-          header={{ leftSection: { title: "Title" } }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
           size={select("Size", sizeOptions, "medium")}
           visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-        />
-      )
-    }
-    return <ModalWrapper />
-  })
-  .add("with a header without a fill", () => {
-    const ModalWrapper = () => {
-      const [modalVisible, setModalVisible] = useState(true)
-      return (
-        <Modal
-          header={{ leftSection: { title: "Title" }, noFill: true }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
-          size={select("Size", sizeOptions, "medium")}
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-        />
-      )
-    }
-    return <ModalWrapper />
-  })
-  .add("with a custom sized header", () => {
-    const ModalWrapper = () => {
-      const [modalVisible, setModalVisible] = useState(true)
-      return (
-        <Modal
-          header={{ leftSection: { title: "Title", fontSize: 12 } }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
-          size={select("Size", sizeOptions, "medium")}
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-        />
-      )
-    }
-    return <ModalWrapper />
-  })
-  .add("with a left section in header", () => {
-    const ModalWrapper = () => {
-      const [modalVisible, setModalVisible] = useState(true)
-      return (
-        <Modal
-          header={{
-            leftSection: <div>The left section</div>,
-          }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
-          size={select("Size", sizeOptions, "medium")}
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-        />
-      )
-    }
-    return <ModalWrapper />
-  })
-  .add("with a right section in header", () => {
-    const ModalWrapper = () => {
-      const [modalVisible, setModalVisible] = useState(true)
-      return (
-        <Modal
-          header={{
-            leftSection: { title: "Title" },
-            rightSection: <div>The right section</div>,
-          }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
-          size={select("Size", sizeOptions, "medium")}
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-        />
-      )
-    }
-    return <ModalWrapper />
-  })
-  .add("with overflowing content", () => {
-    const ModalWrapper = () => {
-      const [modalVisible, setModalVisible] = useState(true)
-      return (
-        <Modal
-          header={{ leftSection: { title: "Overflowing" } }}
-          body={<div style={{ height: "1000px" }}>Body</div>}
-          footer={<div>Footer</div>}
-          size={select("Size", sizeOptions, "medium")}
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-        />
+          onClose={() => setModalVisible(false)}>
+          <Header>
+            <div>hello</div>
+          </Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
+            <div>footer</div>
+          </Footer>
+        </Modal>
       )
     }
     return <ModalWrapper />
@@ -125,14 +47,15 @@ stories
       const [modalVisible, setModalVisible] = useState(true)
       return (
         <Modal
-          header={{ leftSection: { title: "Right panel modal" } }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
           size={select("Size", sizeOptions, "medium")}
           visible={modalVisible}
           onClose={() => setModalVisible(false)}
-          panel={{ position: "right", content: <div>Panel content</div> }}
-        />
+          panel="right">
+          <Header>header</Header>
+          <Body>body</Body>
+          <Footer>footer</Footer>
+          <Panel>Panel Content</Panel>
+        </Modal>
       )
     }
     return <ModalWrapper />
@@ -142,17 +65,21 @@ stories
       const [modalVisible, setModalVisible] = useState(true)
       return (
         <Modal
-          header={{ leftSection: { title: "Overflowing" } }}
-          body={<div style={{ height: "800px" }}>Body</div>}
-          footer={<div>Footer</div>}
           size={select("Size", sizeOptions, "medium")}
           visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-          panel={{
-            position: "right",
-            content: <div style={{ height: "1200px" }}>Panel content</div>,
-          }}
-        />
+          panel="right"
+          onClose={() => setModalVisible(false)}>
+          <Header>header</Header>
+          <Body>
+            <div style={{ height: "800px" }}>Body</div>
+          </Body>
+          <Footer>
+            <div>footer</div>
+          </Footer>
+          <Panel>
+            <div style={{ height: "1200px" }}>Panel content</div>
+          </Panel>
+        </Modal>
       )
     }
     return <ModalWrapper />
@@ -162,34 +89,21 @@ stories
       const [modalVisible, setModalVisible] = useState(true)
       return (
         <Modal
-          header={{ leftSection: { title: "Left panel content" } }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
           size={select("Size", sizeOptions, "medium")}
           visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-          panel={{ position: "left", content: <div>Panel content</div> }}
-        />
-      )
-    }
-    return <ModalWrapper />
-  })
-  .add("with left panel and overflowing panel and body", () => {
-    const ModalWrapper = () => {
-      const [modalVisible, setModalVisible] = useState(true)
-      return (
-        <Modal
-          header={{ leftSection: { title: "Overflowing" } }}
-          body={<div style={{ height: "800px" }}>Body</div>}
-          footer={<div>Footer</div>}
-          size={select("Size", sizeOptions, "medium")}
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-          panel={{
-            position: "left",
-            content: <div style={{ height: "1200px" }}>Panel content</div>,
-          }}
-        />
+          panel="left"
+          onClose={() => setModalVisible(false)}>
+          <Header>header</Header>
+          <Body>
+            <div style={{ height: "800px" }}>Body</div>
+          </Body>
+          <Footer>
+            <div>footer</div>
+          </Footer>
+          <Panel>
+            <div style={{ height: "1200px" }}>Panel content</div>
+          </Panel>
+        </Modal>
       )
     }
     return <ModalWrapper />
@@ -199,31 +113,21 @@ stories
       const [modalVisible, setModalVisible] = useState(true)
       return (
         <Modal
-          header={{ leftSection: { title: "Bottom panel modal" } }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
           size={select("Size", sizeOptions, "medium")}
           visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-          panel={{ position: "bottom", content: <div>Panel content</div> }}
-        />
-      )
-    }
-    return <ModalWrapper />
-  })
-  .add("with a bottom panel overflowing body", () => {
-    const ModalWrapper = () => {
-      const [modalVisible, setModalVisible] = useState(true)
-      return (
-        <Modal
-          header={{ leftSection: { title: "Overflowing" } }}
-          body={<div style={{ height: "800px" }}>Body</div>}
-          footer={<div>Footer</div>}
-          size={select("Size", sizeOptions, "medium")}
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-          panel={{ position: "bottom", content: <div>Panel content</div> }}
-        />
+          panel="bottom"
+          onClose={() => setModalVisible(false)}>
+          <Header>Bottom panel modal</Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
+            <div>footer</div>
+          </Footer>
+          <Panel>
+            <div>Panel content</div>
+          </Panel>
+        </Modal>
       )
     }
     return <ModalWrapper />
@@ -233,17 +137,19 @@ stories
       const [modalVisible, setModalVisible] = useState(true)
       return (
         <Modal
-          header={{ leftSection: { title: "With custom close" } }}
-          body={<div>Body</div>}
-          footer={
+          size={select("Size", sizeOptions, "medium")}
+          visible={modalVisible}
+          onClose={() => setModalVisible(false)}>
+          <Header>With custom close</Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
             <div>
               <button onClick={() => setModalVisible(false)}>Close</button>
             </div>
-          }
-          size={select("Size", sizeOptions, "medium")}
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-        />
+          </Footer>
+        </Modal>
       )
     }
     return <ModalWrapper />
@@ -254,18 +160,19 @@ stories
       return (
         <>
           <Modal
-            header={{
-              leftSection: { title: "Open using button" },
-              rightSection: (
-                <div style={{ justifySelf: "flex-end" }}>Right section</div>
-              ),
-            }}
-            body={<div>Body</div>}
-            footer={<div>Footer</div>}
             size={select("Size", sizeOptions, "medium")}
             visible={modalVisible}
-            onClose={() => setModalVisible(false)}
-          />
+            onClose={() => setModalVisible(false)}>
+            <Header>Open using button</Header>
+            <Body>
+              <div>Body</div>
+            </Body>
+            <Footer>
+              <div>
+                <button onClick={() => setModalVisible(false)}>Close</button>
+              </div>
+            </Footer>
+          </Modal>
           <button onClick={() => setModalVisible(true)}>Open modal</button>
         </>
       )
@@ -278,15 +185,19 @@ stories
       return (
         <>
           <Modal
-            header={{ leftSection: { title: "Custom style" } }}
-            body={<div>Body</div>}
-            footer={<div>Footer</div>}
             size={select("Size", sizeOptions, "medium")}
             visible={modalVisible}
             onClose={() => setModalVisible(false)}
             style={object("Style", { color: "red" })}
-            className="custom-class"
-          />
+            className="custom-class">
+            <Header>Custom style</Header>
+            <Body>
+              <div>Body</div>
+            </Body>
+            <Footer>
+              <div>footer</div>
+            </Footer>
+          </Modal>
         </>
       )
     }
@@ -297,14 +208,18 @@ stories
       const [modalVisible, setModalVisible] = useState(true)
       return (
         <Modal
-          header={{ leftSection: { title: "Overridden padding" } }}
           padding={{ horizontal: "0px", vertical: "0px " }}
-          body={<div>Body</div>}
-          footer={<div>Footer</div>}
           size={select("Size", sizeOptions, "medium")}
           visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-        />
+          onClose={() => setModalVisible(false)}>
+          <Header>Overridden padding</Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
+            <div>footer</div>
+          </Footer>
+        </Modal>
       )
     }
     return <ModalWrapper />
