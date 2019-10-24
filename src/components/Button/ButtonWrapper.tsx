@@ -3,11 +3,11 @@ import Icon from "../Icon"
 import { ButtonBase, ButtonInset } from "./components"
 import { ThemeContext } from "styled-components"
 import { parseCustomColor, parseColorPreset } from "../../common/_utils"
-import { ButtonWrapperProps } from "./types"
+import { ButtonWrapperInterface, ButtonWrapperProps } from "./types"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
-const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
+const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
   label,
   type = "primary",
   ghost = false,
@@ -89,4 +89,6 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   )
 }
 
+import ButtonGroup from "./ButtonGroup"
+ButtonWrapper.Group = ButtonGroup
 export default ButtonWrapper

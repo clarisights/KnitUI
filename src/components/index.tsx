@@ -1,5 +1,5 @@
 /// <reference types="styled-components/cssprop" />
-export { Button, ButtonGroup } from "./Button"
+export { default as Button } from "./Button"
 export { default as Modal } from "./Modal"
 export { default as Input } from "./Input"
 export { default as Switch } from "./Switch"
