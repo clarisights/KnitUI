@@ -176,7 +176,8 @@ const StyledDiv = styled.div<IStyledLabel>`
 `
 
 const StyledTextSpan = styled.span<IStyledLabel>`
-  margin: 0rem ${props => getTextRightMargin(props)} 0rem ${props => getTextLeftMargin(props)};
+  margin: 0rem ${props => getTextRightMargin(props)} 0rem
+    ${props => getTextLeftMargin(props)};
 `
 
 const Label: ILabel = props => {
@@ -195,19 +196,14 @@ const Label: ILabel = props => {
     rest.customColor = rest.customColor || INSET_BACKGROUND_COLOR
   }
 
-  const scProps = { className, style, theme, customProps: rest }
+  const scProps = { theme, customProps: rest }
 
   const renderLeftIcon = () => {
     if (!showLeftIcon(scProps)) {
       return null
     }
     if (_.isString(icons!.left)) {
-      return (
-        <Icon
-          fill={getFontColor(scProps)}
-          type={icons!.left}
-        />
-      )
+      return <Icon fill={getFontColor(scProps)} type={icons!.left} />
     }
     return icons!.left
   }
@@ -217,21 +213,20 @@ const Label: ILabel = props => {
       return null
     }
     if (_.isString(icons!.right)) {
-      return (
-        <Icon
-          fill={getFontColor(scProps)}
-          type={icons!.right}
-        />
-      )
+      return <Icon fill={getFontColor(scProps)} type={icons!.right} />
     }
     return icons!.right
   }
 
   //For styled components, we separate the props that are to be loaded on the DOM
   return (
-    <StyledDiv {...scProps} insetColor={insetColor}>
+    <StyledDiv
+      className={className}
+      style={style}
+      {...scProps}
+      insetColor={insetColor}>
       {renderLeftIcon()}
-      <StyledTextSpan {...scProps} >{text}</StyledTextSpan>
+      <StyledTextSpan {...scProps}>{text}</StyledTextSpan>
       {renderRightIcon()}
     </StyledDiv>
   )
