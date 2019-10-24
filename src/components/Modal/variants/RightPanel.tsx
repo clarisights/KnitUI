@@ -2,25 +2,26 @@ import React from "react"
 import { BaseLayout } from "./styledComponents"
 import { PanelModalProps } from "./types"
 import { Layout, PanelSection, Content } from "./styledComponents"
+import { Header, Footer, Main } from "../components"
+import { getChildrenWithTypes } from "../helpers"
 
 const RightPanelModal: React.FC<PanelModalProps> = ({
-  header,
-  footer,
-  body,
-  panelContent,
   maxContentHeight,
-  minContentHeight
+  minContentHeight,
+  children,
 }) => {
+  const childrenArray = React.Children.toArray(children)
+  const childrenToRender = getChildrenWithTypes(childrenArray)
   return (
     <BaseLayout>
-      {header}
-      <Layout customProps={{maxContentHeight, minContentHeight}}>
+      <Header>{childrenToRender["header"]}</Header>
+      <Layout customProps={{ maxContentHeight, minContentHeight }}>
         <Content>
-          {body}
-          {footer}
+          <Main>{childrenToRender["body"]}</Main>
+          <Footer>{childrenToRender["footer"]}</Footer>
         </Content>
-        <PanelSection customProps={{location: "right"}}>
-          {panelContent}
+        <PanelSection customProps={{ location: "right" }}>
+          {childrenToRender["panel"]}
         </PanelSection>
       </Layout>
     </BaseLayout>

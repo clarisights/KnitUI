@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { BaseLayout, VerticalLayoutContent } from "./styledComponents"
 import { PanelModalProps } from "./types"
+import { Header, Footer, Main } from "../components"
+import { getChildrenWithTypes } from "../helpers"
 
 const BottomSection = styled.div`
   box-sizing: border-box;
@@ -10,20 +12,20 @@ const BottomSection = styled.div`
 `
 
 const BottomPanelModal: React.FC<PanelModalProps> = ({
-  header,
-  footer,
-  body,
-  panelContent,
   maxContentHeight,
-  minContentHeight
+  minContentHeight,
+  children,
 }) => {
+  const childrenArray = React.Children.toArray(children)
+  const childrenToRender = getChildrenWithTypes(childrenArray)
   return (
     <BaseLayout>
-      {header}
-      <VerticalLayoutContent customProps={{maxContentHeight, minContentHeight}}>
-        {body}
-        {footer}
-        <BottomSection>{panelContent}</BottomSection>
+      <Header>{childrenToRender["header"]}</Header>
+      <VerticalLayoutContent
+        customProps={{ maxContentHeight, minContentHeight }}>
+        <Main>{childrenToRender["body"]}</Main>
+        <Footer>{childrenToRender["footer"]}</Footer>
+        <BottomSection>{childrenToRender["panel"]}</BottomSection>
       </VerticalLayoutContent>
     </BaseLayout>
   )
