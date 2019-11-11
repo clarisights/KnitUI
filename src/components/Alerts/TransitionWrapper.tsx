@@ -45,7 +45,7 @@ const TransitionWrapper = (props: { alerts: Array<AlertProps> }) => {
 
   const transitionProps = useTransition<AlertProps, object>(
     alerts,
-    item => item.key as string,
+    item => item.alertKey as string,
     transitionProperties
   )
 

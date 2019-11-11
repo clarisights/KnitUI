@@ -28,7 +28,7 @@ export interface AlertProps {
   // Size of the alert, default is small
   size?: sizeType
   // Main content of the alert
-  content: string | ReactNode
+  content: ReactNode
   // whether alert is to be auto dismissed
   autoDismiss?: boolean
   // time after which we need to dismiss, effective when auto dismiss is set
@@ -49,7 +49,7 @@ export interface AlertProps {
   // position on window where it will be displayed
   placement?: placementType
   // key to reference Element from Alerts Container (help in remove function)
-  key?: string
+  alertKey?: string
   // custom className to be passed
   className?: string
   // prefix classname for custom style
