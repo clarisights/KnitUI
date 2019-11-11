@@ -267,19 +267,19 @@ exports[`Alert Component Tests different placements bottomLeft side alert render
     class="knit-ui-alerts"
   >
     <div
-      class="c6"
+      class="alerts-wrapper c6"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c7"
+      class="alerts-wrapper c7"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c8"
+      class="alerts-wrapper c8"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c9"
+      class="alerts-wrapper c9"
       data-testid="alerts-wrapper"
     />
   </div>
@@ -553,19 +553,19 @@ exports[`Alert Component Tests different placements bottomRight side alert rende
     class="knit-ui-alerts"
   >
     <div
-      class="c6"
+      class="alerts-wrapper c6"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c7"
+      class="alerts-wrapper c7"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c8"
+      class="alerts-wrapper c8"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c9"
+      class="alerts-wrapper c9"
       data-testid="alerts-wrapper"
     />
   </div>
@@ -839,19 +839,19 @@ exports[`Alert Component Tests different placements topLeft side alert render 1`
     class="knit-ui-alerts"
   >
     <div
-      class="c6"
+      class="alerts-wrapper c6"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c7"
+      class="alerts-wrapper c7"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c8"
+      class="alerts-wrapper c8"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c9"
+      class="alerts-wrapper c9"
       data-testid="alerts-wrapper"
     />
   </div>
@@ -1125,19 +1125,19 @@ exports[`Alert Component Tests different placements topRight side alert render 1
     class="knit-ui-alerts"
   >
     <div
-      class="c6"
+      class="alerts-wrapper c6"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c7"
+      class="alerts-wrapper c7"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c8"
+      class="alerts-wrapper c8"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c9"
+      class="alerts-wrapper c9"
       data-testid="alerts-wrapper"
     />
   </div>
@@ -1444,19 +1444,19 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
     class="knit-ui-alerts"
   >
     <div
-      class="c8"
+      class="alerts-wrapper c8"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c9"
+      class="alerts-wrapper c9"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c10"
+      class="alerts-wrapper c10"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c11"
+      class="alerts-wrapper c11"
       data-testid="alerts-wrapper"
     />
   </div>
@@ -1763,19 +1763,19 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
     class="knit-ui-alerts"
   >
     <div
-      class="c8"
+      class="alerts-wrapper c8"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c9"
+      class="alerts-wrapper c9"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c10"
+      class="alerts-wrapper c10"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c11"
+      class="alerts-wrapper c11"
       data-testid="alerts-wrapper"
     />
   </div>
@@ -2082,19 +2082,19 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
     class="knit-ui-alerts"
   >
     <div
-      class="c8"
+      class="alerts-wrapper c8"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c9"
+      class="alerts-wrapper c9"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c10"
+      class="alerts-wrapper c10"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c11"
+      class="alerts-wrapper c11"
       data-testid="alerts-wrapper"
     />
   </div>
@@ -2401,19 +2401,19 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
     class="knit-ui-alerts"
   >
     <div
-      class="c8"
+      class="alerts-wrapper c8"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c9"
+      class="alerts-wrapper c9"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c10"
+      class="alerts-wrapper c10"
       data-testid="alerts-wrapper"
     />
     <div
-      class="c11"
+      class="alerts-wrapper c11"
       data-testid="alerts-wrapper"
     />
   </div>
