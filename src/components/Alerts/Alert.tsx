@@ -40,7 +40,7 @@ const renderIcon = (scProps: IStyledAlert) => {
 
 const renderActions = (scProps: IStyledAlert) => {
   let {
-    customProps: { actions, prefixClassName: prfxCls, type },
+    customProps: { actions, prefixClassName: prfxCls, type, alertKey },
   } = scProps
 
   if (Array.isArray(actions) && actions.length == 0) {
@@ -53,14 +53,14 @@ const renderActions = (scProps: IStyledAlert) => {
     <AlertActionsWrapper
       className={getClassName(prfxCls, "-knit-alert-action-wrapper")}
       {...scProps}>
-      {actions!.map(action => (
+      {actions!.map((action, index) => (
         <StyledAlertAction
           className={getClassName(prfxCls, "-knit-alert-action")}
           {...scProps}
-          key={action.text}
+          key={index}
           type="secondary"
           label={action.text}
-          onClick={() => action.callback()}
+          onClick={() => action.callback(alertKey)}
           alertType={type}
         />
       ))}

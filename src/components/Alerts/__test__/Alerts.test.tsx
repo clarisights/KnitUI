@@ -40,6 +40,18 @@ const ShowAlerts = props => {
   return <Button label="Click to remove" onClick={handleClick} />
 }
 
+const ShowAlertDismiss = props => {
+  const { addAlert, removeAlert } = useAlerts()
+  let keys = []
+
+  useEffect(() => {
+    props.alerts![0].actions![0].callback = key => removeAlert(key)
+    keys = props.alerts.map(alert => addAlert(alert))
+  }, [])
+
+  return <></>
+}
+
 // Class component for API test
 class ShowAlertClass extends React.Component<
   { alerts: AlertProps[]; addAlert: Function; removeAlert: Function },
@@ -86,6 +98,12 @@ const alerts = [
     dismissDuration: 1500,
     heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
     multiLine: true,
+    actions: [
+      {
+        text: "Dismiss",
+        callback: (key?: string) => {},
+      },
+    ],
     content: "Hello there, this is alert component",
     icon: "",
     onClose: () => {},
@@ -199,6 +217,24 @@ describe("Using API test : ", () => {
       })
       // Avoid fail test because Opacity diff , it's because of transition, uncomment whenever needed to check other thing
       // expect(_container).toMatchSnapshot()
+    })
+  })
+
+  test("Remove alert using dismiss action", async () => {
+    let renderResult
+
+    const newAlerts = [alerts[2], alerts[1]]
+
+    act(() => {
+      renderResult = renderComponent(<ShowAlertDismiss alerts={newAlerts} />)
+    })
+    await waitForDomChange({
+      container: renderResult.container,
+    })
+
+    fireEvent.click(renderResult.getByText("Dismiss"))
+    await wait(() => {
+      expect(renderResult.queryAllByTestId("alert-container")).toHaveLength(1)
     })
   })
 })

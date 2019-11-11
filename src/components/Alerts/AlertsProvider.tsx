@@ -42,7 +42,7 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
 
     alertProps.placement =
       alertProps.placement || ("bottomLeft" as placementType)
-    alertProps.key = key
+    alertProps.alertKey = key
 
     // Closing Alert will call remove method of this class to update state
     const curOnClose = alertProps.onClose
@@ -56,7 +56,7 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
   }
 
   handleRemove = (key: string): boolean => {
-    const index = this.state.alerts.findIndex(i => i.key === key)
+    const index = this.state.alerts.findIndex(i => i.alertKey === key)
     if (index > -1) {
       this.setState({
         alerts: [

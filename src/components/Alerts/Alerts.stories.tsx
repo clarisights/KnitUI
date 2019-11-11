@@ -20,15 +20,15 @@ const sizeType = ["x-small", "small", "medium", "large"]
 const alertActions = [
   {
     text: "Action 1",
-    callback: () => alert("action 1"),
+    callback: (key?: string) => alert("action 1"),
   },
   {
     text: "Action 2",
-    callback: () => alert("action 2"),
+    callback: (key?: string) => alert("action 2"),
   },
   {
     text: "Action 3",
-    callback: () => alert("action 3"),
+    callback: (key?: string) => alert("action 3"),
   },
 ]
 
@@ -325,6 +325,40 @@ stories
       size={select("Type", sizeType, "medium")}
     />
   ))
+  .add("Action to dismiss it's alert", () => {
+    const AlertDismissComponent = props => {
+      const { addAlert, removeAlert } = useAlerts()
+
+      const newActions = [...alertActions]
+      newActions[1] = {
+        text: "Dismiss",
+        callback: key => {
+          removeAlert(key)
+        },
+      }
+      const handleClick = () =>
+        addAlert({
+          type: "warning",
+          size: "small",
+          placement: "topRight",
+          autoDismiss: false,
+          dismissDuration: 1500,
+          heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
+          multiLine: true,
+          actions: newActions,
+          content: "Normal Content",
+          icon: "",
+          onClose: () => {},
+        })
+
+      return (
+        <Center>
+          <Button onClick={handleClick} label="Show Alert" />
+        </Center>
+      )
+    }
+    return <AlertDismissComponent />
+  })
   .add("Custom Color Alert", () => (
     <Alert
       image="https://clarisights-users.s3.eu-central-1.amazonaws.com/production/users/profile_picture_561/1540893983_clarisights.png"
