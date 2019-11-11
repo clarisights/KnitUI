@@ -111,7 +111,7 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
           {Object.entries(alertsByPlace).map(([placement, alertArr]) => {
             const Wrapper = PlacementWrapperDiv[placement]
             return (
-              <Wrapper key={placement} data-testid="alerts-wrapper">
+              <Wrapper key={placement} data-testid="alerts-wrapper" className="alerts-wrapper" >
                 <TransitionWrapper alerts={alertArr!} />
               </Wrapper>
             )
