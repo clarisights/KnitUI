@@ -18,9 +18,16 @@ const StyledMain = styled.div<IStyledDialog>`
   flex: 1 1 auto;
 `
 
-function Main({ children, customProps = {} }) {
-  return <StyledMain customProps={customProps}>{children}</StyledMain>
-}
+const Main: any = React.forwardRef(
+  (props: { customProps?: {}; children: React.ReactNode }, ref) => {
+    const { children, customProps = {} } = props
+    return (
+      <StyledMain ref={ref} customProps={customProps}>
+        {children}
+      </StyledMain>
+    )
+  }
+)
 
 Main.defaultProps = {
   padding: {

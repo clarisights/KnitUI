@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { BaseLayout, VerticalLayoutContent } from "./styledComponents"
 import { PanelModalProps } from "./types"
-import { Header, Footer, Main } from "../components"
+import { Header, ScrollWrapper } from "../components"
 import { getChildrenWithTypes } from "../helpers"
 
 const BottomSection = styled.div`
@@ -24,8 +24,10 @@ const BottomPanelModal: React.FC<PanelModalProps> = ({
       <Header>{childrenToRender["header"]}</Header>
       <VerticalLayoutContent
         customProps={{ maxContentHeight, minContentHeight }}>
-        <Main customProps={{ padding }}>{childrenToRender["body"]}</Main>
-        <Footer>{childrenToRender["footer"]}</Footer>
+        <ScrollWrapper padding={padding}>
+          {childrenToRender["body"]}
+          {childrenToRender["footer"]}
+        </ScrollWrapper>
         <BottomSection>{childrenToRender["panel"]}</BottomSection>
       </VerticalLayoutContent>
     </BaseLayout>
