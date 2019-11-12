@@ -1,7 +1,12 @@
 import React from "react"
+import { WrapperComponent } from "../types"
 
-export function Footer({ children }) {
+const Footer: WrapperComponent<{
+  children: React.ReactNode
+}> = ({ children }) => {
   return <>{children}</>
 }
 
 Footer.modalType = "footer"
+
+export default Footer

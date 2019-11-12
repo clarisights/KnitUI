@@ -1,8 +1,13 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
 import Dialog from "rc-dialog"
+import { Body, Footer, Header, Panel } from "./wrappers"
 import "rc-dialog/assets/index.css"
-import { ModalWrapperProps, IStyledDialog } from "./types"
+import {
+  ModalWrapperProps,
+  IStyledDialog,
+  ModalWrapperInterface,
+} from "./types"
 import { ThemeContext } from "styled-components"
 import {
   Modal,
@@ -107,7 +112,7 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
 /**
  * The external interface for the modal
  */
-const ModalWrapper: React.FC<ModalWrapperProps> = ({
+const ModalWrapper: ModalWrapperInterface<ModalWrapperProps> = ({
   size,
   getContainer,
   visible,
@@ -170,5 +175,10 @@ ModalWrapper.defaultProps = {
   visible: false,
   destroyOnClose: false,
 }
+
+ModalWrapper.Body = Body
+ModalWrapper.Footer = Footer
+ModalWrapper.Header = Header
+ModalWrapper.Panel = Panel
 
 export default ModalWrapper

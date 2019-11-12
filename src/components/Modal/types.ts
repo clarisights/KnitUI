@@ -1,4 +1,3 @@
-import { ReactNode } from "react"
 import { BaseComponentProps } from "../../common/types"
 import { fontSizeType } from "../../common/types"
 
@@ -37,4 +36,15 @@ export interface IStyledDialog {
   customProps: ModalWrapperProps
   theme: any
   [propName: string]: any
+}
+
+export type WrapperComponent<T> = React.FC<T> & {
+  modalType: string
+}
+
+export interface ModalWrapperInterface<T> extends React.FC<T> {
+  Body: any
+  Footer: any
+  Header: any
+  Panel: any
 }
