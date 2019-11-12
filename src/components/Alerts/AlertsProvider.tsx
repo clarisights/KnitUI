@@ -38,21 +38,21 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
   }
 
   handleAdd = (alertProps: AlertProps): string => {
-    const key: string = uuid()
-
     alertProps.placement =
       alertProps.placement || ("bottomLeft" as placementType)
-    alertProps.alertKey = key
+    
+    // If the key is not provided, generate a new random key.
+    alertProps.alertKey = alertProps.alertKey || uuid()
 
     // Closing Alert will call remove method of this class to update state
     const curOnClose = alertProps.onClose
     alertProps.onClose = event => {
       curOnClose && curOnClose(event)
-      this.handleRemove(key)
+      this.handleRemove(alertProps.alertKey!)
     }
     this.queue.push(alertProps)
     this.displayAlert()
-    return key
+    return alertProps.alertKey
   }
 
   handleRemove = (key: string): boolean => {
