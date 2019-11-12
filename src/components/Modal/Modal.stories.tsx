@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { storiesOf } from "@storybook/react"
-import Modal, { Body, Footer, Header } from "./"
+import Modal from "./"
 import { withKnobs, select, object } from "@storybook/addon-knobs"
-import { Panel } from "./wrappers/Panel"
 
+const { Body, Footer, Header, Panel } = Modal
 const Readme = require("./README.md")
 
 const stories = storiesOf("Modal", module)

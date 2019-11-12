@@ -1,7 +1,12 @@
 import React from "react"
+import { WrapperComponent } from "../types"
 
-export function Panel({ children }) {
+const Panel: WrapperComponent<{
+  children: React.ReactNode
+}> = ({ children }) => {
   return <>{children}</>
 }
 
 Panel.modalType = "panel"
+
+export default Panel

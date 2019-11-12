@@ -1,10 +1,11 @@
 import React from "react"
-import Modal, { Header, Body, Footer } from "../index"
+import Modal from "../index"
 import { render, cleanup, fireEvent } from "react-testing-library"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
 import { ThemeProvider } from "../../../common/styles"
-import { Panel } from "../wrappers/Panel"
+
+const { Header, Body, Footer, Panel } = Modal
 
 afterEach(cleanup)
 
