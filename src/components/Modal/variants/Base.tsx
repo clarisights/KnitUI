@@ -1,5 +1,5 @@
 import React from "react"
-import { Header, Footer, Main } from "../components"
+import { Header, ScrollWrapper } from "../components"
 import { BaseLayout, VerticalLayoutContent } from "./styledComponents"
 import { ModalProps } from "./types"
 import { getChildrenWithTypes } from "../helpers"
@@ -17,8 +17,10 @@ const BaseModal: React.FC<ModalProps> = ({
       <Header>{childrenToRender["header"]}</Header>
       <VerticalLayoutContent
         customProps={{ maxContentHeight, minContentHeight }}>
-        <Main customProps={{ padding }}>{childrenToRender["body"]}</Main>
-        <Footer>{childrenToRender["footer"]}</Footer>
+        <ScrollWrapper padding={padding}>
+          {childrenToRender["body"]}
+          {childrenToRender["footer"]}
+        </ScrollWrapper>
       </VerticalLayoutContent>
     </BaseLayout>
   )

@@ -3,7 +3,7 @@ import { BaseLayout } from "./styledComponents"
 import { PanelModalProps } from "./types"
 import { getChildrenWithTypes } from "../helpers"
 import { Layout, PanelSection, Content } from "./styledComponents"
-import { Header, Footer, Main } from "../components"
+import { Header, ScrollWrapper } from "../components"
 
 const LeftPanelModal: React.FC<PanelModalProps> = ({
   maxContentHeight,
@@ -21,8 +21,10 @@ const LeftPanelModal: React.FC<PanelModalProps> = ({
           {childrenToRender["panel"]}
         </PanelSection>
         <Content>
-          <Main customProps={{ padding }}>{childrenToRender["body"]}</Main>
-          <Footer>{childrenToRender["footer"]}</Footer>
+          <ScrollWrapper padding={padding}>
+            {childrenToRender["body"]}
+            {childrenToRender["footer"]}
+          </ScrollWrapper>
         </Content>
       </Layout>
     </BaseLayout>

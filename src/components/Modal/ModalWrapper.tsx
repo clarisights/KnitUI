@@ -1,10 +1,9 @@
-import React, { useState, useContext, ReactNode } from "react"
+import React, { useContext } from "react"
 import styled from "styled-components"
 import Dialog from "rc-dialog"
 import "rc-dialog/assets/index.css"
-import { ModalWrapperProps, IStyledDialog, TitleProps } from "./types"
+import { ModalWrapperProps, IStyledDialog } from "./types"
 import { ThemeContext } from "styled-components"
-import { Header, Footer, Main } from "./components"
 import {
   Modal,
   LeftPanelModal,
@@ -120,68 +119,11 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   padding,
   children,
 }) => {
-  /**
-   * Renders the appopriate variant based on the availability of a
-   * panel prop and its position.
-   * @param modalProps
-   */
-  const ModalProxy = (maxContentHeight: string, minContentHeight: string) => {
-    if (!panel) {
-      return (
-        <Modal
-          padding={padding}
-          maxContentHeight={maxContentHeight}
-          minContentHeight={minContentHeight}>
-          {children}
-        </Modal>
-      )
-    }
-    switch (panel) {
-      case "left":
-        return (
-          <LeftPanelModal
-            padding={padding}
-            maxContentHeight={maxContentHeight}
-            minContentHeight={minContentHeight}>
-            {children}
-          </LeftPanelModal>
-        )
-      case "right":
-        return (
-          <RightPanelModal
-            padding={padding}
-            maxContentHeight={maxContentHeight}
-            minContentHeight={minContentHeight}>
-            {children}
-          </RightPanelModal>
-        )
-      case "bottom":
-        return (
-          <BottomPanelModal
-            padding={padding}
-            maxContentHeight={maxContentHeight}
-            minContentHeight={minContentHeight}>
-            {children}
-          </BottomPanelModal>
-        )
-      default:
-        return (
-          <Modal
-            padding={padding}
-            maxContentHeight={maxContentHeight}
-            minContentHeight={minContentHeight}>
-            {children}
-          </Modal>
-        )
-    }
+  const ModalProxy = {
+    left: LeftPanelModal,
+    right: RightPanelModal,
+    bottom: BottomPanelModal,
   }
-
-  // const [showFooterBorder, setShowFooterBorder] = useState(false)
-  // const setBodyRef = (el: HTMLElement | null) => {
-  //   if (el && el.scrollHeight > el.clientHeight) {
-  //     setShowFooterBorder(true)
-  //   }
-  // }
 
   const themeContext = useContext(ThemeContext)
   const { knitui } = themeContext
@@ -192,6 +134,8 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
   const totalOffset = knitui.modalMaxContentHeightOffset + headerHeight
   const maxContentHeight = `calc(100vh - ${totalOffset}rem)`
   const minContentHeight = `${knitui.modalMinHeight - headerHeight}rem`
+
+  const ModalToRender = panel ? ModalProxy[panel] : Modal
 
   return (
     <StyledDialog
@@ -207,7 +151,12 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
       maskTransitionName={maskTransitionName}
       className={className}
       style={style}>
-      {ModalProxy(maxContentHeight, minContentHeight)}
+      <ModalToRender
+        padding={padding}
+        maxContentHeight={maxContentHeight}
+        minContentHeight={minContentHeight}>
+        {children}
+      </ModalToRender>
     </StyledDialog>
   )
 }
