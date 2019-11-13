@@ -21,6 +21,7 @@ const Component = (props: any) => {
 
     const PopUpAlert = ():string => {
         let key = addAlert({
+            alertKey: "fc780390-235b-431f-8f29-53475a3747eb"
             type: "neutral",
             size: "medium",
             content: "Hello KnitUI",
@@ -33,6 +34,7 @@ const Component = (props: any) => {
             actions: [{text: "Action", callback: (key:string)=>alert('Action is called')}]
             onClose: ()=>{console.log('Alert is closed')},
             customColor: "#ff2d4e",
+            onExit: (key:string) => {...}
             // className: "my_class",
             // prefixClassName: "my_pop"
         })
@@ -86,6 +88,7 @@ import { Alert } from "KnitUI"
 
 | Prop name       | Type           | Default                                                        | Description                                                                                                                                                                                                                                   |
 | --------------- | -------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| alertKey        | `string`       | Unique each time                                               | unique key should be passed if manually handling keys, else by default each time it generate unique key for each alert.                                                                                                                       |
 | type            | `alertType`    | `neutral | unsaved | warning | success | danger`               | Indicates type of the alert and set some default theme according to that.                                                                                                                                                                     |
 | size            | `sizeType`     | `x-small | small | medium | large`                             | Width of the alert message occupied on the screen                                                                                                                                                                                             |
 | content         | string         | -                                                              | Content of the Alert Component                                                                                                                                                                                                                |
@@ -96,7 +99,8 @@ import { Alert } from "KnitUI"
 | icon            | string         | -                                                              | icon type to be rendered in the alert                                                                                                                                                                                                         |
 | image           | string         | -                                                              | Image url to be shown as icon in alert                                                                                                                                                                                                        |
 | actions         | `actionType[]` | `type actionType = { text: string, callback: (key) => {...} }` | Array of actions will be shown on alert as buttons, alert's `key` is passed so user can remove alert from action.                                                                                                                             |
-| onClose         | Function       | None                                                           | A click handler to be executed on closing of the alert. Will receive the `event` as an argument                                                                                                                                               |
-| className       | string         | None                                                           | add class to main alert wrapper to provide custom class                                                                                                                                                                                       |
-| prefixClassName | string         | None                                                           | create set of classes which add to each part of alert with provided prefix, classes are -> -knit-alert, -knit-alert-icon, -knit-alert-close, -knit-alert-content, -knit-alert-action-wrapper, -knit-alert-action, -knit-alert-content-wrapper |
-| customColor     | string         | None                                                           | custom color to be in background, using chroma along with it get font or general color                                                                                                                                                        |
+| onClose         | Function       | -                                                              | A click handler to be executed on closing of the alert. Will receive the `event` as an argument                                                                                                                                               |
+| onExit          | Function       | -                                                              | This function will be executed when Alert component will unmount. Function have received the `key` as an argument.eg. `(key) => {...}`                                                                                                        |
+| className       | string         | -                                                              | add class to main alert wrapper to provide custom class                                                                                                                                                                                       |
+| prefixClassName | string         | -                                                              | create set of classes which add to each part of alert with provided prefix, classes are -> -knit-alert, -knit-alert-icon, -knit-alert-close, -knit-alert-content, -knit-alert-action-wrapper, -knit-alert-action, -knit-alert-content-wrapper |
+| customColor     | string         | -                                                              | custom color to be in background, using chroma along with it get font or general color                                                                                                                                                        |

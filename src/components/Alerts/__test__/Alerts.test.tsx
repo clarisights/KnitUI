@@ -172,6 +172,15 @@ describe("Alert Component Tests", () => {
 
     expect(alertComponent).toHaveClass("hide")
   })
+
+  test("onExit is called when alert unmount", async () => {
+    const onExitFn = jest.fn()
+    const { unmount } = renderComponent(
+      <Alert content="Hello there" onExit={onExitFn} />
+    )
+    unmount()
+    expect(onExitFn).toHaveBeenCalledTimes(1)
+  })
 })
 
 //** Alert Placement Wrapper and placement test **//
