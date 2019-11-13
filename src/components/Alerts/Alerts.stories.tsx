@@ -359,6 +359,35 @@ stories
     }
     return <AlertDismissComponent />
   })
+  .add("Exit Function when unmount", () => {
+    const AlertOnExitComponent = props => {
+      const { addAlert, removeAlert } = useAlerts()
+
+      const handleClick = () =>
+        addAlert({
+          type: "warning",
+          size: "small",
+          placement: "topRight",
+          autoDismiss: false,
+          dismissDuration: 1500,
+          heading: "Hi there", // only uncomment when multiLine props is true else throw an error, as suppose to
+          multiLine: true,
+          actions: alertActions,
+          content: "Normal Content",
+          icon: "",
+          onClose: () => {},
+          onExit: key =>
+            alert(`onExit function is called of alert which have key : ${key}`),
+        })
+
+      return (
+        <Center>
+          <Button onClick={handleClick} label="Show Alert" />
+        </Center>
+      )
+    }
+    return <AlertOnExitComponent />
+  })
   .add("Custom Color Alert", () => (
     <Alert
       image="https://clarisights-users.s3.eu-central-1.amazonaws.com/production/users/profile_picture_561/1540893983_clarisights.png"

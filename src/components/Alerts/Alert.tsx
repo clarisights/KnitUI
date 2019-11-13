@@ -81,6 +81,8 @@ const Alert: React.FC<AlertProps> = (props: AlertProps) => {
     dismissDuration,
     actions,
     onClose,
+    onExit,
+    alertKey,
   } = rest
 
   const [open, setOpen] = useState(true)
@@ -107,6 +109,11 @@ const Alert: React.FC<AlertProps> = (props: AlertProps) => {
     // heading only exist if multiline prop is true
     if (heading && !multiLine) {
       console.error("Please pass multiLine prop to use headings")
+    }
+
+    // When unmount onExit function will be called
+    return () => {
+      onExit && onExit(alertKey!)
     }
   }, [])
 

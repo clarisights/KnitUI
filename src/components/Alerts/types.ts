@@ -46,6 +46,8 @@ export interface AlertProps {
   actions?: Array<actionType>
   // Function to call once the alert is closed
   onClose?: (event) => void
+  // Function to call while alert is unmounted
+  onExit?: (key: string) => void
   // position on window where it will be displayed
   placement?: placementType
   // key to reference Element from Alerts Container (help in remove function)
