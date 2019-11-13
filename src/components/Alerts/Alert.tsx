@@ -71,6 +71,9 @@ const renderActions = (scProps: IStyledAlert) => {
 const Alert: React.FC<AlertProps> = (props: AlertProps) => {
   const { className, ...rest } = props
 
+  // To clear autoDismiss setTimeoutInterval during unmount
+  let interval
+
   const scProps = { className, customProps: rest }
   const {
     image,
@@ -113,12 +116,13 @@ const Alert: React.FC<AlertProps> = (props: AlertProps) => {
 
     // When unmount onExit function will be called
     return () => {
+      interval && clearInterval(interval)
       onExit && onExit(alertKey!)
     }
   }, [])
 
   // To Auto dismiss the alert after some duration, can use transition delay check out again
-  if (autoDismiss) setTimeout(() => fadeAway(), dismissDuration)
+  if (autoDismiss) interval = setTimeout(() => fadeAway(), dismissDuration)
 
   // called by both AutoDismiss and Close Icon click
   const fadeAway = (event?: SyntheticEvent): void => {
