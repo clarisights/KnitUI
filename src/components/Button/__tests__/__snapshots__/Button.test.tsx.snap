@@ -478,6 +478,53 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Button Should disable button rendered correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  color: #ffffff;
+  background-color: #002966;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    disabled=""
+  >
+    button
+  </button>
+</DocumentFragment>
+`;
+
 exports[`Button renders with a custom color object correctly 1`] = `
 <DocumentFragment>
   .c0 {

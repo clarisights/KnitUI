@@ -3,7 +3,7 @@
 exports[`Passing Custom Theme Changing palette color Blue100 to #1182D4 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bwzfXH elpEHM"
+    class="sc-bwzfXH fPEptA"
   >
     Changed Color of Neutral
   </button>
