@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { IStyled } from "../../../common/types"
 import { SyntheticEvent } from "react"
 import { isLightColor } from "../../../common/_utils"
@@ -224,25 +224,38 @@ const StyledButton = styled.button<IStyledBaseButton>`
       fill: ${props => getFontColor("default", props)};
     }
   }
-  :hover,
-  :active,
-  :focus {
-    color: ${props => getFontColor("hover", props)};
-    background-color: ${props => getBackgroundColor("hover", props)};
-    svg path {
-      fill: ${props => getFontColor("hover", props)};
-    }
-    cursor: pointer;
-  }
-  :active,
-  :focus {
-    border: ${props => getBorder("active", props)} !important;
-    box-shadow: ${props => getBoxShadow(props)};
-    outline: none;
-  }
-  :hover {
-    border: ${props => getBorder("hover", props)};
-  }
+  /* Following styles are not applied when disabled
+  
+    Implementation Details:
+      For conditional renderering of style, have to use css tag, for more details 
+      this link can be quite useful (https://stackoverflow.com/a/48502797).
+
+      In one of the props, Type is needed to be defined, otherwise throwing typescript error.
+  */
+  ${({ disabled }) =>
+    !disabled &&
+    css`
+      :hover,
+      :active,
+      :focus {
+        color: ${(props: IStyled<BaseButtonProps>) =>
+          getFontColor("hover", props)};
+        background-color: ${props => getBackgroundColor("hover", props)};
+        svg path {
+          fill: ${props => getFontColor("hover", props)};
+        }
+        cursor: pointer;
+      }
+      :active,
+      :focus {
+        border: ${props => getBorder("active", props)} !important;
+        box-shadow: ${props => getBoxShadow(props)};
+        outline: none;
+      }
+      :hover {
+        border: ${props => getBorder("hover", props)};
+      }
+    `}
   :disabled {
     opacity: 0.5;
     cursor: not-allowed;

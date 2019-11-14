@@ -62,6 +62,7 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
         ghost,
         size,
         bare,
+        disabled,
         colorTheme: parsedColorTheme,
         fontSize: baseFontSize,
         lineHeight: baseLineHeight,

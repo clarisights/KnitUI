@@ -131,6 +131,15 @@ describe("Button", () => {
     })
   })
 
+  it("Should disable button rendered correctly", () => {
+    const { asFragment } = render(
+      <ThemeProvider>
+        <Button label="button" disabled={true} />
+      </ThemeProvider>
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+
   it("should apply provided classname", () => {
     const { container } = render(
       <ThemeProvider>
