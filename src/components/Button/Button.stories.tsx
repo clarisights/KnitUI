@@ -316,7 +316,7 @@ stories
     const disabled = boolean("disabled", false)
     const bare = boolean("bare", false)
     return (
-      <ButtonGroup style={style} className={className}>
+      <Button.Group style={style} className={className}>
         <Button
           label={text("Label 2", "Dropdown")}
           type={type}
@@ -339,6 +339,6 @@ stories
           onClick={action("button-click 3")}
           icon={text("Icon 3", "oExpandMore")}
         />
-      </ButtonGroup>
+      </Button.Group>
     )
   })

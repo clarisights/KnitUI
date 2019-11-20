@@ -181,8 +181,14 @@ const StyledTextSpan = styled.span<IStyledLabel>`
 `
 
 const Label: ILabel = props => {
-  const { className, style, ...rest } = props
-  const { text, icons, insetColor } = rest
+
+  const labelPropKeys = ["size", "rounded", "outlined", "icons", "focus",
+        "insetColor", "text", "expanded", "colorPreset", "customColor", "customFontColor"]
+
+  const labelProps = _.pick(props, labelPropKeys)
+  const otherProps = _.omit(props, labelPropKeys)
+
+const { text, insetColor, icons } = labelProps
   /**
    * Styled Component theme should be needed here, because getFontColor take theme
    * as argument
@@ -193,10 +199,10 @@ const Label: ILabel = props => {
    * explicitly provided through customColor
    */
   if (insetColor) {
-    rest.customColor = rest.customColor || INSET_BACKGROUND_COLOR
+    otherProps.customColor = otherProps.customColor || INSET_BACKGROUND_COLOR
   }
 
-  const scProps = { theme, customProps: rest }
+  const scProps = { theme, customProps: labelProps, ...otherProps }
 
   const renderLeftIcon = () => {
     if (!showLeftIcon(scProps)) {
@@ -221,8 +227,6 @@ const Label: ILabel = props => {
   //For styled components, we separate the props that are to be loaded on the DOM
   return (
     <StyledDiv
-      className={className}
-      style={style}
       {...scProps}
       insetColor={insetColor}>
       {renderLeftIcon()}

@@ -195,5 +195,16 @@ stories
       customColor={(text("customColor", "#B267B2"))}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
-    />
-  ))
+    />))
+    .add("should respect genric DOM attributes", () => (
+      <Label
+        text={text("text", "Label")}
+        expanded={boolean("Expanded", false)}
+        size={select("Size", sizeOptions, "medium")}
+        colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+        rounded={boolean("Rounded", false)}
+        outlined={boolean("Outlined", false)}
+        focus={boolean("Focus", false)}
+        onHover={() => console.log("hovered...")}
+      />
+    ))
