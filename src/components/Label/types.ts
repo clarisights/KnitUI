@@ -45,6 +45,7 @@ export interface LabelPropTypes extends BaseLabelProps {
    * with the given color. Also the background is set to a default which can be changed by
    * `customColor` but not through the `colorPreset`*/
   insetColor?: CustomColor
+  [propName: string]: any
 }
 
 export type InlineLabelType = React.FC<InlineLabelProps>
