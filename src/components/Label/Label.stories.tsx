@@ -205,6 +205,6 @@ stories
         rounded={boolean("Rounded", false)}
         outlined={boolean("Outlined", false)}
         focus={boolean("Focus", false)}
-        onHover={() => console.log("hovered...")}
+        onClick={action("label clicked")}
       />
     ))

@@ -199,7 +199,7 @@ const { text, insetColor, icons } = labelProps
    * explicitly provided through customColor
    */
   if (insetColor) {
-    otherProps.customColor = otherProps.customColor || INSET_BACKGROUND_COLOR
+    labelProps.customColor = labelProps.customColor || INSET_BACKGROUND_COLOR
   }
 
   const scProps = { theme, customProps: labelProps, ...otherProps }
