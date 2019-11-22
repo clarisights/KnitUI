@@ -202,7 +202,7 @@ const { text, insetColor, icons } = labelProps
     labelProps.customColor = labelProps.customColor || INSET_BACKGROUND_COLOR
   }
 
-  const scProps = { theme, customProps: labelProps, ...otherProps }
+  const scProps = { theme, customProps: labelProps }
 
   const renderLeftIcon = () => {
     if (!showLeftIcon(scProps)) {
@@ -228,6 +228,7 @@ const { text, insetColor, icons } = labelProps
   return (
     <StyledDiv
       {...scProps}
+      {...otherProps}
       insetColor={insetColor}>
       {renderLeftIcon()}
       <StyledTextSpan {...scProps}>{text}</StyledTextSpan>
