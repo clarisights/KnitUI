@@ -25,7 +25,6 @@ stories
     return (
       <div
         style={{
-          padding: "12px",
           border: "1px solid lightgray",
           height: "360px",
           width: "800px",
