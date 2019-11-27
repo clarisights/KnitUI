@@ -62,6 +62,9 @@ const GlobalStyles = createGlobalStyle`
   *, *::before, *::after {
     box-sizing: border-box;
   }
+  :focus {
+    outline-color: #0066FF;
+  }
 `
 
 export default GlobalStyles
