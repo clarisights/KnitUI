@@ -44,6 +44,8 @@ export interface ButtonWrapperProps extends ButtonBaseProps {
   insetLabel?: string
   /** A location to navigate to on click of the button */
   href?: string
+  /** CustomProps, just to avoid, when passed from it's parent, yet no usecase here */
+  customProps?: any
 }
 
 export interface BaseButtonProps extends ButtonBaseProps {

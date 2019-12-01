@@ -241,6 +241,7 @@ exports[`Alert Component Tests different placements bottomLeft side alert render
     </div>
     <button
       class="c3 c4"
+      data-testid="alert-close"
       style="padding: 0rem;"
     >
       <span
@@ -527,6 +528,7 @@ exports[`Alert Component Tests different placements bottomRight side alert rende
     </div>
     <button
       class="c3 c4"
+      data-testid="alert-close"
       style="padding: 0rem;"
     >
       <span
@@ -813,6 +815,7 @@ exports[`Alert Component Tests different placements topLeft side alert render 1`
     </div>
     <button
       class="c3 c4"
+      data-testid="alert-close"
       style="padding: 0rem;"
     >
       <span
@@ -1099,6 +1102,7 @@ exports[`Alert Component Tests different placements topRight side alert render 1
     </div>
     <button
       class="c3 c4"
+      data-testid="alert-close"
       style="padding: 0rem;"
     >
       <span
@@ -1418,6 +1422,7 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
     </div>
     <button
       class="c5 c6"
+      data-testid="alert-close"
       style="padding: 0rem;"
     >
       <span
@@ -1737,6 +1742,7 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
     </div>
     <button
       class="c5 c6"
+      data-testid="alert-close"
       style="padding: 0rem;"
     >
       <span
@@ -2056,6 +2062,7 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
     </div>
     <button
       class="c5 c6"
+      data-testid="alert-close"
       style="padding: 0rem;"
     >
       <span
@@ -2375,6 +2382,7 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
     </div>
     <button
       class="c5 c6"
+      data-testid="alert-close"
       style="padding: 0rem;"
     >
       <span

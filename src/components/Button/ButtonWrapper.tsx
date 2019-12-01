@@ -23,6 +23,9 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
   insetCustomColor,
   className,
   style,
+  customProps /** (define just to exclude from rest) In case Button is wrapped in StyledComponent with customProps passed down to manipulate style, 
+  like when Button is used in other components. eg. Alerts, yet no need in Button Component itself*/,
+  ...rest
 }) => {
   const themeContext = useContext(ThemeContext)
   const { knitui } = themeContext
@@ -72,7 +75,8 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
       }
       disabled={disabled}
       className={className}
-      style={style}>
+      style={style}
+      {...rest}>
       {icon ? <Icon type={icon} size={iconSize} /> : null}
       {label}
       {insetLabel ? (
