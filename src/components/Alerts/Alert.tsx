@@ -56,12 +56,12 @@ const renderActions = (scProps: IStyledAlert) => {
       {actions!.map((action, index) => (
         <StyledAlertAction
           className={getClassName(prfxCls, "-knit-alert-action")}
-          {...scProps}
           key={index}
           type="secondary"
           label={action.text}
           onClick={() => action.callback(alertKey)}
           alertType={type}
+          {...scProps}
         />
       ))}
     </AlertActionsWrapper>
