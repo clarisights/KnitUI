@@ -46,8 +46,10 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
 
     // Closing Alert will call remove method of this class to update state
     const curOnClose = alertProps.onClose
-    alertProps.onClose = event => {
-      curOnClose && curOnClose(event)
+    alertProps.onClose = key => {
+      if (curOnClose) {
+        curOnClose(key)
+      }
       this.handleRemove(alertProps.alertKey!)
     }
     this.queue.push(alertProps)

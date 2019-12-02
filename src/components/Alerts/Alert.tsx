@@ -126,7 +126,9 @@ const Alert: React.FC<AlertProps> = (props: AlertProps) => {
 
   // called by both AutoDismiss and Close Icon click
   const fadeAway = (event?: SyntheticEvent): void => {
-    onClose && onClose(event)
+    if (onClose) {
+      onClose(alertKey)
+    }
     setOpen(false)
   }
 
