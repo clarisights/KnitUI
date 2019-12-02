@@ -151,13 +151,14 @@ describe("Alert Component Tests", () => {
     const onCloseFn = jest.fn()
 
     const { getByTestId, container } = renderComponent(
-      <Alert content="Hello there" onClose={onCloseFn} />
+      <Alert alertKey="my-alert-key" content="Hello there" onClose={onCloseFn} />
     )
 
     const closeButton = container.querySelector(`button`)
     // const closeButton = getByTestId("alert-close")
     fireEvent.click(closeButton!)
     expect(onCloseFn).toBeCalledTimes(1)
+    expect(onCloseFn).toBeCalledWith("my-alert-key")
     expect(container).toHaveTextContent("Hello there")
   })
 
