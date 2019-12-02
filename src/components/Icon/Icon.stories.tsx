@@ -9,7 +9,7 @@ stories.addDecorator(withKnobs)
 
 const sizes = ["16px", "18px", "24px"]
 const colors = ["#000000", "#990000", "#036600"]
-const allIcons = Object.values(Icons)
+const allIcons = Object.entries(Icons)
 
 stories
   .add("Icon", () => {
@@ -21,8 +21,12 @@ stories
     const size = select("Size", sizes, "18px")
     const color = select("Color", colors, "#000000")
     const props = { width: size, height: size, fill: color }
-    const allIconsDOM = allIcons.map((icon, index) => (
-      <div key={index} style={{ margin: 20 }} role="icon-wrapper">
+    const allIconsDOM = allIcons.map(([iconKey, icon], index) => (
+      <div
+        key={index}
+        title={iconKey}
+        style={{ padding: 10, margin: 10 }}
+        role="icon-wrapper">
         {icon(props)}
       </div>
     ))
