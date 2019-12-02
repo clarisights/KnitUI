@@ -30,9 +30,9 @@ const Component = (props: any) => {
             dismissDuration: "500",
             heading: "Heading will be here",
             multiLine: "true",
-            icon: "",
+            icon: "", 
             actions: [{text: "Action", callback: (key:string)=>alert('Action is called')}]
-            onClose: ()=>{console.log('Alert is closed')},
+            onClose: (key) => { console.log(`Alert ${key} is closed`)},
             customColor: "#ff2d4e",
             onExit: (key:string) => {...}
             // className: "my_class",
@@ -99,7 +99,7 @@ import { Alert } from "KnitUI"
 | icon            | string         | -                                                              | icon type to be rendered in the alert                                                                                                                                                                                                         |
 | image           | string         | -                                                              | Image url to be shown as icon in alert                                                                                                                                                                                                        |
 | actions         | `actionType[]` | `type actionType = { text: string, callback: (key) => {...} }` | Array of actions will be shown on alert as buttons, alert's `key` is passed so user can remove alert from action.                                                                                                                             |
-| onClose         | Function       | -                                                              | A click handler to be executed on closing of the alert. Will receive the `event` as an argument                                                                                                                                               |
+| onClose         | (key: string) = void      | -                                                              | A click handler to be executed on closing of the alert. Will receive the `key` of the alert as an argument                                                                                                                                               |
 | onExit          | Function       | -                                                              | This function will be executed when Alert component will unmount. Function have received the `key` as an argument.eg. `(key) => {...}`                                                                                                        |
 | className       | string         | -                                                              | add class to main alert wrapper to provide custom class                                                                                                                                                                                       |
 | prefixClassName | string         | -                                                              | create set of classes which add to each part of alert with provided prefix, classes are -> -knit-alert, -knit-alert-icon, -knit-alert-close, -knit-alert-content, -knit-alert-action-wrapper, -knit-alert-action, -knit-alert-content-wrapper |
