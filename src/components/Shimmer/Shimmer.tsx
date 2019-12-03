@@ -11,10 +11,10 @@ export interface IShimmerProps extends BaseComponentProps {
 
 const shim = keyframes`
 from {
-  left: -100%;
+  left: -110%;
 }
 to {
-  left: 100%;
+  left: 110%;
 }
 `
 
@@ -43,10 +43,10 @@ const ShimmerContainer: any = styled.div<{
 const ShimmerElement = styled.div`
   width: 50%;
   max-width: 35rem;
-  background: ${({ theme }) => theme.knitui.chromaPalette.Neutral40};
+  background: rgba(204, 204, 204, 0.3);
   height: 100%;
   border-radius: 4px;
-  filter: blur(34px);
+  box-shadow: 0px 14px 64px rgba(0, 0, 0, 0.3);
   animation: ${shim} 2000ms cubic-bezier(0.5, 0, 0, 1) infinite;
   position: absolute;
 `
