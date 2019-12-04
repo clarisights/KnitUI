@@ -10,7 +10,7 @@ import {
 import "jest-styled-components"
 import "jest-dom/extend-expect"
 import { ThemeProvider } from "../../../common/styles"
-import { AlertsProvider, useAlerts, withAlerts, Alert } from "../"
+import Alerts from "../"
 import { Button } from "../../"
 import { sizeType, placementType, AlertProps } from "../types"
 
@@ -20,13 +20,13 @@ afterEach(cleanup)
 const renderComponent = component =>
   render(
     <ThemeProvider>
-      <AlertsProvider>{component}</AlertsProvider>
+      <Alerts.AlertsProvider>{component}</Alerts.AlertsProvider>
     </ThemeProvider>
   )
 
 // Hook Component Used for API test
 const ShowAlerts = props => {
-  const { addAlert, removeAlert } = useAlerts()
+  const { addAlert, removeAlert } = Alerts.useAlerts()
   let keys = []
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const ShowAlerts = props => {
 }
 
 const ShowAlertDismiss = props => {
-  const { addAlert, removeAlert } = useAlerts()
+  const { addAlert, removeAlert } = Alerts.useAlerts()
   let keys = []
 
   useEffect(() => {
@@ -74,7 +74,7 @@ class ShowAlertClass extends React.Component<
   }
 }
 
-const WithAlertShowAlert: any = withAlerts(ShowAlertClass)
+const WithAlertShowAlert: any = Alerts.withAlerts(ShowAlertClass)
 
 // Alerts Props need for API test
 const alerts = [
@@ -118,7 +118,7 @@ describe("Alert Component Tests", () => {
     sizes.forEach(size => {
       test(`${size} alert render`, () => {
         const { container } = renderComponent(
-          <Alert size={size} content="Hello there" icon="" />
+          <Alerts.Alert size={size} content="Hello there" icon="" />
         )
 
         expect(container).toMatchSnapshot()
@@ -138,7 +138,7 @@ describe("Alert Component Tests", () => {
     placements.forEach(placement => {
       test(`${placement} side alert render`, () => {
         const { container } = renderComponent(
-          <Alert placement={placement} content="Hello there" />
+          <Alerts.Alert placement={placement} content="Hello there" />
         )
 
         expect(container).toMatchSnapshot()
@@ -151,7 +151,7 @@ describe("Alert Component Tests", () => {
     const onCloseFn = jest.fn()
 
     const { getByTestId, container } = renderComponent(
-      <Alert alertKey="my-alert-key" content="Hello there" onClose={onCloseFn} />
+      <Alerts.Alert alertKey="my-alert-key" content="Hello there" onClose={onCloseFn} />
     )
 
     const closeButton = container.querySelector(`button`)
@@ -164,7 +164,7 @@ describe("Alert Component Tests", () => {
 
   test("By default onClose of Alert", async () => {
     const { getByTestId, container } = renderComponent(
-      <Alert content="Hello there" />
+      <Alerts.Alert content="Hello there" />
     )
 
     const closeButton = container.querySelector(`button`)
@@ -177,7 +177,7 @@ describe("Alert Component Tests", () => {
   test("onExit is called when alert unmount", async () => {
     const onExitFn = jest.fn()
     const { unmount } = renderComponent(
-      <Alert content="Hello there" onExit={onExitFn} />
+      <Alerts.Alert content="Hello there" onExit={onExitFn} />
     )
     unmount()
     expect(onExitFn).toHaveBeenCalledTimes(1)

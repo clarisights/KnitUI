@@ -11,7 +11,7 @@ import {
 import Alert from "./Alert"
 import { AlertProps, placementType } from "./types"
 import { Button } from ".."
-import { AlertsProvider, useAlerts } from "./"
+import Alerts from "./"
 
 const Readme = require("./Alerts.README.md")
 
@@ -79,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const AlertButton = (props: any) => {
-  const { addAlert, removeAlert } = useAlerts()
+  const { addAlert, removeAlert } = Alerts.useAlerts()
   const handleClick = event => {
     addAlert({
       type: props.type,
@@ -100,7 +100,7 @@ const AlertButton = (props: any) => {
 }
 
 const AlertsButton = (props: any) => {
-  const { addAlert, removeAlert } = useAlerts()
+  const { addAlert, removeAlert } = Alerts.useAlerts()
   const placements: placementType[] = [
     "bottomLeft",
     "topLeft",
@@ -207,7 +207,7 @@ const alertArr: AlertProps[] = [
 const stories = storiesOf("Alerts", module)
 stories.addDecorator(withKnobs)
 stories.addDecorator(story => (
-  <AlertsProvider>
+  <Alerts.AlertsProvider>
     <div
       style={{
         width: "90vw",
@@ -217,7 +217,7 @@ stories.addDecorator(story => (
       }}>
       {story()}
     </div>
-  </AlertsProvider>
+  </Alerts.AlertsProvider>
 ))
 
 stories
@@ -327,7 +327,7 @@ stories
   ))
   .add("Action to dismiss it's alert", () => {
     const AlertDismissComponent = props => {
-      const { addAlert, removeAlert } = useAlerts()
+      const { addAlert, removeAlert } = Alerts.useAlerts()
 
       const newActions = [...alertActions]
       newActions[1] = {
@@ -361,7 +361,7 @@ stories
   })
   .add("Exit Function when unmount", () => {
     const AlertOnExitComponent = props => {
-      const { addAlert, removeAlert } = useAlerts()
+      const { addAlert, removeAlert } = Alerts.useAlerts()
 
       const handleClick = () =>
         addAlert({

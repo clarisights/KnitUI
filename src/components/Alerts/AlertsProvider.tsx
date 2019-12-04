@@ -8,18 +8,13 @@ import {
   BottomLeftBox,
   BottomRightBox,
 } from "./StyledAlerts"
-import { AlertProps, placementType, AlertContextInterface } from "./types"
+import { AlertProps, placementType, AlertsProviderState } from "./types"
 
 const PlacementWrapperDiv = {
   topLeft: TopLeftBox,
   topRight: TopRightBox,
   bottomLeft: BottomLeftBox,
   bottomRight: BottomRightBox,
-}
-
-export interface AlertsProviderState {
-  alerts: AlertProps[]
-  contextAPI: AlertContextInterface
 }
 
 class AlertsProvider extends React.Component<{}, AlertsProviderState> {
