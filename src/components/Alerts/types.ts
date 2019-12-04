@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ReactNode, Component } from "react"
 
 // Size types of the alert components
 export type sizeType = "x-small" | "small" | "medium" | "large"
@@ -60,9 +60,25 @@ export interface AlertProps {
   customColor?: string
 }
 
+export type addAlertType = (props: AlertProps) => string
+
+export type removeAlertType = (key: string) => boolean
+
 export interface AlertContextInterface {
   // This function will add alert to your provider and return a unique key to reference the alert
-  addAlert: (AlertProps) => string
+  addAlert: addAlertType
   // This function will remove alert when passed unique key related to each alert
-  removeAlert: (string) => boolean
+  removeAlert: removeAlertType
+}
+
+export interface AlertsProviderState {
+  alerts: AlertProps[]
+  contextAPI: AlertContextInterface
+}
+
+export type AlertProviderType = Component<{}, AlertsProviderState>
+
+export type useAlertType = () => {
+  addAlert: addAlertType
+  removeAlert: removeAlertType
 }
