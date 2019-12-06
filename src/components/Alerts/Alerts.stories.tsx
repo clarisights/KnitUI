@@ -332,7 +332,7 @@ stories
       const newActions = [...alertActions]
       newActions[1] = {
         text: "Dismiss",
-        callback: key => {
+        callback: (key: string) => {
           removeAlert(key)
         },
       }
