@@ -120,6 +120,7 @@ const generateTheme = palette => {
     borderRadius: `${multiply(0.4, baseUnit)}px`,
     defaultPadding: `${multiply(0.4, baseUnit)}px ${baseUnit}px`,
     defaultTextPadding: "1.4rem",
+    defaultBorderWidth: "0.1",
 
     // input
     inputFocusOutline: "none",
