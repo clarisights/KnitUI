@@ -167,12 +167,12 @@ const generateTheme = palette => {
     modalBorderRadius: "0.4rem",
     modalMaxContentHeightOffset: 14,
     modalPadding: {
-      vertical: 2.8,
-      horizontal: 2.1,
+      vertical: 2.1,
+      horizontal: 2.8,
     },
     modalHeaderPadding: {
       vertical: 1.4,
-      horizontal: 2.1,
+      horizontal: 2.8,
     },
     modalTitleTypographySize: 20,
     modalMinHeight: 35,
