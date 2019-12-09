@@ -180,6 +180,7 @@ stories
     <Label
       text={text("text", "inline label")}
       expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       insetColor={(text("insetColor", "#4267B2"))}
       outlined={boolean("Outlined", false)}
@@ -190,6 +191,7 @@ stories
     <Label
       text={text("text", "inline label")}
       expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       insetColor={(text("insetColor", "#4267B2"))}
       customColor={(text("customColor", "#B267B2"))}
