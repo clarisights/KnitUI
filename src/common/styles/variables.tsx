@@ -25,7 +25,7 @@ const generateTheme = palette => {
    * Create a new palette by parsing the corresponding color values
    * into chroma objects.
    */
-  let chromaPalette = Object.entries(palette)
+  const chromaPalette = Object.entries(palette)
     .map(([colorName, values]: [string, any]) => ({
       [colorName]: hslToChroma(values.hsl),
     }))
@@ -36,7 +36,7 @@ const generateTheme = palette => {
    * The defualt theme object is created every time so that theme is not
    * get overlaped, as Modules do immutable export
    */
-  let defaultTheme: any = {
+  const defaultTheme: any = {
     baseUnit: 10,
     base: `${baseUnit}px`,
     baseIncrementUnit: 0.2,
