@@ -144,6 +144,7 @@ const LabelContainer = styled.div`
   // Required to keep the psuedo element contained within.
   // If placed on the inner container the pseudo element does not
   // area occupied by the border.
+  display: inline-flex;
   position: relative;
 `
 
