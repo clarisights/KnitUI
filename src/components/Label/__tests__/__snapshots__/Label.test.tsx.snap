@@ -3,6 +3,10 @@
 exports[`Label custom class 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -23,18 +27,22 @@ exports[`Label custom class 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
-    class="custom-class c0"
+    class="c0"
   >
-    <span
-      class="c1"
+    <div
+      class="custom-class c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -42,6 +50,10 @@ exports[`Label custom class 1`] = `
 exports[`Label custom font color 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -62,18 +74,22 @@ exports[`Label custom font color 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -81,6 +97,10 @@ exports[`Label custom font color 1`] = `
 exports[`Label custom style 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -101,19 +121,23 @@ exports[`Label custom style 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
-    style="background-color: red;"
   >
-    <span
+    <div
       class="c1"
+      style="background-color: red;"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -121,6 +145,10 @@ exports[`Label custom style 1`] = `
 exports[`Label focused 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -141,18 +169,22 @@ exports[`Label focused 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -218,6 +250,10 @@ exports[`Label inline expanded 1`] = `
 exports[`Label inset 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -238,7 +274,7 @@ exports[`Label inset 1`] = `
   overflow: hidden;
 }
 
-.c0::before {
+.c1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -249,18 +285,22 @@ exports[`Label inset 1`] = `
   border-radius: 0.2rem 0 0 0.2rem;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -268,6 +308,10 @@ exports[`Label inset 1`] = `
 exports[`Label inset with custom color 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -288,7 +332,7 @@ exports[`Label inset with custom color 1`] = `
   overflow: hidden;
 }
 
-.c0::before {
+.c1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -299,18 +343,22 @@ exports[`Label inset with custom color 1`] = `
   border-radius: 0.2rem 0 0 0.2rem;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -318,6 +366,10 @@ exports[`Label inset with custom color 1`] = `
 exports[`Label outlined 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -338,25 +390,29 @@ exports[`Label outlined 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label right custom addon 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c3 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -364,6 +420,10 @@ exports[`Label right custom addon 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -384,38 +444,42 @@ exports[`Label right custom addon 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0.4rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
-    <span
-      class="c2"
-      fill="#FFFFFF"
-      height="18px"
-      style="cursor: pointer;"
-      type="oClose"
-      width="18px"
-    >
-      <svg
+      <span
+        class="c2"
+      >
+        label
+      </span>
+      <span
+        class="c3"
         fill="#FFFFFF"
         height="18px"
-        viewBox="0 0 24 24"
+        style="cursor: pointer;"
+        type="oClose"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-        />
-      </svg>
-    </span>
+        <svg
+          fill="#FFFFFF"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -423,6 +487,10 @@ exports[`Label right custom addon 1`] = `
 exports[`Label rounded 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -443,18 +511,22 @@ exports[`Label rounded 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -462,6 +534,10 @@ exports[`Label rounded 1`] = `
 exports[`Label with size large compact 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -482,18 +558,22 @@ exports[`Label with size large compact 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -501,6 +581,10 @@ exports[`Label with size large compact 1`] = `
 exports[`Label with size large expanded 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -521,25 +605,29 @@ exports[`Label with size large expanded 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size large left and right icons 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -547,6 +635,10 @@ exports[`Label with size large left and right icons 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -567,63 +659,67 @@ exports[`Label with size large left and right icons 1`] = `
   overflow: hidden;
 }
 
-.c2 {
+.c3 {
   margin: 0rem 0.4rem 0rem 0.4rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oDragIndicator"
-      width="18px"
     >
-      <svg
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oDragIndicator"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
-        />
-      </svg>
-    </span>
-    <span
-      class="c2"
-    >
-      label
-    </span>
-    <span
-      class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oClose"
-      width="18px"
-    >
-      <svg
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
+          />
+        </svg>
+      </span>
+      <span
+        class="c3"
+      >
+        label
+      </span>
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oClose"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-        />
-      </svg>
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size large left icon 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -631,6 +727,10 @@ exports[`Label with size large left icon 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -651,44 +751,48 @@ exports[`Label with size large left icon 1`] = `
   overflow: hidden;
 }
 
-.c2 {
+.c3 {
   margin: 0rem 0rem 0rem 0.4rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oDragIndicator"
-      width="18px"
     >
-      <svg
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oDragIndicator"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
-        />
-      </svg>
-    </span>
-    <span
-      class="c2"
-    >
-      label
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
+          />
+        </svg>
+      </span>
+      <span
+        class="c3"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size large right icon 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c3 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -696,6 +800,10 @@ exports[`Label with size large right icon 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -716,37 +824,41 @@ exports[`Label with size large right icon 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0.4rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
-    <span
-      class="c2"
-      fill="#ffffff"
-      height="18px"
-      type="oClose"
-      width="18px"
-    >
-      <svg
+      <span
+        class="c2"
+      >
+        label
+      </span>
+      <span
+        class="c3"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oClose"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-        />
-      </svg>
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -754,6 +866,10 @@ exports[`Label with size large right icon 1`] = `
 exports[`Label with size medium compact 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -774,18 +890,22 @@ exports[`Label with size medium compact 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -793,6 +913,10 @@ exports[`Label with size medium compact 1`] = `
 exports[`Label with size medium expanded 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -813,25 +937,29 @@ exports[`Label with size medium expanded 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size medium left and right icons 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -839,6 +967,10 @@ exports[`Label with size medium left and right icons 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -859,63 +991,67 @@ exports[`Label with size medium left and right icons 1`] = `
   overflow: hidden;
 }
 
-.c2 {
+.c3 {
   margin: 0rem 0.4rem 0rem 0.4rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oDragIndicator"
-      width="18px"
     >
-      <svg
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oDragIndicator"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
-        />
-      </svg>
-    </span>
-    <span
-      class="c2"
-    >
-      label
-    </span>
-    <span
-      class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oClose"
-      width="18px"
-    >
-      <svg
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
+          />
+        </svg>
+      </span>
+      <span
+        class="c3"
+      >
+        label
+      </span>
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oClose"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-        />
-      </svg>
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size medium left icon 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -923,6 +1059,10 @@ exports[`Label with size medium left icon 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -943,44 +1083,48 @@ exports[`Label with size medium left icon 1`] = `
   overflow: hidden;
 }
 
-.c2 {
+.c3 {
   margin: 0rem 0rem 0rem 0.4rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oDragIndicator"
-      width="18px"
     >
-      <svg
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oDragIndicator"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
-        />
-      </svg>
-    </span>
-    <span
-      class="c2"
-    >
-      label
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
+          />
+        </svg>
+      </span>
+      <span
+        class="c3"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size medium right icon 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c3 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -988,6 +1132,10 @@ exports[`Label with size medium right icon 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1008,37 +1156,41 @@ exports[`Label with size medium right icon 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0.4rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
-    <span
-      class="c2"
-      fill="#ffffff"
-      height="18px"
-      type="oClose"
-      width="18px"
-    >
-      <svg
+      <span
+        class="c2"
+      >
+        label
+      </span>
+      <span
+        class="c3"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oClose"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-        />
-      </svg>
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1046,6 +1198,10 @@ exports[`Label with size medium right icon 1`] = `
 exports[`Label with size small compact 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1066,18 +1222,22 @@ exports[`Label with size small compact 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1085,6 +1245,10 @@ exports[`Label with size small compact 1`] = `
 exports[`Label with size small expanded 1`] = `
 <DocumentFragment>
   .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1105,25 +1269,29 @@ exports[`Label with size small expanded 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
+      <span
+        class="c2"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size small left and right icons 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -1131,6 +1299,10 @@ exports[`Label with size small left and right icons 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1151,63 +1323,67 @@ exports[`Label with size small left and right icons 1`] = `
   overflow: hidden;
 }
 
-.c2 {
+.c3 {
   margin: 0rem 0.2rem 0rem 0.2rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oDragIndicator"
-      width="18px"
     >
-      <svg
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oDragIndicator"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
-        />
-      </svg>
-    </span>
-    <span
-      class="c2"
-    >
-      label
-    </span>
-    <span
-      class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oClose"
-      width="18px"
-    >
-      <svg
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
+          />
+        </svg>
+      </span>
+      <span
+        class="c3"
+      >
+        label
+      </span>
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oClose"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-        />
-      </svg>
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size small left icon 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -1215,6 +1391,10 @@ exports[`Label with size small left icon 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1235,44 +1415,48 @@ exports[`Label with size small left icon 1`] = `
   overflow: hidden;
 }
 
-.c2 {
+.c3 {
   margin: 0rem 0rem 0rem 0.2rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      fill="#ffffff"
-      height="18px"
-      type="oDragIndicator"
-      width="18px"
     >
-      <svg
+      <span
+        class="c2"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oDragIndicator"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
-        />
-      </svg>
-    </span>
-    <span
-      class="c2"
-    >
-      label
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 18C11 19.1 10.1 20 9 20C7.9 20 7 19.1 7 18C7 16.9 7.9 16 9 16C10.1 16 11 16.9 11 18ZM9 10C7.9 10 7 10.9 7 12C7 13.1 7.9 14 9 14C10.1 14 11 13.1 11 12C11 10.9 10.1 10 9 10ZM9 4C7.9 4 7 4.9 7 6C7 7.1 7.9 8 9 8C10.1 8 11 7.1 11 6C11 4.9 10.1 4 9 4ZM15 8C16.1 8 17 7.1 17 6C17 4.9 16.1 4 15 4C13.9 4 13 4.9 13 6C13 7.1 13.9 8 15 8ZM15 10C13.9 10 13 10.9 13 12C13 13.1 13.9 14 15 14C16.1 14 17 13.1 17 12C17 10.9 16.1 10 15 10ZM15 16C13.9 16 13 16.9 13 18C13 19.1 13.9 20 15 20C16.1 20 17 19.1 17 18C17 16.9 16.1 16 15 16Z"
+          />
+        </svg>
+      </span>
+      <span
+        class="c3"
+      >
+        label
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Label with size small right icon 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c3 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -1280,6 +1464,10 @@ exports[`Label with size small right icon 1`] = `
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1300,37 +1488,41 @@ exports[`Label with size small right icon 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0rem 0.2rem 0rem 0rem;
 }
 
 <div
     class="c0"
   >
-    <span
+    <div
       class="c1"
     >
-      label
-    </span>
-    <span
-      class="c2"
-      fill="#ffffff"
-      height="18px"
-      type="oClose"
-      width="18px"
-    >
-      <svg
+      <span
+        class="c2"
+      >
+        label
+      </span>
+      <span
+        class="c3"
         fill="#ffffff"
         height="18px"
-        viewBox="0 0 24 24"
+        type="oClose"
         width="18px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-        />
-      </svg>
-    </span>
+        <svg
+          fill="#ffffff"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
