@@ -140,6 +140,13 @@ const getInsetStyles = (props: IStyledLabel) => {
     : ""
 }
 
+const LabelContainer = styled.div`
+  // Required to keep the psuedo element contained within.
+  // If placed on the inner container the pseudo element does not
+  // area occupied by the border.
+  position: relative;
+`
+
 const StyledDiv = styled.div<IStyledLabel>`
   display: inline-flex;
   align-items: center;
@@ -207,14 +214,16 @@ const { text, insetColor, icons } = labelProps
 
   //For styled components, we separate the props that are to be loaded on the DOM
   return (
-    <StyledDiv
-      {...scProps}
-      {...otherProps}
-      insetColor={insetColor}>
-      {renderLeftIcon()}
-      <StyledTextSpan {...scProps}>{text}</StyledTextSpan>
-      {renderRightIcon()}
-    </StyledDiv>
+    <LabelContainer>
+      <StyledDiv
+        {...scProps}
+        {...otherProps}
+        insetColor={insetColor}>
+        {renderLeftIcon()}
+        <StyledTextSpan {...scProps}>{text}</StyledTextSpan>
+        {renderRightIcon()}
+      </StyledDiv>
+    </LabelContainer>
   )
 }
 
