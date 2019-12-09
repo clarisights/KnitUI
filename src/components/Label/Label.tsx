@@ -56,32 +56,27 @@ const showRightIcon = (props: IStyledLabel) => {
 }
 
 const verticalPadding = {
-  small: 0.1,
-  medium: 0.2,
-  large: 0.4,
+  small: 0,
+  medium: 0.1,
+  large: 0.3,
 }
 
-const getHorizontalPadding = (size?: string) => size === "small" ? 0.3 : 0.5
+const getIconPadding = (size?: string) => size === "small" ? 0.2 : 0.4
 
 const getPadding = (props: IStyledLabel) => {
   const {
     customProps: { size, expanded, outlined },
     theme: { knitui: { defaultBorderWidth }}
   } = props
-  const defaultHorizontalPadding = expanded ? 1 : 0.7
+  const defaultHorizontalPadding = expanded ? 0.9 : 0.6
   let left = defaultHorizontalPadding
   let right = defaultHorizontalPadding
-  let vertical = verticalPadding[size!]
+  const vertical = verticalPadding[size!]
   if (showLeftIcon(props)) {
-    left = getHorizontalPadding(size)
+    left = getIconPadding(size)
   }
   if (showRightIcon(props)) {
-    right = getHorizontalPadding(size)
-  }
-  if (outlined) {
-    vertical = vertical - defaultBorderWidth
-    right = right - defaultBorderWidth
-    left = left - defaultBorderWidth
+    right = getIconPadding(size)
   }
   return `${vertical}rem ${right}rem ${vertical}rem ${left}rem`
 }
@@ -106,7 +101,8 @@ const getBorder = (props: IStyledLabel) => {
     customProps: { outlined },
     theme: { knitui: { defaultBorderWidth }}
   } = props
-  return outlined ? `${defaultBorderWidth}rem solid ${getDarkenedBorderColor(props)}` : "none"
+  const borderColor = outlined ? getDarkenedBorderColor(props) : "transparent"
+  return `${defaultBorderWidth}rem solid ${borderColor}`
 }
 
 const getBorderRadius = (props: IStyledLabel) => {
