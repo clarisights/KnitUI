@@ -15,7 +15,7 @@ const Readme = require("./README.md")
 const stories = storiesOf("Buttons", module)
 stories.addDecorator(withKnobs)
 
-const typeOptions = {
+const kindOptions = {
   Primary: "primary",
   Secondary: "secondary",
 }
@@ -45,7 +45,7 @@ stories
   .add("Simple primary with text", () => (
     <Button
       label={text("Label", "Button")}
-      type={select("Type", typeOptions, "primary")}
+      kind={select("Kind", kindOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}
@@ -57,7 +57,7 @@ stories
   .add("With a non-default color preset", () => (
     <Button
       label={text("Label", "Button")}
-      type={select("Type", typeOptions, "primary")}
+      kind={select("Kind", kindOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "danger")}
       ghost={boolean("Ghost", false)}
@@ -69,7 +69,7 @@ stories
   .add("Simple secondary with text", () => (
     <Button
       label={text("Label", "Button")}
-      type={select("Type", typeOptions, "secondary")}
+      type={select("Type", kindOptions, "secondary")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}
@@ -81,7 +81,7 @@ stories
   .add("Ghost (inverted color scheme)", () => (
     <Button
       label={text("Label", "Button")}
-      type={select("Type", typeOptions, "primary")}
+      kind={select("Kind", kindOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", true)}
@@ -93,7 +93,7 @@ stories
   .add("With an inset", () => (
     <Button
       label={text("Label", "Button")}
-      type={select("Type", typeOptions, "primary")}
+      kind={select("Kind", kindOptions, "primary")}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
       ghost={boolean("Ghost", false)}
@@ -195,7 +195,7 @@ stories
   ))
   .add("Button Group", () => {
     // props which should be same for all Buttons in ButtonGroup
-    const type = options("type", typeOptions, "primary", {
+    const type = options("type", kindOptions, "primary", {
       display: "inline-radio",
     })
     const size = options("size", sizeOptions, "medium", {
@@ -255,7 +255,7 @@ stories
     const className = text("text", "HelloGroup")
 
     // props which should be same for all Buttons in ButtonGroup
-    const type = options("type", typeOptions, "primary", {
+    const type = options("type", kindOptions, "primary", {
       display: "inline-radio",
     })
     const size = options("size", sizeOptions, "medium", {
@@ -303,7 +303,7 @@ stories
     const className = text("text", "HelloGroup")
 
     // props which should be same for all Buttons in ButtonGroup
-    const type = options("type", typeOptions, "primary", {
+    const type = options("type", kindOptions, "primary", {
       display: "inline-radio",
     })
     const size = options("size", sizeOptions, "medium", {

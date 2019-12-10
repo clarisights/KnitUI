@@ -1,7 +1,7 @@
 import {
   ColorPreset,
   CustomColor,
-  BaseComponentProps,
+  BaseComponentProps
 } from "../../common/types"
 import { SyntheticEvent, ReactNode } from "react"
 
@@ -12,11 +12,11 @@ export interface ParsedColorTheme {
   insetFont?: any
 }
 
-export interface ButtonBaseProps extends BaseComponentProps {
+export interface ButtonBaseProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** The text label to be shown on the button */
   label?: string
   /** Indicates the importance of the button's actions */
-  type?: "primary" | "secondary"
+  kind?: "primary" | "secondary"
   /**
    * One of a set of predefined values that are representative of
    * the type of action
@@ -24,8 +24,6 @@ export interface ButtonBaseProps extends BaseComponentProps {
   ghost?: boolean
   /** Physical area occupied on the screen */
   size?: "small" | "medium" | "large"
-  /** Whether the button should be disabled */
-  disabled?: boolean
   /** Only text/icon stripping the background */
   bare?: boolean
   /** An icon type to be rendered in the button */
@@ -48,7 +46,7 @@ export interface ButtonWrapperProps extends ButtonBaseProps {
   customProps?: any
 }
 
-export interface BaseButtonProps extends ButtonBaseProps {
+export interface ButtonProps extends ButtonBaseProps {
   colorTheme: ParsedColorTheme
   fontSize: number
   lineHeight: number

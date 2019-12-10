@@ -25,7 +25,7 @@ describe("Button", () => {
       it("renders a primary variant with a label correctly", () => {
         const { asFragment } = render(
           <ThemeProvider>
-            <Button label="button" size={size} type="secondary" />
+            <Button label="button" size={size} kind="secondary" />
           </ThemeProvider>
         )
         expect(asFragment()).toMatchSnapshot()
@@ -134,7 +134,7 @@ describe("Button", () => {
   it("Should disable button rendered correctly", () => {
     const { asFragment } = render(
       <ThemeProvider>
-        <Button label="button" disabled={true} />
+        <Button label="button" disabled />
       </ThemeProvider>
     )
     expect(asFragment()).toMatchSnapshot()

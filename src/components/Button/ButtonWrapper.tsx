@@ -9,10 +9,9 @@ const DEFAULT_COLOR_THEME = "neutral"
 
 const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
   label,
-  type = "primary",
+  kind = "primary",
   ghost = false,
   size = "medium",
-  disabled = false,
   href,
   onClick,
   icon,
@@ -21,8 +20,6 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
   colorPreset = DEFAULT_COLOR_THEME,
   customColor,
   insetCustomColor,
-  className,
-  style,
   customProps /** (define just to exclude from rest) In case Button is wrapped in StyledComponent with customProps passed down to manipulate style, 
   like when Button is used in other components. eg. Alerts, yet no need in Button Component itself*/,
   ...rest
@@ -61,11 +58,10 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
       customProps={{
         label,
         icon,
-        type,
+        kind,
         ghost,
         size,
         bare,
-        disabled,
         colorTheme: parsedColorTheme,
         fontSize: baseFontSize,
         lineHeight: baseLineHeight,
@@ -73,9 +69,6 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
       onClick={(e: SyntheticEvent) =>
         (onClick && onClick(e)) || (href && window.location.assign(href))
       }
-      disabled={disabled}
-      className={className}
-      style={style}
       {...rest}>
       {icon ? <Icon type={icon} size={iconSize} /> : null}
       {label}

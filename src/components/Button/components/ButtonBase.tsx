@@ -1,35 +1,11 @@
 import styled, { css } from "styled-components"
 import { IStyled } from "../../../common/types"
-import { SyntheticEvent } from "react"
 import { isLightColor } from "../../../common/_utils"
+import { ButtonProps } from "../types"
 
 type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
 
-interface ParsedColorTheme {
-  background: any
-  font: any
-  insetBackground?: any
-  insetFont?: any
-}
-
-interface BaseButtonProps {
-  label?: string
-  type: "primary" | "secondary"
-  colorTheme: ParsedColorTheme
-  ghost: boolean
-  size: "small" | "medium" | "large"
-  disabled?: boolean
-  bare: boolean
-  icon?: string
-  insetLabel?: string
-  onClick?: (event: SyntheticEvent) => void
-  fontSize: number
-  lineHeight: number
-  className: string
-  style: string
-}
-
-type IStyledBaseButton = IStyled<BaseButtonProps>
+type IStyledBaseButton = IStyled<ButtonProps>
 // Paddings
 
 const ICON_PADDINGS = {
@@ -46,7 +22,7 @@ const VERTICAL_PADINGS = {
 
 const getHorizontalPadding = (props: IStyledBaseButton) => {
   const {
-    customProps: { size, type, fontSize },
+    customProps: { size, kind, fontSize },
   } = props
   const paddings = {
     small: {
@@ -62,7 +38,7 @@ const getHorizontalPadding = (props: IStyledBaseButton) => {
       secondary: fontSize / 2,
     },
   }
-  return paddings[size][type]
+  return paddings[size!][kind!]
 }
 
 const getRightPadding = (props: IStyledBaseButton) => {
@@ -238,7 +214,7 @@ const StyledButton = styled.button<IStyledBaseButton>`
       :hover,
       :active,
       :focus {
-        color: ${(props: IStyled<BaseButtonProps>) =>
+        color: ${(props: IStyled<ButtonProps>) =>
           getFontColor("hover", props)};
         background-color: ${props => getBackgroundColor("hover", props)};
         svg path {
