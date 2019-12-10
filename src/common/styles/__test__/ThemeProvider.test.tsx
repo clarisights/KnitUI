@@ -7,7 +7,7 @@ import { Button } from "../../.."
 
 describe("Passing Custom Theme", () => {
   // Changing one of the palette color
-  let newPalette = {
+  const newPalette = {
     ...palette,
     Blue100: {
       hsl: [205, 85, 45],
