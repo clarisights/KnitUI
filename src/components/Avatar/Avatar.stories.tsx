@@ -1,12 +1,11 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import Avatar from "./"
+import Readme from "./README.md"
 import {
   withKnobs,
   text,
   boolean,
-  select,
-  object,
   optionsKnob as options,
 } from "@storybook/addon-knobs"
 import { action } from "@storybook/addon-actions"
@@ -31,7 +30,7 @@ stories
       // Show readme before story
       codeTheme: "shades-of-purple",
       // Show readme at the addons panel
-      // sidebar: Readme,
+      sidebar: Readme,
     },
   })
   .add("Picture avatar", () => (
