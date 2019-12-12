@@ -20,6 +20,17 @@ exports[`Avatar Snapshots Different size icon avatar 1`] = `
   width: 100px;
   height: 100px;
   margin: -1px;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -33,6 +44,12 @@ exports[`Avatar Snapshots Different size icon avatar 1`] = `
 .c0:hover {
   background: transparent;
   border: 1px solid transparent;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {
@@ -96,6 +113,17 @@ exports[`Avatar Snapshots Different size name avatar 1`] = `
   width: 100px;
   height: 100px;
   margin: 0;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -109,6 +137,12 @@ exports[`Avatar Snapshots Different size name avatar 1`] = `
 .c0:hover {
   background: #e6e6e6;
   border: none;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {
@@ -162,6 +196,17 @@ exports[`Avatar Snapshots Different size picture avatar 1`] = `
   width: 100px;
   height: 100px;
   margin: -1px;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -175,6 +220,12 @@ exports[`Avatar Snapshots Different size picture avatar 1`] = `
 .c0:hover {
   background: transparent;
   border: 1px solid #e6e6e6;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {
@@ -230,6 +281,17 @@ exports[`Avatar Snapshots Disabled icon avatar 1`] = `
   width: 100px;
   height: 100px;
   margin: -1px;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -243,6 +305,12 @@ exports[`Avatar Snapshots Disabled icon avatar 1`] = `
 .c0:hover {
   background: transparent;
   border: 1px solid transparent;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {
@@ -307,6 +375,17 @@ exports[`Avatar Snapshots Disabled name avatar 1`] = `
   width: 100px;
   height: 100px;
   margin: 0;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -320,6 +399,12 @@ exports[`Avatar Snapshots Disabled name avatar 1`] = `
 .c0:hover {
   background: #f2f2f2;
   border: none;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {
@@ -374,6 +459,17 @@ exports[`Avatar Snapshots Disabled picture avatar 1`] = `
   width: 100px;
   height: 100px;
   margin: -1px;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -387,6 +483,12 @@ exports[`Avatar Snapshots Disabled picture avatar 1`] = `
 .c0:hover {
   background: transparent;
   border: 1px solid #f2f2f2;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {
@@ -443,6 +545,17 @@ exports[`Avatar Snapshots Name avatar 1`] = `
   width: 24px;
   height: 24px;
   margin: 0;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -456,6 +569,12 @@ exports[`Avatar Snapshots Name avatar 1`] = `
 .c0:hover {
   background: #e6e6e6;
   border: none;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {
@@ -509,6 +628,17 @@ exports[`Avatar Snapshots Picture avatar 1`] = `
   width: 24px;
   height: 24px;
   margin: -1px;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -522,6 +652,12 @@ exports[`Avatar Snapshots Picture avatar 1`] = `
 .c0:hover {
   background: transparent;
   border: 1px solid #e6e6e6;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {
@@ -577,6 +713,17 @@ exports[`Avatar Snapshots Unknown user avatar 1`] = `
   width: 24px;
   height: 24px;
   margin: -1px;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 120ms;
+  -webkit-transition: transform 120ms;
+  transition: transform 120ms;
 }
 
 .c0 svg {
@@ -590,6 +737,12 @@ exports[`Avatar Snapshots Unknown user avatar 1`] = `
 .c0:hover {
   background: transparent;
   border: 1px solid transparent;
+}
+
+.c0:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .c0:hover svg path {

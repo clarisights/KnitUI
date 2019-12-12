@@ -160,6 +160,9 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
     width: ${({ customProps }) => customProps.size};
     height: ${({ customProps }) => customProps.size};
     margin: ${props => getMarginStyle(props)};
+    user-drag: none;
+    user-select: none;
+    transition: transform 120ms;
   }
 
   svg {
@@ -170,6 +173,9 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
   }
 
   :hover {
+    img {
+      transform: scale(1.05);
+    }
     background: ${props => getBackgroundColor(props, "hover")};
     border: ${props => getBorderStyle(props, "hover")};
     svg path {
