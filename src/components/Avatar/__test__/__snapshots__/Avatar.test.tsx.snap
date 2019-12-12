@@ -1,0 +1,634 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Snapshots Different size icon avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 5.833333333333334rem;
+  line-height: 8.333333333333334rem;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.c0 img {
+  width: 100px;
+  height: 100px;
+  margin: -1px;
+}
+
+.c0 svg {
+  margin: -1px;
+}
+
+.c0 svg path {
+  fill: #f2f2f2;
+}
+
+.c0:hover {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.c0:hover svg path {
+  fill: #e6e6e6;
+}
+
+.c0:focus,
+.c0:active {
+  background: transparent;
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: #e6e6e6;
+}
+
+.c0:disabled {
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    title="Unknown User"
+  >
+    <svg
+      fill="#000"
+      height="100px"
+      viewBox="0 0 24 24"
+      width="100px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z"
+      />
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Avatar Snapshots Different size name avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 5.833333333333334rem;
+  line-height: 8.333333333333334rem;
+  background: #f2f2f2;
+  border: none;
+}
+
+.c0 img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.c0 svg {
+  margin: 0;
+}
+
+.c0 svg path {
+  fill: transparent;
+}
+
+.c0:hover {
+  background: #e6e6e6;
+  border: none;
+}
+
+.c0:hover svg path {
+  fill: transparent;
+}
+
+.c0:focus,
+.c0:active {
+  background: #e6e6e6;
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: transparent;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    title="Jane Doe"
+  >
+    J
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Avatar Snapshots Different size picture avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 5.833333333333334rem;
+  line-height: 8.333333333333334rem;
+  background: transparent;
+  border: 1px solid #f2f2f2;
+}
+
+.c0 img {
+  width: 100px;
+  height: 100px;
+  margin: -1px;
+}
+
+.c0 svg {
+  margin: -1px;
+}
+
+.c0 svg path {
+  fill: transparent;
+}
+
+.c0:hover {
+  background: transparent;
+  border: 1px solid #e6e6e6;
+}
+
+.c0:hover svg path {
+  fill: transparent;
+}
+
+.c0:focus,
+.c0:active {
+  background: transparent;
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: transparent;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    title="Jane Doe"
+  >
+    <img
+      src="https://i.ibb.co/DwVLSqF/user-profile.jpg"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Avatar Snapshots Disabled icon avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 5.833333333333334rem;
+  line-height: 8.333333333333334rem;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.c0 img {
+  width: 100px;
+  height: 100px;
+  margin: -1px;
+}
+
+.c0 svg {
+  margin: -1px;
+}
+
+.c0 svg path {
+  fill: #f2f2f2;
+}
+
+.c0:hover {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.c0:hover svg path {
+  fill: #f2f2f2;
+}
+
+.c0:focus,
+.c0:active {
+  background: transparent;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: #f2f2f2;
+}
+
+.c0:disabled {
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    disabled=""
+    title="Unknown User"
+  >
+    <svg
+      fill="#000"
+      height="100px"
+      viewBox="0 0 24 24"
+      width="100px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z"
+      />
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Avatar Snapshots Disabled name avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 5.833333333333334rem;
+  line-height: 8.333333333333334rem;
+  background: #f2f2f2;
+  border: none;
+}
+
+.c0 img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.c0 svg {
+  margin: 0;
+}
+
+.c0 svg path {
+  fill: transparent;
+}
+
+.c0:hover {
+  background: #f2f2f2;
+  border: none;
+}
+
+.c0:hover svg path {
+  fill: transparent;
+}
+
+.c0:focus,
+.c0:active {
+  background: #f2f2f2;
+  border: none;
+  box-shadow: none;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: transparent;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    disabled=""
+    title="Jane Doe"
+  >
+    J
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Avatar Snapshots Disabled picture avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 5.833333333333334rem;
+  line-height: 8.333333333333334rem;
+  background: transparent;
+  border: 1px solid #f2f2f2;
+}
+
+.c0 img {
+  width: 100px;
+  height: 100px;
+  margin: -1px;
+}
+
+.c0 svg {
+  margin: -1px;
+}
+
+.c0 svg path {
+  fill: transparent;
+}
+
+.c0:hover {
+  background: transparent;
+  border: 1px solid #f2f2f2;
+}
+
+.c0:hover svg path {
+  fill: transparent;
+}
+
+.c0:focus,
+.c0:active {
+  background: transparent;
+  border: 1px solid #f2f2f2;
+  box-shadow: none;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: transparent;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    disabled=""
+    title="Jane Doe"
+  >
+    <img
+      src="https://i.ibb.co/DwVLSqF/user-profile.jpg"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Avatar Snapshots Name avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 1.4000000000000001rem;
+  line-height: 2.0000000000000004rem;
+  background: #f2f2f2;
+  border: none;
+}
+
+.c0 img {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+.c0 svg {
+  margin: 0;
+}
+
+.c0 svg path {
+  fill: transparent;
+}
+
+.c0:hover {
+  background: #e6e6e6;
+  border: none;
+}
+
+.c0:hover svg path {
+  fill: transparent;
+}
+
+.c0:focus,
+.c0:active {
+  background: #e6e6e6;
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: transparent;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    title="Jane Doe"
+  >
+    J
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Avatar Snapshots Picture avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 1.4000000000000001rem;
+  line-height: 2.0000000000000004rem;
+  background: transparent;
+  border: 1px solid #f2f2f2;
+}
+
+.c0 img {
+  width: 24px;
+  height: 24px;
+  margin: -1px;
+}
+
+.c0 svg {
+  margin: -1px;
+}
+
+.c0 svg path {
+  fill: transparent;
+}
+
+.c0:hover {
+  background: transparent;
+  border: 1px solid #e6e6e6;
+}
+
+.c0:hover svg path {
+  fill: transparent;
+}
+
+.c0:focus,
+.c0:active {
+  background: transparent;
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: transparent;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    title="Jane Doe"
+  >
+    <img
+      src="https://i.ibb.co/DwVLSqF/user-profile.jpg"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Avatar Snapshots Unknown user avatar 1`] = `
+<DocumentFragment>
+  .c0 {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 1.4000000000000001rem;
+  line-height: 2.0000000000000004rem;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.c0 img {
+  width: 24px;
+  height: 24px;
+  margin: -1px;
+}
+
+.c0 svg {
+  margin: -1px;
+}
+
+.c0 svg path {
+  fill: #f2f2f2;
+}
+
+.c0:hover {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.c0:hover svg path {
+  fill: #e6e6e6;
+}
+
+.c0:focus,
+.c0:active {
+  background: transparent;
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+}
+
+.c0:focus svg path,
+.c0:active svg path {
+  fill: #e6e6e6;
+}
+
+.c0:disabled {
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+    data-testid="avatar"
+    title="Unknown User"
+  >
+    <svg
+      fill="#000"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z"
+      />
+    </svg>
+  </button>
+</DocumentFragment>
+`;
