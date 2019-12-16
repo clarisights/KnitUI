@@ -1,6 +1,6 @@
 import React from "react"
 import Avatar from "../"
-import { render, cleanup, fireEvent } from "react-testing-library"
+import { render, cleanup, fireEvent, getByText } from "react-testing-library"
 import { ThemeProvider } from "../../../common/styles"
 import "jest-styled-components"
 import "jest-dom/extend-expect"
@@ -27,10 +27,11 @@ describe("Avatar Snapshots", () => {
     expect(asFragment()).toMatchSnapshot()
   })
   it("Name avatar", () => {
-    const { asFragment } = render(
+    const { asFragment, getByText } = render(
       <Avatar {...defaultProps} name={additionalProps.name} />,
       { wrapper: ThemeProvider }
     )
+    expect(getByText(additionalProps.name[0])).toBeInTheDocument()
     expect(asFragment()).toMatchSnapshot()
   })
   it("Unknown user avatar", () => {
@@ -47,10 +48,15 @@ describe("Avatar Snapshots", () => {
     expect(asFragment()).toMatchSnapshot()
   })
   it("Different size name avatar", () => {
-    const { asFragment } = render(
-      <Avatar {...defaultProps} size="100px" name={additionalProps.name} />,
+    const size = "100px"
+    const { asFragment, getByTestId } = render(
+      <Avatar {...defaultProps} size={size} name={additionalProps.name} />,
       { wrapper: ThemeProvider }
     )
+    const fontSize = `calc(1.4 * ${size} / 2.4)`
+    const lineHeight = `calc(2.0 * ${size} / 2.4)`
+    expect(getByTestId("avatar")).toHaveStyleRule("font-size", fontSize)
+    expect(getByTestId("avatar")).toHaveStyleRule("line-height", lineHeight)
     expect(asFragment()).toMatchSnapshot()
   })
   it("Different size icon avatar", () => {
