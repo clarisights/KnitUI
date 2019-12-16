@@ -3,15 +3,14 @@
 exports[`Avatar Snapshots Different size icon avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 100px;
   height: 100px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 5.833333333333334rem;
-  line-height: 8.333333333333334rem;
+  font-size: calc(1.4 * 100px / 2.4);
+  line-height: calc(2.0 * 100px / 2.4);
   background: transparent;
   border: 1px solid transparent;
 }
@@ -73,6 +72,12 @@ exports[`Avatar Snapshots Different size icon avatar 1`] = `
   cursor: not-allowed;
 }
 
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
 <button
     class="c0"
     data-testid="avatar"
@@ -96,17 +101,16 @@ exports[`Avatar Snapshots Different size icon avatar 1`] = `
 exports[`Avatar Snapshots Different size name avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 100px;
   height: 100px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 5.833333333333334rem;
-  line-height: 8.333333333333334rem;
+  font-size: calc(1.4 * 100px / 2.4);
+  line-height: calc(2.0 * 100px / 2.4);
   background: #f2f2f2;
-  border: none;
+  border: 1px solid #f2f2f2;
 }
 
 .c0 img {
@@ -136,7 +140,7 @@ exports[`Avatar Snapshots Different size name avatar 1`] = `
 
 .c0:hover {
   background: #e6e6e6;
-  border: none;
+  border: 1px solid #e6e6e6;
 }
 
 .c0:hover img {
@@ -166,6 +170,12 @@ exports[`Avatar Snapshots Different size name avatar 1`] = `
   cursor: not-allowed;
 }
 
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
 <button
     class="c0"
     data-testid="avatar"
@@ -179,15 +189,14 @@ exports[`Avatar Snapshots Different size name avatar 1`] = `
 exports[`Avatar Snapshots Different size picture avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 100px;
   height: 100px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 5.833333333333334rem;
-  line-height: 8.333333333333334rem;
+  font-size: calc(1.4 * 100px / 2.4);
+  line-height: calc(2.0 * 100px / 2.4);
   background: transparent;
   border: 1px solid #f2f2f2;
 }
@@ -249,6 +258,12 @@ exports[`Avatar Snapshots Different size picture avatar 1`] = `
   cursor: not-allowed;
 }
 
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
 <button
     class="c0"
     data-testid="avatar"
@@ -264,15 +279,14 @@ exports[`Avatar Snapshots Different size picture avatar 1`] = `
 exports[`Avatar Snapshots Disabled icon avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 100px;
   height: 100px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 5.833333333333334rem;
-  line-height: 8.333333333333334rem;
+  font-size: calc(1.4 * 100px / 2.4);
+  line-height: calc(2.0 * 100px / 2.4);
   background: transparent;
   border: 1px solid transparent;
 }
@@ -332,6 +346,12 @@ exports[`Avatar Snapshots Disabled icon avatar 1`] = `
 .c0:disabled {
   opacity: 1;
   cursor: not-allowed;
+}
+
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 <button
@@ -358,17 +378,16 @@ exports[`Avatar Snapshots Disabled icon avatar 1`] = `
 exports[`Avatar Snapshots Disabled name avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 100px;
   height: 100px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 5.833333333333334rem;
-  line-height: 8.333333333333334rem;
+  font-size: calc(1.4 * 100px / 2.4);
+  line-height: calc(2.0 * 100px / 2.4);
   background: #f2f2f2;
-  border: none;
+  border: 1px solid #f2f2f2;
 }
 
 .c0 img {
@@ -398,7 +417,7 @@ exports[`Avatar Snapshots Disabled name avatar 1`] = `
 
 .c0:hover {
   background: #f2f2f2;
-  border: none;
+  border: 1px solid #f2f2f2;
 }
 
 .c0:hover img {
@@ -414,7 +433,7 @@ exports[`Avatar Snapshots Disabled name avatar 1`] = `
 .c0:focus,
 .c0:active {
   background: #f2f2f2;
-  border: none;
+  border: 1px solid #f2f2f2;
   box-shadow: none;
 }
 
@@ -426,6 +445,12 @@ exports[`Avatar Snapshots Disabled name avatar 1`] = `
 .c0:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 <button
@@ -442,15 +467,14 @@ exports[`Avatar Snapshots Disabled name avatar 1`] = `
 exports[`Avatar Snapshots Disabled picture avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 100px;
   height: 100px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 5.833333333333334rem;
-  line-height: 8.333333333333334rem;
+  font-size: calc(1.4 * 100px / 2.4);
+  line-height: calc(2.0 * 100px / 2.4);
   background: transparent;
   border: 1px solid #f2f2f2;
 }
@@ -510,6 +534,12 @@ exports[`Avatar Snapshots Disabled picture avatar 1`] = `
 .c0:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 <button
@@ -528,17 +558,16 @@ exports[`Avatar Snapshots Disabled picture avatar 1`] = `
 exports[`Avatar Snapshots Name avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 24px;
   height: 24px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 1.4000000000000001rem;
-  line-height: 2.0000000000000004rem;
+  font-size: calc(1.4 * 24px / 2.4);
+  line-height: calc(2.0 * 24px / 2.4);
   background: #f2f2f2;
-  border: none;
+  border: 1px solid #f2f2f2;
 }
 
 .c0 img {
@@ -568,7 +597,7 @@ exports[`Avatar Snapshots Name avatar 1`] = `
 
 .c0:hover {
   background: #e6e6e6;
-  border: none;
+  border: 1px solid #e6e6e6;
 }
 
 .c0:hover img {
@@ -598,6 +627,12 @@ exports[`Avatar Snapshots Name avatar 1`] = `
   cursor: not-allowed;
 }
 
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
 <button
     class="c0"
     data-testid="avatar"
@@ -611,15 +646,14 @@ exports[`Avatar Snapshots Name avatar 1`] = `
 exports[`Avatar Snapshots Picture avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 24px;
   height: 24px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 1.4000000000000001rem;
-  line-height: 2.0000000000000004rem;
+  font-size: calc(1.4 * 24px / 2.4);
+  line-height: calc(2.0 * 24px / 2.4);
   background: transparent;
   border: 1px solid #f2f2f2;
 }
@@ -681,6 +715,12 @@ exports[`Avatar Snapshots Picture avatar 1`] = `
   cursor: not-allowed;
 }
 
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
 <button
     class="c0"
     data-testid="avatar"
@@ -696,15 +736,14 @@ exports[`Avatar Snapshots Picture avatar 1`] = `
 exports[`Avatar Snapshots Unknown user avatar 1`] = `
 <DocumentFragment>
   .c0 {
-  box-sizing: border-box;
   width: 24px;
   height: 24px;
   overflow: hidden;
   border-radius: 50%;
   outline: none;
   color: #1a1a1a;
-  font-size: 1.4000000000000001rem;
-  line-height: 2.0000000000000004rem;
+  font-size: calc(1.4 * 24px / 2.4);
+  line-height: calc(2.0 * 24px / 2.4);
   background: transparent;
   border: 1px solid transparent;
 }
@@ -764,6 +803,12 @@ exports[`Avatar Snapshots Unknown user avatar 1`] = `
 .c0:disabled {
   opacity: 1;
   cursor: not-allowed;
+}
+
+.c0:disabled img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 <button

@@ -44,24 +44,14 @@ const getFontSize = props => {
   const {
     customProps: { size },
   } = props
-  if (size.includes("px")) {
-    const avatarSize = Number(size.split("px")[0])
-    return (0.14 * avatarSize) / 2.4
-  } else {
-    return 1.4
-  }
+  return `calc(1.4 * ${size} / 2.4)`
 }
 
 const getLineHeight = props => {
   const {
     customProps: { size },
   } = props
-  if (size.includes("px")) {
-    const avatarSize = Number(size.split("px")[0])
-    return (0.2 * avatarSize) / 2.4
-  } else {
-    return 2
-  }
+  return `calc(2.0 * ${size} / 2.4)`
 }
 
 const getBackgroundColor = (props, state) => {
@@ -89,14 +79,12 @@ const getBorderStyle = (props, state) => {
   if (state === "focus" && !disabled) {
     return `1px solid ${focusColor}`
   }
-  if (isPicture) {
+  if (isPicture || isName) {
     if (state === "default" || disabled) {
       return `1px solid ${defaultColor}`
     } else if (state === "hover") {
       return `1px solid ${hoverColor}`
     }
-  } else if (isName) {
-    return "none"
   }
   /* if(isIcon) with (state === "default" || state === "hover" || disabled), focus is already taken care of,
    * so directly returning transparent style in all other case of isIcon
@@ -131,7 +119,6 @@ const getOpacity = props => {
 }
 
 const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
-  box-sizing: border-box;
   width: ${({ customProps }) => customProps.size};
   height: ${({ customProps }) => customProps.size};
 
@@ -141,8 +128,8 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
 
   /* Style for Name Avatar */
   color: ${props => getThemeColor(props, "Neutral90")};
-  font-size: ${props => getFontSize(props)}rem;
-  line-height: ${props => getLineHeight(props)}rem;
+  font-size: ${props => getFontSize(props)};
+  line-height: ${props => getLineHeight(props)};
 
   /* Below Basic Property & corresponding function calls which will play role in :
    * all three types of Avatar -
@@ -193,6 +180,9 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
   }
 
   :disabled {
+    img {
+      transform: none;
+    }
     opacity: ${props => getOpacity(props)};
     cursor: not-allowed;
   }

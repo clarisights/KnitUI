@@ -54,16 +54,9 @@ stories
     <Avatar {...defaultProps} size="100px" />
   ))
   .add("Disabled picture avatar", () => (
-    <Avatar {...defaultProps} size="100px" disabled {...additionalProps} />
+    <Avatar {...defaultProps} disabled {...additionalProps} />
   ))
   .add("Disabled name avatar", () => (
-    <Avatar
-      {...defaultProps}
-      size="100px"
-      disabled
-      name={additionalProps.name}
-    />
+    <Avatar {...defaultProps} disabled name={additionalProps.name} />
   ))
-  .add("Disabled icon avatar", () => (
-    <Avatar {...defaultProps} disabled size="100px" />
-  ))
+  .add("Disabled icon avatar", () => <Avatar {...defaultProps} disabled />)
