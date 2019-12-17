@@ -80,6 +80,23 @@ exports[`Input with a custom label 1`] = `
   color: hsl(0,0%,60%);
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c0:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c0:disabled border:function (props) {
+  return: getInputBorder(props,"default");
+}
+
 <input
     class="c0"
     placeholder="placeholder"
@@ -130,6 +147,23 @@ exports[`Input with a custom notification 1`] = `
 
 .c0::placeholder {
   color: hsl(0,0%,60%);
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c0:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c0:disabled border:function (props) {
+  return: getInputBorder(props,"default");
 }
 
 <input
@@ -230,6 +264,23 @@ exports[`Input with a text label 1`] = `
   color: hsl(0,0%,60%);
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c0:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c0:disabled border:function (props) {
+  return: getInputBorder(props,"default");
+}
+
 <input
     class="c0"
     placeholder="placeholder"
@@ -291,6 +342,23 @@ exports[`Input with a text label and a text notification 1`] = `
 
 .c0::placeholder {
   color: hsl(0,0%,60%);
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c0:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c0:disabled border:function (props) {
+  return: getInputBorder(props,"default");
 }
 
 <input
@@ -355,6 +423,23 @@ exports[`Input with a text notification 1`] = `
   color: hsl(0,0%,60%);
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c0:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c0:disabled border:function (props) {
+  return: getInputBorder(props,"default");
+}
+
 <input
     class="c0"
     placeholder="placeholder"
@@ -406,6 +491,23 @@ exports[`Input with left addon renders correctly 1`] = `
 
 .c3::placeholder {
   color: hsl(0,0%,60%);
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c3:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c3:disabled border:function (props) {
+  return: getInputBorder(props,"default");
 }
 
 .c0 {
@@ -517,6 +619,23 @@ exports[`Input with left and right addons renders correctly 1`] = `
   color: hsl(0,0%,60%);
 }
 
+.c3:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c3:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c3:disabled border:function (props) {
+  return: getInputBorder(props,"default");
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -624,6 +743,23 @@ exports[`Input with right addon renders correctly 1`] = `
 
 .c1::placeholder {
   color: hsl(0,0%,60%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c1:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c1:disabled border:function (props) {
+  return: getInputBorder(props,"default");
 }
 
 .c0 {
@@ -735,6 +871,23 @@ exports[`Input with size large renders correctly 1`] = `
   color: hsl(0,0%,60%);
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c0:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c0:disabled border:function (props) {
+  return: getInputBorder(props,"default");
+}
+
 <input
     class="c0"
     placeholder="placeholder"
@@ -787,6 +940,23 @@ exports[`Input with size small renders correctly 1`] = `
   color: hsl(0,0%,60%);
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c0:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c0:disabled border:function (props) {
+  return: getInputBorder(props,"default");
+}
+
 <input
     class="c0"
     placeholder="placeholder"
@@ -837,6 +1007,23 @@ exports[`Input with size undefined renders correctly 1`] = `
 
 .c0::placeholder {
   color: hsl(0,0%,60%);
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.c0:disabled background-color:function (_a) {
+  -webkit-var: knitui = _a.theme.knitui;
+  -moz-var: knitui = _a.theme.knitui;
+  -ms-var: knitui = _a.theme.knitui;
+  var: knitui = _a.theme.knitui;
+  return: knitui.inputBgDefault;
+}
+
+.c0:disabled border:function (props) {
+  return: getInputBorder(props,"default");
 }
 
 <input

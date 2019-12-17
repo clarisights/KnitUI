@@ -27,6 +27,8 @@ export interface IInputProps
   addonBefore?: string | ReactNode
   /** the size of the input */
   inputSize?: "large" | "default" | "small"
+  /** to disable the input */
+  disabled?: boolean
 }
 
 type IStyledInput = IStyled<IInputProps>
@@ -119,31 +121,37 @@ const getLineHeight = (props: IStyledInput) => {
 const StyledInput: any = styled.input(
   (props: IStyledInput) =>
     `
- height: ${getHeight(props)};
- width: 100%;
- margin: 0.4rem 0;
- border-radius: ${props.theme.knitui.inputBorderRadius};
- border: ${getInputBorder(props, "default")};
- padding: ${getPadding(props)};
- box-sizing: border-box;
- background-color: ${props.theme.knitui.inputBgDefault};
- color: ${props.theme.knitui.inputColor};
- font-size: ${getFontSize(props)}rem;
- line-height: ${getLineHeight(props)}rem;
- &:hover {
-   background-color: ${props.theme.knitui.inputBgHover};
-   color: ${props.theme.knitui.inputColor};
- }
- &:focus,
- &:active {
-   outline: ${props.theme.knitui.inputFocusOutline};
-   background-color: ${props.theme.knitui.inputBgFocus};
-   border: ${getInputBorder(props, "focus")};
-   box-shadow: ${props.theme.knitui.inputFocusBoxShadow};
- }
- ::placeholder {
-   color: ${props.theme.knitui.inputPlaceholderColor};
- }
+  height: ${getHeight(props)};
+  width: 100%;
+  margin: 0.4rem 0;
+  border-radius: ${props.theme.knitui.inputBorderRadius};
+  border: ${getInputBorder(props, "default")};
+  padding: ${getPadding(props)};
+  box-sizing: border-box;
+  background-color: ${props.theme.knitui.inputBgDefault};
+  color: ${props.theme.knitui.inputColor};
+  font-size: ${getFontSize(props)}rem;
+  line-height: ${getLineHeight(props)}rem;
+  &:hover {
+    background-color: ${props.theme.knitui.inputBgHover};
+    color: ${props.theme.knitui.inputColor};
+  }
+  &:focus,
+  &:active {
+    outline: ${props.theme.knitui.inputFocusOutline};
+    background-color: ${props.theme.knitui.inputBgFocus};
+    border: ${getInputBorder(props, "focus")};
+    box-shadow: ${props.theme.knitui.inputFocusBoxShadow};
+  }
+  ::placeholder {
+    color: ${props.theme.knitui.inputPlaceholderColor};
+  }
+  &:disabled {
+  cursor: not-allowed;
+  background-color: ${({ theme: { knitui } }) => knitui.inputBgDefault};
+  border: ${props => getInputBorder(props, "default")};
+  box-shadow: none;
+  }
 `
 )
 
@@ -201,6 +209,7 @@ const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
     style,
     addonAfter,
     addonBefore,
+    disabled,
     ...rest
   } = props
   const customProps = {
@@ -237,6 +246,7 @@ const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
         style={style}
         onChange={onChange}
         ref={ref}
+        disabled={disabled}
         {...insertIf({ value }, !!value)}
         {...rest}
       />
