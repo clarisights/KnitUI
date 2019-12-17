@@ -30,7 +30,7 @@ stories
           width: "800px",
           fontSize: 14,
         }}>
-        <Tabs>
+        <Tabs onAddTab={() => console.log("prasooj")}>
           <TabPanel tab="Tab 1" tabKey="tab-1">
             tab 1 content here
           </TabPanel>
@@ -38,6 +38,27 @@ stories
             tab 2 content here
           </TabPanel>
           <TabPanel tab="Tab 3" tabKey="tab-3">
+            tab 3 content here
+          </TabPanel>
+          <TabPanel tab="Tab 4" tabKey="tab-4">
+            tab 4 content here
+          </TabPanel>
+          <TabPanel tab="Tab 5" tabKey="tab-5">
+            tab 5 content here
+          </TabPanel>
+          <TabPanel tab="Tab 31" tabKey="tab-31">
+            tab 31 content here
+          </TabPanel>
+          <TabPanel tab="Tab 32" tabKey="tab-312">
+            tab 32 content here
+          </TabPanel>
+          <TabPanel tab="Tab 3f" tabKey="tab-3f">
+            tab 3f content here
+          </TabPanel>
+          <TabPanel tab="Tab f" tabKey="tab-3v">
+            tab 3 content here
+          </TabPanel>
+          <TabPanel tab="Tab g" tabKey="tab-g">
             tab 3 content here
           </TabPanel>
         </Tabs>

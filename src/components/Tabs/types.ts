@@ -8,6 +8,7 @@ export interface TabsProps extends BaseComponentProps {
   hideAdd: boolean
   size: "default" | "medium"
   onChange: (activeKey: string) => void
+  onAddTab: () => void
 }
 
 export interface TabPane {
