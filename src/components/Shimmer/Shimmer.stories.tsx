@@ -2,11 +2,20 @@ import React from "react"
 import { storiesOf } from "@storybook/react"
 import { withKnobs, select } from "@storybook/addon-knobs"
 import Shimmer from "./index"
+const Readme = require("./README.md")
 
 const heightOptions = ["small", "medium", "large"]
 
 storiesOf("Shimmer", module)
   .addDecorator(withKnobs)
+  .addParameters({
+    readme: {
+      // Show readme before story
+      codeTheme: "shades-of-purple",
+      // Show readme at the addons panel
+      sidebar: Readme,
+    },
+  })
   .add("basic", () => (
     <div
       style={{
