@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { IStyled } from "../../common/types"
+import { getBackgroundColor, getFontColor } from "./commonUtils"
 import { InlineLabelProps, InlineLabelType } from "./types"
-import { getFontColor, getBackgroundColor } from "./commonUtils"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
@@ -27,6 +27,7 @@ const geLineHeight = props => {
 }
 
 const verticalPadding = "0rem"
+
 const getHorizontalPadding = props => {
   const {
     customProps: { expanded },
@@ -34,16 +35,18 @@ const getHorizontalPadding = props => {
   return expanded ? "0.3rem" : "0rem"
 }
 
-const StyledDiv = styled.div<IStyled<InlineLabelProps>>`
+const StyledDiv = styled.div<IStyled<InlineLabelProps>>(
+  props => `
   display: inline-flex;
   align-items: center;
-  padding: ${props => `${verticalPadding} ${getHorizontalPadding(props)}`};
-  background-color: ${props => getBackgroundColor(props)};
-  color: ${props => getFontColor(props)};
-  font-size: ${props => `${getFontSize(props)}rem`};
-  line-height: ${props => `${geLineHeight(props)}rem`};
+  padding: ${verticalPadding} ${getHorizontalPadding(props)};
+  background-color: ${getBackgroundColor(props)};
+  color: ${getFontColor(props)};
+  font-size: ${getFontSize(props)}rem;
+  line-height: ${geLineHeight(props)}rem;
   box-sizing: border-box;
 `
+)
 
 const InlineLabel: InlineLabelType = ({ className, style, ...rest }) => {
   const { text } = rest

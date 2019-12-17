@@ -1,9 +1,8 @@
-import React, { SFC, ReactNode } from "react"
-import styled, { css } from "styled-components"
 import _ from "lodash"
+import React, { ReactNode } from "react"
+import styled, { css } from "styled-components"
+import { BaseComponentProps, IStyled } from "../../common/types"
 import { insertIf } from "../../common/_utils"
-import { IStyled } from "../../common/types"
-import { BaseComponentProps } from "../../common/types"
 
 export interface IInputProps
   extends React.InputHTMLAttributes<HTMLInputElement>,
@@ -117,33 +116,35 @@ const getLineHeight = (props: IStyledInput) => {
   return knitui.typography[typographySize].lineHeight
 }
 
-const StyledInput: any = styled.input<IStyledInput>`
-  height: ${props => getHeight(props)};
-  width: 100%;
-  margin: 0.4rem 0;
-  border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
-  border: ${props => getInputBorder(props, "default")};
-  padding: ${props => getPadding(props)};
-  box-sizing: border-box;
-  background-color: ${({ theme: { knitui } }) => knitui.inputBgDefault};
-  color: ${({ theme: { knitui } }) => knitui.inputColor};
-  font-size: ${props => `${getFontSize(props)}rem`};
-  line-height: ${props => `${getLineHeight(props)}rem`};
-  &:hover {
-    background-color: ${({ theme: { knitui } }) => knitui.inputBgHover};
-    color: ${({ theme: { knitui } }) => knitui.inputColor};
-  }
-  &:focus,
-  &:active {
-    outline: ${({ theme: { knitui } }) => knitui.inputFocusOutline};
-    background-color: ${({ theme: { knitui } }) => knitui.inputBgFocus};
-    border: ${props => getInputBorder(props, "focus")};
-    box-shadow: ${({ theme: { knitui } }) => knitui.inputFocusBoxShadow};
-  }
-  ::placeholder {
-    color: ${({ theme: { knitui } }) => knitui.inputPlaceholderColor};
-  }
+const StyledInput: ReactNode = styled.input<IStyledInput>(props => {
+  return `
+ height: ${getHeight(props)};
+ width: 100%;
+ margin: 0.4rem 0;
+ border-radius: ${props.theme.knitui.inputBorderRadius};
+ border: ${getInputBorder(props, "default")};
+ padding: ${getPadding(props)};
+ box-sizing: border-box;
+ background-color: ${props.theme.knitui.inputBgDefault};
+ color: ${props.theme.knitui.inputColor};
+ font-size: ${getFontSize(props)}rem;
+ line-height: ${getLineHeight(props)}rem;
+ &:hover {
+   background-color: ${props.theme.knitui.inputBgHover};
+   color: ${props.theme.knitui.inputColor};
+ }
+ &:focus,
+ &:active {
+   outline: ${props.theme.knitui.inputFocusOutline};
+   background-color: ${props.theme.knitui.inputBgFocus};
+   border: ${getInputBorder(props, "focus")};
+   box-shadow: ${props.theme.knitui.inputFocusBoxShadow};
+ }
+ ::placeholder {
+   color: ${props.theme.knitui.inputPlaceholderColor};
+ }
 `
+})
 
 const AddonSpan = styled.span`
   display: flex;
@@ -174,10 +175,12 @@ const labelStyle = css`
   line-height: 1.8rem;
 `
 
-const StyledLabel = styled.label<IStyledInput>`
+const StyledLabel = styled.label<IStyledInput>(
+  props => `
   ${labelStyle}
-  color: ${props => getLabelColor(props)};
+  color: ${getLabelColor(props)};
 `
+)
 
 const NotificationContainer = styled.div`
   ${labelStyle}
