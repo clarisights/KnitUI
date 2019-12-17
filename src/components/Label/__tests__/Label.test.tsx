@@ -1,10 +1,9 @@
+import "jest-dom/extend-expect"
+import "jest-styled-components"
 import React from "react"
 import Label from "../"
 import { Icon } from "../../"
-import { render, cleanup } from "react-testing-library"
-import { ThemeProvider } from "../../../common/styles"
-import "jest-styled-components"
-import "jest-dom/extend-expect"
+import { cleanup, render } from "../../../common/TestUtil"
 
 afterEach(cleanup)
 
@@ -15,54 +14,38 @@ describe("Label", () => {
   sizes.forEach((size: "small" | "medium" | "large") => {
     describe(`with size ${size}`, () => {
       it("compact", () => {
-        const { asFragment } = render(
-          <ThemeProvider>
-            <Label text="label" size={size} />
-          </ThemeProvider>
-        )
+        const { asFragment } = render(<Label text="label" size={size} />)
         expect(asFragment()).toMatchSnapshot()
       })
 
       it("expanded", () => {
         const { asFragment } = render(
-          <ThemeProvider>
-            <Label text="label" size={size} expanded />
-          </ThemeProvider>
+          <Label text="label" size={size} expanded />
         )
         expect(asFragment()).toMatchSnapshot()
       })
 
       it("left icon", () => {
         const { asFragment } = render(
-          <ThemeProvider>
-            <Label
-              text="label"
-              size={size}
-              icons={{ left: "oDragIndicator" }}
-            />
-          </ThemeProvider>
+          <Label text="label" size={size} icons={{ left: "oDragIndicator" }} />
         )
         expect(asFragment()).toMatchSnapshot()
       })
 
       it("right icon", () => {
         const { asFragment } = render(
-          <ThemeProvider>
-            <Label text="label" size={size} icons={{ right: "oClose" }} />
-          </ThemeProvider>
+          <Label text="label" size={size} icons={{ right: "oClose" }} />
         )
         expect(asFragment()).toMatchSnapshot()
       })
 
       it("left and right icons", () => {
         const { asFragment } = render(
-          <ThemeProvider>
-            <Label
-              text="label"
-              size={size}
-              icons={{ left: "oDragIndicator", right: "oClose" }}
-            />
-          </ThemeProvider>
+          <Label
+            text="label"
+            size={size}
+            icons={{ left: "oDragIndicator", right: "oClose" }}
+          />
         )
         expect(asFragment()).toMatchSnapshot()
       })
@@ -71,109 +54,80 @@ describe("Label", () => {
 
   it("right custom addon", () => {
     const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" icons={{ right: <Icon type="oClose" style={{cursor: "pointer"}} fill="#FFFFFF" /> }} />
-      </ThemeProvider>
+      <Label
+        text="label"
+        icons={{
+          right: (
+            <Icon type="oClose" style={{ cursor: "pointer" }} fill="#FFFFFF" />
+          ),
+        }}
+      />
     )
     expect(asFragment()).toMatchSnapshot()
   })
 
   it("outlined", () => {
-    const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" outlined />
-      </ThemeProvider>
-    )
+    const { asFragment } = render(<Label text="label" outlined />)
     expect(asFragment()).toMatchSnapshot()
   })
 
   it("rounded", () => {
-    const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" rounded />
-      </ThemeProvider>
-    )
+    const { asFragment } = render(<Label text="label" rounded />)
     expect(asFragment()).toMatchSnapshot()
   })
 
   it("focused", () => {
-    const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" focus />
-      </ThemeProvider>
-    )
+    const { asFragment } = render(<Label text="label" focus />)
     expect(asFragment()).toMatchSnapshot()
   })
 
   it("custom class", () => {
     const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" className="custom-class" />
-      </ThemeProvider>
+      <Label text="label" className="custom-class" />
     )
     expect(asFragment()).toMatchSnapshot()
   })
 
   it("custom style", () => {
     const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" style={{ backgroundColor: "red" }} />
-      </ThemeProvider>
+      <Label text="label" style={{ backgroundColor: "red" }} />
     )
     expect(asFragment()).toMatchSnapshot()
   })
 
   it("custom font color", () => {
     const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" customFontColor="#F7B3B3" />
-      </ThemeProvider>
+      <Label text="label" customFontColor="#F7B3B3" />
     )
     expect(asFragment()).toMatchSnapshot()
   })
 
   it("inset", () => {
-    const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" insetColor="#4267B2" />
-      </ThemeProvider>
-    )
+    const { asFragment } = render(<Label text="label" insetColor="#4267B2" />)
     expect(asFragment()).toMatchSnapshot()
   })
 
   it("inset with custom color", () => {
     const { asFragment } = render(
-      <ThemeProvider>
-        <Label text="label" insetColor="#4267B2" customColor="#A7A7A7" />
-      </ThemeProvider>
+      <Label text="label" insetColor="#4267B2" customColor="#A7A7A7" />
     )
     expect(asFragment()).toMatchSnapshot()
   })
 
   describe("inline", () => {
     it("compact", () => {
-      const { asFragment } = render(
-        <ThemeProvider>
-          <Label.Inline text="label" />
-        </ThemeProvider>
-      )
+      const { asFragment } = render(<Label.Inline text="label" />)
       expect(asFragment()).toMatchSnapshot()
     })
 
     it("expanded", () => {
-      const { asFragment } = render(
-        <ThemeProvider>
-          <Label.Inline text="label" expanded />
-        </ThemeProvider>
-      )
+      const { asFragment } = render(<Label.Inline text="label" expanded />)
       expect(asFragment()).toMatchSnapshot()
     })
 
     it("custom class", () => {
       const { container } = render(
-        <ThemeProvider>
-          <Label.Inline text="label" className="custom-class" />
-        </ThemeProvider>
+        <Label.Inline text="label" className="custom-class" />
       )
       const label = container.firstChild
       expect(label).toHaveClass("custom-class")
@@ -181,9 +135,7 @@ describe("Label", () => {
 
     it("custom style", () => {
       const { container } = render(
-        <ThemeProvider>
-          <Label.Inline text="label" style={{ backgroundColor: "red" }} />
-        </ThemeProvider>
+        <Label.Inline text="label" style={{ backgroundColor: "red" }} />
       )
       const label = container.firstChild
       expect(label).toHaveStyle("background-color: red")

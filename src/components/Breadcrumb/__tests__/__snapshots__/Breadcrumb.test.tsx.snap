@@ -1310,7 +1310,14 @@ exports[`Breadcrumb renders with custom active item styles correctly 1`] = `
 
 exports[`Breadcrumb renders with icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c3 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c1 {
   font-size: 1.4rem;
   line-height: 2rem;
   border-radius: 4px;
@@ -1405,13 +1412,6 @@ exports[`Breadcrumb renders with icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c3 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
 }
 
 <div

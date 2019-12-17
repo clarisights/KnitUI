@@ -1,9 +1,9 @@
+import "jest-dom/extend-expect"
+import "jest-styled-components"
 import React from "react"
 import Avatar from "../"
-import { render, cleanup, fireEvent, getByText } from "react-testing-library"
 import { ThemeProvider } from "../../../common/styles"
-import "jest-styled-components"
-import "jest-dom/extend-expect"
+import { cleanup, fireEvent, render } from "../../../common/TestUtil"
 
 afterEach(cleanup)
 

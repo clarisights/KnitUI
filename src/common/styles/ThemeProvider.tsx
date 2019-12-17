@@ -1,9 +1,15 @@
-import React from "react"
+import React, { ReactElement } from "react"
 import { ThemeProvider as Theme } from "styled-components"
-import { palette as defaultPalette, generateTheme } from "./"
+import { generateTheme, palette as defaultPalette } from "./"
 
-const ThemeProvider = ({ children, theme = generateTheme(defaultPalette) }) => (
-  <Theme theme={theme}>{children}</Theme>
-)
+interface ThemeProviderProps {
+  children: ReactElement
+  theme?: object
+}
+
+const ThemeProvider = ({
+  children,
+  theme = generateTheme(defaultPalette),
+}: ThemeProviderProps): ReactElement => <Theme theme={theme}>{children}</Theme>
 
 export default ThemeProvider

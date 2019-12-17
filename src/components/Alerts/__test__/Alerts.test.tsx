@@ -1,28 +1,23 @@
-import React, { useEffect } from "react"
-import {
-  render,
-  cleanup,
-  fireEvent,
-  act,
-  wait,
-  waitForDomChange,
-} from "react-testing-library"
-import "jest-styled-components"
 import "jest-dom/extend-expect"
-import { ThemeProvider } from "../../../common/styles"
+import "jest-styled-components"
+import React, { useEffect } from "react"
 import Alerts from "../"
 import { Button } from "../../"
-import { sizeType, placementType, AlertProps } from "../types"
+import {
+  act,
+  cleanup,
+  fireEvent,
+  render,
+  wait,
+  waitForDomChange,
+} from "../../../common/TestUtil"
+import { AlertProps, placementType, sizeType } from "../types"
 
 afterEach(cleanup)
 
 // Hoist function to provide Theme and AlertsProvider
 const renderComponent = component =>
-  render(
-    <ThemeProvider>
-      <Alerts.AlertsProvider>{component}</Alerts.AlertsProvider>
-    </ThemeProvider>
-  )
+  render(<Alerts.AlertsProvider>{component}</Alerts.AlertsProvider>)
 
 // Hook Component Used for API test
 const ShowAlerts = props => {
@@ -151,7 +146,11 @@ describe("Alert Component Tests", () => {
     const onCloseFn = jest.fn()
 
     const { getByTestId, container } = renderComponent(
-      <Alerts.Alert alertKey="my-alert-key" content="Hello there" onClose={onCloseFn} />
+      <Alerts.Alert
+        alertKey="my-alert-key"
+        content="Hello there"
+        onClose={onCloseFn}
+      />
     )
 
     const closeButton = container.querySelector(`button`)
@@ -251,13 +250,13 @@ describe("Using API test : ", () => {
 
 describe("Custom class and Custom content", () => {
   test("React component as content", async () => {
-    const MyComponent = () => <p>Custom Compoenent</p>
+    const MyComponent = () => <p>Custom Component</p>
     const { getAllByText, container } = renderComponent(
       <ShowAlerts alerts={[{ ...alerts[2], content: <MyComponent /> }]} />
     )
     await waitForDomChange({ container })
     await wait(() => {
-      expect(getAllByText("Custom Compoenent")).toHaveLength(1)
+      expect(getAllByText("Custom Component")).toHaveLength(1)
       // Avoid fail test because Opacity diff , it's because of transition, uncomment whenever needed to check other thing
       // expect(container).toMatchSnapshot()
     })
