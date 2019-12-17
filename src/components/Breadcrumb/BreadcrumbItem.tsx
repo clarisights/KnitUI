@@ -4,12 +4,11 @@ import { BreadcrumbItemProps } from "./types"
 
 const TYPOGRAPHY_SIZE = 14
 
-const sharedStyles = css<BreadcrumbItemProps>`
-  font-size: ${({ theme: { knitui } }) =>
-    `${knitui.typography[TYPOGRAPHY_SIZE].fontSize}rem`};
-  line-height: ${({ theme: { knitui } }) =>
-    `${knitui.typography[TYPOGRAPHY_SIZE].lineHeight}rem`};
-  border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
+const sharedStyles = css<BreadcrumbItemProps>(
+  props => `
+  font-size: ${props.theme.knitui.typography[TYPOGRAPHY_SIZE].fontSize}rem;
+  line-height: ${props.theme.knitui.typography[TYPOGRAPHY_SIZE].lineHeight}rem;
+  border-radius: ${props.theme.knitui.inputBorderRadius};
   padding: 0 3px 0 3px;
   display: flex;
   align-items: center;
@@ -17,13 +16,14 @@ const sharedStyles = css<BreadcrumbItemProps>`
     background-color: ${({ separator, theme: { knitui } }) =>
       separator ? "" : knitui.chromaPalette.Neutral10};
   }
-  cursor: ${props => (props.separator ? "default" : "pointer")};
+  cursor: ${props.separator ? "default" : "pointer"};
   a,
   * a {
     text-decoration: underline;
     color: ${({ theme: { knitui } }) => knitui.shades.blue40};
   }
 `
+)
 
 export const StyledText = styled.span<BreadcrumbItemProps>`
   ${sharedStyles}

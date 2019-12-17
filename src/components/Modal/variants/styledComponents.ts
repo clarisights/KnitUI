@@ -1,8 +1,11 @@
 import styled from "styled-components"
-import { IStyledPanelModal, IStyledModal } from "./types"
+import { IStyledModal, IStyledPanelModal } from "./types"
 
 const getPanelBorder = (props: IStyledPanelModal) => {
-  const { customProps: { location }, theme: { knitui }} = props
+  const {
+    customProps: { location },
+    theme: { knitui },
+  } = props
   if (location === "right") {
     return `border-left: ${knitui.modalBorder};`
   }
@@ -17,22 +20,26 @@ export const BaseLayout = styled.div`
   min-height: inherit;
 `
 
-export const Layout = styled.div<IStyledPanelModal>`
+export const Layout = styled.div<IStyledPanelModal>(
+  props => `
   display: flex;
   flex-direction: row;
   align-items: stretch;
   flex: 1 1 auto;
-  max-height: ${props => props.customProps.maxContentHeight};
-  min-height: ${props => props.customProps.minContentHeight};
+  max-height: ${props.customProps.maxContentHeight};
+  min-height: ${props.customProps.minContentHeight};
 `
+)
 
 // Applies to left and right panels only
-export const PanelSection = styled.div<IStyledPanelModal>`
+export const PanelSection = styled.div<IStyledPanelModal>(
+  props => `
   width: 21rem;
   flex-shrink: 0;
-  ${props => getPanelBorder(props)}
+  ${getPanelBorder(props)}
   overflow-y: auto;
 `
+)
 
 export const Content = styled.div<IStyledModal>`
   display: flex;
@@ -40,7 +47,9 @@ export const Content = styled.div<IStyledModal>`
   flex-grow: 1;
 `
 
-export const VerticalLayoutContent = styled(Content)`
-  max-height: ${props => props.customProps.maxContentHeight};
-  min-height: ${props => props.customProps.minContentHeight};
+export const VerticalLayoutContent = styled(Content)(
+  props => `
+  max-height: ${props.customProps.maxContentHeight};
+  min-height: ${props.customProps.minContentHeight};
 `
+)

@@ -12,11 +12,13 @@ const getPadding = (props: IStyledDialog) => {
     : `${knitui.modalPadding.vertical}rem ${knitui.modalPadding.horizontal}rem`
 }
 
-const StyledMain = styled.div<IStyledDialog>`
-  padding: ${props => getPadding(props)};
+const StyledMain = styled.div<IStyledDialog>(
+  props => `
+  padding: ${getPadding(props)};
   overflow-y: auto;
   flex: 1 1 auto;
 `
+)
 
 const Main: any = React.forwardRef(
   (props: { customProps?: {}; children: React.ReactNode }, ref) => {

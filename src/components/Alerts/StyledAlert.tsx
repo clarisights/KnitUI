@@ -1,10 +1,8 @@
-import React, { ReactNode } from "react"
-import styled, { css, keyframes } from "styled-components"
-import { AlertProps } from "./types"
-import { Icon, Button } from ".."
-
+import styled from "styled-components"
+import { Button, Icon } from ".."
 import { IStyled } from "../../common/types"
 import { parseColorPreset, parseCustomColor } from "../../common/_utils"
+import { AlertProps } from "./types"
 
 type IStyledAlert = IStyled<AlertProps>
 
@@ -123,17 +121,18 @@ const getActionWrapperMargin = (props: IStyledAlert) => {
   return `${multiLine ? "1.4rem" : `0`} 0 0 0}`
 }
 
-export const AlertContainer = styled("div")<IStyledAlert>`
+export const AlertContainer = styled("div")<IStyledAlert>(
+  props => `
   display: flex;
   box-sizing: border-box;
   overflow: hidden;
 
-  width: ${props => getWidth(props)}rem;
-  border-radius: ${props => getBorderRadius(props)};
+  width: ${getWidth(props)}rem;
+  border-radius: ${getBorderRadius(props)};
   padding: 1.4rem;
 
-  color: ${props => getFontColor(props)};
-  background: ${props => getBackgroundColor(props)};
+  color: ${getFontColor(props)};
+  background: ${getBackgroundColor(props)};
 
   opacity: 1;
   transition: all 0.25s;
@@ -142,30 +141,36 @@ export const AlertContainer = styled("div")<IStyledAlert>`
     opacity: 0;
   }
 `
+)
 
-export const AlertContentWrapper = styled.div<IStyledAlert>`
+export const AlertContentWrapper = styled.div<IStyledAlert>(
+  props => `
   display: flex;
   width: 100%;
-  flex-direction: ${props => getContentWrapperDirection(props)};
+  flex-direction: ${getContentWrapperDirection(props)};
   justify-content: space-between;
-  ${({ customProps: { multiLine } }) =>
-    !multiLine ? "align-items: center;" : ""};
+  ${!props.customProps.multiLine ? "align-items: center;" : ""};
 `
+)
 
-export const AlertContent = styled.div<IStyledAlert>`
-  font-size: ${props => `${getFontSize(props)}rem`};
-  line-height: ${props => `${getLineHeight(props)}rem`};
-  color: ${props => `${getFontColor(props)}`};
+export const AlertContent = styled.div<IStyledAlert>(
+  props => `
+  font-size: ${getFontSize(props)}rem};
+  line-height: ${getLineHeight(props)}rem};
+  color: ${getFontColor(props)};
 `
+)
 
 export const StyledAlertIcon = styled(Icon).attrs(props => ({
   fill: getFontColor(props),
   width: "2rem",
   height: "2rem",
-}))<IStyledAlert>`
-  align-self: ${props => getIconVerticalAlign(props)};
-  margin: ${props => getIconMargin(props)};
+}))<IStyledAlert>(
+  props => `
+  align-self: ${getIconVerticalAlign(props)};
+  margin: ${getIconMargin(props)};
 `
+)
 
 export const CloseIcon = styled(Button).attrs(props => {
   return {
@@ -174,43 +179,53 @@ export const CloseIcon = styled(Button).attrs(props => {
       padding: "0rem",
     },
   }
-})<IStyledAlert>`
+})<IStyledAlert>(
+  props => `
   flex-basis: 0;
-  margin: ${props => getCloseIconMargin(props)};
+  margin: ${getCloseIconMargin(props)};
   align-self: ${({ customProps: { multiLine } }) =>
     !multiLine ? "center" : "flex-start"};
 `
+)
 
-export const AlertHeading = styled.div<IStyledAlert>`
-  font-size: ${props => `${getHeadingFontSize(props)}rem`};
-  line-height: ${props => `${getHeadingLineHeight(props)}rem`};
+export const AlertHeading = styled.div<IStyledAlert>(
+  props => `
+  font-size: ${getHeadingFontSize(props)}rem;
+  line-height: ${getHeadingLineHeight(props)}rem;
   margin-bottom: 0.7rem;
 `
+)
 
-export const StyledAlertPicture = styled.img<IStyledAlert>`
+export const StyledAlertPicture = styled.img<IStyledAlert>(
+  props => `
   min-width: 2rem;
   height: 2rem;
   border-radius: 1.2rem;
-  align-self: ${props => getIconVerticalAlign(props)};
-  margin: ${props => getIconMargin(props)};
+  align-self: ${getIconVerticalAlign(props)};
+  margin: ${getIconMargin(props)};
 `
+)
 
 export const StyledAlertAction = styled(Button).attrs(
   (props: IStyledAlert) => ({
     customColor: getBackgroundColor(props),
   })
-)<IStyledAlert>`
+)<IStyledAlert>(
+  props => `
   flex-shrink: 0;
   text-transform: uppercase;
-  font-size: ${props => `${getFontSize(props)}rem`};
-  line-height: ${props => `${getLineHeight(props)}rem`};
+  font-size: ${getFontSize(props)}rem;
+  line-height: ${getLineHeight(props)}rem;
   cursor: pointer;
 `
+)
 
-export const AlertActionsWrapper = styled.span<IStyledAlert>`
-  margin: ${props => getActionWrapperMargin(props)};
+export const AlertActionsWrapper = styled.span<IStyledAlert>(
+  props => `
+  margin: ${getActionWrapperMargin(props)};
   display: flex;
   ${StyledAlertAction}:not(:last-child) {
     margin-right: 0.7rem;
   }
 `
+)
