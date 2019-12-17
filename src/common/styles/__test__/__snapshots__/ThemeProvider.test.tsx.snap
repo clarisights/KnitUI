@@ -2,8 +2,69 @@
 
 exports[`Passing Custom Theme Changing palette color Blue100 to #1182D4 1`] = `
 <DocumentFragment>
-  <button
-    class="sc-bwzfXH fPEptA"
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  color: #ffffff;
+  background-color: #1183d4;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #2a9dee;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
   >
     Changed Color of Neutral
   </button>

@@ -1,9 +1,9 @@
+import { render } from "@testing-library/react"
 import React from "react"
-import * as palette from "../palette"
-import generateTheme from "../variables"
-import { render } from "react-testing-library"
-import ThemeProvider from "../ThemeProvider"
 import { Button } from "../../.."
+import * as palette from "../palette"
+import ThemeProvider from "../ThemeProvider"
+import generateTheme from "../variables"
 
 describe("Passing Custom Theme", () => {
   // Changing one of the palette color

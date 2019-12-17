@@ -1,5 +1,3 @@
-import "jest-dom/extend-expect"
-import "jest-styled-components"
 import React from "react"
 import Button from "../"
 import { cleanup, fireEvent, render } from "../../../common/TestUtil"
