@@ -1,8 +1,8 @@
-import React from "react"
-import RadioGroup from "../index"
-import { render, cleanup, fireEvent } from "react-testing-library"
-import "jest-styled-components"
 import "jest-dom/extend-expect"
+import "jest-styled-components"
+import React from "react"
+import { cleanup, fireEvent, render } from "../../../common/TestUtil"
+import RadioGroup from "../index"
 
 afterEach(cleanup)
 
