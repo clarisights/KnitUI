@@ -1,5 +1,3 @@
-import "jest-dom/extend-expect"
-import "jest-styled-components"
 import React, { useEffect } from "react"
 import Alerts from "../"
 import { Button } from "../../"
