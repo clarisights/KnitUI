@@ -21,12 +21,16 @@ const TabsPanelWrapper = styled.div`
 `
 
 const TabPanel = styled.button<{ active: boolean }>`
-  background: ${props => (props.active ? "#FFFFFF" : "none")};
-  border: none;
+background: ${props => (props.active ? "#FFFFFF" : "none")};
+border: none;
+border-top: ${props =>
+  props.active ? "2px solid #D8C9A7" : "1px solid transparent"};
+border-bottom: ${props => (props.active ? "none" : "1px solid transparent")};
   padding: 4px 14px;
+  border-radius: 2px 2px 0px 0px;
   min-width: 80px;
-  font-size: 14px;
   line-height: 20px;
+  font-size: 14px;
   cursor: pointer;
 }`
 
