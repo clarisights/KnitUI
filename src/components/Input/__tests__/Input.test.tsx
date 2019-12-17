@@ -149,4 +149,10 @@ describe("Input", () => {
     )
     expect(container.firstChild).toHaveStyle("background-color: red")
   })
+
+  it("should display disabled icon on hover for disabled input", () => {
+    const { container } = render(<Input onChange={() => {}} disabled />)
+
+    expect(container.firstChild).toHaveStyle("cursor: not-allowed")
+  })
 })

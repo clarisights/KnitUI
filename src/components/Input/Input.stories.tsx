@@ -171,3 +171,15 @@ storiesOf("Input", module)
       />
     </div>
   ))
+  .add("disabled input", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        disabled
+        onChange={action("input changed")}
+        placeholder="disabled input"
+      />
+    </div>
+  ))
