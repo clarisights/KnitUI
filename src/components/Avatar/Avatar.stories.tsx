@@ -1,7 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import Avatar from "./"
-import Readme from "./README.md"
 import {
   withKnobs,
   text,
@@ -9,6 +8,7 @@ import {
   optionsKnob as options,
 } from "@storybook/addon-knobs"
 import { action } from "@storybook/addon-actions"
+const Readme = require("./README.md")
 
 const stories = storiesOf("Avatar", module)
 stories.addDecorator(withKnobs)

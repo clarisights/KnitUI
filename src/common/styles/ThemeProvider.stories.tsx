@@ -18,7 +18,7 @@ stories.add("Blue100 overright to #1182D4", () => {
   let theme = generateTheme(newPalette)
   return (
     <ThemeProvider theme={theme}>
-      <Button type="secondary" size="small" label="Changed Color of Neutral" />
+      <Button kind="secondary" size="small" label="Changed Color of Neutral" />
     </ThemeProvider>
   )
 })
