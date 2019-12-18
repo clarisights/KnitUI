@@ -136,6 +136,7 @@ const StyledInput: any = styled.input(
     background-color: ${props.theme.knitui.inputBgHover};
     color: ${props.theme.knitui.inputColor};
   }
+
   &:focus,
   &:active {
     outline: ${props.theme.knitui.inputFocusOutline};
@@ -143,13 +144,15 @@ const StyledInput: any = styled.input(
     border: ${getInputBorder(props, "focus")};
     box-shadow: ${props.theme.knitui.inputFocusBoxShadow};
   }
+
   ::placeholder {
     color: ${props.theme.knitui.inputPlaceholderColor};
   }
+
   &:disabled {
   cursor: not-allowed;
-  background-color: ${({ theme: { knitui } }) => knitui.inputBgDefault};
-  border: ${props => getInputBorder(props, "default")};
+  background-color: ${props.theme.knitui.inputBgDefault};
+  border: ${getInputBorder(props, "default")};
   box-shadow: none;
   }
 `
