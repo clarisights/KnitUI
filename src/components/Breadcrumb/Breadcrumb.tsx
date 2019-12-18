@@ -9,14 +9,15 @@ import styled from "styled-components"
 import BreadcrumbItem, { StyledText } from "./BreadcrumbItem"
 import { BreadcrumbProps, IBreadCrumb } from "./types"
 
-const StyledParent = styled.div<BreadcrumbProps>(
-  props => `
-  display: flex;
-  max-width: ${props.maxWidth};
-  flex-wrap: wrap;
-  width: fit-content;
-  align-items: center;
-`
+const StyledParent = styled.div(
+  (props: BreadcrumbProps) =>
+    `
+      display: flex;
+      max-width: ${props.maxWidth || "initial"}
+      flex-wrap: wrap;
+      width: fit-content;
+      align-items: center;
+    `
 )
 
 const Breadcrumb: IBreadCrumb = props => {

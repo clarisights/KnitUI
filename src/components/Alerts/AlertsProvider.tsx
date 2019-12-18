@@ -1,14 +1,14 @@
 import React from "react"
 import { v4 as uuid } from "uuid"
 import AlertContext from "./AlertContext"
-import TransitionWrapper from "./TransitionWrapper"
 import {
-  TopLeftBox,
-  TopRightBox,
   BottomLeftBox,
   BottomRightBox,
+  TopLeftBox,
+  TopRightBox,
 } from "./StyledAlerts"
-import { AlertProps, placementType, AlertsProviderState } from "./types"
+import TransitionWrapper from "./TransitionWrapper"
+import { AlertProps, AlertsProviderState, placementType } from "./types"
 
 const PlacementWrapperDiv = {
   topLeft: TopLeftBox,
@@ -35,7 +35,7 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
   handleAdd = (alertProps: AlertProps): string => {
     alertProps.placement =
       alertProps.placement || ("bottomLeft" as placementType)
-    
+
     // If the key is not provided, generate a new random key.
     alertProps.alertKey = alertProps.alertKey || uuid()
 
@@ -108,7 +108,10 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
           {Object.entries(alertsByPlace).map(([placement, alertArr]) => {
             const Wrapper = PlacementWrapperDiv[placement]
             return (
-              <Wrapper key={placement} data-testid="alerts-wrapper" className="alerts-wrapper" >
+              <Wrapper
+                key={placement}
+                data-testid="alerts-wrapper"
+                className="alerts-wrapper">
                 <TransitionWrapper alerts={alertArr!} />
               </Wrapper>
             )

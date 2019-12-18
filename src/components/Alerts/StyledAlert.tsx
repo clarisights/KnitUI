@@ -121,30 +121,26 @@ const getActionWrapperMargin = (props: IStyledAlert) => {
   return `${multiLine ? "1.4rem" : `0`} 0 0 0}`
 }
 
-export const AlertContainer = styled("div")<IStyledAlert>(
-  props => `
+export const AlertContainer = styled("div")(
+  (props: IStyledAlert) => `
   display: flex;
   box-sizing: border-box;
   overflow: hidden;
-
   width: ${getWidth(props)}rem;
   border-radius: ${getBorderRadius(props)};
   padding: 1.4rem;
-
   color: ${getFontColor(props)};
   background: ${getBackgroundColor(props)};
-
   opacity: 1;
   transition: all 0.25s;
-
   &.hide {
     opacity: 0;
   }
 `
 )
 
-export const AlertContentWrapper = styled.div<IStyledAlert>(
-  props => `
+export const AlertContentWrapper = styled.div(
+  (props: IStyledAlert) => `
   display: flex;
   width: 100%;
   flex-direction: ${getContentWrapperDirection(props)};
@@ -153,8 +149,8 @@ export const AlertContentWrapper = styled.div<IStyledAlert>(
 `
 )
 
-export const AlertContent = styled.div<IStyledAlert>(
-  props => `
+export const AlertContent = styled.div(
+  (props: IStyledAlert) => `
   font-size: ${getFontSize(props)}rem};
   line-height: ${getLineHeight(props)}rem};
   color: ${getFontColor(props)};
@@ -165,8 +161,8 @@ export const StyledAlertIcon = styled(Icon).attrs(props => ({
   fill: getFontColor(props),
   width: "2rem",
   height: "2rem",
-}))<IStyledAlert>(
-  props => `
+}))(
+  (props: IStyledAlert) => `
   align-self: ${getIconVerticalAlign(props)};
   margin: ${getIconMargin(props)};
 `
@@ -179,25 +175,24 @@ export const CloseIcon = styled(Button).attrs(props => {
       padding: "0rem",
     },
   }
-})<IStyledAlert>(
-  props => `
+})(
+  (props: IStyledAlert) => `
   flex-basis: 0;
   margin: ${getCloseIconMargin(props)};
-  align-self: ${({ customProps: { multiLine } }) =>
-    !multiLine ? "center" : "flex-start"};
+  align-self: ${!props.customProps.multiLine ? "center" : "flex-start"};
 `
 )
 
-export const AlertHeading = styled.div<IStyledAlert>(
-  props => `
+export const AlertHeading = styled.div(
+  (props: IStyledAlert) => `
   font-size: ${getHeadingFontSize(props)}rem;
   line-height: ${getHeadingLineHeight(props)}rem;
   margin-bottom: 0.7rem;
 `
 )
 
-export const StyledAlertPicture = styled.img<IStyledAlert>(
-  props => `
+export const StyledAlertPicture = styled.img(
+  (props: IStyledAlert) => `
   min-width: 2rem;
   height: 2rem;
   border-radius: 1.2rem;
@@ -210,8 +205,8 @@ export const StyledAlertAction = styled(Button).attrs(
   (props: IStyledAlert) => ({
     customColor: getBackgroundColor(props),
   })
-)<IStyledAlert>(
-  props => `
+)(
+  (props: IStyledAlert) => `
   flex-shrink: 0;
   text-transform: uppercase;
   font-size: ${getFontSize(props)}rem;
@@ -220,8 +215,8 @@ export const StyledAlertAction = styled(Button).attrs(
 `
 )
 
-export const AlertActionsWrapper = styled.span<IStyledAlert>(
-  props => `
+export const AlertActionsWrapper = styled.span(
+  (props: IStyledAlert) => `
   margin: ${getActionWrapperMargin(props)};
   display: flex;
   ${StyledAlertAction}:not(:last-child) {

@@ -20,8 +20,7 @@ const getMinHeight = (props: IStyledHeaderProps) => {
   return lineHeight + 2 * VERTICAL_PADDING
 }
 
-const Container = styled.div<IStyledHeaderProps>(
-  props => `
+const Container = styled.div<IStyledHeaderProps>`
   display: flex;
   padding: ${({ theme: { knitui } }) =>
     `${knitui.modalHeaderPadding.vertical}rem ${knitui.modalHeaderPadding.horizontal}rem`};
@@ -31,9 +30,8 @@ const Container = styled.div<IStyledHeaderProps>(
     noFill ? "none" : knitui.chromaPalette.Neutral10};
   border-bottom: ${({ customProps: { noFill }, theme: { knitui } }) =>
     noFill ? knitui.modalBorder : "none"};
-  min-height: ${getMinHeight(props)}rem};
+  min-height: ${props => getMinHeight(props)}rem};
 `
-)
 
 const Header: React.FC<HeaderProps> = props => {
   const { children } = props

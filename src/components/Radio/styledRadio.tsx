@@ -5,8 +5,7 @@ import { RadioWrapperProps } from "./Interface"
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
 
-export const StyledRadioRoot = styled.span<RadioWrapperProps>(
-  props => `
+export const StyledRadioRoot = styled.span<RadioWrapperProps>`
   &.knit-radio {
     white-space: nowrap;
     outline: none;
@@ -14,7 +13,7 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>(
     position: relative;
 
     & + span {
-      cursor: ${isDisabled(props) ? "not-allowed" : "pointer"};
+      cursor: ${props => (isDisabled(props) ? "not-allowed" : "pointer")};
       margin-left: 10px;
     }
 
@@ -49,7 +48,6 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>(
     }
   }
 `
-)
 
 export const StyledRadioInner = styled.span<{
   size: string | undefined
