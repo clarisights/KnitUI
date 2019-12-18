@@ -20,8 +20,8 @@ export const BaseLayout = styled.div`
   min-height: inherit;
 `
 
-export const Layout = styled.div<IStyledPanelModal>(
-  props => `
+export const Layout = styled.div(
+  (props: IStyledPanelModal) => `
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -32,8 +32,8 @@ export const Layout = styled.div<IStyledPanelModal>(
 )
 
 // Applies to left and right panels only
-export const PanelSection = styled.div<IStyledPanelModal>(
-  props => `
+export const PanelSection = styled.div(
+  (props: IStyledPanelModal) => `
   width: 21rem;
   flex-shrink: 0;
   ${getPanelBorder(props)}
@@ -48,7 +48,7 @@ export const Content = styled.div<IStyledModal>`
 `
 
 export const VerticalLayoutContent = styled(Content)(
-  props => `
+  (props: IStyledModal) => `
   max-height: ${props.customProps.maxContentHeight};
   min-height: ${props.customProps.minContentHeight};
 `

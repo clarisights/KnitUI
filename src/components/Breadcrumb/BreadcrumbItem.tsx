@@ -13,14 +13,15 @@ const sharedStyles = css<BreadcrumbItemProps>(
   display: flex;
   align-items: center;
   &:hover {
-    background-color: ${({ separator, theme: { knitui } }) =>
-      separator ? "" : knitui.chromaPalette.Neutral10};
+    background-color: ${
+      props.separator ? "" : props.theme.knitui.chromaPalette.Neutral10
+    };
   }
   cursor: ${props.separator ? "default" : "pointer"};
   a,
   * a {
     text-decoration: underline;
-    color: ${({ theme: { knitui } }) => knitui.shades.blue40};
+    color: ${props.theme.knitui.shades.blue40};
   }
 `
 )

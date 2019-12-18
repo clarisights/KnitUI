@@ -16,6 +16,7 @@ export interface RadioWrapperProps {
   value?: any
   setValue?: (e) => void | any
   size?: string
+  theme?: object
 }
 
 type size = "small" | "medium"

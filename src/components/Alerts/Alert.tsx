@@ -1,17 +1,17 @@
-import React, { useState, useEffect, SyntheticEvent } from "react"
-import { AlertProps } from "./types"
+import React, { SyntheticEvent, useEffect, useState } from "react"
+import { IStyled } from "../../common/types"
 import {
+  AlertActionsWrapper,
   AlertContainer,
   AlertContent,
-  StyledAlertIcon,
-  AlertHeading,
   AlertContentWrapper,
-  StyledAlertPicture,
-  StyledAlertAction,
-  AlertActionsWrapper,
+  AlertHeading,
   CloseIcon,
+  StyledAlertAction,
+  StyledAlertIcon,
+  StyledAlertPicture,
 } from "./StyledAlert"
-import { IStyled } from "../../common/types"
+import { AlertProps } from "./types"
 
 type IStyledAlert = IStyled<AlertProps>
 

@@ -116,8 +116,9 @@ const getLineHeight = (props: IStyledInput) => {
   return knitui.typography[typographySize].lineHeight
 }
 
-const StyledInput: ReactNode = styled.input<IStyledInput>(props => {
-  return `
+const StyledInput: any = styled.input(
+  (props: IStyledInput) =>
+    `
  height: ${getHeight(props)};
  width: 100%;
  margin: 0.4rem 0;
@@ -144,7 +145,7 @@ const StyledInput: ReactNode = styled.input<IStyledInput>(props => {
    color: ${props.theme.knitui.inputPlaceholderColor};
  }
 `
-})
+)
 
 const AddonSpan = styled.span`
   display: flex;
@@ -175,8 +176,8 @@ const labelStyle = css`
   line-height: 1.8rem;
 `
 
-const StyledLabel = styled.label<IStyledInput>(
-  props => `
+const StyledLabel = styled.label(
+  (props: IStyledInput) => `
   ${labelStyle}
   color: ${getLabelColor(props)};
 `

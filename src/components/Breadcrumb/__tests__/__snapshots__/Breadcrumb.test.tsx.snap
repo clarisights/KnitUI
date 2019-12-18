@@ -87,6 +87,7 @@ exports[`Breadcrumb basic renders basic breadcrumb correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -218,6 +219,7 @@ exports[`Breadcrumb basic renders with a custom separator correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -349,6 +351,7 @@ exports[`Breadcrumb basic renders with a link clearly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -484,6 +487,7 @@ exports[`Breadcrumb basic renders with custom child styles correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -620,6 +624,7 @@ exports[`Breadcrumb basic renders with custom parent style correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -700,6 +705,7 @@ exports[`Breadcrumb renders a single correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -731,6 +737,7 @@ exports[`Breadcrumb renders no child correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1118,6 +1125,7 @@ exports[`Breadcrumb renders with a truncated state correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1259,6 +1267,7 @@ exports[`Breadcrumb renders with custom active item styles correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1402,6 +1411,7 @@ exports[`Breadcrumb renders with icon correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: initial;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
