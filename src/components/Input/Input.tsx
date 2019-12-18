@@ -150,10 +150,10 @@ const StyledInput: any = styled.input(
   }
 
   &:disabled {
-  cursor: not-allowed;
-  background-color: ${props.theme.knitui.inputBgDefault};
-  border: ${getInputBorder(props, "default")};
-  box-shadow: none;
+    cursor: not-allowed;
+    background-color: ${props.theme.knitui.inputBgDefault};
+    border: ${getInputBorder(props, "default")};
+    box-shadow: none;
   }
 `
 )
