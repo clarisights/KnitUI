@@ -203,7 +203,7 @@ describe("Using API test : ", () => {
         // Avoid fail test because Opacity diff , it's because of transition, uncomment whenever needed to check other thing
         // expect(renderResult.container).toMatchSnapshot()
       })
-    })
+    }, 10000)
 
     test("Remove alert using API call", async () => {
       let renderResult
@@ -224,7 +224,7 @@ describe("Using API test : ", () => {
       })
       // Avoid fail test because Opacity diff , it's because of transition, uncomment whenever needed to check other thing
       // expect(_container).toMatchSnapshot()
-    })
+    }, 10000)
   })
 
   test("Remove alert using dismiss action", async () => {
@@ -243,7 +243,7 @@ describe("Using API test : ", () => {
     await wait(() => {
       expect(renderResult.queryAllByTestId("alert-container")).toHaveLength(1)
     })
-  })
+  }, 10000)
 })
 
 describe("Custom class and Custom content", () => {
