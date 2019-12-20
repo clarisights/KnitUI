@@ -7,6 +7,7 @@ type heightType = "small" | "medium" | "large"
 export interface IShimmerProps extends BaseComponentProps {
   /** This is a placeholder description */
   height?: heightType
+  animationOverrides?: Object
 }
 
 const shim = keyframes`
@@ -40,28 +41,32 @@ const ShimmerContainer: any = styled.div<{
   overflow: hidden;
 `
 
-const ShimmerElement = styled.div`
+const ShimmerElement: any = styled.div<{
+  animationOverrides: {}
+}>`
   width: 50%;
   max-width: 35rem;
   background: rgba(204, 204, 204, 0.3);
   height: 100%;
   border-radius: 4px;
-  box-shadow: 0px 14px 64px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 14px 70px rgba(0, 0, 0, 0.3);
   animation: ${shim} 2000ms cubic-bezier(0.5, 0, 0, 1) infinite;
   position: absolute;
+  ${({ animationOverrides }) => animationOverrides};
 `
 
 export default function Shimmer({
   height = "small",
   className,
   style,
+  animationOverrides,
 }: IShimmerProps) {
   return (
     <ShimmerContainer
       className={className}
       style={style}
       customProps={{ height }}>
-      <ShimmerElement />
+      <ShimmerElement animationOverrides={animationOverrides} />
     </ShimmerContainer>
   )
 }
