@@ -1,13 +1,13 @@
 import React from "react"
-import styled, { keyframes } from "styled-components"
-import { BaseComponentProps } from "../../common/types"
+import styled, { keyframes, CSSObject } from "styled-components"
+import { BaseComponentProps, IStyled } from "../../common/types"
 
 type heightType = "small" | "medium" | "large"
 
 export interface IShimmerProps extends BaseComponentProps {
   /** This is a placeholder description */
   height?: heightType
-  animationOverrides?: Object
+  animationOverrides?: CSSObject
 }
 
 const shim = keyframes`
@@ -30,19 +30,17 @@ function getHeight(height: heightType): number {
   }
 }
 
-const ShimmerContainer: any = styled.div<{
-  customProps: { height: heightType }
-}>`
+const ShimmerContainer = styled.div<IStyled<IShimmerProps>>`
   width: 100%;
-  height: ${({ customProps }) => `${getHeight(customProps.height)}rem`};
+  height: ${({ customProps }) => `${getHeight(customProps.height!)}rem`};
   background: ${({ theme }) => theme.knitui.chromaPalette.Neutral10};
   border-radius: 4px;
   position: relative;
   overflow: hidden;
 `
 
-const ShimmerElement: any = styled.div<{
-  animationOverrides: {}
+const ShimmerElement = styled.div<{
+  animationOverrides: CSSObject
 }>`
   width: 50%;
   max-width: 35rem;
@@ -59,7 +57,7 @@ export default function Shimmer({
   height = "small",
   className,
   style,
-  animationOverrides,
+  animationOverrides = {},
 }: IShimmerProps) {
   return (
     <ShimmerContainer
