@@ -34,12 +34,18 @@ storiesOf("Shimmer", module)
           opacity: 1,
           margin: "14px 0",
         }}
+        animationOverrides={{
+          animationDelay: "0ms",
+        }}
         height={select("Size", heightOptions, "medium")}
       />
       <Shimmer
         style={{
           opacity: 0.75,
           margin: "14px 0",
+        }}
+        animationOverrides={{
+          animationDelay: "50ms",
         }}
         height={select("Size", heightOptions, "medium")}
       />{" "}
@@ -48,12 +54,18 @@ storiesOf("Shimmer", module)
           opacity: 0.5,
           margin: "14px 0",
         }}
+        animationOverrides={{
+          animationDelay: "100ms",
+        }}
         height={select("Size", heightOptions, "medium")}
       />{" "}
       <Shimmer
         style={{
           opacity: 0.25,
           margin: "14px 0",
+        }}
+        animationOverrides={{
+          animationDelay: "150ms",
         }}
         height={select("Size", heightOptions, "medium")}
       />
