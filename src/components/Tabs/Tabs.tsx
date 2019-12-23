@@ -1,12 +1,13 @@
 import React, { Children, useState, useEffect, useRef } from "react"
 import styled from "styled-components"
+import { arrayMove } from "react-sortable-hoc"
 import {
-  SortableContainer,
-  SortableElement,
-  arrayMove,
-} from "react-sortable-hoc"
-import { TabsProps, TabPane } from "./types"
+  TabsProps,
+  TabWrapperInterface,
+  activeTabFlagsInterface,
+} from "./types"
 import { Button, Icon } from ".."
+import { TabsList } from "./TabsList"
 
 const TabsWrapper = styled.div`
   height: 100%;
@@ -20,12 +21,50 @@ const TabsPanelWrapper = styled.div`
   padding: 0 50px;
 `
 
+const OverflowWrapper = styled.div`
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+`
+
+const OverflowContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  padding-bottom: 17px;
+  margin-bottom: -17px;
+  box-sizing: content-box;
+`
+
+const BlurElement = styled.div<{
+  dir: string
+  visible: boolean
+}>`
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  background: ${props =>
+    props.dir === "left"
+      ? "linear-gradient(to right, #f7f4ed, transparent)"
+      : "linear-gradient(to left, #f7f4ed, transparent)"};
+  z-index: 9;
+  visibility: ${props => (props.visible ? "visible" : "hidden")};
+`
+
+const IconWrapper = styled.div<{ visible: boolean }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: ${props => (props.visible ? "visible" : "hidden")};
+  cursor: pointer;
+`
+
 const TabPanel = styled.button<{ active: boolean }>`
 background: ${props => (props.active ? "#FFFFFF" : "none")};
 border: none;
 border-top: ${props =>
-  props.active ? "2px solid #D8C9A7" : "1px solid transparent"};
-border-bottom: ${props => (props.active ? "none" : "1px solid transparent")};
+  props.active ? "2px solid #D8C9A7" : "2px solid transparent"};
   padding: 4px 14px;
   border-radius: 2px 2px 0px 0px;
   min-width: 80px;
@@ -34,127 +73,9 @@ border-bottom: ${props => (props.active ? "none" : "1px solid transparent")};
   cursor: pointer;
 }`
 
-const VerticalBar = styled.div`
-  height: 14px;
-  width: 0px;
-  position: absolute;
-  border-right: 1px solid #cccccc;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-`
-
 const TabContentWrapper = styled.div`
   width: 100%;
 `
-
-const SortableItem = SortableElement(
-  ({
-    value,
-    onChange,
-    activeKey,
-    activeKeyIndex,
-    itemIndex,
-    activeTabFlags,
-    itemRef,
-    activeNxtRef,
-    activePrevRef,
-  }) => {
-    const props = value.props
-    const isActive = props.tabKey === activeKey
-    const elem = React.cloneElement(value, {
-      key: props.tabKey,
-      active: isActive,
-      role: "tab",
-      "aria-controls": "tabpanel-id",
-      children: props.tab,
-      onClick: () => onChange(props.tabKey),
-    })
-    const showVBar = itemIndex + 1 !== activeKeyIndex && !isActive
-    let styles: any = { position: "relative" }
-    if (activeKeyIndex === itemIndex) {
-      styles = { position: "relative", zIndex: 10 }
-    }
-    if (activeTabFlags.left && activeKeyIndex === itemIndex) {
-      styles = {
-        position: "absolute",
-        zIndex: 2,
-      }
-    } else if (activeTabFlags.right && activeKeyIndex === itemIndex) {
-      styles = {
-        position: "absolute",
-        zIndex: 2,
-        right: 18,
-      }
-    }
-    // console.log(activeTabFlags)
-    if (activeTabFlags.left && activeKeyIndex === itemIndex - 1) {
-      styles = {
-        position: "relative",
-        marginLeft: itemRef.current.getBoundingClientRect().width,
-      }
-    } else if (activeTabFlags.right && activeKeyIndex === itemIndex + 1) {
-      styles = {
-        position: "relative",
-        marginRight: itemRef.current.getBoundingClientRect().width,
-      }
-    }
-    const getRef = () => {
-      if (activeKeyIndex === itemIndex) {
-        return itemRef
-      } else if (activeKeyIndex + 1 === itemIndex) {
-        return activeNxtRef
-      } else if (activeKeyIndex - 1 === itemIndex) {
-        return activePrevRef
-      }
-      return null
-    }
-    return (
-      <div ref={getRef()} id={isActive ? "active-tab" : ""} style={styles}>
-        {elem}
-        {showVBar ? <VerticalBar /> : null}
-      </div>
-    )
-  }
-)
-
-const SortableList = SortableContainer(
-  ({
-    items,
-    onChange,
-    activeKey,
-    activeKeyIndex,
-    activeTabFlags,
-    itemRef,
-    activeNxtRef,
-    activePrevRef,
-  }) => {
-    return (
-      <div
-        id="rohan"
-        style={{
-          display: "flex",
-        }}>
-        <div />
-        {items.map((value, index) => (
-          <SortableItem
-            onChange={onChange}
-            key={`tab-${index}`}
-            index={index}
-            itemIndex={index}
-            value={value}
-            activeKey={activeKey}
-            activeKeyIndex={activeKeyIndex}
-            activeTabFlags={activeTabFlags}
-            itemRef={itemRef}
-            activeNxtRef={activeNxtRef}
-            activePrevRef={activePrevRef}
-          />
-        ))}
-      </div>
-    )
-  }
-)
 
 const getActiveKeyIndex = (childrenArray, activeKey) => {
   return childrenArray.findIndex(
@@ -162,11 +83,61 @@ const getActiveKeyIndex = (childrenArray, activeKey) => {
   )
 }
 
-const Tabs: React.FC<TabsProps> = ({ children, ...tabProps }) => {
-  const childrenArrayProps = Children.toArray(children)
-  if (childrenArrayProps.length < 1) {
-    return <div />
+const onScroll = (
+  listRef: React.RefObject<HTMLDivElement>,
+  activeNxtRef: React.RefObject<HTMLDivElement>,
+  itemRef: React.RefObject<HTMLDivElement>,
+  activePrevRef: React.RefObject<HTMLDivElement>,
+  setActiveTabFlags: (obj: activeTabFlagsInterface) => void,
+  setScrollFlags: (obj: {
+    leftSideScroll: boolean
+    rightRideScroll: boolean
+  }) => void
+) => {
+  const current = listRef.current
+  if (!current) {
+    return
   }
+  if (
+    activeNxtRef.current &&
+    itemRef.current &&
+    current.offsetLeft + current.scrollLeft + itemRef.current.clientWidth >=
+      activeNxtRef.current.offsetLeft
+  ) {
+    setActiveTabFlags({
+      right: false,
+      left: true,
+    })
+  } else if (
+    activePrevRef.current &&
+    itemRef.current &&
+    current.offsetLeft + current.scrollLeft + current.clientWidth <=
+      activePrevRef.current.offsetLeft +
+        activePrevRef.current.clientWidth +
+        itemRef.current.clientWidth
+  ) {
+    setActiveTabFlags({
+      right: true,
+      left: false,
+    })
+  } else {
+    setActiveTabFlags({
+      right: false,
+      left: false,
+    })
+  }
+  const leftSideScroll = current.scrollLeft > 0
+  const rightRideScroll =
+    current.scrollLeft !== current.scrollWidth - current.offsetWidth
+  const scrollFlags = {
+    leftSideScroll,
+    rightRideScroll,
+  }
+  setScrollFlags(scrollFlags)
+}
+
+const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
+  const childrenArrayProps = Children.toArray(children)
   const firstTab =
     childrenArrayProps[0] && childrenArrayProps[0]["props"].tabKey
   const internalState = useState(tabProps.defaultActiveKey || firstTab)
@@ -176,7 +147,7 @@ const Tabs: React.FC<TabsProps> = ({ children, ...tabProps }) => {
     onAddTab,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
-  const [activeKeyIndex, setActiveKeyIndex] = useState(null)
+  const [activeKeyIndex, setActiveKeyIndex] = useState(0)
   const [scrollFlags, setScrollFlags] = useState({
     leftSideScroll: false,
     rightRideScroll: false,
@@ -185,55 +156,28 @@ const Tabs: React.FC<TabsProps> = ({ children, ...tabProps }) => {
     right: false,
     left: false,
   })
-  const listRef = useRef(null)
-  const itemRef = useRef(null)
-  const activeNxtRef = useRef(null)
-  const activePrevRef = useRef(null)
-  const onScroll = () => {
-    const current = listRef.current
-    if (!current) {
-      return
-    }
-    if (
-      activeNxtRef.current &&
-      itemRef.current &&
-      current.offsetLeft + current.scrollLeft + itemRef.current.clientWidth >=
-        activeNxtRef.current.offsetLeft
-    ) {
-      setActiveTabFlags({
-        right: false,
-        left: true,
-      })
-    } else if (
-      activePrevRef.current &&
-      itemRef.current &&
-      current.offsetLeft + current.scrollLeft + current.clientWidth <=
-        activePrevRef.current.offsetLeft +
-          activePrevRef.current.clientWidth +
-          itemRef.current.clientWidth
-    ) {
-      setActiveTabFlags({
-        right: true,
-        left: false,
-      })
-    } else {
-      setActiveTabFlags({
-        right: false,
-        left: false,
-      })
-    }
-    const leftSideScroll = current.scrollLeft > 0
-    const rightRideScroll =
-      current.scrollLeft !== current.scrollWidth - current.offsetWidth
-    const scrollFlags = {
-      leftSideScroll,
-      rightRideScroll,
-    }
-    setScrollFlags(scrollFlags)
-  }
+  // ref for main scrollable list container
+  const listRef: React.RefObject<HTMLDivElement> = useRef(null)
+  // ref for active tab
+  const itemRef: React.RefObject<HTMLDivElement> = useRef(null)
+  // ref for tab after active tab
+  const activeNxtRef: React.RefObject<HTMLDivElement> = useRef(null)
+  // ref for tab before active tab
+  const activePrevRef: React.RefObject<HTMLDivElement> = useRef(null)
+
   useEffect(() => {
     const current = listRef.current
-    current.addEventListener("scroll", () => onScroll())
+    current &&
+      current.addEventListener("scroll", () =>
+        onScroll(
+          listRef,
+          activeNxtRef,
+          itemRef,
+          activePrevRef,
+          setActiveTabFlags,
+          setScrollFlags
+        )
+      )
   }, [])
   useEffect(() => {
     setChildrenArray(childrenArrayProps as any)
@@ -243,7 +187,14 @@ const Tabs: React.FC<TabsProps> = ({ children, ...tabProps }) => {
     setActiveKeyIndex(index)
   }, [childrenArray, activeKey])
   useEffect(() => {
-    onScroll()
+    onScroll(
+      listRef,
+      activeNxtRef,
+      itemRef,
+      activePrevRef,
+      setActiveTabFlags,
+      setScrollFlags
+    )
   }, [activeKeyIndex])
   const getTabsContent = () => {
     return childrenArray.map((child: React.ReactElement) => {
@@ -261,14 +212,26 @@ const Tabs: React.FC<TabsProps> = ({ children, ...tabProps }) => {
   const onSortStart = () => {
     document.body.style.cursor = "grabbing"
   }
-  console.log(
-    "ac",
-    itemRef,
-    activeNxtRef,
-    activePrevRef,
-    scrollFlags,
-    activeTabFlags
-  )
+  const handleScrollRight = () => {
+    const list = listRef.current
+    if (list) {
+      const distance = list.clientWidth + list.scrollLeft - 140 * 2
+      list.scrollTo({
+        behavior: "smooth",
+        left: distance,
+      })
+    }
+  }
+  const handleScrollLeft = () => {
+    const list = listRef.current
+    if (list) {
+      const distance = list.scrollLeft + 140 * 2 - list.clientWidth
+      list.scrollTo({
+        behavior: "smooth",
+        left: distance,
+      })
+    }
+  }
   const showRightArrow = scrollFlags.rightRideScroll
   const showLeftArrow = scrollFlags.leftSideScroll
   const showRightBlur = showRightArrow && !activeTabFlags.right
@@ -276,45 +239,19 @@ const Tabs: React.FC<TabsProps> = ({ children, ...tabProps }) => {
   return (
     <TabsWrapper>
       <TabsPanelWrapper>
-        <div
-          style={{
-            width: "100%",
-            height: "100%",
-            overflow: "hidden",
-            position: "relative",
-            display: "flex",
-          }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              visibility: showLeftArrow ? "visible" : "hidden",
-            }}>
+        <OverflowWrapper>
+          <IconWrapper visible={showLeftArrow} onClick={handleScrollLeft}>
             <Icon type="oKeyboardArrowLeft" size="18px" fill="#000000" />
-          </div>
-          <div
+          </IconWrapper>
+          <BlurElement
+            visible={showLeftBlur}
+            dir="left"
             style={{
-              width: 80,
-              height: "100%",
-              position: "absolute",
               left: 18,
-              background: "linear-gradient(to right, #f7f4ed, transparent)",
-              zIndex: 9,
-              visibility: showLeftBlur ? "visible" : "hidden",
             }}
           />
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              overflowX: "auto",
-              paddingBottom: "17px",
-              marginBottom: "-17px",
-              boxSizing: "content-box",
-            }}
-            ref={listRef}>
-            <SortableList
+          <OverflowContainer ref={listRef}>
+            <TabsList
               shouldCancelStart={() => false}
               items={childrenArray}
               activeKey={activeKey}
@@ -330,27 +267,18 @@ const Tabs: React.FC<TabsProps> = ({ children, ...tabProps }) => {
               activeNxtRef={activeNxtRef}
               activePrevRef={activePrevRef}
             />
-          </div>
-          <div
+          </OverflowContainer>
+          <BlurElement
+            visible={showRightBlur}
+            dir="right"
             style={{
-              width: 80,
-              height: "100%",
-              position: "absolute",
               right: 18,
-              background: "linear-gradient(to left, #f7f4ed, transparent)",
-              visibility: showRightBlur ? "visible" : "hidden",
             }}
           />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              visibility: showRightArrow ? "visible" : "hidden",
-            }}>
+          <IconWrapper visible={showRightArrow} onClick={handleScrollRight}>
             <Icon type="oKeyboardArrowRight" size="18px" fill="#000000" />
-          </div>
-        </div>
+          </IconWrapper>
+        </OverflowWrapper>
         <Button
           onClick={onAddTab}
           icon="oAdd"

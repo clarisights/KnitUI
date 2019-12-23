@@ -15,3 +15,12 @@ export interface TabPane {
   key: string
   tab: string | ReactNode
 }
+
+export interface TabWrapperInterface<T> extends React.FC<T> {
+  TabPanel: React.ReactNode
+}
+
+export interface activeTabFlagsInterface {
+  left: boolean
+  right: boolean
+}

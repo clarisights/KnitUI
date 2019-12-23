@@ -61,6 +61,36 @@ stories
           <TabPanel tab="Tab g" tabKey="tab-g">
             tab 3 content here
           </TabPanel>
+          <TabPanel tab="Tab 12" tabKey="tab-15">
+            tab 1 content here
+          </TabPanel>
+          <TabPanel tab="Tab 22" tabKey="tab-25">
+            tab 2 content here
+          </TabPanel>
+          <TabPanel tab="Tab 32" tabKey="tab-35">
+            tab 3 content here
+          </TabPanel>
+          <TabPanel tab="Tab 42" tabKey="tab-45">
+            tab 4 content here
+          </TabPanel>
+          <TabPanel tab="Tab 52" tabKey="tab-55">
+            tab 5 content here
+          </TabPanel>
+          <TabPanel tab="Tab 12" tabKey="tab-16">
+            tab 1 content here
+          </TabPanel>
+          <TabPanel tab="Tab 22" tabKey="tab-26">
+            tab 2 content here
+          </TabPanel>
+          <TabPanel tab="Tab 32" tabKey="tab-36">
+            tab 3 content here
+          </TabPanel>
+          <TabPanel tab="Tab 42" tabKey="tab-46">
+            tab 4 content here
+          </TabPanel>
+          <TabPanel tab="Tab 52" tabKey="tab-56">
+            tab 5 content here
+          </TabPanel>
         </Tabs>
       </div>
     )
