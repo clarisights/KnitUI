@@ -3,11 +3,11 @@ import { ReactNode } from "react"
 
 export interface TabsProps extends BaseComponentProps {
   children: ReactNode[] | ReactNode
-  defaultActiveKey: string
-  activeKey: string
-  hideAdd: boolean
-  size: "default" | "medium"
-  onChange: (activeKey: string) => void
+  defaultActiveKey?: string
+  activeKey?: string
+  hideAdd?: boolean
+  size?: "default" | "medium"
+  onChange?: (activeKey: string) => void
   onAddTab: () => void
 }
 
@@ -17,7 +17,7 @@ export interface TabPane {
 }
 
 export interface TabWrapperInterface<T> extends React.FC<T> {
-  TabPanel: React.ReactNode
+  TabPanel: any
 }
 
 export interface activeTabFlagsInterface {
