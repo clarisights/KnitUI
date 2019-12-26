@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { IStyledModal, IStyledPanelModal } from "./types"
+import { IStyledPanelModal, IStyledModal } from "./types"
 
 const getPanelBorder = (props: IStyledPanelModal) => {
   const {
@@ -20,26 +20,22 @@ export const BaseLayout = styled.div`
   min-height: inherit;
 `
 
-export const Layout = styled.div(
-  (props: IStyledPanelModal) => `
+export const Layout = styled.div<IStyledPanelModal>`
   display: flex;
   flex-direction: row;
   align-items: stretch;
   flex: 1 1 auto;
-  max-height: ${props.customProps.maxContentHeight};
-  min-height: ${props.customProps.minContentHeight};
+  max-height: ${props => props.customProps.maxContentHeight};
+  min-height: ${props => props.customProps.minContentHeight};
 `
-)
 
 // Applies to left and right panels only
-export const PanelSection = styled.div(
-  (props: IStyledPanelModal) => `
+export const PanelSection = styled.div<IStyledPanelModal>`
   width: 21rem;
   flex-shrink: 0;
-  ${getPanelBorder(props)}
+  ${props => getPanelBorder(props)}
   overflow-y: auto;
 `
-)
 
 export const Content = styled.div<IStyledModal>`
   display: flex;
@@ -47,9 +43,7 @@ export const Content = styled.div<IStyledModal>`
   flex-grow: 1;
 `
 
-export const VerticalLayoutContent = styled(Content)(
-  (props: IStyledModal) => `
-  max-height: ${props.customProps.maxContentHeight};
-  min-height: ${props.customProps.minContentHeight};
+export const VerticalLayoutContent = styled(Content)`
+  max-height: ${props => props.customProps.maxContentHeight};
+  min-height: ${props => props.customProps.minContentHeight};
 `
-)

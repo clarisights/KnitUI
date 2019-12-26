@@ -39,12 +39,29 @@ exports[`Alert Component Tests different placements bottomLeft side alert render
   fill: #ffffff;
 }
 
-.c4 function (_a) {
-  -webkit-var: disabled = _a.disabled;
-  -moz-var: disabled = _a.disabled;
-  -ms-var: disabled = _a.disabled;
-  var: disabled = _a.disabled;
-  return: !disabled && styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "],["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "])),getFontColor("hover",props),getBackgroundColor("hover",props),getFontColor("hover",props),getBorder("active",props),getBoxShadow(props),getBorder("hover",props));
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #ffffff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #00000000;
 }
 
 .c4:disabled {
@@ -309,12 +326,29 @@ exports[`Alert Component Tests different placements bottomRight side alert rende
   fill: #ffffff;
 }
 
-.c4 function (_a) {
-  -webkit-var: disabled = _a.disabled;
-  -moz-var: disabled = _a.disabled;
-  -ms-var: disabled = _a.disabled;
-  var: disabled = _a.disabled;
-  return: !disabled && styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "],["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "])),getFontColor("hover",props),getBackgroundColor("hover",props),getFontColor("hover",props),getBorder("active",props),getBoxShadow(props),getBorder("hover",props));
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #ffffff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #00000000;
 }
 
 .c4:disabled {
@@ -579,12 +613,29 @@ exports[`Alert Component Tests different placements topLeft side alert render 1`
   fill: #ffffff;
 }
 
-.c4 function (_a) {
-  -webkit-var: disabled = _a.disabled;
-  -moz-var: disabled = _a.disabled;
-  -ms-var: disabled = _a.disabled;
-  var: disabled = _a.disabled;
-  return: !disabled && styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "],["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "])),getFontColor("hover",props),getBackgroundColor("hover",props),getFontColor("hover",props),getBorder("active",props),getBoxShadow(props),getBorder("hover",props));
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #ffffff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #00000000;
 }
 
 .c4:disabled {
@@ -849,12 +900,29 @@ exports[`Alert Component Tests different placements topRight side alert render 1
   fill: #ffffff;
 }
 
-.c4 function (_a) {
-  -webkit-var: disabled = _a.disabled;
-  -moz-var: disabled = _a.disabled;
-  -ms-var: disabled = _a.disabled;
-  var: disabled = _a.disabled;
-  return: !disabled && styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "],["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "])),getFontColor("hover",props),getBackgroundColor("hover",props),getFontColor("hover",props),getBorder("active",props),getBoxShadow(props),getBorder("hover",props));
+.c4:hover,
+.c4:active,
+.c4:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c4:hover svg path,
+.c4:active svg path,
+.c4:focus svg path {
+  fill: #ffffff;
+}
+
+.c4:active,
+.c4:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c4:hover {
+  border: 1px solid #00000000;
 }
 
 .c4:disabled {
@@ -1126,12 +1194,29 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
   fill: #ffffff;
 }
 
-.c6 function (_a) {
-  -webkit-var: disabled = _a.disabled;
-  -moz-var: disabled = _a.disabled;
-  -ms-var: disabled = _a.disabled;
-  var: disabled = _a.disabled;
-  return: !disabled && styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "],["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "])),getFontColor("hover",props),getBackgroundColor("hover",props),getFontColor("hover",props),getBorder("active",props),getBoxShadow(props),getBorder("hover",props));
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
 }
 
 .c6:disabled {
@@ -1429,12 +1514,29 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
   fill: #ffffff;
 }
 
-.c6 function (_a) {
-  -webkit-var: disabled = _a.disabled;
-  -moz-var: disabled = _a.disabled;
-  -ms-var: disabled = _a.disabled;
-  var: disabled = _a.disabled;
-  return: !disabled && styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "],["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "])),getFontColor("hover",props),getBackgroundColor("hover",props),getFontColor("hover",props),getBorder("active",props),getBoxShadow(props),getBorder("hover",props));
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
 }
 
 .c6:disabled {
@@ -1732,12 +1834,29 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
   fill: #ffffff;
 }
 
-.c6 function (_a) {
-  -webkit-var: disabled = _a.disabled;
-  -moz-var: disabled = _a.disabled;
-  -ms-var: disabled = _a.disabled;
-  var: disabled = _a.disabled;
-  return: !disabled && styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "],["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "])),getFontColor("hover",props),getBackgroundColor("hover",props),getFontColor("hover",props),getBorder("active",props),getBoxShadow(props),getBorder("hover",props));
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
 }
 
 .c6:disabled {
@@ -2035,12 +2154,29 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
   fill: #ffffff;
 }
 
-.c6 function (_a) {
-  -webkit-var: disabled = _a.disabled;
-  -moz-var: disabled = _a.disabled;
-  -ms-var: disabled = _a.disabled;
-  var: disabled = _a.disabled;
-  return: !disabled && styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "],["\\n      :hover,\\n      :active,\\n      :focus {\\n        color: ",";\\n        background-color: ",";\\n        svg path {\\n          fill: ",";\\n        }\\n        cursor: pointer;\\n      }\\n      :active,\\n      :focus {\\n        border: "," !important;\\n        box-shadow: ",";\\n        outline: none;\\n      }\\n      :hover {\\n        border: ",";\\n      }\\n    "])),getFontColor("hover",props),getBackgroundColor("hover",props),getFontColor("hover",props),getBorder("active",props),getBoxShadow(props),getBorder("hover",props));
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
 }
 
 .c6:disabled {

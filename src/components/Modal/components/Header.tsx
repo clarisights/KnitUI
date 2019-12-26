@@ -30,7 +30,7 @@ const Container = styled.div<IStyledHeaderProps>`
     noFill ? "none" : knitui.chromaPalette.Neutral10};
   border-bottom: ${({ customProps: { noFill }, theme: { knitui } }) =>
     noFill ? knitui.modalBorder : "none"};
-  min-height: ${props => getMinHeight(props)}rem};
+  min-height: ${props => `${getMinHeight(props)}rem`};
 `
 
 const Header: React.FC<HeaderProps> = props => {

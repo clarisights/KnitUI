@@ -1,6 +1,6 @@
+import React, { FC, useContext, SyntheticEvent } from "react"
+import styled, { css, ThemeContext } from "styled-components"
 import { IStyled } from "common/types"
-import React, { FC, SyntheticEvent } from "react"
-import styled from "styled-components"
 import { oAccountCircle as UserProfileIcon } from "../Icon/Icons"
 
 interface AvatarProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -118,19 +118,18 @@ const getOpacity = props => {
   return isIcon ? 1 : 0.4
 }
 
-const AvatarBase = styled.button<IStyled<AvatarBaseProps>>(
-  props => `
-  width: ${props.customProps.size};
-  height: ${props.customProps.size};
+const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
+  width: ${({ customProps }) => customProps.size};
+  height: ${({ customProps }) => customProps.size};
 
   overflow: hidden;
   border-radius: 50%;
   outline: none;
 
   /* Style for Name Avatar */
-  color: ${getThemeColor(props, "Neutral90")};
-  font-size: ${getFontSize(props)};
-  line-height: ${getLineHeight(props)};
+  color: ${props => getThemeColor(props, "Neutral90")};
+  font-size: ${props => getFontSize(props)};
+  line-height: ${props => getLineHeight(props)};
 
   /* Below Basic Property & corresponding function calls which will play role in :
    * all three types of Avatar -
@@ -142,21 +141,21 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>(
    *  - hover
    *  - focus/active
    */
-  background: ${getBackgroundColor(props, "default")};
-  border: ${getBorderStyle(props, "default")};
+  background: ${props => getBackgroundColor(props, "default")};
+  border: ${props => getBorderStyle(props, "default")};
   img {
-    width: ${props.customProps.size};
-    height: ${props.customProps.size};
-    margin: ${getMarginStyle(props)};
+    width: ${({ customProps }) => customProps.size};
+    height: ${({ customProps }) => customProps.size};
+    margin: ${props => getMarginStyle(props)};
     user-drag: none;
     user-select: none;
     transition: transform 120ms;
   }
 
   svg {
-    margin: ${getMarginStyle(props)};
+    margin: ${props => getMarginStyle(props)};
     path {
-      fill: ${getFillColor(props, "default")};
+      fill: ${props => getFillColor(props, "default")};
     }
   }
 
@@ -164,31 +163,30 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>(
     img {
       transform: scale(1.05);
     }
-    background: ${getBackgroundColor(props, "hover")};
-    border: ${getBorderStyle(props, "hover")};
+    background: ${props => getBackgroundColor(props, "hover")};
+    border: ${props => getBorderStyle(props, "hover")};
     svg path {
-      fill: ${getFillColor(props, "hover")};
+      fill: ${props => getFillColor(props, "hover")};
     }
   }
   :focus,
   :active {
-    background: ${getBackgroundColor(props, "focus")};
-    border: ${getBorderStyle(props, "focus")};
+    background: ${props => getBackgroundColor(props, "focus")};
+    border: ${props => getBorderStyle(props, "focus")};
     svg path {
-      fill: ${getFillColor(props, "focus")};
+      fill: ${props => getFillColor(props, "focus")};
     }
-    box-shadow: ${getBoxShadowStyle(props)};
+    box-shadow: ${props => getBoxShadowStyle(props)};
   }
 
   :disabled {
     img {
       transform: none;
     }
-    opacity: ${getOpacity(props)};
+    opacity: ${props => getOpacity(props)};
     cursor: not-allowed;
   }
 `
-)
 
 const Avatar: FC<AvatarProps> = props => {
   const { picture, size = "24px", name, disabled = false, ...rest } = props

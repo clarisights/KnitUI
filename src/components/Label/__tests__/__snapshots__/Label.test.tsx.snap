@@ -301,7 +301,7 @@ exports[`Label inset 1`] = `
   bottom: 0;
   left: 0;
   width: 0.3rem;
-  background: ,#4267B2,;
+  background: #4267B2;
   border-radius: 0.2rem 0 0 0.2rem;
 }
 
@@ -363,7 +363,7 @@ exports[`Label inset with custom color 1`] = `
   bottom: 0;
   left: 0;
   width: 0.3rem;
-  background: ,#4267B2,;
+  background: #4267B2;
   border-radius: 0.2rem 0 0 0.2rem;
 }
 
