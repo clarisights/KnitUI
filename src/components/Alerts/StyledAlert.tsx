@@ -1,5 +1,4 @@
-import React, { ReactNode } from "react"
-import styled, { css, keyframes } from "styled-components"
+import styled from "styled-components"
 import { AlertProps } from "./types"
 import { Icon, Button } from ".."
 

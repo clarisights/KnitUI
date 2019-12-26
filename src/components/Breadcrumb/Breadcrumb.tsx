@@ -6,13 +6,12 @@ import React, {
   useState,
 } from "react"
 import styled from "styled-components"
-import { StyledText } from "./BreadcrumbItem"
-import BreadcrumbItem from "./BreadcrumbItem"
+import BreadcrumbItem, { StyledText } from "./BreadcrumbItem"
 import { BreadcrumbProps, IBreadCrumb } from "./types"
 
 const StyledParent = styled.div<BreadcrumbProps>`
   display: flex;
-  max-width: ${props => props.maxWidth};
+  max-width: ${props => props.maxWidth || "initial"};
   flex-wrap: wrap;
   width: fit-content;
   align-items: center;

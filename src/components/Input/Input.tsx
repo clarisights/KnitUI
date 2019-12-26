@@ -1,9 +1,8 @@
-import React, { SFC, ReactNode } from "react"
+import React, { ReactNode } from "react"
 import styled, { css } from "styled-components"
 import _ from "lodash"
 import { insertIf } from "../../common/_utils"
-import { IStyled } from "../../common/types"
-import { BaseComponentProps } from "../../common/types"
+import { BaseComponentProps, IStyled } from "../../common/types"
 
 export interface IInputProps
   extends React.InputHTMLAttributes<HTMLInputElement>,
