@@ -179,32 +179,31 @@ const getBoxShadow = (props: IStyledBaseButton) => {
   return `0px 0px 2px ${knitui.shades.blue50}`
 }
 
-const StyledButton = styled.button<IStyledBaseButton>(
-  props => `
+const StyledButton = styled.button<IStyledBaseButton>`
   display: flex;
   align-items: center;
-  font-size: ${props.customProps.fontSize}rem;
-  line-height: ${props.customProps.lineHeight}rem;
-  padding-left: ${getLeftPadding(props)}rem;
-  padding-right: ${getRightPadding(props)}rem;
-  color: ${getFontColor("default", props)};
-  background-color: ${getBackgroundColor("default", props)};
-  padding-top: ${getVerticalPadding(props)}rem;
-  padding-bottom: ${getVerticalPadding(props)}rem;
+  font-size: ${({ customProps: { fontSize } }) => `${fontSize}rem`};
+  line-height: ${({ customProps: { lineHeight } }) => `${lineHeight}rem`};
+  padding-left: ${props => `${getLeftPadding(props)}rem`};
+  padding-right: ${props => `${getRightPadding(props)}rem`};
+  color: ${props => getFontColor("default", props)};
+  background-color: ${props => getBackgroundColor("default", props)};
+  padding-top: ${props => `${getVerticalPadding(props)}rem`};
+  padding-bottom: ${props => `${getVerticalPadding(props)}rem`};
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
-  border: ${getBorder("default", props)};
+  border: ${props => getBorder("default", props)};
   span {
-    margin-right: ${getIconMargin(props)};
+    margin-right: ${props => getIconMargin(props)};
     svg path {
-      fill: ${getFontColor("default", props)};
+      fill: ${props => getFontColor("default", props)};
     }
   }
   /* Following styles are not applied when disabled
   
     Implementation Details:
-      For conditional rendering of style, have to use css tag, for more details 
+      For conditional renderering of style, have to use css tag, for more details 
       this link can be quite useful (https://stackoverflow.com/a/48502797).
 
       In one of the props, Type is needed to be defined, otherwise throwing typescript error.
@@ -215,21 +214,22 @@ const StyledButton = styled.button<IStyledBaseButton>(
       :hover,
       :active,
       :focus {
-        color: ${getFontColor("hover", props)};
-        background-color: ${getBackgroundColor("hover", props)};
+        color: ${(props: IStyled<ButtonProps>) =>
+          getFontColor("hover", props)};
+        background-color: ${props => getBackgroundColor("hover", props)};
         svg path {
-          fill: ${getFontColor("hover", props)};
+          fill: ${props => getFontColor("hover", props)};
         }
         cursor: pointer;
       }
       :active,
       :focus {
-        border: ${getBorder("active", props)} !important;
-        box-shadow: ${getBoxShadow(props)};
+        border: ${props => getBorder("active", props)} !important;
+        box-shadow: ${props => getBoxShadow(props)};
         outline: none;
       }
       :hover {
-        border: ${getBorder("hover", props)};
+        border: ${props => getBorder("hover", props)};
       }
     `}
   :disabled {
@@ -237,6 +237,5 @@ const StyledButton = styled.button<IStyledBaseButton>(
     cursor: not-allowed;
   }
 `
-)
 
 export default StyledButton

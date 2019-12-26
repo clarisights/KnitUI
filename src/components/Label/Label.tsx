@@ -1,11 +1,11 @@
-import _ from "lodash"
 import React, { useContext } from "react"
 import styled, { css, ThemeContext } from "styled-components"
-import { IStyled } from "../../common/types"
+import _ from "lodash"
 import Icon from "../Icon"
-import { getBackgroundColor, getFontColor } from "./commonUtils"
-import InlineLabel from "./InlineLabel"
 import { ILabel, LabelPropTypes } from "./types"
+import InlineLabel from "./InlineLabel"
+import { IStyled } from "../../common/types"
+import { getFontColor, getBackgroundColor } from "./commonUtils"
 
 const DEFAULT_COLOR_THEME = "neutral"
 const INSET_BACKGROUND_COLOR = "#F7F7F7"
@@ -61,14 +61,12 @@ const verticalPadding = {
   large: 0.3,
 }
 
-const getIconPadding = (size?: string) => (size === "small" ? 0.2 : 0.4)
+const getIconPadding = (size?: string) => size === "small" ? 0.2 : 0.4
 
 const getPadding = (props: IStyledLabel) => {
   const {
     customProps: { size, expanded, outlined },
-    theme: {
-      knitui: { defaultBorderWidth },
-    },
+    theme: { knitui: { defaultBorderWidth }}
   } = props
   const defaultHorizontalPadding = expanded ? 0.9 : 0.6
   let left = defaultHorizontalPadding
@@ -101,9 +99,7 @@ const getTextRightMargin = (props: IStyledLabel) => {
 const getBorder = (props: IStyledLabel) => {
   const {
     customProps: { outlined },
-    theme: {
-      knitui: { defaultBorderWidth },
-    },
+    theme: { knitui: { defaultBorderWidth }}
   } = props
   const borderColor = outlined ? getDarkenedBorderColor(props) : "transparent"
   return `${defaultBorderWidth}rem solid ${borderColor}`
@@ -152,50 +148,36 @@ const LabelContainer = styled.div`
   position: relative;
 `
 
-const StyledDiv = styled.div<IStyledLabel>(
-  props => `
+const StyledDiv = styled.div<IStyledLabel>`
   display: inline-flex;
   align-items: center;
-  padding: ${getPadding(props)};
-  background-color: ${getBackgroundColor(props)};
-  color: ${getFontColor(props)};
-  font-size: ${`${getFontSize(props)}rem`};
-  line-height: ${`${geLineHeight(props)}rem`};
-  border-radius: ${getBorderRadius(props)};
-  border: ${getBorder(props)};
+  padding: ${props => getPadding(props)};
+  background-color: ${props => getBackgroundColor(props)};
+  color: ${props => getFontColor(props)};
+  font-size: ${props => `${getFontSize(props)}rem`};
+  line-height: ${props => `${geLineHeight(props)}rem`};
+  border-radius: ${props => getBorderRadius(props)};
+  border: ${props => getBorder(props)};
   box-sizing: border-box;
-  box-shadow: ${getBoxShadow(props)};
+  box-shadow: ${props => getBoxShadow(props)};
   overflow: hidden;
-  ${getInsetStyles(props)}
+  ${props => getInsetStyles(props)}
 `
-)
 
-const StyledTextSpan = styled.span<IStyledLabel>(
-  props => `
-  margin: 0rem ${getTextRightMargin(props)} 0rem
-    ${getTextLeftMargin(props)};
+const StyledTextSpan = styled.span<IStyledLabel>`
+  margin: 0rem ${props => getTextRightMargin(props)} 0rem
+    ${props => getTextLeftMargin(props)};
 `
-)
 
 const Label: ILabel = props => {
-  const labelPropKeys = [
-    "size",
-    "rounded",
-    "outlined",
-    "icons",
-    "focus",
-    "insetColor",
-    "text",
-    "expanded",
-    "colorPreset",
-    "customColor",
-    "customFontColor",
-  ]
+
+  const labelPropKeys = ["size", "rounded", "outlined", "icons", "focus",
+        "insetColor", "text", "expanded", "colorPreset", "customColor", "customFontColor"]
 
   const labelProps = _.pick(props, labelPropKeys)
   const otherProps = _.omit(props, labelPropKeys)
 
-  const { text, insetColor, icons } = labelProps
+const { text, insetColor, icons } = labelProps
   /**
    * Styled Component theme should be needed here, because getFontColor take theme
    * as argument
@@ -234,7 +216,10 @@ const Label: ILabel = props => {
   //For styled components, we separate the props that are to be loaded on the DOM
   return (
     <LabelContainer>
-      <StyledDiv {...scProps} {...otherProps} insetColor={insetColor}>
+      <StyledDiv
+        {...scProps}
+        {...otherProps}
+        insetColor={insetColor}>
         {renderLeftIcon()}
         <StyledTextSpan {...scProps}>{text}</StyledTextSpan>
         {renderRightIcon()}

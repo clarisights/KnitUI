@@ -1,24 +1,22 @@
 import React, {
-  cloneElement,
-  CSSProperties,
-  ReactElement,
   ReactNode,
+  ReactElement,
+  CSSProperties,
+  cloneElement,
   useState,
 } from "react"
 import styled from "styled-components"
-import BreadcrumbItem, { StyledText } from "./BreadcrumbItem"
+import { StyledText } from "./BreadcrumbItem"
+import BreadcrumbItem from "./BreadcrumbItem"
 import { BreadcrumbProps, IBreadCrumb } from "./types"
 
-const StyledParent = styled.div(
-  (props: BreadcrumbProps) =>
-    `
-      display: flex;
-      max-width: ${props.maxWidth || "initial"}
-      flex-wrap: wrap;
-      width: fit-content;
-      align-items: center;
-    `
-)
+const StyledParent = styled.div<BreadcrumbProps>`
+  display: flex;
+  max-width: ${props => props.maxWidth};
+  flex-wrap: wrap;
+  width: fit-content;
+  align-items: center;
+`
 
 const Breadcrumb: IBreadCrumb = props => {
   const {
