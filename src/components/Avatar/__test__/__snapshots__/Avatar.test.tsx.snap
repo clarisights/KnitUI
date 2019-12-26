@@ -6,7 +6,7 @@ exports[`Avatar Snapshots Different size icon avatar 1`] = `
   width: 100px;
   height: 100px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
@@ -104,7 +104,7 @@ exports[`Avatar Snapshots Different size name avatar 1`] = `
   width: 100px;
   height: 100px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
@@ -192,7 +192,7 @@ exports[`Avatar Snapshots Different size picture avatar 1`] = `
   width: 100px;
   height: 100px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
@@ -282,7 +282,7 @@ exports[`Avatar Snapshots Disabled icon avatar 1`] = `
   width: 100px;
   height: 100px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
@@ -381,7 +381,7 @@ exports[`Avatar Snapshots Disabled name avatar 1`] = `
   width: 100px;
   height: 100px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
@@ -470,7 +470,7 @@ exports[`Avatar Snapshots Disabled picture avatar 1`] = `
   width: 100px;
   height: 100px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
@@ -561,7 +561,7 @@ exports[`Avatar Snapshots Name avatar 1`] = `
   width: 24px;
   height: 24px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 24px / 2.4);
@@ -649,7 +649,7 @@ exports[`Avatar Snapshots Picture avatar 1`] = `
   width: 24px;
   height: 24px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 24px / 2.4);
@@ -739,7 +739,7 @@ exports[`Avatar Snapshots Unknown user avatar 1`] = `
   width: 24px;
   height: 24px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
   color: #1a1a1a;
   font-size: calc(1.4 * 24px / 2.4);

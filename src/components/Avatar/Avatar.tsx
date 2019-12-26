@@ -124,7 +124,7 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>(
   height: ${props.customProps.size};
 
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 99999px;
   outline: none;
 
   /* Style for Name Avatar */
