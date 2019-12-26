@@ -1,5 +1,5 @@
-import React, { FC, useContext, SyntheticEvent } from "react"
-import styled, { css, ThemeContext } from "styled-components"
+import React, { FC, SyntheticEvent } from "react"
+import styled from "styled-components"
 import { IStyled } from "common/types"
 import { oAccountCircle as UserProfileIcon } from "../Icon/Icons"
 
