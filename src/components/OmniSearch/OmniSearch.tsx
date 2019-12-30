@@ -72,6 +72,7 @@ class OmniSearch extends Component<OmniSearchProps> {
           <Icon type={"oSearch"} size={"1.8rem"} fill="#A6A6A6" />
           <StyledInput
             type="search"
+            role="search"
             autoFocus
             value={value}
             onChange={onChange}

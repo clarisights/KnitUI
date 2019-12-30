@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OmniSearch renders correctly when dropdown is null 1`] = `<DocumentFragment />`;
+
+exports[`OmniSearch renders correctly when dropdown is provided 1`] = `<DocumentFragment />`;
+
+exports[`OmniSearch renders correctly when visible is false 1`] = `<DocumentFragment />`;
+
+exports[`OmniSearch renders correctly when visible is true 1`] = `<DocumentFragment />`;
+
+exports[`OmniSearch uses the value and placeholder props correctly 1`] = `<DocumentFragment />`;
