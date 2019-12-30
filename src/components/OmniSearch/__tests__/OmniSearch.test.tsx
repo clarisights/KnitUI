@@ -67,8 +67,8 @@ describe("OmniSearch", () => {
     )
     expect(asFragment()).toMatchSnapshot()
 
-    const input = getByRole("search")
-    expect(input["value"]).toEqual("hello")
-    expect(input["placeholder"]).toEqual("placeholder")
+    const input = getByRole("search") as HTMLInputElement
+    expect(input.value).toEqual("hello")
+    expect(input.placeholder).toEqual("placeholder")
   })
 })
