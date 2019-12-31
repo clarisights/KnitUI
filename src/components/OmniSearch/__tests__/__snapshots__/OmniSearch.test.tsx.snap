@@ -1,11 +1,522 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OmniSearch renders correctly when dropdown is null 1`] = `<DocumentFragment />`;
+exports[`OmniSearch renders correctly when dropdown is null 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div />
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
 
-exports[`OmniSearch renders correctly when dropdown is provided 1`] = `<DocumentFragment />`;
+.c0 .rc-dialog-body {
+  padding: 7px 0;
+}
 
-exports[`OmniSearch renders correctly when visible is false 1`] = `<DocumentFragment />`;
+.c1 {
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 7px 14px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
-exports[`OmniSearch renders correctly when visible is true 1`] = `<DocumentFragment />`;
+.c1:focus-within {
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+  border-radius: 4px;
+}
 
-exports[`OmniSearch uses the value and placeholder props correctly 1`] = `<DocumentFragment />`;
+.c3 {
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  height: 2rem;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+
+.c3::-moz-placeholder {
+  color: #a6a6a6;
+}
+
+.c3:-ms-input-placeholder {
+  color: #a6a6a6;
+}
+
+.c3::placeholder {
+  color: #a6a6a6;
+}
+
+<div>
+    <div>
+      <div
+        class="rc-dialog-mask"
+      />
+      <div
+        class="rc-dialog-wrap "
+        role="dialog"
+        tabindex="-1"
+      >
+        <div
+          class="rc-dialog c0"
+          role="document"
+        >
+          <div
+            aria-hidden="true"
+            style="width: 0px; height: 0px; overflow: hidden;"
+            tabindex="0"
+          />
+          <div
+            class="rc-dialog-content"
+          >
+            <div
+              class="rc-dialog-body"
+            >
+              <div
+                class="c1"
+              >
+                <span
+                  class="c2"
+                  fill="#A6A6A6"
+                  height="1.8rem"
+                  type="oSearch"
+                  width="1.8rem"
+                >
+                  <svg
+                    fill="#A6A6A6"
+                    height="1.8rem"
+                    viewBox="0 0 24 24"
+                    width="1.8rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  class="c3"
+                  placeholder="Search for a report"
+                  role="search"
+                  type="search"
+                  value="demo"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            style="width: 0px; height: 0px; overflow: hidden;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`OmniSearch renders correctly when dropdown is provided 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div />
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 .rc-dialog-body {
+  padding: 7px 0;
+}
+
+.c1 {
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 7px 14px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:focus-within {
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+  border-radius: 4px;
+}
+
+.c3 {
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  height: 2rem;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+
+.c3::-moz-placeholder {
+  color: #a6a6a6;
+}
+
+.c3:-ms-input-placeholder {
+  color: #a6a6a6;
+}
+
+.c3::placeholder {
+  color: #a6a6a6;
+}
+
+<div>
+    <div>
+      <div
+        class="rc-dialog-mask"
+      />
+      <div
+        class="rc-dialog-wrap "
+        role="dialog"
+        tabindex="-1"
+      >
+        <div
+          class="rc-dialog c0"
+          role="document"
+        >
+          <div
+            aria-hidden="true"
+            style="width: 0px; height: 0px; overflow: hidden;"
+            tabindex="0"
+          />
+          <div
+            class="rc-dialog-content"
+          >
+            <div
+              class="rc-dialog-body"
+            >
+              <div
+                class="c1"
+              >
+                <span
+                  class="c2"
+                  fill="#A6A6A6"
+                  height="1.8rem"
+                  type="oSearch"
+                  width="1.8rem"
+                >
+                  <svg
+                    fill="#A6A6A6"
+                    height="1.8rem"
+                    viewBox="0 0 24 24"
+                    width="1.8rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  class="c3"
+                  placeholder="Search for a report"
+                  role="search"
+                  type="search"
+                  value="demo"
+                />
+              </div>
+              <div
+                data-testid="omnisearch-dropdown"
+              />
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            style="width: 0px; height: 0px; overflow: hidden;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`OmniSearch renders correctly when visible is false 1`] = `
+<body>
+  <div />
+</body>
+`;
+
+exports[`OmniSearch renders correctly when visible is true 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div />
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 .rc-dialog-body {
+  padding: 7px 0;
+}
+
+.c1 {
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 7px 14px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:focus-within {
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+  border-radius: 4px;
+}
+
+.c3 {
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  height: 2rem;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+
+.c3::-moz-placeholder {
+  color: #a6a6a6;
+}
+
+.c3:-ms-input-placeholder {
+  color: #a6a6a6;
+}
+
+.c3::placeholder {
+  color: #a6a6a6;
+}
+
+<div>
+    <div>
+      <div
+        class="rc-dialog-mask"
+      />
+      <div
+        class="rc-dialog-wrap "
+        role="dialog"
+        tabindex="-1"
+      >
+        <div
+          class="rc-dialog c0"
+          role="document"
+        >
+          <div
+            aria-hidden="true"
+            style="width: 0px; height: 0px; overflow: hidden;"
+            tabindex="0"
+          />
+          <div
+            class="rc-dialog-content"
+          >
+            <div
+              class="rc-dialog-body"
+            >
+              <div
+                class="c1"
+              >
+                <span
+                  class="c2"
+                  fill="#A6A6A6"
+                  height="1.8rem"
+                  type="oSearch"
+                  width="1.8rem"
+                >
+                  <svg
+                    fill="#A6A6A6"
+                    height="1.8rem"
+                    viewBox="0 0 24 24"
+                    width="1.8rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  class="c3"
+                  placeholder="Search for a report"
+                  role="search"
+                  type="search"
+                  value="demo"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            style="width: 0px; height: 0px; overflow: hidden;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`OmniSearch uses the value and placeholder props correctly 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div />
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 .rc-dialog-body {
+  padding: 7px 0;
+}
+
+.c1 {
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 7px 14px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:focus-within {
+  border: 1px solid #5ab2f2;
+  box-shadow: 0px 0px 2px #0066ff;
+  border-radius: 4px;
+}
+
+.c3 {
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  height: 2rem;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+
+.c3::-moz-placeholder {
+  color: #a6a6a6;
+}
+
+.c3:-ms-input-placeholder {
+  color: #a6a6a6;
+}
+
+.c3::placeholder {
+  color: #a6a6a6;
+}
+
+<div>
+    <div>
+      <div
+        class="rc-dialog-mask"
+      />
+      <div
+        class="rc-dialog-wrap "
+        role="dialog"
+        tabindex="-1"
+      >
+        <div
+          class="rc-dialog c0"
+          role="document"
+        >
+          <div
+            aria-hidden="true"
+            style="width: 0px; height: 0px; overflow: hidden;"
+            tabindex="0"
+          />
+          <div
+            class="rc-dialog-content"
+          >
+            <div
+              class="rc-dialog-body"
+            >
+              <div
+                class="c1"
+              >
+                <span
+                  class="c2"
+                  fill="#A6A6A6"
+                  height="1.8rem"
+                  type="oSearch"
+                  width="1.8rem"
+                >
+                  <svg
+                    fill="#A6A6A6"
+                    height="1.8rem"
+                    viewBox="0 0 24 24"
+                    width="1.8rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  class="c3"
+                  placeholder="placeholder"
+                  role="search"
+                  type="search"
+                  value="hello"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            style="width: 0px; height: 0px; overflow: hidden;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
