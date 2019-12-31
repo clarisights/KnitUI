@@ -39,13 +39,6 @@ describe("OmniSearch", () => {
     expect(document.activeElement).toBe(input)
   })
 
-  it("renders correctly when dropdown is null", () => {
-    const { baseElement } = render(
-      <OmniSearch {...baseProps} dropdown={null} />
-    )
-    expect(baseElement).toMatchSnapshot()
-  })
-
   it("renders correctly when dropdown is provided", () => {
     const component = <div data-testid="omnisearch-dropdown" />
     const { baseElement, queryByTestId } = render(
@@ -66,11 +59,9 @@ describe("OmniSearch", () => {
   })
 
   it("uses the value and placeholder props correctly", () => {
-    const { getByRole, baseElement } = render(
+    const { getByRole } = render(
       <OmniSearch {...baseProps} value="hello" placeholder="placeholder" />
     )
-    expect(baseElement).toMatchSnapshot()
-
     const input = getByRole("search") as HTMLInputElement
     expect(input.value).toEqual("hello")
     expect(input.placeholder).toEqual("placeholder")
