@@ -14,13 +14,15 @@ describe("OmniSearch", () => {
   afterEach(cleanup)
 
   it("renders correctly when visible is false", () => {
-    const { asFragment } = render(<OmniSearch {...baseProps} visible={false} />)
-    expect(asFragment()).toMatchSnapshot()
+    const { baseElement } = render(
+      <OmniSearch {...baseProps} visible={false} />
+    )
+    expect(baseElement).toMatchSnapshot()
   })
 
   it("renders correctly when visible is true", () => {
-    const { asFragment } = render(<OmniSearch {...baseProps} />)
-    expect(asFragment()).toMatchSnapshot()
+    const { baseElement } = render(<OmniSearch {...baseProps} />)
+    expect(baseElement).toMatchSnapshot()
   })
 
   it("is focused on render", () => {
@@ -38,17 +40,19 @@ describe("OmniSearch", () => {
   })
 
   it("renders correctly when dropdown is null", () => {
-    const { asFragment } = render(<OmniSearch {...baseProps} dropdown={null} />)
-    expect(asFragment()).toMatchSnapshot()
+    const { baseElement } = render(
+      <OmniSearch {...baseProps} dropdown={null} />
+    )
+    expect(baseElement).toMatchSnapshot()
   })
 
   it("renders correctly when dropdown is provided", () => {
     const component = <div data-testid="omnisearch-dropdown" />
-    const { asFragment, queryByTestId } = render(
+    const { baseElement, queryByTestId } = render(
       <OmniSearch {...baseProps} dropdown={component} />
     )
-    expect(asFragment()).toMatchSnapshot()
-    expect(queryByTestId("omnisearch-dropdown")).toBeTruthy() //.toBeDefined()?
+    expect(baseElement).toMatchSnapshot()
+    expect(queryByTestId("omnisearch-dropdown")).toBeTruthy()
   })
 
   it("triggers props.onChange correctly", () => {
@@ -62,10 +66,10 @@ describe("OmniSearch", () => {
   })
 
   it("uses the value and placeholder props correctly", () => {
-    const { getByRole, asFragment } = render(
+    const { getByRole, baseElement } = render(
       <OmniSearch {...baseProps} value="hello" placeholder="placeholder" />
     )
-    expect(asFragment()).toMatchSnapshot()
+    expect(baseElement).toMatchSnapshot()
 
     const input = getByRole("search") as HTMLInputElement
     expect(input.value).toEqual("hello")
