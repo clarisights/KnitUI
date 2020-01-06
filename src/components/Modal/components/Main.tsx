@@ -12,7 +12,9 @@ const getPadding = (props: IStyledDialog) => {
     : `${knitui.modalPadding.vertical}rem ${knitui.modalPadding.horizontal}rem`
 }
 
-const StyledMain = styled.div<IStyledDialog>`
+const StyledMain = styled.div.attrs(() => ({
+  "data-testid": "knit-modal-body",
+}))<IStyledDialog>`
   padding: ${props => getPadding(props)};
   overflow-y: auto;
   flex: 1 1 auto;
