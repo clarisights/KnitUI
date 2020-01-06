@@ -27,6 +27,10 @@ exports[`Modal with overriden padding 1`] = `
   border-top: none;
 }
 
+.c6:empty {
+  display: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -197,6 +201,7 @@ exports[`Modal with overriden padding 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -205,6 +210,7 @@ exports[`Modal with overriden padding 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -212,6 +218,7 @@ exports[`Modal with overriden padding 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
@@ -255,6 +262,10 @@ exports[`Modal with size large with a bottom panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c6:empty {
+  display: none;
 }
 
 .c2 {
@@ -433,6 +444,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -441,6 +453,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -448,6 +461,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
@@ -498,6 +512,10 @@ exports[`Modal with size large with a left panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c8:empty {
+  display: none;
 }
 
 .c2 {
@@ -696,6 +714,7 @@ exports[`Modal with size large with a left panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -714,6 +733,7 @@ exports[`Modal with size large with a left panel 1`] = `
             >
               <div
                 class="c7"
+                data-testid="knit-modal-body"
               >
                 <div>
                   Body
@@ -721,6 +741,7 @@ exports[`Modal with size large with a left panel 1`] = `
               </div>
               <div
                 class="c8"
+                data-testid="knit-modal-footer"
               >
                 <div>
                   Footer
@@ -765,6 +786,10 @@ exports[`Modal with size large with a right panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c7:empty {
+  display: none;
 }
 
 .c2 {
@@ -963,6 +988,7 @@ exports[`Modal with size large with a right panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -974,6 +1000,7 @@ exports[`Modal with size large with a right panel 1`] = `
             >
               <div
                 class="c6"
+                data-testid="knit-modal-body"
               >
                 <div>
                   Body
@@ -981,6 +1008,7 @@ exports[`Modal with size large with a right panel 1`] = `
               </div>
               <div
                 class="c7"
+                data-testid="knit-modal-footer"
               >
                 <div>
                   Footer
@@ -1034,6 +1062,10 @@ exports[`Modal with size large with simple config 1`] = `
   border-top: none;
 }
 
+.c6:empty {
+  display: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1204,6 +1236,7 @@ exports[`Modal with size large with simple config 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -1212,6 +1245,7 @@ exports[`Modal with size large with simple config 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -1219,6 +1253,7 @@ exports[`Modal with size large with simple config 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
@@ -1262,6 +1297,10 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c6:empty {
+  display: none;
 }
 
 .c2 {
@@ -1440,6 +1479,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -1448,6 +1488,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -1455,6 +1496,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
@@ -1505,6 +1547,10 @@ exports[`Modal with size medium with a left panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c8:empty {
+  display: none;
 }
 
 .c2 {
@@ -1703,6 +1749,7 @@ exports[`Modal with size medium with a left panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -1721,6 +1768,7 @@ exports[`Modal with size medium with a left panel 1`] = `
             >
               <div
                 class="c7"
+                data-testid="knit-modal-body"
               >
                 <div>
                   Body
@@ -1728,6 +1776,7 @@ exports[`Modal with size medium with a left panel 1`] = `
               </div>
               <div
                 class="c8"
+                data-testid="knit-modal-footer"
               >
                 <div>
                   Footer
@@ -1772,6 +1821,10 @@ exports[`Modal with size medium with a right panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c7:empty {
+  display: none;
 }
 
 .c2 {
@@ -1970,6 +2023,7 @@ exports[`Modal with size medium with a right panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -1981,6 +2035,7 @@ exports[`Modal with size medium with a right panel 1`] = `
             >
               <div
                 class="c6"
+                data-testid="knit-modal-body"
               >
                 <div>
                   Body
@@ -1988,6 +2043,7 @@ exports[`Modal with size medium with a right panel 1`] = `
               </div>
               <div
                 class="c7"
+                data-testid="knit-modal-footer"
               >
                 <div>
                   Footer
@@ -2041,6 +2097,10 @@ exports[`Modal with size medium with simple config 1`] = `
   border-top: none;
 }
 
+.c6:empty {
+  display: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2211,6 +2271,7 @@ exports[`Modal with size medium with simple config 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -2219,6 +2280,7 @@ exports[`Modal with size medium with simple config 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -2226,6 +2288,7 @@ exports[`Modal with size medium with simple config 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
@@ -2269,6 +2332,10 @@ exports[`Modal with size small with a bottom panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c6:empty {
+  display: none;
 }
 
 .c2 {
@@ -2447,6 +2514,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -2455,6 +2523,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -2462,6 +2531,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
@@ -2512,6 +2582,10 @@ exports[`Modal with size small with a left panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c8:empty {
+  display: none;
 }
 
 .c2 {
@@ -2710,6 +2784,7 @@ exports[`Modal with size small with a left panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -2728,6 +2803,7 @@ exports[`Modal with size small with a left panel 1`] = `
             >
               <div
                 class="c7"
+                data-testid="knit-modal-body"
               >
                 <div>
                   Body
@@ -2735,6 +2811,7 @@ exports[`Modal with size small with a left panel 1`] = `
               </div>
               <div
                 class="c8"
+                data-testid="knit-modal-footer"
               >
                 <div>
                   Footer
@@ -2779,6 +2856,10 @@ exports[`Modal with size small with a right panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c7:empty {
+  display: none;
 }
 
 .c2 {
@@ -2977,6 +3058,7 @@ exports[`Modal with size small with a right panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -2988,6 +3070,7 @@ exports[`Modal with size small with a right panel 1`] = `
             >
               <div
                 class="c6"
+                data-testid="knit-modal-body"
               >
                 <div>
                   Body
@@ -2995,6 +3078,7 @@ exports[`Modal with size small with a right panel 1`] = `
               </div>
               <div
                 class="c7"
+                data-testid="knit-modal-footer"
               >
                 <div>
                   Footer
@@ -3048,6 +3132,10 @@ exports[`Modal with size small with simple config 1`] = `
   border-top: none;
 }
 
+.c6:empty {
+  display: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3218,6 +3306,7 @@ exports[`Modal with size small with simple config 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -3226,6 +3315,7 @@ exports[`Modal with size small with simple config 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -3233,6 +3323,7 @@ exports[`Modal with size small with simple config 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
@@ -3276,6 +3367,10 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c6:empty {
+  display: none;
 }
 
 .c2 {
@@ -3454,6 +3549,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -3462,6 +3558,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -3469,6 +3566,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
@@ -3519,6 +3617,10 @@ exports[`Modal with size x-large with a left panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c8:empty {
+  display: none;
 }
 
 .c2 {
@@ -3717,6 +3819,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -3735,6 +3838,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
             >
               <div
                 class="c7"
+                data-testid="knit-modal-body"
               >
                 <div>
                   Body
@@ -3742,6 +3846,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
               </div>
               <div
                 class="c8"
+                data-testid="knit-modal-footer"
               >
                 <div>
                   Footer
@@ -3786,6 +3891,10 @@ exports[`Modal with size x-large with a right panel 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c7:empty {
+  display: none;
 }
 
 .c2 {
@@ -3984,6 +4093,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -3995,6 +4105,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
             >
               <div
                 class="c6"
+                data-testid="knit-modal-body"
               >
                 <div>
                   Body
@@ -4002,6 +4113,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
               </div>
               <div
                 class="c7"
+                data-testid="knit-modal-footer"
               >
                 <div>
                   Footer
@@ -4053,6 +4165,10 @@ exports[`Modal with size x-large with simple config 1`] = `
   padding: 2.1rem 2.8rem;
   justify-self: flex-end;
   border-top: none;
+}
+
+.c6:empty {
+  display: none;
 }
 
 .c2 {
@@ -4225,6 +4341,7 @@ exports[`Modal with size x-large with simple config 1`] = `
         >
           <div
             class="c3"
+            data-testid="knit-modal-header"
           >
             Title
           </div>
@@ -4233,6 +4350,7 @@ exports[`Modal with size x-large with simple config 1`] = `
           >
             <div
               class="c5"
+              data-testid="knit-modal-body"
             >
               <div>
                 Body
@@ -4240,6 +4358,7 @@ exports[`Modal with size x-large with simple config 1`] = `
             </div>
             <div
               class="c6"
+              data-testid="knit-modal-footer"
             >
               <div>
                 Footer
