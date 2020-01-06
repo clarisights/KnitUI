@@ -172,4 +172,25 @@ describe("Modal", () => {
     )
     expect(dialogContainer).toMatchSnapshot()
   })
+
+  it("should not show the footer(and its default padding) if there is no content in it", () => {
+    const { container, getByTestId } = render(
+      <Modal
+        padding={{ vertical: "0px", horizontal: "0px" }}
+        visible
+        className="custom-class"
+        onClose={() => {}}>
+        <Header>Title</Header>
+        <Body>
+          <div>Body</div>
+        </Body>
+        <Footer />
+      </Modal>
+    )
+    const dialogContainer = container.parentElement!.querySelector(
+      ".rc-dialog-wrap"
+    )
+    const footer = getByTestId("knit-modal-footer")
+    expect(footer).toHaveStyle("display: none")
+  })
 })

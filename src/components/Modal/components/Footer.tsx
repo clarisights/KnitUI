@@ -5,7 +5,13 @@ interface FooterProps {
   showBorder: boolean
 }
 
-const Footer = styled.div<IStyled<FooterProps>>`
+const Footer = styled.div.attrs(() => ({
+  "data-testid": "knit-modal-footer",
+}))<IStyled<FooterProps>>`
+  // Do not show the footer if there is no content.
+  &:empty {
+    display: none;
+  }
   padding: ${({ theme: { knitui } }) =>
     `${knitui.modalPadding.vertical}rem ${knitui.modalPadding.horizontal}`}rem;
   justify-self: flex-end;

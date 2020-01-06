@@ -20,7 +20,9 @@ const getMinHeight = (props: IStyledHeaderProps) => {
   return lineHeight + 2 * VERTICAL_PADDING
 }
 
-const Container = styled.div<IStyledHeaderProps>`
+const Container = styled.div.attrs(() => ({
+  "data-testid": "knit-modal-header",
+}))<IStyledHeaderProps>`
   display: flex;
   padding: ${({ theme: { knitui } }) =>
     `${knitui.modalHeaderPadding.vertical}rem ${knitui.modalHeaderPadding.horizontal}rem`};
