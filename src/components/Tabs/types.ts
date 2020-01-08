@@ -1,6 +1,10 @@
 import { BaseComponentProps } from "../../common/types"
 import { ReactNode } from "react"
-import { StyledComponent } from "styled-components"
+
+type onOrderChnageParams = {
+  oldIndex: number
+  newIndex: number
+}
 export interface TabsProps extends BaseComponentProps {
   children: ReactNode[] | ReactNode
   defaultActiveKey?: string
@@ -9,6 +13,7 @@ export interface TabsProps extends BaseComponentProps {
   size?: "default" | "medium"
   onChange?: (activeKey: string) => void
   onAddTab: () => void
+  onOrderChange?: (onOrderChnageParams: onOrderChnageParams) => any
 }
 
 export interface TabPane extends HTMLButtonElement {

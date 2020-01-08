@@ -148,6 +148,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     activeKey = internalState[0],
     onChange = internalState[1],
     onAddTab,
+    onOrderChange,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -210,6 +211,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
   const onSortEnd = ({ oldIndex, newIndex }) => {
     const newChildren = arrayMove(childrenArray, oldIndex, newIndex)
     setChildrenArray(newChildren)
+    onOrderChange && onOrderChange({ oldIndex, newIndex })
     document.body.style.cursor = "default"
   }
   const onSortStart = () => {
@@ -263,7 +265,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               onSortEnd={onSortEnd}
               axis={"x"}
               lockAxis="x"
-              pressDelay={200}
+              pressDelay={10}
               onChange={onChange}
               activeTabFlags={activeTabFlags}
               itemRef={itemRef}
