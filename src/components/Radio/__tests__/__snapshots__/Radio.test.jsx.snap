@@ -29,6 +29,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -40,10 +41,11 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -54,10 +56,11 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.8rem;
+  height: 0.8rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -70,7 +73,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 
@@ -136,6 +139,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -147,10 +151,11 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -161,10 +166,11 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.8rem;
+  height: 0.8rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -177,7 +183,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 
@@ -247,6 +253,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -258,10 +265,11 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -272,10 +280,11 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.6rem;
+  height: 0.6rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -288,7 +297,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 
@@ -350,6 +359,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -361,10 +371,11 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -375,10 +386,11 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.6rem;
+  height: 0.6rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -391,7 +403,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 
@@ -410,7 +422,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
     style="display: flex;"
   >
     <span
-      class="knit-radio    c0"
+      class="knit-radio  knit-radio-checked  c0"
     >
       <input
         class="knit-radio-input c1"
@@ -458,6 +470,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -469,10 +482,11 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -483,10 +497,11 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.6rem;
+  height: 0.6rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -499,7 +514,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 
@@ -565,6 +580,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -576,10 +592,11 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -590,10 +607,11 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.6rem;
+  height: 0.6rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -606,7 +624,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 
@@ -678,6 +696,7 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -689,10 +708,11 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -703,10 +723,11 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.8rem;
+  height: 0.8rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -719,7 +740,7 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 
@@ -783,6 +804,7 @@ exports[`Radio renders radio correctly should change the radio on click 1`] = `
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -794,10 +816,11 @@ exports[`Radio renders radio correctly should change the radio on click 1`] = `
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -808,10 +831,11 @@ exports[`Radio renders radio correctly should change the radio on click 1`] = `
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.8rem;
+  height: 0.8rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -824,7 +848,7 @@ exports[`Radio renders radio correctly should change the radio on click 1`] = `
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 
@@ -886,6 +910,7 @@ exports[`Radio renders radio correctly should change the radio on click 1`] = `
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
   cursor: not-allowed;
   opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 .c0.knit-radio.knit-radio-disabled + span {
@@ -897,10 +922,11 @@ exports[`Radio renders radio correctly should change the radio on click 1`] = `
 }
 
 .c2 {
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -911,10 +937,11 @@ exports[`Radio renders radio correctly should change the radio on click 1`] = `
 
 .c2:after {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 6px;
-  display: table;
+  width: 0.8rem;
+  height: 0.8rem;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
@@ -927,7 +954,7 @@ exports[`Radio renders radio correctly should change the radio on click 1`] = `
 }
 
 .c2:focus {
-  box-shadow: 0px 0px 2px;
+  box-shadow: 0px 0px 2px hsl(216,100%,20%);
   outline: none;
 }
 

@@ -5,6 +5,24 @@ import { RadioWrapperProps } from "./Interface"
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
 
+// helper to get radio size
+const getRadioSize = (theme, size) => {
+  return isSmall(size)
+    ? theme.knitui.smallRadioSize
+    : theme.knitui.mediumRadioSize
+}
+
+// helper to get radio bead size
+const getRadioBeadSize = (theme, size) => {
+  return isSmall(size)
+    ? theme.knitui.smallRadioBead
+    : theme.knitui.mediumRadioBead
+}
+
+// const getBeadSpacing = size => {
+//   return isSmall(size) ?
+// }
+
 export const StyledRadioRoot = styled.span<RadioWrapperProps>`
   &.knit-radio {
     white-space: nowrap;
@@ -37,7 +55,7 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>`
       .knit-radio-inner {
         cursor: not-allowed;
         opacity: 0.6;
-        background-color: ${({ theme }) => theme.radioDisabledColor};
+        background-color: ${({ theme }) => theme.knitui.radioDisabledColor};
       }
       & + span {
         color: ${Neutral50.hex};
@@ -52,14 +70,11 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>`
 export const StyledRadioInner = styled.span<{
   size: string | undefined
 }>`
-  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
-  width: ${({ theme, size }) =>
-    isSmall(size) ? theme.smallRadioSize : theme.mediumRadioSize};
-  height: ${({ theme, size }) =>
-    isSmall(size) ? theme.smallRadioSize : theme.mediumRadioSize};
+  width: ${({ theme, size }) => getRadioSize(theme, size)};
+  height: ${({ theme, size }) => getRadioSize(theme, size)};
   border-width: 1px;
   cursor: pointer;
   border-style: solid;
@@ -68,14 +83,11 @@ export const StyledRadioInner = styled.span<{
   background-color: ${Neutral0.hex};
   &:after {
     position: absolute;
-    width: ${({ theme, size }) =>
-      isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
-    height: ${({ theme, size }) =>
-      isSmall(size) ? theme.smallRadioBead : theme.mediumRadioBead};
-    left: 3px;
-    top: 3px;
-    border-radius: 6px;
-    display: table;
+    width: ${({ theme, size }) => getRadioBeadSize(theme, size)};
+    height: ${({ theme, size }) => getRadioBeadSize(theme, size)};
+    left: 2.5px;
+    top: 2.5px;
+    border-radius: 0.7rem;
     border-top: 0;
     border-left: 0;
     content: " ";
@@ -85,7 +97,7 @@ export const StyledRadioInner = styled.span<{
     opacity: 0;
   }
   &:focus {
-    box-shadow: 0px 0px 2px ${({ theme }) => theme.switchFocusColor};
+    box-shadow: 0px 0px 2px ${({ theme }) => theme.knitui.switchFocusColor};
     outline: none;
   }
 `
