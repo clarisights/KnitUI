@@ -86,3 +86,44 @@ export const parseColorPreset = (theme, backgroundColor: ColorPreset) => {
   backgroundColor = theme.secondaryPalette[backgroundColor]
   return createParsedColorTheme(theme, backgroundColor)
 }
+
+/**
+ * Get Color from Styled Component Props
+ */
+export const getThemeColor = (props: any, color: string) => {
+  const {
+    theme: {
+      knitui: { chromaPalette },
+    },
+  } = props
+
+  return chromaPalette[color].hex()
+}
+
+/**
+ * Get OS of current platform
+ */
+export const getOSName = () => {
+  const platform = window.navigator.platform
+  const userAgent = window.navigator.userAgent
+
+  const macOSList = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"]
+  const windowOSList = ["Windows", "Win16", "Win32", "WinCE"]
+  const iOSList = ["iPhone", "iPad", "iPod"]
+
+  let os: string | undefined
+
+  if (macOSList.includes(platform)) {
+    os = "MacOS"
+  } else if (windowOSList.includes(platform)) {
+    os = "Windows"
+  } else if (iOSList.includes(platform)) {
+    os = "iOS"
+  } else if (/Android/.test(userAgent)) {
+    os = "Android"
+  } else if (/Linux/.test(userAgent)) {
+    os = "Linux"
+  }
+
+  return os
+}

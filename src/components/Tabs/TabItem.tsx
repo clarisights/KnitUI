@@ -1,6 +1,6 @@
-import React from "react"
+import React, { CSSProperties } from "react"
 import { SortableElement } from "react-sortable-hoc"
-import styled from "styled-components"
+import styled, { CSSObject } from "styled-components"
 import { activeTabFlagsInterface } from "./types"
 
 const VerticalBar = styled.div`
@@ -31,7 +31,7 @@ const getTabContainerStyle = (
   itemIndex: number,
   itemRef: React.RefObject<HTMLDivElement>
 ) => {
-  let styles: any = { position: "relative" }
+  let styles: React.CSSProperties = { position: "relative" }
   if (activeKeyIndex === itemIndex) {
     styles = { position: "relative", zIndex: 10 }
   }
@@ -51,12 +51,14 @@ const getTabContainerStyle = (
   if (activeTabFlags.left && activeKeyIndex === itemIndex - 1) {
     styles = {
       position: "relative",
-      marginLeft: current && current.getBoundingClientRect().width,
+      marginLeft:
+        (current && current.getBoundingClientRect().width) || undefined,
     }
   } else if (activeTabFlags.right && activeKeyIndex === itemIndex + 1) {
     styles = {
       position: "relative",
-      marginRight: current && current.getBoundingClientRect().width,
+      marginRight:
+        (current && current.getBoundingClientRect().width) || undefined,
     }
   }
   return styles
@@ -85,7 +87,7 @@ export const TabItem = SortableElement(
       onClick: () => onChange(props.tabKey),
     })
     const showVBar = itemIndex + 1 !== activeKeyIndex && !isActive
-    let styles: any = getTabContainerStyle(
+    let styles = getTabContainerStyle(
       activeTabFlags,
       activeKeyIndex,
       itemIndex,
@@ -104,7 +106,7 @@ export const TabItem = SortableElement(
     return (
       <div ref={getRef()} id={isActive ? "active-tab" : ""} style={styles}>
         {elem}
-        {showVBar ? <VerticalBar /> : null}
+        {showVBar ? <VerticalBar tabIndex={-1} /> : null}
       </div>
     )
   }

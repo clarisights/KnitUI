@@ -1,6 +1,6 @@
 import { BaseComponentProps } from "../../common/types"
 import { ReactNode } from "react"
-
+import { StyledComponent } from "styled-components"
 export interface TabsProps extends BaseComponentProps {
   children: ReactNode[] | ReactNode
   defaultActiveKey?: string
@@ -11,9 +11,10 @@ export interface TabsProps extends BaseComponentProps {
   onAddTab: () => void
 }
 
-export interface TabPane {
+export interface TabPane extends HTMLButtonElement {
   key: string
   tab: string | ReactNode
+  active?: boolean
 }
 
 export interface TabWrapperInterface<T> extends React.FC<T> {
