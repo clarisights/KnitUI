@@ -19,10 +19,6 @@ const getRadioBeadSize = (theme, size) => {
     : theme.knitui.mediumRadioBead
 }
 
-// const getBeadSpacing = size => {
-//   return isSmall(size) ?
-// }
-
 export const StyledRadioRoot = styled.span<RadioWrapperProps>`
   &.knit-radio {
     white-space: nowrap;
