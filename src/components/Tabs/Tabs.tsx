@@ -33,7 +33,7 @@ const OverflowContainer = styled.div`
   width: 100%;
   height: 100%;
   overflow-x: auto;
-  padding-bottom: ${props => (getOSName() !== "MacOS" ? "0px" : "15px")};
+  padding-bottom: ${getOSName() !== "MacOS" ? "0px" : "15px"};
   margin-bottom: -15px;
   box-sizing: content-box;
 `
