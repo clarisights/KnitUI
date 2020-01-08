@@ -9,7 +9,7 @@ afterEach(cleanup)
 describe("Radio", () => {
   describe("renders radio correctly", () => {
     it("Small with 2 in group", () => {
-      const { asFragment, container, getByText } = render(
+      const { asFragment, container } = render(
         <RadioGroup size="small">
           <RadioGroup.Item value={1}>Option 1</RadioGroup.Item>
           <RadioGroup.Item value={2}>Option 2</RadioGroup.Item>
