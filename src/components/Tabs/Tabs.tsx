@@ -1,13 +1,15 @@
 import React, { Children, useState, useEffect, useRef } from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { arrayMove } from "react-sortable-hoc"
 import {
   TabsProps,
   TabWrapperInterface,
   activeTabFlagsInterface,
+  TabPane,
 } from "./types"
 import { Button, Icon } from ".."
 import { TabsList } from "./TabsList"
+import { getThemeColor, getOSName } from "../../common/_utils"
 
 const TabsWrapper = styled.div`
   height: 100%;
@@ -16,8 +18,7 @@ const TabsWrapper = styled.div`
 
 const TabsPanelWrapper = styled.div`
   display: flex;
-  margin-bottom: 16px;
-  background: #f7f4ed;
+  background: ${props => getThemeColor(props, "Beige10")};
   padding: 0 50px;
 `
 
@@ -32,8 +33,8 @@ const OverflowContainer = styled.div`
   width: 100%;
   height: 100%;
   overflow-x: auto;
-  padding-bottom: 17px;
-  margin-bottom: -17px;
+  padding-bottom: ${props => (getOSName() !== "MacOS" ? "0px" : "15px")};
+  margin-bottom: -15px;
   box-sizing: content-box;
 `
 
@@ -44,12 +45,14 @@ const BlurElement = styled.div<{
   width: 80px;
   height: 100%;
   position: absolute;
-  background: ${props =>
-    props.dir === "left"
-      ? "linear-gradient(to right, #f7f4ed, transparent)"
-      : "linear-gradient(to left, #f7f4ed, transparent)"};
+  background: linear-gradient(
+    to ${props => (props.dir === "left" ? "right" : "left")},
+    ${props => getThemeColor(props, "Beige10")}FF,
+    ${props => getThemeColor(props, "Beige10")}00
+  );
   z-index: 9;
   visibility: ${props => (props.visible ? "visible" : "hidden")};
+  pointer-events: none;
 `
 
 const IconWrapper = styled.div<{ visible: boolean }>`
@@ -60,18 +63,18 @@ const IconWrapper = styled.div<{ visible: boolean }>`
   cursor: pointer;
 `
 
-const TabPanel = styled.button<{ active: boolean }>`
-background: ${props => (props.active ? "#FFFFFF" : "none")};
-border: none;
-border-top: ${props =>
-  props.active ? "2px solid #D8C9A7" : "2px solid transparent"};
+const TabPanel = styled.button<{ active?: boolean }>`
+  background: ${props => (props.active ? "#FFFFFF" : "none")};
+  border: none;
+  border-top: ${props =>
+    props.active ? "2px solid #D8C9A7" : "2px solid transparent"};
   padding: 4px 14px;
   border-radius: 2px 2px 0px 0px;
   min-width: 80px;
   line-height: 20px;
   font-size: 14px;
   cursor: pointer;
-}`
+`
 
 const TabContentWrapper = styled.div`
   width: 100%;
@@ -91,7 +94,7 @@ const onScroll = (
   setActiveTabFlags: (obj: activeTabFlagsInterface) => void,
   setScrollFlags: (obj: {
     leftSideScroll: boolean
-    rightRideScroll: boolean
+    rightSideScroll: boolean
   }) => void
 ) => {
   const current = listRef.current
@@ -127,11 +130,11 @@ const onScroll = (
     })
   }
   const leftSideScroll = current.scrollLeft > 0
-  const rightRideScroll =
+  const rightSideScroll =
     current.scrollLeft !== current.scrollWidth - current.offsetWidth
   const scrollFlags = {
     leftSideScroll,
-    rightRideScroll,
+    rightSideScroll,
   }
   setScrollFlags(scrollFlags)
 }
@@ -139,7 +142,7 @@ const onScroll = (
 const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
   const childrenArrayProps = Children.toArray(children)
   const firstTab =
-    childrenArrayProps[0] && childrenArrayProps[0]["props"].tabKey
+    childrenArrayProps[0] && childrenArrayProps[0]!["props"].tabKey
   const internalState = useState(tabProps.defaultActiveKey || firstTab)
   const {
     activeKey = internalState[0],
@@ -150,7 +153,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
   const [scrollFlags, setScrollFlags] = useState({
     leftSideScroll: false,
-    rightRideScroll: false,
+    rightSideScroll: false,
   })
   const [activeTabFlags, setActiveTabFlags] = useState({
     right: false,
@@ -232,7 +235,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
       })
     }
   }
-  const showRightArrow = scrollFlags.rightRideScroll
+  const showRightArrow = scrollFlags.rightSideScroll
   const showLeftArrow = scrollFlags.leftSideScroll
   const showRightBlur = showRightArrow && !activeTabFlags.right
   const showLeftBlur = showLeftArrow && !activeTabFlags.left
@@ -282,7 +285,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
         <Button
           onClick={onAddTab}
           icon="oAdd"
-          type="primary"
+          kind="primary"
           bare
           customColor="#000000"
         />
