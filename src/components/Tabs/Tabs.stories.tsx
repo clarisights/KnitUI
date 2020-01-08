@@ -1,8 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import { storiesOf } from "@storybook/react"
-import { Tabs } from "./"
-import { withKnobs, select, object } from "@storybook/addon-knobs"
-import { Button } from "../"
+import { Tabs, Button } from "../"
+import { withKnobs } from "@storybook/addon-knobs"
 const Readme = require("./README.md")
 
 const stories = storiesOf("Tabs", module)
