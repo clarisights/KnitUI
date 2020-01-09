@@ -32,7 +32,7 @@ const OverflowWrapper = styled.div`
 const OverflowContainer = styled.div`
   width: 100%;
   height: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   padding-bottom: ${getOSName() !== "MacOS" ? "0px" : "15px"};
   margin-bottom: -15px;
   box-sizing: content-box;
