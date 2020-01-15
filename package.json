@@ -95,6 +95,7 @@
   "dependencies": {
     "@types/styled-components": "^4.1.14",
     "@types/uuid": "^3.4.5",
+    "array-move": "^2.2.1",
     "chroma-js": "^2.0.3",
     "rc-dialog": "^7.3.1",
     "rc-switch": "^1.9.0",

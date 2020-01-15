@@ -84,7 +84,7 @@ export const TabItem = SortableElement(
       role: "tab",
       "aria-controls": "tabpanel-id",
       children: props.tab,
-      onClick: () => onChange(props.tabKey),
+      onClick: () => !isActive && onChange(props.tabKey),
     })
     const showVBar = itemIndex + 1 !== activeKeyIndex && !isActive
     let styles = getTabContainerStyle(

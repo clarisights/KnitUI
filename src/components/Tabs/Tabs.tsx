@@ -1,6 +1,6 @@
 import React, { Children, useState, useEffect, useRef } from "react"
 import styled, { css } from "styled-components"
-import { arrayMove } from "react-sortable-hoc"
+import arrayMove from "array-move"
 import {
   TabsProps,
   TabWrapperInterface,
@@ -149,6 +149,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     onChange = internalState[1],
     onAddTab,
     onOrderChange,
+    pressDelay = 100,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -265,7 +266,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               onSortEnd={onSortEnd}
               axis={"x"}
               lockAxis="x"
-              pressDelay={10}
+              pressDelay={pressDelay}
               onChange={onChange}
               activeTabFlags={activeTabFlags}
               itemRef={itemRef}
