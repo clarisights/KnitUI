@@ -11,6 +11,7 @@ export interface TabsProps extends BaseComponentProps {
   activeKey?: string
   hideAdd?: boolean
   size?: "default" | "medium"
+  pressDelay?: number
   onChange?: (activeKey: string) => void
   onAddTab: () => void
   onOrderChange?: (onOrderChnageParams: onOrderChnageParams) => any
