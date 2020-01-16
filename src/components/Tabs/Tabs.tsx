@@ -11,8 +11,8 @@ import { Button, Icon } from ".."
 import { TabsList } from "./TabsList"
 import { getThemeColor, getOSName } from "../../common/_utils"
 
-const TabsWrapper = styled.div`
-  height: 100%;
+const TabsWrapper = styled.div<{ hideTabContent: boolean }>`
+  height: ${({ hideTabContent }) => (hideTabContent ? "auto" : "100%")};
   width: 100%;
 `
 
@@ -150,6 +150,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     onAddTab,
     onOrderChange,
     pressDelay = 100,
+    hideTabContent = false,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -243,7 +244,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
   const showRightBlur = showRightArrow && !activeTabFlags.right
   const showLeftBlur = showLeftArrow && !activeTabFlags.left
   return (
-    <TabsWrapper>
+    <TabsWrapper hideTabContent={hideTabContent}>
       <TabsPanelWrapper>
         <OverflowWrapper>
           <IconWrapper visible={showLeftArrow} onClick={handleScrollLeft}>
@@ -293,7 +294,9 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
           customColor="#000000"
         />
       </TabsPanelWrapper>
-      <TabContentWrapper>{getTabsContent()}</TabContentWrapper>
+      {!hideTabContent && (
+        <TabContentWrapper>{getTabsContent()}</TabContentWrapper>
+      )}
     </TabsWrapper>
   )
 }
