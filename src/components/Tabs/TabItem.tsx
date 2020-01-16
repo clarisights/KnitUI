@@ -31,19 +31,19 @@ const getTabContainerStyle = (
   itemIndex: number,
   itemRef: React.RefObject<HTMLDivElement>
 ) => {
-  let styles: React.CSSProperties = { position: "relative" }
+  let styles: React.CSSProperties = { position: "relative", zIndex: 99 }
   if (activeKeyIndex === itemIndex) {
-    styles = { position: "relative", zIndex: 10 }
+    styles = { position: "relative", zIndex: 100 }
   }
   if (activeTabFlags.left && activeKeyIndex === itemIndex) {
     styles = {
       position: "absolute",
-      zIndex: 2,
+      zIndex: 100,
     }
   } else if (activeTabFlags.right && activeKeyIndex === itemIndex) {
     styles = {
       position: "absolute",
-      zIndex: 2,
+      zIndex: 100,
       right: 18,
     }
   }
