@@ -96,7 +96,7 @@ const TabPanel = styled.button<{ active?: boolean }>`
   line-height: 20px;
   font-size: 14px;
   cursor: pointer;
-  margin-right: 1px;
+  margin-right: 1px; /* To prevent focus outline overlapping with divider */
 
   :hover {
     background: ${props => (props.active ? "#FFFFFF" : "#efe9dc")};
