@@ -29,6 +29,7 @@ export const TabsList = SortableContainer(
       <div
         style={{
           display: "flex",
+          whiteSpace: "nowrap",
         }}>
         <div />
         {items.map((value, index) => (

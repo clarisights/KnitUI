@@ -11,6 +11,7 @@ const VerticalBar = styled.div`
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  pointer-events: none;
 `
 
 type TabItemType = {
@@ -33,18 +34,18 @@ const getTabContainerStyle = (
 ) => {
   let styles: React.CSSProperties = { position: "relative", zIndex: 99 }
   if (activeKeyIndex === itemIndex) {
-    styles = { position: "relative", zIndex: 100 }
+    styles = { position: "relative", zIndex: 101 }
   }
   if (activeTabFlags.left && activeKeyIndex === itemIndex) {
     styles = {
       position: "absolute",
-      zIndex: 100,
+      zIndex: 101,
     }
   } else if (activeTabFlags.right && activeKeyIndex === itemIndex) {
     styles = {
       position: "absolute",
-      zIndex: 100,
-      right: 18,
+      zIndex: 101,
+      right: 30,
     }
   }
   const current = itemRef.current

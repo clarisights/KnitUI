@@ -46,6 +46,10 @@ const GlobalStyles = createGlobalStyle`
       padding: 0;
   }
 
+  body {
+    overscroll-behavior-x: none; /* Prevent the page redirection on swipe */
+  }
+
   ul,
   ol {
       list-style: none;
