@@ -11,6 +11,15 @@ import { Button, Icon } from ".."
 import { TabsList } from "./TabsList"
 import { getThemeColor, getOSName } from "../../common/_utils"
 
+const ButtonWrapper = styled(Button)`
+  border-radius: 4px 4px 0 0;
+  :hover,
+  :focus,
+  :active {
+    background: #efe9dc;
+  }
+`
+
 const TabsWrapper = styled.div<{ hideTabContent: boolean }>`
   height: ${({ hideTabContent }) => (hideTabContent ? "auto" : "100%")};
   width: 100%;
@@ -19,7 +28,6 @@ const TabsWrapper = styled.div<{ hideTabContent: boolean }>`
 const TabsPanelWrapper = styled.div`
   display: flex;
   background: ${props => getThemeColor(props, "Beige10")};
-  padding: 0 50px;
 `
 
 const OverflowWrapper = styled.div`
@@ -50,7 +58,7 @@ const BlurElement = styled.div<{
     ${props => getThemeColor(props, "Beige10")}FF,
     ${props => getThemeColor(props, "Beige10")}00
   );
-  z-index: 9;
+  z-index: 100;
   visibility: ${props => (props.visible ? "visible" : "hidden")};
   pointer-events: none;
 `
@@ -59,21 +67,47 @@ const IconWrapper = styled.div<{ visible: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: visibility 250ms ease, width 150ms linear;
   visibility: ${props => (props.visible ? "visible" : "hidden")};
+  width: ${props => (props.visible ? "30px" : "0")};
   cursor: pointer;
+  z-index: 100;
+
+  :hover,
+  :focus,
+  :active {
+    background: #efe9dc;
+  }
 `
 
 const TabPanel = styled.button<{ active?: boolean }>`
-  background: ${props => (props.active ? "#FFFFFF" : "none")};
-  border: none;
+  background: ${props =>
+    props.active ? getThemeColor(props, "Neutral0") : "none"};
+  color: ${props =>
+    props.active
+      ? getThemeColor(props, "Neutral90")
+      : getThemeColor(props, "Neutral50")};
+  border: 1px solid transparent;
   border-top: ${props =>
     props.active ? "2px solid #D8C9A7" : "2px solid transparent"};
   padding: 4px 14px;
-  border-radius: 2px 2px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
   min-width: 80px;
   line-height: 20px;
   font-size: 14px;
   cursor: pointer;
+  margin-right: 1px;
+
+  :hover {
+    background: ${props => (props.active ? "#FFFFFF" : "#efe9dc")};
+  }
+
+  :active,
+  :focus {
+    z-index: 101 !important;
+    outline-color: ${props => getThemeColor(props, "Azure80")};
+    border-color: ${props => getThemeColor(props, "Azure80")} auto 1px;
+  }
 `
 
 const TabContentWrapper = styled.div`
@@ -279,14 +313,14 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
             visible={showRightBlur}
             dir="right"
             style={{
-              right: 18,
+              right: 28,
             }}
           />
           <IconWrapper visible={showRightArrow} onClick={handleScrollRight}>
             <Icon type="oKeyboardArrowRight" size="18px" fill="#000000" />
           </IconWrapper>
         </OverflowWrapper>
-        <Button
+        <ButtonWrapper
           onClick={onAddTab}
           icon="oAdd"
           kind="primary"
