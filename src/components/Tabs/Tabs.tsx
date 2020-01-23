@@ -1,5 +1,5 @@
 import React, { Children, useState, useEffect, useRef } from "react"
-import styled, { css } from "styled-components"
+import styled, { css, createGlobalStyle } from "styled-components"
 import arrayMove from "array-move"
 import {
   TabsProps,
@@ -10,6 +10,23 @@ import {
 import { Button, Icon } from ".."
 import { TabsList } from "./TabsList"
 import { getThemeColor, getOSName } from "../../common/_utils"
+
+/* The tab being dragged is appended to the body, hence it's styles need to be at global scope*/
+const GlobalStyle = createGlobalStyle`
+.tabs-helper {
+  background: ${props => getThemeColor(props, "Beige10")};
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.4rem;
+    width: 1px;
+    background: ${props => getThemeColor(props, "Neutral40")};
+  }
+}
+`
 
 const ButtonWrapper = styled(Button)`
   border-radius: 4px 4px 0 0;
@@ -278,60 +295,64 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
   const showRightBlur = showRightArrow && !activeTabFlags.right
   const showLeftBlur = showLeftArrow && !activeTabFlags.left
   return (
-    <TabsWrapper hideTabContent={hideTabContent}>
-      <TabsPanelWrapper>
-        <OverflowWrapper>
-          <IconWrapper visible={showLeftArrow} onClick={handleScrollLeft}>
-            <Icon type="oKeyboardArrowLeft" size="18px" fill="#000000" />
-          </IconWrapper>
-          <BlurElement
-            visible={showLeftBlur}
-            dir="left"
-            style={{
-              left: 18,
-            }}
-          />
-          <OverflowContainer ref={listRef}>
-            <TabsList
-              shouldCancelStart={() => false}
-              items={childrenArray}
-              activeKey={activeKey}
-              activeKeyIndex={activeKeyIndex}
-              onSortStart={onSortStart}
-              onSortEnd={onSortEnd}
-              axis={"x"}
-              lockAxis="x"
-              pressDelay={pressDelay}
-              onChange={onChange}
-              activeTabFlags={activeTabFlags}
-              itemRef={itemRef}
-              activeNxtRef={activeNxtRef}
-              activePrevRef={activePrevRef}
+    <>
+      <GlobalStyle />
+      <TabsWrapper hideTabContent={hideTabContent}>
+        <TabsPanelWrapper>
+          <OverflowWrapper>
+            <IconWrapper visible={showLeftArrow} onClick={handleScrollLeft}>
+              <Icon type="oKeyboardArrowLeft" size="18px" fill="#000000" />
+            </IconWrapper>
+            <BlurElement
+              visible={showLeftBlur}
+              dir="left"
+              style={{
+                left: 18,
+              }}
             />
-          </OverflowContainer>
-          <BlurElement
-            visible={showRightBlur}
-            dir="right"
-            style={{
-              right: 28,
-            }}
+            <OverflowContainer ref={listRef}>
+              <TabsList
+                shouldCancelStart={() => false}
+                items={childrenArray}
+                activeKey={activeKey}
+                activeKeyIndex={activeKeyIndex}
+                onSortStart={onSortStart}
+                onSortEnd={onSortEnd}
+                axis={"x"}
+                lockAxis="x"
+                pressDelay={pressDelay}
+                onChange={onChange}
+                activeTabFlags={activeTabFlags}
+                itemRef={itemRef}
+                activeNxtRef={activeNxtRef}
+                activePrevRef={activePrevRef}
+                helperClass="tabs-helper"
+              />
+            </OverflowContainer>
+            <BlurElement
+              visible={showRightBlur}
+              dir="right"
+              style={{
+                right: 28,
+              }}
+            />
+            <IconWrapper visible={showRightArrow} onClick={handleScrollRight}>
+              <Icon type="oKeyboardArrowRight" size="18px" fill="#000000" />
+            </IconWrapper>
+          </OverflowWrapper>
+          <ButtonWrapper
+            onClick={onAddTab}
+            icon="oAdd"
+            kind="primary"
+            bare
+            customColor="#000000"
           />
-          <IconWrapper visible={showRightArrow} onClick={handleScrollRight}>
-            <Icon type="oKeyboardArrowRight" size="18px" fill="#000000" />
-          </IconWrapper>
-        </OverflowWrapper>
-        <ButtonWrapper
-          onClick={onAddTab}
-          icon="oAdd"
-          kind="primary"
-          bare
-          customColor="#000000"
-        />
-      </TabsPanelWrapper>
-      {!hideTabContent && (
-        <TabContentWrapper>{getTabsContent()}</TabContentWrapper>
-      )}
-    </TabsWrapper>
+        </TabsPanelWrapper>
+        {!hideTabContent && (
+          <TabContentWrapper>{getTabsContent()}</TabContentWrapper>
+        )}
+      </TabsWrapper>
+    </>
   )
 }
 
