@@ -18,7 +18,7 @@
     "test": "jest --verbose=false --no-cache",
     "test:coverage": "jest --coverage --verbose=false --no-cache",
     "prebuild": "rm -rf build",
-    "build": "npm run dts:generate; npm run dts:bundle; npm-run-all --parallel build:cjs build:es; cp package.json build",
+    "build": "npm run dts:generate; npm run dts:bundle; npm-run-all --parallel build:cjs build:es; cp package.json build; cp README.md build",
     "build:cjs": "NODE_ENV=production babel --extensions .ts,.tsx,.js,.jsx src --out-dir build/lib --ignore **/*.test.tsx,**/__tests__,**/__mocks__,**/*.spec.*,**/__snapshots__,**/*.stories.tsx,**/*.md && cp -r src/common/assets build/es/common/assets && cp -r src/common/assets build/lib/common/assets",
     "build:es": "NODE_ENV=production BABEL_ENV=es babel --extensions .ts,.tsx,.js,.jsx src --out-dir build/es --ignore **/*.test.tsx,**/__tests__,**/__mocks__,**/*.spec.*,**/__snapshots__,**/*.stories.tsx,**/*.md && cp -r src/common/assets build/es/common/assets && cp -r src/common/assets build/lib/common/assets",
     "storybook": "start-storybook -p 9001 -c .storybook",
