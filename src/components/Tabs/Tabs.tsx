@@ -13,7 +13,7 @@ import { getThemeColor, getOSName } from "../../common/_utils"
 
 /* The tab being dragged is appended to the body, hence it's styles need to be at global scope*/
 const GlobalStyle = createGlobalStyle`
-.tabs-helper {
+.knitui-tabs-helper {
   background: ${props => getThemeColor(props, "Beige10")};
   &:before {
     content: "";
@@ -326,7 +326,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
                 itemRef={itemRef}
                 activeNxtRef={activeNxtRef}
                 activePrevRef={activePrevRef}
-                helperClass="tabs-helper"
+                helperClass="knitui-tabs-helper"
               />
             </OverflowContainer>
             <BlurElement
