@@ -192,3 +192,22 @@ stories
       </Tabs>
     </div>
   ))
+  .add("Tabs with hide add button", () => (
+    <div
+      style={{
+        border: "1px solid lightgray",
+        height: "360px",
+        width: "800px",
+        fontSize: 14,
+      }}>
+      <Tabs
+        onAddTab={() => alert("callback for create add")}
+        hideAdd
+        useDragHandle>
+        <TabPanel tab="Tab 1" tabKey="tab-1">
+          <div>tab 1 content here</div>
+        </TabPanel>
+        {TabPanels.slice(1, TabPanels.length)}
+      </Tabs>
+    </div>
+  ))
