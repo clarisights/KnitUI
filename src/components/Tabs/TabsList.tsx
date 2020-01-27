@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import React, { ReactNode, ReactElement } from "react"
 import { SortableContainer } from "react-sortable-hoc"
 import { TabItem } from "./TabItem"
 import { activeTabFlagsInterface } from "./types"
@@ -12,6 +12,8 @@ type TabsListProps = {
   itemRef: React.RefObject<HTMLDivElement>
   activeNxtRef: React.RefObject<HTMLDivElement>
   activePrevRef: React.RefObject<HTMLDivElement>
+  dragHandle: boolean
+  dragHandleElement: React.FC<any> | null
 }
 
 export const TabsList = SortableContainer(
@@ -24,6 +26,8 @@ export const TabsList = SortableContainer(
     itemRef,
     activeNxtRef,
     activePrevRef,
+    dragHandle,
+    dragHandleElement,
   }: TabsListProps) => {
     return (
       <div
@@ -34,6 +38,8 @@ export const TabsList = SortableContainer(
         <div />
         {items.map((value, index) => (
           <TabItem
+            dragHandleElement={dragHandleElement}
+            dragHandle={dragHandle}
             onChange={onChange}
             key={`tab-${index}`}
             index={index}

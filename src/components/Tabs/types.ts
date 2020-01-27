@@ -21,6 +21,10 @@ export interface TabsProps extends BaseComponentProps {
   onAddTab: () => void
   /** When tab order is changed, this is a callback function which passes changed order params*/
   onOrderChange?: (onOrderChnageParams: onOrderChnageParams) => any
+  /** To have drag handle instead of whole tab panel as draggable */
+  useDragHandle?: boolean
+  /** prop to pass element which replace default drag */
+  dragHandleElement?: React.FC<any> | null
 }
 
 export interface TabPane extends HTMLButtonElement {
