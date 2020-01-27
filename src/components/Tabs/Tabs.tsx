@@ -213,6 +213,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     useDragHandle = false,
     dragHandleElement = null,
     sortDisabled = false,
+    hideAdd = false,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -356,13 +357,15 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               <Icon type="oKeyboardArrowRight" size="18px" fill="#000000" />
             </IconWrapper>
           </OverflowWrapper>
-          <ButtonWrapper
-            onClick={onAddTab}
-            icon="oAdd"
-            kind="primary"
-            bare
-            customColor="#000000"
-          />
+          {!hideAdd ? (
+            <ButtonWrapper
+              onClick={onAddTab}
+              icon="oAdd"
+              kind="primary"
+              bare
+              customColor="#000000"
+            />
+          ) : null}
         </TabsPanelWrapper>
         {!hideTabContent && (
           <TabContentWrapper>{getTabsContent()}</TabContentWrapper>
