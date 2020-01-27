@@ -202,6 +202,8 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     onOrderChange,
     pressDelay = 100,
     hideTabContent = false,
+    useDragHandle = false,
+    dragHandleElement = null,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -312,6 +314,9 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
             />
             <OverflowContainer ref={listRef}>
               <TabsList
+                dragHandleElement={dragHandleElement}
+                dragHandle={useDragHandle}
+                useDragHandle={useDragHandle}
                 shouldCancelStart={() => false}
                 items={childrenArray}
                 activeKey={activeKey}

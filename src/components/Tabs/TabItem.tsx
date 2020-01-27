@@ -1,5 +1,5 @@
-import React, { CSSProperties } from "react"
-import { SortableElement } from "react-sortable-hoc"
+import React, { CSSProperties, ReactNode, ReactComponentElement } from "react"
+import { SortableElement, SortableHandle } from "react-sortable-hoc"
 import styled, { CSSObject } from "styled-components"
 import { activeTabFlagsInterface } from "./types"
 
@@ -24,6 +24,8 @@ type TabItemType = {
   itemRef: React.RefObject<HTMLDivElement>
   activeNxtRef: React.RefObject<HTMLDivElement>
   activePrevRef: React.RefObject<HTMLDivElement>
+  dragHandle: boolean
+  dragHandleElement: React.FC<any> | null
 }
 
 const getTabContainerStyle = (
@@ -65,6 +67,8 @@ const getTabContainerStyle = (
   return styles
 }
 
+export const TabDragElement = SortableHandle(({ children }) => children)
+
 export const TabItem = SortableElement(
   ({
     value,
@@ -76,15 +80,24 @@ export const TabItem = SortableElement(
     itemRef,
     activeNxtRef,
     activePrevRef,
+    dragHandle,
+    dragHandleElement: DragHandleElement,
   }: TabItemType) => {
     const props = value.props
     const isActive = props.tabKey === activeKey
+
+    const handleElement = dragHandle ? (
+      <TabDragElement>
+        {DragHandleElement ? <DragHandleElement /> : <span>::</span>}
+      </TabDragElement>
+    ) : null
+
     const elem = React.cloneElement(value, {
       key: props.tabKey,
       active: isActive,
       role: "tab",
       "aria-controls": "tabpanel-id",
-      children: props.tab,
+      children: [handleElement, props.tab],
       onClick: () => !isActive && onChange(props.tabKey),
     })
     const showVBar = itemIndex + 1 !== activeKeyIndex && !isActive
