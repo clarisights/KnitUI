@@ -342,6 +342,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
                 activeNxtRef={activeNxtRef}
                 activePrevRef={activePrevRef}
                 helperClass="knitui-tabs-helper"
+                lockToContainerEdges
               />
             </OverflowContainer>
             <BlurElement
