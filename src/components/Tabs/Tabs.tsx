@@ -212,6 +212,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     hideTabContent = false,
     useDragHandle = false,
     dragHandleElement = null,
+    sortDisabled = false,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -325,7 +326,8 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
                 dragHandleElement={dragHandleElement}
                 dragHandle={useDragHandle}
                 useDragHandle={useDragHandle}
-                shouldCancelStart={() => false}
+                shouldCancelStart={() => sortDisabled}
+                sortDisabled={sortDisabled}
                 items={childrenArray}
                 activeKey={activeKey}
                 activeKeyIndex={activeKeyIndex}
