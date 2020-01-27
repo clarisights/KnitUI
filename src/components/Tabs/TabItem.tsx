@@ -2,7 +2,8 @@ import React, { CSSProperties, ReactNode, ReactComponentElement } from "react"
 import { SortableElement, SortableHandle } from "react-sortable-hoc"
 import styled, { CSSObject } from "styled-components"
 import { activeTabFlagsInterface } from "./types"
-
+import { Icon } from "../"
+import { getThemeColor } from "../../common/_utils"
 const VerticalBar = styled.div`
   height: 14px;
   width: 0px;
@@ -67,6 +68,19 @@ const getTabContainerStyle = (
   return styles
 }
 
+const DragIcon = styled(Icon)`
+  cursor: grab;
+  & svg {
+    fill: ${props => getThemeColor(props, "Neutral45")};
+  }
+  margin-right: 0.4rem;
+  & svg :hover,
+  & svg :active,
+  & svg :focus {
+    fill: #000000;
+  }
+`
+
 export const TabDragElement = SortableHandle(({ children }) => children)
 
 export const TabItem = SortableElement(
@@ -86,15 +100,21 @@ export const TabItem = SortableElement(
     const props = value.props
     const isActive = props.tabKey === activeKey
 
-    const handleElement = dragHandle ? (
-      <TabDragElement>
-        {DragHandleElement ? <DragHandleElement /> : <span>::</span>}
-      </TabDragElement>
-    ) : null
+    const handleElement =
+      dragHandle && isActive ? (
+        <TabDragElement>
+          {DragHandleElement ? (
+            <DragHandleElement />
+          ) : (
+            <DragIcon type="oDragIndicator" size="16px" />
+          )}
+        </TabDragElement>
+      ) : null
 
     const elem = React.cloneElement(value, {
       key: props.tabKey,
       active: isActive,
+      dragHandle: dragHandle,
       role: "tab",
       "aria-controls": "tabpanel-id",
       children: [handleElement, props.tab],

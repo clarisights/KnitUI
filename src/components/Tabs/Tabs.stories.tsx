@@ -251,12 +251,7 @@ stories
         width: "800px",
         fontSize: 14,
       }}>
-      <Tabs
-        onAddTab={() => alert("callback for create add")}
-        useDragHandle
-        dragHandleElement={() => (
-          <span style={{ paddingRight: "10px" }}>::</span>
-        )}>
+      <Tabs onAddTab={() => alert("callback for create add")} useDragHandle>
         <TabPanel tab="Tab 1" tabKey="tab-1">
           <div>tab 1 content here</div>
         </TabPanel>

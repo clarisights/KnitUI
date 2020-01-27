@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     width: 1px;
     background: ${props => getThemeColor(props, "Neutral40")};
   }
+  white-space: nowrap;
 }
 `
 
@@ -97,7 +98,13 @@ const IconWrapper = styled.div<{ visible: boolean }>`
   }
 `
 
-const TabPanel = styled.button<{ active?: boolean }>`
+const TabPanel = styled.button<{ active?: boolean; dragHandle?: boolean }>`
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  word-wrap: none;
+
   background: ${props =>
     props.active ? getThemeColor(props, "Neutral0") : "none"};
   color: ${props =>
@@ -112,7 +119,8 @@ const TabPanel = styled.button<{ active?: boolean }>`
   min-width: 80px;
   line-height: 20px;
   font-size: 14px;
-  cursor: pointer;
+  cursor: ${props => (props.dragHandle && props.active ? "auto" : "pointer")};
+
   margin-right: 1px; /* To prevent focus outline overlapping with divider */
 
   :hover {
