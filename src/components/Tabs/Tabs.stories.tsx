@@ -1,5 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
+import styled from "styled-components"
 import { Tabs, Button } from "../"
 import { withKnobs } from "@storybook/addon-knobs"
 const Readme = require("./README.md")
@@ -74,6 +75,13 @@ const TabPanels = [
   </TabPanel>,
 ]
 
+const Container = styled.div`
+  border: 1px solid lightgray;
+  height: 360px;
+  width: 100%;
+  font-size: 1.4rem;
+`
+
 stories
   .addParameters({
     readme: {
@@ -86,56 +94,34 @@ stories
   .add("basic", () => {
     return (
       <div>
-        <div
+        <Container
           style={{
-            border: "1px solid lightgray",
-            height: "360px",
-            width: "100%",
-            fontSize: 14,
             marginBottom: 20,
             padding: 20,
           }}>
           <Tabs onAddTab={() => alert("callback for create add")}>
             {TabPanels}
           </Tabs>
-        </div>
-        <div
-          style={{
-            border: "1px solid lightgray",
-            height: "360px",
-            width: "100%",
-            fontSize: 14,
-          }}>
+        </Container>
+        <Container>
           <Tabs onAddTab={() => alert("callback for create add")}>
             {TabPanels.slice(0, 8)}
           </Tabs>
-        </div>
+        </Container>
       </div>
     )
   })
   .add("Tab Panel hideTabContent", () => {
     return (
-      <div
-        style={{
-          border: "1px solid lightgray",
-          height: "360px",
-          width: "800px",
-          fontSize: 14,
-        }}>
+      <Container>
         <Tabs onAddTab={() => alert("callback for create add")} hideTabContent>
           {TabPanels.slice(0, 12)}
         </Tabs>
-      </div>
+      </Container>
     )
   })
   .add("Tab Panel with react component", () => (
-    <div
-      style={{
-        border: "1px solid lightgray",
-        height: "360px",
-        width: "800px",
-        fontSize: 14,
-      }}>
+    <Container>
       <Tabs onAddTab={() => alert("callback for create add")}>
         <TabPanel
           tab={
@@ -155,32 +141,20 @@ stories
         </TabPanel>
         {TabPanels.slice(1, 10)}
       </Tabs>
-    </div>
+    </Container>
   ))
   .add("Tabs with Drag Handle", () => (
-    <div
-      style={{
-        border: "1px solid lightgray",
-        height: "360px",
-        width: "800px",
-        fontSize: 14,
-      }}>
+    <Container>
       <Tabs onAddTab={() => alert("callback for create add")} useDragHandle>
         <TabPanel tab="Tab 1" tabKey="tab-1">
           <div>tab 1 content here</div>
         </TabPanel>
         {TabPanels.slice(1, TabPanels.length)}
       </Tabs>
-    </div>
+    </Container>
   ))
   .add("Tabs with sort disabled", () => (
-    <div
-      style={{
-        border: "1px solid lightgray",
-        height: "360px",
-        width: "800px",
-        fontSize: 14,
-      }}>
+    <Container>
       <Tabs
         onAddTab={() => alert("callback for create add")}
         sortDisabled
@@ -190,16 +164,10 @@ stories
         </TabPanel>
         {TabPanels.slice(1, TabPanels.length)}
       </Tabs>
-    </div>
+    </Container>
   ))
   .add("Tabs with hide add button", () => (
-    <div
-      style={{
-        border: "1px solid lightgray",
-        height: "360px",
-        width: "800px",
-        fontSize: 14,
-      }}>
+    <Container>
       <Tabs
         onAddTab={() => alert("callback for create add")}
         hideAdd
@@ -209,5 +177,5 @@ stories
         </TabPanel>
         {TabPanels.slice(1, TabPanels.length)}
       </Tabs>
-    </div>
+    </Container>
   ))
