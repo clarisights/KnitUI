@@ -9238,10 +9238,10 @@ react-error-overlay@^5.1.4:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.6.tgz#0cd73407c5d141f9638ae1e0c63e7b2bf7e9929d"
   integrity sha512-X1Y+0jR47ImDVr54Ab6V9eGk0Hnu7fVWGeHQSOXHf/C2pF9c6uy3gef8QUeuUiWlNb0i08InPSE5a/KJzNzw1Q==
 
-react-expression-builder@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-expression-builder/-/react-expression-builder-1.0.1.tgz#d19915ae6255afe10c68e46edfa165494a3f5065"
-  integrity sha512-P4+r66gZJEm1tJ+VeWJxn4yYHYiD35fS3T4jJ/odcznd2Pcm5UJXW2eGWGENT9c1IeJxIrZTo2YpTuE/U+SlCA==
+react-expression-builder@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-expression-builder/-/react-expression-builder-1.0.7.tgz#dee5426d4060c6b3051e821bc0aaae0e2efe1e96"
+  integrity sha512-OwPMKUkQ8eM2PQNWUjA6zsrOSI/k5LmZ9qf/kaD9Zs1Bch8JrTHU4xTe5RkZD6jMvdiaxq+9+mybAu92frUjnw==
   dependencies:
     downshift "^4.0.7"
 
