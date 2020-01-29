@@ -27,7 +27,7 @@ type TabItemType = {
   activePrevRef: React.RefObject<HTMLDivElement>
   dragHandle: boolean
   dragHandleElement: React.FC<any> | null
-  sortDisabled: boolean
+  readOnly: boolean
 }
 
 const getTabContainerStyle = (
@@ -97,13 +97,13 @@ export const TabItem = SortableElement(
     activePrevRef,
     dragHandle,
     dragHandleElement: DragHandleElement,
-    sortDisabled,
+    readOnly,
   }: TabItemType) => {
     const props = value.props
     const isActive = props.tabKey === activeKey
 
     const handleElement =
-      dragHandle && isActive && !sortDisabled ? (
+      dragHandle && isActive && !readOnly ? (
         <TabDragElement>
           {DragHandleElement ? (
             <DragHandleElement />

@@ -212,8 +212,9 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     hideTabContent = false,
     useDragHandle = false,
     dragHandleElement = null,
-    sortDisabled = false,
+    readOnly = false,
     hideAdd = false,
+    addButtonElement,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -302,6 +303,13 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
       })
     }
   }
+
+  const AddButtonElement =
+    addButtonElement &&
+    React.cloneElement(addButtonElement, {
+      onClick: onAddTab,
+      disabled: readOnly,
+    })
   const showRightArrow = scrollFlags.rightSideScroll
   const showLeftArrow = scrollFlags.leftSideScroll
   const showRightBlur = showRightArrow && !activeTabFlags.right
@@ -327,8 +335,8 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
                 dragHandleElement={dragHandleElement}
                 dragHandle={useDragHandle}
                 useDragHandle={useDragHandle}
-                shouldCancelStart={() => sortDisabled}
-                sortDisabled={sortDisabled}
+                shouldCancelStart={() => readOnly}
+                readOnly={readOnly}
                 items={childrenArray}
                 activeKey={activeKey}
                 activeKeyIndex={activeKeyIndex}
@@ -357,15 +365,17 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               <Icon type="oKeyboardArrowRight" size="18px" fill="#000000" />
             </IconWrapper>
           </OverflowWrapper>
-          {!hideAdd ? (
-            <ButtonWrapper
-              onClick={onAddTab}
-              icon="oAdd"
-              kind="primary"
-              bare
-              customColor="#000000"
-            />
-          ) : null}
+          {!hideAdd &&
+            (AddButtonElement || (
+              <ButtonWrapper
+                disabled={readOnly}
+                onClick={onAddTab}
+                icon="oAdd"
+                kind="primary"
+                bare
+                customColor="#000000"
+              />
+            ))}
         </TabsPanelWrapper>
         {!hideTabContent && (
           <TabContentWrapper>{getTabsContent()}</TabContentWrapper>

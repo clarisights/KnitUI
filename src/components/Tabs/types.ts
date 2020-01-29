@@ -25,8 +25,10 @@ export interface TabsProps extends BaseComponentProps {
   useDragHandle?: boolean
   /** prop to pass element which replace default drag */
   dragHandleElement?: React.FC<any> | null
-  /** disable sorting of tabs */
-  sortDisabled?: boolean
+  /** disable sorting of tabs & disable `add tab` button */
+  readOnly?: boolean
+  /** Add Button Element, Please pass button element to behave it correctly. */
+  addButtonElement?: React.ReactElement
 }
 
 export interface TabPane extends HTMLButtonElement {
