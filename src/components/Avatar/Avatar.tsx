@@ -125,6 +125,7 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
   overflow: hidden;
   border-radius: 50%;
   outline: none;
+  cursor: pointer;
 
   /* Style for Name Avatar */
   color: ${props => getThemeColor(props, "Neutral90")};
