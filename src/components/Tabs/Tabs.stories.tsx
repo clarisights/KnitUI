@@ -153,11 +153,11 @@ stories
       </Tabs>
     </Container>
   ))
-  .add("Tabs with sort disabled", () => (
+  .add("Tabs with readOnly mode", () => (
     <Container>
       <Tabs
         onAddTab={() => alert("callback for create add")}
-        sortDisabled
+        readOnly
         useDragHandle>
         <TabPanel tab="Tab 1" tabKey="tab-1">
           <div>tab 1 content here</div>
@@ -171,6 +171,19 @@ stories
       <Tabs
         onAddTab={() => alert("callback for create add")}
         hideAdd
+        useDragHandle>
+        <TabPanel tab="Tab 1" tabKey="tab-1">
+          <div>tab 1 content here</div>
+        </TabPanel>
+        {TabPanels.slice(1, TabPanels.length)}
+      </Tabs>
+    </Container>
+  ))
+  .add("Tabs with custom Button", () => (
+    <Container>
+      <Tabs
+        onAddTab={() => alert("callback for create add")}
+        addButtonElement={<button>Add Tab</button>}
         useDragHandle>
         <TabPanel tab="Tab 1" tabKey="tab-1">
           <div>tab 1 content here</div>

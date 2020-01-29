@@ -14,7 +14,7 @@ type TabsListProps = {
   activePrevRef: React.RefObject<HTMLDivElement>
   dragHandle: boolean
   dragHandleElement: React.FC<any> | null
-  sortDisabled: boolean
+  readOnly: boolean
 }
 
 export const TabsList = SortableContainer(
@@ -29,7 +29,7 @@ export const TabsList = SortableContainer(
     activePrevRef,
     dragHandle,
     dragHandleElement,
-    sortDisabled,
+    readOnly,
   }: TabsListProps) => {
     return (
       <div
@@ -40,7 +40,7 @@ export const TabsList = SortableContainer(
         <div />
         {items.map((value, index) => (
           <TabItem
-            sortDisabled={sortDisabled}
+            readOnly={readOnly}
             dragHandleElement={dragHandleElement}
             dragHandle={dragHandle}
             onChange={onChange}
