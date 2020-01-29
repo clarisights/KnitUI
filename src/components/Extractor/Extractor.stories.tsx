@@ -6,6 +6,8 @@ import Expression from "./index"
 const stories = storiesOf("Extractor", module)
 stories.addDecorator(withKnobs)
 
+const onChangeFn = editorState => console.log(editorState.buildExpression())
+
 stories
   .addParameters({
     readme: {
@@ -14,4 +16,4 @@ stories
       // Show readme at the addons panel
     },
   })
-  .add("Basic", () => <Expression />)
+  .add("Basic", () => <Expression onChangeFn={onChangeFn} />)

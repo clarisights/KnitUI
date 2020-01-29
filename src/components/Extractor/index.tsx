@@ -1,5 +1,6 @@
 import React from "react"
-import Expression, { EditorState, TreeNode } from "react-expression-builder"
+import DropDown from "./DropDown"
+import { EditorState, TreeNode } from "./DataStructure"
 import styled from "styled-components"
 import {
   Neutral90,
@@ -11,17 +12,18 @@ import {
   Crimson80,
   Azure80,
 } from "../../common/styles/palette"
+import { ExtractorProps, EditorType, NodeType, optionType } from "./types"
 import { functions, staticValues } from "./helpers"
 
-const options = [...functions, ...staticValues]
+// functions for the extractor
+const options: optionType[] = [...functions, ...staticValues]
 
 const stringRegex = /"([^\\"]|\\")*"/
 
-const onChangeFn = st => console.log("change", st.buildExpression())
 const expressionRootClass = "root-class"
 const expressionInputClass = "input-class"
 
-const validationFn = val => {
+const validationFn = (val: any): boolean => {
   // mock api request
   const res = !isNaN(val) || stringRegex.test(val)
   // console.log(res)
@@ -30,6 +32,8 @@ const validationFn = val => {
 
 const ExpressionWrapper = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
   border: 1px solid ${Azure80.hex};
   box-sizing: border-box;
   &:focus {
@@ -40,25 +44,20 @@ const ExpressionWrapper = styled.div`
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
-  padding-top: 0.4rem;
   input {
     border: 0;
+    outline: 0;
     color: ${Neutral90.hex};
     height: 2rem;
+    border-radius: 0.4rem;
+    margin: 0 0.6rem;
     background-color: inherit;
     padding: 0 0.4rem;
-    &::placeholder {
-      font-size: 1.4rem;
-      line-height: 2rem;
-    }
-    &:focus {
-      outline: 0;
-    }
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
   input[data-value-type="dimension"] {
     background-color: ${Sun10.hex};
-    border-radius: 0.4rem;
-    margin: 0 0.6rem;
   }
   input[data-valid="false"] {
     border-bottom: 0.1rem dashed ${Crimson80.hex};
@@ -71,10 +70,9 @@ const ExpressionWrapper = styled.div`
   [data-type="expression-root"] {
     color: ${Green80.hex};
     box-sizing: border-box;
-    margin: 0 0.4rem;
+    padding: 0 0.4rem;
     &:focus {
-      outline: none;
-      border: 1px dashed ${Azure80.hex};
+      outline: 1px dashed ${Azure80.hex};
       box-sizing: border-box;
       background: rgba(209, 225, 250, 0.5);
     }
@@ -117,13 +115,18 @@ const ExpressionWrapper = styled.div`
   }
 `
 
-export default function Extractor(props) {
-  const EditorData = new EditorState()
-  const rootNode = new TreeNode(null)
+const Extractor: React.FC<ExtractorProps> = (props: ExtractorProps) => {
+  const { onChangeFn } = props
+  // initialize the editor state
+  const EditorData: EditorType = new EditorState()
+  // initialize root node of the expression
+  const rootNode: NodeType = new TreeNode(null)
+  // Initialize our editor state with the root node
   EditorData.initRoot(rootNode)
+
   return (
-    <ExpressionWrapper tabIndex="0">
-      <Expression
+    <ExpressionWrapper tabIndex={0}>
+      <DropDown
         EditorData={EditorData}
         onChangeFn={onChangeFn}
         node={rootNode}
@@ -136,3 +139,5 @@ export default function Extractor(props) {
     </ExpressionWrapper>
   )
 }
+
+export default Extractor
