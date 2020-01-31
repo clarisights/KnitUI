@@ -14,11 +14,18 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform: scale(1);
+.c0.knit-radio.knit-radio-checked .knit-radio-inner {
+  position: relative;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   opacity: 1;
   -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
   -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
@@ -54,7 +61,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   background-color: #FFFFFF;
 }
 
-.c2:after {
+.c2::after {
   position: absolute;
   width: 0.8rem;
   height: 0.8rem;
@@ -124,11 +131,18 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform: scale(1);
+.c0.knit-radio.knit-radio-checked .knit-radio-inner {
+  position: relative;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   opacity: 1;
   -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
   -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
@@ -164,7 +178,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   background-color: #FFFFFF;
 }
 
-.c2:after {
+.c2::after {
   position: absolute;
   width: 0.8rem;
   height: 0.8rem;
@@ -238,11 +252,18 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform: scale(1);
+.c0.knit-radio.knit-radio-checked .knit-radio-inner {
+  position: relative;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   opacity: 1;
   -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
   -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
@@ -278,7 +299,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   background-color: #FFFFFF;
 }
 
-.c2:after {
+.c2::after {
   position: absolute;
   width: 0.6rem;
   height: 0.6rem;
@@ -344,11 +365,18 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform: scale(1);
+.c0.knit-radio.knit-radio-checked .knit-radio-inner {
+  position: relative;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   opacity: 1;
   -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
   -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
@@ -384,7 +412,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   background-color: #FFFFFF;
 }
 
-.c2:after {
+.c2::after {
   position: absolute;
   width: 0.6rem;
   height: 0.6rem;
@@ -455,11 +483,18 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform: scale(1);
+.c0.knit-radio.knit-radio-checked .knit-radio-inner {
+  position: relative;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   opacity: 1;
   -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
   -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
@@ -495,7 +530,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   background-color: #FFFFFF;
 }
 
-.c2:after {
+.c2::after {
   position: absolute;
   width: 0.6rem;
   height: 0.6rem;
@@ -565,11 +600,18 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform: scale(1);
+.c0.knit-radio.knit-radio-checked .knit-radio-inner {
+  position: relative;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   opacity: 1;
   -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
   -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
@@ -605,7 +647,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   background-color: #FFFFFF;
 }
 
-.c2:after {
+.c2::after {
   position: absolute;
   width: 0.6rem;
   height: 0.6rem;
@@ -681,11 +723,18 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner:after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform: scale(1);
+.c0.knit-radio.knit-radio-checked .knit-radio-inner {
+  position: relative;
+}
+
+.c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   opacity: 1;
   -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
   -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
@@ -721,7 +770,7 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
   background-color: #FFFFFF;
 }
 
-.c2:after {
+.c2::after {
   position: absolute;
   width: 0.8rem;
   height: 0.8rem;

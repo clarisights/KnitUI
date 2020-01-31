@@ -33,9 +33,14 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>`
 
     &.knit-radio-checked {
       .knit-radio-inner {
-        &:after {
-          transform: scale(1);
-          -webkit-transform: scale(1);
+        position: relative;
+
+        &::after {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
           opacity: 1;
           transition: transform @duration @ease-out-back,
             opacity @duration @ease-in-out-circ,
@@ -62,10 +67,8 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>`
     }
   }
 `
-
-export const StyledRadioInner = styled.span<{
-  size: string | undefined
-}>`
+// prettier-ignore-next-line
+export const StyledRadioInner = styled.span<{ size: string | undefined }>`
   top: 0;
   left: 0;
   display: inline-block;
@@ -77,7 +80,8 @@ export const StyledRadioInner = styled.span<{
   border-radius: 14px;
   border-color: ${Blue100.hex};
   background-color: ${Neutral0.hex};
-  &:after {
+
+  &::after {
     position: absolute;
     width: ${({ theme, size }) => getRadioBeadSize(theme, size)};
     height: ${({ theme, size }) => getRadioBeadSize(theme, size)};
@@ -92,6 +96,7 @@ export const StyledRadioInner = styled.span<{
     -webkit-transform: scale(0);
     opacity: 0;
   }
+
   &:focus {
     box-shadow: 0px 0px 2px ${({ theme }) => theme.knitui.switchFocusColor};
     outline: none;
