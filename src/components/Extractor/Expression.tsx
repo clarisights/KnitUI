@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, FC, SyntheticEvent } from "react"
 import Drop from "./DropDown"
 import { TreeNode } from "./DataStructure"
-import { ExpressionRootPropTypes, optionType } from "./types"
+import { ExpressionRootPropTypes, OptionType } from "./types"
 
 const Expression: FC<ExpressionRootPropTypes> = (
   props: ExpressionRootPropTypes
@@ -21,7 +21,7 @@ const Expression: FC<ExpressionRootPropTypes> = (
   const [rootFocus, setRootFocus] = useState(false)
   const expressionRoot = useRef(null)
   // find function metadata as per the given key.
-  const fnData: optionType | undefined = options.find(
+  const fnData: OptionType | undefined = options.find(
     f => f.key === fname.toLowerCase()
   )
 
