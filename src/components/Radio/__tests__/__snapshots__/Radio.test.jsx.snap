@@ -14,18 +14,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner {
-  position: relative;
-}
-
 .c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   opacity: 1;
 }
 
@@ -129,18 +118,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner {
-  position: relative;
-}
-
 .c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   opacity: 1;
 }
 
@@ -248,18 +226,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner {
-  position: relative;
-}
-
 .c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   opacity: 1;
 }
 
@@ -359,18 +326,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner {
-  position: relative;
-}
-
 .c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   opacity: 1;
 }
 
@@ -475,18 +431,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner {
-  position: relative;
-}
-
 .c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   opacity: 1;
 }
 
@@ -590,18 +535,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner {
-  position: relative;
-}
-
 .c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   opacity: 1;
 }
 
@@ -711,18 +645,7 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
   margin-left: 10px;
 }
 
-.c0.knit-radio.knit-radio-checked .knit-radio-inner {
-  position: relative;
-}
-
 .c0.knit-radio.knit-radio-checked .knit-radio-inner::after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   opacity: 1;
 }
 

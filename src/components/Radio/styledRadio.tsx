@@ -33,14 +33,7 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>`
 
     &.knit-radio-checked {
       .knit-radio-inner {
-        position: relative;
-
         &::after {
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
           opacity: 1;
         }
       }
