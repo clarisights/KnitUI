@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import { Neutral0, Neutral50, Blue100 } from "../../common/styles/palette"
+
 import { RadioWrapperProps } from "./Interface"
+import { getThemeColor } from "../../common/_utils"
 
 const isSmall = size => size === "small"
 const isDisabled = props => props.disabled
@@ -46,7 +47,7 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>`
         background-color: ${({ theme }) => theme.knitui.radioDisabledColor};
       }
       & + span {
-        color: ${Neutral50.hex};
+        color: ${props => getThemeColor(props, "Neutral50")};
       }
       .knit-radio-input {
         cursor: not-allowed;
@@ -66,8 +67,8 @@ export const StyledRadioInner = styled.span<{ size: string | undefined }>`
   cursor: pointer;
   border-style: solid;
   border-radius: 14px;
-  border-color: ${Blue100.hex};
-  background-color: ${Neutral0.hex};
+  border-color: ${props => getThemeColor(props, "Blue100")};
+  background-color: ${props => getThemeColor(props, "Neutral0")};
 
   &::after {
     position: absolute;
@@ -76,13 +77,11 @@ export const StyledRadioInner = styled.span<{ size: string | undefined }>`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     border-radius: 0.7rem;
     border-top: 0;
     border-left: 0;
     content: " ";
-    background-color: ${Blue100.hex};
+    background-color: ${props => getThemeColor(props, "Blue100")};
     opacity: 0;
   }
 
