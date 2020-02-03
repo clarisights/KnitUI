@@ -1,6 +1,7 @@
 import React, { FC, SyntheticEvent } from "react"
 import styled from "styled-components"
 import { IStyled } from "common/types"
+import { getThemeColor } from "../../common/_utils"
 import { oAccountCircle as UserProfileIcon } from "../Icon/Icons"
 
 interface AvatarProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -18,15 +19,6 @@ interface AvatarBaseProps
   isIcon: boolean
   size: string
   disabled: boolean
-}
-
-const getThemeColor = (props, color) => {
-  const {
-    theme: {
-      knitui: { chromaPalette },
-    },
-  } = props
-  return chromaPalette[color].hex()
 }
 
 const getBoxShadowStyle = props => {

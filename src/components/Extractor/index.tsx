@@ -2,21 +2,12 @@ import React from "react"
 import DropDown from "./DropDown"
 import { EditorState, TreeNode } from "./DataStructure"
 import styled from "styled-components"
-import {
-  Neutral90,
-  Neutral20,
-  Neutral10,
-  Neutral45,
-  Sun10,
-  Green80,
-  Crimson80,
-  Azure80,
-} from "../../common/styles/palette"
-import { ExtractorProps, EditorType, NodeType, optionType } from "./types"
+import { getThemeColor } from "../../common/_utils"
+import { ExtractorProps, EditorType, NodeType, OptionType } from "./types"
 import { functions, staticValues } from "./helpers"
 
 // functions for the extractor
-const options: optionType[] = [...functions, ...staticValues]
+const options: OptionType[] = [...functions, ...staticValues]
 
 const stringRegex = /"([^\\"]|\\")*"/
 
@@ -34,7 +25,7 @@ const ExpressionWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  border: 1px solid ${Azure80.hex};
+  border: 1px solid ${props => getThemeColor(props, "Azure80")};
   box-sizing: border-box;
   &:focus {
     box-shadow: 0 0 0.2rem #0066ff;
@@ -47,7 +38,7 @@ const ExpressionWrapper = styled.div`
   input {
     border: 0;
     outline: 0;
-    color: ${Neutral90.hex};
+    color: ${props => getThemeColor(props, "Neutral90")};
     height: 2rem;
     border-radius: 0.4rem;
     margin: 0 0.6rem;
@@ -57,10 +48,10 @@ const ExpressionWrapper = styled.div`
     line-height: 2rem;
   }
   input[data-value-type="dimension"] {
-    background-color: ${Sun10.hex};
+    background-color: ${props => getThemeColor(props, "Sun10")};
   }
   input[data-valid="false"] {
-    border-bottom: 0.1rem dashed ${Crimson80.hex};
+    border-bottom: 0.1rem dashed ${props => getThemeColor(props, "Crimson80")};
     border-radius: 0.2rem;
     box-sizing: border-box;
   }
@@ -68,11 +59,11 @@ const ExpressionWrapper = styled.div`
     border-bottom: 0;
   }
   [data-type="expression-root"] {
-    color: ${Green80.hex};
+    color: ${props => getThemeColor(props, "Green80")};
     box-sizing: border-box;
     padding: 0 0.4rem;
     &:focus {
-      outline: 1px dashed ${Azure80.hex};
+      outline: 1px dashed ${props => getThemeColor(props, "Azure80")};
       box-sizing: border-box;
       background: rgba(209, 225, 250, 0.5);
     }
@@ -86,7 +77,7 @@ const ExpressionWrapper = styled.div`
     }
     & > ul {
       margin-top: 1rem;
-      border: 1px solid ${Neutral20.hex};
+      border: 1px solid ${props => getThemeColor(props, "Neutral20")};
       box-shadow: 0px 2px 7px rgba(153, 153, 153, 0.3);
       border-radius: 4px;
       padding: 1.4rem 0;
@@ -99,15 +90,15 @@ const ExpressionWrapper = styled.div`
         justify-content: space-between;
         padding: 0.7rem 1.4rem;
         &:hover {
-          background-color: ${Neutral10.hex};
+          background-color: ${props => getThemeColor(props, "Neutral10")};
         }
         span {
           &:nth-child(2) {
-            color: ${Neutral45.hex};
+            color: ${props => getThemeColor(props, "Neutral45")};
             font-style: italic;
           }
           &:first-child {
-            color: ${Green80.hex};
+            color: ${props => getThemeColor(props, "Green80")};
           }
         }
       }
