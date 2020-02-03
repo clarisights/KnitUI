@@ -130,9 +130,6 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
   const {
     isOpen,
     openMenu,
-    // selectedItem,
-    // getToggleButtonProps,
-    // getLabelProps,
     getMenuProps,
     getInputProps,
     getComboboxProps,
@@ -143,20 +140,10 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
     defaultIsOpen: true,
     initialIsOpen: true,
     initialHighlightedIndex: 0,
-    // onInputValueChange: ({ inputValue }) => {
-    // 	setInputItems(
-    // 		options.filter(item => {
-    // 			return item.key.toLowerCase().startsWith(inputValue.toLowerCase())
-    // 		})
-    // 	)
-    // 	handleValueTypeChange()
-    // },
     stateReducer,
   })
 
-  const handleValueChangeWrapper = (
-    e: React.ChangeEvent<HTMLInputElement>
-  ): void => {
+  const updateValueAndType = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const val = (e.target as HTMLInputElement).value
 
     handleValueChange(e)
@@ -182,7 +169,7 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
         className={expressionInputClass}>
         <input
           {...getInputProps({
-            onChange: handleValueChangeWrapper,
+            onChange: updateValueAndType,
             onKeyDown: onKeyDown,
             value: inputValue,
             ref: inputRef,

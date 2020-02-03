@@ -1,5 +1,5 @@
 import React from "react"
-import DropDown from "./DropDown"
+import DropDown from "./Dropdown"
 import { EditorState, TreeNode } from "./DataStructure"
 import styled from "styled-components"
 import { getThemeColor } from "../../common/_utils"
