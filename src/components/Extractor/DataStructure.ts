@@ -1,7 +1,7 @@
-import { NodeType } from "./types"
+import { NodeType, TreeNodeValueType } from "./types"
 
 export class TreeNode {
-  value: null
+  value: TreeNodeValueType
   children: NodeType[]
   constructor(value) {
     this.value = value
@@ -28,7 +28,7 @@ export class EditorState {
     this.root = node
   }
 
-  buildExpression = (node: NodeType = this.root): string => {
+  buildExpression = (node: NodeType = this.root): any => {
     let str = ""
     if (node.value.type !== "fn") return node.value.data
     node.children.forEach((child, idx) => {

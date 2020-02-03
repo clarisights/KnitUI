@@ -17,6 +17,11 @@ export interface OptionType {
   label: string
 }
 
+export interface TreeNodeValueType {
+  data: OptionType
+  type: string
+}
+
 export interface DropdownProps {
   inputRef?: React.RefObject<HTMLInputElement>
   inputPlaceholder?: string

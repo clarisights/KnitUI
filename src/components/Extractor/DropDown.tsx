@@ -125,25 +125,20 @@ const Drop = (props: DropdownProps) => {
         e.preventDefault()
         const nextNode = getNextNode()
         if (nextNode) nextNode.focus()
-        return
+        break
       case 37:
         // only when at caret position is 0
         if (inputNode.selectionStart !== 0) return
         e.preventDefault()
         const prevNode = getPrevNode()
         if (prevNode) prevNode.focus()
-        return
+        break
       default:
-        return
+        break
     }
   }
 
   if (!exp) {
-    // this is an approximation
-    // let inputLen = `${(value
-    // 	? value.length
-    // 	: placeholder && placeholder.length) * 8}px`
-    // if (dropRef.current) inputLen = dropRef.current.scrollWidth
     return (
       <DownSelect
         inputRef={dropRef}
