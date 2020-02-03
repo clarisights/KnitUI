@@ -30,18 +30,29 @@ const Drop = (props: DropdownProps) => {
     .filter(fn => fn.type === "function")
     .map(fn => fn.key)
 
+  const getValueType = value => {
+    if (fnKeys.includes(value.toLowerCase())) return "fn"
+    const listOption = options.find(option => option.label === value)
+    return listOption ? listOption.type : "string"
+  }
+
+  const getValueData = (type, value) => {
+    if (type === "fn") {
+      return options.find(f => f.key === value.toLowerCase())
+    }
+    return value
+  }
+
   const handleValueChange = e => {
     const val = e.target.value
-    // const newNode = new TreeNode(val)
-    node.setValue({ data: val, type: "string" })
+    const valueType = getValueType(val)
+    const valueData = getValueData(valueType, val)
     setValue(val)
-    if (fnKeys.includes(val.toLowerCase())) {
-      setExp(true)
-      node.setValue({
-        data: options.find(f => f.key === val.toLowerCase()),
-        type: "fn",
-      }) // todo
-    }
+    node.setValue({ data: valueData, type: valueType })
+
+    // In case the input is a function, scaffold it's params
+    if (valueType === "fn") setExp(true)
+
     if (onChangeFn) onChangeFn(EditorData)
     // console.log(EditorData.buildExpression())
   }

@@ -30,7 +30,7 @@ export class EditorState {
 
   buildExpression = (node: NodeType = this.root): string => {
     let str = ""
-    if (node.value.type === "string") return node.value.data
+    if (node.value.type !== "fn") return node.value.data
     node.children.forEach((child, idx) => {
       str += this.buildExpression(child)
       str += idx === node.children.length - 1 ? "" : ", "
