@@ -44,7 +44,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   border-style: solid;
   border-radius: 14px;
   border-color: #002966;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c2::after {
@@ -56,8 +56,6 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
@@ -148,7 +146,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   border-style: solid;
   border-radius: 14px;
   border-color: #002966;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c2::after {
@@ -160,8 +158,6 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
@@ -256,7 +252,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   border-style: solid;
   border-radius: 14px;
   border-color: #002966;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c2::after {
@@ -268,8 +264,6 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
@@ -356,7 +350,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   border-style: solid;
   border-radius: 14px;
   border-color: #002966;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c2::after {
@@ -368,8 +362,6 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
@@ -461,7 +453,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   border-style: solid;
   border-radius: 14px;
   border-color: #002966;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c2::after {
@@ -473,8 +465,6 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
@@ -565,7 +555,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   border-style: solid;
   border-radius: 14px;
   border-color: #002966;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c2::after {
@@ -577,8 +567,6 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
@@ -675,7 +663,7 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
   border-style: solid;
   border-radius: 14px;
   border-color: #002966;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c2::after {
@@ -687,8 +675,6 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
