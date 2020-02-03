@@ -27,10 +27,6 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   opacity: 1;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
 }
 
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
@@ -48,6 +44,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 }
 
 .c2 {
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
@@ -65,17 +62,18 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   position: absolute;
   width: 0.8rem;
   height: 0.8rem;
-  left: 2.5px;
-  top: 2.5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
   background-color: #002966;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform: scale(0);
   opacity: 0;
 }
 
@@ -144,10 +142,6 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   opacity: 1;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
 }
 
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
@@ -165,6 +159,7 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
 }
 
 .c2 {
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
@@ -182,17 +177,18 @@ exports[`Radio renders radio correctly Medium with 2 in a group 1`] = `
   position: absolute;
   width: 0.8rem;
   height: 0.8rem;
-  left: 2.5px;
-  top: 2.5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
   background-color: #002966;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform: scale(0);
   opacity: 0;
 }
 
@@ -265,10 +261,6 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   opacity: 1;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
 }
 
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
@@ -286,6 +278,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 }
 
 .c2 {
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
@@ -303,17 +296,18 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   position: absolute;
   width: 0.6rem;
   height: 0.6rem;
-  left: 2.5px;
-  top: 2.5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
   background-color: #002966;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform: scale(0);
   opacity: 0;
 }
 
@@ -378,10 +372,6 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   opacity: 1;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
 }
 
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
@@ -399,6 +389,7 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
 }
 
 .c2 {
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
@@ -416,17 +407,18 @@ exports[`Radio renders radio correctly Small with 2 in group 1`] = `
   position: absolute;
   width: 0.6rem;
   height: 0.6rem;
-  left: 2.5px;
-  top: 2.5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
   background-color: #002966;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform: scale(0);
   opacity: 0;
 }
 
@@ -496,10 +488,6 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   opacity: 1;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
 }
 
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
@@ -517,6 +505,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 }
 
 .c2 {
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
@@ -534,17 +523,18 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   position: absolute;
   width: 0.6rem;
   height: 0.6rem;
-  left: 2.5px;
-  top: 2.5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
   background-color: #002966;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform: scale(0);
   opacity: 0;
 }
 
@@ -613,10 +603,6 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   opacity: 1;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
 }
 
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
@@ -634,6 +620,7 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
 }
 
 .c2 {
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
@@ -651,17 +638,18 @@ exports[`Radio renders radio correctly Small with 2 in group with disabled 1`] =
   position: absolute;
   width: 0.6rem;
   height: 0.6rem;
-  left: 2.5px;
-  top: 2.5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
   background-color: #002966;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform: scale(0);
   opacity: 0;
 }
 
@@ -736,10 +724,6 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   opacity: 1;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  transition: transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
-  -webkit-transition: -webkit-transform @duration @ease-out-back, opacity @duration @ease-in-out-circ, background-color @duration @ease-in-out-circ;
 }
 
 .c0.knit-radio.knit-radio-disabled .knit-radio-inner {
@@ -757,6 +741,7 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
 }
 
 .c2 {
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
@@ -774,17 +759,18 @@ exports[`Radio renders radio correctly renders with single child correctly 1`] =
   position: absolute;
   width: 0.8rem;
   height: 0.8rem;
-  left: 2.5px;
-  top: 2.5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   border-radius: 0.7rem;
   border-top: 0;
   border-left: 0;
   content: " ";
   background-color: #002966;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform: scale(0);
   opacity: 0;
 }
 
