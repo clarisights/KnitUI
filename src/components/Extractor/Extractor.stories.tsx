@@ -10,7 +10,8 @@ const options = [...functions, ...staticValues]
 const stories = storiesOf("Extractor", module)
 stories.addDecorator(withKnobs)
 
-const onChangeFn = editorState => console.log(editorState.buildExpression())
+const onChangeFn = editorState =>
+  console.log(editorState.buildExpression(), editorState)
 
 stories
   .addParameters({
