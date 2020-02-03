@@ -1,5 +1,5 @@
 import React from "react"
-import DropDown from "./Dropdown"
+import Dropdown from "./Dropdown"
 import { EditorState, TreeNode } from "./DataStructure"
 import styled from "styled-components"
 import { getThemeColor } from "../../common/_utils"
@@ -111,7 +111,7 @@ const Extractor: React.FC<ExtractorProps> = props => {
 
   return (
     <ExpressionWrapper tabIndex={0}>
-      <DropDown
+      <Dropdown
         EditorData={EditorData}
         onChangeFn={onChangeFn}
         node={rootNode}
