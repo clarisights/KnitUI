@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, FC, SyntheticEvent } from "react"
-import Drop from "./DropDown"
+import Drop from "./Dropdown"
 import { TreeNode } from "./DataStructure"
 import { ExpressionRootPropTypes, OptionType } from "./types"
 
@@ -101,19 +101,17 @@ const Expression: FC<ExpressionRootPropTypes> = (
   }
   if (fname) {
     return (
-      <>
-        <span
-          ref={expressionRoot}
-          className={expressionRootClass}
-          data-type="expression-root"
-          onKeyDown={handleKeyDown}
-          onFocus={() => setRootFocus(true)}
-          onBlur={() => setRootFocus(false)}
-          tabIndex={0}
-          style={{ display: "flex" }}>
-          {fnData!.label}({PHDom()})
-        </span>
-      </>
+      <span
+        ref={expressionRoot}
+        className={expressionRootClass}
+        data-type="expression-root"
+        onKeyDown={handleKeyDown}
+        onFocus={() => setRootFocus(true)}
+        onBlur={() => setRootFocus(false)}
+        tabIndex={0}
+        style={{ display: "flex" }}>
+        {fnData!.label}({PHDom()})
+      </span>
     )
   }
   return null

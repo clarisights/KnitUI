@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, RefObject } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import Exp from "./Expression"
 import DownSelect from "./DownSelect"
 import { DropdownProps } from "./types"
