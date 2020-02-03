@@ -6,7 +6,7 @@ import React, {
   SyntheticEvent,
 } from "react"
 import { useCombobox } from "downshift"
-import { SelectorPropTypes, optionType } from "./types"
+import { SelectorPropTypes, OptionType } from "./types"
 
 const menuStyles: CSSProperties = {
   backgroundColor: "white",
@@ -38,7 +38,7 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
     expressionInputClass,
   } = props
 
-  const [inputItems, setInputItems] = useState<optionType[]>(options)
+  const [inputItems, setInputItems] = useState<OptionType[]>(options)
   const [valid, setValid] = useState<boolean>(true)
   const [valueType, setValueType] = useState<string>("string")
 

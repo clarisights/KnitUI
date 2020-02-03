@@ -8,7 +8,7 @@ export interface EditorType extends EditorState {}
 
 export interface NodeType extends TreeNode {}
 
-export interface optionType {
+export interface OptionType {
   key: string
   type: string
   params?: string[]
@@ -25,7 +25,7 @@ export interface DropdownProps {
   node: NodeType
   EditorData: EditorType
   handleValueChange?: () => void
-  options: optionType[]
+  options: OptionType[]
   validationFn: (val: any) => boolean
   inputValue?: any
   onChangeFn: (state: EditorType) => void
@@ -38,7 +38,7 @@ export interface SelectorPropTypes {
   inputPlaceholder: string
   onKeyDown: (e) => void
   handleValueChange: (e) => void
-  options: optionType[]
+  options: OptionType[]
   validationFn: (value: any) => boolean
   inputValue: string
   expressionInputClass: string | undefined
@@ -52,7 +52,7 @@ export interface ExpressionRootPropTypes {
   // Editor data which needs to be passed down to every level
   EditorData: EditorType
   setExp: (isExpression: boolean) => void
-  options: optionType[]
+  options: OptionType[]
   setValue: (value: string) => void
   onChangeFn: (state: EditorType) => void
   expressionRootClass: string | undefined
