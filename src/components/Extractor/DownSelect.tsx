@@ -72,25 +72,8 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
   }
 
   const stateReducer = (state, actionAndChanges) => {
-    // this prevents the menu from being closed when the user selects an item with 'Enter' or mouse
-    // console.log(state, actionAndChanges)
     const { stateChangeTypes } = useCombobox
     switch (actionAndChanges.type) {
-      case stateChangeTypes.InputChange:
-        // if (validationFn) {
-        // 	if (!matchesAnInput) {
-        // 		validationFn(actionAndChanges.changes.inputValue)
-        // 			? setValid(true)
-        // 			: setValid(false)
-        // 	}
-        // }
-        return {
-          // return normal changes.
-          ...actionAndChanges.changes,
-          // but taking the change from default reducer and uppercasing it.
-          inputValue: actionAndChanges.changes.inputValue,
-        }
-      // also on selection.
       case stateChangeTypes.ItemClick:
       case stateChangeTypes.InputKeyDownEnter:
         // case useCombobox.stateChangeTypes.InputBlur:
@@ -115,12 +98,8 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
           ...actionAndChanges.changes,
           // if we had an item highlighted in the previous state.
           ...(state.highlightedIndex > -1 && {
-            inputValue: actionAndChanges.changes.selectedItem.key.toUpperCase(),
+            inputValue: actionAndChanges.changes.selectedItem.key,
           }),
-        }
-      case useCombobox.stateChangeTypes.InputBlur:
-        return {
-          action: actionAndChanges.changes,
         }
       default:
         return actionAndChanges.changes // otherwise business as usual.
