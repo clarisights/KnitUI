@@ -42,12 +42,6 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>`
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           opacity: 1;
-          transition: transform @duration @ease-out-back,
-            opacity @duration @ease-in-out-circ,
-            background-color @duration @ease-in-out-circ;
-          -webkit-transition: -webkit-transform @duration @ease-out-back,
-            opacity @duration @ease-in-out-circ,
-            background-color @duration @ease-in-out-circ;
         }
       }
     }
@@ -69,6 +63,7 @@ export const StyledRadioRoot = styled.span<RadioWrapperProps>`
 `
 // prettier-ignore-next-line
 export const StyledRadioInner = styled.span<{ size: string | undefined }>`
+  position: relative;
   top: 0;
   left: 0;
   display: inline-block;
@@ -85,15 +80,16 @@ export const StyledRadioInner = styled.span<{ size: string | undefined }>`
     position: absolute;
     width: ${({ theme, size }) => getRadioBeadSize(theme, size)};
     height: ${({ theme, size }) => getRadioBeadSize(theme, size)};
-    left: 2.5px;
-    top: 2.5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     border-radius: 0.7rem;
     border-top: 0;
     border-left: 0;
     content: " ";
     background-color: ${Blue100.hex};
-    transform: scale(0);
-    -webkit-transform: scale(0);
     opacity: 0;
   }
 
