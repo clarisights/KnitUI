@@ -3,16 +3,12 @@ import DropDown from "./DropDown"
 import { EditorState, TreeNode } from "./DataStructure"
 import styled from "styled-components"
 import { getThemeColor } from "../../common/_utils"
-import { ExtractorProps, EditorType, NodeType, OptionType } from "./types"
-import { functions, staticValues } from "./helpers"
-
-// functions for the extractor
-const options: OptionType[] = [...functions, ...staticValues]
+import { ExtractorProps, EditorType, NodeType } from "./types"
 
 const stringRegex = /"([^\\"]|\\")*"/
 
-const expressionRootClass = "root-class"
-const expressionInputClass = "input-class"
+const expressionRootClass = "knit-ui_root-class"
+const expressionInputClass = "knit-ui_input-class"
 
 const validationFn = (val: any): boolean => {
   // mock api request
@@ -106,14 +102,12 @@ const ExpressionWrapper = styled.div`
   }
 `
 
-const Extractor: React.FC<ExtractorProps> = (props: ExtractorProps) => {
-  const { onChangeFn } = props
-  // initialize the editor state
-  const EditorData: EditorType = new EditorState()
+const Extractor: React.FC<ExtractorProps> = props => {
+  const { onChangeFn, options } = props
   // initialize root node of the expression
   const rootNode: NodeType = new TreeNode(null)
-  // Initialize our editor state with the root node
-  EditorData.initRoot(rootNode)
+  // initialize the editor state
+  const EditorData: EditorType = new EditorState(rootNode)
 
   return (
     <ExpressionWrapper tabIndex={0}>

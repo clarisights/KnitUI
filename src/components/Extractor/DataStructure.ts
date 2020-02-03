@@ -24,7 +24,7 @@ export class TreeNode {
 export class EditorState {
   root: NodeType
 
-  initRoot(node) {
+  constructor(node) {
     this.root = node
   }
 
