@@ -47,8 +47,9 @@ const Expression: FC<ExpressionRootPropTypes> = (
       while (
         initNode.lastElementChild &&
         initNode.dataset.type === "expression-root"
-      )
+      ) {
         initNode = initNode.lastElementChild
+      }
       initNode = initNode.firstElementChild
     } else {
       if (initNode.parentElement.dataset.type === "expression-root")

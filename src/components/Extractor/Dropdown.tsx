@@ -71,8 +71,10 @@ const Drop = (props: DropdownProps) => {
     // }
     // this is when you want to skip the top levels and only play in text fields
     else {
-      while (!currElement.nextElementSibling)
+      while (!currElement.nextElementSibling) {
         currElement = currElement.parentElement
+        if (currElement.dataset.type === "knit-ui_extractor-root") return
+      }
       currElement = currElement.nextElementSibling
     }
     // while (rootClasses.includes(finalElement.dataset.type)) {
