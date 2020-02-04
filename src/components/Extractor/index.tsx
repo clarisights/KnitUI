@@ -17,7 +17,7 @@ const validationFn = (val: any): boolean => {
   return res
 }
 
-const ExpressionWrapper = styled.div`
+const ExtractorWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
@@ -110,7 +110,7 @@ const Extractor: React.FC<ExtractorProps> = props => {
   const EditorData: EditorType = new EditorState(rootNode)
 
   return (
-    <ExpressionWrapper tabIndex={0}>
+    <ExtractorWrapper data-type="knit-ui_extractor-root" tabIndex={0}>
       <Dropdown
         EditorData={EditorData}
         onChangeFn={onChangeFn}
@@ -121,7 +121,7 @@ const Extractor: React.FC<ExtractorProps> = props => {
         placeholder="Enter your expression"
         validationFn={validationFn}
       />
-    </ExpressionWrapper>
+    </ExtractorWrapper>
   )
 }
 
