@@ -20,6 +20,7 @@ const validationFn = (val: any): boolean => {
 const ExtractorWrapper = styled.div`
   width: 100%;
   display: flex;
+  overflow: scroll;
   align-items: center;
   border: 1px solid ${props => getThemeColor(props, "Azure80")};
   box-sizing: border-box;
@@ -57,6 +58,7 @@ const ExtractorWrapper = styled.div`
   [data-type="expression-root"] {
     color: ${props => getThemeColor(props, "Green80")};
     box-sizing: border-box;
+    display: flex;
     padding: 0 0.4rem;
     &:focus {
       outline: 1px dashed ${props => getThemeColor(props, "Azure80")};
@@ -68,6 +70,7 @@ const ExtractorWrapper = styled.div`
     }
   }
   [data-type="expression-input-root"] {
+    display: flex;
     &:not(:last-child):after {
       content: ",";
     }
