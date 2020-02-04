@@ -142,7 +142,6 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
     <>
       {/* <label {...getLabelProps()}>Choose an element:</label> */}
       <div
-        style={{ display: "inline-block" }}
         data-type="expression-input-root"
         {...getComboboxProps()}
         className={expressionInputClass}>
