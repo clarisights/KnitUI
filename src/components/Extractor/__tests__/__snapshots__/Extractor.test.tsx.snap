@@ -1,0 +1,1212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Extractor builds data structure properly Builds correct string on input 1`] = `
+<DocumentFragment>
+  .c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #5ab2f2;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0.2rem #0066ff;
+}
+
+.c0 input {
+  border: 0;
+  outline: 0;
+  color: #1a1a1a;
+  height: 2rem;
+  border-radius: 0.4rem;
+  margin: 0 0.6rem;
+  background-color: inherit;
+  padding: 0 0.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0 input[data-value-type="dimension"] {
+  background-color: #fdedce;
+}
+
+.c0 input[data-valid="false"] {
+  border-bottom: 0.1rem dashed #990000;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.c0 input[data-valid="true"] {
+  border-bottom: 0;
+}
+
+.c0 [data-type="expression-root"] {
+  color: #036600;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.4rem;
+}
+
+.c0 [data-type="expression-root"]:focus {
+  outline: 1px dashed #5ab2f2;
+  box-sizing: border-box;
+  background: rgba(209,225,250,0.5);
+}
+
+.c0 [data-type="expression-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 [data-type="expression-input-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] > ul {
+  margin-top: 3rem;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 2px 7px rgba(153,153,153,0.3);
+  border-radius: 4px;
+  padding: 1.4rem 0;
+  width: 28rem;
+  position: absolute;
+}
+
+.c0 [data-type="expression-input-root"] > ul li {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.7rem 1.4rem;
+}
+
+.c0 [data-type="expression-input-root"] > ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:nth-child(2) {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:first-child {
+  color: #036600;
+}
+
+<div
+    class="c0"
+    data-type="knit-ui_extractor-root"
+    tabindex="0"
+  >
+    <span
+      class="knit-ui_root-class"
+      data-type="expression-root"
+      style="display: flex;"
+      tabindex="0"
+    >
+      CONCAT(
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-owns="downshift-20-menu"
+        class="knit-ui_input-class"
+        data-type="expression-input-root"
+        role="combobox"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-controls="downshift-20-menu"
+          aria-labelledby="downshift-20-label"
+          autocomplete="off"
+          data-valid="true"
+          data-value-type="dimension"
+          id="downshift-19-input"
+          placeholder="dim1"
+          style="width: 8px;"
+          value="Ad"
+        />
+        <div
+          style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+        >
+          Ad
+        </div>
+      </div>
+      <div
+        aria-expanded="true"
+        aria-haspopup="listbox"
+        aria-owns="downshift-22-menu"
+        class="knit-ui_input-class"
+        data-type="expression-input-root"
+        role="combobox"
+      >
+        <input
+          aria-activedescendant="downshift-22-item-0"
+          aria-autocomplete="list"
+          aria-controls="downshift-22-menu"
+          aria-labelledby="downshift-22-label"
+          autocomplete="off"
+          data-valid="true"
+          data-value-type="string"
+          id="downshift-21-input"
+          placeholder="dim2"
+          style="width: 8px;"
+          value="\\"_\\""
+        />
+        <div
+          style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+        >
+          "_"
+        </div>
+      </div>
+      )
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Extractor builds data structure properly Fires the onChange function 1`] = `
+<DocumentFragment>
+  .c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #5ab2f2;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0.2rem #0066ff;
+}
+
+.c0 input {
+  border: 0;
+  outline: 0;
+  color: #1a1a1a;
+  height: 2rem;
+  border-radius: 0.4rem;
+  margin: 0 0.6rem;
+  background-color: inherit;
+  padding: 0 0.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0 input[data-value-type="dimension"] {
+  background-color: #fdedce;
+}
+
+.c0 input[data-valid="false"] {
+  border-bottom: 0.1rem dashed #990000;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.c0 input[data-valid="true"] {
+  border-bottom: 0;
+}
+
+.c0 [data-type="expression-root"] {
+  color: #036600;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.4rem;
+}
+
+.c0 [data-type="expression-root"]:focus {
+  outline: 1px dashed #5ab2f2;
+  box-sizing: border-box;
+  background: rgba(209,225,250,0.5);
+}
+
+.c0 [data-type="expression-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 [data-type="expression-input-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] > ul {
+  margin-top: 3rem;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 2px 7px rgba(153,153,153,0.3);
+  border-radius: 4px;
+  padding: 1.4rem 0;
+  width: 28rem;
+  position: absolute;
+}
+
+.c0 [data-type="expression-input-root"] > ul li {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.7rem 1.4rem;
+}
+
+.c0 [data-type="expression-input-root"] > ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:nth-child(2) {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:first-child {
+  color: #036600;
+}
+
+<div
+    class="c0"
+    data-type="knit-ui_extractor-root"
+    tabindex="0"
+  >
+    <div
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-owns="downshift-16-menu"
+      class="knit-ui_input-class"
+      data-type="expression-input-root"
+      role="combobox"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls="downshift-16-menu"
+        aria-labelledby="downshift-16-label"
+        autocomplete="off"
+        data-valid="true"
+        data-value-type="dimension"
+        id="downshift-15-input"
+        placeholder="Enter your expression"
+        style="width: 8px;"
+        value="Ad"
+      />
+      <div
+        style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+      >
+        Ad
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Extractor renders properly Applies correct data attributes 1`] = `
+<DocumentFragment>
+  .c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #5ab2f2;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0.2rem #0066ff;
+}
+
+.c0 input {
+  border: 0;
+  outline: 0;
+  color: #1a1a1a;
+  height: 2rem;
+  border-radius: 0.4rem;
+  margin: 0 0.6rem;
+  background-color: inherit;
+  padding: 0 0.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0 input[data-value-type="dimension"] {
+  background-color: #fdedce;
+}
+
+.c0 input[data-valid="false"] {
+  border-bottom: 0.1rem dashed #990000;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.c0 input[data-valid="true"] {
+  border-bottom: 0;
+}
+
+.c0 [data-type="expression-root"] {
+  color: #036600;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.4rem;
+}
+
+.c0 [data-type="expression-root"]:focus {
+  outline: 1px dashed #5ab2f2;
+  box-sizing: border-box;
+  background: rgba(209,225,250,0.5);
+}
+
+.c0 [data-type="expression-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 [data-type="expression-input-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] > ul {
+  margin-top: 3rem;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 2px 7px rgba(153,153,153,0.3);
+  border-radius: 4px;
+  padding: 1.4rem 0;
+  width: 28rem;
+  position: absolute;
+}
+
+.c0 [data-type="expression-input-root"] > ul li {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.7rem 1.4rem;
+}
+
+.c0 [data-type="expression-input-root"] > ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:nth-child(2) {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:first-child {
+  color: #036600;
+}
+
+<div
+    class="c0"
+    data-type="knit-ui_extractor-root"
+    tabindex="0"
+  >
+    <div
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-owns="downshift-14-menu"
+      class="knit-ui_input-class"
+      data-type="expression-input-root"
+      role="combobox"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls="downshift-14-menu"
+        aria-labelledby="downshift-14-label"
+        autocomplete="off"
+        data-valid="true"
+        data-value-type="dimension"
+        id="downshift-13-input"
+        placeholder="Enter your expression"
+        style="width: 8px;"
+        value="Ad"
+      />
+      <div
+        style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+      >
+        Ad
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Extractor renders properly Hides options list on blur 1`] = `
+<DocumentFragment>
+  .c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #5ab2f2;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0.2rem #0066ff;
+}
+
+.c0 input {
+  border: 0;
+  outline: 0;
+  color: #1a1a1a;
+  height: 2rem;
+  border-radius: 0.4rem;
+  margin: 0 0.6rem;
+  background-color: inherit;
+  padding: 0 0.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0 input[data-value-type="dimension"] {
+  background-color: #fdedce;
+}
+
+.c0 input[data-valid="false"] {
+  border-bottom: 0.1rem dashed #990000;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.c0 input[data-valid="true"] {
+  border-bottom: 0;
+}
+
+.c0 [data-type="expression-root"] {
+  color: #036600;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.4rem;
+}
+
+.c0 [data-type="expression-root"]:focus {
+  outline: 1px dashed #5ab2f2;
+  box-sizing: border-box;
+  background: rgba(209,225,250,0.5);
+}
+
+.c0 [data-type="expression-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 [data-type="expression-input-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] > ul {
+  margin-top: 3rem;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 2px 7px rgba(153,153,153,0.3);
+  border-radius: 4px;
+  padding: 1.4rem 0;
+  width: 28rem;
+  position: absolute;
+}
+
+.c0 [data-type="expression-input-root"] > ul li {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.7rem 1.4rem;
+}
+
+.c0 [data-type="expression-input-root"] > ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:nth-child(2) {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:first-child {
+  color: #036600;
+}
+
+<div
+    class="c0"
+    data-type="knit-ui_extractor-root"
+    tabindex="0"
+  >
+    <div
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-owns="downshift-12-menu"
+      class="knit-ui_input-class"
+      data-type="expression-input-root"
+      role="combobox"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls="downshift-12-menu"
+        aria-labelledby="downshift-12-label"
+        autocomplete="off"
+        data-valid="true"
+        data-value-type="string"
+        id="downshift-11-input"
+        placeholder="Enter your expression"
+        style="width: 8px;"
+        value=""
+      />
+      <div
+        style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+      >
+        Enter your expression
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Extractor renders properly Renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #5ab2f2;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0.2rem #0066ff;
+}
+
+.c0 input {
+  border: 0;
+  outline: 0;
+  color: #1a1a1a;
+  height: 2rem;
+  border-radius: 0.4rem;
+  margin: 0 0.6rem;
+  background-color: inherit;
+  padding: 0 0.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0 input[data-value-type="dimension"] {
+  background-color: #fdedce;
+}
+
+.c0 input[data-valid="false"] {
+  border-bottom: 0.1rem dashed #990000;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.c0 input[data-valid="true"] {
+  border-bottom: 0;
+}
+
+.c0 [data-type="expression-root"] {
+  color: #036600;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.4rem;
+}
+
+.c0 [data-type="expression-root"]:focus {
+  outline: 1px dashed #5ab2f2;
+  box-sizing: border-box;
+  background: rgba(209,225,250,0.5);
+}
+
+.c0 [data-type="expression-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 [data-type="expression-input-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] > ul {
+  margin-top: 3rem;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 2px 7px rgba(153,153,153,0.3);
+  border-radius: 4px;
+  padding: 1.4rem 0;
+  width: 28rem;
+  position: absolute;
+}
+
+.c0 [data-type="expression-input-root"] > ul li {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.7rem 1.4rem;
+}
+
+.c0 [data-type="expression-input-root"] > ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:nth-child(2) {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:first-child {
+  color: #036600;
+}
+
+<div
+    class="c0"
+    data-type="knit-ui_extractor-root"
+    tabindex="0"
+  >
+    <div
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-owns="downshift-2-menu"
+      class="knit-ui_input-class"
+      data-type="expression-input-root"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant="downshift-2-item-0"
+        aria-autocomplete="list"
+        aria-controls="downshift-2-menu"
+        aria-labelledby="downshift-2-label"
+        autocomplete="off"
+        data-valid="true"
+        data-value-type="string"
+        id="downshift-1-input"
+        placeholder="Enter your expression"
+        style="width: 8px;"
+        value=""
+      />
+      <div
+        style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+      >
+        Enter your expression
+      </div>
+      <ul
+        aria-labelledby="downshift-2-label"
+        data-type="expression-list"
+        id="downshift-2-menu"
+        role="listbox"
+        style="background-color: white; font-weight: normal; position: absolute;"
+      >
+        <li
+          aria-selected="true"
+          data-item-type="function"
+          data-type="expression-list-item"
+          id="downshift-2-item-0"
+          role="option"
+          style="background-color: rgb(242, 242, 242);"
+        >
+          <span>
+            SPLIT
+          </span>
+          <span>
+            f(x)
+          </span>
+        </li>
+        <li
+          data-item-type="function"
+          data-type="expression-list-item"
+          id="downshift-2-item-1"
+          role="option"
+        >
+          <span>
+            CONCAT
+          </span>
+          <span>
+            f(x)
+          </span>
+        </li>
+        <li
+          data-item-type="function"
+          data-type="expression-list-item"
+          id="downshift-2-item-2"
+          role="option"
+        >
+          <span>
+            SUB
+          </span>
+          <span>
+            f(x)
+          </span>
+        </li>
+        <li
+          data-item-type="function"
+          data-type="expression-list-item"
+          id="downshift-2-item-3"
+          role="option"
+        >
+          <span>
+            EXTRACT
+          </span>
+          <span>
+            f(x)
+          </span>
+        </li>
+        <li
+          data-item-type="dimension"
+          data-type="expression-list-item"
+          id="downshift-2-item-4"
+          role="option"
+        >
+          <span>
+            Account
+          </span>
+          <span>
+            dim
+          </span>
+        </li>
+        <li
+          data-item-type="dimension"
+          data-type="expression-list-item"
+          id="downshift-2-item-5"
+          role="option"
+        >
+          <span>
+            Ad
+          </span>
+          <span>
+            dim
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Extractor renders properly Scaffolds an expression on typing one 1`] = `
+<DocumentFragment>
+  .c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #5ab2f2;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 1.4rem;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0.2rem #0066ff;
+}
+
+.c0 input {
+  border: 0;
+  outline: 0;
+  color: #1a1a1a;
+  height: 2rem;
+  border-radius: 0.4rem;
+  margin: 0 0.6rem;
+  background-color: inherit;
+  padding: 0 0.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c0 input[data-value-type="dimension"] {
+  background-color: #fdedce;
+}
+
+.c0 input[data-valid="false"] {
+  border-bottom: 0.1rem dashed #990000;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.c0 input[data-valid="true"] {
+  border-bottom: 0;
+}
+
+.c0 [data-type="expression-root"] {
+  color: #036600;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.4rem;
+}
+
+.c0 [data-type="expression-root"]:focus {
+  outline: 1px dashed #5ab2f2;
+  box-sizing: border-box;
+  background: rgba(209,225,250,0.5);
+}
+
+.c0 [data-type="expression-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 [data-type="expression-input-root"]:not(:last-child):after {
+  content: ",";
+}
+
+.c0 [data-type="expression-input-root"] > ul {
+  margin-top: 3rem;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 2px 7px rgba(153,153,153,0.3);
+  border-radius: 4px;
+  padding: 1.4rem 0;
+  width: 28rem;
+  position: absolute;
+}
+
+.c0 [data-type="expression-input-root"] > ul li {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.7rem 1.4rem;
+}
+
+.c0 [data-type="expression-input-root"] > ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:nth-child(2) {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
+.c0 [data-type="expression-input-root"] > ul li span:first-child {
+  color: #036600;
+}
+
+<div
+    class="c0"
+    data-type="knit-ui_extractor-root"
+    tabindex="0"
+  >
+    <span
+      class="knit-ui_root-class"
+      data-type="expression-root"
+      style="display: flex;"
+      tabindex="0"
+    >
+      EXTRACT(
+      <div
+        aria-expanded="true"
+        aria-haspopup="listbox"
+        aria-owns="downshift-6-menu"
+        class="knit-ui_input-class"
+        data-type="expression-input-root"
+        role="combobox"
+      >
+        <input
+          aria-activedescendant="downshift-6-item-0"
+          aria-autocomplete="list"
+          aria-controls="downshift-6-menu"
+          aria-labelledby="downshift-6-label"
+          autocomplete="off"
+          data-valid="true"
+          data-value-type="string"
+          id="downshift-5-input"
+          placeholder="dim1"
+          style="width: 8px;"
+          value=""
+        />
+        <div
+          style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+        >
+          dim1
+        </div>
+        <ul
+          aria-labelledby="downshift-6-label"
+          data-type="expression-list"
+          id="downshift-6-menu"
+          role="listbox"
+          style="background-color: white; font-weight: normal; position: absolute;"
+        >
+          <li
+            aria-selected="true"
+            data-item-type="function"
+            data-type="expression-list-item"
+            id="downshift-6-item-0"
+            role="option"
+            style="background-color: rgb(242, 242, 242);"
+          >
+            <span>
+              SPLIT
+            </span>
+            <span>
+              f(x)
+            </span>
+          </li>
+          <li
+            data-item-type="function"
+            data-type="expression-list-item"
+            id="downshift-6-item-1"
+            role="option"
+          >
+            <span>
+              CONCAT
+            </span>
+            <span>
+              f(x)
+            </span>
+          </li>
+          <li
+            data-item-type="function"
+            data-type="expression-list-item"
+            id="downshift-6-item-2"
+            role="option"
+          >
+            <span>
+              SUB
+            </span>
+            <span>
+              f(x)
+            </span>
+          </li>
+          <li
+            data-item-type="function"
+            data-type="expression-list-item"
+            id="downshift-6-item-3"
+            role="option"
+          >
+            <span>
+              EXTRACT
+            </span>
+            <span>
+              f(x)
+            </span>
+          </li>
+          <li
+            data-item-type="dimension"
+            data-type="expression-list-item"
+            id="downshift-6-item-4"
+            role="option"
+          >
+            <span>
+              Account
+            </span>
+            <span>
+              dim
+            </span>
+          </li>
+          <li
+            data-item-type="dimension"
+            data-type="expression-list-item"
+            id="downshift-6-item-5"
+            role="option"
+          >
+            <span>
+              Ad
+            </span>
+            <span>
+              dim
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-owns="downshift-8-menu"
+        class="knit-ui_input-class"
+        data-type="expression-input-root"
+        role="combobox"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-controls="downshift-8-menu"
+          aria-labelledby="downshift-8-label"
+          autocomplete="off"
+          data-valid="true"
+          data-value-type="string"
+          id="downshift-7-input"
+          placeholder="prefix_string"
+          style="width: 8px;"
+          value=""
+        />
+        <div
+          style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+        >
+          prefix_string
+        </div>
+      </div>
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-owns="downshift-10-menu"
+        class="knit-ui_input-class"
+        data-type="expression-input-root"
+        role="combobox"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-controls="downshift-10-menu"
+          aria-labelledby="downshift-10-label"
+          autocomplete="off"
+          data-valid="true"
+          data-value-type="string"
+          id="downshift-9-input"
+          placeholder="suffix_string"
+          style="width: 8px;"
+          value=""
+        />
+        <div
+          style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
+        >
+          suffix_string
+        </div>
+      </div>
+      )
+    </span>
+  </div>
+</DocumentFragment>
+`;

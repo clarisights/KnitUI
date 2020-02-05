@@ -1,8 +1,8 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { withKnobs, text, number, object } from "@storybook/addon-knobs"
-import Expression from "./index"
-import { functions, staticValues } from "./helpers"
+import { withKnobs } from "@storybook/addon-knobs"
+import Extractor from "../"
+import { functions, staticValues } from "../helpers"
 
 // functions for the extractor
 const options = [...functions, ...staticValues]
@@ -21,4 +21,4 @@ stories
       // Show readme at the addons panel
     },
   })
-  .add("Basic", () => <Expression options={options} onChangeFn={onChangeFn} />)
+  .add("Basic", () => <Extractor options={options} onChangeFn={onChangeFn} />)

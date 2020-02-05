@@ -75,7 +75,7 @@ const ExtractorWrapper = styled.div`
       content: ",";
     }
     & > ul {
-      margin-top: 1rem;
+      margin-top: 3rem;
       border: 1px solid ${props => getThemeColor(props, "Neutral20")};
       box-shadow: 0px 2px 7px rgba(153, 153, 153, 0.3);
       border-radius: 4px;
@@ -109,7 +109,7 @@ const Extractor: React.FC<ExtractorProps> = props => {
   const { onChangeFn, options } = props
   // initialize root node of the expression
   const rootNode: NodeType = new TreeNode(null)
-  // initialize the editor state
+  // initialize the editor state with root node
   const EditorData: EditorType = new EditorState(rootNode)
 
   return (
