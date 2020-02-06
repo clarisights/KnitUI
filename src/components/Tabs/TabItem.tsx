@@ -1,6 +1,7 @@
-import React, { CSSProperties, ReactNode, ReactComponentElement } from "react"
+import React from "react"
 import { SortableElement, SortableHandle } from "react-sortable-hoc"
-import styled, { CSSObject } from "styled-components"
+import styled from "styled-components"
+import { getTabContainerStyle } from "./utils"
 import { activeTabFlagsInterface } from "./types"
 import { Icon } from "../"
 import { getThemeColor } from "../../common/_utils"
@@ -28,45 +29,6 @@ type TabItemType = {
   dragHandle: boolean
   dragHandleElement: React.FC<any> | null
   readOnly: boolean
-}
-
-const getTabContainerStyle = (
-  activeTabFlags: activeTabFlagsInterface,
-  activeKeyIndex: number,
-  itemIndex: number,
-  itemRef: React.RefObject<HTMLDivElement>
-) => {
-  let styles: React.CSSProperties = { position: "relative", zIndex: 99 }
-  if (activeKeyIndex === itemIndex) {
-    styles = { position: "relative", zIndex: 101 }
-  }
-  if (activeTabFlags.left && activeKeyIndex === itemIndex) {
-    styles = {
-      position: "absolute",
-      zIndex: 101,
-    }
-  } else if (activeTabFlags.right && activeKeyIndex === itemIndex) {
-    styles = {
-      position: "absolute",
-      zIndex: 101,
-      right: 30,
-    }
-  }
-  const current = itemRef.current
-  if (activeTabFlags.left && activeKeyIndex === itemIndex - 1) {
-    styles = {
-      position: "relative",
-      marginLeft:
-        (current && current.getBoundingClientRect().width) || undefined,
-    }
-  } else if (activeTabFlags.right && activeKeyIndex === itemIndex + 1) {
-    styles = {
-      position: "relative",
-      marginRight:
-        (current && current.getBoundingClientRect().width) || undefined,
-    }
-  }
-  return styles
 }
 
 const DragIcon = styled(Icon)`

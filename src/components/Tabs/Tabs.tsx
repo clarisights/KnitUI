@@ -1,5 +1,5 @@
 import React, { Children, useState, useEffect, useRef } from "react"
-import styled, { css, createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import arrayMove from "array-move"
 import {
   TabsProps,
@@ -10,6 +10,7 @@ import {
 import { Button, Icon } from ".."
 import { TabsList } from "./TabsList"
 import { getThemeColor, getOSName } from "../../common/_utils"
+import { getWidthFromRef } from "./utils"
 
 /* The tab being dragged is appended to the body, hence it's styles need to be at global scope*/
 const GlobalStyle = createGlobalStyle`
@@ -64,10 +65,7 @@ const OverflowContainer = styled.div`
   box-sizing: content-box;
 `
 
-const BlurElement = styled.div<{
-  dir: string
-  visible: boolean
-}>`
+const BlurElement = styled.div<{ dir: string; visible: boolean }>`
   width: 80px;
   height: 100%;
   position: absolute;
@@ -234,6 +232,10 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
   const activeNxtRef: React.RefObject<HTMLDivElement> = useRef(null)
   // ref for tab before active tab
   const activePrevRef: React.RefObject<HTMLDivElement> = useRef(null)
+  // ref for left-arrow wrapper, instead of hard code width better to use ref.
+  const leftArrowRef: React.RefObject<HTMLDivElement> = useRef(null)
+  // ref for right-arrow wrapper, instead of hard code width better to use ref.
+  const rightArrowRef: React.RefObject<HTMLDivElement> = useRef(null)
 
   useEffect(() => {
     const current = listRef.current
@@ -320,14 +322,17 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
       <TabsWrapper hideTabContent={hideTabContent}>
         <TabsPanelWrapper>
           <OverflowWrapper>
-            <IconWrapper visible={showLeftArrow} onClick={handleScrollLeft}>
+            <IconWrapper
+              ref={leftArrowRef}
+              visible={showLeftArrow}
+              onClick={handleScrollLeft}>
               <Icon type="oKeyboardArrowLeft" size="18px" fill="#000000" />
             </IconWrapper>
             <BlurElement
               visible={showLeftBlur}
               dir="left"
               style={{
-                left: 18,
+                left: getWidthFromRef(leftArrowRef),
               }}
             />
             <OverflowContainer ref={listRef}>
@@ -358,10 +363,13 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               visible={showRightBlur}
               dir="right"
               style={{
-                right: 28,
+                right: getWidthFromRef(rightArrowRef),
               }}
             />
-            <IconWrapper visible={showRightArrow} onClick={handleScrollRight}>
+            <IconWrapper
+              ref={rightArrowRef}
+              visible={showRightArrow}
+              onClick={handleScrollRight}>
               <Icon type="oKeyboardArrowRight" size="18px" fill="#000000" />
             </IconWrapper>
           </OverflowWrapper>
