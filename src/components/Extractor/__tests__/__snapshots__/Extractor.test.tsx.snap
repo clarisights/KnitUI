@@ -8,18 +8,27 @@ exports[`Extractor builds data structure properly Builds correct string on input
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {
@@ -200,18 +209,27 @@ exports[`Extractor builds data structure properly Fires the onChange function 1`
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {
@@ -356,18 +374,27 @@ exports[`Extractor renders properly Applies correct data attributes 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {
@@ -512,18 +539,27 @@ exports[`Extractor renders properly Hides options list on blur 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {
@@ -668,18 +704,27 @@ exports[`Extractor renders properly Renders correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {
@@ -913,18 +958,27 @@ exports[`Extractor renders properly Scaffolds an expression on typing one 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {
@@ -1037,7 +1091,7 @@ exports[`Extractor renders properly Scaffolds an expression on typing one 1`] = 
       style="display: flex;"
       tabindex="0"
     >
-      EXTRACT(
+      SPLIT(
       <div
         aria-expanded="true"
         aria-haspopup="listbox"
@@ -1055,14 +1109,14 @@ exports[`Extractor renders properly Scaffolds an expression on typing one 1`] = 
           data-valid="true"
           data-value-type="string"
           id="downshift-5-input"
-          placeholder="dim1"
+          placeholder="dim"
           style="width: 8px;"
           value=""
         />
         <div
           style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
         >
-          dim1
+          dim
         </div>
         <ul
           aria-labelledby="downshift-6-label"
@@ -1169,14 +1223,14 @@ exports[`Extractor renders properly Scaffolds an expression on typing one 1`] = 
           data-valid="true"
           data-value-type="string"
           id="downshift-7-input"
-          placeholder="prefix_string"
+          placeholder="delimiter"
           style="width: 8px;"
           value=""
         />
         <div
           style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
         >
-          prefix_string
+          delimiter
         </div>
       </div>
       <div
@@ -1195,14 +1249,14 @@ exports[`Extractor renders properly Scaffolds an expression on typing one 1`] = 
           data-valid="true"
           data-value-type="string"
           id="downshift-9-input"
-          placeholder="suffix_string"
+          placeholder="occurrence_number"
           style="width: 8px;"
           value=""
         />
         <div
           style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre;"
         >
-          suffix_string
+          occurrence_number
         </div>
       </div>
       )
@@ -1219,18 +1273,27 @@ exports[`Keyboard events work properly Should delete the expression root on pres
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {
@@ -1464,18 +1527,27 @@ exports[`Keyboard events work properly Should navigate to the expression root on
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {
@@ -1655,18 +1727,27 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #5ab2f2;
   box-sizing: border-box;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: 0.4rem;
   height: 3.2rem;
   font-size: 1.4rem;
   line-height: 2rem;
   padding-left: 1.4rem;
+}
+
+.c0::-webkit-scrollbar {
+  display: none;
 }
 
 .c0:focus {

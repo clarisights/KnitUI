@@ -1,6 +1,5 @@
 import React from "react"
 import Extractor from "../"
-// import { ThemeProvider } from "../../../common/styles"
 import { cleanup, fireEvent, render } from "../../../common/TestUtil"
 import { functions, staticValues } from "../helpers"
 
@@ -8,6 +7,9 @@ afterEach(cleanup)
 
 // functions for the extractor
 const options = [...functions, ...staticValues]
+
+const concatFunction = functions[1]
+const adDimension = staticValues[1]
 
 const onUpdate = editorState => {
   return editorState.buildExpression()
@@ -40,7 +42,9 @@ describe("Extractor renders properly", () => {
     const { asFragment } = render(<Extractor {...extractorProps} />)
     // Get the root input element
     const { activeElement } = document
-    fireEvent.input(activeElement as any, { target: { value: "extract" } })
+    fireEvent.input(activeElement as any, {
+      target: { value: functions[0].key },
+    })
 
     // Check that all params are scaffolded properly
     const expressionInputRoots = document.querySelectorAll(
@@ -76,7 +80,9 @@ describe("Extractor renders properly", () => {
 
     // Get the root input element
     const { activeElement } = document
-    fireEvent.input(activeElement as any, { target: { value: "Ad" } })
+    fireEvent.input(activeElement as any, {
+      target: { value: staticValues[1].label },
+    })
 
     // Check for attributes
     expect(activeElement).toHaveAttribute("data-value-type", "dimension")
@@ -95,7 +101,9 @@ describe("Extractor builds data structure properly", () => {
 
     // Get the root input element
     const { activeElement } = document
-    fireEvent.change(activeElement as any, { target: { value: "Ad" } })
+    fireEvent.change(activeElement as any, {
+      target: { value: adDimension.label },
+    })
 
     expect(onChangeFn).toHaveBeenCalled()
 
@@ -110,14 +118,18 @@ describe("Extractor builds data structure properly", () => {
 
     // Scaffold and expression
     const { activeElement } = document
-    fireEvent.change(activeElement as any, { target: { value: "concat" } })
+    fireEvent.change(activeElement as any, {
+      target: { value: concatFunction.label },
+    })
 
     // Get scaffolded params
     const expressionParamsInput = document.querySelectorAll(
       '[data-type="expression-input-root"] input'
     )
     expect(expressionParamsInput).toHaveLength(2)
-    fireEvent.change(expressionParamsInput[0], { target: { value: "Ad" } })
+    fireEvent.change(expressionParamsInput[0], {
+      target: { value: adDimension.label },
+    })
     fireEvent.change(expressionParamsInput[1], { target: { value: '"_"' } })
 
     expect(onChangeFn).toHaveBeenCalledTimes(3)
@@ -133,7 +145,9 @@ describe("Keyboard events work properly", () => {
 
     // Get the root input element
     let { activeElement } = document
-    fireEvent.change(activeElement as any, { target: { value: "concat" } })
+    fireEvent.change(activeElement as any, {
+      target: { value: concatFunction.key },
+    })
 
     // Active element will be changed to the first param of the expression
     activeElement = document.activeElement
@@ -152,7 +166,9 @@ describe("Keyboard events work properly", () => {
 
     // Get the root input element
     let { activeElement } = document
-    fireEvent.change(activeElement as any, { target: { value: "concat" } })
+    fireEvent.change(activeElement as any, {
+      target: { value: concatFunction.key },
+    })
 
     // Active element will be changed to the first param of the expression
     activeElement = document.activeElement
@@ -183,7 +199,9 @@ describe("Keyboard events work properly", () => {
 
     // Get the root input element
     let { activeElement } = document
-    fireEvent.change(activeElement as any, { target: { value: "concat" } })
+    fireEvent.change(activeElement as any, {
+      target: { value: concatFunction.key },
+    })
 
     // Active element will be changed to the first param of the expression
     activeElement = document.activeElement

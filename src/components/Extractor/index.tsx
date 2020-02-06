@@ -20,10 +20,16 @@ const validationFn = (val: any): boolean => {
 const ExtractorWrapper = styled.div`
   width: 100%;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   align-items: center;
   border: 1px solid ${props => getThemeColor(props, "Azure80")};
   box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   &:focus {
     box-shadow: 0 0 0.2rem #0066ff;
   }
