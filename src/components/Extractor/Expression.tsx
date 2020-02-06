@@ -63,6 +63,7 @@ const Expression: FC<ExpressionRootPropTypes> = (
     // remove node when backspace is pressed and expression is in focus
     switch (e.keyCode) {
       case 8:
+      case 46:
         if (rootFocus) {
           setExp(false)
           node.clearChildren()
