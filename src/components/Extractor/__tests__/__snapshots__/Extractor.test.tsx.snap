@@ -1340,20 +1340,20 @@ exports[`Keyboard events work properly Should delete the expression root on pres
     <div
       aria-expanded="true"
       aria-haspopup="listbox"
-      aria-owns="downshift-20-menu"
+      aria-owns="downshift-42-menu"
       class="knit-ui_input-class"
       data-type="expression-input-root"
       role="combobox"
     >
       <input
-        aria-activedescendant="downshift-20-item-0"
+        aria-activedescendant="downshift-42-item-0"
         aria-autocomplete="list"
-        aria-controls="downshift-20-menu"
-        aria-labelledby="downshift-20-label"
+        aria-controls="downshift-42-menu"
+        aria-labelledby="downshift-42-label"
         autocomplete="off"
         data-valid="true"
         data-value-type="string"
-        id="downshift-19-input"
+        id="downshift-41-input"
         placeholder="Enter your expression"
         style="width: 8px;"
         value=""
@@ -1364,9 +1364,9 @@ exports[`Keyboard events work properly Should delete the expression root on pres
         Enter your expression
       </div>
       <ul
-        aria-labelledby="downshift-20-label"
+        aria-labelledby="downshift-42-label"
         data-type="expression-list"
-        id="downshift-20-menu"
+        id="downshift-42-menu"
         role="listbox"
         style="background-color: white; font-weight: normal; position: absolute;"
       >
@@ -1374,7 +1374,7 @@ exports[`Keyboard events work properly Should delete the expression root on pres
           aria-selected="true"
           data-item-type="function"
           data-type="expression-list-item"
-          id="downshift-20-item-0"
+          id="downshift-42-item-0"
           role="option"
           style="background-color: rgb(242, 242, 242);"
         >
@@ -1388,7 +1388,7 @@ exports[`Keyboard events work properly Should delete the expression root on pres
         <li
           data-item-type="function"
           data-type="expression-list-item"
-          id="downshift-20-item-1"
+          id="downshift-42-item-1"
           role="option"
         >
           <span>
@@ -1401,7 +1401,7 @@ exports[`Keyboard events work properly Should delete the expression root on pres
         <li
           data-item-type="function"
           data-type="expression-list-item"
-          id="downshift-20-item-2"
+          id="downshift-42-item-2"
           role="option"
         >
           <span>
@@ -1414,7 +1414,7 @@ exports[`Keyboard events work properly Should delete the expression root on pres
         <li
           data-item-type="function"
           data-type="expression-list-item"
-          id="downshift-20-item-3"
+          id="downshift-42-item-3"
           role="option"
         >
           <span>
@@ -1427,7 +1427,7 @@ exports[`Keyboard events work properly Should delete the expression root on pres
         <li
           data-item-type="dimension"
           data-type="expression-list-item"
-          id="downshift-20-item-4"
+          id="downshift-42-item-4"
           role="option"
         >
           <span>
@@ -1440,7 +1440,7 @@ exports[`Keyboard events work properly Should delete the expression root on pres
         <li
           data-item-type="dimension"
           data-type="expression-list-item"
-          id="downshift-20-item-5"
+          id="downshift-42-item-5"
           role="option"
         >
           <span>
@@ -1592,19 +1592,19 @@ exports[`Keyboard events work properly Should navigate to the expression root on
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        aria-owns="downshift-4-menu"
+        aria-owns="downshift-26-menu"
         class="knit-ui_input-class"
         data-type="expression-input-root"
         role="combobox"
       >
         <input
           aria-autocomplete="list"
-          aria-controls="downshift-4-menu"
-          aria-labelledby="downshift-4-label"
+          aria-controls="downshift-26-menu"
+          aria-labelledby="downshift-26-label"
           autocomplete="off"
           data-valid="true"
           data-value-type="string"
-          id="downshift-3-input"
+          id="downshift-25-input"
           placeholder="dim1"
           style="width: 8px;"
           value=""
@@ -1618,19 +1618,19 @@ exports[`Keyboard events work properly Should navigate to the expression root on
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        aria-owns="downshift-6-menu"
+        aria-owns="downshift-28-menu"
         class="knit-ui_input-class"
         data-type="expression-input-root"
         role="combobox"
       >
         <input
           aria-autocomplete="list"
-          aria-controls="downshift-6-menu"
-          aria-labelledby="downshift-6-label"
+          aria-controls="downshift-28-menu"
+          aria-labelledby="downshift-28-label"
           autocomplete="off"
           data-valid="true"
           data-value-type="string"
-          id="downshift-5-input"
+          id="downshift-27-input"
           placeholder="dim2"
           style="width: 8px;"
           value=""
@@ -1783,19 +1783,19 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        aria-owns="downshift-10-menu"
+        aria-owns="downshift-32-menu"
         class="knit-ui_input-class"
         data-type="expression-input-root"
         role="combobox"
       >
         <input
           aria-autocomplete="list"
-          aria-controls="downshift-10-menu"
-          aria-labelledby="downshift-10-label"
+          aria-controls="downshift-32-menu"
+          aria-labelledby="downshift-32-label"
           autocomplete="off"
           data-valid="true"
           data-value-type="string"
-          id="downshift-9-input"
+          id="downshift-31-input"
           placeholder="dim1"
           style="width: 8px;"
           value=""
@@ -1809,20 +1809,20 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
       <div
         aria-expanded="true"
         aria-haspopup="listbox"
-        aria-owns="downshift-12-menu"
+        aria-owns="downshift-34-menu"
         class="knit-ui_input-class"
         data-type="expression-input-root"
         role="combobox"
       >
         <input
-          aria-activedescendant="downshift-12-item-0"
+          aria-activedescendant="downshift-34-item-0"
           aria-autocomplete="list"
-          aria-controls="downshift-12-menu"
-          aria-labelledby="downshift-12-label"
+          aria-controls="downshift-34-menu"
+          aria-labelledby="downshift-34-label"
           autocomplete="off"
           data-valid="true"
           data-value-type="string"
-          id="downshift-11-input"
+          id="downshift-33-input"
           placeholder="dim2"
           style="width: 8px;"
           value=""
@@ -1833,9 +1833,9 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
           dim2
         </div>
         <ul
-          aria-labelledby="downshift-12-label"
+          aria-labelledby="downshift-34-label"
           data-type="expression-list"
-          id="downshift-12-menu"
+          id="downshift-34-menu"
           role="listbox"
           style="background-color: white; font-weight: normal; position: absolute;"
         >
@@ -1843,7 +1843,7 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
             aria-selected="true"
             data-item-type="function"
             data-type="expression-list-item"
-            id="downshift-12-item-0"
+            id="downshift-34-item-0"
             role="option"
             style="background-color: rgb(242, 242, 242);"
           >
@@ -1857,7 +1857,7 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
           <li
             data-item-type="function"
             data-type="expression-list-item"
-            id="downshift-12-item-1"
+            id="downshift-34-item-1"
             role="option"
           >
             <span>
@@ -1870,7 +1870,7 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
           <li
             data-item-type="function"
             data-type="expression-list-item"
-            id="downshift-12-item-2"
+            id="downshift-34-item-2"
             role="option"
           >
             <span>
@@ -1883,7 +1883,7 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
           <li
             data-item-type="function"
             data-type="expression-list-item"
-            id="downshift-12-item-3"
+            id="downshift-34-item-3"
             role="option"
           >
             <span>
@@ -1896,7 +1896,7 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
           <li
             data-item-type="dimension"
             data-type="expression-list-item"
-            id="downshift-12-item-4"
+            id="downshift-34-item-4"
             role="option"
           >
             <span>
@@ -1909,7 +1909,7 @@ exports[`Keyboard events work properly Should navigate to the next param on pres
           <li
             data-item-type="dimension"
             data-type="expression-list-item"
-            id="downshift-12-item-5"
+            id="downshift-34-item-5"
             role="option"
           >
             <span>
