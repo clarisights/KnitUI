@@ -126,3 +126,79 @@ describe("Extractor builds data structure properly", () => {
     expect(asFragment()).toMatchSnapshot()
   })
 })
+
+describe("Keyboard events work properly", () => {
+  it("Should navigate to the expression root on pressing left on first param", () => {
+    const { asFragment } = render(<Extractor {...extractorProps} />)
+
+    // Get the root input element
+    let { activeElement } = document
+    fireEvent.change(activeElement as any, { target: { value: "concat" } })
+
+    // Active element will be changed to the first param of the expression
+    activeElement = document.activeElement
+
+    // Fire left arrow key
+    fireEvent.keyDown(activeElement as any, { keyCode: 37 })
+
+    // Check that the focus has shifted to the root of the expression
+    activeElement = document.activeElement
+    expect(activeElement).toHaveAttribute("data-type", "expression-root")
+
+    expect(asFragment()).toMatchSnapshot()
+  })
+  it("Should navigate to the next param on pressing right ", () => {
+    const { asFragment } = render(<Extractor {...extractorProps} />)
+
+    // Get the root input element
+    let { activeElement } = document
+    fireEvent.change(activeElement as any, { target: { value: "concat" } })
+
+    // Active element will be changed to the first param of the expression
+    activeElement = document.activeElement
+
+    // Fire left arrow key
+    fireEvent.keyDown(activeElement as any, { keyCode: 39 })
+
+    // Check that the focus has shifted to the root of the expression
+    activeElement = document.activeElement
+    expect(activeElement!.parentElement).toHaveAttribute(
+      "data-type",
+      "expression-input-root"
+    )
+    const allInputs = document.querySelectorAll(
+      '[data-type="expression-input-root"]'
+    )
+    const lastInput = allInputs[1].firstElementChild
+    expect(lastInput).toEqual(activeElement)
+
+    // Check that on pressing right, the focus stays for last param
+    fireEvent.keyDown(activeElement as any, { keyCode: 39 })
+    expect(document.activeElement).toEqual(lastInput)
+
+    expect(asFragment()).toMatchSnapshot()
+  })
+  it("Should delete the expression root on pressing backspace ", () => {
+    const { asFragment } = render(<Extractor {...extractorProps} />)
+
+    // Get the root input element
+    let { activeElement } = document
+    fireEvent.change(activeElement as any, { target: { value: "concat" } })
+
+    // Active element will be changed to the first param of the expression
+    activeElement = document.activeElement
+
+    // Fire left arrow key
+    fireEvent.keyDown(activeElement as any, { keyCode: 37 })
+
+    // Get the expression root
+    activeElement = document.activeElement
+
+    // Press backspace
+    fireEvent.keyDown(activeElement as any, { keyCode: 8 })
+    // Expression root should have been removed by now
+    expect(activeElement).not.toBeInTheDocument()
+
+    expect(asFragment()).toMatchSnapshot()
+  })
+})
