@@ -7,6 +7,7 @@ import React, {
 } from "react"
 import { useCombobox } from "downshift"
 import { SelectorPropTypes, OptionType } from "./types"
+import { Neutral10 } from "../../common/styles/palette"
 
 const menuStyles: CSSProperties = {
   backgroundColor: "white",
@@ -88,12 +89,10 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
         if (state.highlightedIndex > -1) {
           handleValueTypeChange(actionAndChanges.changes.selectedItem.label)
         }
-
-        // focus again on the input
-        if (inputRef.current) {
-          inputRef.current.focus()
-        }
-
+        // // focus again on the input
+        // if (inputRef.current) {
+        //   inputRef.current.focus()
+        // }
         return {
           ...actionAndChanges.changes,
           // if we had an item highlighted in the previous state.
@@ -174,7 +173,7 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = (
                 data-item-type={item.type}
                 style={
                   highlightedIndex === index
-                    ? { backgroundColor: "#f2f2f2" }
+                    ? { backgroundColor: Neutral10.hex }
                     : {}
                 }
                 key={`${item.key}${index}`}
