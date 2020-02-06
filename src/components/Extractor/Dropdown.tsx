@@ -54,7 +54,6 @@ const Drop = (props: DropdownProps) => {
     if (valueType === "fn") setExp(true)
 
     if (onChangeFn) onChangeFn(EditorData)
-    // console.log(EditorData.buildExpression())
   }
 
   const getNextNode = () => {
@@ -65,11 +64,7 @@ const Drop = (props: DropdownProps) => {
     // if the present element has a next sibling, directly switch to next
     if (currElement.nextElementSibling)
       currElement = currElement.nextElementSibling
-    // else keep going levels up till you find a next node
-    // else {
-    // 	currElement = currElement.parentNode
-    // }
-    // this is when you want to skip the top levels and only play in text fields
+    // this is when you want to skip the top levels and only switch in text fields
     else {
       while (!currElement.nextElementSibling) {
         currElement = currElement.parentElement
@@ -77,9 +72,6 @@ const Drop = (props: DropdownProps) => {
       }
       currElement = currElement.nextElementSibling
     }
-    // while (rootClasses.includes(finalElement.dataset.type)) {
-    // 	finalElement = finalElement.firstElementChild
-    // }
 
     if (currElement.dataset.type !== "expression-root")
       currElement = currElement.firstElementChild
@@ -95,16 +87,9 @@ const Drop = (props: DropdownProps) => {
     // if the present element has a next sibling, directly switch to next
     if (currElement.previousElementSibling)
       currElement = currElement.previousElementSibling
-    // else {
-    // 	currElement = currElement.parentNode
-    // }
-    // else keep going levels up till you find a next node
     else {
       if (!currElement.previousElementSibling)
         currElement = currElement.parentElement
-      // if (currElement.dataset.type === 'expression-root' && initialFocus)
-      // 	return currElement
-      // currElement = currElement.lastElementChild
     }
     // some transitions as per the element we arrive on
     while (currElement.dataset.type === "expression-root" && !initialFocus) {
@@ -113,7 +98,6 @@ const Drop = (props: DropdownProps) => {
     if (currElement.dataset.type === "expression-input-root") {
       currElement = currElement.firstElementChild
     }
-    // console.log(currElement)
     return currElement
   }
 
@@ -122,7 +106,7 @@ const Drop = (props: DropdownProps) => {
     const inputNode = dropRef.current!
     switch (e.keyCode) {
       case 39:
-        // only when I'm at last caret position
+        // only  at last caret position
         if (inputNode.selectionStart !== inputNode.value.length) return
         e.preventDefault()
         const nextNode = getNextNode()
