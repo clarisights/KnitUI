@@ -12,6 +12,8 @@ exports[`Avatar Snapshots Different size icon avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
   line-height: calc(2.0 * 100px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: transparent;
   border: 1px solid transparent;
 }
@@ -111,6 +113,8 @@ exports[`Avatar Snapshots Different size name avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
   line-height: calc(2.0 * 100px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -200,6 +204,8 @@ exports[`Avatar Snapshots Different size picture avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
   line-height: calc(2.0 * 100px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: transparent;
   border: 1px solid #f2f2f2;
 }
@@ -291,6 +297,8 @@ exports[`Avatar Snapshots Disabled icon avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
   line-height: calc(2.0 * 100px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: transparent;
   border: 1px solid transparent;
 }
@@ -391,6 +399,8 @@ exports[`Avatar Snapshots Disabled name avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
   line-height: calc(2.0 * 100px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -481,6 +491,8 @@ exports[`Avatar Snapshots Disabled picture avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 100px / 2.4);
   line-height: calc(2.0 * 100px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: transparent;
   border: 1px solid #f2f2f2;
 }
@@ -573,6 +585,8 @@ exports[`Avatar Snapshots Name avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 24px / 2.4);
   line-height: calc(2.0 * 24px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -662,6 +676,8 @@ exports[`Avatar Snapshots Picture avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 24px / 2.4);
   line-height: calc(2.0 * 24px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: transparent;
   border: 1px solid #f2f2f2;
 }
@@ -753,6 +769,8 @@ exports[`Avatar Snapshots Unknown user avatar 1`] = `
   color: #1a1a1a;
   font-size: calc(1.4 * 24px / 2.4);
   line-height: calc(2.0 * 24px / 2.4);
+  -webkit-mask-image: radial-gradient(white,black);
+  mask-image: radial-gradient(white,black);
   background: transparent;
   border: 1px solid transparent;
 }

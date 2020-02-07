@@ -124,6 +124,12 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
   font-size: ${props => getFontSize(props)};
   line-height: ${props => getLineHeight(props)};
 
+  /* 
+   * Require for safari to behave sane. On transform, overflow: hidden property not working for img component
+   * [Bug](https://stackoverflow.com/questions/21087979/probleme-css3-scale-transform-and-overflowhidden-on-safari)  
+   */
+  mask-image: radial-gradient(white, black);
+
   /* Below Basic Property & corresponding function calls which will play role in :
    * all three types of Avatar -
    *  - isPicture
