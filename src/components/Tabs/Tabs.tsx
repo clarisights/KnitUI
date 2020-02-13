@@ -14,8 +14,9 @@ import { getWidthFromRef } from "./utils"
 
 /* The tab being dragged is appended to the body, hence it's styles need to be at global scope*/
 const GlobalStyle = createGlobalStyle`
-.knitui-tabs-helper {
+.knitui-tabs-helper:not(#knit-active-tab) {
   background: ${props => getThemeColor(props, "Beige10")};
+  
   &:before {
     content: "";
     position: absolute;
@@ -26,6 +27,9 @@ const GlobalStyle = createGlobalStyle`
     width: 1px;
     background: ${props => getThemeColor(props, "Neutral40")};
   }
+}
+
+.knitui-tabs-helper {
   white-space: nowrap;
 }
 `
