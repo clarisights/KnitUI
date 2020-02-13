@@ -125,11 +125,12 @@ stories
       <Tabs onAddTab={() => alert("callback for create add")}>
         <TabPanel
           tab={
-            <div style={{ height: "100%", width: "100px", display: "flex" }}>
-              tab 1{" "}
+            <div style={{ height: "100%", width: "4.9rem", display: "flex" }}>
+              <div style={{ paddingRight: "0.7rem" }}>tab 1 </div>
               <Button
                 icon="oFilterList"
                 size="small"
+                bare={true}
                 onClick={() => {
                   alert("Clicked on inside button")
                 }}
