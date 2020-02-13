@@ -10,7 +10,7 @@ export const getTabContainerStyle = (
   itemIndex: number,
   itemRef: React.RefObject<HTMLDivElement>
 ) => {
-  let styles: React.CSSProperties = { zIndex: 99 }
+  let styles: React.CSSProperties = { zIndex: 99, position: "relative" }
   if (activeKeyIndex === itemIndex) {
     styles = { zIndex: 101 }
   }
