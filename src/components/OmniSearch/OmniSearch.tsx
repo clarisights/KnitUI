@@ -1,7 +1,7 @@
 import React, { Component, RefObject } from "react"
 import styled from "styled-components"
 import Dialog from "rc-dialog"
-import Icon from "../Icon"
+import Input from "../Input"
 import { OmniSearchProps } from "./types"
 
 import "rc-dialog/assets/index.css"
@@ -13,15 +13,7 @@ const StyledDialog = styled(Dialog)`
 `
 
 const InputWrapper = styled.div`
-  padding: 10px;
-  display: flex;
-  margin: 7px 14px;
-  align-items: center;
-  &:focus-within {
-    border: 1px solid ${props => getColor(props, "Azure80")};
-    box-shadow: 0px 0px 2px #0066ff;
-    border-radius: 4px;
-  }
+  padding: 0.7rem 1.4rem;
 `
 
 const StyledInput = styled.input`
@@ -35,8 +27,10 @@ const StyledInput = styled.input`
   }
 `
 
-const getColor = (props:any, color: string) => {
-  const { theme: { knitui } } = props
+const getColor = (props: any, color: string) => {
+  const {
+    theme: { knitui },
+  } = props
   return knitui.chromaPalette[color]
 }
 
@@ -69,11 +63,11 @@ class OmniSearch extends Component<OmniSearchProps> {
     return (
       <StyledDialog visible={visible} onClose={onClose} closable={false}>
         <InputWrapper>
-          <Icon type={"oSearch"} size={"1.8rem"} fill="#A6A6A6" />
-          <StyledInput
+          <Input
             type="search"
             role="search"
             autoFocus
+            inputSize="large"
             value={value}
             onChange={onChange}
             onBlur={this.focusSearch}
