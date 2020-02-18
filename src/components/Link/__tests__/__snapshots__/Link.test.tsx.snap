@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link component should not work when disabled 1`] = `
+<DocumentFragment>
+  .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #002966;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  border-radius: 0.4rem;
+  border: 0.1rem solid transparent;
+  text-underline-position: under;
+}
+
+.c0[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0[disabled]:active {
+  pointer-events: none;
+}
+
+.c0:focus {
+  box-sizing: border-box;
+  border: 0.1rem solid #5ab2f2;
+  box-shadow: 0rem 0rem 0.2rem #0066ff;
+}
+
+<a
+    class="knit-link c0"
+    disabled=""
+    href="https://github.com/clarisights/KnitUI"
+  >
+    KnitUI
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component should render correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #002966;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  border-radius: 0.4rem;
+  border: 0.1rem solid transparent;
+  text-underline-position: under;
+}
+
+.c0[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0[disabled]:active {
+  pointer-events: none;
+}
+
+.c0:focus {
+  box-sizing: border-box;
+  border: 0.1rem solid #5ab2f2;
+  box-shadow: 0rem 0rem 0.2rem #0066ff;
+}
+
+<a
+    class="c0"
+    href="https://github.com/clarisights/KnitUI"
+  >
+    KnitUI
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component should support new tab 1`] = `
+<DocumentFragment>
+  .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #002966;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  border-radius: 0.4rem;
+  border: 0.1rem solid transparent;
+  text-underline-position: under;
+}
+
+.c0[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0[disabled]:active {
+  pointer-events: none;
+}
+
+.c0:focus {
+  box-sizing: border-box;
+  border: 0.1rem solid #5ab2f2;
+  box-shadow: 0rem 0rem 0.2rem #0066ff;
+}
+
+<a
+    class="knit-link c0"
+    href="https://github.com/clarisights/KnitUI"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    KnitUI
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link component should support underline prop 1`] = `
+<DocumentFragment>
+  .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #002966;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  border-radius: 0.4rem;
+  border: 0.1rem solid transparent;
+  text-underline-position: under;
+}
+
+.c0[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.c0[disabled]:active {
+  pointer-events: none;
+}
+
+.c0:focus {
+  box-sizing: border-box;
+  border: 0.1rem solid #5ab2f2;
+  box-shadow: 0rem 0rem 0.2rem #0066ff;
+}
+
+<a
+    class="knit-link c0"
+    href="https://github.com/clarisights/KnitUI"
+  >
+    KnitUI
+  </a>
+</DocumentFragment>
+`;
