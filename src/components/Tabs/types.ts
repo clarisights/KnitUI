@@ -41,7 +41,37 @@ export interface TabWrapperInterface<T> extends React.FC<T> {
   TabPanel: any
 }
 
-export interface activeTabFlagsInterface {
+export interface ActiveTabFlagsInterface {
   left: boolean
   right: boolean
+}
+
+export type TabItemType = {
+  value: any
+  onChange: (activeKey: string) => void
+  activeKey: string | null
+  activeKeyIndex: number
+  itemIndex: number
+  activeTabFlags: ActiveTabFlagsInterface
+  itemRef: React.RefObject<HTMLDivElement>
+  activeNxtRef: React.RefObject<HTMLDivElement>
+  activePrevRef: React.RefObject<HTMLDivElement>
+  dragHandle: boolean
+  dragHandleElement: React.FC<any> | null
+  readOnly: boolean
+}
+
+export type TabsListProps = {
+  items: Array<ReactNode>
+  onChange: (activeKey: string) => void
+  activeKey: string
+  activeKeyIndex: number
+  activeTabFlags: ActiveTabFlagsInterface
+  listRef: React.RefObject<HTMLDivElement>
+  itemRef: React.RefObject<HTMLDivElement>
+  activeNxtRef: React.RefObject<HTMLDivElement>
+  activePrevRef: React.RefObject<HTMLDivElement>
+  dragHandle: boolean
+  dragHandleElement: React.FC<any> | null
+  readOnly: boolean
 }
