@@ -1,5 +1,5 @@
 # knit.design
 
-Storybook : [netlify link](https://knit-ui.netlify.com)
+Storybook : [Link](https://knitui.design)
 
 Roadmap: https://www.figma.com/file/o3UDrumhtDT0huZEsPnGPw/KnitUI-planning?node-id=0%3A1
