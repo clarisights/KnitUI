@@ -1,145 +1,24 @@
 import React, { Children, useState, useEffect, useRef } from "react"
-import styled, { createGlobalStyle } from "styled-components"
 import arrayMove from "array-move"
+import { Icon } from ".."
+import { TabsList } from "./TabsList"
+import {
+  GlobalStyle,
+  ButtonWrapper,
+  TabsWrapper,
+  TabsPanelWrapper,
+  OverflowWrapper,
+  BlurElement,
+  IconWrapper,
+  TabPanel,
+  TabContentWrapper,
+} from "./styles"
+import { getWidthFromRef } from "./utils"
 import {
   TabsProps,
   TabWrapperInterface,
-  activeTabFlagsInterface,
-  TabPane,
+  ActiveTabFlagsInterface,
 } from "./types"
-import { Button, Icon } from ".."
-import { TabsList } from "./TabsList"
-import { getThemeColor, getOSName } from "../../common/_utils"
-import { getWidthFromRef } from "./utils"
-
-/* The tab being dragged is appended to the body, hence it's styles need to be at global scope*/
-const GlobalStyle = createGlobalStyle`
-.knitui-tabs-helper:not(#knit-active-tab) {
-  background: ${props => getThemeColor(props, "Beige10")};
-  
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 1.4rem;
-    width: 1px;
-    background: ${props => getThemeColor(props, "Neutral40")};
-  }
-}
-
-.knitui-tabs-helper {
-  white-space: nowrap;
-}
-`
-
-const ButtonWrapper = styled(Button)`
-  border-radius: 4px 4px 0 0;
-  :hover,
-  :focus,
-  :active {
-    background: #efe9dc;
-  }
-`
-
-const TabsWrapper = styled.div<{ hideTabContent: boolean }>`
-  height: ${({ hideTabContent }) => (hideTabContent ? "auto" : "100%")};
-  width: 100%;
-`
-
-const TabsPanelWrapper = styled.div`
-  display: flex;
-  background: ${props => getThemeColor(props, "Beige10")};
-`
-
-const OverflowWrapper = styled.div`
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-`
-
-const OverflowContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  overflow-x: scroll;
-  padding-bottom: ${getOSName() !== "MacOS" ? "0px" : "15px"};
-  margin-bottom: -15px;
-  box-sizing: content-box;
-`
-
-const BlurElement = styled.div<{ dir: string; visible: boolean }>`
-  width: 80px;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(
-    to ${props => (props.dir === "left" ? "right" : "left")},
-    ${props => getThemeColor(props, "Beige10")}FF,
-    ${props => getThemeColor(props, "Beige10")}00
-  );
-  z-index: 100;
-  visibility: ${props => (props.visible ? "visible" : "hidden")};
-  pointer-events: none;
-`
-
-const IconWrapper = styled.div<{ visible: boolean }>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: visibility 250ms ease, width 150ms linear;
-  visibility: ${props => (props.visible ? "visible" : "hidden")};
-  width: ${props => (props.visible ? "30px" : "0")};
-  cursor: pointer;
-  z-index: 100;
-
-  :hover,
-  :focus,
-  :active {
-    background: #efe9dc;
-  }
-`
-
-const TabPanel = styled.button<{ active?: boolean; dragHandle?: boolean }>`
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  word-wrap: none;
-
-  background: ${props =>
-    props.active ? getThemeColor(props, "Neutral0") : "none"};
-  color: ${props =>
-    props.active
-      ? getThemeColor(props, "Neutral90")
-      : getThemeColor(props, "Neutral50")};
-  border: 1px solid transparent;
-  border-top: ${props =>
-    props.active ? "2px solid #D8C9A7" : "2px solid transparent"};
-  padding: 4px 14px;
-  border-radius: 4px 4px 0px 0px;
-  min-width: 80px;
-  line-height: 20px;
-  font-size: 14px;
-  cursor: ${props => (props.dragHandle && props.active ? "auto" : "pointer")};
-
-  margin-right: 1px; /* To prevent focus outline overlapping with divider */
-
-  :hover {
-    background: ${props => (props.active ? "#FFFFFF" : "#efe9dc")};
-  }
-
-  :active,
-  :focus {
-    z-index: 101 !important;
-    outline-color: ${props => getThemeColor(props, "Azure80")};
-    border-color: ${props => getThemeColor(props, "Azure80")} auto 1px;
-  }
-`
-
-const TabContentWrapper = styled.div`
-  width: 100%;
-`
 
 const getActiveKeyIndex = (childrenArray, activeKey) => {
   return childrenArray.findIndex(
@@ -152,7 +31,7 @@ const onScroll = (
   activeNxtRef: React.RefObject<HTMLDivElement>,
   itemRef: React.RefObject<HTMLDivElement>,
   activePrevRef: React.RefObject<HTMLDivElement>,
-  setActiveTabFlags: (obj: activeTabFlagsInterface) => void,
+  setActiveTabFlags: (obj: ActiveTabFlagsInterface) => void,
   setScrollFlags: (obj: {
     leftSideScroll: boolean
     rightSideScroll: boolean
@@ -320,12 +199,14 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
   const showLeftArrow = scrollFlags.leftSideScroll
   const showRightBlur = showRightArrow && !activeTabFlags.right
   const showLeftBlur = showLeftArrow && !activeTabFlags.left
+  const showActiveLeftBlur = showLeftArrow && activeTabFlags.left
+  const showActiveRightBlur = showRightArrow && activeTabFlags.right
   return (
     <>
       <GlobalStyle />
       <TabsWrapper hideTabContent={hideTabContent}>
         <TabsPanelWrapper>
-          <OverflowWrapper>
+          <OverflowWrapper activeTabRef={itemRef}>
             <IconWrapper
               ref={leftArrowRef}
               visible={showLeftArrow}
@@ -339,30 +220,44 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
                 left: getWidthFromRef(leftArrowRef),
               }}
             />
-            <OverflowContainer ref={listRef}>
-              <TabsList
-                dragHandleElement={dragHandleElement}
-                dragHandle={useDragHandle}
-                useDragHandle={useDragHandle}
-                shouldCancelStart={() => readOnly}
-                readOnly={readOnly}
-                items={childrenArray}
-                activeKey={activeKey}
-                activeKeyIndex={activeKeyIndex}
-                onSortStart={onSortStart}
-                onSortEnd={onSortEnd}
-                axis={"x"}
-                lockAxis="x"
-                pressDelay={pressDelay}
-                onChange={onChange}
-                activeTabFlags={activeTabFlags}
-                itemRef={itemRef}
-                activeNxtRef={activeNxtRef}
-                activePrevRef={activePrevRef}
-                helperClass="knitui-tabs-helper"
-                lockToContainerEdges
-              />
-            </OverflowContainer>
+            <BlurElement
+              visible={showActiveLeftBlur}
+              dir="left"
+              style={{
+                left: getWidthFromRef(leftArrowRef) + getWidthFromRef(itemRef),
+              }}
+            />
+            <TabsList
+              listRef={listRef}
+              dragHandleElement={dragHandleElement}
+              dragHandle={useDragHandle}
+              useDragHandle={useDragHandle}
+              shouldCancelStart={() => readOnly}
+              readOnly={readOnly}
+              items={childrenArray}
+              activeKey={activeKey}
+              activeKeyIndex={activeKeyIndex}
+              onSortStart={onSortStart}
+              onSortEnd={onSortEnd}
+              axis={"x"}
+              lockAxis="x"
+              pressDelay={pressDelay}
+              onChange={onChange}
+              activeTabFlags={activeTabFlags}
+              itemRef={itemRef}
+              activeNxtRef={activeNxtRef}
+              activePrevRef={activePrevRef}
+              helperClass="knitui-tabs-helper"
+              lockToContainerEdges
+            />
+            <BlurElement
+              visible={showActiveRightBlur}
+              dir="right"
+              style={{
+                right:
+                  getWidthFromRef(rightArrowRef) + getWidthFromRef(itemRef),
+              }}
+            />
             <BlurElement
               visible={showRightBlur}
               dir="right"

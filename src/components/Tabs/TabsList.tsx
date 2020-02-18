@@ -1,21 +1,8 @@
-import React, { ReactNode, ReactElement } from "react"
+import React from "react"
 import { SortableContainer } from "react-sortable-hoc"
 import { TabItem } from "./TabItem"
-import { activeTabFlagsInterface } from "./types"
-
-type TabsListProps = {
-  items: Array<ReactNode>
-  onChange: (activeKey: string) => void
-  activeKey: string
-  activeKeyIndex: number
-  activeTabFlags: activeTabFlagsInterface
-  itemRef: React.RefObject<HTMLDivElement>
-  activeNxtRef: React.RefObject<HTMLDivElement>
-  activePrevRef: React.RefObject<HTMLDivElement>
-  dragHandle: boolean
-  dragHandleElement: React.FC<any> | null
-  readOnly: boolean
-}
+import { OverflowContainer } from "./styles"
+import { TabsListProps } from "./types"
 
 export const TabsList = SortableContainer(
   ({
@@ -30,13 +17,10 @@ export const TabsList = SortableContainer(
     dragHandle,
     dragHandleElement,
     readOnly,
+    listRef,
   }: TabsListProps) => {
     return (
-      <div
-        style={{
-          display: "flex",
-          whiteSpace: "nowrap",
-        }}>
+      <OverflowContainer ref={listRef}>
         <div />
         {items.map((value, index) => (
           <TabItem
@@ -56,7 +40,7 @@ export const TabsList = SortableContainer(
             activePrevRef={activePrevRef}
           />
         ))}
-      </div>
+      </OverflowContainer>
     )
   }
 )

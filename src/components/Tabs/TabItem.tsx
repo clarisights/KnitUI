@@ -1,48 +1,8 @@
 import React from "react"
 import { SortableElement, SortableHandle } from "react-sortable-hoc"
-import styled from "styled-components"
+import { VerticalBar, DragIcon } from "./styles"
 import { getTabContainerStyle } from "./utils"
-import { activeTabFlagsInterface } from "./types"
-import { Icon } from "../"
-import { getThemeColor } from "../../common/_utils"
-const VerticalBar = styled.div`
-  height: 14px;
-  width: 0px;
-  position: absolute;
-  border-right: 1px solid #cccccc;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  pointer-events: none;
-`
-
-type TabItemType = {
-  value: any
-  onChange: (activeKey: string) => void
-  activeKey: string | null
-  activeKeyIndex: number
-  itemIndex: number
-  activeTabFlags: activeTabFlagsInterface
-  itemRef: React.RefObject<HTMLDivElement>
-  activeNxtRef: React.RefObject<HTMLDivElement>
-  activePrevRef: React.RefObject<HTMLDivElement>
-  dragHandle: boolean
-  dragHandleElement: React.FC<any> | null
-  readOnly: boolean
-}
-
-const DragIcon = styled(Icon)`
-  cursor: grab;
-  & svg {
-    fill: ${props => getThemeColor(props, "Neutral45")};
-  }
-  margin-right: 0.4rem;
-  & svg :hover,
-  & svg :active,
-  & svg :focus {
-    fill: #000000;
-  }
-`
+import { TabItemType } from "./types"
 
 export const TabDragElement = SortableHandle(({ children }) => children)
 
@@ -85,7 +45,7 @@ export const TabItem = SortableElement(
       onClick: () => !isActive && onChange(props.tabKey),
     })
     const showVBar = itemIndex + 1 !== activeKeyIndex && !isActive
-    let styles = getTabContainerStyle(
+    const styles = getTabContainerStyle(
       activeTabFlags,
       activeKeyIndex,
       itemIndex,
