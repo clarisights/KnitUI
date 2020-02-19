@@ -20,7 +20,7 @@ describe("Passing Custom Theme", () => {
   it("Changing palette color Blue100 to #1182D4", () => {
     const { asFragment } = render(
       <ThemeProvider theme={knituiTheme}>
-        <Button kind="primary" size="small" label="Changed Color of Neutral" />
+        <Button size="small" label="Changed Color of Neutral" />
       </ThemeProvider>
     )
     expect(asFragment()).toMatchSnapshot()

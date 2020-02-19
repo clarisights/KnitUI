@@ -80,9 +80,8 @@ const onScroll = (
 }
 
 const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
-  const childrenArrayProps = Children.toArray(children)
-  const firstTab =
-    childrenArrayProps[0] && childrenArrayProps[0]!["props"].tabKey
+  const childrenArrayProps: any = Children.toArray(children)
+  const firstTab = childrenArrayProps[0] && childrenArrayProps[0]!.props.tabKey
   const internalState = useState(tabProps.defaultActiveKey || firstTab)
   const {
     activeKey = internalState[0],
@@ -288,7 +287,6 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
                 disabled={readOnly}
                 onClick={onAddTab}
                 icon="oAdd"
-                kind="primary"
                 bare
                 customColor="#000000"
                 bgColor={customColor}

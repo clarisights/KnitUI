@@ -8,17 +8,17 @@ import generateTheme from "./variables"
 const stories = storiesOf("ThemeProvider", module)
 
 stories.add("Blue100 overright to #1182D4", () => {
-  let newPalette = {
+  const newPalette = {
     ...palette,
     Blue100: {
       hsl: [205, 85, 45],
       hex: "#1182D4",
     },
   }
-  let theme = generateTheme(newPalette)
+  const theme = generateTheme(newPalette)
   return (
     <ThemeProvider theme={theme}>
-      <Button kind="secondary" size="small" label="Changed Color of Neutral" />
+      <Button size="small" label="Changed Color of Neutral" />
     </ThemeProvider>
   )
 })
