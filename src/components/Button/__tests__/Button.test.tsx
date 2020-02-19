@@ -5,7 +5,7 @@ import { cleanup, fireEvent, render } from "../../../common/TestUtil"
 afterEach(cleanup)
 
 describe("Button", () => {
-  const sizes = ["small", "medium", "large"]
+  const sizes = ["small", "medium", "large", "fluid"]
 
   // All tests are executes for each of the three sizes
   sizes.forEach((size: "small" | "medium" | "large") => {
@@ -16,9 +16,7 @@ describe("Button", () => {
       })
 
       it("renders a primary variant with a label correctly", () => {
-        const { asFragment } = render(
-          <Button label="button" size={size} kind="secondary" />
-        )
+        const { asFragment } = render(<Button label="button" size={size} />)
         expect(asFragment()).toMatchSnapshot()
       })
 

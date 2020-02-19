@@ -1,15 +1,19 @@
 import React, { useContext, SyntheticEvent } from "react"
 import Icon from "../Icon"
-import { ButtonBase, ButtonInset } from "./components"
+import { ButtonBase, ButtonInset, ButtonContent } from "./components"
 import { ThemeContext } from "styled-components"
 import { parseCustomColor, parseColorPreset } from "../../common/_utils"
 import { ButtonWrapperInterface, ButtonWrapperProps } from "./types"
 
 const DEFAULT_COLOR_THEME = "neutral"
 
+const insetPositions = {
+  LEFT: "left",
+  RIGHT: "right",
+}
+
 const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
   label,
-  kind = "primary",
   ghost = false,
   size = "medium",
   href,
@@ -17,6 +21,7 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
   icon,
   bare = false,
   insetLabel,
+  insetPosition = "right",
   colorPreset = DEFAULT_COLOR_THEME,
   customColor,
   insetCustomColor,
@@ -37,7 +42,6 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
   const lowerTypographyUnit = knitui.typography[`${insetFontSize * 10}`]
   const insetLineHeight =
     (lowerTypographyUnit && lowerTypographyUnit.lineHeight) || baseLineHeight
-
   // Colors
 
   // Cannot be set as default arg since theme is not available in that context
@@ -52,13 +56,11 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
   const parsedColorTheme = customColor
     ? parseCustomColor(knitui, customColor)
     : parseColorPreset(knitui, colorPreset)
-
   return (
     <ButtonBase
       customProps={{
         label,
         icon,
-        kind,
         ghost,
         size,
         bare,
@@ -70,19 +72,46 @@ const ButtonWrapper: ButtonWrapperInterface<ButtonWrapperProps> = ({
         (onClick && onClick(e)) || (href && window.location.assign(href))
       }
       {...rest}>
-      {icon ? <Icon type={icon} size={iconSize} /> : null}
-      {label}
-      {insetLabel ? (
+      {insetLabel && insetPosition === insetPositions.LEFT && (
         <ButtonInset
           customProps={{
+            insetPosition,
+            size,
             backgroundColor: insetColorTheme.background,
             fontColor: insetColorTheme.font,
             fontSize: `${insetFontSize}rem`,
             lineHeight: `${insetLineHeight}rem`,
           }}>
-          {insetLabel}
+          <span>{insetLabel}</span>
         </ButtonInset>
-      ) : null}
+      )}
+      <ButtonContent
+        customProps={{
+          label,
+          icon,
+          ghost,
+          size,
+          bare,
+          colorTheme: parsedColorTheme,
+          fontSize: baseFontSize,
+          lineHeight: baseLineHeight,
+        }}>
+        {icon ? <Icon type={icon} size={iconSize} /> : null}
+        {label}
+      </ButtonContent>
+      {insetLabel && insetPosition === insetPositions.RIGHT && (
+        <ButtonInset
+          customProps={{
+            insetPosition,
+            size,
+            backgroundColor: insetColorTheme.background,
+            fontColor: insetColorTheme.font,
+            fontSize: `${insetFontSize}rem`,
+            lineHeight: `${insetLineHeight}rem`,
+          }}>
+          <span>{insetLabel}</span>
+        </ButtonInset>
+      )}
     </ButtonBase>
   )
 }

@@ -6,71 +6,8 @@ import { ButtonProps } from "../types"
 type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
 
 type IStyledBaseButton = IStyled<ButtonProps>
-// Paddings
-
-const ICON_PADDINGS = {
-  small: 0.3,
-  medium: 0.5,
-  large: 0.7,
-}
-
-const VERTICAL_PADINGS = {
-  small: 0.1,
-  medium: 0.4,
-  large: 0.6,
-}
-
-const getHorizontalPadding = (props: IStyledBaseButton) => {
-  const {
-    customProps: { size, kind, fontSize },
-  } = props
-  const paddings = {
-    small: {
-      primary: fontSize / 2,
-      secondary: fontSize / 2,
-    },
-    medium: {
-      primary: fontSize,
-      secondary: fontSize / 2,
-    },
-    large: {
-      primary: fontSize,
-      secondary: fontSize / 2,
-    },
-  }
-  return paddings[size!][kind!]
-}
-
-const getRightPadding = (props: IStyledBaseButton) => {
-  const {
-    customProps: { icon, label, size },
-  } = props
-  if (icon && !label) {
-    return ICON_PADDINGS[size!]
-  }
-  return getHorizontalPadding(props)
-}
-
-const getLeftPadding = (props: IStyledBaseButton) => {
-  const {
-    customProps: { icon, size },
-  } = props
-  if (icon) {
-    return ICON_PADDINGS[size!]
-  }
-  return getHorizontalPadding(props)
-}
-
-const getVerticalPadding = (props: IStyledBaseButton) => {
-  const {
-    customProps: { icon, label, size },
-  } = props
-  const iconOnly = icon && !label
-  return iconOnly ? ICON_PADDINGS[size!] : VERTICAL_PADINGS[size!]
-}
 
 // Colors
-
 const getHighlighColor = (props: IStyledBaseButton) =>
   props.theme.knitui.chromaPalette.Azure80
 
@@ -122,9 +59,7 @@ const getBackgroundColor = (state: ButtonState, props: IStyledBaseButton) => {
     theme: { knitui },
   } = props
   if (bare) {
-    return state === "default"
-      ? knitui.shades.transparent
-      : knitui.chromaPalette.Neutral10
+    return knitui.shades.transparent
   }
   if (ghost) {
     return knitui.chromaPalette.Neutral0 // white
@@ -172,14 +107,12 @@ const getBoxShadow = (props: IStyledBaseButton) => {
 const StyledButton = styled.button<IStyledBaseButton>`
   display: flex;
   align-items: center;
+  width: ${({ customProps }) =>
+    customProps.size === "fluid" ? "100%" : "inherit"};
   font-size: ${({ customProps: { fontSize } }) => `${fontSize}rem`};
   line-height: ${({ customProps: { lineHeight } }) => `${lineHeight}rem`};
-  padding-left: ${props => `${getLeftPadding(props)}rem`};
-  padding-right: ${props => `${getRightPadding(props)}rem`};
   color: ${props => getFontColor("default", props)};
   background-color: ${props => getBackgroundColor("default", props)};
-  padding-top: ${props => `${getVerticalPadding(props)}rem`};
-  padding-bottom: ${props => `${getVerticalPadding(props)}rem`};
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -204,8 +137,7 @@ const StyledButton = styled.button<IStyledBaseButton>`
       :hover,
       :active,
       :focus {
-        color: ${(props: IStyled<ButtonProps>) =>
-          getFontColor("hover", props)};
+        color: ${(props: IStyled<ButtonProps>) => getFontColor("hover", props)};
         background-color: ${props => getBackgroundColor("hover", props)};
         svg path {
           fill: ${props => getFontColor("hover", props)};

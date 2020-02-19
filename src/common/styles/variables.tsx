@@ -86,9 +86,10 @@ const generateTheme = palette => {
       success: chromaPalette.Green80,
       warning: chromaPalette.Yellow80,
       unsaved: chromaPalette.Magenta80,
+      regular: chromaPalette.Neutral10,
     },
 
-    // TODO: Remove this and its references and use chromaPallete directly
+    // TODO: Remove this and its references and use chromaPalette directly
     shades: {
       // Shades of gray
       white: chromaPalette.Neutral0,
