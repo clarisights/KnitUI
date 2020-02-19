@@ -7,7 +7,6 @@ import { Button } from "KnitUI"
 
 <Button
   label="Primary"
-  kind="primary"
 />)
 ```
 
@@ -16,7 +15,6 @@ import { Button } from "KnitUI"
 | Prop name        | Type                                                                  | Optional | Default   | Description                                                                                                                             |
 | ---------------- | --------------------------------------------------------------------- | -------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | label            | string                                                                | Yes      | None      | The text label to be shown on the button                                                                                                |
-| kind             | `primary` or `secondary`                                              | Yes      | `primary` | Indicates the importance of the button's actions                                                                                        |
 | colorPreset      | string, one of `neutral`, `danger`, `success`, `warning` or `unsaved` | Yes      | `neutral` | One of a set of predefined values that are representative of the type of action                                                         |
 | customColor      | `string` or `object`                                                  | Yes      | None      | A valid CSS color string or `{ color: CSSColorString, secondaryColor: CSSColorString }` object that overrides the default color presets |
 | insetCustomColor | string                                                                | Yes      | `white`   | Override defaults, should be valid CSS string                                                                                           |

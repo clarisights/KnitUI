@@ -2,72 +2,11 @@
 
 exports[`Button Group :  Button group : snapshot 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c4 {
   cursor: inherit;
   display: inline-block;
   height: 1.8rem;
   width: 1.8rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
-  color: #ffffff;
-  background-color: #002966;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  border-radius: 0.4rem;
-  border-style: none;
-  box-sizing: border-box;
-  border: 1px solid #00000000;
-}
-
-.c5 span {
-  margin-right: 0rem;
-}
-
-.c5 span svg path {
-  fill: #ffffff;
-}
-
-.c5:hover,
-.c5:active,
-.c5:focus {
-  color: #ffffff;
-  background-color: #003d99;
-  cursor: pointer;
-}
-
-.c5:hover svg path,
-.c5:active svg path,
-.c5:focus svg path {
-  fill: #ffffff;
-}
-
-.c5:active,
-.c5:focus {
-  border: 1px solid #5ab2f2 !important;
-  box-shadow: 0px 0px 2px #0066ff;
-  outline: none;
-}
-
-.c5:hover {
-  border: 1px solid #00000000;
-}
-
-.c5:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 
 .c2 {
@@ -79,14 +18,11 @@ exports[`Button Group :  Button group : snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -131,7 +67,47 @@ exports[`Button Group :  Button group : snapshot 1`] = `
   cursor: not-allowed;
 }
 
-.c4 {
+.c6 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
   margin-left: -1px;
   border: none;
   border-left: 1px solid rgba(255,255,255,0.2);
@@ -171,57 +147,69 @@ exports[`Button Group :  Button group : snapshot 1`] = `
     <button
       class="c1 c2"
     >
-      <span
+      <div
         class="c3"
-        height="1.8rem"
-        type="oInfo"
-        width="1.8rem"
       >
-        <svg
-          fill="#000"
+        <span
+          class="c4"
           height="1.8rem"
-          viewBox="0 0 24 24"
+          type="oInfo"
           width="1.8rem"
-          xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-          />
-        </svg>
-      </span>
+          <svg
+            fill="#000"
+            height="1.8rem"
+            viewBox="0 0 24 24"
+            width="1.8rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+            />
+          </svg>
+        </span>
+      </div>
     </button>
     <hr
-      class="c4"
-    />
-    <button
-      class="c1 c5"
-    >
-      Dropdown
-    </button>
-    <hr
-      class="c4"
+      class="c5"
     />
     <button
       class="c1 c2"
     >
-      <span
-        class="c3"
-        height="1.8rem"
-        type="oExpandMore"
-        width="1.8rem"
+      <div
+        class="c6"
       >
-        <svg
-          fill="#000"
+        Dropdown
+      </div>
+    </button>
+    <hr
+      class="c5"
+    />
+    <button
+      class="c1 c2"
+    >
+      <div
+        class="c3"
+      >
+        <span
+          class="c4"
           height="1.8rem"
-          viewBox="0 0 24 24"
+          type="oExpandMore"
           width="1.8rem"
-          xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M16.59 8.59009L12 13.1701L7.41 8.59009L6 10.0001L12 16.0001L18 10.0001L16.59 8.59009Z"
-          />
-        </svg>
-      </span>
+          <svg
+            fill="#000"
+            height="1.8rem"
+            viewBox="0 0 24 24"
+            width="1.8rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.59 8.59009L12 13.1701L7.41 8.59009L6 10.0001L12 16.0001L18 10.0001L16.59 8.59009Z"
+            />
+          </svg>
+        </span>
+      </div>
     </button>
   </div>
 </DocumentFragment>
@@ -229,72 +217,11 @@ exports[`Button Group :  Button group : snapshot 1`] = `
 
 exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c4 {
   cursor: inherit;
   display: inline-block;
   height: 1.8rem;
   width: 1.8rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
-  color: #002966;
-  background-color: #ffffff;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  border-radius: 0.4rem;
-  border-style: none;
-  box-sizing: border-box;
-  border: 1px solid #002966;
-}
-
-.c4 span {
-  margin-right: 0rem;
-}
-
-.c4 span svg path {
-  fill: #002966;
-}
-
-.c4:hover,
-.c4:active,
-.c4:focus {
-  color: #0066ff;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
-.c4:hover svg path,
-.c4:active svg path,
-.c4:focus svg path {
-  fill: #0066ff;
-}
-
-.c4:active,
-.c4:focus {
-  border: 1px solid #5ab2f2 !important;
-  box-shadow: 0px 0px 2px #0066ff;
-  outline: none;
-}
-
-.c4:hover {
-  border: 1px solid #0066ff;
-}
-
-.c4:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 
 .c2 {
@@ -306,14 +233,11 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   color: #002966;
   background-color: #ffffff;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -358,21 +282,61 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
   cursor: not-allowed;
 }
 
-.c5 .c1 {
+.c5 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 .c1 {
   border-radius: 0rem;
 }
 
-.c5 .c1:first-of-type {
+.c6 .c1:first-of-type {
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
 }
 
-.c5 .c1:last-of-type {
+.c6 .c1:last-of-type {
   border-top-right-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
 }
 
-.c5 .c1:not(:last-of-type)::after {
+.c6 .c1:not(:last-of-type)::after {
   content: "";
   display: block;
   width: 1px;
@@ -428,51 +392,63 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
     <button
       class="c1 c2"
     >
-      <span
+      <div
         class="c3"
-        height="1.8rem"
-        type="oInfo"
-        width="1.8rem"
       >
-        <svg
-          fill="#000"
+        <span
+          class="c4"
           height="1.8rem"
-          viewBox="0 0 24 24"
+          type="oInfo"
           width="1.8rem"
-          xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-          />
-        </svg>
-      </span>
-    </button>
-    <button
-      class="c1 c4"
-    >
-      Dropdown
+          <svg
+            fill="#000"
+            height="1.8rem"
+            viewBox="0 0 24 24"
+            width="1.8rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+            />
+          </svg>
+        </span>
+      </div>
     </button>
     <button
       class="c1 c2"
     >
-      <span
-        class="c3"
-        height="1.8rem"
-        type="oExpandMore"
-        width="1.8rem"
+      <div
+        class="c5"
       >
-        <svg
-          fill="#000"
+        Dropdown
+      </div>
+    </button>
+    <button
+      class="c1 c2"
+    >
+      <div
+        class="c3"
+      >
+        <span
+          class="c4"
           height="1.8rem"
-          viewBox="0 0 24 24"
+          type="oExpandMore"
           width="1.8rem"
-          xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M16.59 8.59009L12 13.1701L7.41 8.59009L6 10.0001L12 16.0001L18 10.0001L16.59 8.59009Z"
-          />
-        </svg>
-      </span>
+          <svg
+            fill="#000"
+            height="1.8rem"
+            viewBox="0 0 24 24"
+            width="1.8rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.59 8.59009L12 13.1701L7.41 8.59009L6 10.0001L12 16.0001L18 10.0001L16.59 8.59009Z"
+            />
+          </svg>
+        </span>
+      </div>
     </button>
   </div>
 </DocumentFragment>
@@ -489,14 +465,11 @@ exports[`Button Should disable button rendered correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -516,11 +489,35 @@ exports[`Button Should disable button rendered correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
     disabled=""
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -536,14 +533,11 @@ exports[`Button renders with a custom color object correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #873421;
   background-color: #f142f4;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -588,10 +582,34 @@ exports[`Button renders with a custom color object correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -607,14 +625,11 @@ exports[`Button renders with a custom color object correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #873421;
   background-color: #f142f4;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -659,10 +674,34 @@ exports[`Button renders with a custom color object correctly 2`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -678,14 +717,11 @@ exports[`Button renders with a custom color object correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #873421;
   background-color: #f142f4;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -730,10 +766,126 @@ exports[`Button renders with a custom color object correctly 3`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with a custom color object correctly 4`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #873421;
+  background-color: #f142f4;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #873421;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #873421;
+  background-color: #ed12f1;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #873421;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -749,14 +901,11 @@ exports[`Button renders with a custom color theme correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #1a1a1a;
   background-color: #f142f4;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -801,10 +950,34 @@ exports[`Button renders with a custom color theme correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -820,14 +993,11 @@ exports[`Button renders with a custom color theme correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #1a1a1a;
   background-color: #f142f4;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -872,10 +1042,34 @@ exports[`Button renders with a custom color theme correctly 2`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -891,14 +1085,11 @@ exports[`Button renders with a custom color theme correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #1a1a1a;
   background-color: #f142f4;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -943,10 +1134,126 @@ exports[`Button renders with a custom color theme correctly 3`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with a custom color theme correctly 4`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #1a1a1a;
+  background-color: #f142f4;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #1a1a1a;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #1a1a1a;
+  background-color: #ed12f1;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #1a1a1a;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -962,14 +1269,11 @@ exports[`Button renders with a specified color preset correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #990000;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1014,10 +1318,34 @@ exports[`Button renders with a specified color preset correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -1033,14 +1361,11 @@ exports[`Button renders with a specified color preset correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #990000;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1085,10 +1410,34 @@ exports[`Button renders with a specified color preset correctly 2`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -1104,14 +1453,11 @@ exports[`Button renders with a specified color preset correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #990000;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1156,10 +1502,126 @@ exports[`Button renders with a specified color preset correctly 3`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with a specified color preset correctly 4`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #990000;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #cc0000;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -1175,14 +1637,11 @@ exports[`Button renders with inset correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1227,7 +1686,7 @@ exports[`Button renders with inset correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1236,19 +1695,50 @@ exports[`Button renders with inset correctly 1`] = `
   color: #333333;
   font-size: 1rem;
   line-height: 1.6rem;
-  border-radius: 0.4rem;
+  border-radius: 0rem 0.3rem 0.3rem 0;
   margin-left: 0.4rem;
-  padding: 0rem 0.3rem 0rem 0.3rem;
+  margin-right: 0;
+}
+
+.c2 span {
+  margin: 0.1rem 0.7rem;
+  line-height: 2rem;
+}
+
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 <button
     class="c0"
   >
-    button
     <div
       class="c1"
     >
-      10
+      button
+    </div>
+    <div
+      class="c2"
+    >
+      <span>
+        10
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1265,14 +1755,11 @@ exports[`Button renders with inset correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1317,7 +1804,7 @@ exports[`Button renders with inset correctly 2`] = `
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1326,19 +1813,50 @@ exports[`Button renders with inset correctly 2`] = `
   color: #333333;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  border-radius: 0.4rem;
+  border-radius: 0rem 0.3rem 0.3rem 0;
   margin-left: 0.4rem;
-  padding: 0rem 0.3rem 0rem 0.3rem;
+  margin-right: 0;
+}
+
+.c2 span {
+  margin: 0.4rem 0.7rem;
+  line-height: 2rem;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 <button
     class="c0"
   >
-    button
     <div
       class="c1"
     >
-      10
+      button
+    </div>
+    <div
+      class="c2"
+    >
+      <span>
+        10
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1355,14 +1873,1471 @@ exports[`Button renders with inset correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0rem 0.3rem 0.3rem 0;
+  margin-left: 0.4rem;
+  margin-right: 0;
+}
+
+.c2 span {
+  margin: 0.7rem 0.7rem;
+  line-height: 2rem;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      button
+    </div>
+    <div
+      class="c2"
+    >
+      <span>
+        10
+      </span>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with inset correctly 4`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0rem 0.3rem 0.3rem 0;
+  margin-left: 0.4rem;
+  margin-right: 0;
+}
+
+.c2 span {
+  margin: 0.4rem 0.7rem;
+  line-height: 2rem;
+}
+
+.c1 {
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      button
+    </div>
+    <div
+      class="c2"
+    >
+      <span>
+        10
+      </span>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text and an icon correctly 1`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.2rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: 0.3rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="1.4rem"
+        type="oInfo"
+        width="1.4rem"
+      >
+        <svg
+          fill="#000"
+          height="1.4rem"
+          viewBox="0 0 24 24"
+          width="1.4rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text and an icon correctly 2`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text and an icon correctly 3`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text and an icon correctly 4`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text, icon and inset correctly 1`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.2rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  border-radius: 0rem 0.3rem 0.3rem 0;
+  margin-left: 0.4rem;
+  margin-right: 0;
+}
+
+.c3 span {
+  margin: 0.1rem 0.7rem;
+  line-height: 2rem;
+}
+
+.c1 {
+  padding-left: 0.3rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="1.4rem"
+        type="oInfo"
+        width="1.4rem"
+      >
+        <svg
+          fill="#000"
+          height="1.4rem"
+          viewBox="0 0 24 24"
+          width="1.4rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
+    <div
+      class="c3"
+    >
+      <span>
+        10
+      </span>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text, icon and inset correctly 2`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0rem 0.3rem 0.3rem 0;
+  margin-left: 0.4rem;
+  margin-right: 0;
+}
+
+.c3 span {
+  margin: 0.4rem 0.7rem;
+  line-height: 2rem;
+}
+
+.c1 {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
+    <div
+      class="c3"
+    >
+      <span>
+        10
+      </span>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text, icon and inset correctly 3`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0rem 0.3rem 0.3rem 0;
+  margin-left: 0.4rem;
+  margin-right: 0;
+}
+
+.c3 span {
+  margin: 0.7rem 0.7rem;
+  line-height: 2rem;
+}
+
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
+    <div
+      class="c3"
+    >
+      <span>
+        10
+      </span>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders with text, icon and inset correctly 4`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0.4rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 0rem 0.3rem 0.3rem 0;
+  margin-left: 0.4rem;
+  margin-right: 0;
+}
+
+.c3 span {
+  margin: 0.4rem 0.7rem;
+  line-height: 2rem;
+}
+
+.c1 {
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
+    <div
+      class="c3"
+    >
+      <span>
+        10
+      </span>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size fluid renders a bare variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #002966;
+  background-color: #00000000;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #003d99;
+  background-color: #00000000;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #003d99;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size fluid renders a ghost variant correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #002966;
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #002966;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #0066ff;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #0066ff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #0066ff;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button with size fluid renders a primary variant with a label correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1408,42 +3383,40 @@ exports[`Button renders with inset correctly 3`] = `
 }
 
 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: #ffffff;
-  color: #333333;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  border-radius: 0.4rem;
-  margin-left: 0.4rem;
-  padding: 0rem 0.3rem 0rem 0.3rem;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 <button
     class="c0"
   >
-    button
     <div
       class="c1"
     >
-      10
+      button
     </div>
   </button>
 </DocumentFragment>
 `;
 
-exports[`Button renders with text and an icon correctly 1`] = `
+exports[`Button with size fluid renders a primary variant with a label correctly 2`] = `
 <DocumentFragment>
-  .c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 1.4rem;
-  width: 1.4rem;
-}
-
-.c0 {
+  .c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1452,110 +3425,11 @@ exports[`Button renders with text and an icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.6rem;
-  color: #ffffff;
-  background-color: #002966;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  border-radius: 0.4rem;
-  border-style: none;
-  box-sizing: border-box;
-  border: 1px solid #00000000;
-}
-
-.c0 span {
-  margin-right: 0.2rem;
-}
-
-.c0 span svg path {
-  fill: #ffffff;
-}
-
-.c0:hover,
-.c0:active,
-.c0:focus {
-  color: #ffffff;
-  background-color: #003d99;
-  cursor: pointer;
-}
-
-.c0:hover svg path,
-.c0:active svg path,
-.c0:focus svg path {
-  fill: #ffffff;
-}
-
-.c0:active,
-.c0:focus {
-  border: 1px solid #5ab2f2 !important;
-  box-shadow: 0px 0px 2px #0066ff;
-  outline: none;
-}
-
-.c0:hover {
-  border: 1px solid #00000000;
-}
-
-.c0:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-<button
-    class="c0"
-  >
-    <span
-      class="c1"
-      height="1.4rem"
-      type="oInfo"
-      width="1.4rem"
-    >
-      <svg
-        fill="#000"
-        height="1.4rem"
-        viewBox="0 0 24 24"
-        width="1.4rem"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button renders with text and an icon correctly 2`] = `
-<DocumentFragment>
-  .c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 1.8rem;
-  width: 1.8rem;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  width: 100%;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.5rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1563,7 +3437,7 @@ exports[`Button renders with text and an icon correctly 2`] = `
 }
 
 .c0 span {
-  margin-right: 0.4rem;
+  margin-right: 0rem;
 }
 
 .c0 span svg path {
@@ -1600,42 +3474,11 @@ exports[`Button renders with text and an icon correctly 2`] = `
   cursor: not-allowed;
 }
 
-<button
-    class="c0"
-  >
-    <span
-      class="c1"
-      height="1.8rem"
-      type="oInfo"
-      width="1.8rem"
-    >
-      <svg
-        fill="#000"
-        height="1.8rem"
-        viewBox="0 0 24 24"
-        width="1.8rem"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button renders with text and an icon correctly 3`] = `
-<DocumentFragment>
-  .c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 1.8rem;
-  width: 1.8rem;
-}
-
-.c0 {
+.c1 {
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1644,202 +3487,28 @@ exports[`Button renders with text and an icon correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  padding-left: 0.7rem;
-  padding-right: 1.4rem;
-  color: #ffffff;
-  background-color: #002966;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  border-radius: 0.4rem;
-  border-style: none;
-  box-sizing: border-box;
-  border: 1px solid #00000000;
-}
-
-.c0 span {
-  margin-right: 0.4rem;
-}
-
-.c0 span svg path {
-  fill: #ffffff;
-}
-
-.c0:hover,
-.c0:active,
-.c0:focus {
-  color: #ffffff;
-  background-color: #003d99;
-  cursor: pointer;
-}
-
-.c0:hover svg path,
-.c0:active svg path,
-.c0:focus svg path {
-  fill: #ffffff;
-}
-
-.c0:active,
-.c0:focus {
-  border: 1px solid #5ab2f2 !important;
-  box-shadow: 0px 0px 2px #0066ff;
-  outline: none;
-}
-
-.c0:hover {
-  border: 1px solid #00000000;
-}
-
-.c0:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 <button
     class="c0"
   >
-    <span
-      class="c1"
-      height="1.8rem"
-      type="oInfo"
-      width="1.8rem"
-    >
-      <svg
-        fill="#000"
-        height="1.8rem"
-        viewBox="0 0 24 24"
-        width="1.8rem"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button renders with text, icon and inset correctly 1`] = `
-<DocumentFragment>
-  .c1 {
-  cursor: inherit;
-  display: inline-block;
-  height: 1.4rem;
-  width: 1.4rem;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.6rem;
-  color: #ffffff;
-  background-color: #002966;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  border-radius: 0.4rem;
-  border-style: none;
-  box-sizing: border-box;
-  border: 1px solid #00000000;
-}
-
-.c0 span {
-  margin-right: 0.2rem;
-}
-
-.c0 span svg path {
-  fill: #ffffff;
-}
-
-.c0:hover,
-.c0:active,
-.c0:focus {
-  color: #ffffff;
-  background-color: #003d99;
-  cursor: pointer;
-}
-
-.c0:hover svg path,
-.c0:active svg path,
-.c0:focus svg path {
-  fill: #ffffff;
-}
-
-.c0:active,
-.c0:focus {
-  border: 1px solid #5ab2f2 !important;
-  box-shadow: 0px 0px 2px #0066ff;
-  outline: none;
-}
-
-.c0:hover {
-  border: 1px solid #00000000;
-}
-
-.c0:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: #ffffff;
-  color: #333333;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  border-radius: 0.4rem;
-  margin-left: 0.4rem;
-  padding: 0rem 0.3rem 0rem 0.3rem;
-}
-
-<button
-    class="c0"
-  >
-    <span
-      class="c1"
-      height="1.4rem"
-      type="oInfo"
-      width="1.4rem"
-    >
-      <svg
-        fill="#000"
-        height="1.4rem"
-        viewBox="0 0 24 24"
-        width="1.4rem"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
     <div
-      class="c2"
+      class="c1"
     >
-      10
+      button
     </div>
   </button>
 </DocumentFragment>
 `;
 
-exports[`Button renders with text, icon and inset correctly 2`] = `
+exports[`Button with size fluid renders with a bare icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 1.8rem;
@@ -1855,14 +3524,11 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.5rem;
-  padding-right: 1.4rem;
-  color: #ffffff;
-  background-color: #002966;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  color: #002966;
+  background-color: #00000000;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -1874,21 +3540,21 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
 }
 
 .c0 span svg path {
-  fill: #ffffff;
+  fill: #002966;
 }
 
 .c0:hover,
 .c0:active,
 .c0:focus {
-  color: #ffffff;
-  background-color: #003d99;
+  color: #003d99;
+  background-color: #00000000;
   cursor: pointer;
 }
 
 .c0:hover svg path,
 .c0:active svg path,
 .c0:focus svg path {
-  fill: #ffffff;
+  fill: #003d99;
 }
 
 .c0:active,
@@ -1907,54 +3573,59 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   cursor: not-allowed;
 }
 
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: #ffffff;
-  color: #333333;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  border-radius: 0.4rem;
-  margin-left: 0.4rem;
-  padding: 0rem 0.3rem 0rem 0.3rem;
+.c1 {
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 <button
     class="c0"
   >
-    <span
-      class="c1"
-      height="1.8rem"
-      type="oInfo"
-      width="1.8rem"
-    >
-      <svg
-        fill="#000"
-        height="1.8rem"
-        viewBox="0 0 24 24"
-        width="1.8rem"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
     <div
-      class="c2"
+      class="c1"
     >
-      10
+      <span
+        class="c2"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
     </div>
   </button>
 </DocumentFragment>
 `;
 
-exports[`Button renders with text, icon and inset correctly 3`] = `
+exports[`Button with size fluid renders with an icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 1.8rem;
@@ -1970,14 +3641,11 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.7rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2022,46 +3690,51 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   cursor: not-allowed;
 }
 
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: #ffffff;
-  color: #333333;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  border-radius: 0.4rem;
-  margin-left: 0.4rem;
-  padding: 0rem 0.3rem 0rem 0.3rem;
+.c1 {
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 <button
     class="c0"
   >
-    <span
-      class="c1"
-      height="1.8rem"
-      type="oInfo"
-      width="1.8rem"
-    >
-      <svg
-        fill="#000"
-        height="1.8rem"
-        viewBox="0 0 24 24"
-        width="1.8rem"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
     <div
-      class="c2"
+      class="c1"
     >
-      10
+      <span
+        class="c2"
+        height="1.8rem"
+        type="oInfo"
+        width="1.8rem"
+      >
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
     </div>
   </button>
 </DocumentFragment>
@@ -2078,14 +3751,11 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #002966;
   background-color: #00000000;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2104,7 +3774,7 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
 .c0:active,
 .c0:focus {
   color: #003d99;
-  background-color: #f2f2f2;
+  background-color: #00000000;
   cursor: pointer;
 }
 
@@ -2130,10 +3800,34 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -2149,14 +3843,11 @@ exports[`Button with size large renders a ghost variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #002966;
   background-color: #ffffff;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2201,10 +3892,34 @@ exports[`Button with size large renders a ghost variant correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -2220,14 +3935,11 @@ exports[`Button with size large renders a primary variant with a label correctly
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2272,10 +3984,34 @@ exports[`Button with size large renders a primary variant with a label correctly
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -2291,14 +4027,11 @@ exports[`Button with size large renders a primary variant with a label correctly
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2343,17 +4076,41 @@ exports[`Button with size large renders a primary variant with a label correctly
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
 
 exports[`Button with size large renders with a bare icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 1.8rem;
@@ -2369,14 +4126,11 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.7rem;
-  padding-right: 1.4rem;
   color: #002966;
   background-color: #00000000;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2395,7 +4149,7 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
 .c0:active,
 .c0:focus {
   color: #003d99;
-  background-color: #f2f2f2;
+  background-color: #00000000;
   cursor: pointer;
 }
 
@@ -2421,35 +4175,59 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      height="1.8rem"
-      type="oInfo"
-      width="1.8rem"
     >
-      <svg
-        fill="#000"
+      <span
+        class="c2"
         height="1.8rem"
-        viewBox="0 0 24 24"
+        type="oInfo"
         width="1.8rem"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
 
 exports[`Button with size large renders with an icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 1.8rem;
@@ -2465,14 +4243,11 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.7rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2517,28 +4292,52 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      height="1.8rem"
-      type="oInfo"
-      width="1.8rem"
     >
-      <svg
-        fill="#000"
+      <span
+        class="c2"
         height="1.8rem"
-        viewBox="0 0 24 24"
+        type="oInfo"
         width="1.8rem"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -2554,14 +4353,11 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #002966;
   background-color: #00000000;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2580,7 +4376,7 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
 .c0:active,
 .c0:focus {
   color: #003d99;
-  background-color: #f2f2f2;
+  background-color: #00000000;
   cursor: pointer;
 }
 
@@ -2606,10 +4402,34 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -2625,14 +4445,11 @@ exports[`Button with size medium renders a ghost variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #002966;
   background-color: #ffffff;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2677,10 +4494,34 @@ exports[`Button with size medium renders a ghost variant correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -2696,14 +4537,11 @@ exports[`Button with size medium renders a primary variant with a label correctl
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2748,10 +4586,34 @@ exports[`Button with size medium renders a primary variant with a label correctl
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -2767,14 +4629,11 @@ exports[`Button with size medium renders a primary variant with a label correctl
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2819,17 +4678,41 @@ exports[`Button with size medium renders a primary variant with a label correctl
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
 
 exports[`Button with size medium renders with a bare icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 1.8rem;
@@ -2845,14 +4728,11 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.5rem;
-  padding-right: 1.4rem;
   color: #002966;
   background-color: #00000000;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2871,7 +4751,7 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
 .c0:active,
 .c0:focus {
   color: #003d99;
-  background-color: #f2f2f2;
+  background-color: #00000000;
   cursor: pointer;
 }
 
@@ -2897,35 +4777,59 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      height="1.8rem"
-      type="oInfo"
-      width="1.8rem"
     >
-      <svg
-        fill="#000"
+      <span
+        class="c2"
         height="1.8rem"
-        viewBox="0 0 24 24"
+        type="oInfo"
         width="1.8rem"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
 
 exports[`Button with size medium renders with an icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 1.8rem;
@@ -2941,14 +4845,11 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
-  padding-left: 0.5rem;
-  padding-right: 1.4rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -2993,28 +4894,52 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      height="1.8rem"
-      type="oInfo"
-      width="1.8rem"
     >
-      <svg
-        fill="#000"
+      <span
+        class="c2"
         height="1.8rem"
-        viewBox="0 0 24 24"
+        type="oInfo"
         width="1.8rem"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
+        <svg
+          fill="#000"
+          height="1.8rem"
+          viewBox="0 0 24 24"
+          width="1.8rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -3030,14 +4955,11 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
   color: #002966;
   background-color: #00000000;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -3056,7 +4978,7 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
 .c0:active,
 .c0:focus {
   color: #003d99;
-  background-color: #f2f2f2;
+  background-color: #00000000;
   cursor: pointer;
 }
 
@@ -3082,10 +5004,34 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -3101,14 +5047,11 @@ exports[`Button with size small renders a ghost variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
   color: #002966;
   background-color: #ffffff;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -3153,10 +5096,34 @@ exports[`Button with size small renders a ghost variant correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -3172,14 +5139,11 @@ exports[`Button with size small renders a primary variant with a label correctly
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -3224,10 +5188,34 @@ exports[`Button with size small renders a primary variant with a label correctly
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
@@ -3243,14 +5231,11 @@ exports[`Button with size small renders a primary variant with a label correctly
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -3295,17 +5280,41 @@ exports[`Button with size small renders a primary variant with a label correctly
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    button
+    <div
+      class="c1"
+    >
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
 
 exports[`Button with size small renders with a bare icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 1.4rem;
@@ -3321,14 +5330,11 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.6rem;
   color: #002966;
   background-color: #00000000;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -3347,7 +5353,7 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
 .c0:active,
 .c0:focus {
   color: #003d99;
-  background-color: #f2f2f2;
+  background-color: #00000000;
   cursor: pointer;
 }
 
@@ -3373,35 +5379,59 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.3rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      height="1.4rem"
-      type="oInfo"
-      width="1.4rem"
     >
-      <svg
-        fill="#000"
+      <span
+        class="c2"
         height="1.4rem"
-        viewBox="0 0 24 24"
+        type="oInfo"
         width="1.4rem"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
+        <svg
+          fill="#000"
+          height="1.4rem"
+          viewBox="0 0 24 24"
+          width="1.4rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;
 
 exports[`Button with size small renders with an icon correctly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
   cursor: inherit;
   display: inline-block;
   height: 1.4rem;
@@ -3417,14 +5447,11 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  padding-left: 0.3rem;
-  padding-right: 0.6rem;
   color: #ffffff;
   background-color: #002966;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -3469,28 +5496,52 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.3rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    <span
+    <div
       class="c1"
-      height="1.4rem"
-      type="oInfo"
-      width="1.4rem"
     >
-      <svg
-        fill="#000"
+      <span
+        class="c2"
         height="1.4rem"
-        viewBox="0 0 24 24"
+        type="oInfo"
         width="1.4rem"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-        />
-      </svg>
-    </span>
-    button
+        <svg
+          fill="#000"
+          height="1.4rem"
+          viewBox="0 0 24 24"
+          width="1.4rem"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+      button
+    </div>
   </button>
 </DocumentFragment>
 `;

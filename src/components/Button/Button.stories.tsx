@@ -15,11 +15,6 @@ const Readme = require("./README.md")
 const stories = storiesOf("Buttons", module)
 stories.addDecorator(withKnobs)
 
-const kindOptions = {
-  Primary: "primary",
-  Secondary: "secondary",
-}
-
 const sizeOptions = {
   Small: "small",
   Medium: "medium",
@@ -31,24 +26,25 @@ const colorThemeOptions = {
   Danger: "danger",
   Warning: "warning",
   Unsaved: "unsaved",
+  Success: "success",
+  Regular: "regular",
 }
 
 const defaultProps = {
   label: text("Label", "Button"),
-  kind: select("Kind", kindOptions, "primary"),
   size: select("Size", sizeOptions, "medium"),
   ghost: boolean("Ghost", false),
   disabled: boolean("Disabled", false),
   bare: boolean("Bare", false),
   onClick: action("button-click"),
-  colorPreset: select("Color preset", colorThemeOptions, "neutral")
+  colorPreset: select("Color preset", colorThemeOptions, "neutral"),
 }
 
 const additionalProps = {
   icon: text("Icon", "oInfo"),
   insetLabel: text("InsetLabel", "10"),
   customColor: text("Custom Color", "#9242f4"),
-  insetCustomColor: text("Inset Custom Color", "#000000")
+  insetCustomColor: text("Inset Custom Color", "#000000"),
 }
 
 stories
@@ -60,9 +56,22 @@ stories
       sidebar: Readme,
     },
   })
-  .add("Simple primary with text", () => (
+  .add("Simple with text", () => <Button {...defaultProps} />)
+  .add("Regular with left inset", () => (
     <Button
       {...defaultProps}
+      colorPreset="regular"
+      insetPosition="left"
+      insetLabel={additionalProps.insetLabel}
+    />
+  ))
+  .add("Regular with left inset and fluid width", () => (
+    <Button
+      {...defaultProps}
+      colorPreset="regular"
+      insetPosition="left"
+      insetLabel={additionalProps.insetLabel}
+      size="fluid"
     />
   ))
   .add("With a non-default color preset", () => (
@@ -71,36 +80,17 @@ stories
       colorPreset={select("Color preset", colorThemeOptions, "danger")}
     />
   ))
-  .add("Simple secondary with text", () => (
-    <Button
-      {...defaultProps}
-      kind={select("Kind", kindOptions, "secondary")}
-    />
-  ))
   .add("Ghost (inverted color scheme)", () => (
-    <Button
-      {...defaultProps}
-      ghost={boolean("Ghost", true)}
-    />
+    <Button {...defaultProps} ghost={boolean("Ghost", true)} />
   ))
   .add("With an inset", () => (
-    <Button
-      {...defaultProps}
-      insetLabel={additionalProps.insetLabel}
-    />
+    <Button {...defaultProps} insetLabel={additionalProps.insetLabel} />
   ))
   .add("Icon", () => (
-    <Button
-      {...defaultProps}
-      label={undefined}
-      icon={additionalProps.icon}
-    />
+    <Button {...defaultProps} label={undefined} icon={additionalProps.icon} />
   ))
   .add("Icon with text", () => (
-    <Button
-      {...defaultProps}
-      icon={additionalProps.icon}
-    />
+    <Button {...defaultProps} icon={additionalProps.icon} />
   ))
   .add("Icon with text and an inset", () => (
     <Button
@@ -127,12 +117,7 @@ stories
       })}
     />
   ))
-  .add("With an href", () => (
-    <Button
-      {...defaultProps}
-      href="/sample"
-    />
-  ))
+  .add("With an href", () => <Button {...defaultProps} href="/sample" />)
   .add("With custom styles", () => (
     <Button
       {...defaultProps}
@@ -141,9 +126,6 @@ stories
   ))
   .add("Button Group", () => {
     // props which should be same for all Buttons in ButtonGroup
-    const kind = options("kind", kindOptions, "primary", {
-      display: "inline-radio",
-    })
     const size = options("size", sizeOptions, "medium", {
       display: "inline-radio",
     })
@@ -158,7 +140,6 @@ stories
       <Button.Group>
         <Button
           label={text("Label 1", "")}
-          kind={kind}
           size={size}
           colorPreset={colorPreset}
           ghost={ghost}
@@ -169,7 +150,6 @@ stories
         />
         <Button
           label={text("Label 2", "Dropdown")}
-          kind={kind}
           size={size}
           colorPreset={colorPreset}
           ghost={ghost}
@@ -180,7 +160,6 @@ stories
         />
         <Button
           label={text("Label 3", "")}
-          kind={kind}
           size={size}
           colorPreset={colorPreset}
           ghost={ghost}
@@ -201,9 +180,6 @@ stories
     const className = text("text", "HelloGroup")
 
     // props which should be same for all Buttons in ButtonGroup
-    const kind = options("kind", kindOptions, "primary", {
-      display: "inline-radio",
-    })
     const size = options("size", sizeOptions, "medium", {
       display: "inline-radio",
     })
@@ -217,7 +193,6 @@ stories
       <Button.Group style={style} className={className}>
         <Button
           label={text("Label 2", "Dropdown")}
-          kind={kind}
           size={size}
           colorPreset={colorPreset}
           ghost={ghost}
@@ -228,7 +203,6 @@ stories
         />
         <Button
           label={text("Label 3", "")}
-          kind={kind}
           size={size}
           colorPreset={colorPreset}
           ghost={ghost}
@@ -249,9 +223,6 @@ stories
     const className = text("text", "HelloGroup")
 
     // props which should be same for all Buttons in ButtonGroup
-    const kind = options("kind", kindOptions, "primary", {
-      display: "inline-radio",
-    })
     const size = options("size", sizeOptions, "medium", {
       display: "inline-radio",
     })
@@ -265,7 +236,6 @@ stories
       <Button.Group style={style} className={className}>
         <Button
           label={text("Label 2", "Dropdown")}
-          kind={kind}
           size={size}
           colorPreset={colorPreset}
           ghost={ghost}
@@ -276,7 +246,6 @@ stories
         />
         <Button
           label={text("Label 3", "")}
-          kind={kind}
           size={size}
           colorPreset={colorPreset}
           ghost={ghost}
