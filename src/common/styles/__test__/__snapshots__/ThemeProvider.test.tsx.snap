@@ -11,14 +11,11 @@ exports[`Passing Custom Theme Changing palette color Blue100 to #1182D4 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: inherit;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
   color: #ffffff;
   background-color: #1183d4;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
   border-radius: 0.4rem;
   border-style: none;
   box-sizing: border-box;
@@ -63,10 +60,34 @@ exports[`Passing Custom Theme Changing palette color Blue100 to #1182D4 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
     class="c0"
   >
-    Changed Color of Neutral
+    <div
+      class="c1"
+    >
+      Changed Color of Neutral
+    </div>
   </button>
 </DocumentFragment>
 `;
