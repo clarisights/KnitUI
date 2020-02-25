@@ -53,7 +53,7 @@ stories
       text={text("text", "Label")}
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
-      customColor={(text("customColor", "#B267B2"))}
+      customColor={text("customColor", "#B267B2")}
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
@@ -126,7 +126,16 @@ stories
       rounded={boolean("Rounded", false)}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
-      icons={{ right: (<Icon type="oClose" style={{cursor: "pointer"}} fill="#FFFFFF" onClick={action("icon click")} />) }}
+      icons={{
+        right: (
+          <Icon
+            type="oClose"
+            style={{ cursor: "pointer" }}
+            fill="#FFFFFF"
+            onClick={action("icon click")}
+          />
+        ),
+      }}
     />
   ))
   .add("With a left and a right icons", () => (
@@ -182,7 +191,7 @@ stories
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
-      insetColor={(text("insetColor", "#4267B2"))}
+      insetColor={text("insetColor", "#4267B2")}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
     />
@@ -193,20 +202,21 @@ stories
       expanded={boolean("Expanded", false)}
       size={select("Size", sizeOptions, "medium")}
       colorPreset={select("Color preset", colorThemeOptions, "neutral")}
-      insetColor={(text("insetColor", "#4267B2"))}
-      customColor={(text("customColor", "#B267B2"))}
+      insetColor={text("insetColor", "#4267B2")}
+      customColor={text("customColor", "#B267B2")}
       outlined={boolean("Outlined", false)}
       focus={boolean("Focus", false)}
-    />))
-    .add("should respect genric DOM attributes", () => (
-      <Label
-        text={text("text", "Label")}
-        expanded={boolean("Expanded", false)}
-        size={select("Size", sizeOptions, "medium")}
-        colorPreset={select("Color preset", colorThemeOptions, "neutral")}
-        rounded={boolean("Rounded", false)}
-        outlined={boolean("Outlined", false)}
-        focus={boolean("Focus", false)}
-        onClick={action("label clicked")}
-      />
-    ))
+    />
+  ))
+  .add("should respect genric DOM attributes", () => (
+    <Label
+      text={text("text", "Label")}
+      expanded={boolean("Expanded", false)}
+      size={select("Size", sizeOptions, "medium")}
+      colorPreset={select("Color preset", colorThemeOptions, "neutral")}
+      rounded={boolean("Rounded", false)}
+      outlined={boolean("Outlined", false)}
+      focus={boolean("Focus", false)}
+      onClick={action("label clicked")}
+    />
+  ))
