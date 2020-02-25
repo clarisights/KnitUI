@@ -8,6 +8,7 @@ import React, {
 } from "react"
 import ReactDOM from "react-dom"
 import { usePortal, useOutsideClick } from "../../common/hooks"
+import { addRootElement, removeElem } from "../../common/hooks/usePortal"
 import { ITriggerProps } from "./types"
 
 /**
@@ -40,6 +41,17 @@ const getPosition = target => {
   }
 }
 
+function createRoot(id: string) {
+  const zIndex = "8000"
+  const elem = document.createElement("div")
+  elem.setAttribute("id", id)
+  elem.setAttribute(
+    "style",
+    `position: fixed;z-index: ${zIndex}; top: 0; left: 0; right: 0; bottom: 0`
+  )
+  return elem
+}
+
 /**
  *
  * @param overlayElem overlay to render/ elem to align
@@ -48,8 +60,13 @@ const getPosition = target => {
  * @param portalElem portal's main div
  * align parent elemenet below the target
  */
-const alignTarget = (overlayElem, target, getPopUpContainer, portalElem) => {
-  const position = getPosition(target)
+const alignTarget = (
+  overlayElem,
+  target,
+  getPopUpContainer,
+  portalElem,
+  position
+) => {
   const container = getPopUpContainer(target)
   if (overlayElem && container) {
     const rect = overlayElem.getBoundingClientRect()
@@ -66,38 +83,71 @@ const alignTarget = (overlayElem, target, getPopUpContainer, portalElem) => {
 }
 
 export default function Trigger(props: ITriggerProps) {
-  const { children, overlay } = props
+  const { children, overlay, defaultVisible, position } = props
   const target = usePortal("trigger")
-  const [visible, setVisible] = useState(false)
+  const scrollBlocker = useRef(createRoot("scroll-block"))
+  const internalState = useState(defaultVisible)
+  const {
+    visible = internalState[0],
+    onVisibleChange = internalState[1],
+  } = props
   function onOutsideClick(elem: HTMLElement, visible: boolean) {
     if (!contains(ref.current, elem) && visible) {
-      setVisible(false)
+      onVisibleChange(false)
     }
   }
   useOutsideClick(onOutsideClick, [visible])
   const ref = useRef(null)
   const triggerRef: RefObject<HTMLElement> = useRef(null)
-  const newChildProps: HTMLAttributes<HTMLElement> & { key: string } = {
-    key: "trigger",
-  }
   const handleClick = () => {
-    setVisible(!visible)
+    onVisibleChange(!visible)
   }
-  const getPopUpContainer = () =>
-    triggerRef.current && triggerRef.current.parentElement
+  // getpopupcontainer -> if passed use it
+  // if not use target.prent
+  // if no target use document.body
+  // const getPopUpContainer = () =>
+  //   triggerRef.current && triggerRef.current.parentElement
+  const getPopUpContainer = () => document.body
+  useEffect(() => {
+    const targetPosition = position || getPosition(triggerRef.current)
+    console.log("e", position, targetPosition, triggerRef, ref)
+    alignTarget(
+      ref.current,
+      triggerRef.current,
+      getPopUpContainer,
+      target,
+      targetPosition
+    )
+  }, [])
   useEffect(() => {
     if (visible) {
-      alignTarget(ref.current, triggerRef.current, getPopUpContainer, target)
+      const targetPosition = position || getPosition(triggerRef.current)
+      alignTarget(
+        ref.current,
+        triggerRef.current,
+        getPopUpContainer,
+        target,
+        targetPosition
+      )
+      addRootElement(scrollBlocker.current)
+    } else {
+      removeElem(scrollBlocker.current)
     }
   }, [visible])
-  newChildProps.onClick = handleClick
-  const childElement = React.Children.only(children) as React.ReactElement
-  const triggerElem = React.cloneElement(childElement, {
-    ref: triggerRef,
-    ...newChildProps,
-  })
-  const popup = <div ref={ref}>{overlay}</div>
-  const portal = visible ? ReactDOM.createPortal(popup, target) : null
+  let triggerElem: any = null
+  if (!position) {
+    const newChildProps: HTMLAttributes<HTMLElement> & { key: string } = {
+      key: "trigger",
+    }
+    newChildProps.onClick = handleClick
+    const childElement = React.Children.only(children) as React.ReactElement
+    triggerElem = React.cloneElement(childElement, {
+      ref: triggerRef,
+      ...newChildProps,
+    })
+  }
+  const popup = <div ref={ref}>{visible ? overlay : null}</div>
+  const portal = ReactDOM.createPortal(popup, target)
   return (
     <>
       {triggerElem}

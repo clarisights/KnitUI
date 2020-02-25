@@ -21,6 +21,7 @@ export interface ITriggerProps {
   disabled?: boolean
   children?: React.ReactNode
   overlay: React.ReactNode
+  defaultVisible?: boolean
 }
 
 export type TTarget = TPosition | ReactNode
