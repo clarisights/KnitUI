@@ -3,7 +3,7 @@
 exports[`Modal with overriden padding 1`] = `
 .c5 {
   padding: 0px 0px;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -55,6 +55,7 @@ exports[`Modal with overriden padding 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
@@ -240,7 +241,7 @@ exports[`Modal with overriden padding 1`] = `
 exports[`Modal with size large with a bottom panel 1`] = `
 .c5 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -292,6 +293,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
@@ -490,7 +492,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
 exports[`Modal with size large with a left panel 1`] = `
 .c7 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -570,6 +572,7 @@ exports[`Modal with size large with a left panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .c1 {
@@ -764,7 +767,7 @@ exports[`Modal with size large with a left panel 1`] = `
 exports[`Modal with size large with a right panel 1`] = `
 .c6 {
   padding: 2.1rem 2.8rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -844,6 +847,7 @@ exports[`Modal with size large with a right panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .c1 {
@@ -1038,7 +1042,7 @@ exports[`Modal with size large with a right panel 1`] = `
 exports[`Modal with size large with simple config 1`] = `
 .c5 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -1090,6 +1094,7 @@ exports[`Modal with size large with simple config 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
@@ -1275,7 +1280,7 @@ exports[`Modal with size large with simple config 1`] = `
 exports[`Modal with size medium with a bottom panel 1`] = `
 .c5 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -1327,6 +1332,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
@@ -1525,7 +1531,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 exports[`Modal with size medium with a left panel 1`] = `
 .c7 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -1605,6 +1611,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .c1 {
@@ -1799,7 +1806,7 @@ exports[`Modal with size medium with a left panel 1`] = `
 exports[`Modal with size medium with a right panel 1`] = `
 .c6 {
   padding: 2.1rem 2.8rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -1879,6 +1886,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .c1 {
@@ -2073,7 +2081,7 @@ exports[`Modal with size medium with a right panel 1`] = `
 exports[`Modal with size medium with simple config 1`] = `
 .c5 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -2125,6 +2133,7 @@ exports[`Modal with size medium with simple config 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
@@ -2310,7 +2319,7 @@ exports[`Modal with size medium with simple config 1`] = `
 exports[`Modal with size small with a bottom panel 1`] = `
 .c5 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -2362,6 +2371,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
@@ -2560,7 +2570,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
 exports[`Modal with size small with a left panel 1`] = `
 .c7 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -2640,6 +2650,7 @@ exports[`Modal with size small with a left panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .c1 {
@@ -2834,7 +2845,7 @@ exports[`Modal with size small with a left panel 1`] = `
 exports[`Modal with size small with a right panel 1`] = `
 .c6 {
   padding: 2.1rem 2.8rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -2914,6 +2925,7 @@ exports[`Modal with size small with a right panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .c1 {
@@ -3108,7 +3120,7 @@ exports[`Modal with size small with a right panel 1`] = `
 exports[`Modal with size small with simple config 1`] = `
 .c5 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -3160,6 +3172,7 @@ exports[`Modal with size small with simple config 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
@@ -3345,7 +3358,7 @@ exports[`Modal with size small with simple config 1`] = `
 exports[`Modal with size x-large with a bottom panel 1`] = `
 .c5 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -3397,6 +3410,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
@@ -3595,7 +3609,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 exports[`Modal with size x-large with a left panel 1`] = `
 .c7 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -3675,6 +3689,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .c1 {
@@ -3869,7 +3884,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
 exports[`Modal with size x-large with a right panel 1`] = `
 .c6 {
   padding: 2.1rem 2.8rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -3949,6 +3964,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .c1 {
@@ -4143,7 +4159,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
 exports[`Modal with size x-large with simple config 1`] = `
 .c5 {
   padding: 2.8rem 2.1rem;
-  overflow-y: auto;
+  overflow: auto;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -4195,6 +4211,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  overflow: auto;
   max-height: calc(100vh - 19.6rem);
   min-height: 29.4rem;
 }
