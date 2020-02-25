@@ -41,6 +41,7 @@ export const Content = styled.div<IStyledModal>`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow: auto;
 `
 
 export const VerticalLayoutContent = styled(Content)`
