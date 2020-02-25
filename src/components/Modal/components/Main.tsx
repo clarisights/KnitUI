@@ -16,7 +16,7 @@ const StyledMain = styled.div.attrs(() => ({
   "data-testid": "knit-modal-body",
 }))<IStyledDialog>`
   padding: ${props => getPadding(props)};
-  overflow-y: auto;
+  overflow: auto;
   flex: 1 1 auto;
 `
 
