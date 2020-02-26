@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import { getThemeColor } from "../../../common/_utils"
 import Icon from "../../Icon"
 
-export const OptionWrapper = styled.div`
+export const OptionWrapper = styled.div<{ isDisabled?: boolean }>`
   font-size: 1.4rem;
   line-height: 2rem;
   display: flex;
@@ -15,10 +15,21 @@ export const OptionWrapper = styled.div`
   &:hover {
     background-color: ${props => getThemeColor(props, "Neutral10")};
   }
-  &:active {
-    border: 0.1rem solid ${props => getThemeColor(props, "Azure80")};
-    box-shadow: 0 0 0.2rem #0066ff;
-  }
+  ${({ isDisabled }) =>
+    !isDisabled
+      ? css`
+          &:active {
+            border: 0.1rem solid ${props => getThemeColor(props, "Azure80")};
+            box-shadow: 0 0 0.2rem #0066ff;
+          }
+        `
+      : css`
+          cursor: not-allowed;
+          opacity: 0.6;
+          &:active {
+            pointer-events: none;
+          }
+        `}
 `
 
 export const OptionDescription = styled.span`
