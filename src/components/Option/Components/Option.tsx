@@ -29,7 +29,7 @@ const Option: IOption = props => {
     <OptionWrapper
       onClick={onClick ? e => onClick(e, value) : () => null}
       style={customStyles}
-      disabled={disabled}
+      isDisabled={disabled}
       {...rest}>
       <FlexWrapper>{leftChildren}</FlexWrapper>
       <FlexWrapper>{rightChildren}</FlexWrapper>
