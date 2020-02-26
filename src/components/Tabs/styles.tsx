@@ -152,7 +152,8 @@ export const OverflowContainer = styled.div`
   align-items: center;
   white-space: nowrap;
   width: 100%;
-  overflow: scroll hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
   padding-bottom: ${getOSName() !== "MacOS" ? "0px" : "17px"};
   margin-bottom: -17px;
   box-sizing: content-box;
