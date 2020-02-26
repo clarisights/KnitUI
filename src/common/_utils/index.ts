@@ -97,7 +97,7 @@ export const parseColorPreset = (theme, backgroundColor: ColorPreset) => {
 }
 
 /**
- * Get Color from Styled Component Props
+ * Get color from Styled Component Props
  */
 export const getThemeColor = (props: any, color: string) => {
   const {
@@ -133,6 +133,28 @@ export const getColorOfLightness = (
       .hex()
   else computedColor = color
   return computedColor
+}
+
+/**
+ * Get font-size from Styled Component Props
+ */
+export const getThemeFontSize = (props, size: number) => {
+  const {
+    theme: { knitui },
+  } = props
+
+  return knitui.typography[size].fontSize
+}
+
+/**
+ * Get line-height from Styled Component Props
+ */
+export const getThemeLineHeight = (props, size: number) => {
+  const {
+    theme: { knitui },
+  } = props
+
+  return knitui.typography[size].lineHeight
 }
 
 /**

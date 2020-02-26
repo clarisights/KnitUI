@@ -38,118 +38,197 @@ exports[`Input with a custom label 1`] = `
     </span>
   </div>
   .c0 {
-  height: 2.8rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
   width: 100%;
-  margin: 0.4rem 0;
+  position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
+  color: hsl(0,0%,10%);
   font-size: 1.4rem;
   line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
 }
 
-.c0:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
 }
 
-.c0:focus,
-.c0:active {
+.c1:focus,
+.c1:active {
   outline: none;
   background-color: hsl(0,0%,100%);
   border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
-.c0::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:disabled {
+.c1:disabled {
   cursor: not-allowed;
   background-color: hsl(0,0%,95%);
   border: 1px solid transparent;
   box-shadow: none;
+  resize: none;
 }
 
-<input
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
     class="c0"
+    label="[object Object]"
     placeholder="placeholder"
-  />
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
 </DocumentFragment>
 `;
 
 exports[`Input with a custom notification 1`] = `
 <DocumentFragment>
   .c0 {
-  height: 2.8rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
   width: 100%;
-  margin: 0.4rem 0;
+  position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
+  color: hsl(0,0%,10%);
   font-size: 1.4rem;
   line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
 }
 
-.c0:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
 }
 
-.c0:focus,
-.c0:active {
+.c1:focus,
+.c1:active {
   outline: none;
   background-color: hsl(0,0%,100%);
   border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
-.c0::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:disabled {
+.c1:disabled {
   cursor: not-allowed;
   background-color: hsl(0,0%,95%);
   border: 1px solid transparent;
   box-shadow: none;
+  resize: none;
 }
 
-<input
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
     class="c0"
     placeholder="placeholder"
-  />
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
   .c0 {
   cursor: inherit;
   display: inline-block;
@@ -193,7 +272,8 @@ exports[`Input with a text label 1`] = `
   .c0 {
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: hsl(0,0%,5%);
+  text-transform: uppercase;
+  color: hsl(0,0%,50%);
 }
 
 <label
@@ -202,59 +282,99 @@ exports[`Input with a text label 1`] = `
     label
   </label>
   .c0 {
-  height: 2.8rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
   width: 100%;
-  margin: 0.4rem 0;
+  position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
+  color: hsl(0,0%,10%);
   font-size: 1.4rem;
   line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
 }
 
-.c0:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
 }
 
-.c0:focus,
-.c0:active {
+.c1:focus,
+.c1:active {
   outline: none;
   background-color: hsl(0,0%,100%);
   border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
-.c0::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:disabled {
+.c1:disabled {
   cursor: not-allowed;
   background-color: hsl(0,0%,95%);
   border: 1px solid transparent;
   box-shadow: none;
+  resize: none;
 }
 
-<input
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
     class="c0"
+    label="label"
     placeholder="placeholder"
-  />
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
 </DocumentFragment>
 `;
 
@@ -263,7 +383,8 @@ exports[`Input with a text label and a text notification 1`] = `
   .c0 {
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: hsl(0,0%,5%);
+  text-transform: uppercase;
+  color: hsl(0,0%,50%);
 }
 
 <label
@@ -272,62 +393,103 @@ exports[`Input with a text label and a text notification 1`] = `
     label
   </label>
   .c0 {
-  height: 2.8rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
   width: 100%;
-  margin: 0.4rem 0;
+  position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
+  color: hsl(0,0%,10%);
   font-size: 1.4rem;
   line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
 }
 
-.c0:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
 }
 
-.c0:focus,
-.c0:active {
+.c1:focus,
+.c1:active {
   outline: none;
   background-color: hsl(0,0%,100%);
   border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
-.c0::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:disabled {
+.c1:disabled {
   cursor: not-allowed;
   background-color: hsl(0,0%,95%);
   border: 1px solid transparent;
   box-shadow: none;
+  resize: none;
 }
 
-<input
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
     class="c0"
+    label="label"
     placeholder="placeholder"
-  />
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
   .c0 {
   font-size: 1.2rem;
   line-height: 1.8rem;
+  color: hsl(0,0%,65%);
 }
 
 <div
@@ -341,314 +503,45 @@ exports[`Input with a text label and a text notification 1`] = `
 exports[`Input with a text notification 1`] = `
 <DocumentFragment>
   .c0 {
-  height: 2.8rem;
-  width: 100%;
-  margin: 0.4rem 0;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
-  box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
-  font-size: 1.4rem;
-  line-height: 2rem;
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
-}
-
-.c0:focus,
-.c0:active {
-  outline: none;
-  background-color: hsl(0,0%,100%);
-  border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c0::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
-  border: 1px solid transparent;
-  box-shadow: none;
-}
-
-<input
-    class="c0"
-    placeholder="placeholder"
-  />
-  notification
-</DocumentFragment>
-`;
-
-exports[`Input with left addon renders correctly 1`] = `
-<DocumentFragment>
-  .c3 {
-  height: 2.8rem;
-  width: 100%;
-  margin: 0.4rem 0;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
-  box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
-  font-size: 1.4rem;
-  line-height: 2rem;
-}
-
-.c3:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
-}
-
-.c3:focus,
-.c3:active {
-  outline: none;
-  background-color: hsl(0,0%,100%);
-  border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c3::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c3::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c3:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c3::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c3:disabled {
-  cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
-  border: 1px solid transparent;
-  box-shadow: none;
-}
-
-.c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
 }
 
-.c0 input {
-  padding-left: 34px;
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.c2 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-<span
-    class="c0"
-  >
-    <span
-      class="c1"
-    >
-      <span
-        class="c2"
-        height="18px"
-        type="oInfo"
-        width="18px"
-      >
-        <svg
-          fill="#000"
-          height="18px"
-          viewBox="0 0 24 24"
-          width="18px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-          />
-        </svg>
-      </span>
-    </span>
-    <input
-      class="c3"
-      placeholder="placeholder"
-    />
-  </span>
-</DocumentFragment>
-`;
-
-exports[`Input with left and right addons renders correctly 1`] = `
-<DocumentFragment>
-  .c3 {
-  height: 2.8rem;
   width: 100%;
-  margin: 0.4rem 0;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
-  box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
-  font-size: 1.4rem;
-  line-height: 2rem;
-}
-
-.c3:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
-}
-
-.c3:focus,
-.c3:active {
-  outline: none;
-  background-color: hsl(0,0%,100%);
-  border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
-}
-
-.c3::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c3::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c3:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c3::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c3:disabled {
-  cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
-  border: 1px solid transparent;
-  box-shadow: none;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-}
-
-.c0 input {
-  padding-left: 34px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.c2 {
-  cursor: inherit;
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-}
-
-<span
-    class="c0"
-  >
-    <span
-      class="c1"
-    >
-      <span
-        class="c2"
-        height="18px"
-        type="oInfo"
-        width="18px"
-      >
-        <svg
-          fill="#000"
-          height="18px"
-          viewBox="0 0 24 24"
-          width="18px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-          />
-        </svg>
-      </span>
-    </span>
-    <input
-      class="c3"
-      placeholder="placeholder"
-    />
-  </span>
-</DocumentFragment>
-`;
-
-exports[`Input with right addon renders correctly 1`] = `
-<DocumentFragment>
-  .c1 {
-  height: 2.8rem;
-  width: 100%;
-  margin: 0.4rem 0;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
+  color: hsl(0,0%,10%);
   font-size: 1.4rem;
   line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
 }
 
 .c1:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
+  border: 1px solid hsl(0,0%,80%);
 }
 
 .c1:focus,
@@ -659,42 +552,164 @@ exports[`Input with right addon renders correctly 1`] = `
   box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
-.c1::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c1::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c1:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c1::placeholder {
-  color: hsl(0,0%,60%);
-}
-
 .c1:disabled {
   cursor: not-allowed;
   background-color: hsl(0,0%,95%);
   border: 1px solid transparent;
   box-shadow: none;
+  resize: none;
 }
 
-.c0 {
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
+    class="c0"
+    placeholder="placeholder"
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
+  .c0 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: hsl(0,0%,65%);
+}
+
+<div
+    class="c0"
+  >
+    notification
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input with left addon renders correctly 1`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c3 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c3::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c4 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c4:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c4:focus,
+.c4:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c4::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c4::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c4:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c4::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c4::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c4[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+.c0 {
+  display: inline-block;
   position: relative;
 }
 
 .c0 input {
-  padding-right: 34px;
+  padding-left: 3.6rem;
 }
 
-.c2 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -704,27 +719,334 @@ exports[`Input with right addon renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 10;
 }
 
-.c3 {
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      <span
+        class="c2"
+        height="18px"
+        type="oInfo"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+    </span>
+    <span
+      class="c3"
+      placeholder="placeholder"
+    >
+      <input
+        class="c4"
+        placeholder="placeholder"
+        type="text"
+        value=""
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with left and right addons renders correctly 1`] = `
+<DocumentFragment>
+  .c4 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
   width: 18px;
 }
 
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c1::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 2.8rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c2:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c2:focus,
+.c2:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c2[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c0 input {
+  padding-right: 3.6rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
 <span
     class="c0"
   >
-    <input
+    <span
       class="c1"
       placeholder="placeholder"
-    />
+    >
+      <input
+        class="c2"
+        placeholder="placeholder"
+        type="text"
+        value=""
+      />
+    </span>
     <span
-      class="c2"
+      class="c3"
     >
       <span
-        class="c3"
+        class="c4"
+        height="18px"
+        type="oInfo"
+        width="18px"
+      >
+        <svg
+          fill="#000"
+          height="18px"
+          viewBox="0 0 24 24"
+          width="18px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          />
+        </svg>
+      </span>
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with right addon renders correctly 1`] = `
+<DocumentFragment>
+  .c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c1::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 2.8rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c2:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c2:focus,
+.c2:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c2[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c0 input {
+  padding-right: 3.6rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+      placeholder="placeholder"
+    >
+      <input
+        class="c2"
+        placeholder="placeholder"
+        type="text"
+        value=""
+      />
+    </span>
+    <span
+      class="c3"
+    >
+      <span
+        class="c4"
         height="18px"
         type="oInfo"
         width="18px"
@@ -749,176 +1071,1814 @@ exports[`Input with right addon renders correctly 1`] = `
 exports[`Input with size large renders correctly 1`] = `
 <DocumentFragment>
   .c0 {
-  height: 3.2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 2.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
   width: 100%;
-  margin: 0.4rem 0;
+  position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.6rem 1.4rem;
+  padding: 0.6rem 1rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
+  color: hsl(0,0%,10%);
   font-size: 1.4rem;
   line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 3.4rem;
 }
 
-.c0:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
 }
 
-.c0:focus,
-.c0:active {
+.c1:focus,
+.c1:active {
   outline: none;
   background-color: hsl(0,0%,100%);
   border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
-.c0::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:disabled {
+.c1:disabled {
   cursor: not-allowed;
   background-color: hsl(0,0%,95%);
   border: 1px solid transparent;
   box-shadow: none;
+  resize: none;
 }
 
-<input
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 3.4rem;
+}
+
+<span
     class="c0"
     placeholder="placeholder"
-  />
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
 </DocumentFragment>
 `;
 
 exports[`Input with size small renders correctly 1`] = `
 <DocumentFragment>
   .c0 {
-  height: 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
   width: 100%;
-  margin: 0.4rem 0;
+  position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.1rem 1.4rem;
+  padding: 0.1rem 1rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
+  color: hsl(0,0%,10%);
   font-size: 1.2rem;
   line-height: 1.8rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2rem;
 }
 
-.c0:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
 }
 
-.c0:focus,
-.c0:active {
+.c1:focus,
+.c1:active {
   outline: none;
   background-color: hsl(0,0%,100%);
   border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
-.c0::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:disabled {
+.c1:disabled {
   cursor: not-allowed;
   background-color: hsl(0,0%,95%);
   border: 1px solid transparent;
   box-shadow: none;
+  resize: none;
 }
 
-<input
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2rem;
+}
+
+<span
     class="c0"
     placeholder="placeholder"
-  />
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
 </DocumentFragment>
 `;
 
 exports[`Input with size undefined renders correctly 1`] = `
 <DocumentFragment>
   .c0 {
-  height: 2.8rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
   width: 100%;
-  margin: 0.4rem 0;
+  position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1rem;
   box-sizing: border-box;
   background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,5%);
+  color: hsl(0,0%,10%);
   font-size: 1.4rem;
   line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
 }
 
-.c0:hover {
-  background-color: hsl(0,0%,90%);
-  color: hsl(0,0%,5%);
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
 }
 
-.c0:focus,
-.c0:active {
+.c1:focus,
+.c1:active {
   outline: none;
   background-color: hsl(0,0%,100%);
   border: 1px solid #5ab2f2;
   box-shadow: 0 0 2px hsl(216,100%,50%);
 }
 
-.c0::-webkit-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::-moz-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:-ms-input-placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0::placeholder {
-  color: hsl(0,0%,60%);
-}
-
-.c0:disabled {
+.c1:disabled {
   cursor: not-allowed;
   background-color: hsl(0,0%,95%);
   border: 1px solid transparent;
   box-shadow: none;
+  resize: none;
 }
 
-<input
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
     class="c0"
     placeholder="placeholder"
-  />
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with state error renders correctly 1`] = `
+<DocumentFragment>
+  .c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c1::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 3.6rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid hsl(0,100%,30%);
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c2:hover {
+  border: 1px solid hsl(0,100%,30%);
+}
+
+.c2:focus,
+.c2:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid hsl(0,100%,30%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid hsl(0,100%,30%);
+  box-shadow: none;
+  resize: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c2[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c0 input {
+  padding-right: 3.6rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      <input
+        class="c2"
+        type="text"
+        value=""
+      />
+    </span>
+    <span
+      class="c3"
+    >
+      <span
+        class="c4"
+        fill="#990000"
+        height="16px"
+        type="oErrorOutline"
+        width="16px"
+      >
+        <svg
+          fill="#990000"
+          height="16px"
+          viewBox="0 0 24 24"
+          width="16px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+          />
+        </svg>
+      </span>
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with state success renders correctly 1`] = `
+<DocumentFragment>
+  .c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c1::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 3.6rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid hsl(118,100%,20%);
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c2:hover {
+  border: 1px solid hsl(118,100%,20%);
+}
+
+.c2:focus,
+.c2:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid hsl(118,100%,20%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid hsl(118,100%,20%);
+  box-shadow: none;
+  resize: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c2[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c0 input {
+  padding-right: 3.6rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      <input
+        class="c2"
+        type="text"
+        value=""
+      />
+    </span>
+    <span
+      class="c3"
+    >
+      <span
+        class="c4"
+        fill="#036600"
+        height="16px"
+        type="oCheckCircleOutline"
+        width="16px"
+      >
+        <svg
+          fill="#036600"
+          height="16px"
+          viewBox="0 0 24 24"
+          width="16px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+          />
+        </svg>
+      </span>
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with state undefined renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c1:focus,
+.c1:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
+    class="c0"
+  >
+    <input
+      class="c1"
+      type="text"
+      value=""
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with state warning renders correctly 1`] = `
+<DocumentFragment>
+  .c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c1::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 3.6rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid hsl(47,100%,50%);
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c2:hover {
+  border: 1px solid hsl(47,100%,50%);
+}
+
+.c2:focus,
+.c2:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid hsl(47,100%,50%);
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid hsl(47,100%,50%);
+  box-shadow: none;
+  resize: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c2[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c0 input {
+  padding-right: 3.6rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      <input
+        class="c2"
+        type="text"
+        value=""
+      />
+    </span>
+    <span
+      class="c3"
+    >
+      <span
+        class="c4"
+        fill="#FFC700"
+        height="16px"
+        type="oWarning"
+        width="16px"
+      >
+        <svg
+          fill="#FFC700"
+          height="16px"
+          viewBox="0 0 24 24"
+          width="16px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 21H23L12 2L1 21ZM13 18H11V16H13V18ZM13 14H11V10H13V14Z"
+          />
+        </svg>
+      </span>
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with textarea resize: horizontal renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  font-family: InterRegular,-apple-system,BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+  resize: horizontal;
+}
+
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c1:focus,
+.c1:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+<span
+    class="c0"
+    type="textarea"
+  >
+    <textarea
+      class="c1"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with textarea resize: none renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  font-family: InterRegular,-apple-system,BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+  resize: none;
+}
+
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c1:focus,
+.c1:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+<span
+    class="c0"
+    type="textarea"
+  >
+    <textarea
+      class="c1"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with textarea resize: undefined renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  font-family: InterRegular,-apple-system,BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+  resize: both;
+}
+
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c1:focus,
+.c1:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+<span
+    class="c0"
+    type="textarea"
+  >
+    <textarea
+      class="c1"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with textarea resize: vertical renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  font-family: InterRegular,-apple-system,BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+  resize: vertical;
+}
+
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c1:focus,
+.c1:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+<span
+    class="c0"
+    type="textarea"
+  >
+    <textarea
+      class="c1"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with type number renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 0;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c1:focus,
+.c1:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
+    class="c0"
+    placeholder="placeholder"
+    type="number"
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="number"
+      value=""
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with type password renders correctly 1`] = `
+<DocumentFragment>
+  .c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c1::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 3.6rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c2:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c2:focus,
+.c2:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c2[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c0 input {
+  padding-right: 3.6rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+      placeholder="placeholder"
+      type="password"
+    >
+      <input
+        class="c2"
+        placeholder="placeholder"
+        type="password"
+        value=""
+      />
+    </span>
+    <span
+      class="c3"
+    >
+      <span
+        class="c4"
+        fill="#000000"
+        height="16px"
+        type="oVisibility"
+        width="16px"
+      >
+        <svg
+          fill="#000000"
+          height="16px"
+          viewBox="0 0 24 24"
+          width="16px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 6C15.79 6 19.17 8.13 20.82 11.5C19.17 14.87 15.79 17 12 17C8.21 17 4.83 14.87 3.18 11.5C4.83 8.13 8.21 6 12 6ZM12 4C7 4 2.73 7.11 1 11.5C2.73 15.89 7 19 12 19C17 19 21.27 15.89 23 11.5C21.27 7.11 17 4 12 4ZM12 9C13.38 9 14.5 10.12 14.5 11.5C14.5 12.88 13.38 14 12 14C10.62 14 9.5 12.88 9.5 11.5C9.5 10.12 10.62 9 12 9ZM12 7C9.52 7 7.5 9.02 7.5 11.5C7.5 13.98 9.52 16 12 16C14.48 16 16.5 13.98 16.5 11.5C16.5 9.02 14.48 7 12 7Z"
+          />
+        </svg>
+      </span>
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with type search renders correctly 1`] = `
+<DocumentFragment>
+  .c4 {
+  cursor: inherit;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c1::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 3.6rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c2:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c2:focus,
+.c2:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c2::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c2[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c0 input {
+  padding-right: 3.6rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+<span
+    class="c0"
+  >
+    <span
+      class="c1"
+      placeholder="placeholder"
+      type="search"
+    >
+      <input
+        class="c2"
+        placeholder="placeholder"
+        type="text"
+        value=""
+      />
+    </span>
+    <span
+      class="c3"
+    >
+      <span
+        class="c4"
+        fill="#a6a6a6"
+        height="16px"
+        type="oSearch"
+        width="16px"
+      >
+        <svg
+          fill="#a6a6a6"
+          height="16px"
+          viewBox="0 0 24 24"
+          width="16px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+          />
+        </svg>
+      </span>
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with type textarea renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  font-family: InterRegular,-apple-system,BlinkMacSystemFont,"Segoe UI", Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+  resize: both;
+}
+
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c1:focus,
+.c1:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+<span
+    class="c0"
+    placeholder="placeholder"
+    type="textarea"
+  >
+    <textarea
+      class="c1"
+      placeholder="placeholder"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Input with type undefined renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  height: 1.8rem;
+  width: 30px;
+  right: 0.2rem;
+  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0,0%,95%);
+  color: hsl(0,0%,10%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-transition: border 0.25s ease;
+  transition: border 0.25s ease;
+  height: 2.8rem;
+}
+
+.c1:hover {
+  border: 1px solid hsl(0,0%,80%);
+}
+
+.c1:focus,
+.c1:active {
+  outline: none;
+  background-color: hsl(0,0%,100%);
+  border: 1px solid #5ab2f2;
+  box-shadow: 0 0 2px hsl(216,100%,50%);
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: hsl(0,0%,95%);
+  border: 1px solid transparent;
+  box-shadow: none;
+  resize: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,65%);
+}
+
+.c1::selection {
+  background-color: hsl(217,80%,90%);
+}
+
+.c1[type="number"]::-webkit-inner-spin-button {
+  height: 2.8rem;
+}
+
+<span
+    class="c0"
+    placeholder="placeholder"
+  >
+    <input
+      class="c1"
+      placeholder="placeholder"
+      type="text"
+      value=""
+    />
+  </span>
 </DocumentFragment>
 `;

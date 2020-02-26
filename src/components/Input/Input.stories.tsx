@@ -1,8 +1,10 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import Input from "./index"
-import Icon from "../Icon"
 import { action } from "@storybook/addon-actions"
+
+import Input from "."
+import Icon from "../Icon"
+
 const Readme = require("./README.md")
 
 storiesOf("Input", module)
@@ -59,7 +61,7 @@ storiesOf("Input", module)
       }}>
       <Input
         onChange={action("input changed")}
-        placeholder="input with label"
+        placeholder="input with notification"
         notification="a firendly notification"
       />
     </div>
@@ -92,7 +94,7 @@ storiesOf("Input", module)
       }}>
       <Input
         onChange={action("input changed")}
-        placeholder="input with label"
+        placeholder="input with label and notification"
         label="label"
         notification="a firendly notification"
       />
@@ -105,8 +107,46 @@ storiesOf("Input", module)
       }}>
       <Input
         onChange={action("input changed")}
-        placeholder="input with label"
-        success
+        placeholder="Success input"
+        state="success"
+      />
+    </div>
+  ))
+  .add("with warning", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Warning input"
+        state="warning"
+      />
+    </div>
+  ))
+  .add("with error", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Error input"
+        state="error"
+      />
+    </div>
+  ))
+  .add("with success, label and notification", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Success input"
+        state="success"
+        label="label"
+        notification="a firendly notification"
       />
     </div>
   ))
@@ -117,9 +157,9 @@ storiesOf("Input", module)
       }}>
       <Input
         onChange={action("input changed")}
-        placeholder="input with label"
+        placeholder="Error input with label"
         label="here we go!"
-        error
+        state="error"
       />
     </div>
   ))
@@ -155,7 +195,7 @@ storiesOf("Input", module)
       <Input
         inputSize="small"
         onChange={action("input changed")}
-        placeholder="basic usage"
+        placeholder="Small input"
       />
     </div>
   ))
@@ -167,7 +207,7 @@ storiesOf("Input", module)
       <Input
         inputSize="large"
         onChange={action("input changed")}
-        placeholder="basic usage"
+        placeholder="Large input"
       />
     </div>
   ))
@@ -180,6 +220,132 @@ storiesOf("Input", module)
         disabled
         onChange={action("input changed")}
         placeholder="disabled input"
+      />
+    </div>
+  ))
+  .add("search input", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Search field"
+        type="search"
+      />
+    </div>
+  ))
+  .add("password input", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Password field"
+        type="password"
+      />
+    </div>
+  ))
+  .add("number input", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Number field"
+        type="number"
+      />
+    </div>
+  ))
+  .add("large number input", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Number field"
+        type="number"
+        inputSize="large"
+      />
+    </div>
+  ))
+  .add("textarea", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Textarea"
+        type="textarea"
+      />
+    </div>
+  ))
+  .add("textarea disabled", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Textarea"
+        type="textarea"
+        disabled
+      />
+    </div>
+  ))
+  .add("textarea only horizontal resize", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Textarea"
+        type="textarea"
+        textareaResize="horizontal"
+      />
+    </div>
+  ))
+  .add("textarea only horizontal resize (more width)", () => (
+    <div
+      style={{
+        width: 500,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Textarea"
+        type="textarea"
+        textareaResize="horizontal"
+      />
+    </div>
+  ))
+  .add("textarea only vertical resize", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Textarea"
+        type="textarea"
+        textareaResize="vertical"
+      />
+    </div>
+  ))
+  .add("textarea no resize", () => (
+    <div
+      style={{
+        width: 240,
+      }}>
+      <Input
+        onChange={action("input changed")}
+        placeholder="Textarea"
+        type="textarea"
+        textareaResize="none"
       />
     </div>
   ))
