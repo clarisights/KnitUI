@@ -11,6 +11,7 @@ export type TIconType = {
 export interface IOptionProps {
   value: string | number
   disabled?: boolean
+  selected?: boolean
   customStyles?: CSSProperties
   onClick?: (e: SyntheticEvent, value: string | number) => void
 }

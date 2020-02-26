@@ -13,6 +13,7 @@ const Option: IOption = props => {
     customStyles,
     onClick,
     children,
+    selected,
     disabled = false,
     ...rest
   } = props
@@ -23,10 +24,10 @@ const Option: IOption = props => {
   })
 
   // Filter children based on their alignment
-  const rightChildren = Children.toArray(children).filter(
+  const rightChildren = Children.toArray(updatedChildren).filter(
     comp => comp!.props.align === "right"
   )
-  const leftChildren = Children.toArray(children).filter(
+  const leftChildren = Children.toArray(updatedChildren).filter(
     comp => comp!.props.align !== "right"
   )
 
@@ -35,17 +36,21 @@ const Option: IOption = props => {
       onClick={onClick ? e => onClick(e, value) : () => null}
       style={customStyles}
       isDisabled={disabled}
+      selected={selected}
       {...rest}>
       <FlexWrapper>{leftChildren}</FlexWrapper>
-      <FlexWrapper>{rightChildren}</FlexWrapper>
+      <FlexWrapper>
+        {rightChildren}
+        {selected && <Option.Icon type="oCheck" align="right" />}
+      </FlexWrapper>
     </OptionWrapper>
   )
 }
 
 // Wrap all option sub-components in a common wrapper and pass all props to the corresponding component
-Option.Icon = OptionItemWrapper(Icon)
-Option.Text = OptionItemWrapper(OptionText)
-Option.Tag = OptionItemWrapper(Label)
+Option.Icon = OptionItemWrapper(Icon, {})
+Option.Text = OptionItemWrapper(OptionText, {})
+Option.Tag = OptionItemWrapper(Label, {})
 Option.Avatar = OptionItemWrapper(Avatar, { alignStart: true })
 Option.OptionGroup = OptionGroup
 

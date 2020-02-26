@@ -3,7 +3,10 @@ import styled, { css } from "styled-components"
 import { getThemeColor } from "../../../common/_utils"
 import Icon from "../../Icon"
 
-export const OptionWrapper = styled.div<{ isDisabled?: boolean }>`
+export const OptionWrapper = styled.div<{
+  isDisabled?: boolean
+  selected?: boolean
+}>`
   font-size: 1.4rem;
   line-height: 2rem;
   display: flex;
@@ -12,6 +15,9 @@ export const OptionWrapper = styled.div<{ isDisabled?: boolean }>`
   color: ${props => getThemeColor(props, "Neutral90")};
   padding: 0.7rem 1.4rem;
   border: 0.1rem solid transparent;
+  cursor: default;
+  background-color: ${props =>
+    getThemeColor(props, props.selected ? "Neutral10" : "Neutral0")};
   &:hover {
     background-color: ${props => getThemeColor(props, "Neutral10")};
   }
@@ -48,16 +54,6 @@ export const FlexWrapper = styled.div`
   align-items: center;
 `
 
-export const IconWrapper = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: center;
-`
-
-export const AvatarWrapper = styled(IconWrapper)`
-  align-items: start;
-`
-
 export const StyledIcon = styled(Icon)`
   margin-right: ${props => (props.align === "right" ? 0 : "1.5rem")};
   margin-left: ${props => (props.align === "right" ? "1.5rem" : 0)};
@@ -73,13 +69,3 @@ export const OptionItemWrapper = (component, customProps): FC => {
       : "center"};
   `
 }
-
-// export const StyledTag = styled(Label)`
-//   display: flex;
-//   align-items: center;
-//   font-size: 1.2rem;
-//   line-height: 1.8rem;
-//   color: ${props => getThemeColor(props, "Neutral50")};
-//   background-color: ${props => getThemeColor(props, "Neutral10")};
-//   border-radius: 0.3rem;
-// `
