@@ -66,8 +66,8 @@ exports[`Input with a custom label 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -76,43 +76,43 @@ exports[`Input with a custom label 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -121,8 +121,6 @@ exports[`Input with a custom label 1`] = `
 
 <span
     class="c0"
-    label="[object Object]"
-    placeholder="placeholder"
   >
     <input
       class="c1"
@@ -165,8 +163,8 @@ exports[`Input with a custom notification 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -175,43 +173,43 @@ exports[`Input with a custom notification 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -220,7 +218,6 @@ exports[`Input with a custom notification 1`] = `
 
 <span
     class="c0"
-    placeholder="placeholder"
   >
     <input
       class="c1"
@@ -273,7 +270,7 @@ exports[`Input with a text label 1`] = `
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-transform: uppercase;
-  color: hsl(0,0%,50%);
+  color: #808080;
 }
 
 <label
@@ -310,8 +307,8 @@ exports[`Input with a text label 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -320,43 +317,43 @@ exports[`Input with a text label 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -365,8 +362,6 @@ exports[`Input with a text label 1`] = `
 
 <span
     class="c0"
-    label="label"
-    placeholder="placeholder"
   >
     <input
       class="c1"
@@ -384,7 +379,7 @@ exports[`Input with a text label and a text notification 1`] = `
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-transform: uppercase;
-  color: hsl(0,0%,50%);
+  color: #808080;
 }
 
 <label
@@ -421,8 +416,8 @@ exports[`Input with a text label and a text notification 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -431,43 +426,43 @@ exports[`Input with a text label and a text notification 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -476,8 +471,6 @@ exports[`Input with a text label and a text notification 1`] = `
 
 <span
     class="c0"
-    label="label"
-    placeholder="placeholder"
   >
     <input
       class="c1"
@@ -489,7 +482,7 @@ exports[`Input with a text label and a text notification 1`] = `
   .c0 {
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 <div
@@ -531,8 +524,8 @@ exports[`Input with a text notification 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -541,43 +534,43 @@ exports[`Input with a text notification 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -586,7 +579,6 @@ exports[`Input with a text notification 1`] = `
 
 <span
     class="c0"
-    placeholder="placeholder"
   >
     <input
       class="c1"
@@ -598,7 +590,7 @@ exports[`Input with a text notification 1`] = `
   .c0 {
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 <div
@@ -647,8 +639,8 @@ exports[`Input with left addon renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -657,43 +649,43 @@ exports[`Input with left addon renders correctly 1`] = `
 }
 
 .c4:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c4:focus,
 .c4:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c4:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c4::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c4::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c4:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c4::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c4::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c4[type="number"]::-webkit-inner-spin-button {
@@ -749,7 +741,6 @@ exports[`Input with left addon renders correctly 1`] = `
     </span>
     <span
       class="c3"
-      placeholder="placeholder"
     >
       <input
         class="c4"
@@ -800,8 +791,8 @@ exports[`Input with left and right addons renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -810,43 +801,43 @@ exports[`Input with left and right addons renders correctly 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c2:focus,
 .c2:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c2::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
@@ -880,7 +871,6 @@ exports[`Input with left and right addons renders correctly 1`] = `
   >
     <span
       class="c1"
-      placeholder="placeholder"
     >
       <input
         class="c2"
@@ -953,8 +943,8 @@ exports[`Input with right addon renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -963,43 +953,43 @@ exports[`Input with right addon renders correctly 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c2:focus,
 .c2:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c2::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
@@ -1033,7 +1023,6 @@ exports[`Input with right addon renders correctly 1`] = `
   >
     <span
       class="c1"
-      placeholder="placeholder"
     >
       <input
         class="c2"
@@ -1099,8 +1088,8 @@ exports[`Input with size large renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.6rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -1109,43 +1098,43 @@ exports[`Input with size large renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -1154,7 +1143,6 @@ exports[`Input with size large renders correctly 1`] = `
 
 <span
     class="c0"
-    placeholder="placeholder"
   >
     <input
       class="c1"
@@ -1197,8 +1185,8 @@ exports[`Input with size small renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.1rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.2rem;
   line-height: 1.8rem;
   -webkit-transition: border 0.25s ease;
@@ -1207,43 +1195,43 @@ exports[`Input with size small renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -1252,7 +1240,6 @@ exports[`Input with size small renders correctly 1`] = `
 
 <span
     class="c0"
-    placeholder="placeholder"
   >
     <input
       class="c1"
@@ -1295,8 +1282,8 @@ exports[`Input with size undefined renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -1305,43 +1292,43 @@ exports[`Input with size undefined renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -1350,7 +1337,6 @@ exports[`Input with size undefined renders correctly 1`] = `
 
 <span
     class="c0"
-    placeholder="placeholder"
   >
     <input
       class="c1"
@@ -1397,11 +1383,11 @@ exports[`Input with state error renders correctly 1`] = `
   width: 100%;
   position: relative;
   border-radius: 4px;
-  border: 1px solid hsl(0,100%,30%);
+  border: 1px solid #990000;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -1410,43 +1396,43 @@ exports[`Input with state error renders correctly 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid hsl(0,100%,30%);
+  border: 1px solid #990000;
 }
 
 .c2:focus,
 .c2:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
-  border: 1px solid hsl(0,100%,30%);
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  background-color: #ffffff;
+  border: 1px solid #990000;
+  box-shadow: 0 0 2px #002966;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
-  border: 1px solid hsl(0,100%,30%);
+  background-color: #f2f2f2;
+  border: 1px solid #990000;
   box-shadow: none;
   resize: none;
 }
 
 .c2::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
@@ -1549,11 +1535,11 @@ exports[`Input with state success renders correctly 1`] = `
   width: 100%;
   position: relative;
   border-radius: 4px;
-  border: 1px solid hsl(118,100%,20%);
+  border: 1px solid #036600;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -1562,43 +1548,43 @@ exports[`Input with state success renders correctly 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid hsl(118,100%,20%);
+  border: 1px solid #036600;
 }
 
 .c2:focus,
 .c2:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
-  border: 1px solid hsl(118,100%,20%);
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  background-color: #ffffff;
+  border: 1px solid #036600;
+  box-shadow: 0 0 2px #002966;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
-  border: 1px solid hsl(118,100%,20%);
+  background-color: #f2f2f2;
+  border: 1px solid #036600;
   box-shadow: none;
   resize: none;
 }
 
 .c2::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
@@ -1697,8 +1683,8 @@ exports[`Input with state undefined renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -1707,43 +1693,43 @@ exports[`Input with state undefined renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -1797,11 +1783,11 @@ exports[`Input with state warning renders correctly 1`] = `
   width: 100%;
   position: relative;
   border-radius: 4px;
-  border: 1px solid hsl(47,100%,50%);
+  border: 1px solid #ffc800;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -1810,43 +1796,43 @@ exports[`Input with state warning renders correctly 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid hsl(47,100%,50%);
+  border: 1px solid #ffc800;
 }
 
 .c2:focus,
 .c2:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
-  border: 1px solid hsl(47,100%,50%);
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  background-color: #ffffff;
+  border: 1px solid #ffc800;
+  box-shadow: 0 0 2px #002966;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
-  border: 1px solid hsl(47,100%,50%);
+  background-color: #f2f2f2;
+  border: 1px solid #ffc800;
   box-shadow: none;
   resize: none;
 }
 
 .c2::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
@@ -1945,8 +1931,8 @@ exports[`Input with textarea resize: horizontal renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -1956,43 +1942,43 @@ exports[`Input with textarea resize: horizontal renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 <span
@@ -2037,8 +2023,8 @@ exports[`Input with textarea resize: none renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -2048,43 +2034,43 @@ exports[`Input with textarea resize: none renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 <span
@@ -2129,8 +2115,8 @@ exports[`Input with textarea resize: undefined renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -2140,43 +2126,43 @@ exports[`Input with textarea resize: undefined renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 <span
@@ -2221,8 +2207,8 @@ exports[`Input with textarea resize: vertical renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -2232,43 +2218,43 @@ exports[`Input with textarea resize: vertical renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 <span
@@ -2313,8 +2299,8 @@ exports[`Input with type number renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -2323,43 +2309,43 @@ exports[`Input with type number renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -2368,7 +2354,6 @@ exports[`Input with type number renders correctly 1`] = `
 
 <span
     class="c0"
-    placeholder="placeholder"
     type="number"
   >
     <input
@@ -2419,8 +2404,8 @@ exports[`Input with type password renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -2429,43 +2414,43 @@ exports[`Input with type password renders correctly 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c2:focus,
 .c2:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c2::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
@@ -2499,7 +2484,6 @@ exports[`Input with type password renders correctly 1`] = `
   >
     <span
       class="c1"
-      placeholder="placeholder"
       type="password"
     >
       <input
@@ -2574,8 +2558,8 @@ exports[`Input with type search renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -2584,43 +2568,43 @@ exports[`Input with type search renders correctly 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c2:focus,
 .c2:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c2::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c2::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
@@ -2654,7 +2638,6 @@ exports[`Input with type search renders correctly 1`] = `
   >
     <span
       class="c1"
-      placeholder="placeholder"
       type="search"
     >
       <input
@@ -2722,8 +2705,8 @@ exports[`Input with type textarea renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -2733,48 +2716,47 @@ exports[`Input with type textarea renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 <span
     class="c0"
-    placeholder="placeholder"
     type="textarea"
   >
     <textarea
@@ -2816,8 +2798,8 @@ exports[`Input with type undefined renders correctly 1`] = `
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   box-sizing: border-box;
-  background-color: hsl(0,0%,95%);
-  color: hsl(0,0%,10%);
+  background-color: #f2f2f2;
+  color: #1a1a1a;
   font-size: 1.4rem;
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
@@ -2826,43 +2808,43 @@ exports[`Input with type undefined renders correctly 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid hsl(0,0%,80%);
+  border: 1px solid #cccccc;
 }
 
 .c1:focus,
 .c1:active {
   outline: none;
-  background-color: hsl(0,0%,100%);
+  background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px hsl(216,100%,50%);
+  box-shadow: 0 0 2px #002966;
 }
 
 .c1:disabled {
   cursor: not-allowed;
-  background-color: hsl(0,0%,95%);
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   box-shadow: none;
   resize: none;
 }
 
 .c1::-webkit-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::-moz-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1:-ms-input-placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::placeholder {
-  color: hsl(0,0%,65%);
+  color: #a6a6a6;
 }
 
 .c1::selection {
-  background-color: hsl(217,80%,90%);
+  background-color: #d1e1fa;
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
@@ -2871,7 +2853,6 @@ exports[`Input with type undefined renders correctly 1`] = `
 
 <span
     class="c0"
-    placeholder="placeholder"
   >
     <input
       class="c1"

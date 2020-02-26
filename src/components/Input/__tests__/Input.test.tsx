@@ -172,7 +172,10 @@ describe("Input", () => {
         className="custom-class"
       />
     )
-    expect(container.firstChild).toHaveClass("custom-class")
+
+    if (container.firstChild) {
+      expect(container.firstChild.firstChild).toHaveClass("custom-class")
+    }
   })
 
   it("should apply provided styled", () => {
@@ -183,7 +186,12 @@ describe("Input", () => {
         style={{ backgroundColor: "red" }}
       />
     )
-    expect(container.firstChild).toHaveStyle("background-color: red")
+
+    if (container.firstChild) {
+      expect(container.firstChild.firstChild).toHaveStyle(
+        "background-color: red"
+      )
+    }
   })
 
   it("should display disabled icon on hover for disabled input", () => {
