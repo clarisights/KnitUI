@@ -157,6 +157,19 @@ export const OverflowContainer = styled.div`
   padding-bottom: ${getOSName() !== "MacOS" ? "0px" : "17px"};
   margin-bottom: -17px;
   box-sizing: content-box;
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+  }
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 `
 
 export const DragIcon = styled(Icon)`

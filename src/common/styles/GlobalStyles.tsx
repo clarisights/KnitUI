@@ -50,15 +50,6 @@ const GlobalStyles = createGlobalStyle`
     overscroll-behavior-x: none; /* Prevent the page redirection on swipe */
   }
 
-  ::-webkit-scrollbar {
-    width: 0px; 
-    background: transparent;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #CCC;
-  }
-
   ul,
   ol {
       list-style: none;
