@@ -1,6 +1,6 @@
 import React from "react"
+import { withKnobs } from "@storybook/addon-knobs"
 import { storiesOf } from "@storybook/react"
-import { withKnobs, select } from "@storybook/addon-knobs"
 import Option from "./"
 const Readme = require("./README.md")
 
@@ -16,6 +16,16 @@ storiesOf("Option", module)
   })
   .add("basic", () => (
     <Option onClick={(e, val) => alert(val)} value="Option 1">
+      <Option.Text>Cool</Option.Text>
+    </Option>
+  ))
+  .add("Disabled", () => (
+    <Option disabled onClick={(e, val) => alert(val)} value="Option 1">
+      <Option.Text>Cool</Option.Text>
+    </Option>
+  ))
+  .add("With some icons", () => (
+    <Option onClick={(e, val) => alert(val)} value="Option 1">
       <Option.Icon type="oClose" align="right" />
       <Option.Icon type="oStorage" align="right" />
       <Option.Icon type="oClose" align="right" />
@@ -24,7 +34,7 @@ storiesOf("Option", module)
       </Option.Text>
     </Option>
   ))
-  .add("basic2", () => (
+  .add("With Option Group", () => (
     <Option.OptionGroup title="SOME ITEMS">
       <Option onClick={(e, val) => alert(val)} value="Option 1">
         <Option.Icon type="oClose" fill="yellow" align="right" />
@@ -54,6 +64,15 @@ storiesOf("Option", module)
   ))
   .add("With Avatar", () => (
     <Option onClick={(e, val) => alert(val)} value="Option 1">
+      <Option.Avatar name="anshumankun" />
+      <Option.Text description="what the heck man this is cool heyy">
+        Cool
+      </Option.Text>
+      <Option.Icon type="oClose" align="right" />
+    </Option>
+  ))
+  .add("With Disabled", () => (
+    <Option disabled onClick={(e, val) => alert(val)} value="Option 1">
       <Option.Avatar name="anshumankun" />
       <Option.Text description="what the heck man this is cool heyy">
         Cool

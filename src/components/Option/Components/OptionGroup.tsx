@@ -1,6 +1,6 @@
 import React from "react"
 import { IOptionGroupProps } from "../types"
-import { VerticalWrapper, OptionDescription } from "./Option.styles"
+import { OptionDescription, VerticalWrapper } from "./Option.styles"
 
 const OptionGroup = (props: IOptionGroupProps) => {
   const { children, title } = props

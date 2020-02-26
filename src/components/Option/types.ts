@@ -1,5 +1,7 @@
-import { CSSProperties, SyntheticEvent, ReactNode, FC } from "react"
+import { CSSProperties, FC, ReactNode, SyntheticEvent } from "react"
+import { IAvatarProps } from "../Avatar/types"
 import { IIconProps } from "../Icon/Icon"
+import { LabelPropTypes } from "../Label/types"
 
 export type TIconType = {
   left?: string | ReactNode
@@ -14,19 +16,19 @@ export interface IOptionProps {
 }
 
 export interface IOption extends FC<IOptionProps> {
-  Tag: FC
-  Avatar: FC
-  Text: FC
+  Tag: FC<LabelPropTypes>
+  Avatar: FC<IOptionAvatarProps>
+  Text: IOptionText
   Icon: FC<IOptionIconProps>
   OptionGroup: FC<IOptionGroupProps>
 }
 
-interface OptionTextProps {
-  description: string
+interface IOptionTextProps {
+  description?: string
   children: ReactNode
 }
 
-export interface IOptionText extends FC<OptionTextProps> {}
+interface IOptionText extends FC<IOptionTextProps> {}
 
 export interface IOptionGroupProps {
   title?: string
@@ -35,4 +37,9 @@ export interface IOptionGroupProps {
 
 export interface IOptionIconProps extends IIconProps {
   align?: string
+}
+
+export interface IOptionAvatarProps extends IAvatarProps {
+  align?: string
+  alignStart?: boolean
 }
