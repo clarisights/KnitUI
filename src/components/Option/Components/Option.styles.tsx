@@ -11,7 +11,7 @@ export const OptionWrapper = styled.div<{ isDisabled?: boolean }>`
   justify-content: space-between;
   color: ${props => getThemeColor(props, "Neutral90")};
   padding: 0.7rem 1.4rem;
-  border: 0.1rem solid ${props => getThemeColor(props, "Neutral0")};
+  border: 0.1rem solid transparent;
   &:hover {
     background-color: ${props => getThemeColor(props, "Neutral10")};
   }
@@ -64,11 +64,13 @@ export const StyledIcon = styled(Icon)`
 `
 
 // Generic component wrapper which styles a component and adds appropriate styles based on the position
-export const OptionItemWrapper = (component): FC => {
+export const OptionItemWrapper = (component, customProps): FC => {
   return styled(component)`
     margin-right: ${props => (props.align === "right" ? 0 : "1.5rem")};
     margin-left: ${props => (props.align === "right" ? "1.5rem" : 0)};
-    align-self: ${props => (props.alignStart ? "flex-start" : "center")};
+    align-self: ${customProps && customProps.alignStart
+      ? "flex-start"
+      : "center"};
   `
 }
 
