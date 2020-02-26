@@ -62,6 +62,19 @@ storiesOf("Option", module)
       </Option>
     </Option.OptionGroup>
   ))
+  .add("With Selected Option", () => (
+    <Option.OptionGroup title="SOME ITEMS">
+      <Option onClick={(e, val) => alert(val)} value="Option 1">
+        <Option.Text>Cool</Option.Text>
+      </Option>
+      <Option selected onClick={(e, val) => alert(val)} value="Option 1">
+        <Option.Text>Cool</Option.Text>
+      </Option>
+      <Option onClick={(e, val) => alert(val)} value="Option 1">
+        <Option.Text>Cool</Option.Text>
+      </Option>
+    </Option.OptionGroup>
+  ))
   .add("With Avatar", () => (
     <Option onClick={(e, val) => alert(val)} value="Option 1">
       <Option.Avatar name="anshumankun" />
