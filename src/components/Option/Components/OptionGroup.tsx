@@ -7,7 +7,7 @@ const OptionGroup = (props: IOptionGroupProps) => {
   return (
     <VerticalWrapper>
       <OptionDescription>{title}</OptionDescription>
-      <span>{children}</span>
+      {children}
     </VerticalWrapper>
   )
 }
