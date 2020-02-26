@@ -1,27 +1,11 @@
-import React, { FC, Children, ReactNode } from "react"
+import React, { Children } from "react"
+import Avatar from "../../Avatar"
 import Icon from "../../Icon"
 import Label from "../../Label"
-import Avatar from "../../Avatar"
+import { IOption } from "../types"
+import { FlexWrapper, OptionItemWrapper, OptionWrapper } from "./Option.styles"
 import OptionGroup from "./OptionGroup"
-import { IOption, TIconType, IOptionIconProps, IOptionText } from "../types"
-import {
-  OptionWrapper,
-  OptionDescription,
-  VerticalWrapper,
-  FlexWrapper,
-  OptionItemWrapper,
-} from "./Option.styles"
-
-const OptionText: IOptionText = (props) => {
-  const { description, children} = props
-  return (
-  <VerticalWrapper>
-    <span>{children}</span>
-    {description && <OptionDescription>{description}</OptionDescription>}
-  </VerticalWrapper>
-  )
-}
-
+import OptionText from "./OptionText"
 
 const Option: IOption = props => {
   const {
@@ -35,22 +19,25 @@ const Option: IOption = props => {
 
   // Filter children based on their alignment
   const rightChildren = Children.toArray(children).filter(
-    comp => comp.props.align === "right"
+    comp => comp!.props.align === "right"
   )
   const leftChildren = Children.toArray(children).filter(
-    comp => comp.props.align !== "right"
+    comp => comp!.props.align !== "right"
   )
 
   return (
     <OptionWrapper
       onClick={onClick ? e => onClick(e, value) : () => null}
       style={customStyles}
+      disabled={disabled}
       {...rest}>
       <FlexWrapper>{leftChildren}</FlexWrapper>
       <FlexWrapper>{rightChildren}</FlexWrapper>
     </OptionWrapper>
   )
 }
+
+// const AvatarWrapper = props => <Avatar {...props} alignStart />
 
 // Wrap all option sub-components in a common wrapper and pass all props to the corresponding component
 Option.Icon = OptionItemWrapper(Icon)

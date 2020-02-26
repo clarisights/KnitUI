@@ -1,7 +1,6 @@
 import { FC } from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { getThemeColor } from "../../../common/_utils"
-import Label from "../../Label"
 import Icon from "../../Icon"
 
 export const OptionWrapper = styled.div`

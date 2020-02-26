@@ -1,25 +1,9 @@
-import React, { FC, SyntheticEvent } from "react"
+import React, { FC } from "react"
 import styled from "styled-components"
 import { IStyled } from "common/types"
 import { getThemeColor } from "../../common/_utils"
 import { oAccountCircle as UserProfileIcon } from "../Icon/Icons"
-
-interface AvatarProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  size?: string
-  onClick?: (event?: SyntheticEvent) => void
-  picture?: string
-  name?: string
-  disabled: boolean
-}
-
-interface AvatarBaseProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  isPicture: boolean
-  isName: boolean
-  isIcon: boolean
-  size: string
-  disabled: boolean
-}
+import { IAvatarProps, IAvatarBaseProps } from './types'
 
 const getBoxShadowStyle = props => {
   const {
@@ -110,7 +94,7 @@ const getOpacity = props => {
   return isIcon ? 1 : 0.4
 }
 
-const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
+const AvatarBase = styled.button<IStyled<IAvatarBaseProps>>`
   width: ${({ customProps }) => customProps.size};
   height: ${({ customProps }) => customProps.size};
 
@@ -187,7 +171,7 @@ const AvatarBase = styled.button<IStyled<AvatarBaseProps>>`
   }
 `
 
-const Avatar: FC<AvatarProps> = props => {
+const Avatar: FC<IAvatarProps> = props => {
   const { picture, size = "24px", name, disabled = false, ...rest } = props
 
   const isPicture = !!picture
