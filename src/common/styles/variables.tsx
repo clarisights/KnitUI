@@ -116,8 +116,8 @@ const generateTheme = palette => {
     // input
     inputFocusOutline: "none",
     inputBgDefault: "hsl(0, 0%, 95%)",
-    inputColor: "hsl(0, 0%, 5%)",
-    inputPlaceholderColor: "hsl(0, 0%, 60%)",
+    inputColor: "hsl(0, 0%, 10%)",
+    inputPlaceholderColor: "hsl(0, 0%, 65%)",
     inputPlaceholderColorActive: "hsl(0, 0%, 80%)",
     inputBgHover: "hsl(0, 0%, 90%)",
     inputBgActive: "hsl(0, 0%, 100%)",
@@ -126,9 +126,14 @@ const generateTheme = palette => {
     inputBorderRadius: "4px",
     inputBorderColor: "transparent",
     inputFocusBorderColor: chromaPalette.Azure80,
-    inputError: "#990000",
-    inputSuccess: "#05b300",
+    inputHoverBorderColor: "hsl(0, 0%, 80%)",
+    inputSuccessBorder: "hsl(118, 100%, 20%)",
+    inputWarningBorder: "hsl(47, 100%, 50%)",
+    inputErrorBorder: "hsl(0, 100%, 30%)",
     inputFocusBoxShadow: "0 0 2px hsl(216, 100%, 50%)",
+    inputSelectionBg: "hsl(217, 80%, 90%)",
+    inputLabelColor: "hsl(0, 0%, 50%)",
+    inputNotificationColor: "hsl(0, 0%, 65%)",
 
     // switch
     switchWrapperHeight: "1.6rem",
@@ -181,4 +186,5 @@ const generateTheme = palette => {
     knitui: { ...defaultTheme, chromaPalette },
   }
 }
+
 export default generateTheme

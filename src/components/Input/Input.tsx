@@ -1,204 +1,32 @@
-import React, { ReactNode } from "react"
-import styled, { css } from "styled-components"
+import React, { ReactNode, useState, useEffect, useRef } from "react"
 import _ from "lodash"
-import { insertIf } from "../../common/_utils"
-import { BaseComponentProps, IStyled } from "../../common/types"
 
-export interface IInputProps
-  extends React.InputHTMLAttributes<HTMLInputElement>,
-    BaseComponentProps {
-  /** This is a placeholder description */
-  placeholder?: string
-  /** This is a value of the input */
-  value?: string
-  /** To enable error state */
-  error?: boolean
-  /** To enable success state */
-  success?: boolean
-  /** content to be shown above the input as a label */
-  label?: string | ReactNode
-  /** content to be shown below the input as a notification  */
-  notification?: string | ReactNode
-  /** onChange handler */
-  onChange: (e: React.FormEvent<HTMLInputElement>) => any
-  /** to show after input */
-  addonAfter?: string | ReactNode
-  /** to show before input */
-  addonBefore?: string | ReactNode
-  /** the size of the input */
-  inputSize?: "large" | "default" | "small"
-  /** to disable the input */
-  disabled?: boolean
-}
+import { IInputProps } from "./types"
+import { getIconSize } from "./utils"
 
-type IStyledInput = IStyled<IInputProps>
-
-const getLabelColor = (props: IStyledInput) => {
-  const {
-    theme: { knitui },
-    customProps: { error, success },
-  } = props
-  if (error) {
-    return knitui.inputError
-  } else if (success) {
-    return knitui.inputSuccess
-  }
-  return knitui.inputColor
-}
-
-const getPadding = (props: IStyledInput) => {
-  const {
-    customProps: { inputSize },
-  } = props
-  const HORIZONTAL_PADDING = "1.4rem"
-  switch (inputSize) {
-    case "small":
-      return `0.1rem  ${HORIZONTAL_PADDING}`
-    case "large":
-      return `0.6rem  ${HORIZONTAL_PADDING}`
-    default:
-      return `0.4rem  ${HORIZONTAL_PADDING}`
-  }
-}
-
-const inputSizeToTypographySize = {
-  small: 12,
-  default: 14,
-  large: 14,
-}
-
-const getInputBorderColor = (props: IStyledInput, state: string) => {
-  const {
-    theme: { knitui },
-    customProps: { error, success },
-  } = props
-  if (error) {
-    return knitui.inputError
-  } else if (success) {
-    return knitui.inputSuccess
-  }
-  if (state === "focus" || state === "active") {
-    return knitui.inputFocusBorderColor
-  }
-  return knitui.inputBorderColor
-}
-
-const getInputBorder = (props: IStyledInput, state: string) =>
-  `1px solid ${getInputBorderColor(props, state)}`
-
-const getHeight = (props: IStyledInput) => {
-  const {
-    customProps: { inputSize },
-  } = props
-  switch (inputSize) {
-    case "small":
-      return "2rem"
-    case "large":
-      return "3.2rem"
-    default:
-      return "2.8rem"
-  }
-}
-
-const getFontSize = (props: IStyledInput) => {
-  const {
-    customProps: { inputSize },
-    theme: { knitui },
-  } = props
-  const typographySize = inputSizeToTypographySize[inputSize!]
-  return knitui.typography[typographySize].fontSize
-}
-
-const getLineHeight = (props: IStyledInput) => {
-  const {
-    customProps: { inputSize },
-    theme: { knitui },
-  } = props
-  const typographySize = inputSizeToTypographySize[inputSize!]
-  return knitui.typography[typographySize].lineHeight
-}
-
-const StyledInput: any = styled.input<IStyledInput>`
-  height: ${props => getHeight(props)};
-  width: 100%;
-  margin: 0.4rem 0;
-  border-radius: ${({ theme: { knitui } }) => knitui.inputBorderRadius};
-  border: ${props => getInputBorder(props, "default")};
-  padding: ${props => getPadding(props)};
-  box-sizing: border-box;
-  background-color: ${({ theme: { knitui } }) => knitui.inputBgDefault};
-  color: ${({ theme: { knitui } }) => knitui.inputColor};
-  font-size: ${props => `${getFontSize(props)}rem`};
-  line-height: ${props => `${getLineHeight(props)}rem`};
-  &:hover {
-    background-color: ${({ theme: { knitui } }) => knitui.inputBgHover};
-    color: ${({ theme: { knitui } }) => knitui.inputColor};
-  }
-  &:focus,
-  &:active {
-    outline: ${({ theme: { knitui } }) => knitui.inputFocusOutline};
-    background-color: ${({ theme: { knitui } }) => knitui.inputBgFocus};
-    border: ${props => getInputBorder(props, "focus")};
-    box-shadow: ${({ theme: { knitui } }) => knitui.inputFocusBoxShadow};
-  }
-  ::placeholder {
-    color: ${({ theme: { knitui } }) => knitui.inputPlaceholderColor};
-  }
-  &:disabled {
-    cursor: not-allowed;
-    background-color: ${props => props.theme.knitui.inputBgDefault};
-    border: ${props => getInputBorder(props, "default")};
-    box-shadow: none;
-  }
-`
-
-const AddonSpan = styled.span`
-  display: flex;
-  position: relative;
-`
-
-const AddonBeforeSpan = styled(AddonSpan)`
-  & input {
-    padding-left: 34px;
-  }
-`
-
-const AddonAfterSpan = styled(AddonSpan)`
-  & input {
-    padding-right: 34px;
-  }
-`
-
-const AddonContainer = styled.span`
-  display: flex;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-`
-
-const labelStyle = css`
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-`
-
-const StyledLabel = styled.label<IStyledInput>`
-  ${labelStyle}
-  color: ${props => getLabelColor(props)};
-`
-
-const NotificationContainer = styled.div`
-  ${labelStyle}
-`
+import Icon from "../Icon"
+import {
+  StyledInput,
+  StyledTextArea,
+  AddonBeforeSpan,
+  AddonAfterSpan,
+  AddonContainer,
+  StyledLabel,
+  NotificationContainer,
+  IconBackground,
+  InputWrapper,
+} from "./styledComponents"
 
 const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
   const {
     placeholder,
     value,
     onChange,
-    error,
-    success,
+    state,
     label,
     inputSize = "default",
+    type = "default",
+    textareaResize = "both",
     notification,
     className,
     style,
@@ -209,11 +37,59 @@ const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
   } = props
   const customProps = {
     inputSize,
-    error,
-    success,
+    state,
   }
+
+  const commonProps = {
+    ref,
+    placeholder,
+    customProps,
+    className,
+    style,
+    value,
+    onChange,
+    disabled,
+    ...rest,
+  }
+
+  if (props.type === "textarea") {
+    return <StyledTextArea {...commonProps} textareaResize={textareaResize} />
+  }
+
+  return (
+    <StyledInput
+      type={
+        props.type === "password"
+          ? "password"
+          : props.type === "number"
+          ? "number"
+          : "text"
+      }
+      {...commonProps}
+    />
+  )
+})
+
+function renderInputAddons(
+  children: React.ReactElement<any>,
+  props: IInputProps
+) {
+  const {
+    addonAfter,
+    addonBefore,
+    label,
+    notification,
+    inputSize,
+    state,
+  } = props
+  const customProps = {
+    inputSize,
+    state,
+  }
+
   let labelDOM: null | ReactNode = null
   let notificationDOM: null | ReactNode = null
+  let addonDOM: ReactNode = children
 
   if (label) {
     labelDOM = label
@@ -224,44 +100,22 @@ const RenderInput = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
 
   if (notification) {
     notificationDOM = notification
-    if (_.isString(label)) {
+    if (_.isString(notification)) {
       notificationDOM = (
-        <NotificationContainer>{notification}</NotificationContainer>
+        <NotificationContainer customProps={customProps}>
+          {notification}
+        </NotificationContainer>
       )
     }
   }
 
-  return (
-    <>
-      {labelDOM}
-      <StyledInput
-        customProps={customProps}
-        placeholder={placeholder}
-        className={className}
-        style={style}
-        onChange={onChange}
-        ref={ref}
-        disabled={disabled}
-        {...insertIf({ value }, !!value)}
-        {...rest}
-      />
-      {notificationDOM}
-    </>
-  )
-})
-
-function renderInputAddons(
-  children: React.ReactElement<any>,
-  props: IInputProps
-) {
-  const { addonAfter, addonBefore } = props
   if (addonBefore) {
-    return (
-      <AddonBeforeSpan>
+    addonDOM = (
+      <AddonBeforeSpan iconSize={getIconSize(inputSize)}>
         {addonBefore ? (
           <AddonContainer
             css={`
-              left: 5px;
+              left: 1rem;
             `}>
             {addonBefore}
           </AddonContainer>
@@ -271,13 +125,13 @@ function renderInputAddons(
     )
   }
   if (addonAfter) {
-    return (
-      <AddonAfterSpan>
+    addonDOM = (
+      <AddonAfterSpan iconSize={getIconSize(inputSize)}>
         {children}
         {addonAfter ? (
           <AddonContainer
             css={`
-              right: 5px;
+              right: 1rem;
             `}>
             {addonAfter}
           </AddonContainer>
@@ -285,12 +139,157 @@ function renderInputAddons(
       </AddonAfterSpan>
     )
   }
-  return children
+  return (
+    <>
+      {labelDOM}
+      {addonDOM}
+      {notificationDOM}
+    </>
+  )
+}
+
+const InputRef = props => {
+  const [currentValue, setCurrentValue] = useState(props.value || "")
+  const [isPasswordField, setIsPasswordField] = useState(
+    props.type === "password"
+  )
+  const [isOverflow, setIsOverflow] = useState(false)
+
+  const inputRef = props.ref || useRef<HTMLInputElement>()
+
+  useEffect(() => {
+    // To update the current input value
+    setCurrentValue(props.value)
+  }, [props.value])
+
+  const customProps = {
+    inputSize: props.inputSize,
+    state: props.state,
+  }
+
+  const handleChange = e => {
+    // Handle onChange if provided and update the input value
+    if (props.onChange) {
+      props.onChange(e)
+    }
+
+    setCurrentValue(e.target.value)
+  }
+
+  const handleFocus = e => {
+    if (props.onFocus) {
+      props.onFocus(e)
+    }
+
+    setIsOverflow(false)
+  }
+
+  const handleBlur = e => {
+    if (props.onBlur) {
+      props.onBlur(e)
+    }
+
+    if (inputRef.current) {
+      if (
+        inputRef.current.scrollWidth > inputRef.current.clientWidth &&
+        !isOverflow
+      ) {
+        setIsOverflow(true)
+      } else if (
+        inputRef.current.scrollWidth <= inputRef.current.clientWidth &&
+        isOverflow
+      ) {
+        setIsOverflow(false)
+      }
+    }
+  }
+
+  const clearInput = () => {
+    setCurrentValue("")
+  }
+
+  const togglePasswordField = () => {
+    setIsPasswordField(prevState => !prevState)
+  }
+
+  const getCurrentInputType = () => {
+    // Get the input type. Useful while toggling password field.
+    if (props.type === "number") {
+      return "number"
+    } else if (props.type === "textarea") {
+      return "textarea"
+    } else if (isPasswordField) {
+      return "password"
+    }
+    return "text"
+  }
+
+  // Implemented to save the effort of adding `getIconSize` on every Icon component
+  const AddonIcons = iconProps => (
+    <Icon size={getIconSize(props.inputSize)} {...iconProps} />
+  )
+
+  const InputElem = (
+    <InputWrapper {...props} customProps={customProps} isOverflow={isOverflow}>
+      <RenderInput
+        {...props}
+        ref={inputRef}
+        value={currentValue}
+        onChange={handleChange}
+        type={getCurrentInputType()}
+        isOverflow={isOverflow}
+        onBlur={handleBlur}
+        onFocus={handleFocus}
+      />
+    </InputWrapper>
+  )
+
+  let addonAfter = props.addonAfter
+
+  if (props.type === "search") {
+    if (currentValue && currentValue.length > 0) {
+      addonAfter = (
+        <IconBackground bgSize={getIconSize(props.inputSize)}>
+          <AddonIcons type="oClose" fill="#000000" onClick={clearInput} />
+        </IconBackground>
+      )
+    } else {
+      addonAfter = <AddonIcons type="oSearch" fill="#a6a6a6" />
+    }
+  } else if (props.type === "password") {
+    if (isPasswordField) {
+      addonAfter = (
+        <AddonIcons
+          type="oVisibility"
+          fill="#000000"
+          onClick={togglePasswordField}
+        />
+      )
+    } else {
+      addonAfter = (
+        <AddonIcons
+          type="oVisibilityOff"
+          fill="#000000"
+          onClick={togglePasswordField}
+        />
+      )
+    }
+  } else if (props.state === "success") {
+    addonAfter = <AddonIcons type="oCheckCircleOutline" fill="#036600" />
+  } else if (props.state === "warning") {
+    addonAfter = <AddonIcons type="oWarning" fill="#FFC700" />
+  } else if (props.state === "error") {
+    addonAfter = <AddonIcons type="oErrorOutline" fill="#990000" />
+  }
+
+  return renderInputAddons(InputElem as React.ReactElement<any>, {
+    ...props,
+    addonAfter,
+  })
 }
 
 const Input = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
-  const InputElem = <RenderInput {...props} ref={ref} />
-  return renderInputAddons(InputElem as React.ReactElement<any>, props)
+  return <InputRef {...props} ref={ref} />
 })
 
 export default Input
