@@ -1,4 +1,4 @@
-import React, { Children } from "react"
+import React, { Children, cloneElement, ReactElement } from "react"
 import Avatar from "../../Avatar"
 import Icon from "../../Icon"
 import Label from "../../Label"
@@ -16,6 +16,11 @@ const Option: IOption = props => {
     disabled = false,
     ...rest
   } = props
+
+  // Pass disabled props to all children
+  const updatedChildren = Children.map(children, child => {
+    return cloneElement(child as ReactElement, { disabled })
+  })
 
   // Filter children based on their alignment
   const rightChildren = Children.toArray(children).filter(
@@ -37,13 +42,11 @@ const Option: IOption = props => {
   )
 }
 
-// const AvatarWrapper = props => <Avatar {...props} alignStart />
-
 // Wrap all option sub-components in a common wrapper and pass all props to the corresponding component
 Option.Icon = OptionItemWrapper(Icon)
 Option.Text = OptionItemWrapper(OptionText)
 Option.Tag = OptionItemWrapper(Label)
-Option.Avatar = OptionItemWrapper(Avatar)
+Option.Avatar = OptionItemWrapper(Avatar, { alignStart: true })
 Option.OptionGroup = OptionGroup
 
 export default Option
