@@ -17,7 +17,6 @@ const Option: IOption = props => {
     disabled = false,
     ...rest
   } = props
-
   // Pass disabled props to all children
   const updatedChildren = Children.map(children, child => {
     return cloneElement(child as ReactElement, { disabled })
@@ -38,6 +37,7 @@ const Option: IOption = props => {
       isDisabled={disabled}
       selected={selected}
       {...rest}>
+      {!children && <Option.Text>{value}</Option.Text>}
       <FlexWrapper>{leftChildren}</FlexWrapper>
       <FlexWrapper>
         {rightChildren}
