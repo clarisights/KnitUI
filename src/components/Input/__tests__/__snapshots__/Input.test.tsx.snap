@@ -84,7 +84,7 @@ exports[`Input with a custom label 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -181,7 +181,7 @@ exports[`Input with a custom notification 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -325,7 +325,7 @@ exports[`Input with a text label 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -434,7 +434,7 @@ exports[`Input with a text label and a text notification 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -542,7 +542,7 @@ exports[`Input with a text notification 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -657,7 +657,7 @@ exports[`Input with left addon renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c4:disabled {
@@ -809,7 +809,7 @@ exports[`Input with left and right addons renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c2:disabled {
@@ -961,7 +961,7 @@ exports[`Input with right addon renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c2:disabled {
@@ -1106,7 +1106,7 @@ exports[`Input with size large renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -1203,7 +1203,7 @@ exports[`Input with size small renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -1300,7 +1300,7 @@ exports[`Input with size undefined renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -1404,7 +1404,7 @@ exports[`Input with state error renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #990000;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c2:disabled {
@@ -1556,7 +1556,7 @@ exports[`Input with state success renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #036600;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c2:disabled {
@@ -1701,7 +1701,7 @@ exports[`Input with state undefined renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -1804,7 +1804,7 @@ exports[`Input with state warning renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #ffc800;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c2:disabled {
@@ -1950,7 +1950,7 @@ exports[`Input with textarea resize: horizontal renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -2042,7 +2042,7 @@ exports[`Input with textarea resize: none renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -2134,7 +2134,7 @@ exports[`Input with textarea resize: undefined renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -2226,7 +2226,7 @@ exports[`Input with textarea resize: vertical renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -2317,7 +2317,7 @@ exports[`Input with type number renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -2368,7 +2368,7 @@ exports[`Input with type number renders correctly 1`] = `
 
 exports[`Input with type password renders correctly 1`] = `
 <DocumentFragment>
-  .c4 {
+  .c5 {
   cursor: inherit;
   display: inline-block;
   height: 16px;
@@ -2422,7 +2422,7 @@ exports[`Input with type password renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c2:disabled {
@@ -2479,6 +2479,10 @@ exports[`Input with type password renders correctly 1`] = `
   z-index: 10;
 }
 
+.c4 {
+  cursor: pointer;
+}
+
 <span
     class="c0"
   >
@@ -2497,7 +2501,7 @@ exports[`Input with type password renders correctly 1`] = `
       class="c3"
     >
       <span
-        class="c4"
+        class="c4 c5"
         fill="#000000"
         height="16px"
         type="oVisibility"
@@ -2576,7 +2580,7 @@ exports[`Input with type search renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c2:disabled {
@@ -2724,7 +2728,7 @@ exports[`Input with type textarea renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
@@ -2816,7 +2820,7 @@ exports[`Input with type undefined renders correctly 1`] = `
   outline: none;
   background-color: #ffffff;
   border: 1px solid #5ab2f2;
-  box-shadow: 0 0 2px #002966;
+  box-shadow: 0 0 2px #0066ff;
 }
 
 .c1:disabled {
