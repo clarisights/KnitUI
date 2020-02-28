@@ -1,3 +1,4 @@
+import { CSSObject } from "styled-components"
 import { ActiveTabFlagsInterface } from "./types"
 
 export const getWidthFromRef = (refNode: React.RefObject<HTMLDivElement>) => {
@@ -10,22 +11,27 @@ export const getTabContainerStyle = (
   itemIndex: number,
   itemRef: React.RefObject<HTMLDivElement>
 ) => {
-  let styles: React.CSSProperties = { zIndex: 99, position: "relative" }
+  let styles = `z-index: 99; position: relative;`
   if (activeKeyIndex === itemIndex) {
-    styles = { zIndex: 101 }
+    styles = `z-index: 101`
   }
   if (activeTabFlags.left && activeKeyIndex === itemIndex) {
-    styles = {
-      position: "sticky",
-      zIndex: 101,
-      left: 0,
-    }
+    styles = `
+      position: sticky;
+      position: -webkit-sticky;
+      z-index: 101;
+      left: 0;
+      align-self: flex-start;
+    `
   } else if (activeTabFlags.right && activeKeyIndex === itemIndex) {
-    styles = {
-      position: "sticky",
-      zIndex: 101,
-      right: 0,
-    }
+    styles = `
+      position: sticky;
+      position: -webkit-sticky;
+      z-index: 101;
+      right: 0;
+      align-self: flex-end;
+      margin-left: auto;
+    `
   }
   return styles
 }
