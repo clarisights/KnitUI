@@ -154,8 +154,6 @@ export const OverflowContainer = styled.div`
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding-bottom: ${getOSName() !== "MacOS" ? "0px" : "17px"};
-  margin-bottom: -17px;
   box-sizing: content-box;
 
   ::-webkit-scrollbar {

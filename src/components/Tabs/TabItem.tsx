@@ -62,7 +62,7 @@ export const TabItem = SortableElement(
       return null
     }
     return (
-      <div ref={getRef()} id={isActive ? "knit-active-tab" : ""} style={styles}>
+      <div ref={getRef()} id={isActive ? "knit-active-tab" : ""} css={styles}>
         {elem}
         {showVBar ? <VerticalBar tabIndex={-1} /> : null}
       </div>
