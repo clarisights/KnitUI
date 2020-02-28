@@ -202,6 +202,19 @@ describe("Input", () => {
     }
   })
 
+  it("should not fire events on disabled input", () => {
+    const onClick = jest.fn()
+
+    const { container } = render(<Input onClick={onClick} disabled />)
+
+    const input = container.querySelector("input")
+
+    if (input) {
+      fireEvent.click(input)
+      expect(onClick).not.toHaveBeenCalled()
+    }
+  })
+
   it("should display search icon on type search", () => {
     const { container } = render(<Input type="search" />)
 

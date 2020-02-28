@@ -117,7 +117,7 @@ const generateTheme = palette => {
     inputFocusOutline: "none",
     inputBorderRadius: "4px",
     inputBorderColor: "transparent",
-    inputFocusBoxShadow: `0 0 2px ${chromaPalette.Blue100}`,
+    inputFocusBoxShadow: "0 0 2px #0066ff",
     inputBgDefault: chromaPalette.Neutral10,
     inputColor: chromaPalette.Neutral90,
     inputPlaceholderColor: chromaPalette.Neutral45,

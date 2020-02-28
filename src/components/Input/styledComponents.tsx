@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components"
 
+import Icon from "../Icon"
+
 import { IStyledInput } from "./types"
 
 import {
@@ -144,4 +146,8 @@ export const IconBackground = styled.span<{ bgSize: string }>`
   width: ${props => props.bgSize};
   border-radius: 50%;
   background-color: #e5e5e5;
+`
+
+export const AddonIcon = styled(Icon)`
+  ${props => props.pointer && `cursor: pointer`}
 `

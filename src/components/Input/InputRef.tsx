@@ -3,10 +3,9 @@ import React, { useState, useEffect, useRef } from "react"
 import { IInputProps } from "./types"
 import { getIconSize } from "./utils"
 
-import Icon from "../Icon"
 import RenderInput from "./RenderInput"
 import renderInputAddons from "./InputAddons"
-import { IconBackground, InputWrapper } from "./styledComponents"
+import { IconBackground, InputWrapper, AddonIcon } from "./styledComponents"
 
 const InputRef = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
   const [currentValue, setCurrentValue] = useState<string | number | undefined>(
@@ -85,8 +84,8 @@ const InputRef = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
   }
 
   // Implemented to save the effort of adding `getIconSize` on every Icon component
-  const AddonIcons = iconProps => (
-    <Icon size={getIconSize(props.inputSize)} {...iconProps} />
+  const Icon = iconProps => (
+    <AddonIcon size={getIconSize(props.inputSize)} {...iconProps} />
   )
 
   const InputElem = (
@@ -117,36 +116,38 @@ const InputRef = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
     if (currentValue && currentValue.toString().length > 0) {
       addonAfter = (
         <IconBackground bgSize={getIconSize(props.inputSize)}>
-          <AddonIcons type="oClose" fill="#000000" onClick={clearInput} />
+          <Icon type="oClose" fill="#000000" onClick={clearInput} pointer />
         </IconBackground>
       )
     } else {
-      addonAfter = <AddonIcons type="oSearch" fill="#a6a6a6" />
+      addonAfter = <Icon type="oSearch" fill="#a6a6a6" />
     }
   } else if (props.type === "password") {
     if (isPasswordField) {
       addonAfter = (
-        <AddonIcons
+        <Icon
           type="oVisibility"
           fill="#000000"
           onClick={togglePasswordField}
+          pointer
         />
       )
     } else {
       addonAfter = (
-        <AddonIcons
+        <Icon
           type="oVisibilityOff"
           fill="#000000"
           onClick={togglePasswordField}
+          pointer
         />
       )
     }
   } else if (props.state === "success") {
-    addonAfter = <AddonIcons type="oCheckCircleOutline" fill="#036600" />
+    addonAfter = <Icon type="oCheckCircleOutline" fill="#036600" />
   } else if (props.state === "warning") {
-    addonAfter = <AddonIcons type="oWarning" fill="#FFC700" />
+    addonAfter = <Icon type="oWarning" fill="#FFC700" />
   } else if (props.state === "error") {
-    addonAfter = <AddonIcons type="oErrorOutline" fill="#990000" />
+    addonAfter = <Icon type="oErrorOutline" fill="#990000" />
   }
 
   return renderInputAddons(InputElem as React.ReactElement<any>, {
