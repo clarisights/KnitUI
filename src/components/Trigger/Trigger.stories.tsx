@@ -105,3 +105,35 @@ storiesOf("Trigger", module)
       </div>
     </div>
   ))
+  .add("basic target render with right align", () => (
+    <div
+      style={{
+        width: 420,
+        height: 400,
+        border: "4px solid red",
+        padding: 12,
+        display: "flex",
+        justifyContent: "flex-end",
+      }}>
+      <Trigger
+        placement="right"
+        overlay={
+          <div
+            style={{
+              background: "yellow",
+              width: 200,
+              height: 200,
+              overflow: "auto",
+            }}>
+            <div
+              style={{
+                height: 800,
+              }}>
+              hello
+            </div>
+          </div>
+        }>
+        <button style={{ height: 22 }}>hello</button>
+      </Trigger>
+    </div>
+  ))

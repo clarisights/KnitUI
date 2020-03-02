@@ -37,6 +37,7 @@ const getPosition = target => {
       top: rect.top,
       left: rect.left,
       height: rect.height,
+      width: rect.width,
     }
   }
 }
@@ -52,6 +53,18 @@ function createRoot(id: string) {
   return elem
 }
 
+const positionTarget = (placement, portalElem, position, overlayRect) => {
+  if (placement === "right") {
+    const left = position.left + position.width
+    portalElem.style.left = `${left}px`
+    portalElem.style.top = `${position.top}px`
+  } else if (placement === "left") {
+    const right = position.left - overlayRect.width
+    portalElem.style.left = `${right}px`
+    portalElem.style.top = `${position.top}px`
+  }
+}
+
 /**
  *
  * @param overlayElem overlay to render/ elem to align
@@ -65,12 +78,31 @@ const alignTarget = (
   target,
   getPopUpContainer,
   portalElem,
-  position
+  position,
+  placement
 ) => {
   const container = getPopUpContainer(target)
   if (overlayElem && container) {
     const rect = overlayElem.getBoundingClientRect()
     const containerRect = container.getBoundingClientRect()
+    if (placement === "right") {
+      const left = position.left + position.width
+      const rightSpace = left + rect.width
+      if (rightSpace > containerRect.right) {
+        positionTarget("left", portalElem, position, rect)
+      } else {
+        positionTarget("right", portalElem, position, rect)
+      }
+      return
+    } else if (placement === "left") {
+      const leftSpace = position.left - rect.width
+      if (leftSpace < containerRect.left) {
+        positionTarget("right", portalElem, position, rect)
+      } else {
+        positionTarget("left", portalElem, position, rect)
+      }
+      return
+    }
     const right = position.left + rect.width
     if (right > containerRect.right) {
       portalElem.style.left = `${position.left -
@@ -82,8 +114,22 @@ const alignTarget = (
   }
 }
 
+const getDefaultPopupContainer = (props: ITriggerProps) => {
+  if (props.position) {
+    return () => document.body
+  }
+  return (target: HTMLElement) => target.parentElement
+}
+
 export default function Trigger(props: ITriggerProps) {
-  const { children, overlay, defaultVisible, position } = props
+  const {
+    children,
+    overlay,
+    defaultVisible,
+    position,
+    getPopupContainer = getDefaultPopupContainer(props),
+    placement = "bottom",
+  } = props
   const target = usePortal("trigger")
   const scrollBlocker = useRef(createRoot("scroll-block"))
   const internalState = useState(defaultVisible)
@@ -102,21 +148,15 @@ export default function Trigger(props: ITriggerProps) {
   const handleClick = () => {
     onVisibleChange(!visible)
   }
-  // getpopupcontainer -> if passed use it
-  // if not use target.prent
-  // if no target use document.body
-  // const getPopUpContainer = () =>
-  //   triggerRef.current && triggerRef.current.parentElement
-  const getPopUpContainer = () => document.body
   useEffect(() => {
     const targetPosition = position || getPosition(triggerRef.current)
-    console.log("e", position, targetPosition, triggerRef, ref)
     alignTarget(
       ref.current,
       triggerRef.current,
-      getPopUpContainer,
+      getPopupContainer,
       target,
-      targetPosition
+      targetPosition,
+      placement
     )
   }, [])
   useEffect(() => {
@@ -125,9 +165,10 @@ export default function Trigger(props: ITriggerProps) {
       alignTarget(
         ref.current,
         triggerRef.current,
-        getPopUpContainer,
+        getPopupContainer,
         target,
-        targetPosition
+        targetPosition,
+        placement
       )
       addRootElement(scrollBlocker.current)
     } else {
