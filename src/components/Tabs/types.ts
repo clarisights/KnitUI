@@ -29,6 +29,8 @@ export interface TabsProps extends BaseComponentProps {
   readOnly?: boolean
   /** Add Button Element, Please pass button element to behave it correctly. */
   addButtonElement?: React.ReactElement
+  /** Custom Color (Valid color or theme color provided by knit-ui)*/
+  customColor?: string
 }
 
 export interface TabPane extends HTMLButtonElement {
@@ -59,6 +61,7 @@ export type TabItemType = {
   dragHandle: boolean
   dragHandleElement: React.FC<any> | null
   readOnly: boolean
+  customColor: string
 }
 
 export type TabsListProps = {
@@ -74,4 +77,5 @@ export type TabsListProps = {
   dragHandle: boolean
   dragHandleElement: React.FC<any> | null
   readOnly: boolean
+  customColor: string
 }

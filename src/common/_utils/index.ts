@@ -31,6 +31,15 @@ export function withProps<U>() {
 // Color utils
 
 /**
+ * Used for parsing hsl color values defined in [h, s, l] format
+ * into a chroma object
+ */
+export const hslToChroma = (hsl: Array<number>) => {
+  const [h, s, l] = hsl
+  return chroma.hsl(h, s / 100, l / 100)
+}
+
+/**
  * Checks if the color is light or darks based on its L value in
  * the HSL color scale.
  * @param color A chroma color instance
@@ -98,6 +107,32 @@ export const getThemeColor = (props: any, color: string) => {
   } = props
 
   return chromaPalette[color].hex()
+}
+
+/**
+ * Get different lightness of passed color, range of lightness is between 0 to 100
+ */
+export const getColorOfLightness = (
+  props: any,
+  color: string,
+  lightness: number
+) => {
+  const {
+    theme: {
+      knitui: { chromaPalette },
+    },
+  } = props
+
+  let computedColor
+
+  if (chromaPalette.hasOwnProperty(color))
+    computedColor = chromaPalette[color].set("hsl.l", lightness / 100).hex()
+  else if (chroma.valid(color))
+    computedColor = chroma(color)
+      .set("hsl.l", lightness / 100)
+      .hex()
+  else computedColor = color
+  return computedColor
 }
 
 /**

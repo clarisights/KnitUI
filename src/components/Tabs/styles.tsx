@@ -1,13 +1,12 @@
 import { RefObject } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import { Button, Icon } from ".."
-import { getThemeColor, getOSName } from "../../common/_utils"
-
+import { getThemeColor, getColorOfLightness } from "../../common/_utils"
 /* The tab being dragged is appended to the body, hence it's styles need to be at global scope*/
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<{ customColor: string }>`
 .knitui-tabs-helper:not(#knit-active-tab) {
-  background: ${props => getThemeColor(props, "Beige10")};
+  background: ${props => getThemeColor(props, props.customColor)};
   
   &:before {
     content: "";
@@ -26,12 +25,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 `
 
-export const ButtonWrapper = styled(Button)`
+export const ButtonWrapper = styled(Button)<{ bgColor: string }>`
   border-radius: 4px 4px 0 0;
   :hover,
   :focus,
   :active {
-    background: #efe9dc;
+    background: ${props => getColorOfLightness(props, props.bgColor, 90)};
   }
 `
 
@@ -40,9 +39,9 @@ export const TabsWrapper = styled.div<{ hideTabContent: boolean }>`
   width: 100%;
 `
 
-export const TabsPanelWrapper = styled.div`
+export const TabsPanelWrapper = styled.div<{ customColor: string }>`
   display: flex;
-  background: ${props => getThemeColor(props, "Beige10")};
+  background: ${props => getThemeColor(props, props.customColor)};
 `
 
 const getActiveTabHeight = props => {
@@ -71,21 +70,28 @@ export const OverflowWrapper = styled.div<{
   display: flex;
 `
 
-export const BlurElement = styled.div<{ dir: string; visible: boolean }>`
+export const BlurElement = styled.div<{
+  dir: string
+  visible: boolean
+  customColor: string
+}>`
   width: 80px;
   height: 100%;
   position: absolute;
   background: linear-gradient(
     to ${props => (props.dir === "left" ? "right" : "left")},
-    ${props => getThemeColor(props, "Beige10")}FF,
-    ${props => getThemeColor(props, "Beige10")}00
+    ${props => getThemeColor(props, props.customColor)}FF,
+    ${props => getThemeColor(props, props.customColor)}00
   );
   z-index: 100;
   visibility: ${props => (props.visible ? "visible" : "hidden")};
   pointer-events: none;
 `
 
-export const IconWrapper = styled.div<{ visible: boolean }>`
+export const IconWrapper = styled.div<{
+  visible: boolean
+  customColor: string
+}>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,9 +104,26 @@ export const IconWrapper = styled.div<{ visible: boolean }>`
   :hover,
   :focus,
   :active {
-    background: #efe9dc;
+    background: ${props => getColorOfLightness(props, props.customColor, 90)};
   }
 `
+const highlightBorderStyle = props => {
+  const { customColor, active } = props
+  const borderColor = active
+    ? getColorOfLightness(props, customColor, 75)
+    : "transparent"
+
+  return `2px solid ${borderColor}`
+}
+
+const highlightBgColor = props => {
+  const { customColor, active } = props
+  const borderColor = active
+    ? "transparent"
+    : getColorOfLightness(props, customColor, 90)
+
+  return borderColor
+}
 
 export const TabPanel = styled.button<{
   active?: boolean
@@ -119,8 +142,7 @@ export const TabPanel = styled.button<{
       ? getThemeColor(props, "Neutral90")
       : getThemeColor(props, "Neutral50")};
   border: 2px solid transparent;
-  border-top: ${props =>
-    props.active ? "2px solid #D8C9A7" : "2px solid transparent"};
+  border-top: ${props => highlightBorderStyle(props)};
   padding: 4px 14px;
   border-radius: 4px 4px 0px 0px;
   min-width: 80px;
@@ -132,7 +154,7 @@ export const TabPanel = styled.button<{
   margin-right: ${props => (props.active ? "0" : "1px")};
 
   :hover {
-    background: ${props => (props.active ? "#FFFFFF" : "#efe9dc")};
+    background: ${props => highlightBgColor(props)};
   }
 
   :active,

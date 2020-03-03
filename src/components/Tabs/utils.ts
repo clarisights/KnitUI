@@ -3,6 +3,7 @@ import { ActiveTabFlagsInterface } from "./types"
 export const getWidthFromRef = (refNode: React.RefObject<HTMLDivElement>) => {
   return refNode.current ? refNode.current.offsetWidth : 0
 }
+export const DEFAULT_COLOR = "Beige10"
 
 export const getTabContainerStyle = (
   activeTabFlags: ActiveTabFlagsInterface,

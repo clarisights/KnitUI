@@ -13,7 +13,7 @@ import {
   TabPanel,
   TabContentWrapper,
 } from "./styles"
-import { getWidthFromRef } from "./utils"
+import { getWidthFromRef, DEFAULT_COLOR } from "./utils"
 import {
   TabsProps,
   TabWrapperInterface,
@@ -96,6 +96,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     readOnly = false,
     hideAdd = false,
     addButtonElement,
+    customColor = DEFAULT_COLOR,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -203,14 +204,15 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
   const showActiveRightBlur = showRightArrow && activeTabFlags.right
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle customColor={customColor} />
       <TabsWrapper hideTabContent={hideTabContent}>
-        <TabsPanelWrapper>
+        <TabsPanelWrapper customColor={customColor}>
           <OverflowWrapper activeTabRef={itemRef}>
             <IconWrapper
               ref={leftArrowRef}
               visible={showLeftArrow}
-              onClick={handleScrollLeft}>
+              onClick={handleScrollLeft}
+              customColor={customColor}>
               <Icon type="oKeyboardArrowLeft" size="18px" fill="#000000" />
             </IconWrapper>
             <BlurElement
@@ -219,6 +221,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               style={{
                 left: getWidthFromRef(leftArrowRef),
               }}
+              customColor={customColor}
             />
             <BlurElement
               visible={showActiveLeftBlur}
@@ -226,6 +229,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               style={{
                 left: getWidthFromRef(leftArrowRef) + getWidthFromRef(itemRef),
               }}
+              customColor={customColor}
             />
             <TabsList
               listRef={listRef}
@@ -247,6 +251,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               itemRef={itemRef}
               activeNxtRef={activeNxtRef}
               activePrevRef={activePrevRef}
+              customColor={customColor}
               helperClass="knitui-tabs-helper"
               lockToContainerEdges
             />
@@ -257,6 +262,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
                 right:
                   getWidthFromRef(rightArrowRef) + getWidthFromRef(itemRef),
               }}
+              customColor={customColor}
             />
             <BlurElement
               visible={showRightBlur}
@@ -264,11 +270,13 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               style={{
                 right: getWidthFromRef(rightArrowRef),
               }}
+              customColor={customColor}
             />
             <IconWrapper
               ref={rightArrowRef}
               visible={showRightArrow}
-              onClick={handleScrollRight}>
+              onClick={handleScrollRight}
+              customColor={customColor}>
               <Icon type="oKeyboardArrowRight" size="18px" fill="#000000" />
             </IconWrapper>
           </OverflowWrapper>
@@ -281,6 +289,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
                 kind="primary"
                 bare
                 customColor="#000000"
+                bgColor={customColor}
               />
             ))}
         </TabsPanelWrapper>
