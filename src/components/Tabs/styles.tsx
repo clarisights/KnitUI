@@ -119,7 +119,7 @@ const highlightBorderStyle = props => {
 const highlightBgColor = props => {
   const { customColor, active } = props
   const borderColor = active
-    ? "transparent"
+    ? "#ffffff"
     : getColorOfLightness(props, customColor, 90)
 
   return borderColor
