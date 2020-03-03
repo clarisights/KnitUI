@@ -5,6 +5,8 @@ type onOrderChnageParams = {
   oldIndex: number
   newIndex: number
 }
+
+type Offset = number | string
 export interface TabsProps extends BaseComponentProps {
   children: ReactNode[] | ReactNode
   defaultActiveKey?: string
@@ -31,6 +33,11 @@ export interface TabsProps extends BaseComponentProps {
   addButtonElement?: React.ReactElement
   /** Custom Color (Valid color or theme color provided by knit-ui)*/
   customColor?: string
+  /**
+   * As lockToContainerEdges is set `true`, current lockOffset is 0 for react-sortable-hoc, here use can pass
+   * a props & define how much flexible you want your lock offset.
+   */
+  lockOffset?: Offset | [Offset, Offset] | undefined
 }
 
 export interface TabPane extends HTMLButtonElement {
