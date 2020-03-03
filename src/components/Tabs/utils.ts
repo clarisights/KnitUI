@@ -28,7 +28,6 @@ export const getTabContainerStyle = (
       position: -webkit-sticky;
       z-index: 101;
       right: 0;
-      margin-left: auto;
     `
   }
   return styles
