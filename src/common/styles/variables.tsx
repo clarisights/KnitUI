@@ -1,18 +1,9 @@
 import chroma from "chroma-js"
+import { hslToChroma } from "../_utils"
 
 // Helpers
 const multiply = (a: number, b: number) => a * b
 
-// Colors
-
-/**
- * Used for parsing hsl color values defined in [h, s, l] format
- * into a chroma object
- */
-const hslToChroma = (hsl: Array<number>) => {
-  const [h, s, l] = hsl
-  return chroma.hsl(h, s / 100, l / 100)
-}
 const baseUnit = 10
 
 /**

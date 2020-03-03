@@ -20,6 +20,7 @@ export const TabItem = SortableElement(
     dragHandle,
     dragHandleElement: DragHandleElement,
     readOnly,
+    customColor,
   }: TabItemType) => {
     const props = value.props
     const isActive = props.tabKey === activeKey
@@ -41,6 +42,7 @@ export const TabItem = SortableElement(
       dragHandle: dragHandle,
       role: "tab",
       "aria-controls": "tabpanel-id",
+      customColor,
       children: [handleElement, props.tab],
       onClick: () => !isActive && onChange(props.tabKey),
     })

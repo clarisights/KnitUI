@@ -18,6 +18,7 @@ export const TabsList = SortableContainer(
     dragHandleElement,
     readOnly,
     listRef,
+    customColor,
   }: TabsListProps) => {
     return (
       <OverflowContainer ref={listRef}>
@@ -38,6 +39,7 @@ export const TabsList = SortableContainer(
             itemRef={itemRef}
             activeNxtRef={activeNxtRef}
             activePrevRef={activePrevRef}
+            customColor={customColor}
           />
         ))}
       </OverflowContainer>
