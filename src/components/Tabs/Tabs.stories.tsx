@@ -13,64 +13,64 @@ const sizeOptions = ["small", "medium", "large", "x-large"]
 const { TabPanel } = Tabs
 
 const TabPanels = [
-  <TabPanel tab="Tab 1" tabKey="tab-1">
+  <TabPanel tab="Tab 1" key="tab-1" tabKey="tab-1">
     tab 1 content here
   </TabPanel>,
-  <TabPanel tab="Tab 2" tabKey="tab-2">
+  <TabPanel tab="Tab 2" key="tab-2" tabKey="tab-2">
     tab 2 content here
   </TabPanel>,
-  <TabPanel tab="Tab 3" tabKey="tab-3">
+  <TabPanel tab="Tab 3" key="tab-3" tabKey="tab-3">
     tab 3 content here
   </TabPanel>,
-  <TabPanel tab="Tab 4" tabKey="tab-4">
+  <TabPanel tab="Tab 4" key="tab-4" tabKey="tab-4">
     tab 4 content here
   </TabPanel>,
-  <TabPanel tab="Tab 5" tabKey="tab-5">
+  <TabPanel tab="Tab 5" key="tab-5" tabKey="tab-5">
     tab 5 content here
   </TabPanel>,
-  <TabPanel tab="Tab 6" tabKey="tab-6">
+  <TabPanel tab="Tab 6" key="tab-6" tabKey="tab-6">
     tab 6 content here
   </TabPanel>,
-  <TabPanel tab="Tab 7" tabKey="tab-7">
+  <TabPanel tab="Tab 7" key="tab-7" tabKey="tab-7">
     tab 7 content here
   </TabPanel>,
-  <TabPanel tab="Tab 8" tabKey="tab-8">
+  <TabPanel tab="Tab 8" key="tab-8" tabKey="tab-8">
     tab 8 content here
   </TabPanel>,
-  <TabPanel tab="Tab 9" tabKey="tab-9">
+  <TabPanel tab="Tab 9" key="tab-9" tabKey="tab-9">
     tab 9 content here
   </TabPanel>,
-  <TabPanel tab="Tab 10" tabKey="tab-10">
+  <TabPanel tab="Tab 10" key="tab-10" tabKey="tab-10">
     tab 10 content here
   </TabPanel>,
-  <TabPanel tab="Tab 11" tabKey="tab-11">
+  <TabPanel tab="Tab 11" key="tab-11" tabKey="tab-11">
     tab 11 content here
   </TabPanel>,
-  <TabPanel tab="Tab 12" tabKey="tab-12">
+  <TabPanel tab="Tab 12" key="tab-12" tabKey="tab-12">
     tab 12 content here
   </TabPanel>,
-  <TabPanel tab="Tab 13" tabKey="tab-13">
+  <TabPanel tab="Tab 13" key="tab-13" tabKey="tab-13">
     tab 13 content here
   </TabPanel>,
-  <TabPanel tab="Tab 14" tabKey="tab-14">
+  <TabPanel tab="Tab 14" key="tab-14" tabKey="tab-14">
     tab 14 content here
   </TabPanel>,
-  <TabPanel tab="Tab 15" tabKey="tab-15">
+  <TabPanel tab="Tab 15" key="tab-15" tabKey="tab-15">
     tab 15 content here
   </TabPanel>,
-  <TabPanel tab="Tab 16" tabKey="tab-16">
+  <TabPanel tab="Tab 16" key="tab-16" tabKey="tab-16">
     tab 16 content here
   </TabPanel>,
-  <TabPanel tab="Tab 17" tabKey="tab-17">
+  <TabPanel tab="Tab 17" key="tab-17" tabKey="tab-17">
     tab 17 content here
   </TabPanel>,
-  <TabPanel tab="Tab 18" tabKey="tab-18">
+  <TabPanel tab="Tab 18" key="tab-18" tabKey="tab-18">
     tab 18 content here
   </TabPanel>,
-  <TabPanel tab="Tab 19" tabKey="tab-19">
+  <TabPanel tab="Tab 19" key="tab-19" tabKey="tab-19">
     tab 19 content here
   </TabPanel>,
-  <TabPanel tab="Tab 20" tabKey="tab-20">
+  <TabPanel tab="Tab 20" key="tab-20" tabKey="tab-20">
     tab 20 content here
   </TabPanel>,
 ]
@@ -137,6 +137,7 @@ stories
               />
             </div>
           }
+          key="tab-1"
           tabKey="tab-1">
           <div>tab 1 content here</div>
         </TabPanel>
@@ -147,7 +148,7 @@ stories
   .add("Tabs with Drag Handle", () => (
     <Container>
       <Tabs onAddTab={() => alert("callback for create add")} useDragHandle>
-        <TabPanel tab="Tab 1" tabKey="tab-1">
+        <TabPanel tab="Tab 1" key="tab-1" tabKey="tab-1">
           <div>tab 1 content here</div>
         </TabPanel>
         {TabPanels.slice(1, TabPanels.length)}
@@ -160,7 +161,7 @@ stories
         onAddTab={() => alert("callback for create add")}
         readOnly
         useDragHandle>
-        <TabPanel tab="Tab 1" tabKey="tab-1">
+        <TabPanel tab="Tab 1" key="tab-1" tabKey="tab-1">
           <div>tab 1 content here</div>
         </TabPanel>
         {TabPanels.slice(1, TabPanels.length)}
@@ -173,7 +174,7 @@ stories
         onAddTab={() => alert("callback for create add")}
         hideAdd
         useDragHandle>
-        <TabPanel tab="Tab 1" tabKey="tab-1">
+        <TabPanel tab="Tab 1" key="tab-1" tabKey="tab-1">
           <div>tab 1 content here</div>
         </TabPanel>
         {TabPanels.slice(1, TabPanels.length)}
@@ -186,7 +187,7 @@ stories
         onAddTab={() => alert("callback for create add")}
         addButtonElement={<button>Add Tab</button>}
         useDragHandle>
-        <TabPanel tab="Tab 1" tabKey="tab-1">
+        <TabPanel tab="Tab 1" key="tab-1" tabKey="tab-1">
           <div>tab 1 content here</div>
         </TabPanel>
         {TabPanels.slice(1, TabPanels.length)}
