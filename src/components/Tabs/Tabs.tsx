@@ -97,6 +97,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
     hideAdd = false,
     addButtonElement,
     customColor = DEFAULT_COLOR,
+    lockOffset = 100,
   } = tabProps
   const [childrenArray, setChildrenArray] = useState([])
   const [activeKeyIndex, setActiveKeyIndex] = useState(0)
@@ -254,6 +255,7 @@ const Tabs: TabWrapperInterface<TabsProps> = ({ children, ...tabProps }) => {
               customColor={customColor}
               helperClass="knitui-tabs-helper"
               lockToContainerEdges
+              lockOffset={lockOffset}
             />
             <BlurElement
               visible={showActiveRightBlur}
