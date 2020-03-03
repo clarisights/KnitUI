@@ -194,3 +194,12 @@ stories
       </Tabs>
     </Container>
   ))
+  .add("Tabs with customColor", () => (
+    <Container>
+      <Tabs
+        onAddTab={() => alert("callback for create add")}
+        customColor="Neutral10">
+        {TabPanels}
+      </Tabs>
+    </Container>
+  ))
