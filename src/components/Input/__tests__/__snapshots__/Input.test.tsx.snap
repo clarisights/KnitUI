@@ -267,6 +267,7 @@ exports[`Input with a custom notification 1`] = `
 exports[`Input with a text label 1`] = `
 <DocumentFragment>
   .c0 {
+  display: block;
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-transform: uppercase;
@@ -376,6 +377,7 @@ exports[`Input with a text label 1`] = `
 exports[`Input with a text label and a text notification 1`] = `
 <DocumentFragment>
   .c0 {
+  display: block;
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-transform: uppercase;
@@ -480,6 +482,7 @@ exports[`Input with a text label and a text notification 1`] = `
     />
   </span>
   .c0 {
+  display: block;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #a6a6a6;
@@ -588,6 +591,7 @@ exports[`Input with a text notification 1`] = `
     />
   </span>
   .c0 {
+  display: block;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #a6a6a6;
