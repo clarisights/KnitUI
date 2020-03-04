@@ -34,8 +34,8 @@ export interface TabsProps extends BaseComponentProps {
   /** Custom Color (Valid color or theme color provided by knit-ui)*/
   customColor?: string
   /**
-   * As lockToContainerEdges is set `true`, current lockOffset is 0 for react-sortable-hoc, here use can pass
-   * a props & define how much flexible you want your lock offset.
+   * As lockToContainerEdges is set `true`, current lockOffset is 100 for react-sortable-hoc, here user can pass
+   * a prop & define how much flexibility user wants for lock offset.
    */
   lockOffset?: Offset | [Offset, Offset] | undefined
 }
