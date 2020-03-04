@@ -125,6 +125,7 @@ export const AddonContainer = styled.span`
 `
 
 const labelStyle = css`
+  display: block;
   font-size: 1.2rem;
   line-height: 1.8rem;
 `
