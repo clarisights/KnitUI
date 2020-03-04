@@ -22,6 +22,7 @@ export interface IOption extends FC<IOptionProps> {
   Text: IOptionText
   Icon: FC<IOptionIconProps>
   Group: FC<IOptionGroupProps>
+  Divider: FC
 }
 
 interface IOptionTextProps {

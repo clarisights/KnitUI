@@ -21,16 +21,18 @@ exports[`Option renders OptionGroup Correctly 1`] = `
   padding: 0.7rem 1.4rem;
   border: 0.1rem solid transparent;
   cursor: default;
+  overflow: hidden;
   background-color: #ffffff;
-}
-
-.c2:hover {
-  background-color: #f2f2f2;
 }
 
 .c2:active {
   border: 0.1rem solid #5ab2f2;
   box-shadow: 0 0 0.2rem #0066ff;
+  z-index: 1;
+}
+
+.c2:hover {
+  background-color: #f2f2f2;
 }
 
 .c1 {
@@ -47,6 +49,13 @@ exports[`Option renders OptionGroup Correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.c4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .c3 {
@@ -58,6 +67,19 @@ exports[`Option renders OptionGroup Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: initial;
 }
 
 <div
@@ -77,7 +99,9 @@ exports[`Option renders OptionGroup Correctly 1`] = `
         <div
           class="c0"
         >
-          <span>
+          <span
+            class="c4"
+          >
             Option 1
           </span>
           <span
@@ -88,7 +112,7 @@ exports[`Option renders OptionGroup Correctly 1`] = `
         </div>
       </div>
       <div
-        class="c3"
+        class="c5"
       />
     </div>
     <div
@@ -100,7 +124,9 @@ exports[`Option renders OptionGroup Correctly 1`] = `
         <div
           class="c0"
         >
-          <span>
+          <span
+            class="c4"
+          >
             Option 2
           </span>
           <span
@@ -111,7 +137,7 @@ exports[`Option renders OptionGroup Correctly 1`] = `
         </div>
       </div>
       <div
-        class="c3"
+        class="c5"
       />
     </div>
   </div>
@@ -139,16 +165,18 @@ exports[`Option renders basic Option correctly 1`] = `
   padding: 0.7rem 1.4rem;
   border: 0.1rem solid transparent;
   cursor: default;
+  overflow: hidden;
   background-color: #ffffff;
-}
-
-.c0:hover {
-  background-color: #f2f2f2;
 }
 
 .c0:active {
   border: 0.1rem solid #5ab2f2;
   box-shadow: 0 0 0.2rem #0066ff;
+  z-index: 1;
+}
+
+.c0:hover {
+  background-color: #f2f2f2;
 }
 
 .c1 {
@@ -159,9 +187,16 @@ exports[`Option renders basic Option correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .c2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -170,6 +205,19 @@ exports[`Option renders basic Option correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: initial;
 }
 
 <div
@@ -178,15 +226,17 @@ exports[`Option renders basic Option correctly 1`] = `
     <div
       class="c1"
     >
-      <span>
+      <span
+        class="c2"
+      >
         Tanjiro
       </span>
     </div>
     <div
-      class="c2"
+      class="c3"
     />
     <div
-      class="c2"
+      class="c4"
     />
   </div>
 </DocumentFragment>
@@ -213,20 +263,17 @@ exports[`Option renders disabled option correctly 1`] = `
   padding: 0.7rem 1.4rem;
   border: 0.1rem solid transparent;
   cursor: default;
+  overflow: hidden;
   background-color: #ffffff;
   cursor: not-allowed;
   opacity: 0.6;
-}
-
-.c0:hover {
-  background-color: #f2f2f2;
 }
 
 .c0:active {
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #808080;
@@ -240,6 +287,13 @@ exports[`Option renders disabled option correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.c3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .c1 {
@@ -251,6 +305,19 @@ exports[`Option renders disabled option correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: initial;
 }
 
 <div
@@ -262,18 +329,20 @@ exports[`Option renders disabled option correctly 1`] = `
       <div
         class="c2"
       >
-        <span>
+        <span
+          class="c3"
+        >
           Nezuko
         </span>
         <span
-          class="c3"
+          class="c4"
         >
           this is the option description
         </span>
       </div>
     </div>
     <div
-      class="c1"
+      class="c5"
     />
   </div>
 </DocumentFragment>
@@ -360,7 +429,7 @@ exports[`Option renders icons and avatar with correct alignment  1`] = `
   transform: none;
 }
 
-.c7 {
+.c9 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -386,19 +455,21 @@ exports[`Option renders icons and avatar with correct alignment  1`] = `
   padding: 0.7rem 1.4rem;
   border: 0.1rem solid transparent;
   cursor: default;
+  overflow: hidden;
   background-color: #ffffff;
+}
+
+.c0:active {
+  border: 0.1rem solid #5ab2f2;
+  box-shadow: 0 0 0.2rem #0066ff;
+  z-index: 1;
 }
 
 .c0:hover {
   background-color: #f2f2f2;
 }
 
-.c0:active {
-  border: 0.1rem solid #5ab2f2;
-  box-shadow: 0 0 0.2rem #0066ff;
-}
-
-.c5 {
+.c6 {
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #808080;
@@ -412,6 +483,13 @@ exports[`Option renders icons and avatar with correct alignment  1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.c5 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .c1 {
@@ -423,14 +501,31 @@ exports[`Option renders icons and avatar with correct alignment  1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.c6 {
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: initial;
+}
+
+.c8 {
   margin-right: 0;
   margin-left: 1.5rem;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+}
+
+.c8:first-child {
+  margin-left: 0;
 }
 
 .c2 {
@@ -439,6 +534,10 @@ exports[`Option renders icons and avatar with correct alignment  1`] = `
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
+}
+
+.c2:first-child {
+  margin-left: 0;
 }
 
 <div
@@ -457,21 +556,23 @@ exports[`Option renders icons and avatar with correct alignment  1`] = `
       <div
         class="c4"
       >
-        <span>
+        <span
+          class="c5"
+        >
           Option 1
         </span>
         <span
-          class="c5"
+          class="c6"
         >
           Kimetsu no Yaiba
         </span>
       </div>
     </div>
     <div
-      class="c1"
+      class="c7"
     >
       <span
-        class="c6 c7"
+        class="c8 c9"
         height="18px"
         type="oClose"
         width="18px"
@@ -495,7 +596,7 @@ exports[`Option renders icons and avatar with correct alignment  1`] = `
 
 exports[`Option renders selected option correctly and fires onClick 1`] = `
 <DocumentFragment>
-  .c4 {
+  .c6 {
   cursor: inherit;
   display: inline-block;
   height: 18px;
@@ -521,16 +622,18 @@ exports[`Option renders selected option correctly and fires onClick 1`] = `
   padding: 0.7rem 1.4rem;
   border: 0.1rem solid transparent;
   cursor: default;
-  background-color: #f2f2f2;
-}
-
-.c0:hover {
+  overflow: hidden;
   background-color: #f2f2f2;
 }
 
 .c0:active {
   border: 0.1rem solid #5ab2f2;
   box-shadow: 0 0 0.2rem #0066ff;
+  z-index: 1;
+}
+
+.c0:hover {
+  background-color: #f2f2f2;
 }
 
 .c2 {
@@ -541,6 +644,13 @@ exports[`Option renders selected option correctly and fires onClick 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.c3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .c1 {
@@ -552,14 +662,31 @@ exports[`Option renders selected option correctly and fires onClick 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.c3 {
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: initial;
+}
+
+.c5 {
   margin-right: 0;
   margin-left: 1.5rem;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+}
+
+.c5:first-child {
+  margin-left: 0;
 }
 
 <div
@@ -571,16 +698,18 @@ exports[`Option renders selected option correctly and fires onClick 1`] = `
       <div
         class="c2"
       >
-        <span>
+        <span
+          class="c3"
+        >
           Nezuko
         </span>
       </div>
     </div>
     <div
-      class="c1"
+      class="c4"
     >
       <span
-        class="c3 c4"
+        class="c5 c6"
         height="18px"
         type="oCheck"
         width="18px"

@@ -3,6 +3,7 @@ import { withKnobs } from "@storybook/addon-knobs"
 import { storiesOf } from "@storybook/react"
 import Option from "./"
 import Switch from "../Switch"
+import Button from "../Button"
 const Readme = require("./README.md")
 
 storiesOf("Option", module)
@@ -121,8 +122,33 @@ storiesOf("Option", module)
         <Option customStyles={{ background: '#FDEDCE' }} selected value="Option 1">
           <Option.Text>Campaign</Option.Text>
         </Option>
-        <Option customStyles={{ background: '#DDEEE5' }} value="Option 2">
-          <Option.Text>Option 2</Option.Text>
+        <Option customStyles={{ background: '#DDEEE5' }} value="FB Spend">
+          <Option.Text>FB Spend</Option.Text>
         </Option>
       </Option.Group>
+  ))
+  .add("With divider", () => (
+    <Option.Group title="SOME ITEMS">
+      <Option value="Edit">
+        <Option.Icon type="oEdit" />
+        <Option.Text>Edit</Option.Text>
+      </Option><Option value="Duplicate">
+        <Option.Icon type="oFileCopy" />
+        <Option.Text>Duplicate</Option.Text>
+      </Option><Option value="Move to">
+        <Option.Icon type="oArrowForward" />
+        <Option.Text>Move to</Option.Text>
+      </Option>
+      <Option.Divider />
+      <Option value="Delete">
+        <Option.Icon type="oDelete" />
+        <Option.Text>Delete</Option.Text>
+      </Option>
+    </Option.Group>
+  ))
+  .add("With Button", () => (
+    <Option onClick={(e, val) => alert(val)} value="Option 1">
+      <Option.Text description="Option Description">Option 1</Option.Text>
+      <Button onClick={(e) => e.stopPropagation()} align="right" label="asd">Click!</Button>
+    </Option>
   ))
