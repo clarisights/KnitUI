@@ -3,7 +3,7 @@ import Avatar from "../../Avatar"
 import Icon from "../../Icon"
 import Label from "../../Label"
 import { IOption } from "../types"
-import { FlexWrapper, OptionItemWrapper, OptionWrapper } from "./Option.styles"
+import { FlexWrapper, OptionItemWrapper, OptionWrapper, StyledDivider } from "./Option.styles"
 import OptionGroup from "./OptionGroup"
 import OptionText from "./OptionText"
 
@@ -29,6 +29,7 @@ const Option: IOption = props => {
   const leftChildren = Children.toArray(updatedChildren).filter(
     comp => comp!.props.align !== "right"
   )
+
   return (
     <OptionWrapper
       onClick={onClick ? e => onClick(e, value) : () => null}
@@ -52,5 +53,6 @@ Option.Text = OptionItemWrapper(OptionText, {})
 Option.Tag = OptionItemWrapper(Label, {})
 Option.Avatar = OptionItemWrapper(Avatar, { alignStart: true })
 Option.Group = OptionGroup
+Option.Divider = StyledDivider
 
 export default Option

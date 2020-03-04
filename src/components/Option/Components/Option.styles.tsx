@@ -25,6 +25,7 @@ export const OptionWrapper = styled.div<{
           &:active {
             border: 0.1rem solid ${props => getThemeColor(props, "Azure80")};
             box-shadow: 0 0 0.2rem #0066ff;
+            z-index: 1;
           }
           &:hover {
             background-color: ${props => getThemeColor(props, "Neutral10")};
@@ -60,7 +61,13 @@ export const StyledOptionText = styled.span`
 export const FlexWrapper = styled.div<{ align?: string }>`
   display: flex;
   align-items: center;
-  overflow: ${props => props.align==="right" ? 'initial' :'hidden'};
+  overflow: ${props => props.align === "right" ? 'initial' :'hidden'};
+`
+
+export const StyledDivider = styled.div`
+  margin: 0.7rem 0;
+  background-color: ${props => getThemeColor(props, "Neutral20")};
+  height: 0.1rem;
 `
 
 export const StyledIcon = styled(Icon)`
@@ -73,6 +80,9 @@ export const OptionItemWrapper = (component, customProps): FC => {
   return styled(component)`
     margin-right: ${props => (props.align === "right" ? 0 : "1.5rem")};
     margin-left: ${props => (props.align === "right" ? "1.5rem" : 0)};
+    &:first-child {
+      margin-left: 0;
+    }
     align-self: ${customProps && customProps.alignStart
       ? "flex-start"
       : "center"};
