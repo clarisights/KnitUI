@@ -29,7 +29,6 @@ const Option: IOption = props => {
   const leftChildren = Children.toArray(updatedChildren).filter(
     comp => comp!.props.align !== "right"
   )
-
   return (
     <OptionWrapper
       onClick={onClick ? e => onClick(e, value) : () => null}
@@ -39,7 +38,7 @@ const Option: IOption = props => {
       {...rest}>
       {!children && <Option.Text>{value}</Option.Text>}
       <FlexWrapper>{leftChildren}</FlexWrapper>
-      <FlexWrapper>
+      <FlexWrapper align="right">
         {rightChildren}
         {selected && <Option.Icon type="oCheck" align="right" />}
       </FlexWrapper>
@@ -52,6 +51,6 @@ Option.Icon = OptionItemWrapper(Icon, {})
 Option.Text = OptionItemWrapper(OptionText, {})
 Option.Tag = OptionItemWrapper(Label, {})
 Option.Avatar = OptionItemWrapper(Avatar, { alignStart: true })
-Option.OptionGroup = OptionGroup
+Option.Group = OptionGroup
 
 export default Option

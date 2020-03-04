@@ -1,11 +1,11 @@
 import React from "react"
-import { OptionDescription, VerticalWrapper } from "./Option.styles"
+import { OptionDescription, VerticalWrapper, StyledOptionText } from "./Option.styles"
 
 const OptionText = props => {
   const { description, children } = props
   return (
     <VerticalWrapper>
-      <span>{children}</span>
+      <StyledOptionText>{children}</StyledOptionText>
       {description && <OptionDescription>{description}</OptionDescription>}
     </VerticalWrapper>
   )
