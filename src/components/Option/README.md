@@ -7,7 +7,7 @@ import { Option } from "KnitUI"
 
 // render
 return (
-  <Option.OptionGroup title="SOME ITEMS">
+  <Option.Group title="SOME ITEMS">
     <Option onClick={(e, val) => alert(val)} value="Option 1">
       {/* Give an align prop to to set position, same API as Icon component otherwise */}
       <Option.Icon type="oClose" align="right" />
@@ -23,7 +23,7 @@ return (
       <Option.Text description="Option Description">Option 3</Option.Text>
       <Option.Tag text="Aa" align="right" />
     </Option>
-  </Option.OptionGroup>
+  </Option.Group>
 )
 
 // If you don't pass any children to option then it will render Option.Text with the option value as text
@@ -39,7 +39,7 @@ return (
 - Option.Avatar
 - Option.Tag
 - Option.Text
-- Option.OptionGroup
+- Option.Group
 
 ### Option Props
 
@@ -51,7 +51,7 @@ return (
 | style     | CSSStyleObject | Yes      | None    | A style object to override default styled of option |
 | className | string         | Yes      | None    | CSS class name to be added                          |
 
-### Option.OptionGroup Props
+### Option.Group Props
 
 | Prop name | Type      | Optional | Default                        | Description                |
 | --------- | --------- | -------- | ------------------------------ | -------------------------- |

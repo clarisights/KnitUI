@@ -2,6 +2,7 @@ import React from "react"
 import { withKnobs } from "@storybook/addon-knobs"
 import { storiesOf } from "@storybook/react"
 import Option from "./"
+import Switch from "../Switch"
 const Readme = require("./README.md")
 
 storiesOf("Option", module)
@@ -19,7 +20,7 @@ storiesOf("Option", module)
       <Option.Text>Option 1</Option.Text>
     </Option>
   ))
-  .add("Basic asd", () => (
+  .add("Option without child", () => (
     <Option onClick={(e, val) => alert(val)} value="Option 1" />
   ))
   .add("Disabled option", () => (
@@ -36,7 +37,7 @@ storiesOf("Option", module)
     </Option>
   ))
   .add("With Option Group", () => (
-    <Option.OptionGroup title="SOME ITEMS">
+    <Option.Group title="SOME ITEMS">
       <Option onClick={(e, val) => alert(val)} value="Option 1">
         <Option.Icon type="oClose" fill="yellow" align="right" />
         <Option.Icon type="oSettings" align="left" />
@@ -55,10 +56,10 @@ storiesOf("Option", module)
         <Option.Icon type="oClose" align="right" />
         <Option.Text description="Option Description">Option 3</Option.Text>
       </Option>
-    </Option.OptionGroup>
+    </Option.Group>
   ))
   .add("With Selected Option", () => (
-    <Option.OptionGroup title="SOME ITEMS">
+    <Option.Group title="SOME ITEMS">
       <Option onClick={(e, val) => alert(val)} value="Option 1">
         <Option.Text>Option 1</Option.Text>
       </Option>
@@ -68,7 +69,7 @@ storiesOf("Option", module)
       <Option onClick={(e, val) => alert(val)} value="Option 3">
         <Option.Text>Option 3</Option.Text>
       </Option>
-    </Option.OptionGroup>
+    </Option.Group>
   ))
   .add("With Avatar", () => (
     <Option onClick={(e, val) => alert(val)} value="Option 1">
@@ -89,4 +90,39 @@ storiesOf("Option", module)
       <Option.Text>Option 1</Option.Text>
       <Option.Tag text="Aa" align="right" />
     </Option>
+  ))
+  .add("With selectors", () => (
+    <Option.Group title="Selector">
+      <Option value="Option 1">
+        <Option.Text>Option 1</Option.Text>
+        <Switch align="right" />
+      </Option>
+      <Option value="Option 2">
+        <Option.Text>Option 2</Option.Text>
+        <Switch align="right" />
+      </Option>
+    </Option.Group>
+  ))
+  .add("With overflow handling", () => (
+    <div style={{ width: '20rem', border: '1px solid red'}}>
+      <Option.Group title="Selector">
+        <Option selected value="Option 1">
+          <Option.Text>This is some really long option</Option.Text>
+        </Option>
+        <Option value="Option 2">
+          <Option.Text>Option 2</Option.Text>
+        </Option>
+      </Option.Group>
+
+    </div>
+  ))
+  .add("With custom fill", () => (
+      <Option.Group title="Selector">
+        <Option customStyles={{ background: '#FDEDCE' }} selected value="Option 1">
+          <Option.Text>Campaign</Option.Text>
+        </Option>
+        <Option customStyles={{ background: '#DDEEE5' }} value="Option 2">
+          <Option.Text>Option 2</Option.Text>
+        </Option>
+      </Option.Group>
   ))

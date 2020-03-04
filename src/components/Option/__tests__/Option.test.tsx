@@ -48,14 +48,14 @@ describe("Option", () => {
 
   it("renders OptionGroup Correctly", () => {
     const { asFragment, container } = render(
-      <Option.OptionGroup title="SOME ITEMS">
+      <Option.Group title="SOME ITEMS">
         <Option value="Tanjiro">
           <Option.Text description="Kimetsu no Yaiba">Option 1</Option.Text>
         </Option>
         <Option value="Zenitsu">
           <Option.Text description="Kimetsu no Yaiba">Option 2</Option.Text>
         </Option>
-      </Option.OptionGroup>
+      </Option.Group>
     )
     // Should print the option group title
     expect(container).toHaveTextContent("SOME ITEMS")

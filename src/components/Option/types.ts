@@ -21,7 +21,7 @@ export interface IOption extends FC<IOptionProps> {
   Avatar: FC<IOptionAvatarProps>
   Text: IOptionText
   Icon: FC<IOptionIconProps>
-  OptionGroup: FC<IOptionGroupProps>
+  Group: FC<IOptionGroupProps>
 }
 
 interface IOptionTextProps {

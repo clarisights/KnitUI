@@ -16,17 +16,18 @@ export const OptionWrapper = styled.div<{
   padding: 0.7rem 1.4rem;
   border: 0.1rem solid transparent;
   cursor: default;
+  overflow: hidden;
   background-color: ${props =>
     getThemeColor(props, props.selected ? "Neutral10" : "Neutral0")};
-  &:hover {
-    background-color: ${props => getThemeColor(props, "Neutral10")};
-  }
   ${({ isDisabled }) =>
     !isDisabled
       ? css`
           &:active {
             border: 0.1rem solid ${props => getThemeColor(props, "Azure80")};
             box-shadow: 0 0 0.2rem #0066ff;
+          }
+          &:hover {
+            background-color: ${props => getThemeColor(props, "Neutral10")};
           }
         `
       : css`
@@ -47,11 +48,19 @@ export const OptionDescription = styled.span`
 export const VerticalWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 `
 
-export const FlexWrapper = styled.div`
+export const StyledOptionText = styled.span`
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+`
+
+export const FlexWrapper = styled.div<{ align?: string }>`
   display: flex;
   align-items: center;
+  overflow: ${props => props.align==="right" ? 'initial' :'hidden'};
 `
 
 export const StyledIcon = styled(Icon)`
