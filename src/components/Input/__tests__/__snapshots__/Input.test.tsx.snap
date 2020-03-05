@@ -698,6 +698,7 @@ exports[`Input with left addon renders correctly 1`] = `
 
 .c0 {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
@@ -850,6 +851,7 @@ exports[`Input with left and right addons renders correctly 1`] = `
 
 .c0 {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
@@ -1002,6 +1004,7 @@ exports[`Input with right addon renders correctly 1`] = `
 
 .c0 {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
@@ -1445,6 +1448,7 @@ exports[`Input with state error renders correctly 1`] = `
 
 .c0 {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
@@ -1597,6 +1601,7 @@ exports[`Input with state success renders correctly 1`] = `
 
 .c0 {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
@@ -1845,6 +1850,7 @@ exports[`Input with state warning renders correctly 1`] = `
 
 .c0 {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
@@ -2463,6 +2469,7 @@ exports[`Input with type password renders correctly 1`] = `
 
 .c0 {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
@@ -2621,6 +2628,7 @@ exports[`Input with type search renders correctly 1`] = `
 
 .c0 {
   display: inline-block;
+  width: 100%;
   position: relative;
 }
 
