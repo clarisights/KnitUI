@@ -101,6 +101,7 @@ export const StyledTextArea = styled.textarea<IStyledInput>`
 
 const AddonSpan = styled.span`
   display: inline-block;
+  width: 100%;
   position: relative;
 `
 
