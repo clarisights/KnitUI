@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useEffect, useRef, FormEvent } from "react"
 
 import { IInputProps } from "./types"
 import { getIconSize } from "./utils"
@@ -65,6 +65,35 @@ const InputRef = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
 
   const clearInput = () => {
     setCurrentValue("")
+
+    const input = currentRef.current.children[0] as HTMLInputElement
+    if (!input) {
+      return
+    }
+
+    // Updating state programatically does not fire onChange event.
+    // The following workaround is implemented to fire onChange.
+    // Reference: https://github.com/facebook/react/issues/10135#issuecomment-401496776
+    const { set: valueSetter }: PropertyDescriptor =
+      Object.getOwnPropertyDescriptor(input, "value") || {}
+    const prototype = Object.getPrototypeOf(input)
+    const { set: prototypeValueSetter }: PropertyDescriptor =
+      Object.getOwnPropertyDescriptor(prototype, "value") || {}
+
+    if (prototypeValueSetter && valueSetter !== prototypeValueSetter) {
+      prototypeValueSetter.call(input, "")
+    } else if (valueSetter) {
+      valueSetter.call(input, "")
+    }
+
+    const event = new Event("input", { bubbles: true })
+
+    input.dispatchEvent(event)
+    if (props.onChange) {
+      props.onChange(event as any)
+    }
+
+    input.focus()
   }
 
   const togglePasswordField = () => {

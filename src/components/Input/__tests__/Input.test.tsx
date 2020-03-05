@@ -231,6 +231,23 @@ describe("Input", () => {
     expect(iconContainer).toBeDefined()
   })
 
+  it("should call onChange on clicking clear icon in input search", () => {
+    const onChange = jest.fn()
+
+    const { container } = render(
+      <Input type="search" value="test" onChange={onChange} />
+    )
+
+    const iconContainer = container.querySelector('span[type="oClose"]')
+
+    expect(iconContainer).toBeDefined()
+
+    if (iconContainer) {
+      fireEvent.click(iconContainer)
+      expect(onChange).toHaveBeenCalled()
+    }
+  })
+
   it("should display show password icon on type password", () => {
     const { container } = render(<Input type="password" />)
 
