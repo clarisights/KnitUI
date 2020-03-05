@@ -34,7 +34,12 @@ const getDefaultValue = radios => {
       }
       return null
     case child === 1:
-      return radios.props.checked ? radios.props.value : null
+      /**
+       * In some cases if child is rendered using <RadioGroup>{[].map(val => val)}</RadioGroup>
+       * it always pass structure as array. We have to detect the structure first & then manipulate
+       */
+      const singleRadio = Array.isArray(radios) ? radios[0] : radios
+      return singleRadio.props.checked ? singleRadio.props.value : null
     default:
       return null
   }
