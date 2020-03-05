@@ -55,13 +55,21 @@ describe("Radio", () => {
       expect(asFragment()).toMatchSnapshot()
     })
 
-    it("renders with single child correctly", () => {
-      const { asFragment } = render(
-        <RadioGroup>
-          <RadioGroup.Item value={1} />
-        </RadioGroup>
-      )
-      expect(asFragment()).toMatchSnapshot()
+    describe("renders with single child correctly", () => {
+      it("Child as React Element", () => {
+        const { asFragment } = render(
+          <RadioGroup>
+            <RadioGroup.Item value={1} />
+          </RadioGroup>
+        )
+        expect(asFragment()).toMatchSnapshot()
+      })
+
+      it("Child as Array Element", () => {
+        const radioItems = [<RadioGroup.Item value={1} />]
+        const { asFragment } = render(<RadioGroup>{radioItems}</RadioGroup>)
+        expect(asFragment()).toMatchSnapshot()
+      })
     })
 
     it("renders with no child correctly", () => {
