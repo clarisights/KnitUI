@@ -25,18 +25,6 @@ export const InputWrapper = styled.span<IStyledInput>`
   display: flex;
   align-items: center;
   outline: none;
-
-  &::after {
-    content: " ";
-    position: absolute;
-    height: ${props => getBlurHeight(props)}rem;
-    width: ${props => (props.type === "number" ? "0" : "30px")};
-    right: ${props => getGradientOffset(props)}rem;
-    background-image: ${props =>
-      !props.isOverflow
-        ? "linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))"
-        : "linear-gradient(to left, #f2f2f2 5%, rgba(242, 242, 242, 0.46) 66.67%);"};
-  }
 `
 
 // Common styles for <input> and <textarea>
