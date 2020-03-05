@@ -243,7 +243,7 @@ describe("Input", () => {
     expect(iconContainer).toBeDefined()
 
     if (iconContainer) {
-      fireEvent.click(iconContainer)
+      fireEvent.mouseDown(iconContainer)
       expect(onChange).toHaveBeenCalledTimes(1)
     }
   })

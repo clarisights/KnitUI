@@ -63,7 +63,8 @@ const InputRef = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
     }
   }
 
-  const clearInput = () => {
+  const clearInput = e => {
+    e.preventDefault()
     setCurrentValue("")
 
     const input = currentRef.current.children[0] as HTMLInputElement
@@ -142,7 +143,7 @@ const InputRef = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
     if (currentValue && currentValue.toString().length > 0) {
       addonAfter = (
         <IconBackground bgSize={getIconSize(props.inputSize)}>
-          <Icon type="oClose" fill="#000000" onClick={clearInput} pointer />
+          <Icon type="oClose" fill="#000000" onMouseDown={clearInput} pointer />
         </IconBackground>
       )
     } else {
