@@ -50,15 +50,6 @@ exports[`Input with a custom label 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -145,15 +136,6 @@ exports[`Input with a custom notification 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c1 {
@@ -292,15 +274,6 @@ exports[`Input with a text label 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -402,15 +375,6 @@ exports[`Input with a text label and a text notification 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -509,15 +473,6 @@ exports[`Input with a text notification 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c1 {
@@ -625,15 +580,6 @@ exports[`Input with left addon renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c3::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c4 {
@@ -780,15 +726,6 @@ exports[`Input with left and right addons renders correctly 1`] = `
   outline: none;
 }
 
-.c1::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 2.8rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c2 {
   width: 100%;
   position: relative;
@@ -933,15 +870,6 @@ exports[`Input with right addon renders correctly 1`] = `
   outline: none;
 }
 
-.c1::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 2.8rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c2 {
   width: 100%;
   position: relative;
@@ -1079,15 +1007,6 @@ exports[`Input with size large renders correctly 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 2.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -1176,15 +1095,6 @@ exports[`Input with size small renders correctly 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -1271,15 +1181,6 @@ exports[`Input with size undefined renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c1 {
@@ -1375,15 +1276,6 @@ exports[`Input with state error renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c1::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 3.6rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c2 {
@@ -1530,15 +1422,6 @@ exports[`Input with state success renders correctly 1`] = `
   outline: none;
 }
 
-.c1::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 3.6rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c2 {
   width: 100%;
   position: relative;
@@ -1676,15 +1559,6 @@ exports[`Input with state undefined renders correctly 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -1777,15 +1651,6 @@ exports[`Input with state warning renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c1::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 3.6rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c2 {
@@ -1925,15 +1790,6 @@ exports[`Input with textarea resize: horizontal renders correctly 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -2015,15 +1871,6 @@ exports[`Input with textarea resize: none renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c1 {
@@ -2109,15 +1956,6 @@ exports[`Input with textarea resize: undefined renders correctly 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -2201,15 +2039,6 @@ exports[`Input with textarea resize: vertical renders correctly 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -2291,15 +2120,6 @@ exports[`Input with type number renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 0;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c1 {
@@ -2396,15 +2216,6 @@ exports[`Input with type password renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c1::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 3.6rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c2 {
@@ -2557,15 +2368,6 @@ exports[`Input with type search renders correctly 1`] = `
   outline: none;
 }
 
-.c1::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 3.6rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c2 {
   width: 100%;
   position: relative;
@@ -2705,15 +2507,6 @@ exports[`Input with type textarea renders correctly 1`] = `
   outline: none;
 }
 
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-}
-
 .c1 {
   width: 100%;
   position: relative;
@@ -2796,15 +2589,6 @@ exports[`Input with type undefined renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   outline: none;
-}
-
-.c0::after {
-  content: " ";
-  position: absolute;
-  height: 1.8rem;
-  width: 30px;
-  right: 0.2rem;
-  background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
 }
 
 .c1 {
