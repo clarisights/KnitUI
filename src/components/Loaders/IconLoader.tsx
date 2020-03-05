@@ -63,7 +63,6 @@ const IconLoader = (props: IIconLoader) => {
     <LoaderWrapper size={size}>
       <SVG viewBox="25 25 50 50">
         <Path
-          className="path"
           cx="50"
           cy="50"
           r="20"
