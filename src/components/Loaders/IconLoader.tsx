@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components"
 interface IIconLoader {
   size?: string
   strokeWidth?: number
+  fill?: string
 }
 
 const rotate = keyframes`
@@ -46,7 +47,8 @@ const Path = styled.circle`
   stroke-dashoffset: 0;
   animation: ${dash} 1.5s ease-in-out infinite;
   stroke-linecap: round;
-  stroke: black;
+  stroke: ${({ stroke, theme }) =>
+    stroke || theme.knitui.chromaPalette.Neutral90};
 `
 
 const LoaderWrapper = styled.div<IIconLoader>`
@@ -54,8 +56,9 @@ const LoaderWrapper = styled.div<IIconLoader>`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
 `
+
 const IconLoader = (props: IIconLoader) => {
-  const { size = "1.8rem", strokeWidth = 4 } = props
+  const { size = "1.8rem", strokeWidth = 4, fill } = props
   return (
     <LoaderWrapper size={size}>
       <SVG viewBox="25 25 50 50">
@@ -65,8 +68,9 @@ const IconLoader = (props: IIconLoader) => {
           cy="50"
           r="20"
           fill="none"
-          strokeWidth={strokeWidth}
           strokeMiterlimit="10"
+          strokeWidth={strokeWidth}
+          stroke={fill}
         />
       </SVG>
     </LoaderWrapper>
