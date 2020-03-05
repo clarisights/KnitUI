@@ -89,9 +89,6 @@ const InputRef = React.forwardRef<HTMLElement, IInputProps>((props, ref) => {
     const event = new Event("input", { bubbles: true })
 
     input.dispatchEvent(event)
-    if (props.onChange) {
-      props.onChange(event as any)
-    }
 
     input.focus()
   }
