@@ -244,7 +244,7 @@ describe("Input", () => {
 
     if (iconContainer) {
       fireEvent.click(iconContainer)
-      expect(onChange).toHaveBeenCalled()
+      expect(onChange).toHaveBeenCalledTimes(1)
     }
   })
 
