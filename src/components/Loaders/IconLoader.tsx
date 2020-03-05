@@ -32,6 +32,7 @@ const SVG = styled.svg`
   height: 100%;
   transform-origin: center center;
   width: 100%;
+  padding: 0.2rem;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -48,32 +49,27 @@ const Path = styled.circle`
   stroke: black;
 `
 
-const Wrapper = styled.div``
-
-const Loader = styled.div<IIconLoader>`
+const LoaderWrapper = styled.div<IIconLoader>`
   position: relative;
-  margin: 0 auto;
   width: ${({ size }) => size};
   height: ${({ size }) => size};
 `
 const IconLoader = (props: IIconLoader) => {
   const { size = "1.8rem", strokeWidth = 4 } = props
   return (
-    <Wrapper>
-      <Loader size={size}>
-        <SVG viewBox="25 25 50 50">
-          <Path
-            className="path"
-            cx="50"
-            cy="50"
-            r="20"
-            fill="none"
-            strokeWidth={strokeWidth}
-            strokeMiterlimit="10"
-          />
-        </SVG>
-      </Loader>
-    </Wrapper>
+    <LoaderWrapper size={size}>
+      <SVG viewBox="25 25 50 50">
+        <Path
+          className="path"
+          cx="50"
+          cy="50"
+          r="20"
+          fill="none"
+          strokeWidth={strokeWidth}
+          strokeMiterlimit="10"
+        />
+      </SVG>
+    </LoaderWrapper>
   )
 }
 
