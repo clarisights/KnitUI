@@ -16,14 +16,7 @@ import {
   BottomPanelModal,
 } from "./variants/index"
 import Icon from "../Icon"
-import "rc-dialog/assets/index.css"
-
-const sizeToWidth = {
-  small: "49rem",
-  medium: "63rem",
-  large: "91rem",
-  "x-large": "105rem",
-}
+import { sizeToWidth } from "./helpers"
 
 // Animation related
 const appearDuration = 250
@@ -46,10 +39,11 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
       `calc(100vh - ${knitui.modalMaxContentHeightOffset}rem)`};
     min-height: ${({ theme: { knitui } }) => `${knitui.modalMinHeight}rem`};
   }
+  width: ${({ customProps: { size } }) => sizeToWidth[size!]} !important;
+  margin: 30px auto !important;
   .rc-dialog-content {
     border-radius: ${({ theme: { knitui } }) => knitui.modalBorderRadius};
   }
-  width: ${({ customProps: { size } }) => sizeToWidth[size!]} !important;
   .rc-dialog-close {
     right: -1rem;
     top: -1rem;
