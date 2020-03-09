@@ -54,21 +54,22 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
       knitui.chromaPalette.Neutral50};
     border-radius: 999px;
     svg {
-        fill: ${({ theme: { knitui } }) => knitui.chromaPalette.Neutral20};
-      }
+      fill: ${({ theme: { knitui } }) => knitui.chromaPalette.Neutral20};
     }
   }
-  &.${transitionName}-appear,
-  &.${transitionName}-enter {
+  &.${transitionName}-appear, &.${transitionName}-enter {
     opacity: 0;
     transform: scale(0.9);
   }
 
   &.${transitionName}-appear.${transitionName}-appear-active,
-  &.${transitionName}-enter.${transitionName}-enter-active {
+    &.${transitionName}-enter.${transitionName}-enter-active {
     opacity: 1;
-    transform: scale(1.0);
-    transition: opacity ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay}, transform ${appearDuration}ms ${modalEnterTransitionPath} ${animationDelay};
+    transform: scale(1);
+    transition: opacity ${appearDuration}ms ${modalEnterTransitionPath}
+        ${animationDelay},
+      transform ${appearDuration}ms ${modalEnterTransitionPath}
+        ${animationDelay};
   }
 
   &.${transitionName}-leave {
@@ -79,16 +80,16 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
   &.${transitionName}-leave.${transitionName}-leave-active {
     opacity: 0;
     transform: scale(0.9);
-    transition: opacity ${appearDuration}ms ${modalLeaveTransitionPath}, transform ${appearDuration}ms ${modalLeaveTransitionPath};
+    transition: opacity ${appearDuration}ms ${modalLeaveTransitionPath},
+      transform ${appearDuration}ms ${modalLeaveTransitionPath};
   }
 
-  &.${maskTransitionName}-appear,
-  &.${maskTransitionName}-enter {
+  &.${maskTransitionName}-appear, &.${maskTransitionName}-enter {
     opacity: 0;
   }
 
   &.${maskTransitionName}-appear.${maskTransitionName}-appear-active,
-  &.${maskTransitionName}-enter.${maskTransitionName}-enter-active {
+    &.${maskTransitionName}-enter.${maskTransitionName}-enter-active {
     opacity: 1;
     transition: opacity ${maskDuration}ms ease-out;
   }
