@@ -1,15 +1,16 @@
 import React, { useState } from "react"
 import { storiesOf } from "@storybook/react"
 import Modal from "./"
+import { sizeToWidth } from "./helpers"
 import { withKnobs, select, object } from "@storybook/addon-knobs"
 
 const { Body, Footer, Header, Panel } = Modal
 const Readme = require("./README.md")
 
+const sizeOptions = Object.keys(sizeToWidth)
+
 const stories = storiesOf("Modal", module)
 stories.addDecorator(withKnobs)
-
-const sizeOptions = ["small", "medium", "large", "x-large"]
 
 stories
   .addParameters({
@@ -213,6 +214,26 @@ stories
           visible={modalVisible}
           onClose={() => setModalVisible(false)}>
           <Header>Overridden padding</Header>
+          <Body>
+            <div>Body</div>
+          </Body>
+          <Footer>
+            <div>footer</div>
+          </Footer>
+        </Modal>
+      )
+    }
+    return <ModalWrapper />
+  })
+  .add("with fluid width", () => {
+    const ModalWrapper = () => {
+      const [modalVisible, setModalVisible] = useState(true)
+      return (
+        <Modal
+          size={select("Size", sizeOptions, "fluid")}
+          visible={modalVisible}
+          onClose={() => setModalVisible(false)}>
+          <Header>Fluid Header</Header>
           <Body>
             <div>Body</div>
           </Body>
