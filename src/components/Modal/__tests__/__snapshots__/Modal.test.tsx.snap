@@ -69,6 +69,7 @@ exports[`Modal with overriden padding 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -107,12 +108,12 @@ exports[`Modal with overriden padding 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -127,9 +128,9 @@ exports[`Modal with overriden padding 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -313,6 +314,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -351,12 +353,12 @@ exports[`Modal with size large with a bottom panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -371,9 +373,9 @@ exports[`Modal with size large with a bottom panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -584,6 +586,7 @@ exports[`Modal with size large with a left panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -622,12 +625,12 @@ exports[`Modal with size large with a left panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -642,9 +645,9 @@ exports[`Modal with size large with a left panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -859,6 +862,7 @@ exports[`Modal with size large with a right panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -897,12 +901,12 @@ exports[`Modal with size large with a right panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -917,9 +921,9 @@ exports[`Modal with size large with a right panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -1108,6 +1112,7 @@ exports[`Modal with size large with simple config 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -1146,12 +1151,12 @@ exports[`Modal with size large with simple config 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -1166,9 +1171,9 @@ exports[`Modal with size large with simple config 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -1352,6 +1357,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -1390,12 +1396,12 @@ exports[`Modal with size medium with a bottom panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -1410,9 +1416,9 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -1623,6 +1629,7 @@ exports[`Modal with size medium with a left panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -1661,12 +1668,12 @@ exports[`Modal with size medium with a left panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -1681,9 +1688,9 @@ exports[`Modal with size medium with a left panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -1898,6 +1905,7 @@ exports[`Modal with size medium with a right panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -1936,12 +1944,12 @@ exports[`Modal with size medium with a right panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -1956,9 +1964,9 @@ exports[`Modal with size medium with a right panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -2147,6 +2155,7 @@ exports[`Modal with size medium with simple config 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -2185,12 +2194,12 @@ exports[`Modal with size medium with simple config 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -2205,9 +2214,9 @@ exports[`Modal with size medium with simple config 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -2391,6 +2400,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -2429,12 +2439,12 @@ exports[`Modal with size small with a bottom panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -2449,9 +2459,9 @@ exports[`Modal with size small with a bottom panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -2662,6 +2672,7 @@ exports[`Modal with size small with a left panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -2700,12 +2711,12 @@ exports[`Modal with size small with a left panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -2720,9 +2731,9 @@ exports[`Modal with size small with a left panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -2937,6 +2948,7 @@ exports[`Modal with size small with a right panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -2975,12 +2987,12 @@ exports[`Modal with size small with a right panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -2995,9 +3007,9 @@ exports[`Modal with size small with a right panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -3186,6 +3198,7 @@ exports[`Modal with size small with simple config 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -3224,12 +3237,12 @@ exports[`Modal with size small with simple config 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -3244,9 +3257,9 @@ exports[`Modal with size small with simple config 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -3430,6 +3443,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -3468,12 +3482,12 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -3488,9 +3502,9 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -3701,6 +3715,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -3739,12 +3754,12 @@ exports[`Modal with size x-large with a left panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -3759,9 +3774,9 @@ exports[`Modal with size x-large with a left panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -3976,6 +3991,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -4014,12 +4030,12 @@ exports[`Modal with size x-large with a right panel 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -4034,9 +4050,9 @@ exports[`Modal with size x-large with a right panel 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
@@ -4225,6 +4241,7 @@ exports[`Modal with size x-large with simple config 1`] = `
 
 .c0 {
   width: 63rem !important;
+  margin: 30px auto !important;
 }
 
 .c0 .rc-dialog-body {
@@ -4263,12 +4280,12 @@ exports[`Modal with size x-large with simple config 1`] = `
 .c0.modal-appear.modal-appear-active,
 .c0.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,-webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
-  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms,transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, -webkit-transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
+  transition: opacity 250ms cubic-bezier(0,0,0,1) 50ms, transform 250ms cubic-bezier(0,0,0,1) 50ms;
 }
 
 .c0.modal-leave {
@@ -4283,9 +4300,9 @@ exports[`Modal with size x-large with simple config 1`] = `
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),-webkit-transform 250ms cubic-bezier(1,0,1,1);
-  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
-  transition: opacity 250ms cubic-bezier(1,0,1,1),transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), -webkit-transform 250ms cubic-bezier(1,0,1,1);
+  -webkit-transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
+  transition: opacity 250ms cubic-bezier(1,0,1,1), transform 250ms cubic-bezier(1,0,1,1);
 }
 
 .c0.modalMask-appear,
