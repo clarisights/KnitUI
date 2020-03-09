@@ -107,7 +107,7 @@ const StyledDialog = styled(Dialog)<IStyledDialog>`
  * The external interface for the modal
  */
 const ModalWrapper: ModalWrapperInterface<ModalWrapperProps> = ({
-  size,
+  size = "medium",
   getContainer,
   visible,
   onClose,
