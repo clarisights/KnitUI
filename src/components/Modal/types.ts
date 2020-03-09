@@ -19,7 +19,7 @@ export interface ModalWrapperProps extends BaseComponentProps {
   /** The padding values to be applied */
   padding?: { vertical: string; horizontal: string }
   /** Size values representing the amount of physical space occupied */
-  size?: "small" | "medium" | "large" | "x-large"
+  size?: "small" | "medium" | "large" | "x-large" | "fluid"
   /** The DOM node under which the modal should reside */
   getContainer?: () => HTMLElement
   /** Controls the visibility of the modal */
