@@ -22,12 +22,14 @@ export const StyledLink = styled.a<ILinkProps>`
       pointer-events: none;
     }
   }
-  &:focus {
-    box-sizing: border-box;
-    border: 0.1rem solid ${props => getThemeColor(props, "Azure80")};
-    box-shadow: 0rem 0rem 0.2rem #0066ff;
-  }
-  &:hover {
-    color: ${props => getHoverColor(chroma(getThemeColor(props, "Blue100")))};
+  &:not([disabled]) {
+    &:focus {
+      box-sizing: border-box;
+      border: 0.1rem solid ${props => getThemeColor(props, "Azure80")};
+      box-shadow: 0rem 0rem 0.2rem #0066ff;
+    }
+    &:hover {
+      color: ${props => getHoverColor(chroma(getThemeColor(props, "Blue100")))};
+    }
   }
 `

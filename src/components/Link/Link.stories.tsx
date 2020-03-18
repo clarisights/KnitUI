@@ -18,9 +18,6 @@ stories
   .add("Basic", () => (
     <Link href="https://github.com/clarisights/KnitUI">KnitUI</Link>
   ))
-  .add("With Button", () => (
-    <Link disabled href="https://github.com/clarisights/KnitUI"><Button label="" icon="oArrowForward" /></Link>
-  ))
   .add("Without underline", () => (
     <Link underline={false} href="https://github.com/clarisights/KnitUI">
       KnitUI
