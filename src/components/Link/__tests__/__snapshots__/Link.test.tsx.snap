@@ -27,16 +27,19 @@ exports[`Link component should not work when disabled 1`] = `
   pointer-events: none;
 }
 
-.c0:focus {
+.c0:not([disabled]):focus {
   box-sizing: border-box;
   border: 0.1rem solid #5ab2f2;
   box-shadow: 0rem 0rem 0.2rem #0066ff;
 }
 
+.c0:not([disabled]):hover {
+  color: #003d99;
+}
+
 <a
     class="knit-link c0"
     disabled=""
-    href="https://github.com/clarisights/KnitUI"
   >
     KnitUI
   </a>
@@ -70,10 +73,14 @@ exports[`Link component should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c0:focus {
+.c0:not([disabled]):focus {
   box-sizing: border-box;
   border: 0.1rem solid #5ab2f2;
   box-shadow: 0rem 0rem 0.2rem #0066ff;
+}
+
+.c0:not([disabled]):hover {
+  color: #003d99;
 }
 
 <a
@@ -112,10 +119,14 @@ exports[`Link component should support new tab 1`] = `
   pointer-events: none;
 }
 
-.c0:focus {
+.c0:not([disabled]):focus {
   box-sizing: border-box;
   border: 0.1rem solid #5ab2f2;
   box-shadow: 0rem 0rem 0.2rem #0066ff;
+}
+
+.c0:not([disabled]):hover {
+  color: #003d99;
 }
 
 <a
@@ -156,10 +167,14 @@ exports[`Link component should support underline prop 1`] = `
   pointer-events: none;
 }
 
-.c0:focus {
+.c0:not([disabled]):focus {
   box-sizing: border-box;
   border: 0.1rem solid #5ab2f2;
   box-shadow: 0rem 0rem 0.2rem #0066ff;
+}
+
+.c0:not([disabled]):hover {
+  color: #003d99;
 }
 
 <a
