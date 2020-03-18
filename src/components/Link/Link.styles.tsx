@@ -26,4 +26,7 @@ export const StyledLink = styled.a<ILinkProps>`
     border: 0.1rem solid ${props => getThemeColor(props, "Azure80")};
     box-shadow: 0rem 0rem 0.2rem #0066ff;
   }
+  &:hover {
+    color: #003D99;
+  }
 `

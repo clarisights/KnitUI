@@ -1,7 +1,9 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { withKnobs } from "@storybook/addon-knobs"
+import { withKnobs, text } from "@storybook/addon-knobs"
 import Link from "./"
+import Button from "../Button"
+import Icon from "../Icon"
 
 const stories = storiesOf("Link", module)
 stories.addDecorator(withKnobs)
@@ -16,6 +18,9 @@ stories
   })
   .add("Basic", () => (
     <Link href="https://github.com/clarisights/KnitUI">KnitUI</Link>
+  ))
+  .add("With Button", () => (
+    <Link disabled href="https://github.com/clarisights/KnitUI"><Button label="" icon="oArrowForward" /></Link>
   ))
   .add("Without underline", () => (
     <Link underline={false} href="https://github.com/clarisights/KnitUI">
@@ -33,6 +38,14 @@ stories
       disabled
       newTab
       className="knit-link"
+      href="https://github.com/clarisights/KnitUI">
+      KnitUI
+    </Link>
+  ))
+  .add("With custom styles", () => (
+    <Link
+      className="knit-link"
+      style={{fontSize: text('font-size', '4rem')}}
       href="https://github.com/clarisights/KnitUI">
       KnitUI
     </Link>

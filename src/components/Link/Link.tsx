@@ -20,7 +20,7 @@ const Link = ({
       underline={underline}
       className={className}
       style={style}
-      href={href}
+      {...(!disabled && {href})}
       disabled={disabled}
       {...(newTab && newTabProps)}>
       {children}
