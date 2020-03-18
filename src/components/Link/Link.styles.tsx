@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import { getThemeColor } from "../../common/_utils"
+import { getThemeColor, getHoverBackgroundColor as getHoverColor } from "../../common/_utils"
 import { ILinkProps } from "./types"
+import chroma from "chroma-js"
 
 export const StyledLink = styled.a<ILinkProps>`
   text-decoration: none;
@@ -27,6 +28,6 @@ export const StyledLink = styled.a<ILinkProps>`
     box-shadow: 0rem 0rem 0.2rem #0066ff;
   }
   &:hover {
-    color: #003D99;
+    color: ${props => getHoverColor(chroma(getThemeColor(props, "Blue100")))};
   }
 `

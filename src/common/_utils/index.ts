@@ -38,6 +38,27 @@ export function withProps<U>() {
 export const isLightColor = color => color.get("hsl.l") >= 0.5
 
 /**
+ * Returns font color of updated lightness on hover
+ * @param color A chroma color instance
+ */
+export const getHoverFontColor = color => {
+  return isLightColor(color)
+    ? color.set("hsl.l", "-0.3")
+    : color.set("hsl.l", "+0.3")
+}
+
+/**
+ * Returns background color of updated lightness on hover
+ * @param color A chroma color instance
+ */
+export const getHoverBackgroundColor = color => {
+  return isLightColor(color)
+    ? color.set("hsl.l", "-0.1")
+    : color.set("hsl.l", "+0.1")
+}
+
+
+/**
  * Determines the appropriate font color based on the background color.
  */
 export const getFontColor = (theme, backGroundColor) => {
