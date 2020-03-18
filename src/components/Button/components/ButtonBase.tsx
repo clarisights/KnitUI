@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 import { IStyled } from "../../../common/types"
-import { isLightColor } from "../../../common/_utils"
+import { isLightColor, getHoverFontColor, getHoverBackgroundColor } from "../../../common/_utils"
 import { ButtonProps } from "../types"
 
 type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
@@ -88,17 +88,7 @@ const getBaseFontColor = (props: IStyledBaseButton) => {
   return ghost ? colorTheme.background : colorTheme.font
 }
 
-const getHoverBackgroundColor = (props: IStyledBaseButton) => {
-  return isLightColor(getBaseBackgroundColor(props))
-    ? getBaseBackgroundColor(props).set("hsl.l", "-0.1")
-    : getBaseBackgroundColor(props).set("hsl.l", "+0.1")
-}
 
-const getHoverFontColor = (props: IStyledBaseButton) => {
-  return isLightColor(getBaseFontColor(props))
-    ? getBaseFontColor(props).set("hsl.l", "-0.3")
-    : getBaseFontColor(props).set("hsl.l", "+0.3")
-}
 
 const getFontColor = (state: ButtonState, props: IStyledBaseButton) => {
   const {
@@ -115,10 +105,10 @@ const getFontColor = (state: ButtonState, props: IStyledBaseButton) => {
     case "active":
     case "focus":
       if (bare) {
-        return getHoverBackgroundColor(props)
+        return getHoverBackgroundColor(getBaseBackgroundColor(props))
       }
       if (ghost) {
-        return getHoverFontColor(props)
+        return getHoverFontColor(getBaseFontColor(props))
       }
       return baseFontColor
     default:
@@ -141,7 +131,7 @@ const getBackgroundColor = (state: ButtonState, props: IStyledBaseButton) => {
   }
   return state === "default"
     ? getBaseBackgroundColor(props)
-    : getHoverBackgroundColor(props)
+    : getHoverBackgroundColor(getBaseBackgroundColor(props))
 }
 
 const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
@@ -156,7 +146,7 @@ const getBorder = (state: ButtonState, props: IStyledBaseButton) => {
       borderColor = getHighlighColor(props)
       break
     case "hover":
-      borderColor = ghost ? getHoverFontColor(props) : knitui.shades.transparent
+      borderColor = ghost ? getHoverFontColor(getBaseFontColor(props)) : knitui.shades.transparent
       break
     default:
       borderColor = ghost ? getBaseFontColor(props) : knitui.shades.transparent
