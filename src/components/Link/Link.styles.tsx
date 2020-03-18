@@ -10,6 +10,7 @@ export const StyledLink = styled.a<ILinkProps>`
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 2rem;
+  outline: none;
   color: ${props => getThemeColor(props, "Blue100")};
   text-decoration-line: ${props => (props.underline ? "underline" : "none")};
   border-radius: 0.4rem;
