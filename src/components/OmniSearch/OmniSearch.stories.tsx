@@ -3,12 +3,9 @@ import { storiesOf } from "@storybook/react"
 import styled from "styled-components"
 import { OmniSearch, Button } from "../"
 import { getThemeColor } from "../../common/_utils"
-import { withKnobs } from "@storybook/addon-knobs"
-import { oAccountCircle as UserProfileIcon } from "../Icon/Icons"
 const Readme = require("./README.md")
 
 const stories = storiesOf("Omni Search", module)
-stories.addDecorator(withKnobs)
 
 const ListItem = styled.div`
   width: 100%;
@@ -52,7 +49,7 @@ const OmniSearchWrapper = () => {
           onClick={() => {
             setVisible(true)
           }}>
-          <Button label={"Spotlight"} />
+          <Button label={"Spotlight Search"} />
         </div>
         <OmniSearch
           visible={visible}
