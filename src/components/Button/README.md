@@ -24,11 +24,12 @@ import { Button } from "KnitUI"
 | bare             | boolean                                                               | Yes      | `false`   | Show only the text or icon, stripping the background                                                                                    |
 | icon             | string                                                                | Yes      | None      | icon type to be rendered in the button                                                                                                  |
 | insetLabel       | string                                                                | Yes      | None      | An inset value, typically used for showing notifications                                                                                |
-| insetPosition    | string, one of 'left' or 'right'                                                                | Yes      | right     | Position for the inset label                                                                                                            |
+| insetPosition    | string, one of 'left' or 'right'                                      | Yes      | right     | Position for the inset label                                                                                                            |
 | href             | string                                                                | Yes      | None      | A location to navigate to                                                                                                               |
 | onClick          | Function                                                              | Yes      | None      | A click handler to be executed on click of the button. Will receive the `event` as an argument                                          |
 | className        | string                                                                | Yes      | None      | CSS class name to be added                                                                                                              |
 | style            | CSS Object                                                            | Yes      | None      | CSS style to be added                                                                                                                   |
+| css              | string                                                                | Yes      | None      | CSS style to be added                                                                                                                   |
 
 # Button Group
 
