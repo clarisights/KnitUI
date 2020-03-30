@@ -119,6 +119,13 @@ describe("Button", () => {
     expect(container.firstChild).toHaveStyle("background-color: red")
   })
 
+  it("should work with css style string", () => {
+    const { container } = render(
+      <Button label="button" css="background-color: red" />
+    )
+    expect(container.firstChild).toHaveStyle("background-color: red")
+  })
+
   it("should call the provided onClick function", () => {
     const onClick = jest.fn()
     const { getByText } = render(<Button label="button" onClick={onClick} />)

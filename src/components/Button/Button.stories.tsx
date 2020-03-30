@@ -118,10 +118,20 @@ stories
     />
   ))
   .add("With an href", () => <Button {...defaultProps} href="/sample" />)
-  .add("With custom styles", () => (
+  .add("With custom style object", () => (
     <Button
       {...defaultProps}
       style={object("Style", { backgroundColor: "red" })}
+    />
+  ))
+  .add("With custom style string", () => (
+    <Button {...defaultProps} css="background-color: red;" />
+  ))
+  .add("With custom style object and style string", () => (
+    <Button
+      {...defaultProps}
+      style={object("Style", { backgroundColor: "red" })}
+      css="background-color: grey;"
     />
   ))
   .add("Button Group", () => {
