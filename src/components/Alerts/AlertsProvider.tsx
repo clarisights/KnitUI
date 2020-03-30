@@ -1,4 +1,5 @@
 import React from "react"
+import ReactDOM from "react-dom"
 import { v4 as uuid } from "uuid"
 import AlertContext from "./AlertContext"
 import TransitionWrapper from "./TransitionWrapper"
@@ -20,6 +21,7 @@ const PlacementWrapperDiv = {
 class AlertsProvider extends React.Component<{}, AlertsProviderState> {
   queue: AlertProps[] = []
   interval: number | undefined
+  alertMountNode: HTMLDivElement
   constructor(props) {
     super(props)
 
@@ -30,12 +32,19 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
         removeAlert: this.handleRemove,
       },
     }
+
+    this.alertMountNode = document.createElement("div")
+    this.alertMountNode.classList.add("alert-mount-node")
+  }
+
+  componentDidMount() {
+    document.body.appendChild(this.alertMountNode)
   }
 
   handleAdd = (alertProps: AlertProps): string => {
     alertProps.placement =
       alertProps.placement || ("bottomLeft" as placementType)
-    
+
     // If the key is not provided, generate a new random key.
     alertProps.alertKey = alertProps.alertKey || uuid()
 
@@ -83,6 +92,7 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
 
   componentWillUnmount() {
     clearInterval(this.interval)
+    document.body.removeChild(this.alertMountNode)
   }
 
   render() {
@@ -104,16 +114,22 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
     return (
       <AlertContext.Provider value={this.state.contextAPI}>
         {this.props.children}
-        <div key="knit-ui-alerts" className="knit-ui-alerts">
-          {Object.entries(alertsByPlace).map(([placement, alertArr]) => {
-            const Wrapper = PlacementWrapperDiv[placement]
-            return (
-              <Wrapper key={placement} data-testid="alerts-wrapper" className="alerts-wrapper" >
-                <TransitionWrapper alerts={alertArr!} />
-              </Wrapper>
-            )
-          })}
-        </div>
+        {ReactDOM.createPortal(
+          <div key="knit-ui-alerts" className="knit-ui-alerts">
+            {Object.entries(alertsByPlace).map(([placement, alertArr]) => {
+              const Wrapper = PlacementWrapperDiv[placement]
+              return (
+                <Wrapper
+                  key={placement}
+                  data-testid="alerts-wrapper"
+                  className="alerts-wrapper">
+                  <TransitionWrapper alerts={alertArr!} />
+                </Wrapper>
+              )
+            })}
+          </div>,
+          this.alertMountNode
+        )}
       </AlertContext.Provider>
     )
   }

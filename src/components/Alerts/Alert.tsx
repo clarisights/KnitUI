@@ -105,7 +105,7 @@ const Alert: React.FC<AlertProps> = (props: AlertProps) => {
   useEffect(() => {
     // Show error when more than two actions are passed
     if (actions && actions.length > 2) {
-      console.error(
+      console.warn(
         "Only two actions can be add to Alert, others will be ignored"
       )
     }
