@@ -34,7 +34,7 @@ class AlertsProvider extends React.Component<{}, AlertsProviderState> {
     }
 
     this.alertMountNode = document.createElement("div")
-    this.alertMountNode.classList.add("alert-mount-node")
+    this.alertMountNode.classList.add("knitui-alerts-root")
   }
 
   componentDidMount() {
