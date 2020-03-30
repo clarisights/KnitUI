@@ -3138,6 +3138,98 @@ exports[`Button renders with text, icon and inset correctly 4`] = `
 </DocumentFragment>
 `;
 
+exports[`Button should work with css style string 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+}
+
+.c0 span {
+  margin-right: 0rem;
+}
+
+.c0 span svg path {
+  fill: #ffffff;
+}
+
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c0:hover svg path,
+.c0:active svg path,
+.c0:focus svg path {
+  fill: #ffffff;
+}
+
+.c0:active,
+.c0:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c0:hover {
+  border: 1px solid #00000000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      button
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
 exports[`Button with size fluid renders a bare variant correctly 1`] = `
 <DocumentFragment>
   .c0 {

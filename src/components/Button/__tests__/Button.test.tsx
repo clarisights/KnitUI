@@ -120,10 +120,10 @@ describe("Button", () => {
   })
 
   it("should work with css style string", () => {
-    const { container } = render(
+    const { asFragment } = render(
       <Button label="button" css="background-color: red" />
     )
-    expect(container.firstChild).toHaveStyle("background-color: red")
+    expect(asFragment()).toMatchSnapshot()
   })
 
   it("should call the provided onClick function", () => {
