@@ -30,7 +30,7 @@ exports[`OmniSearch renders correctly when dropdown is provided 1`] = `
   position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   background-color: #f2f2f2;
   color: #1a1a1a;
@@ -38,7 +38,7 @@ exports[`OmniSearch renders correctly when dropdown is provided 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 3.4rem;
+  min-height: 3.6rem;
 }
 
 .c4:hover {
@@ -82,7 +82,7 @@ exports[`OmniSearch renders correctly when dropdown is provided 1`] = `
 }
 
 .c4[type="number"]::-webkit-inner-spin-button {
-  height: 3.4rem;
+  min-height: 3.6rem;
 }
 
 .c2 {
@@ -105,7 +105,6 @@ exports[`OmniSearch renders correctly when dropdown is provided 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 .c6 {
@@ -253,7 +252,7 @@ exports[`OmniSearch renders correctly when visible is true 1`] = `
   position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   background-color: #f2f2f2;
   color: #1a1a1a;
@@ -261,7 +260,7 @@ exports[`OmniSearch renders correctly when visible is true 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 3.4rem;
+  min-height: 3.6rem;
 }
 
 .c4:hover {
@@ -305,7 +304,7 @@ exports[`OmniSearch renders correctly when visible is true 1`] = `
 }
 
 .c4[type="number"]::-webkit-inner-spin-button {
-  height: 3.4rem;
+  min-height: 3.6rem;
 }
 
 .c2 {
@@ -328,7 +327,6 @@ exports[`OmniSearch renders correctly when visible is true 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 .c6 {

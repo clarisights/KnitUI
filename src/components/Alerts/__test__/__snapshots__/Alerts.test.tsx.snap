@@ -125,106 +125,6 @@ exports[`Alert Component Tests different placements bottomLeft side alert render
   align-self: center;
 }
 
-.c6 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c6 > * {
-  pointer-events: auto;
-}
-
-.c7 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c7 > * {
-  pointer-events: auto;
-}
-
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c8 > * {
-  pointer-events: auto;
-}
-
-.c9 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c9 > * {
-  pointer-events: auto;
-}
-
 <div>
   <div
     class="c0"
@@ -263,26 +163,6 @@ exports[`Alert Component Tests different placements bottomLeft side alert render
         </svg>
       </span>
     </button>
-  </div>
-  <div
-    class="knit-ui-alerts"
-  >
-    <div
-      class="alerts-wrapper c6"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c7"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c8"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c9"
-      data-testid="alerts-wrapper"
-    />
   </div>
 </div>
 `;
@@ -412,106 +292,6 @@ exports[`Alert Component Tests different placements bottomRight side alert rende
   align-self: center;
 }
 
-.c6 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c6 > * {
-  pointer-events: auto;
-}
-
-.c7 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c7 > * {
-  pointer-events: auto;
-}
-
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c8 > * {
-  pointer-events: auto;
-}
-
-.c9 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c9 > * {
-  pointer-events: auto;
-}
-
 <div>
   <div
     class="c0"
@@ -550,26 +330,6 @@ exports[`Alert Component Tests different placements bottomRight side alert rende
         </svg>
       </span>
     </button>
-  </div>
-  <div
-    class="knit-ui-alerts"
-  >
-    <div
-      class="alerts-wrapper c6"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c7"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c8"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c9"
-      data-testid="alerts-wrapper"
-    />
   </div>
 </div>
 `;
@@ -699,106 +459,6 @@ exports[`Alert Component Tests different placements topLeft side alert render 1`
   align-self: center;
 }
 
-.c6 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c6 > * {
-  pointer-events: auto;
-}
-
-.c7 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c7 > * {
-  pointer-events: auto;
-}
-
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c8 > * {
-  pointer-events: auto;
-}
-
-.c9 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c9 > * {
-  pointer-events: auto;
-}
-
 <div>
   <div
     class="c0"
@@ -837,26 +497,6 @@ exports[`Alert Component Tests different placements topLeft side alert render 1`
         </svg>
       </span>
     </button>
-  </div>
-  <div
-    class="knit-ui-alerts"
-  >
-    <div
-      class="alerts-wrapper c6"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c7"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c8"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c9"
-      data-testid="alerts-wrapper"
-    />
   </div>
 </div>
 `;
@@ -986,106 +626,6 @@ exports[`Alert Component Tests different placements topRight side alert render 1
   align-self: center;
 }
 
-.c6 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c6 > * {
-  pointer-events: auto;
-}
-
-.c7 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c7 > * {
-  pointer-events: auto;
-}
-
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c8 > * {
-  pointer-events: auto;
-}
-
-.c9 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c9 > * {
-  pointer-events: auto;
-}
-
 <div>
   <div
     class="c0"
@@ -1124,26 +664,6 @@ exports[`Alert Component Tests different placements topRight side alert render 1
         </svg>
       </span>
     </button>
-  </div>
-  <div
-    class="knit-ui-alerts"
-  >
-    <div
-      class="alerts-wrapper c6"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c7"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c8"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c9"
-      data-testid="alerts-wrapper"
-    />
   </div>
 </div>
 `;
@@ -1287,106 +807,6 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
   align-self: center;
 }
 
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c8 > * {
-  pointer-events: auto;
-}
-
-.c9 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c9 > * {
-  pointer-events: auto;
-}
-
-.c10 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c10 > * {
-  pointer-events: auto;
-}
-
-.c11 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c11 > * {
-  pointer-events: auto;
-}
-
 <div>
   <div
     class="c0"
@@ -1444,26 +864,6 @@ exports[`Alert Component Tests different sizes large alert render 1`] = `
         </svg>
       </span>
     </button>
-  </div>
-  <div
-    class="knit-ui-alerts"
-  >
-    <div
-      class="alerts-wrapper c8"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c9"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c10"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c11"
-      data-testid="alerts-wrapper"
-    />
   </div>
 </div>
 `;
@@ -1607,106 +1007,6 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
   align-self: center;
 }
 
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c8 > * {
-  pointer-events: auto;
-}
-
-.c9 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c9 > * {
-  pointer-events: auto;
-}
-
-.c10 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c10 > * {
-  pointer-events: auto;
-}
-
-.c11 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c11 > * {
-  pointer-events: auto;
-}
-
 <div>
   <div
     class="c0"
@@ -1764,26 +1064,6 @@ exports[`Alert Component Tests different sizes medium alert render 1`] = `
         </svg>
       </span>
     </button>
-  </div>
-  <div
-    class="knit-ui-alerts"
-  >
-    <div
-      class="alerts-wrapper c8"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c9"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c10"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c11"
-      data-testid="alerts-wrapper"
-    />
   </div>
 </div>
 `;
@@ -1927,106 +1207,6 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
   align-self: center;
 }
 
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c8 > * {
-  pointer-events: auto;
-}
-
-.c9 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c9 > * {
-  pointer-events: auto;
-}
-
-.c10 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c10 > * {
-  pointer-events: auto;
-}
-
-.c11 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c11 > * {
-  pointer-events: auto;
-}
-
 <div>
   <div
     class="c0"
@@ -2084,26 +1264,6 @@ exports[`Alert Component Tests different sizes small alert render 1`] = `
         </svg>
       </span>
     </button>
-  </div>
-  <div
-    class="knit-ui-alerts"
-  >
-    <div
-      class="alerts-wrapper c8"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c9"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c10"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c11"
-      data-testid="alerts-wrapper"
-    />
   </div>
 </div>
 `;
@@ -2247,106 +1407,6 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
   align-self: center;
 }
 
-.c8 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c8 > * {
-  pointer-events: auto;
-}
-
-.c9 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  top: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c9 > * {
-  pointer-events: auto;
-}
-
-.c10 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  left: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c10 > * {
-  pointer-events: auto;
-}
-
-.c11 {
-  position: fixed;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  -webkit-flex-flow: column-reverse nowrap;
-  -ms-flex-flow: column-reverse nowrap;
-  flex-flow: column-reverse nowrap;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c11 > * {
-  pointer-events: auto;
-}
-
 <div>
   <div
     class="c0"
@@ -2404,26 +1464,6 @@ exports[`Alert Component Tests different sizes x-small alert render 1`] = `
         </svg>
       </span>
     </button>
-  </div>
-  <div
-    class="knit-ui-alerts"
-  >
-    <div
-      class="alerts-wrapper c8"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c9"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c10"
-      data-testid="alerts-wrapper"
-    />
-    <div
-      class="alerts-wrapper c11"
-      data-testid="alerts-wrapper"
-    />
   </div>
 </div>
 `;

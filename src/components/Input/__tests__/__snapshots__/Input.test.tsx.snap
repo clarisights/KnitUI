@@ -63,7 +63,7 @@ exports[`Input with a custom label 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -107,7 +107,7 @@ exports[`Input with a custom label 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
@@ -151,7 +151,7 @@ exports[`Input with a custom notification 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -195,7 +195,7 @@ exports[`Input with a custom notification 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
@@ -287,7 +287,7 @@ exports[`Input with a text label 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -331,7 +331,7 @@ exports[`Input with a text label 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
@@ -388,7 +388,7 @@ exports[`Input with a text label and a text notification 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -432,7 +432,7 @@ exports[`Input with a text label and a text notification 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
@@ -488,7 +488,7 @@ exports[`Input with a text notification 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -532,7 +532,7 @@ exports[`Input with a text notification 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
@@ -595,7 +595,7 @@ exports[`Input with left addon renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c4:hover {
@@ -639,7 +639,7 @@ exports[`Input with left addon renders correctly 1`] = `
 }
 
 .c4[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c0 {
@@ -662,7 +662,6 @@ exports[`Input with left addon renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 <span
@@ -739,7 +738,7 @@ exports[`Input with left and right addons renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c2:hover {
@@ -783,7 +782,7 @@ exports[`Input with left and right addons renders correctly 1`] = `
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c0 {
@@ -806,7 +805,6 @@ exports[`Input with left and right addons renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 <span
@@ -883,7 +881,7 @@ exports[`Input with right addon renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c2:hover {
@@ -927,7 +925,7 @@ exports[`Input with right addon renders correctly 1`] = `
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c0 {
@@ -950,7 +948,6 @@ exports[`Input with right addon renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 <span
@@ -1012,7 +1009,7 @@ exports[`Input with size large renders correctly 1`] = `
   position: relative;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   background-color: #f2f2f2;
   color: #1a1a1a;
@@ -1020,7 +1017,7 @@ exports[`Input with size large renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 3.4rem;
+  min-height: 3.6rem;
 }
 
 .c1:hover {
@@ -1064,7 +1061,7 @@ exports[`Input with size large renders correctly 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 3.4rem;
+  min-height: 3.6rem;
 }
 
 <span
@@ -1108,7 +1105,7 @@ exports[`Input with size small renders correctly 1`] = `
   line-height: 1.8rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2rem;
+  min-height: 2.2rem;
 }
 
 .c1:hover {
@@ -1152,7 +1149,7 @@ exports[`Input with size small renders correctly 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2rem;
+  min-height: 2.2rem;
 }
 
 <span
@@ -1196,7 +1193,7 @@ exports[`Input with size undefined renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -1240,7 +1237,7 @@ exports[`Input with size undefined renders correctly 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
@@ -1291,7 +1288,7 @@ exports[`Input with state error renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c2:hover {
@@ -1335,7 +1332,7 @@ exports[`Input with state error renders correctly 1`] = `
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c0 {
@@ -1358,7 +1355,6 @@ exports[`Input with state error renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 <span
@@ -1435,7 +1431,7 @@ exports[`Input with state success renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c2:hover {
@@ -1479,7 +1475,7 @@ exports[`Input with state success renders correctly 1`] = `
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c0 {
@@ -1502,7 +1498,6 @@ exports[`Input with state success renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 <span
@@ -1572,7 +1567,7 @@ exports[`Input with state undefined renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -1616,7 +1611,7 @@ exports[`Input with state undefined renders correctly 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
@@ -1666,7 +1661,7 @@ exports[`Input with state warning renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c2:hover {
@@ -1710,7 +1705,7 @@ exports[`Input with state warning renders correctly 1`] = `
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c0 {
@@ -1733,7 +1728,6 @@ exports[`Input with state warning renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 <span
@@ -2135,7 +2129,7 @@ exports[`Input with type number renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -2179,7 +2173,7 @@ exports[`Input with type number renders correctly 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
@@ -2231,7 +2225,7 @@ exports[`Input with type password renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c2:hover {
@@ -2275,7 +2269,7 @@ exports[`Input with type password renders correctly 1`] = `
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c0 {
@@ -2298,7 +2292,6 @@ exports[`Input with type password renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 .c4 {
@@ -2381,7 +2374,7 @@ exports[`Input with type search renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c2:hover {
@@ -2425,7 +2418,7 @@ exports[`Input with type search renders correctly 1`] = `
 }
 
 .c2[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c0 {
@@ -2448,7 +2441,6 @@ exports[`Input with type search renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 <span
@@ -2604,7 +2596,7 @@ exports[`Input with type undefined renders correctly 1`] = `
   line-height: 2rem;
   -webkit-transition: border 0.25s ease;
   transition: border 0.25s ease;
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 .c1:hover {
@@ -2648,7 +2640,7 @@ exports[`Input with type undefined renders correctly 1`] = `
 }
 
 .c1[type="number"]::-webkit-inner-spin-button {
-  height: 2.8rem;
+  min-height: 3rem;
 }
 
 <span
