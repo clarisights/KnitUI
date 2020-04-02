@@ -10,7 +10,7 @@ export const getPadding = (props: IStyledInput) => {
     case "small":
       return `0.1rem  ${HORIZONTAL_PADDING}`
     case "large":
-      return `0.6rem  ${HORIZONTAL_PADDING}`
+      return `0.7rem  ${HORIZONTAL_PADDING}`
     default:
       return `0.4rem  ${HORIZONTAL_PADDING}`
   }
@@ -60,11 +60,11 @@ export const getHeight = (props: IStyledInput) => {
   } = props
   switch (inputSize) {
     case "small":
-      return "2rem"
+      return "2.2rem"
     case "large":
-      return "3.4rem"
+      return "3.6rem"
     default:
-      return "2.8rem"
+      return "3rem"
   }
 }
 
@@ -172,26 +172,4 @@ export const getIconSize = (inputSize: string | undefined) => {
 export const getAddonPadding = (iconSize: string) => {
   // Returns the padding for addon as per icon size (in `rem`)
   return 1 + parseInt(iconSize) / 10 + 1
-}
-
-export const getGradientOffset = (props: IStyledInput) => {
-  // Values returned in `rem`s
-  const iconSize = getIconSize(props.inputSize)
-
-  if (["search", "password"].includes(props.type) || props.state) {
-    return getAddonPadding(iconSize)
-  }
-
-  if (props.addonAfter) {
-    return 2.8
-  }
-
-  return 0.2
-}
-
-export const getBlurHeight = (props: IStyledInput) => {
-  // Value returned in `rem`s
-  const inputHeight = parseInt(getHeight(props), 10)
-
-  return inputHeight - 0.2
 }

@@ -16,8 +16,6 @@ import {
   getBoxShadow,
   getSelectionBackground,
   getAddonPadding,
-  getGradientOffset,
-  getBlurHeight,
 } from "./utils"
 
 export const InputWrapper = styled.span<IStyledInput>`
@@ -72,10 +70,10 @@ const commonInputStyles = props => css`
 
 export const StyledInput = styled.input<IStyledInput>`
   ${commonInputStyles}
-  height: ${props => getHeight(props)};
+  min-height: ${props => getHeight(props)};
 
   &[type="number"]::-webkit-inner-spin-button {
-    height: ${props => getHeight(props)};
+    min-height: ${props => getHeight(props)};
   }
 `
 
@@ -110,7 +108,6 @@ export const AddonContainer = styled.span`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
 `
 
 const labelStyle = css`

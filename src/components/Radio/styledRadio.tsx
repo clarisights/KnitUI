@@ -94,7 +94,6 @@ export const StyledRadioInner = styled.span<{ size: string | undefined }>`
 export const StyledRadioInput = styled.input`
   position: absolute;
   left: 0;
-  z-index: 9999;
   cursor: pointer;
   opacity: 0;
   top: 0;
