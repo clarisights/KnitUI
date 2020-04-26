@@ -82,3 +82,7 @@ export type useAlertType = () => {
   addAlert: addAlertType
   removeAlert: removeAlertType
 }
+
+export interface BannerAlertProps {
+  children: ReactNode
+}
