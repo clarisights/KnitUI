@@ -554,7 +554,7 @@ stories
   })
   .add("BannerAlert", () => {
     return (
-      <BannerAlert>
+      <BannerAlert type="danger">
         <Icon type="oWarning" size="18px" fill="white" />
         <p style={{ marginLeft: 7 }}>
           You don't seem to be connected to Internet.
