@@ -9,6 +9,68 @@ exports[`Button Group :  Button group : snapshot 1`] = `
   width: 1.8rem;
 }
 
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  background-color: #002966;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.c6 span {
+  margin-right: 0rem;
+}
+
+.c6 span svg path {
+  fill: #ffffff;
+}
+
+.c6:hover,
+.c6:active,
+.c6:focus {
+  color: #ffffff;
+  background-color: #003d99;
+  cursor: pointer;
+}
+
+.c6:hover svg path,
+.c6:active svg path,
+.c6:focus svg path {
+  fill: #ffffff;
+}
+
+.c6:active,
+.c6:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c6:hover {
+  border: 1px solid #00000000;
+}
+
+.c6:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,7 +80,7 @@ exports[`Button Group :  Button group : snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -27,6 +89,10 @@ exports[`Button Group :  Button group : snapshot 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c2 span {
@@ -67,11 +133,7 @@ exports[`Button Group :  Button group : snapshot 1`] = `
   cursor: not-allowed;
 }
 
-.c6 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -87,24 +149,13 @@ exports[`Button Group :  Button group : snapshot 1`] = `
   justify-content: center;
 }
 
-.c3 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.c3 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5 {
@@ -174,12 +225,14 @@ exports[`Button Group :  Button group : snapshot 1`] = `
       class="c5"
     />
     <button
-      class="c1 c2"
+      class="c1 c6"
     >
       <div
-        class="c6"
+        class="c3"
       >
-        Dropdown
+        <span>
+          Dropdown
+        </span>
       </div>
     </button>
     <hr
@@ -224,6 +277,68 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
   width: 1.8rem;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #002966;
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px solid #002966;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.c5 span {
+  margin-right: 0rem;
+}
+
+.c5 span svg path {
+  fill: #002966;
+}
+
+.c5:hover,
+.c5:active,
+.c5:focus {
+  color: #0066ff;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.c5:hover svg path,
+.c5:active svg path,
+.c5:focus svg path {
+  fill: #0066ff;
+}
+
+.c5:active,
+.c5:focus {
+  border: 1px solid #5ab2f2 !important;
+  box-shadow: 0px 0px 2px #0066ff;
+  outline: none;
+}
+
+.c5:hover {
+  border: 1px solid #0066ff;
+}
+
+.c5:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -233,7 +348,7 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #002966;
@@ -242,6 +357,10 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #002966;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c2 span {
@@ -282,11 +401,7 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
   cursor: not-allowed;
 }
 
-.c5 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -302,24 +417,13 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
   justify-content: center;
 }
 
-.c3 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.c3 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6 .c1 {
@@ -416,12 +520,14 @@ exports[`Button Group :  Button group with all ghost buttons : snapshot 1`] = `
       </div>
     </button>
     <button
-      class="c1 c2"
+      class="c1 c5"
     >
       <div
-        class="c5"
+        class="c3"
       >
-        Dropdown
+        <span>
+          Dropdown
+        </span>
       </div>
     </button>
     <button
@@ -465,7 +571,7 @@ exports[`Button Should disable button rendered correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -474,6 +580,10 @@ exports[`Button Should disable button rendered correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -490,10 +600,6 @@ exports[`Button Should disable button rendered correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -509,6 +615,15 @@ exports[`Button Should disable button rendered correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
     disabled=""
@@ -516,7 +631,9 @@ exports[`Button Should disable button rendered correctly 1`] = `
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -533,7 +650,7 @@ exports[`Button renders with a custom color object correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #873421;
@@ -542,6 +659,10 @@ exports[`Button renders with a custom color object correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -583,10 +704,6 @@ exports[`Button renders with a custom color object correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -602,13 +719,24 @@ exports[`Button renders with a custom color object correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -625,7 +753,7 @@ exports[`Button renders with a custom color object correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #873421;
@@ -634,6 +762,10 @@ exports[`Button renders with a custom color object correctly 2`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -675,10 +807,6 @@ exports[`Button renders with a custom color object correctly 2`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -694,13 +822,24 @@ exports[`Button renders with a custom color object correctly 2`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -717,7 +856,7 @@ exports[`Button renders with a custom color object correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #873421;
@@ -726,6 +865,10 @@ exports[`Button renders with a custom color object correctly 3`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -767,10 +910,6 @@ exports[`Button renders with a custom color object correctly 3`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -786,13 +925,24 @@ exports[`Button renders with a custom color object correctly 3`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -809,7 +959,7 @@ exports[`Button renders with a custom color object correctly 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #873421;
@@ -818,6 +968,10 @@ exports[`Button renders with a custom color object correctly 4`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -859,10 +1013,6 @@ exports[`Button renders with a custom color object correctly 4`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -878,13 +1028,24 @@ exports[`Button renders with a custom color object correctly 4`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -901,7 +1062,7 @@ exports[`Button renders with a custom color theme correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #1a1a1a;
@@ -910,6 +1071,10 @@ exports[`Button renders with a custom color theme correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -951,10 +1116,6 @@ exports[`Button renders with a custom color theme correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -970,13 +1131,24 @@ exports[`Button renders with a custom color theme correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -993,7 +1165,7 @@ exports[`Button renders with a custom color theme correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #1a1a1a;
@@ -1002,6 +1174,10 @@ exports[`Button renders with a custom color theme correctly 2`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -1043,10 +1219,6 @@ exports[`Button renders with a custom color theme correctly 2`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1062,13 +1234,24 @@ exports[`Button renders with a custom color theme correctly 2`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1085,7 +1268,7 @@ exports[`Button renders with a custom color theme correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #1a1a1a;
@@ -1094,6 +1277,10 @@ exports[`Button renders with a custom color theme correctly 3`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -1135,10 +1322,6 @@ exports[`Button renders with a custom color theme correctly 3`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1154,13 +1337,24 @@ exports[`Button renders with a custom color theme correctly 3`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1177,7 +1371,7 @@ exports[`Button renders with a custom color theme correctly 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #1a1a1a;
@@ -1186,6 +1380,10 @@ exports[`Button renders with a custom color theme correctly 4`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -1227,10 +1425,6 @@ exports[`Button renders with a custom color theme correctly 4`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1246,13 +1440,24 @@ exports[`Button renders with a custom color theme correctly 4`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1269,7 +1474,7 @@ exports[`Button renders with a specified color preset correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -1278,6 +1483,10 @@ exports[`Button renders with a specified color preset correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -1319,10 +1528,6 @@ exports[`Button renders with a specified color preset correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1338,13 +1543,24 @@ exports[`Button renders with a specified color preset correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1361,7 +1577,7 @@ exports[`Button renders with a specified color preset correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -1370,6 +1586,10 @@ exports[`Button renders with a specified color preset correctly 2`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -1411,10 +1631,6 @@ exports[`Button renders with a specified color preset correctly 2`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1430,13 +1646,24 @@ exports[`Button renders with a specified color preset correctly 2`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1453,7 +1680,7 @@ exports[`Button renders with a specified color preset correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -1462,6 +1689,10 @@ exports[`Button renders with a specified color preset correctly 3`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -1503,10 +1734,6 @@ exports[`Button renders with a specified color preset correctly 3`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1522,13 +1749,24 @@ exports[`Button renders with a specified color preset correctly 3`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1545,7 +1783,7 @@ exports[`Button renders with a specified color preset correctly 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -1554,6 +1792,10 @@ exports[`Button renders with a specified color preset correctly 4`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -1595,10 +1837,6 @@ exports[`Button renders with a specified color preset correctly 4`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1614,13 +1852,24 @@ exports[`Button renders with a specified color preset correctly 4`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -1637,7 +1886,7 @@ exports[`Button renders with inset correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #ffffff;
@@ -1646,6 +1895,10 @@ exports[`Button renders with inset correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -1706,10 +1959,6 @@ exports[`Button renders with inset correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1725,13 +1974,24 @@ exports[`Button renders with inset correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
     <div
       class="c2"
@@ -1755,7 +2015,7 @@ exports[`Button renders with inset correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -1764,6 +2024,10 @@ exports[`Button renders with inset correctly 2`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -1824,10 +2088,6 @@ exports[`Button renders with inset correctly 2`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1843,13 +2103,24 @@ exports[`Button renders with inset correctly 2`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
     <div
       class="c2"
@@ -1873,7 +2144,7 @@ exports[`Button renders with inset correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -1882,6 +2153,10 @@ exports[`Button renders with inset correctly 3`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -1942,10 +2217,6 @@ exports[`Button renders with inset correctly 3`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1961,13 +2232,24 @@ exports[`Button renders with inset correctly 3`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
     <div
       class="c2"
@@ -2000,6 +2282,10 @@ exports[`Button renders with inset correctly 4`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -2060,10 +2346,6 @@ exports[`Button renders with inset correctly 4`] = `
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2079,13 +2361,24 @@ exports[`Button renders with inset correctly 4`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
     <div
       class="c2"
@@ -2116,7 +2409,7 @@ exports[`Button renders with text and an icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #ffffff;
@@ -2125,6 +2418,10 @@ exports[`Button renders with text and an icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.3rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -2166,10 +2463,6 @@ exports[`Button renders with text and an icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.3rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2183,6 +2476,15 @@ exports[`Button renders with text and an icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -2209,7 +2511,9 @@ exports[`Button renders with text and an icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -2233,7 +2537,7 @@ exports[`Button renders with text and an icon correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -2242,6 +2546,10 @@ exports[`Button renders with text and an icon correctly 2`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -2283,10 +2591,6 @@ exports[`Button renders with text and an icon correctly 2`] = `
 }
 
 .c1 {
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2300,6 +2604,15 @@ exports[`Button renders with text and an icon correctly 2`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -2326,7 +2639,9 @@ exports[`Button renders with text and an icon correctly 2`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -2350,7 +2665,7 @@ exports[`Button renders with text and an icon correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -2359,6 +2674,10 @@ exports[`Button renders with text and an icon correctly 3`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -2400,10 +2719,6 @@ exports[`Button renders with text and an icon correctly 3`] = `
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2417,6 +2732,15 @@ exports[`Button renders with text and an icon correctly 3`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -2443,7 +2767,9 @@ exports[`Button renders with text and an icon correctly 3`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -2476,6 +2802,10 @@ exports[`Button renders with text and an icon correctly 4`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -2517,10 +2847,6 @@ exports[`Button renders with text and an icon correctly 4`] = `
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2534,6 +2860,15 @@ exports[`Button renders with text and an icon correctly 4`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -2560,7 +2895,9 @@ exports[`Button renders with text and an icon correctly 4`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -2584,7 +2921,7 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #ffffff;
@@ -2593,6 +2930,10 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.3rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -2653,10 +2994,6 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.3rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2670,6 +3007,15 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -2696,7 +3042,9 @@ exports[`Button renders with text, icon and inset correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
     <div
       class="c3"
@@ -2727,7 +3075,7 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -2736,6 +3084,10 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -2796,10 +3148,6 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
 }
 
 .c1 {
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2813,6 +3161,15 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -2839,7 +3196,9 @@ exports[`Button renders with text, icon and inset correctly 2`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
     <div
       class="c3"
@@ -2870,7 +3229,7 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -2879,6 +3238,10 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -2939,10 +3302,6 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2956,6 +3315,15 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -2982,7 +3350,9 @@ exports[`Button renders with text, icon and inset correctly 3`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
     <div
       class="c3"
@@ -3022,6 +3392,10 @@ exports[`Button renders with text, icon and inset correctly 4`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -3082,10 +3456,6 @@ exports[`Button renders with text, icon and inset correctly 4`] = `
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3099,6 +3469,15 @@ exports[`Button renders with text, icon and inset correctly 4`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -3125,7 +3504,9 @@ exports[`Button renders with text, icon and inset correctly 4`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
     <div
       class="c3"
@@ -3149,7 +3530,7 @@ exports[`Button should work with css style string 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -3158,6 +3539,10 @@ exports[`Button should work with css style string 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -3199,10 +3584,6 @@ exports[`Button should work with css style string 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3218,13 +3599,24 @@ exports[`Button should work with css style string 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -3250,6 +3642,10 @@ exports[`Button with size fluid renders a bare variant correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -3291,10 +3687,6 @@ exports[`Button with size fluid renders a bare variant correctly 1`] = `
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3310,13 +3702,24 @@ exports[`Button with size fluid renders a bare variant correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -3342,6 +3745,10 @@ exports[`Button with size fluid renders a ghost variant correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #002966;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -3383,10 +3790,6 @@ exports[`Button with size fluid renders a ghost variant correctly 1`] = `
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3402,13 +3805,24 @@ exports[`Button with size fluid renders a ghost variant correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -3434,6 +3848,10 @@ exports[`Button with size fluid renders a primary variant with a label correctly
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -3475,10 +3893,6 @@ exports[`Button with size fluid renders a primary variant with a label correctly
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3494,13 +3908,24 @@ exports[`Button with size fluid renders a primary variant with a label correctly
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -3526,6 +3951,10 @@ exports[`Button with size fluid renders a primary variant with a label correctly
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -3567,10 +3996,6 @@ exports[`Button with size fluid renders a primary variant with a label correctly
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3586,13 +4011,24 @@ exports[`Button with size fluid renders a primary variant with a label correctly
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -3625,6 +4061,10 @@ exports[`Button with size fluid renders with a bare icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -3666,10 +4106,6 @@ exports[`Button with size fluid renders with a bare icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3683,6 +4119,15 @@ exports[`Button with size fluid renders with a bare icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -3709,7 +4154,9 @@ exports[`Button with size fluid renders with a bare icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -3742,6 +4189,10 @@ exports[`Button with size fluid renders with an icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: undefinedrem;
+  padding-right: undefinedrem;
+  padding-top: undefinedrem;
+  padding-bottom: undefinedrem;
 }
 
 .c0 span {
@@ -3783,10 +4234,6 @@ exports[`Button with size fluid renders with an icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: undefinedrem;
-  padding-right: undefinedrem;
-  padding-top: undefinedrem;
-  padding-bottom: undefinedrem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3800,6 +4247,15 @@ exports[`Button with size fluid renders with an icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -3826,7 +4282,9 @@ exports[`Button with size fluid renders with an icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -3843,7 +4301,7 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #002966;
@@ -3852,6 +4310,10 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -3893,10 +4355,6 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3912,13 +4370,24 @@ exports[`Button with size large renders a bare variant correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -3935,7 +4404,7 @@ exports[`Button with size large renders a ghost variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #002966;
@@ -3944,6 +4413,10 @@ exports[`Button with size large renders a ghost variant correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #002966;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -3985,10 +4458,6 @@ exports[`Button with size large renders a ghost variant correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4004,13 +4473,24 @@ exports[`Button with size large renders a ghost variant correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4027,7 +4507,7 @@ exports[`Button with size large renders a primary variant with a label correctly
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -4036,6 +4516,10 @@ exports[`Button with size large renders a primary variant with a label correctly
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -4077,10 +4561,6 @@ exports[`Button with size large renders a primary variant with a label correctly
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4096,13 +4576,24 @@ exports[`Button with size large renders a primary variant with a label correctly
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4119,7 +4610,7 @@ exports[`Button with size large renders a primary variant with a label correctly
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -4128,6 +4619,10 @@ exports[`Button with size large renders a primary variant with a label correctly
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -4169,10 +4664,6 @@ exports[`Button with size large renders a primary variant with a label correctly
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4188,13 +4679,24 @@ exports[`Button with size large renders a primary variant with a label correctly
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4218,7 +4720,7 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #002966;
@@ -4227,6 +4729,10 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -4268,10 +4774,6 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4285,6 +4787,15 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -4311,7 +4822,9 @@ exports[`Button with size large renders with a bare icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4335,7 +4848,7 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -4344,6 +4857,10 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .c0 span {
@@ -4385,10 +4902,6 @@ exports[`Button with size large renders with an icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 1rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4402,6 +4915,15 @@ exports[`Button with size large renders with an icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -4428,7 +4950,9 @@ exports[`Button with size large renders with an icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4445,7 +4969,7 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #002966;
@@ -4454,6 +4978,10 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -4495,10 +5023,6 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4514,13 +5038,24 @@ exports[`Button with size medium renders a bare variant correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4537,7 +5072,7 @@ exports[`Button with size medium renders a ghost variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #002966;
@@ -4546,6 +5081,10 @@ exports[`Button with size medium renders a ghost variant correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #002966;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -4587,10 +5126,6 @@ exports[`Button with size medium renders a ghost variant correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4606,13 +5141,24 @@ exports[`Button with size medium renders a ghost variant correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4629,7 +5175,7 @@ exports[`Button with size medium renders a primary variant with a label correctl
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -4638,6 +5184,10 @@ exports[`Button with size medium renders a primary variant with a label correctl
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -4679,10 +5229,6 @@ exports[`Button with size medium renders a primary variant with a label correctl
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4698,13 +5244,24 @@ exports[`Button with size medium renders a primary variant with a label correctl
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4721,7 +5278,7 @@ exports[`Button with size medium renders a primary variant with a label correctl
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -4730,6 +5287,10 @@ exports[`Button with size medium renders a primary variant with a label correctl
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -4771,10 +5332,6 @@ exports[`Button with size medium renders a primary variant with a label correctl
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4790,13 +5347,24 @@ exports[`Button with size medium renders a primary variant with a label correctl
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4820,7 +5388,7 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #002966;
@@ -4829,6 +5397,10 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -4870,10 +5442,6 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4887,6 +5455,15 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -4913,7 +5490,9 @@ exports[`Button with size medium renders with a bare icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -4937,7 +5516,7 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.4rem;
   line-height: 2rem;
   color: #ffffff;
@@ -4946,6 +5525,10 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .c0 span {
@@ -4987,10 +5570,6 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5004,6 +5583,15 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -5030,7 +5618,9 @@ exports[`Button with size medium renders with an icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -5047,7 +5637,7 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #002966;
@@ -5056,6 +5646,10 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -5097,10 +5691,6 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5116,13 +5706,24 @@ exports[`Button with size small renders a bare variant correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -5139,7 +5740,7 @@ exports[`Button with size small renders a ghost variant correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #002966;
@@ -5148,6 +5749,10 @@ exports[`Button with size small renders a ghost variant correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #002966;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -5189,10 +5794,6 @@ exports[`Button with size small renders a ghost variant correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5208,13 +5809,24 @@ exports[`Button with size small renders a ghost variant correctly 1`] = `
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -5231,7 +5843,7 @@ exports[`Button with size small renders a primary variant with a label correctly
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #ffffff;
@@ -5240,6 +5852,10 @@ exports[`Button with size small renders a primary variant with a label correctly
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -5281,10 +5897,6 @@ exports[`Button with size small renders a primary variant with a label correctly
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5300,13 +5912,24 @@ exports[`Button with size small renders a primary variant with a label correctly
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -5323,7 +5946,7 @@ exports[`Button with size small renders a primary variant with a label correctly
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #ffffff;
@@ -5332,6 +5955,10 @@ exports[`Button with size small renders a primary variant with a label correctly
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -5373,10 +6000,6 @@ exports[`Button with size small renders a primary variant with a label correctly
 }
 
 .c1 {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5392,13 +6015,24 @@ exports[`Button with size small renders a primary variant with a label correctly
   justify-content: center;
 }
 
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 <button
     class="c0"
   >
     <div
       class="c1"
     >
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -5422,7 +6056,7 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #002966;
@@ -5431,6 +6065,10 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.3rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -5472,10 +6110,6 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.3rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5489,6 +6123,15 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -5515,7 +6158,9 @@ exports[`Button with size small renders with a bare icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>
@@ -5539,7 +6184,7 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: inherit;
+  width: auto;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #ffffff;
@@ -5548,6 +6193,10 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   border-style: none;
   box-sizing: border-box;
   border: 1px solid #00000000;
+  padding-left: 0.3rem;
+  padding-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .c0 span {
@@ -5589,10 +6238,6 @@ exports[`Button with size small renders with an icon correctly 1`] = `
 }
 
 .c1 {
-  padding-left: 0.3rem;
-  padding-right: 0.7rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5606,6 +6251,15 @@ exports[`Button with size small renders with an icon correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <button
@@ -5632,7 +6286,9 @@ exports[`Button with size small renders with an icon correctly 1`] = `
           />
         </svg>
       </span>
-      button
+      <span>
+        button
+      </span>
     </div>
   </button>
 </DocumentFragment>

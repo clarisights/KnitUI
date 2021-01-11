@@ -7,6 +7,19 @@ type ButtonState = "default" | "hover" | "active" | "focus" | "disabled"
 
 type IStyledBaseButton = IStyled<ButtonProps>
 
+// Paddings
+const ICON_PADDINGS = {
+  small: 0.3,
+  medium: 0.5,
+  large: 0.7,
+}
+
+const VERTICAL_PADDINGS = {
+  small: 0.2,
+  medium: 0.4,
+  large: 0.7,
+}
+
 // Colors
 const getHighlighColor = (props: IStyledBaseButton) =>
   props.theme.knitui.chromaPalette.Azure80
@@ -104,11 +117,51 @@ const getBoxShadow = (props: IStyledBaseButton) => {
   return `0px 0px 2px ${knitui.shades.blue50}`
 }
 
+const getHorizontalPadding = (props: IStyledBaseButton) => {
+  const {
+    customProps: { size },
+  } = props
+  const paddings = {
+    small: 0.7,
+    medium: 1,
+    large: 1,
+  }
+  return paddings[size!]
+}
+
+const getRightPadding = (props: IStyledBaseButton) => {
+  const {
+    customProps: { icon, label, size },
+  } = props
+  if (icon && !label) {
+    return ICON_PADDINGS[size!]
+  }
+  return getHorizontalPadding(props)
+}
+
+const getLeftPadding = (props: IStyledBaseButton) => {
+  const {
+    customProps: { icon, size },
+  } = props
+  if (icon) {
+    return ICON_PADDINGS[size!]
+  }
+  return getHorizontalPadding(props)
+}
+
+const getVerticalPadding = (props: IStyledBaseButton) => {
+  const {
+    customProps: { icon, label, size },
+  } = props
+  const iconOnly = icon && !label
+  return iconOnly ? ICON_PADDINGS[size!] : VERTICAL_PADDINGS[size!]
+}
+
 const StyledButton = styled.button<IStyledBaseButton>`
   display: flex;
   align-items: center;
   width: ${({ customProps }) =>
-    customProps.size === "fluid" ? "100%" : "inherit"};
+    customProps.size === "fluid" ? "100%" : "auto"};
   font-size: ${({ customProps: { fontSize } }) => `${fontSize}rem`};
   line-height: ${({ customProps: { lineHeight } }) => `${lineHeight}rem`};
   color: ${props => getFontColor("default", props)};
@@ -117,6 +170,10 @@ const StyledButton = styled.button<IStyledBaseButton>`
   border-style: none;
   box-sizing: border-box;
   border: ${props => getBorder("default", props)};
+  padding-left: ${props => `${getLeftPadding(props)}rem`};
+  padding-right: ${props => `${getRightPadding(props)}rem`};
+  padding-top: ${props => `${getVerticalPadding(props)}rem`};
+  padding-bottom: ${props => `${getVerticalPadding(props)}rem`};
   span {
     margin-right: ${props => getIconMargin(props)};
     svg path {
