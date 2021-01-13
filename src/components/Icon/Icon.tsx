@@ -27,7 +27,7 @@ const StyledIconWrapper: any = withProps<IIconWrapper>()(styled.span)`
 `
 
 const Icon: any = (props: IIconProps) => {
-  const { type, size, fill = "#000", customStyles = "" } = props
+  const { type, size, fill, customStyles = "" } = props
   let width = "18px",
     height = "18px"
   if (typeof size === "string") {
