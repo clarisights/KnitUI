@@ -1,6 +1,6 @@
 {
   "name": "knit-ui",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Component library for Clarisights",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -28,7 +28,8 @@
     "format": "prettier --write components/**/*.{tsx,ts,jsx,js,json}",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "dts:generate": "tsc --emitDeclarationOnly",
-    "dts:bundle": "dts-bundle --name knit-ui --main ./build/types/index.d.ts --out 'bundle.d.ts'"
+    "dts:bundle": "dts-bundle --name knit-ui --main ./build/types/index.d.ts --out 'bundle.d.ts'",
+    "release": "rm -rf build; yarn build; cd build; npm publish"
   },
   "husky": {
     "hooks": {
