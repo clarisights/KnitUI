@@ -204,6 +204,30 @@ stories
     }
     return <ModalWrapper />
   })
+  .add("with custom footer style", () => {
+    const ModalWrapper = () => {
+      const [modalVisible, setModalVisible] = useState(true)
+      return (
+        <>
+          <Modal
+            size={select("Size", sizeOptions, "medium")}
+            visible={modalVisible}
+            onClose={() => setModalVisible(false)}
+            style={object("Style", { color: "red" })}
+            className="custom-class">
+            <Header>Custom style</Header>
+            <Body>
+              <div>Body</div>
+            </Body>
+            <Footer style={object("Footer Style", { background: "#f2f2f2" })}>
+              <div>footer</div>
+            </Footer>
+          </Modal>
+        </>
+      )
+    }
+    return <ModalWrapper />
+  })
   .add("with overriden padding", () => {
     const ModalWrapper = () => {
       const [modalVisible, setModalVisible] = useState(true)

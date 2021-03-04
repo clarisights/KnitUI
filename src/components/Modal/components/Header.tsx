@@ -29,7 +29,7 @@ const Container = styled.div.attrs(() => ({
   border-radius: ${({ theme: { knitui } }) =>
     `${knitui.modalBorderRadius} ${knitui.modalBorderRadius} 0rem 0rem`};
   background: ${({ theme: { knitui }, customProps: { noFill } }) =>
-    noFill ? "none" : knitui.chromaPalette.Neutral10};
+    noFill ? "none" : knitui.chromaPalette.Beige10};
   border-bottom: ${({ customProps: { noFill }, theme: { knitui } }) =>
     noFill ? knitui.modalBorder : "none"};
   min-height: ${props => `${getMinHeight(props)}rem`};
