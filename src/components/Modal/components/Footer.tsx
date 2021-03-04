@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled, { css, CSSObject } from "styled-components"
 import { IStyled } from "../../../common/types"
 
 interface FooterProps {
@@ -17,7 +17,7 @@ const Footer = styled.div.attrs(() => ({
   justify-self: flex-end;
   border-top: ${({ customProps, theme: { knitui } }) =>
     customProps && customProps.showBorder ? knitui.modalBorder : `none`};
-  ${({ style }) => style && css(style)};
+  ${({ style }) => style && css(style as CSSObject)};
 `
 
 export default Footer
