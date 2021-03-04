@@ -11,8 +11,6 @@ export default function ScrollWrapper(props: any) {
     }
   }
 
-  console.log(children)
-
   return (
     <>
       <Main ref={setBodyRef} customProps={{ padding }}>
