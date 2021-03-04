@@ -16,7 +16,7 @@ export default function ScrollWrapper(props: any) {
       <Main ref={setBodyRef} customProps={{ padding }}>
         {childrenArray[0]}
       </Main>
-      <Footer customProps={{ showBorder: showFooterBorder }}>
+      <Footer customProps={{ showBorder: showFooterBorder }} style={childrenArray[1].props.style || {}}>
         {childrenArray[1]}
       </Footer>
     </>

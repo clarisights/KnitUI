@@ -16,7 +16,7 @@ exports[`Modal with overriden padding 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -255,7 +255,7 @@ exports[`Modal with size large with a bottom panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -507,7 +507,7 @@ exports[`Modal with size large with a left panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -783,7 +783,7 @@ exports[`Modal with size large with a right panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -1059,7 +1059,7 @@ exports[`Modal with size large with simple config 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -1298,7 +1298,7 @@ exports[`Modal with size medium with a bottom panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -1550,7 +1550,7 @@ exports[`Modal with size medium with a left panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -1826,7 +1826,7 @@ exports[`Modal with size medium with a right panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -2102,7 +2102,7 @@ exports[`Modal with size medium with simple config 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -2341,7 +2341,7 @@ exports[`Modal with size small with a bottom panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -2593,7 +2593,7 @@ exports[`Modal with size small with a left panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -2869,7 +2869,7 @@ exports[`Modal with size small with a right panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -3145,7 +3145,7 @@ exports[`Modal with size small with simple config 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -3384,7 +3384,7 @@ exports[`Modal with size x-large with a bottom panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -3636,7 +3636,7 @@ exports[`Modal with size x-large with a left panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -3912,7 +3912,7 @@ exports[`Modal with size x-large with a right panel 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
@@ -4188,7 +4188,7 @@ exports[`Modal with size x-large with simple config 1`] = `
   display: flex;
   padding: 1.4rem 2.8rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
-  background: #f2f2f2;
+  background: #f7f4ed;
   border-bottom: none;
   min-height: 5.6rem;
 }
