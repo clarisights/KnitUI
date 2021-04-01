@@ -690,6 +690,31 @@ export const customFillInstagram = ({
   </svg>
 )
 
+export const customFillAppNexus = ({
+  height = "24px",
+  width = "24px",
+  fill = "#000",
+}: IconType) => (
+  <svg
+    width={width}
+    height={height}
+    fill={fill}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg">
+    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="3" width="10" height="9">
+      <path d="M2 3.75235H11.0416V11.5214H2V3.75235Z" fill="white"/>
+    </mask>
+    <g mask="url(#mask0)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5702 3.75235C6.42045 3.89858 6.29153 4.06471 6.18706 4.24608L2 11.5214H11.0416L6.5702 3.75235Z" fill="#E10500"/>
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5098 3.08569C16.307 3.02879 16.0974 2.99996 15.8867 3H8.11337C7.89965 3 7.69043 3.02941 7.49023 3.08569L12 10.8431L16.5098 3.08569Z" fill="#F73232"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.6078L6.17686 19.9526C6.28274 20.1382 6.41176 20.3053 6.55922 20.451L11.0196 12.6078H2Z" fill="#FC5047"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8232 19.9526L22.0001 12.6078H12.9805L17.4413 20.451C17.5908 20.3031 17.7193 20.1354 17.8232 19.9526Z" fill="#FF7061"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49023 20.9535C7.69043 21.0098 7.89984 21.0392 8.11337 21.0392H15.8867C16.1004 21.0392 16.3096 21.0098 16.5098 20.9535L12 13.1961L7.49023 20.9535Z" fill="#FC8D7E"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0001 11.4314L17.8232 4.08666C17.7191 3.90384 17.5905 3.73614 17.4409 3.58823L12.9805 11.4314H22.0001Z" fill="#FC5047"/>
+  </svg>
+)
+
 export const customFillGoogleAds = ({
   height = "24px",
   width = "24px",
