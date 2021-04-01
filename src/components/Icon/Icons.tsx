@@ -506,25 +506,6 @@ export const customFillAdroll = ({
   </svg>
 )
 
-export const customFillAppNexus = ({
-  height = "24px",
-  width = "24px",
-  fill = "#000",
-}: IconType) => (
-  <svg
-    height={height}
-    width={width}
-    fill={fill}
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg">
-    <rect height="20" width="20" fill="#F6871E" rx="2" x="2" y="2" />
-    <path
-      d="M8.14964 18.5L9.38176 15.0596H14.6248L15.8504 18.5H18L13.1699 5.5H10.8301L6 18.5H8.14964ZM9.9716 13.4092L11.9508 7.86133H12.0557L14.035 13.4092H9.9716Z"
-      fill="white"
-    />
-  </svg>
-)
-
 export const customFillApple = ({
   height = "24px",
   width = "24px",
